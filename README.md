@@ -1,4 +1,4 @@
-# safenetwork_website
+# safenetwork.tech
 SAFE Network website built on [React Static](https://github.com/nozzle/react-static).
 
 ## Prerequisites
@@ -12,12 +12,12 @@ SAFE Network website built on [React Static](https://github.com/nozzle/react-sta
 
 * First, clone the repository
 ```bash
-> clone https://github.com/maidsafe/safenetwork_website.git
+> clone https://github.com/maidsafe/safenetwork.tech.git
 ```
 
 * then, install the npm dependencies using [yarn](https://yarnpkg.com/lang/en/)
 ```bash
-> cd safenetwork_website && yarn
+> cd safenetwork.tech && yarn
 ```
 
 * To run locally for development with,
