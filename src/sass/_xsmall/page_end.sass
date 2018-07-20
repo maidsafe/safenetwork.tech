@@ -1,0 +1,41 @@
+@media screen and (max-width: $sm-width - 1)
+  .page-end
+    background-color: $light-grey
+    &.light
+      .page-end-b
+        .page-end-sec
+          .lft-sec
+            .lft-sec-b
+              .lft-sec-p
+                color: $colr-common-text
+    .page-end-b
+      box-shadow: none
+      .page-end-sec
+        display: block
+        &.lft,
+        &.rgt
+          width: 100%
+          padding: 0
+        .lft-sec
+          padding: 80px get-single-column() * 2 80px
+          .lft-sec-b
+            .lft-sec-p
+              @extend %maxWidth
+              font-size: 21px
+            .lft-sec-btn
+              margin-top: 60px
+              .btn
+                font-size: 21px
+                width: 100%
+                @extend %maxWidth
+                line-height: 57px
+        .rgt-sec
+          display: none
+          padding: 0 get-single-column() * 2 150px
+          .rgt-sec-b
+            .rgt-sec-i
+              padding-right: 0
+              &:nth-child(odd)
+                padding-right: get-single-column()
+              &:nth-child(even)
+                padding-left: get-single-column()

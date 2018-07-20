@@ -1,0 +1,383 @@
+.home
+  .home-b
+    position: relative
+  .home-intro
+    position: relative
+    .home-intro-b
+      +clearfix()
+      height: 100%
+      position: relative
+      .home-intro-ctnt-1
+        width: get-single-column() * 13
+        padding-left: get-single-column() * 3
+        padding-bottom: 160px
+        float: left
+        .home-intro-ctnt-1-h
+          margin-top: 120px
+        .home-intro-ctnt-1-p
+          a
+            color: $colr-common-text
+            text-decoration: none
+            position: relative
+            display: inline-block
+            &:after
+              content: ''
+              display: inline-block
+              width: 100%
+              height: 3px
+              position: absolute
+              bottom: 1px
+              left: 0
+              background-color: $spark-red
+      .home-intro-ctnt-2
+        width: get-single-column() * 9
+        background-color: $colr-home-intro-ctnt-2-bg
+        position: absolute
+        padding-top: 80px
+        padding-bottom: 70px
+        padding-left: get-single-column()
+        padding-right: get-single-column()
+        bottom: 0
+        right: 0
+        .home-intro-ctnt-2-p
+          +para()
+          font-size: get-vw(21px)
+          padding-bottom: 70px
+        .home-intro-bg
+          display: none
+          position: absolute
+          width: 100%
+          height: 100%
+          top: 0
+          right: 0
+          .home-intro-bg-i
+            width: 50%
+            height: 100%
+            position: absolute
+            background-repeat: no-repeat
+            background-position: top
+            background-size: cover
+            &:first-child
+              background-image: url($url-texture-1)
+              height: 50px
+              bottom: 0
+              right: 100%
+              transform: translate(-100%, 0)
+            &:nth-child(2)
+              background-image: url($url-texture-2)
+              background-size: 150%
+              right: 100%
+            &:nth-child(3)
+              background-image: url($url-texture-3)
+              bottom: 100%
+            &:nth-child(4)
+              height: 150%
+              background-image: url($url-texture-4)
+              bottom: 100%
+              right: 0
+              transform: translate(0, 150px)
+
+  .home-cntr1
+    width: 100%
+    .home-cntr1-b
+      .home-cntr1-h
+        +font-bold()
+        font-size: get-vw(30px)
+        margin-bottom: 70px
+      .home-cntr1-para
+        +para()
+        font-size: get-vw(21px)
+        margin-bottom: 40px
+        &:last-child
+          margin-bottom: 0
+
+  .home-cntr2
+    width: 100%
+    .home-cntr2-b
+      .home-cntr2-h
+        +font-bold()
+        font-size: get-vw(21px)
+        margin-bottom: 40px
+      .home-cntr2-para
+        +para()
+        font-size: get-vw(18px)
+        margin-bottom: 40px
+
+  .home-lay-2
+    .home-lay-2-b
+      position: relative
+      .home-lay-2-sec
+        display: table-cell
+        width: 50%
+        vertical-align: middle
+        position: relative
+        &.lft
+          padding-left: get-single-column() * 3
+          padding-right: get-single-column() * 2
+          z-index: 1
+        &.rgt
+          background-color: transparent
+          z-index: 9
+      .home-lay-2-bg
+        position: absolute
+        width: 50%
+        height: 100%
+        top: 0
+        right: 0
+        .home-lay-2-bg-i
+          width: 25%
+          height: 100%
+          position: relative
+          background-repeat: no-repeat
+          background-position: center
+          background-size: cover
+          float: left
+
+  .home-freedom
+    .home-lay-2-b
+      .home-lay-2-sec
+        &.lft
+          background-color: $limoncello-yellow
+          padding-top: 300px
+          padding-bottom: 350px
+        .home-lay-2-sec-b
+          .sec-rgt
+            position: relative
+            +clearfix()
+            .sec-rgt-i,
+            .sec-rgt-ii,
+            .sec-rgt-iii
+              float: left
+            .sec-rgt-i
+              width: 50%
+              padding: 65px 40px 100px
+              background-color: $white
+            .sec-rgt-ii
+              width: 50%
+              padding: 65px 40px 200px
+              margin-top: -50px
+              background-color: $spark-red
+              .home-cntr2 .home-cntr2-b
+                .home-cntr2-h,
+                .home-cntr2-para
+                  color: $white
+            .sec-rgt-iii
+              width: 50%
+              height: get-vw(280px)
+              padding: get-vw(65px) get-vw(40px) get-vw(100px)
+              background-color: $white
+              text-align: center
+              transform: translate(50%, -50px)
+              box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+              .sec-rgt-iii-h
+                +font-para()
+                font-size: get-vw(18px)
+                color: $unit-green
+                margin-bottom: get-vw(24px)
+                font-weight: normal
+              .sec-rgt-iii-p
+                +font-bold()
+                font-size: get-vw(21px)
+                color: $unit-green
+      .home-lay-2-bg
+        .home-lay-2-bg-i
+          &:first-child
+            z-index: 2
+            padding-bottom: 80px
+            box-sizing: content-box
+            background-image: url($url-texture-1)
+          &:nth-child(2)
+            background-image: url($url-texture-2)
+          &:nth-child(3)
+            z-index: 2
+            padding-bottom: 60px
+            box-sizing: content-box
+            background-image: url($url-texture-3)
+          &:last-child
+            background-image: url($url-texture-4)
+
+  .home-security
+    .home-lay-2-b
+      .home-lay-2-sec
+        &.lft
+          padding-top: 300px
+          padding-bottom: 350px
+          background-color: $light-grey
+        .home-lay-2-sec-b
+          .sec-rgt
+            +clearfix()
+            .sec-rgt-i
+              width: 50%
+              padding: get-vw(65px) get-vw(40px) get-vw(200px)
+              background-color: $light-grey
+            .sec-rgt-ii
+              width: 50%
+              padding: get-vw(65px) get-vw(40px) get-vw(180px)
+              background-color: $light-grey
+              margin-left: get-single-column() * -4
+              transform: translate(100%, get-vw(200px) * -1)
+              .home-cntr2 .home-cntr2-b
+                .home-cntr2-h
+                  color: $spark-red
+      .home-lay-2-bg
+        .home-lay-2-bg-i
+          &:first-child
+            background-image: url($url-texture-11)
+            background-color: transparent
+            padding-right: 60px
+            box-sizing: content-box
+            margin-left: -60px
+            z-index: 1
+          &:nth-child(2)
+            z-index: 2
+            background-image: url($url-texture-12)
+            box-sizing: content-box
+            padding-bottom: 60px
+          &:nth-child(3)
+            box-sizing: content-box
+            background-image: url($url-texture-13)
+          &:last-child
+            z-index: 2
+            box-sizing: content-box
+            background-image: url($url-texture-14)
+            padding-bottom: 40px
+
+  .home-control
+    .home-lay-2-b
+      .home-lay-2-sec
+        &.lft
+          padding-top: 180px
+          padding-bottom: 230px
+          background-color: $unit-green
+        .home-lay-2-sec-b
+          .sec-lft
+            padding-top: 120px
+            .home-cntr1 .home-cntr1-b
+              .home-cntr1-h,
+              .home-cntr1-para
+                color: $white
+            .sec-lft-lnk
+              margin-top: 40px
+          .sec-rgt
+            +clearfix()
+            .sec-rgt-i
+              width: get-single-column() * 18
+              padding: 65px 40px 60px
+              background-color: $white
+              float: left
+              box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+              position: relative
+              z-index: 2
+            .sec-rgt-ii
+              background-color: $warm-white
+              width: get-single-column() * 16
+              padding: 65px 40px 60px
+              margin-left: get-single-column() * 8
+              float: left
+              box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+              position: relative
+              z-index: 1
+            .sec-rgt-iii
+              width: get-single-column() * 18
+              padding: 65px 40px 80px
+              background-color: $limoncello-yellow
+              float: left
+              box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+              position: relative
+              z-index: 0
+      .home-lay-2-bg
+        z-index: 8
+        .home-lay-2-bg-i
+          box-sizing: content-box
+          &:first-child
+            background-image: url($url-texture-5)
+            background-color: transparent
+            z-index: 1
+            padding-bottom: 100px
+          &:nth-child(2)
+            z-index: 1
+            background-image: url($url-texture-6)
+            padding-bottom: 40px
+            transform: translate(0, 60px)
+          &:nth-child(3)
+            padding-bottom: 100px
+            background-image: url($url-texture-7)
+          &:last-child
+            z-index: 1
+            background-image: url($url-texture-8)
+            transform: translate(0, 150px)
+
+  .home-economy
+    .home-lay-2-b
+      margin-bottom: 200px
+      .home-lay-2-sec
+        &.lft
+          vertical-align: top
+          padding-top: get-vw(200px)
+          background-color: $pinky-grey
+        &.rgt
+          background-color: transparent
+        .home-lay-2-sec-b
+          .sec-lft
+            .sec-lft-lnk
+              margin-top: 40px
+          .sec-rgt
+            +clearfix()
+            .sec-rgt-i
+              width: get-single-column() * 18
+              padding: 65px 40px 80px
+              background-color: $spark-red
+              float: left
+              box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+              position: relative
+              z-index: 0
+              .home-cntr2 .home-cntr2-b
+                .home-cntr2-h,
+                .home-cntr2-para
+                  color: $white
+            .sec-rgt-ii
+              background-color: $pinky-grey
+              width: get-single-column() * 18
+              padding: 65px 40px 10px
+              margin-top: -60px
+              margin-left: get-single-column() * 6
+              float: left
+              box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+              position: relative
+              z-index: 1
+            .sec-rgt-iii
+              width: get-single-column() * 18
+              padding: 65px 40px 30px
+              background-color: $warm-white
+              float: left
+              box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+              position: relative
+              z-index: 2
+            .sec-rgt-iiii
+              width: get-single-column() * 18
+              margin-left: get-single-column() * 6
+              padding: 65px 40px 40px
+              background-color: $white
+              float: left
+              box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+              position: relative
+              z-index: 1
+      .home-lay-2-bg
+        .home-lay-2-bg-i
+          width: 50%
+          box-sizing: content-box
+          padding-bottom: 120px
+          &:first-child
+            background-image: url($url-texture-16)
+            background-color: transparent
+            z-index: 1
+          &:nth-child(2)
+            z-index: 1
+            background-image: url($url-texture-15)
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5)
+            display: none
+            background-image: url($url-texture-9)
+            background-color: transparent
+            z-index: 1

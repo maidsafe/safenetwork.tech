@@ -1,0 +1,370 @@
+%tl-cntr
+  width: get-single-column() * 4
+  margin-right: get-single-column()
+
+.tl
+  background-color: $unit-green
+  .tl-b
+    .tl-bnr
+      position: relative
+      .tl-bnr-b
+        width: get-single-column() * 12
+        margin-left: get-single-column() * 3
+        padding-top: 150px
+        padding-bottom: 130px
+        .tl-bnr-h
+          color: $white
+          .strike
+            &:before
+              background-color: $white
+        .tl-bnr-para
+          color: $white
+    .tl-lay
+      &.dark
+        .tl-lay-b
+          .tl-lay-date
+            h3
+              color: $colr-common-text
+      .tl-lay-b
+        +clearfix()
+        .tl-lay-date
+          width: get-single-column() * 2
+          text-align: right
+          margin-left: get-single-column() * 2
+          margin-right: get-single-column()
+          float: left
+          h3
+            +font-bold()
+            font-size: get-vw(30px)
+            color: $white
+    .tl-cntr1
+      &.large
+        .tl-cntr1-b
+          .tl-cntr1-paras
+            padding-top: 30px
+            .tl-cntr1-para
+              font-size: get-vw(21px)
+      &.dark
+        .tl-cntr1-b
+          .tl-cntr1-head
+            .tl-cntr1-head-title
+              color: $colr-common-text
+            .tl-cntr1-head-desc
+              color: $colr-common-text
+          .tl-cntr1-paras
+            .tl-cntr1-para
+              color: $colr-common-text
+      .tl-cntr1-b
+        .tl-cntr1-head
+          padding-bottom: 12px
+          .tl-cntr1-head-title
+            +font-bold()
+            font-size: get-vw(21px)
+            line-height: normal
+            font-weight: normal
+            color: $white
+            display: inline-block
+          .tl-cntr1-head-desc
+            +font-bold()
+            display: inline-block
+            float: right
+            font-size: get-vw(18px)
+            line-height: normal
+            font-weight: normal
+            color: $white
+        .tl-cntr1-paras
+          padding-top: 25px
+          padding-bottom: 25px
+          position: relative
+          &.theme-red
+            &:before
+              background-color: $spark-red
+          &.theme-yellow
+            &:before
+              background-color: $limoncello-yellow
+          &.theme-orange
+            &:before
+              background-color: $chennai-orange
+          &.theme-white
+            &:before
+              background-color: $white
+          &.theme-dark
+            &:before
+              background-color: $colr-common-text
+          &:before
+            content: ''
+            width: 100%
+            height: 3px
+            background-color: $chennai-orange
+            position: absolute
+            top: 0
+            left: 0
+          .tl-cntr1-para
+            +para()
+            color: $white
+            font-size: get-vw(18px)
+            font-weight: normal
+    .tl-his
+      .tl-his-b
+        padding-top: 230px
+        .tl-his-2006
+          padding: 0 0 80px
+          .tl-his-cntr1
+            width: get-single-column() * 9
+            margin-right: get-single-column()
+            float: left
+          .tl-his-cntr2
+            @extend %tl-cntr
+            margin-top: 100px
+            margin-right: get-single-column() * 5
+            float: left
+          .tl-his-cntr3
+            @extend %tl-cntr
+            margin-top: 100px
+            margin-left: get-single-column() * 5
+            float: left
+          .tl-his-cntr4
+            @extend %tl-cntr
+            margin-top: 160px
+            float: left
+          .tl-his-cntr5
+            @extend %tl-cntr
+            margin-top: 200px
+            margin-right: get-single-column() * 5
+            float: left
+        .tl-his-2009
+          padding-bottom: 100px
+          .tl-his-cntr1
+            @extend %tl-cntr
+            float: left
+        .tl-his-2010
+          padding-bottom: 70px
+          .tl-his-cntr1
+            @extend %tl-cntr
+            margin-left: get-single-column() * 5
+            float: left
+        .tl-his-2011
+          padding-bottom: 80px
+          .tl-his-cntr1
+            @extend %tl-cntr
+            margin-left: get-single-column() * 10
+            float: left
+        .tl-his-2013
+          padding-bottom: 80px
+          .tl-his-cntr1
+            @extend %tl-cntr
+            margin-left: 0
+            float: left
+          .tl-his-cntr2
+            @extend %tl-cntr
+            margin-top: 30px
+            margin-left: 0
+            float: left
+        .tl-his-2014
+          padding-bottom: 120px
+          .tl-his-cntr1
+            @extend %tl-cntr
+            margin-left: get-single-column() * 10
+            float: left
+        .tl-his-2015
+          padding-bottom: 100px
+          .tl-his-cntr1
+            @extend %tl-cntr
+            float: left
+        .tl-his-2016
+          padding-bottom: 100px
+          .tl-his-cntr1
+            @extend %tl-cntr
+            margin-left: get-single-column() * 5
+            float: left
+          .tl-his-cntr2
+            @extend %tl-cntr
+            margin-top: 90px
+            float: left
+    .tl-alphas
+      background-color: $spark-red
+      .tl-alphas-b
+        padding-top: 120px
+        .tl-alpha-2016
+          padding-bottom: 80px
+          .tl-alpha-cntr1
+            width: get-single-column() * 7
+            margin-left: get-single-column() * 5
+            margin-right: get-single-column() * 3
+            float: left
+          .tl-alpha-cntr2
+            @extend %tl-cntr
+            margin-top: 150px
+            float: left
+        .tl-alpha-2017
+          padding-bottom: 80px
+          .tl-alpha-cntr1
+            @extend %tl-cntr
+            margin-top: 50px
+            float: left
+          .tl-alpha-cntr2
+            @extend %tl-cntr
+            margin-top: 150px
+            float: left
+    .tl-roadmap
+      background-color: $limoncello-yellow
+      .tl-roadmap-b
+        padding-top: 120px
+        padding-bottom: 150px
+        .tl-roadmap-2017
+          .tl-roadmap-cntr1
+            width: get-single-column() * 7
+            margin-left: get-single-column() * 5
+            margin-right: get-single-column()
+            float: left
+          .tl-roadmap-cntr2
+            width: get-single-column() * 10
+            margin-bottom: 70px
+            margin-right: get-single-column()
+            float: left
+            .tl-roadmap-cntr2-b
+              +clearfix()
+              .tl-roadmap-cntr2-i
+                width: 50%
+                padding-left: 70px
+                float: left
+                margin: 25px 0
+                position: relative
+                a
+                  +para()
+                  font-size: get-vw(18px)
+                  line-height: 40px
+                  display: inline-block
+                  text-decoration: none
+                  position: relative
+                  &:after
+                    content: ''
+                    display: block
+                    width: 100%
+                    height: 1px
+                    background-color: $colr-common-text
+                    position: absolute
+                    bottom: 5px
+                    left: 0
+                &:before
+                  content: ''
+                  display: block
+                  width: 50px
+                  height: 100%
+                  position: absolute
+                  top: 0
+                  left: 0
+                  background-image: url($url-arrow-right-orange)
+                  background-position: left center
+                  background-size: 40px
+                  background-repeat: no-repeat
+          .tl-roadmap-cntr3
+            @extend %tl-cntr
+            margin-top: 50px
+            margin-left: get-single-column() * 5
+            float: left
+          .tl-roadmap-cntr4
+            @extend %tl-cntr
+            margin-top: 140px
+            float: left
+        .tl-roadmap-2018
+          .tl-roadmap-cntr1
+            @extend %tl-cntr
+            margin-left: get-single-column() * 10
+            margin-right: get-single-column() * 5
+            float: left
+          .tl-roadmap-cntr2
+            @extend %tl-cntr
+            margin-left: get-single-column() * 5
+            float: left
+          .tl-roadmap-cntr3
+            @extend %tl-cntr
+            margin-top: 130px
+            float: left
+          .tl-roadmap-cntr4
+            @extend %tl-cntr
+            margin-top: 210px
+            float: left
+    .tl-future
+      background-color: $light-grey
+      .tl-future-b
+        padding-top: 120px
+        padding-bottom: 150px
+        .tl-future-next
+          padding-bottom: 120px
+          .tl-future-cntr1
+            @extend %tl-cntr
+            float: left
+          .tl-future-cntr2
+            @extend %tl-cntr
+            margin-top: 40px
+            float: left
+          .tl-future-cntr3
+            @extend %tl-cntr
+            margin-top: 140px
+            float: left
+          .tl-future-cntr4
+            @extend %tl-cntr
+            margin-top: 10px
+            margin-left: get-single-column() * 5
+            float: left
+          .tl-future-cntr5
+            @extend %tl-cntr
+            margin-top: 90px
+            float: left
+          .tl-future-cntr6
+            @extend %tl-cntr
+            margin-top: 160px
+            float: left
+          .tl-future-cntr7
+            width: get-single-column() * 8
+            margin-top: 95px
+            margin-left: get-single-column() * 4
+            margin-right: get-single-column()
+            padding: get-single-column()
+            background-color: $zingy-sky-blue
+            float: left
+          .tl-future-cntr8
+            width: get-single-column() * 8
+            margin-top: 210px
+            margin-right: get-single-column()
+            padding: get-single-column()
+            background-color: $pinky-grey
+            float: left
+        .tl-future-beta
+          .tl-future-cntr1
+            @extend %tl-cntr
+            float: left
+          .tl-future-cntr2
+            @extend %tl-cntr
+            min-height: 150px
+            float: left
+          .tl-future-cntr3
+            @extend %tl-cntr
+            margin-right: get-single-column() * 5
+            min-height: 150px
+            float: left
+          .tl-future-cntr4
+            @extend %tl-cntr
+            margin-top: 90px
+            margin-left: get-single-column() * 5
+            float: left
+          .tl-future-cntr5
+            @extend %tl-cntr
+            margin-top: 90px
+            float: left
+    .tl-live
+      height: 350px
+      padding-top: 50px
+      background-color: $light-grey
+      background-image: url($url-timeline-pattern-1)
+      box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+      .tl-live-b
+        background-color: $unit-green
+        .tl-live-h
+          height: 100%
+          line-height: 300px
+          padding-left: get-single-column() * 3
+          +font-bold()
+          font-size: get-vw(30px)
+          color: $white

@@ -1,0 +1,28 @@
+@media screen and (min-width: $md-width) and (max-width: $lg-width - 1)
+  .page-end
+    .page-end-b
+      .page-end-sec
+        display: block
+        &.lft
+          width: 100%
+          padding-left: get-single-column() * 2
+        &.rgt
+          width: 100%
+          padding: 0 0 200px
+        .lft-sec
+          width: get-single-column() * 15
+          padding-bottom: 0
+          .lft-sec-b
+            .lft-sec-p
+              font-size: get-md-vw(24px)
+            .lft-sec-btn
+              .btn
+                line-height: 60px
+                font-size: get-md-vw(21px)
+        .rgt-sec
+          width: get-single-column() * 10
+          margin-left: get-single-column() * 13
+          margin-top: -70px
+          .rgt-sec-b
+            .rgt-sec-i
+              font-size: get-md-vw(18px)

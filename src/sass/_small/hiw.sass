@@ -1,0 +1,195 @@
+@media screen and (min-width: $sm-width) and (max-width: $md-width - 1)
+  .hiw
+    .hiw-b
+      .hiw-common-lay
+        width: 100%
+        margin-left: 0
+        margin-right: 0
+        padding: 0 get-single-column() * 8 0 get-single-column() * 2
+      .hiw-ctnt
+        .hiw-ctnt-h
+          font-size: get-sm-vw(30px)
+          &:after
+            display: none
+        .hiw-ctnt-para
+          font-size: get-sm-vw(18px)
+      .hiw-bnr
+        .hiw-bnr-b
+          width: get-single-column() * 20
+          margin-top: 160px
+          margin-left: get-single-column() * 2
+          margin-right: get-single-column() * 2
+          padding-bottom: 150px
+          .hiw-bnr-h
+            margin-bottom: 40px
+      .hiw-vault
+        padding-top: 0
+        &:before
+          display: none
+        &:after
+          display: none
+        .hiw-vault-b
+          .hiw-vault-cntr1
+            padding-top: 230px
+            position: relative
+            &:after
+              content: ''
+              display: block
+              width: get-single-column() * 6
+              height: 100%
+              background-image: url($url-hiw-pattern-6)
+              position: absolute
+              top: 0
+              right: 0
+            .hiw-vault-cntr1-b
+              padding-bottom: 80px
+          .hiw-vault-cntr2
+            width: 100%
+            margin: 0
+            padding: 0
+            position: relative
+            &:after
+              content: ''
+              display: block
+              width: get-single-column() * 6
+              height: 100%
+              background-image: url($url-hiw-pattern-6)
+              position: absolute
+              top: 0
+              right: 0
+            .hiw-vault-cntr2-para
+              width: get-single-column() * 9
+              margin-left: get-single-column() * 2
+              font-size: get-sm-vw(24px) !important
+            .hiw-vault-cntr2-link
+              margin-left: get-single-column() * 2
+          .hiw-vault-cntr3
+            .hiw-vault-cntr3-b
+              padding: 120px 0 80px
+          .hiw-vault-cntr4
+            position: static
+            width: 100%
+            float: left
+            padding: 0
+            .hiw-vault-cntr4-b
+              padding-bottom: 70px
+              position: relative
+              &:before
+                left: get-single-column() * 9
+                bottom: 70px
+                transform: rotate(-90deg)
+              &:after
+                width: 500px
+                transform: translate(0)
+                top: -60px
+                left: auto
+                right: 0
+                background-position: 120px 0
+              .hiw-vault-cntr4-para
+                font-size: get-sm-vw(18px)
+                width: get-single-column() * 9
+                margin-left: get-single-column() * 2
+              .lnk-btn
+                margin-left: get-single-column() * 2
+                font-size: get-sm-vw(16px)
+      .hiw-autonomous
+        padding-top: 0
+        &:before
+          display: none
+        &:after
+          width: get-single-column() * 6
+          background-size: auto
+          z-index: 3
+        .hiw-autonomous-b
+          padding-top: 0
+          padding-bottom: 0
+          .hiw-autonomous-cntr1
+            padding-top: 170px
+            padding-bottom: 110px
+            +clearfix()
+          .hiw-autonomous-cntr2
+            width: 100%
+            margin: 0
+            padding: 0
+            background-color: $limoncello-yellow
+            .hiw-autonomous-cntr2-b
+              width: get-single-column() * 11
+              margin: 0 get-single-column() * 2
+              .hiw-autonomous-cntr2-para
+                font-size: get-sm-vw(24px)
+      .hiw-authentication
+        background-color: transparent
+        &:before
+          display: none
+        &:after
+          width: get-single-column() * 6
+          background-size: cover
+          z-index: 3
+        .hiw-authentication-b
+          padding-bottom: 0
+          .hiw-authentication-cntr1
+            +clearfix()
+            padding-bottom: 80px
+          .hiw-authentication-cntr2
+            width: 100%
+            margin: 0
+            padding: 0
+            background-color: $light-grey
+            .hiw-authentication-cntr2-b
+              width: get-single-column() * 11
+              margin: 0 get-single-column() * 2
+              .hiw-authentication-cntr2-para
+                font-size: get-sm-vw(24px)
+      .hiw-encryption
+        &:before,
+        &:after
+          width: get-single-column() * 6
+        &:after
+          background-size: cover
+        .hiw-encryption-b
+          padding-top: 120px
+          padding-bottom: 0
+          .hiw-encryption-cntr1
+            +clearfix()
+            padding-bottom: 160px
+          .hiw-encryption-cntr2
+            width: get-single-column() * 18
+            margin: 0
+            padding: 0
+            .hiw-encryption-cntr2-b
+              .hiw-encryption-cntr2-cap
+                padding-left: 0
+                margin-right: get-single-column() * 2
+                padding-right: 50px
+                font-size: get-sm-vw(18px)
+                &:before
+                  left: auto
+                  right: 0
+      .hiw-data-chain
+        &:before
+          width: get-single-column() * 6
+          background-color: $white
+        &:after
+          width: get-single-column() * 6
+          background-size: auto
+          background-position: -50px 0
+        .hiw-data-chain-b
+          padding-bottom: 0
+          .hiw-data-chain-cntr1
+            +clearfix()
+            padding-bottom: 100px
+          .hiw-data-chain-cntr2
+            width: 100%
+            margin: 0
+            padding: 0
+            background-color: $unit-green
+            .hiw-data-chain-cntr2-b
+              width: get-single-column() * 18
+              padding-left: get-single-column() * 2
+              .hiw-data-chain-cntr2-para
+                color: $white
+                font-size: get-sm-vw(24px)
+              .lnk-underline
+                color: $limoncello-yellow
+                &:after
+                  background-color: $limoncello-yellow

@@ -1,0 +1,154 @@
+@media screen and (min-width: $md-width) and (max-width: $lg-width - 1)
+  .safecoins
+    .safecoins-b
+      .safecoins-lay1
+        .safecoins-lay1-b
+          .safecoins-lay1-sec
+            &.lft
+              width: get-single-column() * 18
+              padding-left: get-single-column() * 2
+            &.rgt
+              width: 100%
+
+      .safecoins-cntr
+        .safecoins-cntr-h
+          font-size: get-md-vw(30px)
+        .safecoins-cntr-para
+          font-size: get-md-vw(21px)
+      .safecoins-bnr
+        .safecoins-bnr-i
+          .safecoins-bnr-i-b
+            &:after
+              background-image: url($url-sc-bnr-bg-md)
+            .safecoins-bnr-i-cnt1
+              width: get-single-column() * 13
+              margin-left: get-single-column() * 2
+            .safecoins-bnr-i-cnt2
+              width: get-single-column() * 13
+              margin-left: get-single-column() * 2
+      .safecoins-share
+        &:after
+          width: get-single-column() * 6
+        .safecoins-share-b
+          padding-top: 117px
+          .rgt
+            padding-left: get-single-column() * 2
+            position: relative
+            .safecoins-share-vid
+              width: get-single-column() * 13
+              margin-top: 110px
+              height: auto
+              box-sizing: content-box
+              iframe
+                height: 300px
+            .safecoins-share-vid-cap
+              position: absolute
+              bottom: 0
+              left: get-single-column() * 14
+              font-size: get-md-vw(18px)
+              width: auto
+              margin-top: 0
+              padding-top: 60px
+              padding-left: 0
+              &:after
+                width: 100%
+                transform: rotate(0deg)
+                background-image: url($url-arrow-left)
+                top: 0
+                background-position: left top
+                background-size: 35px
+      .safecoins-contribute
+        &:before
+          display: none
+        &:after
+          width: get-single-column() * 6
+        .safecoins-contribute-b
+          margin-top: 0
+          padding-top: 120px
+          padding-bottom: 0
+          .lft
+            padding-bottom: 110px !important
+          .rgt
+            position: absolute
+            top: 100%
+            width: get-single-column() * 12 !important
+            padding: 100px get-single-column() 200px get-single-column() * 2 !important
+            .safecoins-cntr
+              .safecoins-cntr-h
+                font-size: get-md-vw(21px)
+              .safecoins-cntr-para
+                font-size: get-md-vw(18px)
+      .safecoins-buy
+        background-color: $limoncello-yellow
+        &:after
+          width: get-single-column() * 12
+          z-index: 0
+          background-image: url($url-safecoin-pattern-yellow)
+          background-color: $warm-white
+        .safecoins-buy-b
+          z-index: 1
+          .lft
+            // display: none
+            width: 100% !important
+            position: static
+            float: right
+            box-shadow: none
+            padding-top: 115px !important
+            padding-bottom: 70px !important
+            padding-left: get-single-column() * 2 !important
+            padding-right: get-single-column() * 8 !important
+          .rgt
+            float: right
+            width: get-single-column() * 12 !important
+            padding: 100px get-single-column() * 2 150px get-single-column()
+            margin-bottom: 200px
+            .safecoins-cntr
+              .safecoins-cntr-h
+                font-size: get-md-vw(21px)
+              .safecoins-cntr-para
+                font-size: get-md-vw(18px)
+      .safecoins-exchange
+        &:after
+          display: none
+        .safecoins-exchange-b
+          padding-top: 40px
+          padding-bottom: 120px
+          // padding-left: get-single-column() * 3
+          // padding-right: get-single-column() * 2
+          .lft
+            width: get-single-column() * 12 !important
+            float: left
+            padding: 0 get-single-column() * 2 0 get-single-column() * 3 !important
+            .safecoins-exchange-i
+              width: 50%
+              margin-top: 50px
+              .safecoins-exchange-i-img
+                width: 100px
+                height: 100px
+              .safecoins-exchange-i-name
+                font-size: get-md-vw(18px)
+          .rgt
+            width: get-single-column() * 12 !important
+            float: left
+            padding-top: 50px !important
+            padding-bottom: 0
+            padding-left: get-single-column()
+            padding-right: get-single-column() * 2
+            .safecoins-cntr
+              .safecoins-cntr-h
+                font-size: get-md-vw(21px)
+              .safecoins-cntr-para
+                font-size: get-md-vw(18px)
+      .safecoins-faq
+        .safecoins-faq-b
+          padding-top: 120px
+          .safecoins-faq-more
+            padding-left: get-single-column() * 2
+          .safecoins-faq-h
+            padding-left: get-single-column() * 2
+            padding-right: get-single-column() * 2
+            .safecoins-faq-title
+              font-size: get-md-vw(28px)
+            .safecoins-faq-h-opt
+              .btn
+                font-size: get-md-vw(16px)

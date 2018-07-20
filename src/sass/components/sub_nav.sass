@@ -1,0 +1,70 @@
+.sub-nav
+  width: 100%
+  height: 130px
+  position: absolute
+  top: 100%
+  left: 0
+  z-index: 98
+  .lnk-underline
+    &:after
+      width: 100%
+    font-size: get-vw(18px) !important
+  &.hiw
+    .sub-nav-b
+      width: get-single-column() * 18
+      background-color: $spark-red
+      nav
+        a
+          color: $white
+          &:after
+            background-color: $white
+  &.timeline
+    .sub-nav-b
+      width: get-single-column() * 13
+  &.half-white
+    .sub-nav-b
+      background-color: $light-grey
+      nav
+        a
+          color: $colr-common-text
+          &:after
+            background-color: $colr-common-text
+  &.red
+    .sub-nav-b
+      background-color: $spark-red
+      nav
+        a
+          color: $white
+          &:after
+            background-color: $white
+  &.grey-blue
+    .sub-nav-b
+      background-color: $unit-green
+      nav
+        a
+          color: $white
+          &:after
+            background-color: $white
+  &.grey-red
+    .sub-nav-b
+      background-color: $pinky-grey
+  &.fixed
+    position: fixed
+    top: -24px
+    left: 0
+  .sub-nav-b
+    width: get-single-column() * 15
+    padding-left: get-single-column() * 3
+    background-color: $limoncello-yellow
+    padding-top: 60px
+    height: 100%
+    position: relative
+    box-shadow:  0px 17px 25px rgba(0, 0, 0, 0.12)
+    transition: background-color .2s linear
+    z-index: 99
+    nav
+      width: 100%
+      display: flex
+      a
+        flex: 1
+        margin-right: 30px

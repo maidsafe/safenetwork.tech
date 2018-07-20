@@ -1,0 +1,183 @@
+@media screen and (max-width: $sm-width - 1)
+  .safecoins
+    .safecoins-b
+      .safecoins-lay1
+        .safecoins-lay1-b
+          .safecoins-lay1-sec
+            float: left
+            &.lft
+              width: 100%
+              padding: 0 get-single-column() * 2
+            &.rgt
+              width: 100%
+              padding: 0 get-single-column() * 2
+      .safecoins-cntr
+        .safecoins-cntr-h
+          @extend %maxWidth
+          font-size: 24px
+          margin-bottom: 30px
+        .safecoins-cntr-para
+          @extend %maxWidth
+          font-size: 18px
+      .safecoins-bnr
+        height: 560px
+        .safecoins-bnr-i
+          &:last-child
+            .safecoins-bnr-i-b:after
+              width: 80%
+              height: 100%
+              top: auto
+              bottom: 0
+              background-image: url($url-sc-bnr-bg-md)
+          .safecoins-bnr-i-b
+            &:before
+              width: 100% !important
+            .safecoins-bnr-i-cnt1
+              width: 100%
+              margin: (90px - 33px) 0 0 !important
+              padding-left: get-single-column() * 2
+              padding-right: get-single-column() * 2
+              padding-bottom: 170px
+            .safecoins-bnr-i-cnt2
+              width: 100%
+              margin: (90px - 33px) 0 0 !important
+              padding-left: get-single-column() * 2
+              padding-right: get-single-column() * 2
+              p
+                padding-bottom: 24px
+              h1
+                padding-top: 34px
+              h1:after
+                height: 3px
+      .safecoins-share
+        .safecoins-share-b
+          padding-top: 70px
+          .rgt
+            margin-top: 40px
+            padding-right: 0
+            padding-top: 100px !important
+            position: relative
+            .safecoins-share-vid
+              height: auto
+              iframe
+                height: 310px
+            .safecoins-share-vid-cap
+              font-size: 18px
+              padding-bottom: 20px
+              position: absolute
+              top: 0
+              right: get-single-column() * 3
+              padding-right: 50px
+              margin-top: 0
+              &:after
+                top: auto
+                left: auto
+                bottom: 20px
+                right: 0
+                transform: rotate(0)
+                background-size: 30px
+                background-position: center bottom
+      .safecoins-contribute
+        &:before
+          display: none
+        .safecoins-contribute-b
+          margin-top: 0
+          padding-top: 65px
+          padding-bottom: 0
+          z-index: 1
+          .rgt
+            background-color: $limoncello-yellow
+            margin-top: 65px
+            padding-top: 65px !important
+            padding-bottom: 80px !important
+            position: relative
+            &:after
+              content: ''
+              display: block
+              width: get-single-column() * 3
+              height: 100%
+              background-image: url($url-safecoin-pattern-yellow)
+              position: absolute
+              top: 0
+              right: 0
+              z-index: 0
+            .safecoins-cntr
+              position: relative
+              z-index: 1
+              .safecoins-cntr-h
+                font-size: 21px
+              .safecoins-cntr-para
+                font-size: 18px
+      .safecoins-buy
+        &:after
+          display: none
+        .safecoins-buy-b
+          .lft
+            padding-top: 120px !important
+            padding-bottom: 80px !important
+            position: relative
+            box-shadow: none
+            &:before
+              content: ''
+              display: block
+              width: 100%
+              height: 60px
+              position: absolute
+              top: 0
+              left: 0
+              background-image: url($url-safecoin-pattern-blue)
+          .rgt
+            padding-bottom: 130px !important
+            .safecoins-cntr
+              .safecoins-cntr-h
+                font-size: 21px
+              .safecoins-cntr-para
+                font-size: 18px
+      .safecoins-exchange
+        padding-bottom: 470px
+        background-color: $zingy-sky-blue
+        &:after
+          top: auto
+          bottom: 0
+          width: 100%
+          height: 90px
+        .safecoins-exchange-b
+          padding-top: 70px
+          position: relative
+          .lft
+            position: absolute
+            left: 0
+            top: 100%
+            padding: 0 get-single-column() * 2 !important
+            .safecoins-exchange-i
+              width: 50%
+              margin-top: 30px
+              .safecoins-exchange-i-img
+                width: 75px
+                height: 75px
+              .safecoins-exchange-i-name
+                font-size: 18px
+          .rgt
+            padding-top: 0 !important
+            padding-bottom: 60px !important
+            padding-left: 0
+            padding-right: 0
+            .safecoins-cntr
+              .safecoins-cntr-h
+                font-size: 21px
+              .safecoins-cntr-para
+                font-size: 18px
+      .safecoins-faq
+        .safecoins-faq-b
+          padding-top: 70px
+          .safecoins-faq-more
+            padding-left: get-single-column() * 2
+            margin-top: 40px
+            margin-bottom: 40px
+          .safecoins-faq-h
+            padding-left: get-single-column() * 2
+            padding-right: get-single-column() * 2
+            .safecoins-faq-title
+              font-size: 24px
+            .safecoins-faq-h-opt
+              display: none

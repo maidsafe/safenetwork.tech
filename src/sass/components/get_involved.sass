@@ -1,0 +1,246 @@
+.get-inv
+  .get-inv-b
+    .get-inv-lay
+      .get-inv-lay-b
+        +clearfix()
+        .get-inv-lay-cntr1
+          width: get-single-column() * 8
+          margin-left: get-single-column() * 3
+          margin-right: get-single-column() * 2
+          float: left
+        .get-inv-lay-cntr2
+          width: get-single-column() * 7
+          margin-left: get-single-column()
+          margin-right: get-single-column() * 3
+          float: left
+    .get-inv-cnt
+      .get-inv-cnt-h1
+        +font-bold()
+        font-size: get-vw(30px)
+        margin-bottom: 40px
+      .get-inv-cnt-h2
+        +font-bold()
+        font-size: get-vw(21px)
+        margin-bottom: 35px
+      .get-inv-cnt-para1
+        +para()
+        font-size: get-vw(21px)
+        margin-bottom: 25px
+        a
+          text-decoration: none
+          color: $spark-red
+          display: inline-block
+          position: relative
+          &:after
+            content: ''
+            width: 100%
+            height: 1px
+            background-color: $spark-red
+            position: absolute
+            bottom: 0
+            left: 0
+        &:last-child
+          margin-bottom: 0
+      .get-inv-cnt-para2
+        +para()
+        font-size: get-vw(18px)
+        margin-bottom: 25px
+        &:last-child
+          margin-bottom: 0
+      .get-inv-cnt-lnk-btn
+        +font-bold()
+        font-size: get-vw(16px)
+        line-height: 60px
+        padding: 0 30px
+        border-radius: 30px
+        display: inline-block
+        text-decoration: none
+        &.red
+          background-color: $spark-red
+          color: $white
+        &.blue
+          background-color: $deep-blue
+          color: $white
+        &.underline
+          padding: 0
+          background-color: transparent
+          color: $spark-red
+          position: relative
+          display: inline-block
+          &:before
+            content: ''
+            display: block
+            width: 60%
+            height: 5px
+            position: absolute
+            bottom: 0
+            left: 0
+            background-color: $spark-red
+        &.with-arrow
+          padding-right: 70px
+          position: relative
+          &.yellow
+            &:after
+              background-image: url($url-arrow-right-tilt-yellow) !important
+          &:after
+            content: ''
+            display: block
+            width: 30px
+            height: 100%
+            position: absolute
+            top: 0
+            right: 30px
+            background-image: url($url-arrow-right-tilt)
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 18px
+    .get-inv-bnr
+      position: relative
+      &:after
+        content: ''
+        display: block
+        width: get-single-column() * 11
+        height: 100%
+        background-color: $zingy-sky-blue
+        position: absolute
+        bottom: 0
+        right: 0
+        z-index: 0
+      .get-inv-bnr-bg
+        position: relative
+        background-color: $spark-red
+        height: 520px
+        z-index: 1
+        &:after
+          content: ''
+          width: 70%
+          height: 100%
+          padding-bottom: 300px
+          background-image: url($url-get-involved-pattern)
+          background-position: right
+          background-repeat: no-repeat
+          display: block
+          position: absolute
+          top: 0
+          right: 0
+          z-index: 1
+      .get-inv-bnr-b
+        position: relative
+        background-color: $dawn-pink
+        width: get-single-column() * 18
+        padding: 100px get-single-column() * 3 120px get-single-column() * 2
+        margin-top: -275px
+        z-index: 2
+        .get-inv-cnt-h
+          color: $deep-blue
+          position: relative
+          padding-bottom: 50px
+          &:after
+            content: ''
+            display: block
+            width: 100%
+            height: 5px
+            background-color: $deep-blue
+            position: absolute
+            bottom: 0
+            left: 0
+        .get-inv-cnt-para
+          color: $deep-blue
+          margin-top: 50px
+    .get-inv-community
+      position: relative
+      &:after
+        content: ''
+        display: block
+        width: get-single-column() * 11
+        height: 100%
+        background-color: $zingy-sky-blue
+        position: absolute
+        top: 0
+        right: 0
+        z-index: 0
+      .get-inv-community-b
+        padding-top: 120px
+        padding-bottom: 80px
+        position: relative
+        z-index: 2
+        .get-inv-community-cntr2
+          margin-top: 210px
+        .get-inv-community-cntr3
+          width: get-single-column() * 9
+          height: 420px
+          background-image: url($url-hiw-peruse)
+          background-repeat: no-repeat
+          background-position: 200px center
+          background-size: contain
+          position: absolute
+          top: -150px
+          right: 0
+          z-index: 3
+          .get-inv-community-cntr3-para
+            +font-bold()
+            padding-left: 50px
+            font-size: get-vw(18px)
+            width: 55%
+            position: absolute
+            bottom: 100%
+            right: 30px
+            transform: translate(0, -40px)
+            &:before
+              content: ''
+              display: block
+              width: 50px
+              height: 100%
+              background-image: url($url-arrow-down-orange)
+              background-repeat: no-repeat
+              background-position: center left
+              background-size: 30px
+              position: absolute
+              top: 0
+              left: 0
+    .get-inv-test-net
+      .get-inv-test-net-b
+        padding-top: 80px
+        padding-bottom: 140px
+        .get-inv-test-net-vid
+          width: 100%
+          margin-top: 70px
+          height: auto
+          iframe
+            display: block
+            width: 100%
+            height: 300px
+    .get-inv-develop
+      .get-inv-develop-b
+        background-color: $light-grey
+        padding-top: 90px
+        padding-bottom: 140px
+        .get-inv-develop-cntr3
+          margin-top: 60px
+    .get-inv-faq
+      .get-inv-faq-b
+        padding-top: 175px
+        padding-bottom: 130px
+        .get-inv-faq-more
+          padding-left: get-single-column() * 3
+        .get-inv-faq-h
+          padding-left: get-single-column() * 3
+          padding-right: get-single-column() * 3
+          .get-inv-faq-title
+            +font-bold()
+            font-size: get-vw(28px)
+            line-height: normal
+            display: inline-block
+          .get-inv-faq-h-opt
+            float: right
+            .btn
+              +font-bold()
+              padding: 0 55px
+              background-color: $shelf-blue
+              color: $white
+              line-height: 40px
+              font-size: get-vw(16px)
+              border-radius: 20px
+              outline: 0
+              border: 0
+              cursor: pointer

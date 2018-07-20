@@ -1,0 +1,141 @@
+@media screen and (min-width: $md-width) and (max-width: $lg-width - 1)
+  .hiw
+    .hiw-b
+      .hiw-common-lay
+        width: get-single-column() * 11
+        margin-left: get-single-column() * 2
+      .hiw-ctnt
+        .hiw-ctnt-h
+          font-size: get-md-vw(30px)
+          &:after
+            display: none
+        .hiw-ctnt-para
+          font-size: get-md-vw(18px)
+      .hiw-bnr
+        .hiw-bnr-b
+          width: get-single-column() * 15
+          margin-left: get-single-column() * 2
+          .hiw-bnr-h
+            margin-bottom: 40px
+      .hiw-vault
+        &:before
+          width: get-single-column() * 9
+        &:after
+          width: get-single-column() * 10
+        .hiw-vault-b
+          .hiw-vault-cntr2
+            width: get-single-column() * 15
+            margin-left: 0
+            margin-right: 0
+            padding-left: get-single-column() * 2
+            padding-right: get-single-column() * 6
+            margin-bottom: 0
+            .hiw-vault-cntr2-para
+              font-size: get-md-vw(24px) !important
+          .hiw-vault-cntr3
+            position: absolute
+            top: 100%
+            left: 0
+            padding-top: 120px
+          .hiw-vault-cntr4
+            width: get-single-column() * 9
+            .hiw-vault-cntr4-b
+              padding-bottom: 90px
+              &:before
+                bottom: 50px
+                right: 90px
+                left: auto
+                transform: translate(0)
+              &:after
+                box-sizing: content-box
+                padding-left: get-single-column() * 4
+                transform: translate(0)
+                top: 100%
+                left: auto
+                right: 0
+                margin-top: -20px
+                background-position: left center
+              .hiw-vault-cntr4-para
+                font-size: get-md-vw(18px)
+              .lnk-btn
+                font-size: get-md-vw(16px)
+      .hiw-autonomous
+        position: relative
+        &:before
+          width: get-single-column() * 9
+        &:after
+          width: get-single-column() * 10
+          background-size: auto
+        .hiw-autonomous-b
+          padding-top: 550px
+          .hiw-autonomous-cntr1
+            padding-top: 100px
+          .hiw-autonomous-cntr2
+            width: get-single-column() * 9
+            margin: 0
+            position: absolute
+            bottom: 0
+            right: 0
+            background-color: $limoncello-yellow
+            .hiw-autonomous-cntr2-b
+              padding-bottom: 185px
+              .hiw-autonomous-cntr2-para
+                font-size: get-md-vw(24px)
+      .hiw-authentication
+        position: relative
+        &:before,
+        &:after
+          width: get-single-column() * 9
+        .hiw-authentication-b
+          .hiw-authentication-cntr2
+            position: absolute
+            bottom: 0
+            right: 0
+            width: get-single-column() * 9
+            margin: 0
+            .hiw-authentication-cntr2-b
+              padding-bottom: 160px
+              .hiw-authentication-cntr2-para
+                font-size: get-md-vw(24px)
+      .hiw-encryption
+        &:before,
+        &:after
+          width: get-single-column() * 9
+        .hiw-encryption-b
+          padding-bottom: 0
+          .hiw-encryption-cntr2
+            width: get-single-column() * 15
+            margin: 160px 0 0
+            .hiw-encryption-cntr2-b
+              height: 350px
+              iframe
+                height: 350px
+              .hiw-encryption-cntr2-cap
+                padding-left: 0
+                margin-right: get-single-column() * 2
+                padding-right: 50px
+                font-size: get-md-vw(18px)
+                &:before
+                  left: auto
+                  right: 0
+      .hiw-data-chain
+        &:before
+          width: get-single-column() * 9
+          background-color: $white
+        &:after
+          width: get-single-column() * 9
+          background-size: cover
+        .hiw-data-chain-b
+          padding-bottom: 0
+          .hiw-data-chain-cntr1
+            +clearfix()
+            padding-bottom: 160px
+          .hiw-data-chain-cntr2
+            width: get-single-column() * 9
+            position: absolute
+            bottom: 0
+            right: 0
+            margin: 0
+            .hiw-data-chain-cntr2-b
+              .hiw-data-chain-cntr2-para
+                font-size: get-md-vw(24px)

@@ -1,0 +1,77 @@
+@media screen and (max-width: $sm-width - 1)
+  .main-nav
+    display: inline-block
+    float: right
+    position: relative
+    z-index: 100
+    &.open
+      position: fixed
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      overflow-y: auto
+      nav
+        display: block
+        .nav-mob-h
+          display: block
+          padding-top: 33px
+          padding-bottom: 33px
+          padding-left: get-single-column() * 2
+          padding-right: get-single-column() * 2
+          .site-logo
+            width: get-single-column() * 11
+            a
+              img
+                width: 100%
+      .mob-nav-btn
+        .btn
+          background-image: url($url-mob-menu-close)
+          background-size: 25px
+    nav
+      position: fixed
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      display: none
+      background-color: $white
+      overflow: auto
+      padding-bottom: 100px
+      &.light-theme,
+      &.half-light-theme
+        .nav-b
+          width: 100%
+          a
+            color: $colr-main-nav
+            &:hover,
+            &.active
+              color: $colr-main-nav-active
+            &.btn-lnk
+              background-color: $colr-main-nav-btn-link-bg
+              color: $colr-main-nav-btn-link-text
+              &:hover
+                background-color: $colr-main-nav-btn-link-active-bg
+                border-color: $colr-main-nav-btn-link-border
+                color: $colr-main-nav-btn-link-text
+      .nav-b
+        width: 100%
+        height: 100%
+        text-align: center
+        display: table
+        .nav-ib
+          display: table-cell
+          vertical-align: middle
+        a
+          display: block
+          font-size: 21px
+          margin-bottom: 40px
+          margin-right: 0
+          &.btn-lnk
+            width: 200px
+            max-width: 250px
+            margin:  0 auto
+            line-height: 50px
+            border-radius: 25px
+    .mob-nav-btn
+      display: block

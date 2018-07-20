@@ -1,0 +1,97 @@
+.main-nav
+  display: inline-block
+  float: right
+  nav
+    line-height: $header-content-height
+    &.light-theme
+      .nav-b
+        width: 100%
+        a
+          color: $white
+          &:hover,
+          &.active
+            color: $white
+          &.btn-lnk
+            background-color: $white
+            color: $spark-red
+            &:hover
+              background-color: transparent
+              border-color: $white
+              color: $white
+    &.half-light-theme
+      .nav-b
+        width: 100%
+        a
+          color: $white
+          &:hover,
+          &.active
+            color: $spark-red
+    .nav-mob-h
+      width: 100%
+      display: none
+      padding-top: $header-padding-top
+      padding-left: get-single-column()
+      padding-right: get-single-column()
+      +clearfix()
+      .site-logo
+        display: inline-block
+        height: $header-content-height
+        float: left
+        a
+          display: inline-block
+      .mob-nav-close-btn
+        float: right
+        .btn
+          display: block
+          width: $header-content-height
+          height: $header-content-height
+          background-color: transparent
+          border-radius: 50%
+          background-image: url($url-mob-menu-close)
+          background-size: 25px
+          background-position: center
+          background-repeat: no-repeat
+          cursor: pointer
+          outline: none
+          border: 0
+    a
+      display: inline-block
+      text-decoration: none
+      color: $colr-main-nav
+      +font-bold()
+      font-size: 16px
+      font-weight: 600
+      margin-right: $main-nav-spacing
+      &:hover,
+      &.active
+        color: $colr-main-nav-active
+      &:last-child
+        margin-right: 0
+      &.btn-lnk
+        line-height: 36px
+        padding: 0 20px
+        border-radius: 20px
+        border: 2px solid $colr-main-nav-btn-link-border
+        background-color: $colr-main-nav-btn-link-bg
+        color: $colr-main-nav-btn-link-text
+        &:hover
+          background-color: $colr-main-nav-btn-link-active-bg
+          color: inherit
+  .mob-nav-btn
+    display: none
+    &.light-theme
+      .btn
+        background-image: url($url-mob-menu-light)
+    .btn
+      display: block
+      width: $header-content-height
+      height: $header-content-height
+      background-color: transparent
+      border-radius: 50%
+      background-image: url($url-mob-menu)
+      background-size: contain
+      background-position: center
+      background-repeat: no-repeat
+      cursor: pointer
+      outline: none
+      border: 0

@@ -1,0 +1,106 @@
+@media screen and (max-width: $sm-width - 1)
+  footer
+    .footer-i
+      font-size: 16px
+      &.for-mob
+        display: block
+    .open-footer-sec
+      display: block !important
+      position: relative
+      &:before
+        content: ''
+        background-color: $limoncello-yellow
+        width: 100%
+        height: 56px
+        position: absolute
+        top: -18px
+        left: -24px
+        box-sizing: content-box
+        padding: 0 24px
+      .footer-sec-h,
+      .footer-social-title
+        position: relative
+        z-index: 1
+        &:before
+          transform: rotateZ(180deg)
+      .footer-sec-ls,
+      .footer-social-mob
+        display: block !important
+        height: 100% !important
+        transform: scaleY(1) !important
+    .footer-b
+      padding-top: 90px
+      padding-bottom: 70px
+      .footer-comp
+        &.safe-net,
+        &.community,
+        &.devs,
+        &.company,
+        &.legal
+          width: 100%
+          margin: 0
+          padding: 0 get-single-column() * 2
+      .footer-sec
+        margin-bottom: 24px
+        .footer-sec-b
+          .footer-sec-h
+            font-size: 16px
+            margin-bottom: 0
+            &:before
+              content: ''
+              display: block
+              width: 24px
+              height: 24px
+              background-image: url($url-footer-arrow)
+              background-size: contain
+              background-repeat: no-repeat
+              background-position: center
+              position: absolute
+              top: 0
+              right: 0
+          .footer-sec-ls
+            height: 0
+            overflow: hidden
+            padding-top: 24px
+            transform: scaleY(0)
+            transition: transform 0.2s ease-out
+            transform-origin: top
+            padding-bottom: 24px
+            margin-bottom: -24px
+            .footer-sec-ls-b
+              padding-bottom: 24px
+              margin-bottom: 24px
+              border-bottom: 3px solid $pinky-grey
+      .footer-social
+        width: 100%
+        margin: 0
+        padding: 0 get-single-column() * 2
+        .footer-social-mob
+          display: block
+          height: 0
+          overflow: hidden
+          transform: scaleY(0)
+          transition: transform .2s ease
+          transform-origin: top
+        .footer-social-non-mob
+          display: none
+        &:after
+          display: none
+        .footer-social-title
+          visibility: visible
+          font-size: 16px
+          margin-bottom: 24px
+          &:before
+            content: ''
+            display: block
+            width: 24px
+            height: 24px
+            background-image: url($url-footer-arrow)
+            background-size: contain
+            background-repeat: no-repeat
+            background-position: center
+            position: absolute
+            top: 0
+            right: 0
+        .footer-social-non-mob
+          display: none

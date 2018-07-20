@@ -1,0 +1,111 @@
+@media screen and (max-width: $sm-width - 1)
+  .get-inv
+    .get-inv-b
+      .get-inv-lay
+        .get-inv-lay-b
+          .get-inv-lay-cntr1
+            width: 100%
+            margin: 0
+            padding: 0 get-single-column() * 2
+          .get-inv-lay-cntr2
+            width: 100%
+            margin: 0
+            padding: 0 get-single-column() * 2
+      .get-inv-cnt
+        .get-inv-cnt-h1
+          @extend %maxWidth
+          font-size: 24px
+        .get-inv-cnt-h2
+          @extend %maxWidth
+          font-size: 18px
+        .get-inv-cnt-para1
+          @extend %maxWidth
+          font-size: 18px
+        .get-inv-cnt-para2
+          @extend %maxWidth
+          font-size: 18px
+        .get-inv-cnt-lnk-btn
+          width: 100%
+          @extend %maxWidth
+          font-size: 16px
+      .get-inv-bnr
+        &:after
+          width: 100%
+          bottom: auto
+          top: 0
+          background-color: transparent
+          background-image: url($url-get-involved-pattern)
+          background-size: cover
+          background-position: center
+          padding-bottom: 200px
+          box-sizing: content-box
+          z-index: 1
+        .get-inv-bnr-bg
+          height: auto
+          padding-bottom: 60px
+          &:after
+            display: none
+        .get-inv-bnr-b
+          width: 100%
+          padding: 40px get-single-column() * 2
+          margin-top: 0
+
+      .get-inv-community
+        &:after
+          display: none
+        .get-inv-community-b
+          padding-top: 80px
+          padding-bottom: 0
+          .get-inv-community-cntr1
+            padding-bottom: 150px
+          .get-inv-community-cntr2
+            background-color: $zingy-sky-blue
+            padding-top: 160px
+            padding-bottom: 80px
+            position: relative
+            &:after
+              content: ''
+              display: block
+              width: 100%
+              height: 200px
+              background-image: url($url-hiw-peruse)
+              background-position: center
+              background-size: contain
+              background-repeat: no-repeat
+              position: absolute
+              bottom: 100%
+              left: 0
+              transform: translate(0, 120px)
+          .get-inv-community-cntr3
+            display: none
+      .get-inv-test-net
+        .get-inv-test-net-b
+          padding-bottom: 90px
+          .get-inv-test-net-cntr1
+            padding-bottom: 70px
+          .get-inv-test-net-vid
+            height: auto
+      .get-inv-develop
+        .get-inv-develop-b
+          padding-top: 70px
+          padding-bottom: 90px
+          .get-inv-develop-cntr1
+            padding-bottom: 80px
+          .get-inv-develop-cntr2
+            padding-bottom: 80px
+          .get-inv-develop-cntr3
+            .get-inv-cnt-lnk-btn
+              width: auto
+      .get-inv-faq
+        .get-inv-faq-b
+          padding-top: 80px
+          padding-bottom: 0
+          .get-inv-faq-more
+            margin-bottom: 60px
+          .get-inv-faq-h
+            padding-left: get-single-column() * 2
+            padding-right: get-single-column() * 2
+            .get-inv-faq-title
+              font-size: 18px
+            .get-inv-faq-h-opt
+              display: none

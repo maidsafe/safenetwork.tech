@@ -1,0 +1,28 @@
+body
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  font-feature-settings: "lnum"
+  font-variant-numeric: lining-nums
+
+=para()
+  +font-para()
+  color: $colr-common-text
+
+=headers()
+  +font-headers()
+  color: $colr-common-text
+
+.bnr-head
+  +headers()
+  font-size: get-vw(64px)
+  line-height: 100%
+  margin-bottom: 60px
+  font-weight: bold
+  .strike
+    text-decoration: line-through
+
+.bnr-para
+  +para()
+  font-size: get-vw(30px)
+  line-height: normal
+  font-weight: normal

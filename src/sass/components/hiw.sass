@@ -1,0 +1,333 @@
+.hiw
+  .hiw-b
+    .hiw-common-lay
+      width: get-single-column() * 8
+      margin-left: get-single-column() * 3
+      float: left
+    .hiw-ctnt
+      .hiw-ctnt-h
+        +font-bold()
+        font-size: get-vw(30px)
+        line-height: normal
+        margin-bottom: 60px
+        position: relative
+        &:after
+          content: ''
+          width: 200px
+          height: 3px
+          background-color: #000000
+          position: absolute
+          bottom: -22px
+          left: 0
+      .hiw-ctnt-para
+        +para()
+        font-size: get-vw(18px)
+        line-height: normal
+        margin-bottom: 40px
+        &:last-child
+          margin-bottom: 0
+    .hiw-bnr
+      position: relative
+      .hiw-bnr-b
+        width: get-single-column() * 12
+        margin-top: 130px
+        margin-left: get-single-column() * 3
+        padding-bottom: 110px
+    .hiw-vault
+      padding-top: 280px
+      position: relative
+      &:before
+        content: ''
+        display: block
+        width: get-single-column() * 10
+        height: 100%
+        position: absolute
+        top: 0
+        right: 0
+        background-color: $deep-blue
+        z-index: 0
+      &:after
+        content: ''
+        display: block
+        width: get-single-column() * 11
+        height: 100%
+        position: absolute
+        top: 0
+        right: 0
+        background-image: url($url-hiw-pattern-1)
+        z-index: 1
+      .hiw-vault-b
+        +clearfix()
+        z-index: 2
+        position: relative
+        .hiw-vault-cntr2
+          width: get-single-column() * 7
+          background-color: $dawn-pink
+          padding: 0 get-single-column()
+          margin-left: get-single-column() * 2
+          margin-right: get-single-column() * 4
+          margin-bottom: 300px
+          margin-top: 30px
+          float: left
+          box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+          .hiw-vault-cntr2-b
+            padding: 65px 0 100px
+            .hiw-vault-cntr2-para
+              +font-bold()
+              font-size: get-vw(24px)
+              margin-bottom: 50px
+        .hiw-vault-cntr4
+          width: get-single-column() * 7
+          background-color: $deep-blue
+          padding: 0 get-single-column()
+          position: absolute
+          bottom: 0
+          right: 0
+          .hiw-vault-cntr4-b
+            padding-top: 60px
+            padding-bottom: 200px
+            &:before
+              content: ''
+              display: block
+              width: 40px
+              height: 40px
+              background-image: url($url-arrow-down-red)
+              background-size: contain
+              background-repeat: no-repeat
+              background-position: center
+              position: absolute
+              bottom: 150px
+              left: 0
+              transform: translate(-50%, 0)
+            &:after
+              content: ''
+              display: block
+              width: 100%
+              height: 300px
+              position: absolute
+              top: 100%
+              left: -100%
+              background-image: url($url-hiw-peruse)
+              background-repeat: no-repeat
+              background-position: center
+              background-size: contain
+              transform: translate(200px, -120px)
+            .hiw-vault-cntr4-para
+              +para()
+              font-size: get-vw(18px)
+              color: $white
+              margin-bottom: 45px
+            .lnk-btn
+              +font-bold()
+              font-size: get-vw(16px)
+              color: $white
+              text-decoration: none
+              line-height: 40px
+              background-color: $spark-red
+              display: inline-block
+              padding: 0 20px
+              border-radius: 20px
+    .hiw-autonomous
+      position: relative
+      &:before
+        content: ''
+        display: block
+        width: get-single-column() * 10
+        height: 100%
+        position: absolute
+        top: 0
+        right: 0
+        background-color: $limoncello-yellow
+        z-index: 0
+      &:after
+        content: ''
+        display: block
+        width: get-single-column() * 10
+        height: 100%
+        position: absolute
+        top: 0
+        right: 0
+        background-image: url($url-hiw-pattern-2)
+        background-position: center
+        background-size: cover
+        z-index: 1
+      .hiw-autonomous-b
+        padding-bottom: 220px
+        position: relative
+        z-index: 3
+        +clearfix()
+        .hiw-autonomous-cntr1
+          padding-top: 260px
+          .hiw-autonomous-cntr1-b
+            padding-top: 50px
+        .hiw-autonomous-cntr2
+          width: get-single-column() * 7
+          background-color: $white
+          padding: 0 get-single-column()
+          margin-left: get-single-column() * 2
+          margin-right: get-single-column() * 4
+          float: left
+          box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+          .hiw-autonomous-cntr2-b
+            padding: 65px 0 100px
+            .hiw-autonomous-cntr2-para
+              +font-bold()
+              font-size: get-vw(24px)
+              margin-bottom: 50px
+    .hiw-authentication
+      position: relative
+      background-color: $light-grey
+      &:before
+        content: ''
+        display: block
+        width: get-single-column() * 10
+        height: 100%
+        position: absolute
+        top: 0
+        right: 0
+        background-color: $white
+        z-index: 0
+      &:after
+        content: ''
+        display: block
+        width: get-single-column() * 10
+        height: 100%
+        position: absolute
+        top: 0
+        right: 0
+        background-image: url($url-hiw-pattern-3)
+        background-position: top left
+        background-size: cover
+        z-index: 1
+      .hiw-authentication-b
+        padding-top: 150px
+        padding-bottom: 220px
+        position: relative
+        z-index: 3
+        +clearfix()
+        .hiw-authentication-cntr2
+          width: get-single-column() * 7
+          background-color: $white
+          padding: 0 get-single-column()
+          margin-left: get-single-column() * 2
+          margin-right: get-single-column() * 4
+          margin-top: 30px
+          float: left
+          box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+          .hiw-authentication-cntr2-b
+            padding: 65px 0 100px
+            .hiw-authentication-cntr2-para
+              +font-bold()
+              font-size: get-vw(24px)
+              margin-bottom: 50px
+    .hiw-encryption
+      position: relative
+      &:before
+        content: ''
+        display: block
+        width: get-single-column() * 10
+        height: 100%
+        position: absolute
+        top: 0
+        right: 0
+        background-color: $zingy-sky-blue
+        z-index: 0
+      &:after
+        content: ''
+        display: block
+        width: get-single-column() * 11
+        height: 100%
+        position: absolute
+        top: 0
+        right: 0
+        background-image: url($url-hiw-pattern-4)
+        background-position: top left
+        background-size: contain
+        z-index: 1
+      .hiw-encryption-b
+        padding-top: 150px
+        padding-bottom: 220px
+        position: relative
+        z-index: 3
+        +clearfix()
+        .hiw-encryption-cntr2
+          width: get-single-column() * 9
+          padding: 0
+          margin-left: get-single-column() * 2
+          margin-right: get-single-column() * 2
+          margin-top: 40px
+          float: left
+          .hiw-encryption-cntr2-b
+            background-color: $white
+            box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+            position: relative
+            height: auto
+            iframe
+              width: 100%
+              height: 350px
+            .hiw-encryption-cntr2-cap
+              padding-left: 50px
+              margin-bottom: 40px
+              position: absolute
+              bottom: 100%
+              right: 0
+              +font-bold()
+              font-size: get-vw(18px)
+              &:before
+                content: ''
+                display: block
+                width: 40px
+                height: 40px
+                position: absolute
+                bottom: 0
+                left: 0
+                background-image: url($url-arrow-down-orange)
+                background-size: contain
+                background-repeat: no-repeat
+                background-position: center
+    .hiw-data-chain
+      position: relative
+      background-color: $light-grey
+      &:before
+        content: ''
+        display: block
+        width: get-single-column() * 10
+        height: 100%
+        position: absolute
+        top: 0
+        right: 0
+        background-color: $pinky-grey
+        z-index: 0
+      &:after
+        content: ''
+        display: block
+        width: get-single-column() * 12
+        height: 100%
+        position: absolute
+        top: 0
+        right: 0
+        background-image: url($url-hiw-pattern-5)
+        background-position: top left
+        background-size: cover
+        z-index: 1
+      .hiw-data-chain-b
+        padding-top: 150px
+        padding-bottom: 220px
+        position: relative
+        z-index: 3
+        +clearfix()
+        .hiw-data-chain-cntr2
+          width: get-single-column() * 7
+          background-color: $white
+          padding: 0 get-single-column()
+          margin-left: get-single-column() * 2
+          margin-right: get-single-column() * 4
+          margin-top: 30px
+          float: left
+          box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+          .hiw-data-chain-cntr2-b
+            padding: 65px 0 100px
+            .hiw-data-chain-cntr2-para
+              +font-bold()
+              font-size: get-vw(24px)
+              margin-bottom: 50px

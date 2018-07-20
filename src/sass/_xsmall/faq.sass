@@ -1,0 +1,58 @@
+$leftPad: 2
+
+@media screen and (max-width: $sm-width - 1)
+  .faq
+    .faq-b
+      .faq-h
+        .faq-h-i
+          padding-left: get-single-column() * $leftPad
+          padding-right: get-single-column() * $leftPad
+          padding-top: 90px
+
+  .faq-cntr
+    padding-left: 0
+    .faq-cntr-b
+      .faq-cntr-sec
+        margin-bottom: 30px
+        .faq-cntr-sec-h
+          font-size: 18px
+          padding-left: get-single-column() * $leftPad
+        .faq-cntr-sec-ls
+          margin-top: 30px
+          .faq-cntr-sec-ls-i
+            margin-bottom: 20px
+            .faq-cntr-sec-ls-i-h
+              font-size: 18px
+              padding-left: calc-single-column($number-of-grid) * 2
+              padding-right: calc-single-column($number-of-grid) * 3
+              line-height: initial
+              padding-top: 30px
+              padding-bottom: 30px
+              &:before
+                display: none
+            .faq-cntr-sec-ls-i-ctx
+              width: 100%
+              padding-left: calc-single-column($number-of-grid) * 2
+              padding-right: calc-single-column($number-of-grid) * 3
+              h3, h4
+                font-size: 18px
+              .faq-cntr-sec-ls-i-ctx-b
+                padding-top: 65px
+                padding-bottom: 50px
+              &:before
+                content: 'Answer:'
+                font-size: 18px
+                top: 22px
+                left: calc-single-column($number-of-grid) * 2
+                line-height: 100%
+                color: $unit-green
+              p
+                font-size: 18px
+                margin-bottom: 30px
+                //max-width: 400px
+              ul, ol
+                li
+                  +para()
+                  font-size: 18px
+                  font-weight: normal
+                  margin-bottom: 16px
