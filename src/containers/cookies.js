@@ -22,7 +22,7 @@ class Container extends React.Component {
             const text = typeof p === 'string' ? p : p.text;
 
             return (
-              <div className="terms-base-para">
+              <div key={`cookie-item-${i}`} className="terms-base-para">
                 {p.head ? (<h4 className="para-head">{p.head}</h4>) : null}
                 {Parser(`<p key='terms-para-${head}-${i}' className="para-text ${!p.sno || p.head ? 'no-sno' : ''}">${text}</p>`)}
                 {p.sno ? <span className="sno">{p.sno}</span> : null}
