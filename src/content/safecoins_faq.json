@@ -6,7 +6,7 @@
         "q": "What is Safecoin?",
         "a": [
           {
-            "cnt": "Safecoin is a digital token that are generated automatically by the SAFE Network and reside on the SAFE Network. The Network will autonomously confirm account balances to Wallets and allow transactions to take place. Safecoin are transferred using via the digital signature of the coin’s last owner. This operation is 'network atomic'—in other words,the Network ensures that all copies update to reflect the transaction. This is a different approach to the blockchain mechanism employed in other projects, such as Bitcoin.",
+            "cnt": "Safecoin is a digital token that are generated automatically by the SAFE Network and reside on the SAFE Network. The Network will autonomously confirm account balances to Wallets and allow transactions to take place. Safecoin are transferred using the digital signature of the coin’s last owner. This operation is 'network atomic'—in other words,the Network ensures that all copies update to reflect the transaction. This is a different approach to the blockchain mechanism employed in other projects, such as Bitcoin.",
             "type": "para"
           },
           {
@@ -14,7 +14,7 @@
             "type": "para"
           },
           {
-            "cnt": "Please note that Safecoin will not be active until the network goes live. See  for current proxy token.",
+            "cnt": "Please note that Safecoin will not be active until the network goes live. See MaidSafeCoin for current proxy token.",
             "type": "para"
           }
         ]
@@ -79,17 +79,12 @@
         "q": "Where can I store MaidSafeCoin?",
         "a": [
           {
-            "cnt": "As MaidSafeCoin is built using the Omni protocol on the bitcoin blockchain you can use Omniwallet in order to store .",
+            "cnt": "As MaidSafeCoin is built using the Omni protocol on the bitcoin blockchain it can be stored in any wallet. They may not be visible within all wallet software (due to lack of omni support) but the MaidSafeCoin will be OK there as long as your machine and private key for that address are secure and you will be able to view them using [omniexplorer.info](http://omniexplorer.info).",
             "type": "para"
           },
           {
-            "cnt": "To create a new wallet or open an existing one visit [omniwallet.org](https://www.omniwallet.org/).",
+            "cnt": "To create a new Omniwallet or open an existing one visit [omniwallet.org](https://www.omniwallet.org/).",
             "type": "para"
-          },
-          {
-            "cnt": "Omniwallet",
-            "type": "anchor",
-            "href": "https://www.omniwallet.org/"
           }
         ]
       },
