@@ -30,11 +30,3 @@ SAFE Network website built on [React Static](https://github.com/nozzle/react-sta
 > yarn build
 ```
 
-## License
-
-This SAFE Network library is dual-licensed under
-
-* the Modified BSD ([LICENSE-BSD](https://opensource.org/licenses/BSD-3-Clause)) or
-* the MIT license ([LICENSE-MIT](http://opensource.org/licenses/MIT))
-
-at your option.
