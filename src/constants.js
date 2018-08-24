@@ -227,13 +227,13 @@ export default {
       },
       comp: {
         maidsafe: '/about-maidsafe',
-        contact: 'https://maidsafe.net/contact.html',
-        career: 'https://maidsafe.net/careers.html',
+        contact: 'https://maidsafe.net/contact',
+        career: 'https://maidsafe.net/careers',
       },
       legal: {
         policy: '/privacy',
         cookies: '/cookies',
-        credits: 'https://maidsafe.net/credits.html'
+        credits: 'https://maidsafe.net/credits'
       },
       social: {
         medium: {
