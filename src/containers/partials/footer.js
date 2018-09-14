@@ -64,6 +64,7 @@ class SAFENetwork extends React.Component {
     this.links = [
       { name: 'Home', href: '/', forMob: true },
       { name: 'How It Works', href: CONST.links.pages.hiw },
+      { name: 'Fundamentals', href: CONST.links.pages.fundamentals },
       { name: 'Safecoin', href: CONST.links.pages.safecoins },
       { name: 'FAQ', href: CONST.links.pages.faq },
       { name: 'Timeline', href: CONST.links.pages.timeline },
