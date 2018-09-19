@@ -86,7 +86,7 @@ export default {
       desc: 'We answer your top questions from Safecoin to self authentication; from data privacy to data portability.'
     },
     fundamentals: {
-      title: 'Fundamentals | SAFE Network',
+      title: 'Network Fundamentals | SAFE Network',
       desc: 'The fundamental driving principles of the SAFE network'
     },
     pKit: {

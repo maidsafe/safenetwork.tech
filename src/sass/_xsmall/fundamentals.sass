@@ -60,3 +60,50 @@ $leftPad: 2
                   font-size: 18px
                   font-weight: normal
                   margin-bottom: 16px
+      .funda-p-cntr-sec
+        margin-bottom: 30px
+        .funda-p-cntr-sec-h
+          font-size: 18px
+          padding-left: get-single-column() * $leftPad
+        .funda-p-cntr-sec-ls
+          margin-top: 30px
+          .funda-p-cntr-sec-ls-i
+            margin-bottom: 20px
+            &:after
+              margin-left: calc-single-column($number-of-grid) * 2
+              margin-right: calc-single-column($number-of-grid) * 2
+            .funda-p-cntr-sec-ls-i-h
+              font-size: 18px
+              padding-left: calc-single-column($number-of-grid) * 2
+              padding-right: calc-single-column($number-of-grid) * 3
+              line-height: initial
+              padding-top: 30px
+              padding-bottom: 30px
+              .s-no
+                display: none
+              .text-content
+                width: 100%
+            .funda-p-cntr-sec-ls-i-ctx
+              width: 100%
+              padding-left: calc-single-column($number-of-grid) * 2
+              padding-right: calc-single-column($number-of-grid) * 3
+              h3, h4
+                font-size: 18px
+              .funda-p-cntr-sec-ls-i-ctx-b
+                padding-bottom: 50px
+              &:before
+                font-size: 18px
+                top: 22px
+                left: calc-single-column($number-of-grid) * 2
+                line-height: 100%
+                color: $unit-green
+              p
+                font-size: 18px
+                margin-bottom: 30px
+                //max-width: 400px
+              ul, ol
+                li
+                  +para()
+                  font-size: 18px
+                  font-weight: normal
+                  margin-bottom: 16px

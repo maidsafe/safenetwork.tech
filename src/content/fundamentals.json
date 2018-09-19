@@ -195,26 +195,14 @@
     ]
   },
   {
-    "title": "Safecoin fundamentals",
+    "title": "Safecoin",
     "color": "green",
     "list": [
       {
-        "q": "Safecoin 1",
-        "a": [
-          {
-            "cnt": "Something about safecoin",
-            "type": "para"
-          }
-        ]
+        "q": "Safecoin is the unique incentivisation mechanism built into the SAFE Network. All Safecoins are recycled when they are paid to the Network in exchange for resources. On launch, Safecoin will be distributed as follows: (1) Pay the creators of the Network (MaidSafe shareholders) 5% of the total Safecoin; (2) Pay the 2014 crowdsale investors of the Network 10% of the total Safecoin."
       },
       {
-        "q": "Safecoin 2",
-        "a": [
-          {
-            "cnt": "More about safecoin",
-            "type": "para"
-          }
-        ]
+        "q": "Safecoin will be distributed on an ongoing basis: (1) Pay Vaults for providing service (85% of rewards); (2) Pay developers who produce apps that people use (10% of rewards); (3) Pay the maintainers of the Network code (5% of rewards)"
       }
     ]
   }
