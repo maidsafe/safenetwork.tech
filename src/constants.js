@@ -3,6 +3,7 @@ const pages = {
   hiw: '/how-it-works/',
   timeline: '/timeline/',
   safecoins: '/safecoin/',
+  fundamentals: '/fundamentals/',
   faq: '/faq/',
   pKit: '/press-kit/',
   getInv: '/get-involved/',
@@ -84,6 +85,10 @@ export default {
       title: 'Frequently Asked Questions | SAFE Network',
       desc: 'We answer your top questions from Safecoin to self authentication; from data privacy to data portability.'
     },
+    fundamentals: {
+      title: 'Network Fundamentals | SAFE Network',
+      desc: 'The fundamental driving principles of the SAFE network'
+    },
     pKit: {
       title: 'Press Kit | SAFE Network',
       desc: 'Resources for journalists looking to find out more about the new decentralised Internet and how the SAFE Network will benefit data security and privacy'
@@ -116,6 +121,10 @@ export default {
       safecoins: {
         name: 'Safecoin',
         href: pages.safecoins
+      },
+      fundamentals: {
+        name: 'Fundamentals',
+        href: pages.fundamentals
       },
       timeline: {
         name: 'Timeline',

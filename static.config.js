@@ -50,6 +50,10 @@ export default {
         component: 'src/containers/about-maidsafe',
       },
       {
+        path: '/fundamentals/',
+        component: 'src/containers/fundamentals'
+      },
+      {
         is404: true,
         component: 'src/containers/404',
       },
