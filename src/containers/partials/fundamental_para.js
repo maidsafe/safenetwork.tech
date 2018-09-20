@@ -80,7 +80,7 @@ export default class FundamentalPara extends React.Component {
                 <ul>
                   <li>Farmers who run the Vaults are paid at 100% of the Farming Rate for all GETs on the Network. I.e. 86.95% (100/115) of all rewards.</li>
                   <li>Application Developers are paid at 10% of the Farming Rate for all GETs on the Network (that relate to their applications). I.e. 8.695% (10/115) of all rewards.</li>
-                  <li>Maintainer Developers are paid at 5% of the Farming Rate for all GETs on the Network.. I.e. 4.348% (5/115) of all rewards.</li>
+                  <li>Maintainer Developers are paid at 5% of the Farming Rate for all GETs on the Network. I.e. 4.348% (5/115) of all rewards.</li>
                 </ul>
               </div>
               </div>

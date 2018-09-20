@@ -40,7 +40,7 @@ class Fundamentals extends React.Component {
           <div className="funda-h header-adjust"><h1 className="funda-h-i bnr-head">Network Fundamentals</h1></div>
           <div className="funda-bnr">
             <div className="funda-bnr-b">
-              <p className="bnr-para">There are certain concepts that have driven every stage of the design of the Network ever since the project started in 2006. Since that time, the SAFE community has grown and we’re delighted to see just how many people and projects have come to recognise the vital importance of a global, secure and private decentralised platform for storage and communication.</p>
+              <p className="bnr-para">There are fundamental principles that have driven each stage of the design of the SAFE Network these last few years. In that time, the SAFE community has grown and many people and projects now recognise the vital importance of a global, secure and private decentralised platform for storage and communication. To deliver on this vision, the SAFE Network will deliver on each of the following.</p>
             </div>
           </div>
           <div className="funda-cntr">
