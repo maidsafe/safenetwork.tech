@@ -25,7 +25,7 @@ class Contact extends React.Component {
               <div className="contact-cntx-para">
               <p className="para-text">In 2006, MaidSafe began work on a decentralised internet that is private, secure and free for everybody. Since those early days, the team, led by founder David Irvine, has been focused solely on building the SAFE Network to solve the problems of an increasingly centralised internet that is facing more issues with each day that passes.</p>
 
-              <p className="para-text">MaidSafe are based in Ayr, Scotland but the team is distributed all across the globe. It has has drawn talents from many different cultures and countries, reflecting the users that they serve. Comprised of thinkers, inventors, tinkerers, PHD’s, engineers and designers, they are building software that is <a href="https://gitub.com/maidsafe">open source and free to use</a> and share in a single mission: a desire to provide security and privacy for everyone. </p>
+              <p className="para-text">MaidSafe are based in Ayr, Scotland but the team is distributed all across the globe. It has has drawn talents from many different cultures and countries, reflecting the users that they serve. Comprised of thinkers, inventors, tinkerers, PHD’s, engineers and designers, they are building software that is <a href="https://github.com/maidsafe">open source and free to use</a> and share in a single mission: a desire to provide security and privacy for everyone. </p>
 
               <p className="para-text">MaidSafe are guided and influenced by the SAFE Network Community who have helped to fund the work and guide its decisions through discussions across community-run platforms.</p>
 
