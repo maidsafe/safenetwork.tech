@@ -180,7 +180,7 @@ class Privacy extends React.Component {
             <Container
               head="How do I make a complaint?"
               para={[
-                'You have the right to make a complaint about anything regarding processing, storage, retention of your data. We would hope to resolve any complaint internally and if you would like to lodge a complaint with us in the first instance please contact <a href="gdpr@maidsafe.net">gdpr@maidsafe.net</a>. However, you also have the right to lodge a complaint at any time to the Information Commissioner (ICO) in respect of our processing of your personal data. Information can be found at <a href="www.ico.org.uk">www.ico.org.uk</a>.'
+                'You have the right to make a complaint about anything regarding processing, storage, retention of your data. We would hope to resolve any complaint internally and if you would like to lodge a complaint with us in the first instance please contact <a href="mailto:gdpr@maidsafe.net">gdpr@maidsafe.net</a>. However, you also have the right to lodge a complaint at any time to the Information Commissioner (ICO) in respect of our processing of your personal data. Information can be found at <a href="https://www.ico.org.uk">www.ico.org.uk</a>.'
               ]}
             />
           </div>
