@@ -182,7 +182,7 @@
         "q": "What is a Vault?",
         "a": [
           {
-            "cnt": "The SAFE Network is made up of nodes called Vaults. A Vault is a program that runs on a device which connects the machine to the Network. Collectively, Vaults manage the storage of all data on the Network by managing the movement of chunks of encrypted user data are stored across the Network. No Farmer (user) can ever decrypt a chunk of data that his or her Vault receives and, in return for providing the storage capacity to the Network, is rewarded with Safecoin.",
+            "cnt": "The SAFE Network is made up of nodes called Vaults. A Vault is a program that runs on a device which connects the machine to the Network. Collectively, Vaults manage the storage of all data on the Network by managing the movement of chunks of encrypted user data that are stored across the Network. No Farmer (user) can ever decrypt a chunk of data that his or her Vault receives and, in return for providing the storage capacity to the Network, is rewarded with Safecoin.",
             "type": "para"
           },
           {
@@ -202,7 +202,7 @@
             "type": "para"
           },
           {
-            "cnt": "Each Vault also has a Data Manager persona. This manages where encrypted chunks of other users’ data is held and has responsibility for the chunks in its Disjoint Section.",
+            "cnt": "Each Vault also has a Data Manager persona. This manages where encrypted chunks of other users’ data is held and has responsibility for the chunks in it's Section.",
             "type": "para"
           }
         ]
@@ -492,15 +492,6 @@
         ]
       },
       {
-        "q": "How is Safecoin valued",
-        "a": [
-          {
-            "cnt": "The value of Safecoin will be set by the market — i.e., the demand to acquire Safecoin versus the demand to acquire other things in exchange for it (e.g., other currency, products, services, etc.). Safecoin will need to be acquired by those Users looking to utilise services on the network other than just viewing data, which is free. Such services which will acquire Safecoin will be distributed data storage and communications initially, though other services will be available as the network matures, such as distributed computing. Those who choose to participate in the network as Farmers should earn more than enough Safecoin to accommodate their needs as Users. For those who have larger needs or who cannot/choose not to contribute to the network as Farmers, Safecoin will be sold by those Farmers looking to exchange the excess Safecoin they have earned. This will be accomplished by various exchange options. It is worth noting that the generation and distribution of Safecoin will be entirely network-led, meaning that if the SAFE Network is in great demand a large volume of safecoins will be created, while low demand will lead to minimal coins being generated. These factors will also have an impact on price.",
-            "type": "para"
-          }
-        ]
-      },
-      {
         "q": "What is MaidSafeCoin?",
         "a": [
           {
@@ -530,15 +521,11 @@
         "q": "Where can I store MaidSafeCoin?",
         "a": [
           {
-            "cnt": "Until the SAFE Network is launched, MaidSafeCoin will continue to be the only unit of currency. If you bought them as part of the crowd sale they will be at the Bitcoin address used to purchase them. Although they may not be visible within all wallet software, your MaidSafeCoin will be OK there as long as your machine and private key for that address are secure. You will be able to view them using Omnichest.info explorer by inserting that Bitcoin address into the search bar. However, you can also set up an Omniwallet account (a third party web wallet) which will enable you to view MaidSafeCoin within the wallet and to be able to transfer them to another address, or offline Bitcoin wallet.",
+            "cnt": "As MaidSafeCoin is built using the Omni protocol on the bitcoin blockchain it can be stored in any wallet. They may not be visible within all wallet software (due to lack of omni support) but the MaidSafeCoin will be OK there as long as your machine and private key for that address are secure and you will be able to view them using [omniexplorer.info](http://omniexplorer.info).",
             "type": "para"
           },
           {
-            "cnt": "Although they may not be visible within all wallet software, your MaidSafeCoin will be OK there as long as your machine and private key for that address are secure. You will be able to view them using [omniexplorer.info](http://omniexplorer.info) by inserting that Bitcoin address into the search bar. However, you can also set up an Omniwallet account (a third party web wallet) which will enable you to view MaidSafeCoin within the wallet and to be able to transfer them to another address, or offline Bitcoin wallet.",
-            "type": "para"
-          },
-          {
-            "cnt": "However, you can also set up an Omniwallet account (a third party web wallet) which will enable you to view MaidSafeCoin within the wallet and to be able to transfer them to another address, or offline Bitcoin wallet.",
+            "cnt": "To create a new Omniwallet or open an existing one visit [omniwallet.org](https://www.omniwallet.org/).",
             "type": "para"
           }
         ]
