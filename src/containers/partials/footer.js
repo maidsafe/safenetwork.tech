@@ -48,7 +48,7 @@ class FooterSec extends React.Component {
               {this.props.links.map((lnk, i) => {
                 return <Link key={`footerLnk-${i}`} className={Classnames('footer-i footer-sec-ls-i', {
                   'for-mob': lnk.forMob
-                })} to={lnk.href} target={lnk.ext ? '_blank' : ''}>{lnk.name}</Link>
+                })} to={lnk.href} target={lnk.ext ? '_blank' : undefined}>{lnk.name}</Link>
               })}
             </div>
           </div>
