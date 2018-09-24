@@ -1,0 +1,74 @@
+$leftPad: 2
+
+@media screen and (min-width: $md-width) and (max-width: $lg-width - 1)
+  .funda
+    .funda-b
+      .funda-h
+        .funda-h-i
+          padding-left: get-single-column() * $leftPad
+          padding-right: get-single-column() * $leftPad
+          padding-top: 140px
+
+  .funda-cntr
+    padding-left: get-single-column() * $leftPad
+    .funda-cntr-b
+      .funda-cntr-sec
+        margin-bottom: 70px
+        .funda-cntr-sec-h
+          font-size: get-md-vw(21px)
+        .funda-cntr-sec-ls
+          .funda-cntr-sec-ls-i
+            .funda-cntr-sec-ls-i-h
+              font-size: get-md-vw(21px)
+              padding-right: calc-single-column($number-of-grid - $leftPad) * 3
+              .s-no
+                width: 11vw
+                font-size: get-md-vw(27px)
+              .text-content
+                width: 70vw
+            .funda-cntr-sec-ls-i-ctx
+              width: 100%
+              padding-left: 11vw
+              padding-right: calc-single-column($number-of-grid - $leftPad) * 3
+              &:before
+                top: get-md-vw(54px)
+                font-size: get-md-vw(27px)
+              .funda-cntr-sec-ls-i-ctx-b
+                padding-top: get-md-vw(60px)
+              p
+                font-size: get-md-vw(21px)
+              h3, h4
+                font-size: get-md-vw(21px)
+              ul, ol
+                li
+                  +para()
+                  font-size: get-md-vw(21px)
+      .funda-p-cntr-sec
+        margin-bottom: 70px
+        .funda-p-cntr-sec-h
+          font-size: get-md-vw(21px)
+        .funda-p-cntr-sec-ls
+          .funda-p-cntr-sec-ls-i
+            .funda-p-cntr-sec-ls-i-h
+              font-size: get-md-vw(21px)
+              padding-right: calc-single-column($number-of-grid - $leftPad) * 3
+              .s-no
+                width: 11vw
+                font-size: get-md-vw(27px)
+              .text-content
+                width: 70vw
+            .funda-p-cntr-sec-ls-i-ctx
+              width: 100%
+              padding-left: 11vw
+              padding-right: calc-single-column($number-of-grid - $leftPad) * 3
+              &:before
+                top: get-md-vw(54px)
+                font-size: get-md-vw(27px)
+              p
+                font-size: get-md-vw(21px)
+              h3, h4
+                font-size: get-md-vw(21px)
+              ul, ol
+                li
+                  +para()
+                  font-size: get-md-vw(21px)

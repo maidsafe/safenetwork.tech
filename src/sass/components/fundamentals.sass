@@ -1,0 +1,235 @@
+.funda
+  .funda-b
+    .funda-h
+      background-color: $limoncello-yellow
+      .funda-h-i
+        padding: 200px get-single-column() * 3 55px
+        margin-bottom: 0
+  .funda-bnr
+    position: relative
+    .funda-bnr-b
+      width: get-single-column() * 15
+      margin-top: get-vw(50px)
+      margin-left: get-single-column() * 2
+      padding-bottom: get-vw(24px)
+
+.funda-cntr
+  background-color: $white
+  padding-left: get-single-column() * 3
+  .funda-cntr-b
+    .funda-p-cntr-sec
+      margin-bottom: 90px
+      .funda-p-cntr-sec-h
+        +font-bold()
+        font-size: get-vw(30px)
+        padding-top: 50px
+        a
+          color: inherit
+          text-decoration: none
+        &:after
+          margin-top: get-vw(50px)
+          content: ''
+          width: 100%
+          height: 2px
+          background-color: $black
+          display: block
+      .funda-p-cntr-sec-ls
+        margin-top: 70px
+        .funda-p-cntr-sec-ls-i
+          margin-bottom: 30px
+          overflow: hidden
+          &.none
+            &:after
+              display: none
+          &:after
+            margin-top: get-vw(75px)
+            content: ''
+            height: 2px
+            background-color: $pinky-grey
+            display: block
+          .funda-p-cntr-sec-ls-i-h
+            +para()
+            display: table
+            width: 100%
+            font-weight: normal
+            font-size: get-vw(21px)
+            padding-top: 2%
+            padding-bottom: 2%
+            padding-right: calc-single-column($number-of-grid - 3)
+            position: relative
+            cursor: pointer
+            .text-content
+              display: table-cell
+              width: calc-single-column($number-of-grid - 3) * 12
+              pointer-events: none
+              h3
+                +font-bold()
+            .s-no
+              pointer-events: none
+              display: table-cell
+              width: calc-single-column($number-of-grid - 3) * 2
+              padding-left: calc-single-column($number-of-grid - 3)
+              +font-bold()
+              font-size: get-vw(21px)
+              font-weight: normal
+            &:after
+              content: ''
+              width: 20px
+              height: 100%
+              display: block
+              position: absolute
+        .funda-p-cntr-sec-ls-i-ctx
+          width: calc-single-column($number-of-grid - 3) * 12
+          padding-left: calc-single-column($number-of-grid - 3) * 2
+          position: relative
+          &:before
+            position: absolute
+            top: get-vw(54px)
+            left: 40px
+            font-size: get-vw(30px)
+            font-weight: normal
+          .funda-p-cntr-sec-ls-i-ctx-b
+            padding-bottom: 90px
+          h4, h3
+            +font-bold()
+            font-size: get-vw(21px)
+            margin-bottom: 20px
+          ul, ol
+            list-style-image: url($url-line)
+            margin-left: get-vw(75px)
+            li
+              +para()
+              padding-left: 10px
+              font-size: get-vw(21px)
+              font-weight: normal
+              margin-bottom: 16px
+          p
+            +para()
+            font-size: get-vw(21px)
+            font-weight: normal
+            margin-bottom: 50px
+          a
+            color: $colr-common-text
+            &:after
+              width: 90%
+    .funda-cntr-sec
+      margin-bottom: 90px
+      .funda-cntr-sec-h
+        +font-bold()
+        font-size: get-vw(30px)
+        padding-top: 50px
+        a
+          color: inherit
+          text-decoration: none
+      .funda-cntr-sec-ls
+        margin-top: 70px
+        .funda-cntr-sec-ls-i
+          margin-bottom: 30px
+          overflow: hidden
+          &.bluegrey
+            .funda-cntr-sec-ls-i-h
+              background-color: $zingy-sky-blue
+            &:after
+              background-color: $pinky-grey
+          &.green
+            &:after
+              background-color: $comp-green
+          &.blue
+            &:after
+              background-color: $deep-blue
+          &.greyblue
+            &:after
+              background-color: $unit-green
+          &.orange
+            &:after
+              background-color: $chennai-orange
+          &.open
+            &:after
+              background-color: $limoncello-yellow
+            .funda-cntr-sec-ls-i-h
+              background-color: $limoncello-yellow
+              &:after
+                background-image: url($url-arrow-up)
+            .funda-cntr-sec-ls-i-ctx
+              display: block
+              transform: scaleY(1)
+              height: 100%
+          &:after
+            content: ''
+            width: 100%
+            height: 5px
+            background-color: $spark-red
+            display: block
+          .funda-cntr-sec-ls-i-h
+            +para()
+            display: table
+            width: 100%
+            font-weight: normal
+            background-color: $light-grey
+            font-size: get-vw(21px)
+            padding-top: 2%
+            padding-bottom: 2%
+            padding-right: calc-single-column($number-of-grid - 3)
+            position: relative
+            cursor: pointer
+            .text-content
+              display: table-cell
+              width: calc-single-column($number-of-grid - 3) * 12
+              pointer-events: none
+            .s-no
+              pointer-events: none
+              display: table-cell
+              width: calc-single-column($number-of-grid - 3) * 2
+              padding-left: calc-single-column($number-of-grid - 3)
+              +font-bold()
+              font-size: get-vw(21px)
+              font-weight: normal
+            &:after
+              content: ''
+              width: 20px
+              height: 100%
+              display: block
+              position: absolute
+              top: 0
+              right: calc-single-column($number-of-grid - 3)
+              background-image: url($url-arrow-down-darkblue)
+              background-repeat: no-repeat
+              background-size: contain
+              background-position: center
+          .funda-cntr-sec-ls-i-ctx
+            transform: scaleY(0)
+            height: 0
+            width: calc-single-column($number-of-grid - 3) * 12
+            padding-left: calc-single-column($number-of-grid - 3) * 2
+            position: relative
+            transform-origin: top
+            transition: height .1s linear, transform .5s ease
+            &:before
+              position: absolute
+              top: get-vw(54px)
+              left: 40px
+              font-size: get-vw(30px)
+              font-weight: normal
+            .funda-cntr-sec-ls-i-ctx-b
+              padding-top: get-vw(60px)
+              padding-bottom: 90px
+            h4, h3
+              +font-bold()
+              font-size: get-vw(21px)
+              margin-bottom: 20px
+            ul, ol
+              margin-bottom: 50px
+              li
+                +para()
+                font-size: get-vw(21px)
+                font-weight: normal
+                margin-bottom: 16px
+            p
+              +para()
+              font-size: get-vw(21px)
+              font-weight: normal
+              margin-bottom: 50px
+            a
+              color: $colr-common-text
+              &:after
+                width: 90%

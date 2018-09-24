@@ -3,6 +3,7 @@ const pages = {
   hiw: '/how-it-works/',
   timeline: '/timeline/',
   safecoins: '/safecoin/',
+  fundamentals: '/fundamentals/',
   faq: '/faq/',
   pKit: '/press-kit/',
   getInv: '/get-involved/',
@@ -35,11 +36,11 @@ export default {
   },
   apps: {
     browser: {
-      macOs: 'https://github.com/maidsafe/safe_browser/releases/download/0.10.2/safe-browser-v0.10.2-osx-x64.zip',
-      win: 'https://github.com/maidsafe/safe_browser/releases/download/0.10.2/safe-browser-v0.10.2-win-x64.zip',
-      linux: 'https://github.com/maidsafe/safe_browser/releases/download/0.10.2/safe-browser-v0.10.2-linux-x64.zip',
+      macOs: 'https://github.com/maidsafe/safe_browser/releases/latest',
+      win: 'https://github.com/maidsafe/safe_browser/releases/latest',
+      linux: 'https://github.com/maidsafe/safe_browser/releases/latest',
       android: 'https://github.com/maidsafe/safe_mobile/releases/download/alpha-2/net.maidsafe.SafeAuthenticator.apk',
-      others: 'https://github.com/maidsafe/safe_browser/releases/tag/0.10.2'
+      others: 'https://github.com/maidsafe/safe_browser/releases/latest'
     },
     emailApp: {
       macOs: 'https://github.com/maidsafe/safe_examples/releases/download/0.16.0/safe-mail-tutorial-v0.4.3-osx-x64.zip',
@@ -49,10 +50,10 @@ export default {
       others: 'https://github.com/maidsafe/safe_examples/releases/tag/0.16.0'
     },
     hostingApp: {
-      macOs: 'https://github.com/maidsafe/safe_examples/releases/download/0.16.0/web-hosting-manager-v0.4.4-osx-x64.zip',
-      win: 'https://github.com/maidsafe/safe_examples/releases/download/0.16.0/web-hosting-manager-v0.4.4-win-x64.zip',
-      linux: 'https://github.com/maidsafe/safe_examples/releases/download/0.16.0/web-hosting-manager-v0.4.4-linux-x64.zip',
-      others: 'https://github.com/maidsafe/safe_examples/releases/tag/0.16.0'
+      macOs: 'https://github.com/maidsafe/safe-web-hosting-manager-electron/releases/latest',
+      win: 'https://github.com/maidsafe/safe-web-hosting-manager-electron/releases/latest',
+      linux: 'https://github.com/maidsafe/safe-web-hosting-manager-electron/releases/latest',
+      others: 'https://github.com/maidsafe/safe-web-hosting-manager-electron/releases/latest'
     },
   },
   UA: {
@@ -83,6 +84,10 @@ export default {
     faq: {
       title: 'Frequently Asked Questions | SAFE Network',
       desc: 'We answer your top questions from Safecoin to self authentication; from data privacy to data portability.'
+    },
+    fundamentals: {
+      title: 'Network Fundamentals | SAFE Network',
+      desc: 'The fundamental driving principles of the SAFE network'
     },
     pKit: {
       title: 'Press Kit | SAFE Network',
@@ -116,6 +121,10 @@ export default {
       safecoins: {
         name: 'Safecoin',
         href: pages.safecoins
+      },
+      fundamentals: {
+        name: 'Fundamentals',
+        href: pages.fundamentals
       },
       timeline: {
         name: 'Timeline',
@@ -188,7 +197,7 @@ export default {
       roadmap: {
         authenticator: 'https://github.com/maidsafe/beaker-plugin-safe-authenticator',
         safeBrowser: 'https://github.com/maidsafe/safe_browser/',
-        whm: 'https://github.com/maidsafe/safe_examples/tree/master/web_hosting_manager/',
+        whm: 'https://github.com/maidsafe/safe-web-hosting-manager-electron/releases/latest',
         safeMail: 'https://github.com/maidsafe/safe_examples/tree/master/email_app',
       }
     },
