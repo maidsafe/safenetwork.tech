@@ -6,7 +6,7 @@ import CONST from '../../constants';
 export default class PageEnd extends React.Component {
   render() {
     return (
-      <section className={Classnames('page-end', {
+      <div className={Classnames('page-end', {
         light: this.props.light
       })}>
         <div className="page-end-b">
@@ -33,7 +33,7 @@ export default class PageEnd extends React.Component {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     )
   }
 }
