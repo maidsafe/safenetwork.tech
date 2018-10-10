@@ -4,7 +4,7 @@ SAFE Network website built on [React Static](https://github.com/nozzle/react-sta
 ## Prerequisites
 * Git - latest
 * Node - version ^8.0.0
-* npm - version ^5.0.0
+* yarn - version ^1.9.4
 * react-static ^5.6.2
 
 
