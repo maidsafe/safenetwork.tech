@@ -48,12 +48,17 @@ class Cookies extends React.Component {
           <div className="terms-intro">
             <Container
               para={[
-                '<a href="https://maidsafe.net">MaidSafe.net</a> Limited understands that your privacy is important to you and that you care about how your personal data is used. We respect and value the privacy of everyone who visits this website so with that in mind, we don’t use cookies on safenetwork.tech.'
+                '<a href="https://maidsafe.net">MaidSafe.net</a> Limited understands that your privacy is important to you and that you care about how your personal data is used. We respect and value the privacy of everyone who visits this website so with that in mind, we don’t use cookies on this website.'
               ]}
             />
             <Container
               para={[
                 'No session cookie; no persistent cookie; no HttpOnly cookie; no secure cookie; no Third-party cookies. Seriously… NO COOKIES!'
+              ]}
+            />
+            <Container
+              para={[
+                'However, if you agree to participate in a test programme and/or register to be a developer/contributor on the Alpha Network, a persistent cookie may placed on your computer. This is to prevent the test and/or Network being spammed while our spam prevention tools are still being developed. The cookie does not collect personal data about you - only the current session ID to enable the test or network product to so that when the test executable runs it will recognise that the currently registered IP address has a valid invite token.'
               ]}
             />
           </div>
