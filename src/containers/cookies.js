@@ -58,7 +58,7 @@ class Cookies extends React.Component {
             />
             <Container
               para={[
-                'However, if you agree to participate in a test programme and/or register to be a developer/contributor on the Alpha Network, a persistent cookie may placed on your computer. This is to prevent the test and/or Network being spammed while our spam prevention tools are still being developed. The cookie does not collect personal data about you - only the current session ID to enable the test or network product to so that when the test executable runs it will recognise that the currently registered IP address has a valid invite token.'
+                'However, if you agree to participate in a test programme and/or register to be a developer/contributor on the Alpha Network, a session cookie will be  placed on your computer. This is to prevent the test and/or Network being spammed while our spam prevention tools are still being developed. The cookie collects the following information to validate the test session ensuring that the registered IP address has a valid invite token: forum user ID; email address; profile ID and forum avatar image url.'
               ]}
             />
           </div>
