@@ -270,10 +270,10 @@ export default {
           name: 'Telegram',
           style: 'telegram'
         },
-        slack: {
-          url: 'https://slack.safenetwork.org/',
-          name: 'Slack',
-          style: 'slack'
+        riot: {
+          url: 'https://riot.im/app/#/room/#safenetwork:matrix.org',
+          name: 'Riot',
+          style: 'riot'
         },
         youTube: {
           url: 'https://www.youtube.com/channel/UChDck5R_C9i6XTrS66tbwOw',
