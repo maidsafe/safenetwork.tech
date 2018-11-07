@@ -75,3 +75,89 @@
                 color: $spark-red
                 &:after
                   background-color: $spark-red
+
+
+// Email signup
+.email-signup-wrap
+  .email-signup
+    margin-top: 50px
+  .email-signup-inp
+    display: inline-block
+    input
+      width: 274px
+      line-height: 36px
+      border-radius: 20px
+      border: 2px solid #D6D6D6
+      padding: 0 25px
+      +font-bold()
+      font-size: 16px
+      outline: none
+      background-color: #F5F4F2
+  .email-signup-btn
+    display: inline-block
+    margin-left: 30px
+    button
+      min-width: 175px
+      +font-bold()
+      font-size: 16px
+      font-weight: 600
+      line-height: 36px
+      padding: 0 20px
+      border-radius: 20px
+      border: 2px solid $eye-searing-red
+      background-color: $eye-searing-red
+      color: $white
+      outline: none
+      cursor: pointer
+      &:hover
+        background-color: $colr-main-nav-btn-link-active-bg
+        color: inherit
+      &:disabled
+        cursor: not-allowed
+        &:hover
+          background-color: $eye-searing-red
+          color: $white
+  .email-signup-msg
+    +font-bold()
+    font-size: 16px
+    color: $eye-searing-red
+    margin-top: 12px
+    margin-left: 28px
+  &.signup-success
+    .lft-sec-p
+      color: $comp-green !important
+    .email-signup-inp
+      position: relative
+      input
+        box-shadow: 0px 0px 12px $comp-green
+        border-color: $comp-green
+        border-width: 1px
+      &:after
+        content: ''
+        width: 18px
+        height: 18px
+        display: block
+        background-color: traparent
+        position: absolute
+        top: 50%
+        right: 12px
+        transform: translate(0, -50%)
+        border-radius: 50%
+        z-index: 1
+        background-image: url($url-check-circle)
+        background-repeat: no-repeat
+        background-size: contain
+    .email-signup-btn
+      button
+        background-color: $disabled-grey
+        color: $white
+        border-color: $disabled-grey
+  &.signup-waiting
+    .email-signup-btn
+      opacity: 0.6
+  &.signup-failure
+    .email-signup-inp
+      input
+        box-shadow: 0px 0px 12px $eye-searing-red
+        border-color: $eye-searing-red
+        border-width: 1px
