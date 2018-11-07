@@ -14,7 +14,7 @@ export default class EmailSignUp extends React.Component {
 
     this.stateAttr = {
       init: {
-        desc: 'Be the first to know about the latest developments, releases, and the network launch.',
+        desc: 'Get the latest SAFE Network news first',
         inputPlaceHolder: 'Email Address',
         buttonText: 'Sign Up'
       },
@@ -114,7 +114,7 @@ export default class EmailSignUp extends React.Component {
         }
       })
       .catch((err) => {
-        this.setFailure('some issue with the server');
+        this.setFailure('Some issue with the server');
       })
     }
   }
