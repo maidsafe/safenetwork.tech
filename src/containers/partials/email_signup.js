@@ -162,7 +162,7 @@ export default class EmailSignUp extends React.Component {
               <input
                 type="email"
                 name="user-email"
-                autoComplete="false"
+                autoComplete="off"
                 placeholder={this.state.inputPlaceHolder}
                 ref={c => {
                   this.userEmail = c;
