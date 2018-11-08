@@ -41,7 +41,6 @@
                 padding-left: get-single-column()
 
   .email-signup-wrap
-    .email-signup
     .email-signup-inp
       width: 100%
       input
@@ -53,6 +52,25 @@
       margin-left: 0
       button
         width: 100%
+    .email-signup-msg
+      margin-top: -70px
+      font-size: 12px
+
+@media screen and (max-width: $sm-width - 1) and (min-width: '450px')
+  .email-signup-wrap
+    .email-signup-inp
+      width: calc-single-column(20) * 12
+      input
+        width: 100%
+        background-color: $white
+    .email-signup-btn
+      padding-left: 33px
+      width: calc-single-column(20) * 8
+      margin-left: 0
+      button
+        width: 100%
+        min-width: auto
+        max-width: 180px
     .email-signup-msg
       margin-top: -70px
       font-size: 12px
