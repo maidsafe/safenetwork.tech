@@ -20,6 +20,16 @@
                 color: $white
                 &:after
                   background-color: $white
+    .email-signup-wrap
+      .email-signup-inp
+        input
+          background-color: $white
+      .email-signup-msg
+        color: $pale-red
+      &.signup-success
+        .lft-sec-p
+          color: $white !important
+
   .page-end-b
     width: 100%
     display: table
@@ -150,9 +160,9 @@
         background-size: contain
     .email-signup-btn
       button
-        background-color: $disabled-grey
+        background-color: $silver-grey
         color: $white
-        border-color: $disabled-grey
+        border-color: $silver-grey
   &.signup-waiting
     .email-signup-btn
       opacity: 0.6
