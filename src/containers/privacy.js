@@ -106,11 +106,11 @@ class Privacy extends React.Component {
               head="Who has access to data?"
               para={[
                 'Your information may be shared internally for the purposes of the development of the SAFE Network. This includes members of the Marketing, QA, Development and Payroll teams.',
-                'When you consent for your IP address to be collected, this will be stored on an external server hosted by Digital Ocean with whom the QA and Development teams have access. More information on their privacy policy can be found <a href="https://www.digitalocean.com/legal/privacy-policy/">here</a>',
+                'When you consent for your IP address to be collected, this will be stored on an external server hosted by Digital Ocean with whom the QA and Development teams have access. More information on their privacy policy can be found here - <a href="https://www.digitalocean.com/legal/privacy-policy/">https://www.digitalocean.com/legal/privacy-policy/</a>',
                 'To determine the global location for the crust dashboard the organisation uses the external geolocation service provider <a href="https://ipapi.co/">ipapi.co</a>. For more information see ipapi.co’s <a href="https://ipapi.co/privacy/">privacy policy</a>.',
                 'When you consent for your email address to be collected, by  signing up for the newsletter, your email address will be stored on an external server hosted by <a href="https://mailchimp.com/">MailChimp</a> to which the MaidSafe Marketing team has access. Only your email address will be stored by MailChimp.',
                 'If you wish to unsubscribe from the newsletter, MailChimp will immediately anonymise your personal data and we will permanently delete this remaining anonymised data each May and November.',
-                'More information on their privacy policy can be found <a href="https://mailchimp.com/legal/privacy/">here</a>'
+                'More information on their privacy policy can be found here - <a href="https://mailchimp.com/legal/privacy/">https://mailchimp.com/legal/privacy/</a>'
               ]}
             />
 
