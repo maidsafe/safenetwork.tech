@@ -15,7 +15,7 @@ export default class EmailSignUp extends React.Component {
 
     this.stateAttr = {
       init: {
-        desc: "Get the latest SAFE Network news first",
+        desc: "Be first to get the latest news on all SAFE Network developments, updates and releases",
         inputPlaceHolder: "Email Address",
         buttonText: "Sign Up"
       },
