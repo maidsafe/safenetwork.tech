@@ -70,7 +70,7 @@ class Privacy extends React.Component {
             <Container
               head="What is personal data?"
               para={[
-                'Personal data means any and all data that relates to an identifiable person who can be directly or indirectly identified from that data. In this case, it means personal data that you give to us via Our Site. This definition shall, where applicable, incorporate the definitions provided in the EU Regulation 2016/679 – the General Data Protection Regulation (“GDPR”); and',
+                'Personal data means any and all data that relates to an identifiable person who can be directly or indirectly identified from that data. In this case, it means personal data that you give to us via Our Site. This definition shall, where applicable, incorporate the definitions provided in the EU Regulation 2016/679 – the General Data Protection Regulation (“GDPR”).',
               ]}
             />
             <Container
@@ -81,68 +81,52 @@ class Privacy extends React.Component {
                   text: '<li>Your IP Address</li>',
                   type: 'list'
                 },
-                'During the Alpha phase of the SAFE Network development we record the currently active IP address of your login in order to avoid spamming attempts.  The IP address is recorded only when the “Set Registered IP” or “Update Registered IP” buttons are pressed. The data will be stored on an external server (<a href="https://www.digitalocean.com">Digital Ocean</a>).'
+                'During the Alpha phase of the SAFE Network development we record the currently active IP address of your login in order to avoid spamming attempts. The IP address is recorded only when the “Set Registered IP” or “Update Registered IP” buttons are pressed. The data will be stored on an external server (<a href="https://www.digitalocean.com/">Digital Ocean</a>) and will be deleted as soon as it is apparent that the information is no longer needed for the purpose for which it was retained.',
+                {
+                  text: '<li>Your email address</li>',
+                  type: 'list'
+                },
+                'If you choose to subscribe to our email newsletter we collect your email address.',
+                {
+                  text: '<li>Voluntarily Submitted Information</li>',
+                  type: 'list'
+                },
+                'In addition, we may collect and retain information you voluntarily submit to us by contacting us via email. It is up to you whether to submit information to us, and how much information to provide.',
               ]}
             />
             <Container
               head="Why does the organisation process personal data?"
               para={[
                 'The organisation has a legitimate interest in processing personal data (current IP address) in order to ensure that the SAFE Network can be accessed, during the Alpha development phase without being left open to attack by malicious agents.',
-                'Collecting IP addresses is a temporary measure but essential at this stage as it acts as a form of spam protection - preventing someone creating thousands of accounts and attacking the Network whilst it is in Alpha stage. The company will only collect this information if you with your consent if you press the button “Set Registered IP” or “Update Registered IP”.'
+                'Collecting IP addresses is a temporary measure but essential at this stage as it acts as a form of spam protection - preventing someone creating thousands of accounts and attacking the Network whilst it is in Alpha stage. The company will only collect this information if you with your consent press the button “Set Registered IP” or “Update Registered IP”.',
+                'Collecting email addresses with your consent enables us to email you, and keep you up to date with all news related to the SAFE Network.'
               ]}
             />
             <Container
               head="Who has access to data?"
               para={[
-                'Your information may be shared internally for the purposes of the development of the SAFE Network. This includes members of the QA, Development and payroll  teams.',
-                'When you consent for your IP address to be collected, this will be stored on an external server hosted by Digital Ocean with whom the QA and Development teams have access'
+                'Your information may be shared internally for the purposes of the development of the SAFE Network. This includes members of the Marketing, QA, Development and Payroll teams.',
+                'When you consent for your IP address to be collected, this will be stored on an external server hosted by Digital Ocean with whom the QA and Development teams have access. More information on their privacy policy can be found here - <a href="https://www.digitalocean.com/legal/privacy-policy/">https://www.digitalocean.com/legal/privacy-policy/</a>',
+                'To determine the global location for the crust dashboard the organisation uses the external geolocation service provider <a href="https://ipapi.co/">ipapi.co</a>. For more information see ipapi.co’s <a href="https://ipapi.co/privacy/">privacy policy</a>.',
+                'When you consent for your email address to be collected, by signing up for the newsletter, your email address will be stored on an external server hosted by <a href="https://mailchimp.com/">MailChimp</a> to which the MaidSafe Marketing team has access. Only your email address will be stored by MailChimp. In addition when unsubscribing, updating your preferences or viewing an email in your browser MailChimp may place cookies on your device.',
+                'If you wish to unsubscribe from the newsletter, MailChimp will immediately anonymise your personal data and we will permanently delete this remaining anonymised data each May and November.',
+                'More information on their privacy policy can be found here - <a href="https://mailchimp.com/legal/privacy/">https://mailchimp.com/legal/privacy/</a>'
               ]}
             />
 
             <Container
               head="How does the organisation protect data?"
               para={[
-                'The organisation has limited the number of people who are required to have access to login to Digital Ocean.',
-                'Digital Ocean also have Security measures in place such as:',
-                {
-                  head: 'Access Control',
-                  text: 'Unauthorised persons shall be prevented from gaining physical access to premises, buildings or rooms, where data processing systems are located which process personal data. Exceptions may be granted for the purpose of auditing the facilities to third party auditors as long as they are supervised by DigitalOcean and do not get access to the personal data themselves.',
-                },
-                {
-                  head: 'Systems Access Control',
-                  text: 'Data processing systems must be prevented from being used without authorization',
-                },
-                {
-                  head: 'Data Access Control',
-                  text: 'Persons entitled to use a data processing system shall gain access only to the data to which they have a right of access, and personal data must not be read, copied, modified or removed without authorization in the course of the processing.',
-                },
-                {
-                  head: 'Data Transmission Control',
-                  text: 'Personal data must not be read, copied, modified or removed without authorization during transfer or storage and it shall be possible to establish to whom personal data was transferred',
-                },
-                {
-                  head: 'Data entry Control',
-                  text: 'DigitalOcean shall be able retrospectively to examine and establish whether and by whom personal data have been entered into data processing systems, modified or removed.',
-                },
-                {
-                  head: 'Job Control',
-                  text: 'Personal data being processed in the performance of a service for the DigitalOcean shall be processed solely in accordance with the services of agreement in place between the DigitalOcean and DigitalOcean and in accordance with the instructions of the DigitalOcean',
-                },
-                {
-                  head: 'Availability Control',
-                  text: 'Personal data shall be protected against disclosure, accidental or unauthorized destruction or loss.',
-                },
-                {
-                  head: 'Organizational Requirements',
-                  text: 'The internal organisation of DigitalOcean shall meet the specific requirements of data protection. In particular, DigitalOcean shall take technical and organizational measures to avoid the accidental mixing of personal data.',
-                },
+                'The organisation has limited the amount of personal data it collects.',
+                'The organisation has limited the number of people who have access to Digital Ocean and Mailchimp',
               ]}
             />
 
             <Container
               head="For how long does the organisation keep data?"
               para={[
-                'The personal data will be stored until the SAFE Network progresses to Beta Stage',
+                'IP addresses will be stored until the SAFE Network progresses to Beta Stage. This enables us to investigate any issues and trends that happen across our tests.',
+                'Email addresses will be stored until you choose to unsubscribe from our newsletter.'
               ]}
             />
             <Container
@@ -168,7 +152,8 @@ class Privacy extends React.Component {
             <Container
               head="What if you do not provide personal data?"
               para={[
-                'You are under no statutory or contractual obligation to provide your IP address to the organisation. However, if you do not provide the information, you will be unable to download our software.'
+                'You are under no statutory or contractual obligation to provide your IP address, however, if you do not provide us with this information you may not be able to fully use or test our suite of products.',
+                'You are under no statutory or contractual obligation to provide your email address, however, if you do not provide us with this information you will not be able to receive our newsletter.'
               ]}
             />
             <Container
@@ -186,7 +171,7 @@ class Privacy extends React.Component {
             <Container
               head="How do I make a complaint?"
               para={[
-                'You have the right to make a complaint about anything regarding processing, storage, retention of your data. We would hope to resolve any complaint internally and if you would like to lodge a complaint with us in the first instance please contact <a href="mailto:gdpr@maidsafe.net">gdpr@maidsafe.net</a>. However, you also have the right to lodge a complaint at any time to the Information Commissioner (ICO) in respect of our processing of your personal data. Information can be found at <a href="https://www.ico.org.uk">www.ico.org.uk</a>.'
+                'You have the right to make a complaint about anything regarding processing, storage, or retention of your data. We would hope to resolve any complaint internally and if you would like to lodge a complaint with us in the first instance please contact <a href="mailto:gdpr@maidsafe.net">gdpr@maidsafe.net</a>. However, you also have the right to lodge a complaint at any time to the Information Commissioner (ICO) in respect of our processing of your personal data. Information can be found at <a href="https://www.ico.org.uk">www.ico.org.uk</a>.'
               ]}
             />
           </div>

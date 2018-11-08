@@ -2,16 +2,16 @@
   .page-end
     .page-end-b
       .page-end-sec
-        display: block
+        // display: block
         &.lft
-          width: 100%
+          width: get-single-column() * 12
           padding-left: get-single-column() * 2
         &.rgt
-          width: 100%
-          padding: 0 0 200px
+          width: get-single-column() * 12
+          padding: 0 get-single-column() * 2 0 0
         .lft-sec
-          width: get-single-column() * 15
-          padding-bottom: 0
+          width: 100%
+          padding-top: 200px
           .lft-sec-b
             .lft-sec-p
               font-size: get-md-vw(24px)
@@ -20,9 +20,21 @@
                 line-height: 60px
                 font-size: get-md-vw(21px)
         .rgt-sec
-          width: get-single-column() * 10
-          margin-left: get-single-column() * 13
-          margin-top: -70px
+          width: get-single-column() * 20
+          margin-left: get-single-column() * 2
+          margin-top: 0
           .rgt-sec-b
             .rgt-sec-i
               font-size: get-md-vw(18px)
+  .email-signup-wrap
+    .email-signup-inp
+      width: calc-single-column(9) * 6
+      padding-right: 40px
+      input
+        width: 100%
+    .email-signup-btn
+      width: calc-single-column(9) * 3
+      margin-left: 0
+      button
+        width: 100%
+        min-width: calc-single-column(9) * 3
