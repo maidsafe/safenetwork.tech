@@ -81,7 +81,7 @@ class Privacy extends React.Component {
                   text: '<li>Your IP Address</li>',
                   type: 'list'
                 },
-                'During the Alpha phase of the SAFE Network development we record the currently active IP address of your login in order to avoid spamming attempts. The IP address is recorded only when the “Set Registered IP” or “Update Registered IP” buttons are pressed. The data will be stored on an external server (Digital Ocean) and will be deleted as soon as it is apparent that the information is no longer needed for the purpose for which it was retained.',
+                'During the Alpha phase of the SAFE Network development we record the currently active IP address of your login in order to avoid spamming attempts. The IP address is recorded only when the “Set Registered IP” or “Update Registered IP” buttons are pressed. The data will be stored on an external server (<a href="https://www.digitalocean.com/">Digital Ocean</a>) and will be deleted as soon as it is apparent that the information is no longer needed for the purpose for which it was retained.',
                 {
                   text: '<li>Your email address</li>',
                   type: 'list'
@@ -108,7 +108,7 @@ class Privacy extends React.Component {
                 'Your information may be shared internally for the purposes of the development of the SAFE Network. This includes members of the Marketing, QA, Development and Payroll teams.',
                 'When you consent for your IP address to be collected, this will be stored on an external server hosted by Digital Ocean with whom the QA and Development teams have access. More information on their privacy policy can be found here - <a href="https://www.digitalocean.com/legal/privacy-policy/">https://www.digitalocean.com/legal/privacy-policy/</a>',
                 'To determine the global location for the crust dashboard the organisation uses the external geolocation service provider <a href="https://ipapi.co/">ipapi.co</a>. For more information see ipapi.co’s <a href="https://ipapi.co/privacy/">privacy policy</a>.',
-                'When you consent for your email address to be collected, by  signing up for the newsletter, your email address will be stored on an external server hosted by <a href="https://mailchimp.com/">MailChimp</a> to which the MaidSafe Marketing team has access. Only your email address will be stored by MailChimp.',
+                'When you consent for your email address to be collected, by signing up for the newsletter, your email address will be stored on an external server hosted by <a href="https://mailchimp.com/">MailChimp</a> to which the MaidSafe Marketing team has access. Only your email address will be stored by MailChimp. In addition when unsubscribing, updating your preferences or viewing an email in your browser MailChimp may place cookies on your device.',
                 'If you wish to unsubscribe from the newsletter, MailChimp will immediately anonymise your personal data and we will permanently delete this remaining anonymised data each May and November.',
                 'More information on their privacy policy can be found here - <a href="https://mailchimp.com/legal/privacy/">https://mailchimp.com/legal/privacy/</a>'
               ]}
@@ -171,7 +171,7 @@ class Privacy extends React.Component {
             <Container
               head="How do I make a complaint?"
               para={[
-                'You have the right to make a complaint about anything regarding processing, storage, or retention of your data. We would hope to resolve any complaint internally and if you would like to lodge a complaint with us in the first instance please contact  <a href="mailto:gdpr@maidsafe.net">gdpr@maidsafe.net</a>. However, you also have the right to lodge a complaint at any time to the Information Commissioner (ICO) in respect of our processing of your personal data. Information can be found at <a href="https://www.ico.org.uk">www.ico.org.uk</a>.'
+                'You have the right to make a complaint about anything regarding processing, storage, or retention of your data. We would hope to resolve any complaint internally and if you would like to lodge a complaint with us in the first instance please contact <a href="mailto:gdpr@maidsafe.net">gdpr@maidsafe.net</a>. However, you also have the right to lodge a complaint at any time to the Information Commissioner (ICO) in respect of our processing of your personal data. Information can be found at <a href="https://www.ico.org.uk">www.ico.org.uk</a>.'
               ]}
             />
           </div>
