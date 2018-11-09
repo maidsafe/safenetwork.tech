@@ -19,7 +19,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
-    "react-static": "git://github.com/shankar2105/react-static.git",
+    "react-static": "shankar2105/react-static.git",
     "typeface-vollkorn": "^0.0.54",
     "ua-parser-js": "^0.7.18"
   },
@@ -30,7 +30,7 @@
     "html-react-parser": "^0.4.6",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
-    "serve": "^6.1.0",
+    "serve": "^10.0.0",
     "showdown": "^1.8.6"
   }
 }
