@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
+  "package-manager": "yarn",
   "scripts": {
     "start": "react-static start",
     "stage": "react-static build --staging",
@@ -18,7 +19,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
-    "react-static": "^5.9.7",
+    "react-static": "git://github.com/shankar2105/react-static.git",
     "typeface-vollkorn": "^0.0.54",
     "ua-parser-js": "^0.7.18"
   },
