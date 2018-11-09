@@ -19,3 +19,5 @@ yarn-debug.log*
 yarn-error.log*
 
 /tmp
+
+package-lock.json
