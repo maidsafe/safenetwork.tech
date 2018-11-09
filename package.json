@@ -29,7 +29,7 @@
     "html-react-parser": "^0.4.6",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
-    "serve": "^6.1.0",
+    "serve": "^10.0.0",
     "showdown": "^1.8.6"
   }
 }
