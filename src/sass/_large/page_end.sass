@@ -4,12 +4,24 @@
       .page-end-sec
         &.lft
           padding-left: get-single-column() * 2
+          padding-right: get-single-column()
         &.rgt
-          padding-right: get-single-column() * 2
+          padding-left: get-single-column()
+          padding-right: get-single-column()
         .lft-sec-b
           .lft-sec-p
-            font-size: get-lg-vw(30px)
+            font-size: get-lg-vw(21px) !important
           .lft-sec-btn
             .btn
               min-width: 280px
               font-size: get-lg-vw(24px)
+        .rgt-sec
+          margin-top: 0
+  // Email signup
+  .email-signup-wrap
+    .email-signup-inp
+      width: calc-single-column(9) * 6
+      padding-right: 44px
+    .email-signup-btn
+      width: calc-single-column(9) * 3
+      padding-left: 0

@@ -40,9 +40,10 @@
       &.lft
         width: get-single-column() * 12
         padding-left: get-single-column() * 3
+        padding-right: get-single-column() * 2
       &.rgt
         width: get-single-column() * 12
-        padding-left: get-single-column()
+        // padding-left: get-single-column()
         padding-right: get-single-column() * 3
       .lft-sec
         padding-top: 150px
@@ -50,7 +51,7 @@
         .lft-sec-b
           .lft-sec-p
             +para()
-            font-size: get-vw(30px)
+            font-size: get-vw(21px)
           .lft-sec-btn
             margin-top: 80px
             .btn
@@ -69,6 +70,7 @@
                 background-color: transparent
                 color: $colr-common-text
       .rgt-sec
+        margin-top: 120px
         .rgt-sec-b
           width: 100%
           +clearfix()
@@ -92,9 +94,10 @@
   .email-signup
     margin-top: 50px
   .email-signup-inp
+    width: calc-single-column(7) * 4
     display: inline-block
     input
-      width: 274px
+      width: 100%
       line-height: 36px
       border-radius: 20px
       border: 2px solid #D6D6D6
@@ -104,10 +107,11 @@
       outline: none
       background-color: #F5F4F2
   .email-signup-btn
+    width: calc-single-column(7) * 3
     display: inline-block
-    margin-left: 30px
+    padding-left: 30px
     button
-      min-width: 175px
+      width: 100%
       +font-bold()
       font-size: 16px
       font-weight: 600
