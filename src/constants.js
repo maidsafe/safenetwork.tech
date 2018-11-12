@@ -13,6 +13,10 @@ const pages = {
 };
 
 export default {
+  targetServer: {
+    development: `http://localhost:8080`,
+    production: `https://services.maidsafe.net/mail-subscription`
+  },
   breakPointMob: 799,
   localStorage: {
     youtubeWarn: 'ut_warn'
