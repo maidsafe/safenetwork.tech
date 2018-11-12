@@ -1,11 +1,17 @@
 import React from "react";
 import Classnames from "classnames";
 import EmailValidator from "email-validator";
+import CONST from '../../constants';
 
 export default class EmailSignUp extends React.Component {
   constructor() {
     super();
-    this.emailSubUrl = "https://services.maidsafe.net/mail-subscription/api/1.0/subscribe";
+    this.errorList = {
+      invalidEmail: `Enter a valid email address`,
+      unknownIssue: `Something went wrong! Try again.`
+    };
+
+    this.emailSubUrl = `${CONST.targetServer.production}/api/1.0/subscribe`;
     this.status = {
       INIT: "INIT",
       SUCCESS: "SUCCESS",
@@ -29,7 +35,7 @@ export default class EmailSignUp extends React.Component {
         buttonText: "Done"
       },
       failure: {
-        message: "Enter a valid email address"
+        message: this.errorList.invalidEmail
       }
     };
 
@@ -97,8 +103,8 @@ export default class EmailSignUp extends React.Component {
 
     if (window.fetch) {
       this.setWaiting();
-      window
-        .fetch(this.emailSubUrl, {
+      try {
+        window.fetch(this.emailSubUrl, {
           method: "post",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -118,8 +124,11 @@ export default class EmailSignUp extends React.Component {
           }
         })
         .catch(err => {
-          this.setFailure("Some issue with the server");
+          this.setFailure(this.errorList.unknownIssue);
         });
+      } catch (err) {
+        this.setFailure(this.errorList.unknownIssue);
+      }
     }
   }
 
