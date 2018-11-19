@@ -273,10 +273,10 @@ class Future extends React.Component {
                 <Container1 theme="yellow" dark para="Integration with SOLID" />
               </div>
               <div className="tl-future-cntr7">
-                <Container1 theme="orange" dark head="Alpha 3" para="Secure Autonomous Network: an autonomous secure routing layer that will see the network architecture becoming more decentralised, enabling users to run routing nodes and providing secure transient data in the process" />
+                <Container1 theme="orange" dark head="Fleming" para="Secure Autonomous Network: an autonomous secure routing layer that will see the network architecture becoming more decentralised, enabling users to run routing nodes and providing secure transient data in the process" />
               </div>
               <div className="tl-future-cntr8">
-                <Container1 theme="red" dark head="Alpha 4" para="Secure autonomous data services: addition of a storage layer through the reintroduction of user-run Vaults facilitating a much broader range of decentralised apps and use cases" />
+                <Container1 theme="red" dark head="Maxwell" para="Secure autonomous data services: addition of a storage layer through the reintroduction of user-run Vaults facilitating a much broader range of decentralised apps and use cases" />
               </div>
             </div>
           </div>
@@ -292,7 +292,7 @@ class Future extends React.Component {
                 <Container1 theme="yellow" dark para="A security audit of the network" />
               </div>
               <div className="tl-future-cntr3">
-                <Container1 theme="yellow" dark para="Test safecoin" />
+                <Container1 theme="yellow" dark para="Test Safecoin" />
               </div>
               <div className="tl-future-cntr4">
                 <Container1 theme="yellow" dark para="Real-time network upgrades" />
