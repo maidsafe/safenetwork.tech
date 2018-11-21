@@ -19,20 +19,43 @@ const getWindowWidth = () => {
   return window.screen.width;
 }
 
+const maxViewPortSlider = 1400;
+
 class Banner extends React.Component {
   constructor() {
     super();
     this.slideSpeed = 5000; // 5 seconds
     this.timer = null;
+    this.listeners = {};
+    this.state = {
+      windowWidth: '100%'
+    }
   }
 
   componentDidMount() {
     const self = this;
+    self._setSliderBase();
+    this.listeners['resize'] = function (e) {
+      self._setSliderBase();
+    }
+    window.addEventListener('resize', this.listeners['resize'])
     // this.autoSlide();
     // window.addEventListener('resize', () => {
     //   clearTimeout(self.timer);
     //   self.autoSlide();
     // });
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.listeners['resize']);
+  }
+
+  _setSliderBase() {
+    let winWidth = getWindowWidth();
+    if (winWidth < maxViewPortSlider) {
+      winWidth = '100%'
+    }
+    this.setState({windowWidth: winWidth});
   }
 
   autoSlide() {
@@ -78,7 +101,7 @@ class Banner extends React.Component {
           width: this.props.scroll || 0
         }}>
           <div className="safecoins-bnr-i-b header-adjust" style={{
-            width: getWindowWidth(),
+            width: this.state.windowWidth,
           }}>
             <div className="safecoins-bnr-i-cnt2">
               <p className="bnr-para">A cryptocurrency like no other. Digital cash with no public ledger. There’s no limit to the number of transactions which can take place instantly, privately and simultaneously.</p>
@@ -267,6 +290,7 @@ class SafeCoins extends React.Component {
     const self = this;
     this.listeners['resize'] = function (e) {
       self._removeListeners();
+      self._toggleOverflow(true);
       self._toggleSlider();
     }
     window.addEventListener('resize', this.listeners['resize'])
@@ -314,7 +338,7 @@ class SafeCoins extends React.Component {
       return;
     }
     // support for large screens
-    if (getWindowWidth() < 1400) {
+    if (getWindowWidth() < maxViewPortSlider) {
       this._removeListeners();
       return;
     }
