@@ -14,6 +14,11 @@ import Hitbtc from '../assets/images/hitbtc.png';
 import Poloniex from '../assets/images/poloniex.png';
 import Cryptopia from '../assets/images/cryptopia.png';
 
+const getWindowWidth = () => {
+  if (typeof window === 'undefined') return 0
+  return window.screen.width;
+}
+
 class Banner extends React.Component {
   constructor() {
     super();
@@ -73,7 +78,7 @@ class Banner extends React.Component {
           width: this.props.scroll || 0
         }}>
           <div className="safecoins-bnr-i-b header-adjust" style={{
-            width: window.screen.width,
+            width: getWindowWidth(),
           }}>
             <div className="safecoins-bnr-i-cnt2">
               <p className="bnr-para">A cryptocurrency like no other. Digital cash with no public ledger. There’s no limit to the number of transactions which can take place instantly, privately and simultaneously.</p>
@@ -256,8 +261,11 @@ class SafeCoins extends React.Component {
   }
 
   _registerSlider() {
+    if (typeof window === 'undefined') {
+      return;
+    }
     // support for large screens
-    if (window.screen.width < 1400) {
+    if (getWindowWidth() < 1400) {
       return;
     }
     const toggleOverflow = (state) => {
@@ -280,7 +288,7 @@ class SafeCoins extends React.Component {
         if (window.scrollY < minY) {
           toggleOverflow(false);
         }
-        if (this.state.moveLeft >= window.screen.width) {
+        if (this.state.moveLeft >= getWindowWidth()) {
           toggleOverflow(true);
           return;
         }
