@@ -261,23 +261,53 @@ class SafeCoins extends React.Component {
 
   componentDidMount() {
     this._toggleSlider();
+    if (typeof window === 'undefined') {
+      return;
+    }
+    const self = this;
+    this.listeners['resize'] = function (e) {
+      self._removeListeners();
+      self._toggleSlider();
+    }
+    window.addEventListener('resize', this.listeners['resize'])
   }
 
   componentWillUnmount() {
-    this._toggleSlider(true);
+    this._removeListeners();
     this._toggleOverflow(true);
+    if (typeof window === 'undefined') {
+      return;
+    }
+    window.removeEventListener('resize', this.listeners['resize'])
   }
 
   _toggleOverflow(state) {
     document.body.style.overflow = state ? 'scroll' : 'hidden';
   };
 
+  _addListeners() {
+    if (typeof window === 'undefined') {
+      return;
+    }
+    window.addEventListener('wheel', this.listeners['wheel'], false);
+    window.addEventListener('touchmove', this.listeners['touchmove'], false);
+    window.addEventListener('keydown', this.listeners['keydown'], false);
+    window.addEventListener('touchstart', this.listeners['touchstart'], false);
+  }
+
+  _removeListeners() {
+    if (typeof window === 'undefined') {
+      return;
+    }
+    window.removeEventListener('wheel', this.listeners['wheel'], false);
+    window.removeEventListener('touchmove', this.listeners['touchmove'], false);
+    window.removeEventListener('keydown', this.listeners['keydown'], false);
+    window.removeEventListener('touchstart', this.listeners['touchstart'], false);
+  }
+
   _toggleSlider(toUnregister) {
     if (toUnregister) {
-      window.removeEventListener('wheel', this.listeners['wheel'], false);
-      window.removeEventListener('touchmove', this.listeners['touchmove'], false);
-      window.removeEventListener('keydown', this.listeners['keydown'], false);
-      window.removeEventListener('touchstart', this.listeners['touchstart'], false);
+      this._removeListeners();
       return;
     }
     if (typeof window === 'undefined') {
@@ -285,6 +315,7 @@ class SafeCoins extends React.Component {
     }
     // support for large screens
     if (getWindowWidth() < 1400) {
+      this._removeListeners();
       return;
     }
 
@@ -342,14 +373,11 @@ class SafeCoins extends React.Component {
       }
     }
 
-    this.listeners['touchstart'] = function(e) {
+    this.listeners['touchstart'] = function (e) {
       touchStartY = e.touches[0].pageY;
     }
 
-    window.addEventListener('wheel', this.listeners['wheel'], false);
-    window.addEventListener('touchmove', this.listeners['touchmove'], false);
-    window.addEventListener('keydown', this.listeners['keydown'], false);
-    window.addEventListener('touchstart', this.listeners['touchstart'], false);
+    this._addListeners();
   }
 
   render() {
