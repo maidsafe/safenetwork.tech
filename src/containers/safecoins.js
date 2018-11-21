@@ -255,12 +255,31 @@ class SafeCoins extends React.Component {
   state = {
     moveLeft: 0
   }
-  interval = 80;
+
+  sliderSpeed = 80;
+  listeners = {};
+
   componentDidMount() {
-    this._registerSlider();
+    this._toggleSlider();
   }
 
-  _registerSlider() {
+  componentWillUnmount() {
+    this._toggleSlider(true);
+    this._toggleOverflow(true);
+  }
+
+  _toggleOverflow(state) {
+    document.body.style.overflow = state ? 'scroll' : 'hidden';
+  };
+
+  _toggleSlider(toUnregister) {
+    if (toUnregister) {
+      window.removeEventListener('wheel', this.listeners['wheel'], false);
+      window.removeEventListener('touchmove', this.listeners['touchmove'], false);
+      window.removeEventListener('keydown', this.listeners['keydown'], false);
+      window.removeEventListener('touchstart', this.listeners['touchstart'], false);
+      return;
+    }
     if (typeof window === 'undefined') {
       return;
     }
@@ -268,56 +287,50 @@ class SafeCoins extends React.Component {
     if (getWindowWidth() < 1400) {
       return;
     }
-    const toggleOverflow = (state) => {
-      document.body.style.overflow = state ? 'scroll' : 'hidden';
-    };
 
     let touchStartY = 0;
 
     // onload check for scroll pos
     if (window.scrollY === 0) {
-      toggleOverflow(false);
+      this._toggleOverflow(false);
     }
 
     const minY = 10;
 
     const scrollControl = (yVal) => {
-      console.log('yVal', yVal)
       if (yVal > 0) {
         console.log('scrolling down')
         if (window.scrollY < minY) {
-          toggleOverflow(false);
+          this._toggleOverflow(false);
         }
         if (this.state.moveLeft >= getWindowWidth()) {
-          toggleOverflow(true);
+          this._toggleOverflow(true);
           return;
         }
-        this.setState({ moveLeft: this.state.moveLeft + this.interval })
+        this.setState({ moveLeft: this.state.moveLeft + this.sliderSpeed })
       }
       if (yVal < 0) {
         console.log('scrolling up')
         if (window.scrollY < minY && this.state.moveLeft === 0) {
-          toggleOverflow(false);
+          this._toggleOverflow(false);
           return;
         }
         if (window.scrollY < minY) {
-          toggleOverflow(false);
+          this._toggleOverflow(false);
         }
-        this.setState({ moveLeft: this.state.moveLeft - this.interval })
+        this.setState({ moveLeft: this.state.moveLeft - this.sliderSpeed })
       }
     }
 
-    window.onwheel = (e) => {
+    this.listeners['wheel'] = function (e) {
       scrollControl(e.deltaY);
-    };
+    }
 
-    window.onmousewheel = document.onmousewheel = (e) => {
-      scrollControl(e.deltaY);
-    };
-    window.ontouchmove = (e) => {
+    this.listeners['touchmove'] = function (e) {
       scrollControl((touchStartY - e.touches[0].pageY));
-    };
-    document.onkeydown = (e) => {
+    }
+
+    this.listeners['keydown'] = function (e) {
       var keys = { spaceBar: 32, up: 38, down: 40 };
       if (e.keyCode == keys.up) {
         scrollControl(-1);
@@ -327,10 +340,16 @@ class SafeCoins extends React.Component {
         scrollControl(1);
         return;
       }
-    };
-    window.addEventListener('touchstart', (e) => {
+    }
+
+    this.listeners['touchstart'] = function(e) {
       touchStartY = e.touches[0].pageY;
-    });
+    }
+
+    window.addEventListener('wheel', this.listeners['wheel'], false);
+    window.addEventListener('touchmove', this.listeners['touchmove'], false);
+    window.addEventListener('keydown', this.listeners['keydown'], false);
+    window.addEventListener('touchstart', this.listeners['touchstart'], false);
   }
 
   render() {
