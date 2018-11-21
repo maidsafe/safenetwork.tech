@@ -38,25 +38,27 @@
         top: 0
         left: 0
         overflow: hidden
-        // &:first-child
-        //   background-color: $pinky-grey
-        //   .safecoins-bnr-i-b
-        //     &:after
-        //       background-image: url($url-texture-9)
-        //     &:before
-        //       content: ''
-        //       display: block
-        //       width: 50%
-        //       height: 150%
-        //       position: absolute
-        //       top: 0
-        //       right: 0
-        //       z-index: 2
-        //       background-image: url($url-ants-mask)
-        //       background-size: cover
-        &:last-child
-          background-color: $light-grey
+        transition: width .2s linear
+        &:first-child
+          background-color: $pinky-grey
+          right: 0
+          left: auto
+          z-index: 1
           .safecoins-bnr-i-b
+            height: 100%
+            &:after
+              background-image: url($url-texture-9)
+              background-size: cover
+            &:before
+              background-image: url($url-ants-mask)
+              background-size: cover
+              z-index: 1
+        &:last-child
+          width: 0
+          background-color: $light-grey
+          z-index: 2
+          .safecoins-bnr-i-b
+            width: 100%
             height: 100%
             &:before
               background-image: url($url-sc-ant-mask)

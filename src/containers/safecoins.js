@@ -64,13 +64,17 @@ class Banner extends React.Component {
   render() {
     return (
       <div className="safecoins-bnr">
-        {/* <div className="safecoins-bnr-i">
+        <div className="safecoins-bnr-i">
           <div className="safecoins-bnr-i-b header-adjust">
             <div className="safecoins-bnr-i-cnt1"><h1 className="bnr-head">Unlimited scaling.<br /> Instant transactions.<br /> No fees</h1></div>
           </div>
-        </div> */}
-        <div className="safecoins-bnr-i">
-          <div className="safecoins-bnr-i-b header-adjust">
+        </div>
+        <div className="safecoins-bnr-i" style={{
+          width: this.props.scroll || 0
+        }}>
+          <div className="safecoins-bnr-i-b header-adjust" style={{
+            width: window.screen.width,
+          }}>
             <div className="safecoins-bnr-i-cnt2">
               <p className="bnr-para">A cryptocurrency like no other. Digital cash with no public ledger. There’s no limit to the number of transactions which can take place instantly, privately and simultaneously.</p>
               <h1 className="bnr-head">This is Safecoin</h1>
@@ -102,7 +106,7 @@ class Share extends React.Component {
                   <YouTubeWarn name="share" location="safecoin" />
                   <iframe src="https://www.youtube-nocookie.com/embed/ivwQVe12OAY" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
                 </div> */}
-                <CustomVideo links={CONST.videoLinks.security}/>
+                <CustomVideo links={CONST.videoLinks.security} />
               </div>
               <div className="safecoins-share-vid-cap">The Currency for Security and Privacy</div>
             </div>
@@ -243,6 +247,84 @@ class FAQ extends React.Component {
 
 // SafeCoins
 class SafeCoins extends React.Component {
+  state = {
+    moveLeft: 0
+  }
+  interval = 80;
+  componentDidMount() {
+    this._registerSlider();
+  }
+
+  _registerSlider() {
+    // support for large screens
+    if (window.screen.width < 1400) {
+      return;
+    }
+    const toggleOverflow = (state) => {
+      document.body.style.overflow = state ? 'scroll' : 'hidden';
+    };
+
+    let touchStartY = 0;
+
+    // onload check for scroll pos
+    if (window.scrollY === 0) {
+      toggleOverflow(false);
+    }
+
+    const minY = 10;
+
+    const scrollControl = (yVal) => {
+      console.log('yVal', yVal)
+      if (yVal > 0) {
+        console.log('scrolling down')
+        if (window.scrollY < minY) {
+          toggleOverflow(false);
+        }
+        if (this.state.moveLeft >= window.screen.width) {
+          toggleOverflow(true);
+          return;
+        }
+        this.setState({ moveLeft: this.state.moveLeft + this.interval })
+      }
+      if (yVal < 0) {
+        console.log('scrolling up')
+        if (window.scrollY < minY && this.state.moveLeft === 0) {
+          toggleOverflow(false);
+          return;
+        }
+        if (window.scrollY < minY) {
+          toggleOverflow(false);
+        }
+        this.setState({ moveLeft: this.state.moveLeft - this.interval })
+      }
+    }
+
+    window.onwheel = (e) => {
+      scrollControl(e.deltaY);
+    };
+
+    window.onmousewheel = document.onmousewheel = (e) => {
+      scrollControl(e.deltaY);
+    };
+    window.ontouchmove = (e) => {
+      scrollControl((touchStartY - e.touches[0].pageY));
+    };
+    document.onkeydown = (e) => {
+      var keys = { spaceBar: 32, up: 38, down: 40 };
+      if (e.keyCode == keys.up) {
+        scrollControl(-1);
+        return;
+      }
+      if (e.keyCode == keys.down || e.keyCode == keys.spaceBar) {
+        scrollControl(1);
+        return;
+      }
+    };
+    window.addEventListener('touchstart', (e) => {
+      touchStartY = e.touches[0].pageY;
+    });
+  }
+
   render() {
     return (
       <section className="safecoins">
@@ -251,7 +333,7 @@ class SafeCoins extends React.Component {
           <meta name="description" content={CONST.meta.safecoin.desc} />
         </Head>
         <div className="safecoins-b">
-          <Banner />
+          <Banner scroll={this.state.moveLeft} />
           <Share />
           <Contribute />
           <Buy />

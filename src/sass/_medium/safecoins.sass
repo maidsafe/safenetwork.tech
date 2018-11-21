@@ -17,6 +17,10 @@
           font-size: get-md-vw(21px)
       .safecoins-bnr
         .safecoins-bnr-i
+          &:first-child
+            display: none
+          &:last-child
+            width: 100% !important
           .safecoins-bnr-i-b
             &:after
               background-image: url($url-sc-bnr-bg-md)
