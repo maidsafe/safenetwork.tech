@@ -1,7 +1,6 @@
 sudo: true
 
 os:
-  - windows
   - linux
   - osx
 
