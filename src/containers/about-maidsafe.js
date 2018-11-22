@@ -29,7 +29,7 @@ class Contact extends React.Component {
 
               <p className="para-text">MaidSafe are guided and influenced by the SAFE Network Community who have helped to fund the work and guide its decisions through discussions across community-run platforms.</p>
 
-              <p className="para-text">The SAFE Network is currently in Alpha Release. Upon full release, MaidSafe will be only one of many thousands of developers who making a living by carrying out development on the Network as a result of the built-in incentivisation scheme.</p>
+              <p className="para-text">The SAFE Network is currently in Alpha Release. Upon full release, MaidSafe will be only one of many thousands of developers making a living by carrying out development on the Network as a result of the built-in incentivisation scheme.</p>
 
               <p className="para-text">To contact the team directly, visit the company website at <a href="https://maidsafe.net/contact">maidsafe.net</a> for further details.</p>
               </div>

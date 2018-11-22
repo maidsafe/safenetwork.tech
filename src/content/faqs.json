@@ -570,7 +570,7 @@
             "type": "para"
           },
           {
-            "cnt": "Farming Attempt means: by delivering data chunks when requested, a Vault occasionally gains the opportunity to make a Farming Attempt. This consists of sending a validated request to a random Safecoin address. If an owned Safecion already exists at that address, the Attempt fails. If there is no Safecoin there, one is created and awarded to the requesting Vault (i.e. a successful Farming Attempt has been made.",
+            "cnt": "Farming Attempt means: by delivering data chunks when requested, a Vault occasionally gains the opportunity to make a Farming Attempt. This consists of sending a validated request to a random Safecoin address. If an owned Safecoin already exists at that address, the Attempt fails. If there is no Safecoin there, one is created and awarded to the requesting Vault (i.e. a successful Farming Attempt has been made).",
             "type": "para"
           },
           {
@@ -578,7 +578,7 @@
             "type": "para"
           },
           {
-            "cnt": "The probability of gaining a Farming Attempt is dependent on the farming_rate, which is a variable related to the quantity of available storage resources in the Network.",
+            "cnt": "The probability of gaining a Farming Attempt is dependent on the farming rate, which is a variable related to the quantity of available storage resources in the Network.",
             "type": "para"
           }
         ]
