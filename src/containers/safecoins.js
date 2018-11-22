@@ -16,7 +16,7 @@ import Cryptopia from '../assets/images/cryptopia.png';
 
 const getWindowWidth = () => {
   if (typeof window === 'undefined') return 0
-  return window.screen.width;
+  return window.innerWidth;
 }
 
 const maxViewPortSlider = 1400;
