@@ -1,6 +1,10 @@
 sudo: true
 
+env:
+  - YARN_GPG=no
+
 os:
+  - windows
   - linux
   - osx
 
