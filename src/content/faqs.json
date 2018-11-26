@@ -46,7 +46,7 @@
         "q": "Why should I use the SAFE Network?",
         "a": [
           {
-            "cnt": "Applications and programs on the existing Internet compromise your privacy through advertising and effectively control your data, granting you access when you login. On the SAFE Network, only you control who has access to your data and the distributed security features make your data safer than ever before. If you contribute some of your spare computing power to the network, you will be compensated for doing so with the Network’s built-in token, [Safecoin](/Safecoin). ",
+            "cnt": "Applications and programs on the existing Internet compromise your privacy through advertising and effectively control your data, granting you access when you login. On the SAFE Network, only you control who has access to your data and the distributed security features make your data safer than ever before. If you contribute some of your spare computing power to the network, you will be compensated for doing so with the Network’s built-in token, [Safecoin](/safecoin). ",
             "type": "para"
           }
         ]
@@ -570,7 +570,7 @@
             "type": "para"
           },
           {
-            "cnt": "Farming Attempt means: by delivering data chunks when requested, a Vault occasionally gains the opportunity to make a Farming Attempt. This consists of sending a validated request to a random Safecoin address. If an owned Safecion already exists at that address, the Attempt fails. If there is no Safecoin there, one is created and awarded to the requesting Vault (i.e. a successful Farming Attempt has been made.",
+            "cnt": "Farming Attempt means: by delivering data chunks when requested, a Vault occasionally gains the opportunity to make a Farming Attempt. This consists of sending a validated request to a random Safecoin address. If an owned Safecoin already exists at that address, the Attempt fails. If there is no Safecoin there, one is created and awarded to the requesting Vault (i.e. a successful Farming Attempt has been made).",
             "type": "para"
           },
           {
@@ -578,7 +578,7 @@
             "type": "para"
           },
           {
-            "cnt": "The probability of gaining a Farming Attempt is dependent on the farming_rate, which is a variable related to the quantity of available storage resources in the Network.",
+            "cnt": "The probability of gaining a Farming Attempt is dependent on the farming rate, which is a variable related to the quantity of available storage resources in the Network.",
             "type": "para"
           }
         ]

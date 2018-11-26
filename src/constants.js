@@ -229,7 +229,7 @@ export default {
       },
     },
     footer: {
-      blog: 'https://blog.maidsafe.net/',
+      blog: 'https://medium.com/safenetwork',
       comm: {
         forum: 'https://safenetforum.org/',
         devForum: 'https://forum.safedev.org/'
