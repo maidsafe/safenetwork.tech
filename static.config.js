@@ -115,7 +115,7 @@ export default {
     return config
   },
   Document: ({ Html, Head, Body, children, siteData, renderMeta }) => (
-    <Html lang="en-US">
+    <Html lang="en-US" className="no-js">
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -129,7 +129,9 @@ export default {
         <meta name="theme-color" content="#ffffff" />
         <title>SAFE Network</title>
       </Head>
-      <Body className="no-js">{children}</Body>
+      <Body onLoad={() => {
+        (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+      }}>{children}</Body>
     </Html>
   ),
 }

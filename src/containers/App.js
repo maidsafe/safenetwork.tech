@@ -10,15 +10,13 @@ import Footer from './partials/footer';
 import '../sass/main.sass'
 
 class App extends React.Component {
-  componentDidMount() {
-    setTimeOut(() => {
-      (typeof document !== 'undefined') ? (
-        (function(H) {
-          H.className=H.className.replace(/\bno-js\b/,'js')
-        })(document.body)
-      ) : null
-    }, 200)
-  }
+  // componentDidMount() {
+  //   (typeof document !== 'undefined') ? (
+  //     (function(H) {
+  //       H.className=H.className.replace(/\bno-js\b/,'js')
+  //     })(document.body)
+  //   ) : null
+  // }
 
   render() {
     return (
