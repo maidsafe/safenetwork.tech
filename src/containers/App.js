@@ -10,13 +10,13 @@ import Footer from './partials/footer';
 import '../sass/main.sass'
 
 class App extends React.Component {
-  // componentDidMount() {
-  //   (typeof document !== 'undefined') ? (
-  //     (function(H) {
-  //       H.className=H.className.replace(/\bno-js\b/,'js')
-  //     })(document.body)
-  //   ) : null
-  // }
+  componentDidMount() {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('load', () => {
+        (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.body)
+      })
+    }
+  }
 
   render() {
     return (

@@ -129,9 +129,7 @@ export default {
         <meta name="theme-color" content="#ffffff" />
         <title>SAFE Network</title>
       </Head>
-      <Body className="no-js" onLoad={() => {
-        (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.body)
-      }}>{children}</Body>
+      <Body className="no-js">{children}</Body>
     </Html>
   ),
 }
