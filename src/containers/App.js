@@ -11,11 +11,13 @@ import '../sass/main.sass'
 
 class App extends React.Component {
   componentDidMount() {
-    (typeof document !== 'undefined') ? (
-      (function(H) {
-        H.className=H.className.replace(/\bno-js\b/,'js')
-      })(document.body)
-    ) : null
+    setTimeOut(() => {
+      (typeof document !== 'undefined') ? (
+        (function(H) {
+          H.className=H.className.replace(/\bno-js\b/,'js')
+        })(document.body)
+      ) : null
+    }, 200)
   }
 
   render() {
