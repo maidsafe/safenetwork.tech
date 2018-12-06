@@ -258,7 +258,7 @@ class Future extends React.Component {
                 <Container1 theme="yellow" dark para="Java API for Mobile Development" />
               </div>
               <div className="tl-future-cntr2">
-                <Container1 theme="yellow" dark para="Integration of PARSEC in a dynamic permission less network where nodes are free to join and leave" />
+                <Container1 theme="yellow" dark para="Integration of PARSEC in a dynamic permissionless network where nodes are free to join and leave" />
               </div>
               <div className="tl-future-cntr3">
                 <Container1 theme="yellow" dark para="Introduction of Disjoint groups with secure message relay" />
