@@ -129,7 +129,7 @@ export default {
         <meta name="theme-color" content="#ffffff" />
         <title>SAFE Network</title>
       </Head>
-      <Body>{children}</Body>
+      <Body className="no-js">{children}</Body>
     </Html>
   ),
 }

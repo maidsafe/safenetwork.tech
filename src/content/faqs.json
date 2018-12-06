@@ -323,7 +323,7 @@
         "q": "What is data deduplication?",
         "a": [
           {
-            "cnt": "The SAFE Network uses [data deduplication](https://en.wikipedia.org/wiki/Data_deduplication) to ensure that space is used efficiently when storing multiple copies of data which have been uniquely encrypted. The network is able to distinguish identical pieces of data by comparing the hashes of each chunk. As described in [Guaranteed Vault identification](https://safenetwork.wiki/en/Guaranteed_Vault_identification), Vaults also use hashes to identify themselves.",
+            "cnt": "The SAFE Network uses [data deduplication](https://en.wikipedia.org/wiki/Data_deduplication) to ensure that space is used efficiently when storing multiple copies of data which have been uniquely encrypted. The network is able to distinguish identical pieces of data by comparing the hashes of each chunk. Vaults also use hashes to identify themselves (known as Guaranteed Vault Identification).",
             "type": "para"
           }
         ]

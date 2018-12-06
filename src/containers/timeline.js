@@ -255,16 +255,16 @@ class Future extends React.Component {
                 <h3>Next</h3>
               </div>
               <div className="tl-future-cntr1">
-                <Container1 theme="yellow" dark para="PARSEC Dynamic Membership White Paper" />
+                <Container1 theme="yellow" dark para="Java API for Mobile Development" />
               </div>
               <div className="tl-future-cntr2">
-                <Container1 theme="yellow" dark para="PARSEC Code working in a dynamic network" />
+                <Container1 theme="yellow" dark para="Integration of PARSEC in a dynamic permissionless network where nodes are free to join and leave" />
               </div>
               <div className="tl-future-cntr3">
-                <Container1 theme="yellow" dark para="Disjoint Groups White Paper (aka Sharding)" />
+                <Container1 theme="yellow" dark para="Introduction of Disjoint groups with secure message relay" />
               </div>
               <div className="tl-future-cntr4">
-                <Container1 theme="yellow" dark para="PARSEC Code working as the Network evolves in size (splits, merges etc)" />
+                <Container1 theme="yellow" dark para="Enabling disjoint groups to merge and split whilst maintaining consensus" />
               </div>
               <div className="tl-future-cntr5">
                 <Container1 theme="yellow" dark para="Secure Message Relay" />
@@ -283,7 +283,7 @@ class Future extends React.Component {
           <div className="tl-future-beta tl-lay dark">
             <div className="tl-lay-b">
               <div className="tl-lay-date">
-                <h3>Beta</h3>
+                <h3>Beyond</h3>
               </div>
               <div className="tl-future-cntr1">
                 <Container1 theme="yellow" dark para="Data republish (ability to upgrade the network without deleting all the data)" />
