@@ -6,26 +6,36 @@
         &.lft
           width: 100%
           padding-left: get-single-column() * 2
+          padding-right: get-single-column() * 6
         &.rgt
           width: 100%
           padding: 0 0 200px
+          padding-left: get-single-column() * 2
         .lft-sec
-          width: get-single-column() * 15
+          width: 100%
           padding-bottom: 0
           padding-top: 150px
           .lft-sec-b
             .lft-sec-p
-              font-size: get-sm-vw(24px)
-              line-height: 100%
+              font-size: get-sm-vw(21px)
+              line-height: 29px
             .lft-sec-btn
               margin-top: 40px
               .btn
                 line-height: 60px
                 font-size: get-sm-vw(21px)
         .rgt-sec
-          width: get-single-column() * 10
-          margin-left: get-single-column() * 13
-          margin-top: -70px
+          width: 100%
+          margin-top: 70px
           .rgt-sec-b
             .rgt-sec-i
               font-size: get-sm-vw(18px)
+              padding-right: calc-single-column(22) * 2
+  // Email signup
+  .email-signup-wrap
+    .email-signup-inp
+      width: calc-single-column(16) * 10
+      padding-right: calc-single-column(16)
+    .email-signup-btn
+      width: calc-single-column(16) * 6
+      padding-left: 0

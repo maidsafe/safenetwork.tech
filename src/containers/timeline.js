@@ -255,16 +255,16 @@ class Future extends React.Component {
                 <h3>Next</h3>
               </div>
               <div className="tl-future-cntr1">
-                <Container1 theme="yellow" dark para="PARSEC Dynamic Membership White Paper" />
+                <Container1 theme="yellow" dark para="Java API for Mobile Development" />
               </div>
               <div className="tl-future-cntr2">
-                <Container1 theme="yellow" dark para="PARSEC Code working in a dynamic network" />
+                <Container1 theme="yellow" dark para="Integration of PARSEC in a dynamic permissionless network where nodes are free to join and leave" />
               </div>
               <div className="tl-future-cntr3">
-                <Container1 theme="yellow" dark para="Disjoint Groups White Paper (aka Sharding)" />
+                <Container1 theme="yellow" dark para="Introduction of Disjoint groups with secure message relay" />
               </div>
               <div className="tl-future-cntr4">
-                <Container1 theme="yellow" dark para="PARSEC Code working as the Network evolves in size (splits, merges etc)" />
+                <Container1 theme="yellow" dark para="Enabling disjoint groups to merge and split whilst maintaining consensus" />
               </div>
               <div className="tl-future-cntr5">
                 <Container1 theme="yellow" dark para="Secure Message Relay" />
@@ -273,17 +273,17 @@ class Future extends React.Component {
                 <Container1 theme="yellow" dark para="Integration with SOLID" />
               </div>
               <div className="tl-future-cntr7">
-                <Container1 theme="orange" dark head="Alpha 3" para="Secure Autonomous Network: an autonomous secure routing layer that will see the network architecture becoming more decentralised, enabling users to run routing nodes and providing secure transient data in the process" />
+                <Container1 theme="orange" dark head="Fleming" para="Secure Autonomous Network: an autonomous secure routing layer that will see the network architecture becoming more decentralised, enabling users to run routing nodes and providing secure transient data in the process" />
               </div>
               <div className="tl-future-cntr8">
-                <Container1 theme="red" dark head="Alpha 4" para="Secure autonomous data services: addition of a storage layer through the reintroduction of user-run Vaults facilitating a much broader range of decentralised apps and use cases" />
+                <Container1 theme="red" dark head="Maxwell" para="Secure autonomous data services: addition of a storage layer through the reintroduction of user-run Vaults facilitating a much broader range of decentralised apps and use cases" />
               </div>
             </div>
           </div>
           <div className="tl-future-beta tl-lay dark">
             <div className="tl-lay-b">
               <div className="tl-lay-date">
-                <h3>Beta</h3>
+                <h3>Beyond</h3>
               </div>
               <div className="tl-future-cntr1">
                 <Container1 theme="yellow" dark para="Data republish (ability to upgrade the network without deleting all the data)" />
@@ -292,7 +292,7 @@ class Future extends React.Component {
                 <Container1 theme="yellow" dark para="A security audit of the network" />
               </div>
               <div className="tl-future-cntr3">
-                <Container1 theme="yellow" dark para="Test safecoin" />
+                <Container1 theme="yellow" dark para="Test Safecoin" />
               </div>
               <div className="tl-future-cntr4">
                 <Container1 theme="yellow" dark para="Real-time network upgrades" />

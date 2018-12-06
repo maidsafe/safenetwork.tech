@@ -13,6 +13,10 @@ const pages = {
 };
 
 export default {
+  targetServer: {
+    development: `http://localhost:8080`,
+    production: `https://services.maidsafe.net/mail-subscription`
+  },
   breakPointMob: 799,
   localStorage: {
     youtubeWarn: 'ut_warn'
@@ -225,7 +229,7 @@ export default {
       },
     },
     footer: {
-      blog: 'https://blog.maidsafe.net/',
+      blog: 'https://medium.com/safenetwork',
       comm: {
         forum: 'https://safenetforum.org/',
         devForum: 'https://forum.safedev.org/'

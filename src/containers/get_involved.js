@@ -67,7 +67,7 @@ class TestNet extends React.Component {
           </div>
           <div className="get-inv-test-net-cntr2 get-inv-lay-cntr2 get-inv-cnt">
             <div className="get-inv-test-net-cntr2-b">
-              <h3 className="get-inv-cnt-h2">Ready use Apps or add Data?</h3>
+              <h3 className="get-inv-cnt-h2">Ready to use Apps or add Data?</h3>
               <p className="get-inv-cnt-para2">When you are ready to use Apps, or to try adding data to the Alpha network, you’ll use the browser’s built in Authenticator to create and manage your Safe Account.</p>
               <p className="get-inv-cnt-para2">Here’s a step-by-step guide to getting up and running.</p>
               <div className="get-inv-test-net-vid">
