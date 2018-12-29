@@ -134,6 +134,7 @@ class Downloads extends React.Component {
           <div className="pkit-dwn-i">
             <h3 className="pkit-dwn-i-h">Safe Network Logo</h3>
             <p className="pkit-dwn-i-para">Logo pack containing both black and white logos in PNG, SVG and EPS formats.</p>
+            <p className="pkit-dwn-i-para">All SAFE Network logos and images are made available via <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution - ShareAlike 4.0</a></p>
             <button className="underline-btn" onClick={() => {
               window.open(CONST.links.pKit.download.logos)
             }}>Download logos</button>
