@@ -202,7 +202,7 @@
             "type": "para"
           },
           {
-            "cnt": "Each Vault also has a Data Manager persona. This manages where encrypted chunks of other users’ data is held and has responsibility for the chunks in its Section.",
+            "cnt": "Each Vault also has a Data Manager persona. This manages where encrypted chunks of other users’ data is held and has responsibility for the chunks in its Section. ",
             "type": "para"
           }
         ]
