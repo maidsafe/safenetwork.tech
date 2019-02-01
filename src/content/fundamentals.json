@@ -157,15 +157,6 @@
         ]
       },
       {
-        "q": "Not use any clearnet service",
-        "a": [
-          {
-            "cnt": "In order to successfully introduce a new accessible security paradigm for everyone online, you will never have to use a clearnet service in order to use the Network.",
-            "type": "para"
-          }
-        ]
-      },
-      {
         "q": "Never use time as a network tool (although nodes may use local durations)",
         "a": [
           {
