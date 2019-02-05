@@ -1,0 +1,39 @@
+@import '../../styles/variables'
+@import '../../styles/fonts'
+@import '../../styles/colors'
+@import '../../styles/common'
+
+.siteLogo
+  +clearfix()
+  &__media
+    height: 40px
+    float: left
+    margin-right: 40px
+    img
+      height: 100%
+  &__name
+    +font-2()
+    text-transform: uppercase
+    float: left
+    line-height: 40px
+    letter-spacing: 0.04em
+  &.light
+    .siteLogo__media img
+      -webkit-filter: brightness(0) invert(1)
+      filter: brightness(0) invert(1)
+    .siteLogo__name
+      color: $white
+
+
+// XSmall
+@media screen and (max-width: $width-s - 1) and (min-width: $width-xs)
+  .siteLogo
+    &__media
+      margin-right: 30px
+
+// XXSmall
+@media screen and (max-width: $width-xs - 1)
+  .siteLogo
+    width: 195px
+    &__media
+      margin-right: 20px

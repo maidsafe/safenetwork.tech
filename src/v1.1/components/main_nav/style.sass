@@ -1,0 +1,62 @@
+@import '../../styles/variables'
+@import '../../styles/reset'
+@import '../../styles/colors'
+@import '../../styles/fonts'
+@import '../../styles/common'
+
+// Default (ML)
+.mainNav
+  +clearfix()
+  &__wrap
+    float: right
+  &__item
+    +font-1()
+    font-weight: normal
+    color: $black
+    float: left
+    font-size: 16px
+    line-height: 40px
+    margin-right: 40px
+    letter-spacing: -0.03em
+    &:hover,
+    &.active
+      color: $spark-red
+    &-btn
+      @extend .btn
+      @extend .btn.primary
+      float: left
+      letter-spacing: -0.03em
+  &.light
+    .mainNav__item
+      color: $white
+      &:hover
+        color: $white
+      &-btn
+        @extend .btn.white
+
+// Small
+@media screen and (max-width: $width-m - 1)
+  .mainNav
+    &__wrap
+      float: none
+      text-align: center
+      padding-top: 80px
+    &__item
+      font-size: 21px
+      float: none
+      text-align: center
+      margin-bottom: 40px
+      margin-right: 0
+      &-btn
+        display: inline-block
+        float: none
+    &.light
+      .mainNav__item
+        color: $black
+        &:hover
+          color: $spark-red
+        &-btn, &-btn:hover
+          background-color: $spark-red
+          color: $white
+
+

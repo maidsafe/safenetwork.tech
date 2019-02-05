@@ -4,7 +4,8 @@ import { hot } from 'react-hot-loader'
 //
 import Routes from 'react-static-routes'
 
-import Header from './partials/header';
+// import Header from './partials/header';
+import Header from '../v1.1/components/global_header/index';
 import Footer from './partials/footer';
 
 import '../sass/main.sass'
