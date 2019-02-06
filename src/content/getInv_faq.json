@@ -6,24 +6,25 @@
         "q": "What do I need in order to browse the SAFE Network?",
         "a": [
           {
-            "cnt": "You need to download and install the SAFE Browser to connect to the network.",
+            "cnt": "While the network is in Alpha you'll need an account.  See 'How do I create an account?' below for a step-by-step guide.",
             "type": "para"
           },
           {
-            "cnt": "<b>To download:</b>",
+            "cnt": "Then all you need to do is [download the SAFE Browser](https://github.com/maidsafe/safe_browser/releases) and enter a SAFE site into the address bar and that's you browsing the SAFE Network.",
             "type": "para"
           },
           {
-            "cnt": "The latest version of the SAFE Browser is always available on GitHub here:<ul><li>https://github.com/maidsafe/safe_browser/releases/ </li></ul>",
+            "cnt": "Some sample SAFE sites (copy and paste the address into the SAFE Browser address bar):",
             "type": "para"
           },
           {
-            "cnt": "<b>To install:</b>",
+            "cnt": "<ul><li><a href='safe://maidsafe.safenet' target='_self'>safe://maidsafe.safenet</a></li><li><a href='safe://racer.game/v4.final.html' target='_self'>safe://racer.game/v4.final.html</a></li><li><a href='safe://hello' target='_self'>safe://hello</a></li></ul>",
             "type": "para"
           },
           {
-            "cnt": "<ol><li>Open your downloads folder.</li><li>Extract the contents of the ZIP you downloaded in the first stage (generally just double-clicking on the file will do it).</li><li>Move the file to where you want to keep it (Perhaps your Desktop).</li><li>Double-click the SAFE Browser app to open it and start browsing!</li></ol>",
-            "type": "para"
+            "cnt": "Get the SAFE Browser",
+            "type": "anchor",
+            "href": "https://github.com/maidsafe/safe_browser/releases/"
           }
         ]
       },
@@ -31,23 +32,7 @@
         "q": "Do I need an account to access the network?",
         "a": [
           {
-            "cnt": "It depends what you want to do.",
-            "type": "para"
-          },
-          {
-            "cnt": "<b>Browsing the SAFE Network’s websites:</b>",
-            "type": "para"
-          },
-          {
-            "cnt": "No account is required.  To view SAFE websites, all you need to do is to <a href='https://github.com/maidsafe/safe_browser/releases' target='_blank'>download the SAFE Browser</a> (currently available on Windows, Mac and Linux).",
-            "type": "para"
-          },
-          {
-            "cnt": "<b>Storing on the network:</b>",
-            "type": "para"
-          },
-          {
-            "cnt": "Yes, you’ll need an account to perform an action that requires storing any new data or modifying any existing data on the SAFE Network.  By 'storing' we mean activities like: <ul><li>hosting websites</li><li>file storage</li><li>email applications</li><li>instant messaging</li><li>etc.</li></ul>",
+            "cnt": "While the network is in Alpha then yes, you'll need to have an account.  See 'How do I create an account?' below for a step-by-step guide.",
             "type": "para"
           }
         ]

@@ -88,11 +88,19 @@
         "q": "What do I need in order to browse the SAFE Network?",
         "a": [
           {
-            "cnt": "On the SAFE Network, you are free to browse SAFE Websites completely anonymously, from anywhere in the world.  To ensure security and anonymity we couldn't rely on existing browser technology used on the traditional internet (Chrome/FireFox/IE/Safari etc.) so we built our own.",
+            "cnt": "While the network is in Alpha you'll need an account.  See 'How do I create an account?' below for a step-by-step guide.",
             "type": "para"
           },
           {
-            "cnt": "All you'll need is our new *SAFE Browser* which you can download using the link below and then you are ready to start browsing the SAFE Network!",
+            "cnt": "Then all you need to do is [download the SAFE Browser](https://github.com/maidsafe/safe_browser/releases) and enter a SAFE site into the address bar and that's you browsing the SAFE Network.",
+            "type": "para"
+          },
+          {
+            "cnt": "Some sample SAFE sites (copy and paste the address into the SAFE Browser address bar):",
+            "type": "para"
+          },
+          {
+            "cnt": "<ul><li><a href='safe://maidsafe.safenet' target='_self'>safe://maidsafe.safenet</a></li><li><a href='safe://racer.game/v4.final.html' target='_self'>safe://racer.game/v4.final.html</a></li><li><a href='safe://hello' target='_self'>safe://hello</a></li></ul>",
             "type": "para"
           },
           {
@@ -106,27 +114,7 @@
         "q": "Do I need an account to access the network?",
         "a": [
           {
-            "cnt": "<b>Browsing the SAFE Network’s websites:</b>",
-            "type": "para"
-          },
-          {
-            "cnt": "On the SAFE Network, you are free to browse and download from *SAFE Websites* completely anonymously, from anywhere in the world. No account necessary.",
-            "type": "para"
-          },
-          {
-            "cnt": "To get started simply [download the SAFE Browser](https://github.com/maidsafe/safe_browser/releases) and enter a SAFE site into the address bar.  Some sample SAFE sites:",
-            "type": "para"
-          },
-          {
-            "cnt": "<ol><li><a href='safe://www.sharedmap/' target='_self'>safe://www.sharedmap/</a></li><li><a href='safe://jams.demo2/' target='_self'>safe://jams.demo2/</a></li><li><a href='safe://listy/' target='_self'>safe://listy/</a></li></ol>",
-            "type": "para"
-          },
-          {
-            "cnt": "<b>Storing on the network:</b>",
-            "type": "para"
-          },
-          {
-            "cnt": "You’ll need an account to perform any action that requires putting new data or modifying existing data on the SAFE Network.  Activities that will require an account would include: <ul><li>hosting websites</li><li>file storage</li><li>email applications</li><li>instant messaging</li><li>etc.</li></ul>",
+            "cnt": "While the network is in Alpha then yes, you'll need to have an account.  See 'How do I create an account?' below for a step-by-step guide.",
             "type": "para"
           }
         ]
