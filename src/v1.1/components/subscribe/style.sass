@@ -1,0 +1,57 @@
+@import '../../styles/variables'
+@import '../../styles/fonts'
+@import '../../styles/colors'
+.footSubscribe
+  padding-top: 35px
+  &__wrap
+  &__input
+    width: 320px
+    float: left
+    input
+      +font-3()
+      width: 100%
+      line-height: 40px
+      padding: 0 30px
+      border: 1px solid rgba(51, 51, 51, 0.2)
+      background-color: $white
+      border-radius: 40px
+      font-size: 16px
+      color: $black
+      outline: none
+  &__submit
+    float: left
+    margin-left: 25px
+    font-size: 16px
+  &__message
+    width: 100%
+    height: 18px
+    margin-top: 12px
+    margin-left: 30px
+    float: left
+    +font-1()
+    font-size: 16px
+    font-weight: 600
+    color: $spark-red
+
+// Small
+@media screen and (max-width: $width-m - 1) and (min-width: $width-s)
+  .footSubscribe
+    &__input
+      width: 230px
+    &__submit
+      margin-left: 18px
+      .btn
+        padding-left: 16px
+        padding-right: 16px
+
+// XXXSmall
+@media screen and (max-width: $width-xxs - 1)
+  .footSubscribe
+    &__input
+      width: 100%
+    &__submit
+      width: 100%
+      margin-left: 0
+      margin-top: 20px
+      .btn
+        width: 100%

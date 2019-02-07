@@ -6,7 +6,8 @@ import Routes from 'react-static-routes'
 
 // import Header from './partials/header';
 import Header from '../v1.1/components/global_header/index';
-import Footer from './partials/footer';
+// import Footer from './partials/footer';
+import Footer from '../v1.1/components/global_footer/index';
 
 import '../sass/main.sass'
 
