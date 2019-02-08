@@ -1,53 +1,42 @@
 import React, { Component } from 'react'
-import { withRouter } from 'react-static'
 import classNames from 'classnames'
 //
 import MainNav from '../main_nav/index'
 import SiteLogo from '../site_logo/index'
 import { isMenuLight } from '../../utils'
 //
+import content from './content.json'
 import './style.sass'
-//
-class GlobalHeader extends Component {
-  state = {
-    active: false,
-  }
 
-  componentDidUpdate(prev) {
-    if (prev.location.pathname !== this.props.location.pathname) {
-      this.setState({ active: false })
-    }
-  }
-
+export default class GlobalHeader extends Component {
   render() {
-    const { location } = this.props
-    const { active } = this.state
-    const headerClasses = classNames('gHeader', {
+    const { location, active, onClickMobMenu } = this.props
+
+    const headerClasses = classNames('globalHeader', {
       active,
     })
 
     const isLightTheme = isMenuLight(location.pathname)
+
     return (
       <header className={headerClasses}>
-        <div className="gHeader__wrap">
-          <div className="gHeader__lsec">
-            <SiteLogo light={(
-              isLightTheme && !active
-            )} />
+        <div className="globalHeader__wrap">
+          <div className="globalHeader__logo">
+            <SiteLogo
+              theme={(isLightTheme && !active) ? 'light' : ''}
+              name={content.siteName}
+            />
           </div>
-          <div className="gHeader__rsec">
+          <div className="globalHeader__nav">
             <MainNav location={location} />
           </div>
           <div className="mobNav">
             <button className={classNames('mobNav__btn', {
               light: isLightTheme,
-            })} onClick={() => { this.setState({ active: !active }) }} />
+            })} onClick={onClickMobMenu} />
           </div>
         </div>
       </header>
     )
   }
 }
-
-const GlobalHeaderWithRouter = withRouter(GlobalHeader)
-export default GlobalHeaderWithRouter

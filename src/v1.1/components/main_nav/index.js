@@ -4,68 +4,51 @@ import classNames from 'classnames'
 //
 import { genRandomKey } from '../../utils'
 //
+import content from './content.json'
 import './style.sass'
 
-export default class MainNav extends Component {
-  items = [
-    {
-      name: 'How it Works',
-      link: '/how-it-works/',
-    },
-    {
-      name: 'Safecoin',
-      link: '/safecoin/',
-    },
-    {
-      name: 'Timeline',
-      link: '/timeline/',
-    },
-    {
-      name: 'Fundamentals',
-      link: '/fundamentals/',
-    },
-    {
-      name: 'FAQs',
-      link: '/faq/',
-    },
-    {
-      name: 'Press Kit',
-      link: '/press-kit/',
-    },
-  ]
+class NavItem extends Component {
+  render() {
+    const { data, currentLocationPath, isButton } = this.props
 
-  itemButton = {
-    name: 'Get Involved',
-    link: '/get-involved/',
+    return (
+      <div className={classNames(
+          {
+            mainNav__item: !isButton,
+            'mainNav__item-btn': isButton,
+            active: (data.link === currentLocationPath),
+          }
+        )}
+      >
+        <Link to={data.link.trim() || '#'}>{data.name}</Link>
+      </div>
+    )
   }
+}
+
+export default class MainNav extends Component {
+  items = content.navItems
+  itemButton = content.navButton
 
   render() {
     const { location } = this.props
-    const isLightTheme = (location.pathname === '/get-involved/')
+    const { pathname } = location
+
+    const isLightTheme = (pathname === '/get-involved/')
 
     return (
       <div className={classNames('mainNav', {
-        light: isLightTheme
+        light: isLightTheme,
       })}>
         <div className="mainNav__wrap">
-          {
-            this.items.map(i => (
-              <div
-                key={genRandomKey()}
-                className={classNames('mainNav__item', {
-                  active: (i.link === location.pathname),
-                })}
-              >
-                <Link to={i.link.trim() || '#'}>{i.name}</Link>
-              </div>
-            ))
-          }
-          <div
-            className={classNames('mainNav__item-btn', {
-              active: (this.itemButton.link === location.pathname),
-            })}
-          >
-            <Link to={this.itemButton.link.trim() || '#'}>{this.itemButton.name}</Link>
+          <div className="mainNav__items">
+            {
+              this.items.map(data =>
+                <NavItem key={genRandomKey()} data={data} currentLocationPath={pathname} />)
+            }
+          </div>
+          <div className="mainNav__btnItems">
+            <NavItem data={this.itemButton} currentLocationPath={pathname} isButton />
           </div>
         </div>
       </div>

@@ -1,16 +1,20 @@
 import React from 'react'
-import { Router } from 'react-static'
+import { withRouter } from 'react-static'
 import { hot } from 'react-hot-loader'
 //
 import Routes from 'react-static-routes'
 
-// import Header from './partials/header';
-import Header from '../v1.1/components/global_header/index';
+import GlobalHeader from '../v1.1/components/global_header/index';
 import Footer from './partials/footer';
 
 import '../sass/main.sass'
 
+
 class App extends React.Component {
+  state = {
+    headerActive: false,
+  }
+
   componentDidMount() {
     if (typeof window !== 'undefined') {
       window.addEventListener('load', () => {
@@ -19,19 +23,34 @@ class App extends React.Component {
     }
   }
 
+  componentDidUpdate(prev) {
+    if (prev.location.pathname !== this.props.location.pathname) {
+      this.setState({ headerActive: false })
+    }
+  }
+
   render() {
+    const { location } = this.props
+    const { headerActive } = this.state
+
     return (
-      <Router>
-        <div className="root-b">
-          <Header />
-          <div className="main-container">
-            <Routes />
-          </div>
-          <Footer />
+      <div className="root-b">
+        <GlobalHeader
+          location={location}
+          active={headerActive}
+          onClickMobMenu={() => {
+            this.setState({ headerActive: !headerActive })
+          }}
+        />
+        <div className="main-container">
+          <Routes />
         </div>
-      </Router>
+        <Footer />
+      </div>
     )
   }
 }
 
-export default hot(module)(App)
+const AppWithRouter = withRouter(App)
+
+export default hot(module)(AppWithRouter)
