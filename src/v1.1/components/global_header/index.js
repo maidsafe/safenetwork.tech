@@ -15,7 +15,6 @@ export default class GlobalHeader extends Component {
     const headerClasses = classNames('globalHeader', {
       active,
     })
-
     const isLightTheme = isMenuLight(location.pathname)
 
     return (

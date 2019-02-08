@@ -20,9 +20,5 @@ if (typeof document !== 'undefined') {
   }
 
   // Render!
-  render(() => (
-    <Router>
-      <App />
-    </Router>
-  ))
+  render(App)
 }

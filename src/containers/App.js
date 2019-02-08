@@ -1,26 +1,16 @@
 import React from 'react'
-import { withRouter } from 'react-static'
+import { withRouter, Router } from 'react-static'
 import { hot } from 'react-hot-loader'
-//
 import Routes from 'react-static-routes'
-
+//
 import GlobalHeader from '../v1.1/components/global_header/index';
 import Footer from './partials/footer';
-
+//
 import '../sass/main.sass'
 
-
-class App extends React.Component {
+class Layout extends React.Component {
   state = {
     headerActive: false,
-  }
-
-  componentDidMount() {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('load', () => {
-        (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.body)
-      })
-    }
   }
 
   componentDidUpdate(prev) {
@@ -51,6 +41,20 @@ class App extends React.Component {
   }
 }
 
-const AppWithRouter = withRouter(App)
+const LayoutWithRouter = withRouter(Layout)
 
-export default hot(module)(AppWithRouter)
+class App extends React.Component {
+  componentDidMount() {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('load', () => {
+        (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.body)
+      })
+    }
+  }
+
+  render() {
+    return (<Router><LayoutWithRouter /></Router>)
+  }
+}
+
+export default hot(module)(App)
