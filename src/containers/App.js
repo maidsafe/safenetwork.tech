@@ -1,15 +1,47 @@
 import React from 'react'
-import { Router } from 'react-static'
+import { withRouter, Router } from 'react-static'
 import { hot } from 'react-hot-loader'
-//
 import Routes from 'react-static-routes'
-
-// import Header from './partials/header';
-import Header from '../v1.1/components/global_header/index';
-// import Footer from './partials/footer';
+//
+import GlobalHeader from '../v1.1/components/global_header/index';
 import Footer from '../v1.1/components/global_footer/index';
-
+//
 import '../sass/main.sass'
+
+class Layout extends React.Component {
+  state = {
+    headerActive: false,
+  }
+
+  componentDidUpdate(prev) {
+    if (prev.location.pathname !== this.props.location.pathname) {
+      this.setState({ headerActive: false })
+    }
+  }
+
+  render() {
+    const { location } = this.props
+    const { headerActive } = this.state
+
+    return (
+      <div className="root-b">
+        <GlobalHeader
+          location={location}
+          active={headerActive}
+          onClickMobMenu={() => {
+            this.setState({ headerActive: !headerActive })
+          }}
+        />
+        <div className="main-container">
+          <Routes />
+        </div>
+        <Footer />
+      </div>
+    )
+  }
+}
+
+const LayoutWithRouter = withRouter(Layout)
 
 class App extends React.Component {
   componentDidMount() {
@@ -21,17 +53,7 @@ class App extends React.Component {
   }
 
   render() {
-    return (
-      <Router>
-        <div className="root-b">
-          <Header />
-          <div className="main-container">
-            <Routes />
-          </div>
-          <Footer />
-        </div>
-      </Router>
-    )
+    return (<Router><LayoutWithRouter /></Router>)
   }
 }
 

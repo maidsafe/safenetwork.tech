@@ -8,7 +8,11 @@
 .mainNav
   +clearfix()
   &__wrap
+    width: 100%
     float: right
+  &__items, &__btnItems
+    float: left
+    +clearfix()
   &__item
     +font-1()
     font-weight: normal
@@ -34,13 +38,31 @@
       &-btn
         @extend .btn.white
 
+// Large
+@media screen and  (min-width: $width-l)
+  .mainNav
+    &__wrap
+      display: grid
+      float: none
+      grid-template-columns: repeat(5, 1fr)
+    &__items
+      grid-column: 1 / span 4
+      justify-self: end
+    &__btnItems
+      grid-column: 5 / span 1
+      justify-self: center
+    &__item
+      &-btn
+        text-align: center
 // Small
-@media screen and (max-width: $width-m - 1)
+@media screen and (max-width: $width-s)
   .mainNav
     &__wrap
       float: none
       text-align: center
       padding-top: 80px
+    &__items, &__btnItems
+      float: none
     &__item
       font-size: 21px
       float: none
@@ -58,5 +80,3 @@
         &-btn, &-btn:hover
           background-color: $spark-red
           color: $white
-
-

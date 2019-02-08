@@ -2,33 +2,21 @@
 @import '../../styles/common'
 
 // Default (ML)
-.gHeader
+.globalHeader
   width: 100%
   padding-top: 60px
-  &.active
-    height: 100%
-    position: fixed
-    top: 0
-    left: 0
-    background-color: $white
-    overflow-y: auto
-    .mobNav
-      &__btn
-        background-image: url($menu-close-icon) !important
-        background-color: $white !important
-        background-size: 24px
   &__wrap
     +clearfix()
     +grid()
-  &__lsec,
-  &__rsec
+  &__logo,
+  &__nav
     float: left
-  &__lsec
-    padding-left: 80px
-    grid-column: 1/ span 2
-  &__rsec
+  &__logo
+    grid-column: 1/ span 3
+  &__nav
     padding-right: 40px
-    grid-column: 5/ span 6
+    grid-column: 4/ span 7
+    justify-self: end
   .mobNav
     padding-right: 40px
     text-align: right
@@ -49,75 +37,62 @@
         background-color: $white
         background-image: url($menu-icon-dark)
 
-// XLarge
-@media screen and (min-width: $width-xl)
-  .gHeader
-    &__lsec
-      padding-left: 140px
-    &__rsec
-      grid-column: 6/ span 5
-
 // Large
-@media screen and (max-width: $width-xl - 1) and (min-width: $width-l)
-  .gHeader
-    &__lsec
-      padding-left: 110px
-    &__rsec
+@media screen and (min-width: $width-l)
+  .globalHeader
+    &__nav
+      padding-right: 0
       grid-column: 6/ span 5
 
-// Medium
-@media screen and (max-width: $width-ml - 1) and (min-width: $width-m)
-  .gHeader
-    &__lsec
-      grid-column: 1/ span 3
-      padding-left: 50px
-    &__rsec
-      grid-column: 4/ span 7
-
-
-// For All Small Screen
-@media screen and (max-width: $width-m - 1)
-  .gHeader
-    &.active
-      .gHeader__rsec
-        display: block
-    &__rsec
+// Small
+@media screen and (max-width: $width-s)
+  .globalHeader
+    &__logo
+      grid-column: 1 / span 3
+    &__nav
       display: none
       grid-column: 1/ span 10
+      justify-self: center
       padding-bottom: 80px
       padding-right: 0
     .mobNav
       display: block
-
-// Small
-@media screen and (max-width: $width-m - 1) and (min-width: $width-s)
-  .gHeader
-    &__lsec
-      grid-column: 1/ span 3
-      padding-left: 40px
-    .mobNav
       padding-right: 30px
-
-// XSmall Grid
-@media screen and (max-width: $width-s - 1)
-  .gHeader
-    &__wrap
-      +grid-small()
+    &.active
+      height: 100%
+      position: fixed
+      top: 0
+      left: 0
+      background-color: $white
+      overflow-y: auto
+      .mobNav
+        &__btn
+          background-image: url($menu-close-icon) !important
+          background-color: $white !important
+          background-size: 20px
+      .globalHeader__nav
+        display: block
 
 // XSmall
-@media screen and (max-width: $width-s - 1) and (min-width: $width-xs)
-  .gHeader
-    &__lsec
-      grid-column: 1/ span 3
-      padding-left: 40px
+@media screen and (max-width: $width-xs)
+  .globalHeader
+    &__wrap
+      +grid-small()
     .mobNav
-      padding-right: 50px
+      grid-column: 6 /span 1
+      padding-right: 0
+      justify-self: center
 
 // XXSmall
-@media screen and (max-width: $width-xs - 1)
-  .gHeader
-    &__lsec
-      grid-column: 1/ span 3
-      padding-left: 30px
+@media screen and (max-width: $width-xxs)
+  .globalHeader
+    padding-top: 34px
+    &__logo
+      padding-top: 3px
     .mobNav
+      justify-self: normal
       padding-right: 20px
+      &__btn
+        width: 36px
+        height: 36px
+        background-size: 20px

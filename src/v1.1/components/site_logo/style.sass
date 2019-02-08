@@ -4,19 +4,29 @@
 @import '../../styles/common'
 
 .siteLogo
-  +clearfix()
+  &__wrap
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    +clearfix()
   &__media
+    grid-column: 1/ span 1
     height: 40px
-    float: left
-    margin-right: 40px
+    padding: 0 60px
+    text-align: right
+    a
+      display: inline-block
+      width: auto
+      height: 100%
+      transform: translate(50%, 0)
     img
       height: 100%
   &__name
+    grid-column: 2/ span 2
     +font-2()
-    text-transform: uppercase
-    float: left
+    font-size: 18px
     line-height: 40px
     letter-spacing: 0.04em
+    text-transform: uppercase
   &.light
     .siteLogo__media img
       -webkit-filter: brightness(0) invert(1)
@@ -24,16 +34,37 @@
     .siteLogo__name
       color: $white
 
+// Large
+@media screen and  (min-width: $width-l)
+  .siteLogo
+    &__media
+      padding: 0 56px
+
+// Small
+@media screen and (max-width: $width-s)
+  .siteLogo
+    &__name
+      grid-column: 2 /span 2
 
 // XSmall
-@media screen and (max-width: $width-s - 1) and (min-width: $width-xs)
+@media screen and (max-width: $width-xs)
   .siteLogo
+    &__wrap
+      display: block
+    &__media, &__name
+      float: left
     &__media
-      margin-right: 30px
+      padding: 0 30px 0 45px
+      a
+        transform: none
 
 // XXSmall
-@media screen and (max-width: $width-xs - 1)
+@media screen and (max-width: $width-xxs)
   .siteLogo
-    width: 195px
     &__media
-      margin-right: 20px
+      height: 30px
+      padding-right: 15px
+      padding-left: 30px
+    &__name
+      font-size: 12px
+      line-height: 30px

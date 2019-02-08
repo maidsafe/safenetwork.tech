@@ -1,3 +1,5 @@
+import path from 'path'
+//
 import React from 'react'
 import axios from 'axios'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
@@ -112,6 +114,13 @@ export default {
     config.plugins.push(new CompressionPlugin({
       algorithm: 'gzip'
     }))
+    // console.log('resolve', config.resolve)
+    config.resolve = {
+      ...config.resolve,
+      alias: {
+        '~images': path.resolve(__dirname, 'src/assets/images'),
+      }
+    }
     return config
   },
   Document: ({ Html, Head, Body, children, siteData, renderMeta }) => (
