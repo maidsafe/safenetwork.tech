@@ -101,8 +101,7 @@
     ]
   },
   "newsletter": {
-    "name": "Newsletter",
-    "desc": "Be first to get the latest news on all SAFE Network developments, updates and releases..."
+    "name": "Newsletter"
   },
   "social": {
     "name": "Social",

@@ -72,10 +72,7 @@ class FootContainerSubscribe extends Component {
 
     return (
       <FootContainer id={id} name={data.name}>
-        <div className="footItem__subscribe">
-          <p className="footItem__para">{data.desc}</p>
-          <Subscribe />
-        </div>
+        <Subscribe />
       </FootContainer>
     )
   }

@@ -2,8 +2,15 @@
 @import '../../styles/fonts'
 @import '../../styles/colors'
 .footSubscribe
-  padding-top: 35px
-  &__wrap
+  &__para
+    padding-top: 20px
+    +font-3()
+    font-weight: normal
+    font-size: 20px
+    line-height: 28px
+    color: $black
+  form
+    padding-top: 35px
   &__input
     width: 320px
     float: left
@@ -33,8 +40,14 @@
     font-weight: 600
     color: $spark-red
 
+// Large
+@media screen and (min-width: $width-l)
+  .footSubscribe
+    &__para
+      max-width: 500px
+
 // Small
-@media screen and (max-width: $width-m - 1) and (min-width: $width-s)
+@media screen and (max-width: $width-s)
   .footSubscribe
     &__input
       width: 230px
@@ -44,8 +57,19 @@
         padding-left: 16px
         padding-right: 16px
 
-// XXXSmall
-@media screen and (max-width: $width-xxs - 1)
+// XSmall
+@media screen and (max-width: $width-xs)
+  .footSubscribe
+    &__input
+      width: 400px
+    &__submit
+      margin-left: 30px
+      .btn
+        padding-left: 18px
+        padding-right: 18px
+
+// XXSmall
+@media screen and (max-width: $width-xxs)
   .footSubscribe
     &__input
       width: 100%
@@ -55,3 +79,6 @@
       margin-top: 20px
       .btn
         width: 100%
+        padding-left: 16px
+        padding-right: 16px
+

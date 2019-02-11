@@ -2,17 +2,14 @@ import React from 'react'
 import Classnames from 'classnames'
 import EmailValidator from 'email-validator'
 //
+import content from './content.json'
 import CONST from '../../../constants'
 import './style.sass'
 
 export default class Subscribe extends React.Component {
   constructor() {
     super()
-    this.errorList = {
-      invalidEmail: 'Enter a valid email address',
-      unknownIssue: 'Something went wrong! Try again.'
-    }
-
+    this.errorList = content.errors
     this.emailSubUrl = `${CONST.targetServer.production}/api/1.0/subscribe`
     this.status = {
       INIT: 'INIT',
@@ -22,19 +19,9 @@ export default class Subscribe extends React.Component {
     }
 
     this.stateAttr = {
-      init: {
-        desc: 'Be first to get the latest news on all SAFE Network developments, updates and releases',
-        inputPlaceHolder: 'Email Address',
-        buttonText: 'Sign Up',
-      },
-      waiting: {
-        buttonText: 'Sending',
-      },
-      success: {
-        desc: 'Nearly there! Confirm your subscription by clicking the link in the mail we just sent you',
-        inputPlaceHolder: 'Now check your inbox',
-        buttonText: 'Done',
-      },
+      init: content.initState,
+      waiting: content.waitingState,
+      success: content.successState,
       failure: {
         message: this.errorList.invalidEmail,
       },
@@ -161,6 +148,7 @@ export default class Subscribe extends React.Component {
         'signup-failure': this.state.status === this.status.FAILURE
       })}>
         <div className="footSubscribe__wrap">
+          <p className="footSubscribe__para">{userDesc}</p>
           <form
             name="email-signup"
             onSubmit={this.handleEmailSignUp.bind(this)}

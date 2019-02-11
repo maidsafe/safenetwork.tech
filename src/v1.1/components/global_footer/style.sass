@@ -9,9 +9,9 @@ $item-vspace: 75px
 // Default (ML)
 .gFooter
   width: 100%
+  background-color: $footer-bg-color
   &__wrap
     +grid()
-    background-color: $acid-yellow
     padding: 160px 0
     .safeNetwork
       grid-column: 2/ span 4
@@ -52,6 +52,8 @@ $item-vspace: 75px
       grid-row: 2
       padding-left: $item-hspace
   .footItem
+    &__wrap
+      +clearfix()
     &__title
       +font-1()
       font-size: 16px
@@ -65,15 +67,6 @@ $item-vspace: 75px
       font-size: 16px
       letter-spacing: -0.02em
       font-weight: normal
-    &__para
-      +font-3()
-      font-weight: normal
-      font-size: 20px
-      line-height: 28px
-      color: $black
-    &__subscribe
-      .footItem__para
-        padding-top: 20px
   .footSocial
     &__wrap
       display: flex
@@ -119,20 +112,11 @@ $item-vspace: 75px
 // XLarge
 @media screen and (min-width: $width-xl)
   .gFooter
-    background-color: rgba(248, 243, 20, 0.6)
     &__wrap
-      max-width: $max-width-xl
-
-// Large
-@media screen and (max-width: $width-xl - 1) and (min-width: $width-l)
-  .gFooter
-    .footItem
-      &__subscribe
-        .footItem__para
-          max-width: 500px
+      max-width: $grid-max-width
 
 // Small
-@media screen and (max-width: $width-m - 1) and (min-width: $width-s)
+@media screen and (max-width: $width-s)
   .gFooter
     &__wrap
       .safeNetwork
@@ -173,8 +157,8 @@ $item-vspace: 75px
         width: 40px
         height: 40px
 
-// For all under XSmall breakpoint
-@media screen and (max-width: $width-s - 1)
+// XSmall
+@media screen and (max-width: $width-xs)
   .gFooter
     &__wrap
       +grid-small()
@@ -185,8 +169,8 @@ $item-vspace: 75px
       .company,
       .developers,
       .legal
-        grid-column: 1/ span 6
-        padding: 0 60px
+        grid-column: 1/ span 4
+        padding: 0 0 0 60px
       .safeNetwork
         grid-row: 3
         position: relative
@@ -242,8 +226,22 @@ $item-vspace: 75px
         .name
           display: block
 
+// XXSmall
+@media screen and (max-width: $width-xxs)
+  .gFooter
+    &__wrap
+      .safeNetwork,
+      .community,
+      .newsletter,
+      .social,
+      .company,
+      .developers,
+      .legal
+        grid-column: 1/ span 6
+        padding: 0 60px
+
 // XXXSmall
-@media screen and (max-width: $width-xxs - 1)
+@media screen and (max-width: $width-xxxs)
   .gFooter
     &__wrap
       .safeNetwork,
