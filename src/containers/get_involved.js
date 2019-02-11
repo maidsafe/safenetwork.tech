@@ -40,7 +40,7 @@ class Community extends React.Component {
           <div className="get-inv-community-cntr2 get-inv-lay-cntr2 get-inv-cnt">
             <div className="get-inv-community-cntr2-b">
               <h3 className="get-inv-cnt-h2">Get the SAFE Browser</h3>
-              <p className="get-inv-cnt-para2">The SAFE Browser is the Network’s dedicated web browser. Use it to access the Alpha test network—just download and start browsing.</p>
+              <p className="get-inv-cnt-para2">The SAFE Browser is the Network’s dedicated web browser. To access the network while it is in Alpha you'll need to have a forum account with <a href="https://safenetforum.org/t/trust-level-1-basic-user-requirements/15200">basic trust level</a> and get an <a href="https://invite.maidsafe.net">invite token</a>.  Then just download and start browsing.</p>
               <a href={browserLink} className="get-inv-cnt-lnk-btn blue">Download Now</a>
             </div>
           </div>
