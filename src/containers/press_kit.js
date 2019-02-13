@@ -3,6 +3,7 @@ import { withSiteData, Head } from 'react-static'
 import ClassNames from 'classnames';
 import copy from 'copy-to-clipboard';
 //
+import PageBanner from '../v1.1/components/page_banner/index'
 import News1 from '../assets/images/news_1.png';
 import News2 from '../assets/images/news_2.png';
 import News3 from '../assets/images/news_3.png';
@@ -169,7 +170,7 @@ class PressKit extends React.Component {
           <meta name="description" content={CONST.meta.pKit.desc} />
         </Head>
         <div className="pkit-b">
-          <Banner />
+          <PageBanner title="Press Kit" />
           <Aim />
           <PressFreedom />
           <News />

@@ -1,0 +1,61 @@
+
+@import '../../styles/variables'
+@import '../../styles/reset'
+@import '../../styles/colors'
+@import '../../styles/fonts'
+@import '../../styles/common'
+
+// Default
+.pageBanner
+  &__wrap
+    +grid()
+    padding-top: 275px
+  &__title
+    grid-column: 2 / span 8
+    +font-1()
+    font-size: 64px
+    letter-spacing: -0.02em
+    line-height: 65px
+    margin-bottom: 70px
+    color: $black
+
+// Large
+@media screen and (min-width: $width-l)
+  .pageBanner
+    &__title
+      margin-bottom: 75px
+
+// XLarge
+@media screen and (min-width: $width-xl)
+  .pageBanner
+    &__title
+      margin-bottom: 80px
+
+// Small
+@media screen and (max-width: $width-s)
+  .pageBanner
+    &__wrap
+      padding-top: 250px
+// XSmall
+@media screen and (max-width: $width-xs)
+  .pageBanner
+    &__wrap
+      +grid-small()
+      padding-top: 215px
+    &__title
+      grid-column: 1 / span 5
+      padding-left: 60px
+      font-size: 48px
+      line-height: 50px
+      margin-bottom: 60px
+
+// XXSmall
+@media screen and (max-width: $width-xxs)
+  .pageBanner
+    &__wrap
+      padding-top: 180px
+    &__title
+      padding-left: 30px
+      font-size: 31px
+      line-height: 32px
+      margin-bottom: 40px
