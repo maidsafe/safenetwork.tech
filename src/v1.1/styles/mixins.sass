@@ -1,0 +1,14 @@
+=clearfix()
+  &:after
+    content: ''
+    display: table
+    clear: both
+    visibility: hidden
+
+=grid()
+  display: grid
+  grid-template-columns: repeat($col-count, 1fr)
+
+=grid-small()
+  display: grid
+  grid-template-columns: repeat($col-count-small, 1fr)

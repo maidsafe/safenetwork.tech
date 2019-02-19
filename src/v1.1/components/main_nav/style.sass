@@ -1,8 +1,7 @@
 @import '../../styles/variables'
-@import '../../styles/reset'
-@import '../../styles/colors'
+@import '../../styles/mixins'
 @import '../../styles/fonts'
-@import '../../styles/common'
+@import '../../styles/colors'
 
 // Default (ML)
 .mainNav
@@ -26,17 +25,21 @@
     &.active
       color: $spark-red
     &-btn
-      @extend .btn
-      @extend .btn.primary
       float: left
       letter-spacing: -0.03em
+      a
+        display: block
+        width: 100%
   &.light
     .mainNav__item
       color: $white
       &:hover
         color: $white
       &-btn
-        @extend .btn.white
+        .btn
+          background-color: $white
+          color: $spark-red
+          border-color: $white
 
 // Large
 @media screen and  (min-width: $width-l)

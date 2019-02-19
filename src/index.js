@@ -3,6 +3,7 @@ import { Router } from 'react-static';
 import ReactDOM from 'react-dom';
 import "babel-polyfill";
 
+import './v1.1/styles/shared/main.sass'
 // Fonts
 import 'typeface-vollkorn';
 
