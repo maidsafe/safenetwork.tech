@@ -161,6 +161,7 @@ export default class Subscribe extends React.Component {
                 type="email"
                 name="user-email"
                 autoComplete="off"
+                required="required"
                 ref={c => {
                   this.userEmail = c
                 }}

@@ -6,7 +6,7 @@
 $item-hspace: $hspace-l
 $item-vspace: 75px
 
-// Default (ML)
+// Default
 .gFooter
   width: 100%
   background-color: $footer-bg-color
@@ -106,13 +106,13 @@ $item-vspace: 75px
         background-image: url($footer-github-icon)
 
 // XLarge
-@media screen and (min-width: $width-xl)
++render-to($media-xl)
   .gFooter
     &__wrap
       max-width: $grid-max-width
 
 // Small
-@media screen and (max-width: $width-s)
++render-to($media-s)
   .gFooter
     &__wrap
       .safeNetwork
@@ -154,7 +154,7 @@ $item-vspace: 75px
         height: 40px
 
 // XSmall
-@media screen and (max-width: $width-xs)
++render-to($media-xs)
   .gFooter
     &__wrap
       +grid-small()
@@ -165,8 +165,10 @@ $item-vspace: 75px
       .company,
       .developers,
       .legal
+        width: 580px
         grid-column: 1/ span 4
         padding: 0 0 0 60px
+        box-sizing: content-box
       .safeNetwork
         grid-row: 3
         position: relative
@@ -223,7 +225,7 @@ $item-vspace: 75px
           display: block
 
 // XXSmall
-@media screen and (max-width: $width-xxs)
++render-to($media-xxs)
   .gFooter
     &__wrap
       .safeNetwork,
@@ -233,11 +235,13 @@ $item-vspace: 75px
       .company,
       .developers,
       .legal
+        width: 100%
         grid-column: 1/ span 6
         padding: 0 60px
+        box-sizing: border-box
 
 // XXXSmall
-@media screen and (max-width: $width-xxxs)
++render-to($media-xxxs)
   .gFooter
     &__wrap
       .safeNetwork,
