@@ -1,7 +1,7 @@
 @import '../../styles/variables'
+@import '../../styles/mixins'
 @import '../../styles/fonts'
 @import '../../styles/colors'
-@import '../../styles/common'
 
 .siteLogo
   &__wrap
@@ -43,6 +43,11 @@
 // Small
 @media screen and (max-width: $width-s)
   .siteLogo
+    &__media
+      padding: 0
+      text-align: center
+      a
+        transform: none
     &__name
       grid-column: 2 /span 2
 
@@ -51,20 +56,25 @@
   .siteLogo
     &__wrap
       display: block
+      padding-left: 45px
     &__media, &__name
       float: left
     &__media
-      padding: 0 30px 0 45px
+      padding: 0 30px 0 0
       a
         transform: none
 
 // XXSmall
 @media screen and (max-width: $width-xxs)
   .siteLogo
+    width: 190px
+    overflow: hidden
+    &__wrap
+      padding-left: 30px
     &__media
       height: 30px
       padding-right: 15px
-      padding-left: 30px
+      padding-left: 0
     &__name
       font-size: 12px
       line-height: 30px
