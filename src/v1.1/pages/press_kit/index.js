@@ -10,12 +10,12 @@ import WSJ from "~images/press_img_1.png"
 import Wired from "~images/press_img_2.png"
 import BitcoinMagazine from "~images/press_img_3.png"
 import Computing from "~images/press_img_4.png"
+import AssetsDownload from '../../components/assetsDownload/index'
 import SNLogoBlack from '~images/downloads/safe_network_logo_black.svg'
 import SNLogoWhite from '~images/downloads/safe_network_logo_white.svg'
 import SNIconBlack from '~images/downloads/safe_network_icon_black.svg'
 import SNIconWhite from '~images/downloads/safe_network_icon_white.svg'
 import ImagePackCover from '~images/downloads/image_pack_cover.jpg'
-import CCLogo from '~images/downloads/cc.svg'
 //
 import content from './content.json'
 import './style.sass'
@@ -185,150 +185,59 @@ const MediaSnippets = props => {
   )
 }
 
-const LogoDownloads = props => {
-  const { imgSrc, imgAlt, buttonName } = props
-
-  return (
-    <div className="logoDownloads">
-      <div className="logoDownloads__wrap">
-        <div className="logoDownloads__media">
-          <img src={imgSrc} alt={imgAlt} />
-        </div>
-        <div className="logoDownloads__button">
-          <button className="btn">{buttonName}</button>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-const ImagePackDownloads = props => {
-  const { imgSrc, imgAlt, buttonName } = props
-  return (
-    <div className="imagePackDownloads">
-      <div className="imagePackDownloads__wrap">
-        <div className="imagePackDownloads__media">
-          <img src={imgSrc} alt={imgAlt} />
-        </div>
-        <div className="imagePackDownloads__button">
-          <button className="btn">{buttonName}</button>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-const DocumentDownloads = props => {
-  const { title, para, buttonName } = props
-  return (
-    <div className="documentDownloads">
-      <div className="documentDownloads__wrap">
-        <div className="documentDownloads__content">
-          <h4 className="documentDownloads__title">{title}</h4>
-          <p className="documentDownloads__para">{para}</p>
-        </div>
-        <div className="documentDownloads__button">
-          <button className="btn">{buttonName}</button>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-const DownloadContainer = props => {
-  const { data, children, isSmall } = props
-  return (
-    <div className="downloadContainer">
-      <div className="downloadContainer__context">
-        <h3 className="downloadContainer__title">{data.title}</h3>
-        <p className="downloadContainer__para">{data.para}</p>
-      </div>
-      <div className={classNames('downloadContainer__downloads', {
-        small: isSmall,
-      })}>{children}
-      </div>
-    </div>
-  )
-}
-
-const Downloads = props => {
-  const { data } = props
-  return (
-    <div className="downloads">
-      <div className="downloads__wrap">
-        <div className="downloads__title"><h2>{data.title}</h2></div>
-        <DownloadContainer data={data.logos}>
-          <LogoDownloads
-            imgSrc={SNLogoBlack}
-            imgAlt="Safe Network logo black"
-            buttonName="Download"
-          />
-          <LogoDownloads
-            imgSrc={SNLogoWhite}
-            imgAlt="Safe Network logo white"
-            buttonName="Download"
-          />
-          <LogoDownloads
-            imgSrc={SNIconBlack}
-            imgAlt="Safe Network icon black"
-            buttonName="Download"
-          />
-          <LogoDownloads
-            imgSrc={SNIconWhite}
-            imgAlt="Safe Network icon white"
-            buttonName="Download"
-          />
-          <div className="logoDownloads__credit">
-            <p className="creditPara">{data.logos.credit}</p>
-            <div className="creditLogo"><img src={CCLogo} alt="CC logo" /></div>
-          </div>
-        </DownloadContainer>
-        <DownloadContainer data={data.images} isSmall>
-          <ImagePackDownloads
-            imgSrc={ImagePackCover}
-            imgAlt="Safe Network icon white"
-            buttonName="Download Image Pack"
-          />
-        </DownloadContainer>
-        <DownloadContainer data={data.documents} isSmall>
-          {
-            (data.documents.list && data.documents.list.length > 0) ? data.documents.list.map(li => (
-              <DocumentDownloads
-                title={li.title}
-                para={li.para}
-                buttonName="Download"
-              />
-            )) : null
-          }
-        </DownloadContainer>
-      </div>
-    </div>
-  )
-}
-
 export default class PressKit extends Component {
   render() {
+    const assetLogos = [
+      {
+        imgSrc: SNLogoBlack,
+        imgAlt: 'Safe Network logo black',
+      },
+      {
+        imgSrc: SNLogoWhite,
+        imgAlt: 'Safe Network logo white',
+      },
+      {
+        imgSrc: SNIconBlack,
+        imgAlt: 'Safe Network icon black',
+      },
+      {
+        imgSrc: SNIconWhite,
+        imgAlt: 'Safe Network icon white',
+      },
+    ]
+
+    const mediaLogos = [
+      {
+        src: WSJ,
+        title: 'WSJ',
+      }, {
+        src: Wired,
+        title: 'Wired',
+      }, {
+        src: BitcoinMagazine,
+        title: 'Bitcoin Magazine',
+      }, {
+        src: Computing,
+        title: 'Computing',
+      },
+    ]
+
+    const imagePack = {
+      imgSrc: ImagePackCover,
+      imgAlt: 'Safe Network icon white',
+    }
+
     return (
       <section className="pressKit">
         <div className="pressKit__wrap">
           <PressKitBanner title={content.pageTitle} />
           <TextSnippets data={content} />
-          <MediaSnippets data={content} mediaLogos={[
-            {
-              src: WSJ,
-              title: 'WSJ',
-            }, {
-              src: Wired,
-              title: 'Wired',
-            }, {
-              src: BitcoinMagazine,
-              title: 'Bitcoin Magazine',
-            }, {
-              src: Computing,
-              title: 'Computing',
-            },
-          ]} />
-          <Downloads data={content.downloads} />
+          <MediaSnippets data={content} mediaLogos={mediaLogos} />
+          <AssetsDownload
+            data={content.downloads}
+            logos={assetLogos}
+            imagePack={imagePack}
+          />
         </div>
       </section>
     )

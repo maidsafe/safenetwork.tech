@@ -1,12 +1,12 @@
-import UAParser from 'ua-parser-js';
+import UAParser from 'ua-parser-js'
 
-import CONST from './constants';
-const camelize = (str) => (
-  str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function(match, index) {
-    if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
-    return index == 0 ? match.toLowerCase() : match.toUpperCase();
+import CONST from './constants'
+const camelize = str => (
+  str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, (match, index) => {
+    if (+match === 0) return '' // or if (/\s+/.test(match)) for white spaces
+    return index === 0 ? match.toLowerCase() : match.toUpperCase()
   })
-);
+)
 
 export const isMobile = () => {
   if (typeof window === 'undefined') return false;
