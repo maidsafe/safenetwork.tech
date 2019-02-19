@@ -1,15 +1,16 @@
 @import '../../styles/variables'
+@import '../../styles/mixins'
 @import '../../styles/fonts'
-@import '../../styles/common'
 @import '../../styles/colors'
 
-$item-hspace: 60px
+$item-hspace: $hspace-l
 $item-vspace: 75px
 
 // Default (ML)
 .gFooter
   width: 100%
   background-color: $footer-bg-color
+  box-shadow: inset 0px 17px 25px rgba(0, 0, 0, 0.12)
   &__wrap
     +grid()
     padding: 160px 0
@@ -25,6 +26,8 @@ $item-vspace: 75px
         float: left
         &:first-child
           display: none
+        &:nth-child(odd)
+          padding-left: $item-hspace / 2
     .community
       grid-column: 2/ span 2
       grid-row: 2
@@ -55,18 +58,11 @@ $item-vspace: 75px
     &__wrap
       +clearfix()
     &__title
-      +font-1()
-      font-size: 16px
-      letter-spacing: -0.02em
       padding-bottom: 16px
       margin-bottom: 10px
       border-bottom: 2px solid #E2DD12
     &__listItem
-      +font-1()
       padding-top: 20px
-      font-size: 16px
-      letter-spacing: -0.02em
-      font-weight: normal
   .footSocial
     &__wrap
       display: flex

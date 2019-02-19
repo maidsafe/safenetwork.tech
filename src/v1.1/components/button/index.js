@@ -4,10 +4,21 @@ import classNames from 'classnames'
 import './style.sass'
 
 const Button = props => {
-  const { children, className } = props
+  const {
+    children,
+    className,
+    type,
+    disabled,
+  } = props
 
   return (
-    <button className={classNames('btn button-text', className)}>{children}</button>
+    <button
+      type={type}
+      className={classNames('btn buttonText', className)}
+      disabled={disabled}
+    >
+      {children}
+    </button>
   )
 }
 

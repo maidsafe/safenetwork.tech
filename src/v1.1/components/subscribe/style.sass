@@ -1,16 +1,15 @@
 @import '../../styles/variables'
+@import '../../styles/mixins'
 @import '../../styles/fonts'
 @import '../../styles/colors'
 .footSubscribe
+  &__wrap
+    width: 100%
   &__para
     padding-top: 20px
-    +font-3()
-    font-weight: normal
-    font-size: 20px
-    line-height: 28px
-    color: $black
   form
     padding-top: 35px
+    +clearfix()
   &__input
     width: 320px
     float: left
@@ -43,8 +42,8 @@
 // Large
 @media screen and (min-width: $width-l)
   .footSubscribe
-    &__para
-      max-width: 500px
+    &__wrap
+      max-width: 520px
 
 // Small
 @media screen and (max-width: $width-s)
@@ -53,9 +52,6 @@
       width: 230px
     &__submit
       margin-left: 18px
-      .btn
-        padding-left: 16px
-        padding-right: 16px
 
 // XSmall
 @media screen and (max-width: $width-xs)
@@ -64,9 +60,6 @@
       width: 400px
     &__submit
       margin-left: 30px
-      .btn
-        padding-left: 18px
-        padding-right: 18px
 
 // XXSmall
 @media screen and (max-width: $width-xxs)
@@ -79,6 +72,3 @@
       margin-top: 20px
       .btn
         width: 100%
-        padding-left: 16px
-        padding-right: 16px
-
