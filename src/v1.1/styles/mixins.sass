@@ -12,3 +12,7 @@
 =grid-small()
   display: grid
   grid-template-columns: repeat($col-count-small, 1fr)
+
+=render-to($mediaQuery)
+  @media screen and #{$mediaQuery}
+    @content

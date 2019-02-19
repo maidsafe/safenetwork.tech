@@ -42,7 +42,7 @@
           border-color: $white
 
 // Large
-@media screen and  (min-width: $width-l)
++render-to($media-l)
   .mainNav
     &__wrap
       display: grid
@@ -58,7 +58,7 @@
       &-btn
         text-align: center
 // Small
-@media screen and (max-width: $width-s)
++render-to($media-s)
   .mainNav
     &__wrap
       float: none

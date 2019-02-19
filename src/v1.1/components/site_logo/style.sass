@@ -35,13 +35,13 @@
       color: $white
 
 // Large
-@media screen and  (min-width: $width-l)
++render-to($media-l)
   .siteLogo
     &__media
       padding: 0 56px
 
 // Small
-@media screen and (max-width: $width-s)
++render-to($media-s)
   .siteLogo
     &__media
       padding: 0
@@ -52,7 +52,7 @@
       grid-column: 2 /span 2
 
 // XSmall
-@media screen and (max-width: $width-xs)
++render-to($media-xs)
   .siteLogo
     &__wrap
       display: block
@@ -65,7 +65,7 @@
         transform: none
 
 // XXSmall
-@media screen and (max-width: $width-xxs)
++render-to($media-xxs)
   .siteLogo
     width: 190px
     overflow: hidden

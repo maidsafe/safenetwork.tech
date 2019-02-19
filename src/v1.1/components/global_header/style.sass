@@ -37,13 +37,13 @@
         background-color: $white
         background-image: url($menu-icon-dark)
 // XLarge
-@media screen and (min-width: $width-xl)
++render-to($media-xl)
   .globalHeader
     &__wrap
       max-width: $max-width-xl
 
 // Large
-@media screen and (min-width: $width-l)
++render-to($media-l)
   .globalHeader
     &__nav
       width: 100%
@@ -51,7 +51,7 @@
       grid-column: 6/ span 5
 
 // Small
-@media screen and (max-width: $width-s)
++render-to($media-s)
   .globalHeader
     &__logo
       grid-column: 1 / span 3
@@ -79,7 +79,7 @@
         display: block
 
 // XSmall
-@media screen and (max-width: $width-xs)
++render-to($media-xs)
   .globalHeader
     &__wrap
       +grid-small()
@@ -89,7 +89,7 @@
       justify-self: center
 
 // XXSmall
-@media screen and (max-width: $width-xxs)
++render-to($media-xxs)
   .globalHeader
     padding-top: 34px
     &__logo
