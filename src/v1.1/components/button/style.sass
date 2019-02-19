@@ -1,0 +1,27 @@
+@import '../../styles/variables'
+@import '../../styles/mixins'
+@import '../../styles/fonts'
+@import '../../styles/colors'
+
+.btn
+  line-height: 40px
+  padding: 0 25px
+  background-color: rgba($black, 0.9)
+  border: 1px solid rgba($black, 0.9)
+  border-radius: 20px
+  box-sizing: border-box
+  outline: none
+  cursor: pointer
+  a
+    font-size: inherit
+  &.primary
+    background-color: $spark-red
+    color: $white
+    border-color: $spark-red
+  &.white
+    color: $spark-red
+    background-color: $white
+    border-color: $white
+    &:hover
+      color: $white
+      background-color: transparent

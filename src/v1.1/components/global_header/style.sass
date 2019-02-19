@@ -1,5 +1,6 @@
 @import '../../styles/variables'
-@import '../../styles/common'
+@import '../../styles/mixins'
+@import '../../styles/colors'
 
 // Default (ML)
 .globalHeader
@@ -18,8 +19,7 @@
     grid-column: 4/ span 7
     justify-self: end
   .mobNav
-    padding-right: 40px
-    text-align: right
+    text-align: center
     grid-column: 10/ span 1
     grid-row: 1
     display: none
@@ -36,11 +36,17 @@
       &.light
         background-color: $white
         background-image: url($menu-icon-dark)
+// XLarge
++render-to($media-xl)
+  .globalHeader
+    &__wrap
+      max-width: $max-width-xl
 
 // Large
-@media screen and (min-width: $width-l)
++render-to($media-l)
   .globalHeader
     &__nav
+      width: 100%
       padding-right: 0
       grid-column: 6/ span 5
 
@@ -51,7 +57,7 @@
       max-width: $width-xl
 
 // Small
-@media screen and (max-width: $width-s)
++render-to($media-s)
   .globalHeader
     &__logo
       grid-column: 1 / span 3
@@ -63,7 +69,6 @@
       padding-right: 0
     .mobNav
       display: block
-      padding-right: 30px
     &.active
       height: 100%
       position: fixed
@@ -80,7 +85,7 @@
         display: block
 
 // XSmall
-@media screen and (max-width: $width-xs)
++render-to($media-xs)
   .globalHeader
     &__wrap
       +grid-small()
@@ -90,12 +95,13 @@
       justify-self: center
 
 // XXSmall
-@media screen and (max-width: $width-xxs)
++render-to($media-xxs)
   .globalHeader
     padding-top: 34px
     &__logo
       padding-top: 3px
     .mobNav
+      text-align: right
       justify-self: normal
       padding-right: 20px
       &__btn

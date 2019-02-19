@@ -1,15 +1,16 @@
 @import '../../styles/variables'
+@import '../../styles/mixins'
 @import '../../styles/fonts'
-@import '../../styles/common'
 @import '../../styles/colors'
 
-$item-hspace: 60px
+$item-hspace: $hspace-l
 $item-vspace: 75px
 
-// Default (ML)
+// Default
 .gFooter
   width: 100%
   background-color: $footer-bg-color
+  box-shadow: inset 0px 17px 25px rgba(0, 0, 0, 0.12)
   &__wrap
     +grid()
     padding: 160px 0
@@ -25,6 +26,8 @@ $item-vspace: 75px
         float: left
         &:first-child
           display: none
+        &:nth-child(odd)
+          padding-left: $item-hspace / 2
     .community
       grid-column: 2/ span 2
       grid-row: 2
@@ -55,18 +58,11 @@ $item-vspace: 75px
     &__wrap
       +clearfix()
     &__title
-      +font-1()
-      font-size: 16px
-      letter-spacing: -0.02em
       padding-bottom: 16px
       margin-bottom: 10px
       border-bottom: 2px solid #E2DD12
     &__listItem
-      +font-1()
       padding-top: 20px
-      font-size: 16px
-      letter-spacing: -0.02em
-      font-weight: normal
   .footSocial
     &__wrap
       display: flex
@@ -110,13 +106,13 @@ $item-vspace: 75px
         background-image: url($footer-github-icon)
 
 // XLarge
-@media screen and (min-width: $width-xl)
++render-to($media-xl)
   .gFooter
     &__wrap
       max-width: $grid-max-width
 
 // Small
-@media screen and (max-width: $width-s)
++render-to($media-s)
   .gFooter
     &__wrap
       .safeNetwork
@@ -158,7 +154,7 @@ $item-vspace: 75px
         height: 40px
 
 // XSmall
-@media screen and (max-width: $width-xs)
++render-to($media-xs)
   .gFooter
     &__wrap
       +grid-small()
@@ -169,8 +165,10 @@ $item-vspace: 75px
       .company,
       .developers,
       .legal
+        width: 580px
         grid-column: 1/ span 4
         padding: 0 0 0 60px
+        box-sizing: content-box
       .safeNetwork
         grid-row: 3
         position: relative
@@ -227,7 +225,7 @@ $item-vspace: 75px
           display: block
 
 // XXSmall
-@media screen and (max-width: $width-xxs)
++render-to($media-xxs)
   .gFooter
     &__wrap
       .safeNetwork,
@@ -237,11 +235,13 @@ $item-vspace: 75px
       .company,
       .developers,
       .legal
+        width: 100%
         grid-column: 1/ span 6
         padding: 0 60px
+        box-sizing: border-box
 
 // XXXSmall
-@media screen and (max-width: $width-xxxs)
++render-to($media-xxxs)
   .gFooter
     &__wrap
       .safeNetwork,

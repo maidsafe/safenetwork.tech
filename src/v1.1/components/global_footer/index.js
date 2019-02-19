@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-static'
 import classNames from 'classnames'
 //
@@ -7,24 +7,21 @@ import { genRandomKey } from '../../utils'
 import content from './content.json'
 import './style.sass'
 //
-class ItemTitle extends Component {
-  render() {
-    const { title, to } = this.props
-    if (!title) {
-      return <span>{' '}</span>
-    }
-
-    return (
-      <div className="footItem__title" onClick={this.props.onClick}>
-        {
-          to ? (<Link to={to}><h3>{title}</h3></Link>) : (<h3>{title}</h3>)
-        }
-      </div>
-    )
+const ItemTitle = props => {
+  const { title, to, onClick } = props
+  if (!title) {
+    return <span>{' '}</span>
   }
+  return (
+    <div className="footItem__title navigationText" onClick={onClick}>
+      {
+        to ? (<Link to={to}><h3>{title}</h3></Link>) : (<h3>{title}</h3>)
+      }
+    </div>
+  )
 }
 
-class FootContainer extends Component {
+class FootContainer extends React.Component {
   state = {
     active: false,
   }
@@ -34,7 +31,12 @@ class FootContainer extends Component {
   }
 
   render() {
-    const { id, name, to, children } = this.props
+    const {
+      id,
+      name,
+      to,
+      children,
+    } = this.props
     const { active } = this.state
     return (
       <div className={classNames(`footItem ${id}`, {
@@ -51,69 +53,85 @@ class FootContainer extends Component {
   }
 }
 
-class FootContainerList extends Component {
-  render() {
-    const { data, id } = this.props
-    return (
-      <FootContainer id={id} name={data.name} to={data.to}>
-        <div className="footItem__list">
-          {data.links.length !== 0 ? (data.links.map(link => (
-            <div key={genRandomKey()} className="footItem__listItem"><Link to={link.to}>{link.name}</Link></div>
-          ))) : null }
-        </div>
-      </FootContainer>
-    );
-  }
+const FootContainerList = props =>  {
+  const { data, id } = props
+  return (
+    <FootContainer id={id} name={data.name} to={data.to}>
+      <div className="footItem__list">
+        {
+          (data.links && data.links.length !== 0) ? (
+            data.links.map(link => (
+              <div
+                key={genRandomKey()}
+                className="footItem__listItem navigationText"
+              >
+                <Link to={link.to}>{link.name}</Link>
+              </div>
+          ))) : null
+        }
+      </div>
+    </FootContainer>
+  )
 }
 
-class FootContainerSubscribe extends Component {
-  render() {
-    const { data, id } = this.props
-
-    return (
-      <FootContainer id={id} name={data.name}>
-        <Subscribe />
-      </FootContainer>
-    )
-  }
+const FootContainerSubscribe = props => {
+  const { data, id } = props
+  return (
+    <FootContainer id={id} name={data.name}>
+      <Subscribe />
+    </FootContainer>
+  )
 }
 
-class FootContainerSocial extends Component {
-  render() {
-    const { data, id } = this.props
-
-    return (
-      <FootContainer id={id} name={data.name}>
-        <div className="footItem__social">
-          <div className="footSocial">
-            <div className="footSocial__wrap">
-              {
-                data.links.length !== 0 ? (data.links.map(link => (
-                  <div key={genRandomKey()} className={`footSocial__item ${link.style}`}><Link to={link.to}><span className="name">{link.name}</span></Link></div>
-                ))) : null
-              }
-            </div>
+const FootContainerSocial = props => {
+  const { data, id } = props
+  return (
+    <FootContainer id={id} name={data.name}>
+      <div className="footItem__social">
+        <div className="footSocial">
+          <div className="footSocial__wrap">
+            {
+              (data.links && data.links.length !== 0) ? (
+                data.links.map(link => (
+                  <div
+                    key={genRandomKey()}
+                    className={`footSocial__item navigationText ${link.style}`}
+                  >
+                    <Link to={link.to}><span className="name">{link.name}</span></Link>
+                  </div>
+              ))) : null
+            }
           </div>
         </div>
-      </FootContainer>
-    )
-  }
+      </div>
+    </FootContainer>
+  )
 }
 
-export default class GlobalFooter extends Component {
-  render() {
-    return (
-      <footer className="gFooter">
-        <div className="gFooter__wrap">
-          <FootContainerList id="safeNetwork" data={content.safeNetwork} />
-          <FootContainerList id="community" data={content.community} />
-          <FootContainerList id="developers" data={content.developers} />
-          <FootContainerList id="company" data={content.company} />
-          <FootContainerList id="legal" data={content.legal} />
-          <FootContainerSubscribe id="newsletter" data={content.newsletter} />
-          <FootContainerSocial id="social" data={content.social} />
-        </div>
-      </footer>
-    )
-  }
+const GlobalFooter = () => {
+  const {
+    safeNetwork,
+    community,
+    developers,
+    company,
+    legal,
+    newsletter,
+    social,
+  } = content
+
+  return (
+    <footer className="gFooter">
+      <div className="gFooter__wrap">
+        <FootContainerList id="safeNetwork" data={safeNetwork} />
+        <FootContainerList id="community" data={community} />
+        <FootContainerList id="developers" data={developers} />
+        <FootContainerList id="company" data={company} />
+        <FootContainerList id="legal" data={legal} />
+        <FootContainerSubscribe id="newsletter" data={newsletter} />
+        <FootContainerSocial id="social" data={social} />
+      </div>
+    </footer>
+  )
 }
+
+export default GlobalFooter

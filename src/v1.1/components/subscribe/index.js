@@ -2,8 +2,10 @@ import React from 'react'
 import Classnames from 'classnames'
 import EmailValidator from 'email-validator'
 //
-import content from './content.json'
+import Button from '../button/index'
 import CONST from '../../../constants'
+//
+import content from './content.json'
 import './style.sass'
 
 export default class Subscribe extends React.Component {
@@ -148,7 +150,7 @@ export default class Subscribe extends React.Component {
         'signup-failure': this.state.status === this.status.FAILURE
       })}>
         <div className="footSubscribe__wrap">
-          <p className="footSubscribe__para">{userDesc}</p>
+          <p className="footSubscribe__para bodyText__default">{userDesc}</p>
           <form
             name="email-signup"
             onSubmit={this.handleEmailSignUp.bind(this)}
@@ -159,6 +161,7 @@ export default class Subscribe extends React.Component {
                 type="email"
                 name="user-email"
                 autoComplete="off"
+                required="required"
                 ref={c => {
                   this.userEmail = c
                 }}
@@ -168,13 +171,14 @@ export default class Subscribe extends React.Component {
               />
             </div>
             <div className="footSubscribe__submit">
-              <button
+              <Button
                 type="submit"
-                className="btn dark"
                 disabled={
                   [this.status.SUCCESS, this.status.WAITING].indexOf(status) !== -1
                 }
-              >{buttonText}</button>
+              >
+                {buttonText}
+              </Button>
             </div>
             <div className="footSubscribe__message">{message || null}</div>
           </form>
