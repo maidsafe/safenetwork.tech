@@ -1,5 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
+import copyClip from 'copy-to-clipboard'
 //
 import Button from '../button/index'
 import { genRandomKey, parseMDText } from '../../utils'
@@ -23,7 +24,7 @@ const Para = props => {
 }
 
 const CopyButton = props => {
-  const { name = 'Copy Text Snippet', type } = props
+  const { name = 'Copy Text Snippet', type, copyText = '' } = props
   return (
     <div className="textSnippet__button">
       <Button
@@ -31,6 +32,9 @@ const CopyButton = props => {
           primary: (type === 'primary'),
           dark: (type === 'grey'),
         })}
+        onClick={() => {
+          copyClip(copyText)
+        }}
       >{name}
       </Button>
     </div>
@@ -62,7 +66,7 @@ const TextSnippet = props => {
         }
         <Para text={text} textSize={textSize} />
         {
-          canCopy ? <CopyButton type={copyButtonType} /> : null
+          canCopy ? <CopyButton type={copyButtonType} copyText={text} /> : null
         }
       </div>
     </div>

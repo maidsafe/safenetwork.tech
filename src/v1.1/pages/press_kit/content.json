@@ -32,7 +32,8 @@
     "para": [
       "If you would like to write about us, feel free to get in touch via [pr@maidsafe.net](mailto:pr@maidsafe.net). This is obviously not a requirement, but wed be happy to answer any questions you might have and make time for an interview if required."
     ],
-    "buttonText": "Request Interview"
+    "buttonText": "Request Interview",
+    "toLink": "mailto:pr@maidsafe.net"
   },
   "techCrunch": {
     "para": "\"...the literal opposite of fly-by-night crypto opportunists. They’ve been working on decentralized networking since long before the space became the hot, hyped thing it is now.\""
@@ -59,10 +60,12 @@
       "para": "Whitepapers and more detailed reading on the SAFE Network.",
       "list": [
         {
+          "id": "parsecWhitePaper",
           "title": "PARSEC Whitepaper",
           "para": "Get all the detail on our highly asynchronous, Byzantine Fault Tolerant consensus mechanism."
         },
         {
+          "id": "primer",
           "title": "SAFE Network Primer",
           "para": "Community written, and very detailed introduction to the design and technology that underpins the SAFE Network."
         }

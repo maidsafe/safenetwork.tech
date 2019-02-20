@@ -3,7 +3,7 @@ import classNames from 'classnames'
 //
 import Button from '../button/index'
 import CCLogo from '~images/downloads/cc.svg'
-import { genRandomKey, parseMDText } from '../../utils'
+import { genRandomKey, parseMDText, openLink } from '../../utils'
 //
 import './style.sass'
 
@@ -11,8 +11,6 @@ const DownloadContainer = props => {
   const {
     data,
     children,
-    isSmall,
-    isDocument,
   } = props
   return (
     <div className="downloadContainer">
@@ -20,17 +18,20 @@ const DownloadContainer = props => {
         <h3 className="downloadContainer__title header3__default">{data.title}</h3>
         <p className="downloadContainer__para bodyText__default">{data.para}</p>
       </div>
-      <div className={classNames('downloadContainer__downloads', {
-        small: isSmall,
-        document: isDocument,
-      })}>{children}
+      <div className="downloadContainer__downloads">
+        {children}
       </div>
     </div>
   )
 }
 
 const LogoDownloads = props => {
-  const { imgSrc, imgAlt, buttonName = 'Download' } = props
+  const {
+    imgSrc,
+    imgAlt,
+    buttonName = 'Download',
+    downloadLink,
+  } = props
   return (
     <div className="logoDownloads">
       <div className="logoDownloads__wrap">
@@ -38,7 +39,12 @@ const LogoDownloads = props => {
           <img src={imgSrc} alt={imgAlt} />
         </div>
         <div className="logoDownloads__button">
-          <Button className="hollow download">{buttonName}</Button>
+          <Button
+            className="hollow download"
+            onClick={() => {
+              openLink(downloadLink)
+            }}
+          >{buttonName}</Button>
         </div>
       </div>
     </div>
@@ -46,7 +52,12 @@ const LogoDownloads = props => {
 }
 
 const ImagePackDownloads = props => {
-  const { imgSrc, imgAlt, buttonName = 'Download Image Pack' } = props
+  const {
+    imgSrc,
+    imgAlt,
+    buttonName = 'Download Image Pack',
+    downloadLink,
+  } = props
   return (
     <div className="imagePackDownloads">
       <div className="imagePackDownloads__wrap">
@@ -54,7 +65,12 @@ const ImagePackDownloads = props => {
           <img src={imgSrc} alt={imgAlt} />
         </div>
         <div className="imagePackDownloads__button">
-          <Button className="hollow download">{buttonName}</Button>
+          <Button
+            className="hollow download"
+            onClick={() => {
+              openLink(downloadLink)
+            }}
+          >{buttonName}</Button>
         </div>
       </div>
     </div>
@@ -62,7 +78,13 @@ const ImagePackDownloads = props => {
 }
 
 const DocumentDownloads = props => {
-  const { title, para, buttonName } = props
+  const {
+    title,
+    para,
+    buttonName,
+    downloadLink,
+  } = props
+
   return (
     <div className="documentDownloads">
       <div className="documentDownloads__wrap">
@@ -71,7 +93,14 @@ const DocumentDownloads = props => {
           <p className="documentDownloads__para bodyText__default">{para}</p>
         </div>
         <div className="documentDownloads__button">
-          <Button className="hollow download">{buttonName}</Button>
+          <Button
+            className="hollow download"
+            onClick={() => {
+              openLink(downloadLink)
+            }}
+          >
+            {buttonName}
+          </Button>
         </div>
       </div>
     </div>
@@ -104,7 +133,7 @@ const ImagePackContainer = props => {
 }
 
 const DocumentContainer = props => {
-  const { content } = props
+  const { content, documents } = props
   const { list } = content
   return (
     <DownloadContainer data={content} isSmall isDocument>
@@ -116,6 +145,7 @@ const DocumentContainer = props => {
               title={li.title}
               para={li.para}
               buttonName="Download"
+              downloadLink={documents[li.id]}
             />
           ))) : null
       }
@@ -124,12 +154,17 @@ const DocumentContainer = props => {
 }
 
 const AssetsDownload = props => {
-  const { data, logos = [], imagePack } = props
+  const {
+    data,
+    logos = [],
+    imagePack,
+    documents,
+  } = props
   const {
     title,
     logos: logoContent,
     images,
-    documents,
+    documents: documentContent,
   } = data
 
   return (
@@ -146,7 +181,7 @@ const AssetsDownload = props => {
           // Image pack asset
           imagePack ? (<ImagePackContainer content={images} imagePack={imagePack} />) : null
         }
-        <DocumentContainer content={documents} />
+        <DocumentContainer content={documentContent} documents={documents} />
       </div>
     </div>
   )

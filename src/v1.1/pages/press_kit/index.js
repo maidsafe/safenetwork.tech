@@ -13,6 +13,8 @@ import SNLogoWhite from '~images/downloads/safe_network_logo_white.png'
 import SNIconBlack from '~images/downloads/safe_network_icon_black.png'
 import SNIconWhite from '~images/downloads/safe_network_icon_white.png'
 import ImagePackCover from '~images/downloads/image_pack_cover.jpg'
+import { openLink } from '../../utils'
+import CONSTANT from '../../constant'
 //
 import content from './content.json'
 import './style.sass'
@@ -27,7 +29,15 @@ const InterviewReq = props => {
         text={data.para}
       />
       <div className="interviewReq__button">
-        <Button type="button" className="primary">{data.buttonText}</Button>
+        <Button
+          className="primary"
+          type="button"
+          onClick={() => {
+            openLink(data.toLink)
+          }}
+        >
+          {data.buttonText}
+        </Button>
       </div>
     </div>
   )
@@ -143,24 +153,34 @@ const PressKit = () => {
     {
       imgSrc: SNLogoBlack,
       imgAlt: 'Safe Network logo black',
+      downloadLink: CONSTANT.downloadLinks.logos.safeNetworkLogoBlack,
     },
     {
       imgSrc: SNLogoWhite,
       imgAlt: 'Safe Network logo white',
+      downloadLink: CONSTANT.downloadLinks.logos.safeNetworkLogoWhite,
     },
     {
       imgSrc: SNIconBlack,
       imgAlt: 'Safe Network icon black',
+      downloadLink: CONSTANT.downloadLinks.logos.safeNetworkIconBlack,
     },
     {
       imgSrc: SNIconWhite,
       imgAlt: 'Safe Network icon white',
+      downloadLink: CONSTANT.downloadLinks.logos.safeNetworkIconWhite,
     },
   ]
 
   const imagePack = {
     imgSrc: ImagePackCover,
     imgAlt: 'Safe Network icon white',
+    downloadLink: CONSTANT.downloadLinks.imagePack,
+  }
+
+  const documents = {
+    parsecWhitePaper: CONSTANT.downloadLinks.documents.parsecWhitePaper,
+    primer: CONSTANT.downloadLinks.documents.primer,
   }
 
   return (
@@ -173,6 +193,7 @@ const PressKit = () => {
           data={content.downloads}
           logos={assetLogos}
           imagePack={imagePack}
+          documents={documents}
         />
       </div>
     </section>

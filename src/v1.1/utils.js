@@ -15,3 +15,9 @@ export const isMenuLight = pathname => (
 export const parseMDText = text => (
   Parser.parse(md.render(text))
 )
+
+export const openLink = link => {
+  if (typeof window !== 'undefined') {
+    window.location.replace(link)
+  }
+}
