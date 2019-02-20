@@ -1,3 +1,5 @@
+@import '../variables'
+@import '../mixins'
 @import '../fonts'
 @import '../colors'
 
@@ -22,3 +24,43 @@
   line-height: 28px
   font-weight: normal
   color: $black
+
+.introText__default
+  +font-3()
+  font-size: 27px
+  line-height: 40px
+  color: $body-text
+
+.header1__default
+  +font-1()
+  font-size: 64px
+  letter-spacing: -0.02em
+  line-height: 65px
+  color: $black
+  +render-to($media-xs)
+    font-size: 48px
+    line-height: 49px
+  +render-to($media-xxs)
+    font-size: 31px
+    line-height: 32px
+
+.header2__default
+  +font-1()
+  font-size: 36px
+  line-height: 45px
+  letter-spacing: -0.02em
+  color: $black
+
+.header3__default
+  +font-1()
+  line-height: 30px
+  font-size: 24px
+  letter-spacing: -0.02em
+  color: $black
+
+.blockquote
+  +font-1()
+  font-size: 21px
+  line-height: 26px
+  letter-spacing: -0.02em
+  color: $body-text

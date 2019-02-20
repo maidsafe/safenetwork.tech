@@ -1,8 +1,7 @@
 @import '../../styles/variables'
-@import '../../styles/reset'
+@import '../../styles/mixins'
 @import '../../styles/colors'
 @import '../../styles/fonts'
-@import '../../styles/common'
 
 // Downloads
 .assetDownloads
@@ -13,79 +12,44 @@
     padding-bottom: 40px
     h2
       grid-column: 2/ span 2
-      +font-1()
-      font-size: 36px
-      line-height: 45px
-      letter-spacing: -0.02em
-      color: $black
   .downloadContainer
     +grid()
     padding-bottom: 160px
     &__context
       grid-column: 2 / span 3
     &__title
-      +font-1()
-      font-size: 24px
-      line-height: 30px
-      letter-spacing: -0.02em
-      color: $black
-      padding-bottom: 36px
+      padding-bottom: 32px
     &__para
-      +font-3()
-      font-size: 20px
-      line-height: 28px
-      color: $body-text
-      max-width: 400px
+      max-width: 410px
     &__downloads
-      grid-column: 5/ span 5
-      padding-right: 60px
+      grid-column: 5/ span 6
       +clearfix()
-      &.small
-        grid-column: 5/ span 4
 
 .logoDownloads
-  width: 50%
+  width: 325px
   float: left
   margin-bottom: 66px
+  box-sizing: content-box
   $c: &
   &:nth-child(odd)
-    padding-right: 30px
+    margin-right: 65px
     #{$c}__media
       background-color: $white
   &:nth-child(even)
-    padding-left: 30px
+    margin-right: 0
     #{$c}__media
       background-color: $black
   &__wrap
     box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
-  &__media
-    height: 180px
+  &__media,
+  &__button
     display: flex
     justify-content: center
+    align-items: center
+  &__media
+    height: 200px
   &__button
-    text-align: center
-    padding: 36px 60px
-    .btn
-      width: 100%
-      padding-right: 40px
-      color: $black
-      background-color: transparent
-      border-color: rgba(51, 51, 51, 0.5)
-      border-width: 1px
-      position: relative
-      box-sizing: border-box
-      &:after
-        content: ''
-        width: 40px
-        height: 40px
-        display: block
-        position: absolute
-        top: -1px
-        right: 0
-        background-image: url($download-icon)
-        background-size: 20px
-        background-position: center
-        background-repeat: no-repeat
+    height: 100px
   &__credit
     width: 100%
     float: left
@@ -101,44 +65,31 @@
       margin-top: 30px
 
 .imagePackDownloads
-  padding-right: 50px
   &__wrap
+    width: 570px
     position: relative
-    box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
   &__media
-    width: 100%
     img
       width: 100%
+      box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
   &__button
     width: 100%
     position: absolute
     bottom: 50px
     text-align: center
     .btn
-      padding-right: 40px
-      background-color: rgba(51, 51, 51, 0.5)
       border-color: $white
-      border-width: 1px
-      position: relative
-      box-sizing: border-box
+      color: $white
+      background-color: rgba($black, 0.5)
       &:after
-        content: ''
-        width: 40px
-        height: 40px
-        display: block
-        position: absolute
-        top: -1px
-        right: 0
-        background-image: url($download-icon)
-        background-size: 18px
-        background-position: center
-        background-repeat: no-repeat
         -webkit-filter: brightness(0) invert(1);
         filter: brightness(0) invert(1)
 
 .documentDownloads
+  width: 570px
   margin-bottom: 70px
-  padding-right: 50px
+  &:last-child
+    margin-bottom: 0
   &:nth-child(even)
     .documentDownloads__content
       background-color: $unit-green
@@ -147,79 +98,53 @@
       color: $white
   &__wrap
     box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+  &__button
+    display: flex
+    justify-content: center
+    align-items: center
   &__content
-    padding: 60px 50px
+    height: 215px
+    padding: 60px 54px 0
     background-color: $white
   &__title
-    +font-1()
-    line-height: 30px
-    font-size: 24px
-    letter-spacing: -0.02em
-    color: $black
-    margin-bottom: 25px
-  &__para
-    +font-3()
-    color: $body-text
-    line-height: 28px;
-    font-size: 20px
+    width: 100%
+    margin-bottom: 20px
   &__button
     padding: 36px 0
-    text-align: center
     .btn
-      padding-left: 50px
-      padding-right: 50px
-      color: $black
-      background-color: transparent
-      border-color: rgba(51, 51, 51, 0.5)
-      border-width: 1px
-      position: relative
-      box-sizing: border-box
-      &:after
-        content: ''
-        width: 40px
-        height: 40px
-        display: block
-        position: absolute
-        top: -1px
-        right: 0
-        background-image: url($download-icon)
-        background-size: 20px
-        background-position: center
-        background-repeat: no-repeat
+      min-width: 210px
 
 // Large
-@media screen and (min-width: $width-l)
++render-to($media-l)
   .assetDownloads
     &__wrap
       padding-top: 210px
+      padding-bottom: 55px
     .downloadContainer
-      padding-bottom: 120px
+      padding-bottom: 135px
       &__context
         grid-column: 2 / span 4
       &__downloads
-        grid-column: 6 / span 4
+        grid-column: 6 / span 5
         padding-right: 0
         &.small
           grid-column: 6 / span 3
       &__para
         max-width: 500px
   .logoDownloads
+    width: 345px
+    margin-right: 70px
     margin-bottom: 70px
-    &:nth-child(odd)
-      padding-right: 35px
-    &:nth-child(even)
-      padding-left: 35px
-  .imagePackDownloads
-    padding-right: 0
-  .documentDownloads
-    padding-right: 0
+    padding: 0 !important
+    &__credit
+      max-width: 630px
 
 // XLarge
-@media screen and (min-width: $width-xl)
++render-to($media-xl)
   .assetDownloads
     &__wrap
       padding-top: 240px
-      max-width: $grid-max-width
+      max-width: $max-width-xl
     .downloadContainer
       &__para
         max-width: 620px
@@ -229,10 +154,13 @@
           padding-right: 100px
 
 // Small
-@media screen and (max-width: $width-s)
++render-to($media-s)
   .assetDownloads
     $left-sapce: 80px
+    &__wrap
+      padding-bottom: 30px
     &__title
+      padding-bottom: 30px
       h2
         grid-column: 1 / span 7
         padding-left: $left-sapce
@@ -240,68 +168,89 @@
       padding-bottom: 130px
       &__context,
       &__downloads
-        grid-column: 1/ span 7
+        grid-column: 1/ span 8
         padding-left: $left-sapce
-        padding-right: 56px
       &__downloads
-        padding-top: 90px
+        padding-top: 75px
         grid-row: 2
-        &.small
-          grid-column: 1/ span 7
-        &.document
-          grid-column: 1/ span 5
-          padding-right: 0
       &__para
         max-width: 100%
+  .logoDownloads
+    width: 335px
+    margin-right: 40px
+    padding: 0 !important
+    &__credit
+      max-width: 550px
   .imagePackDownloads
     padding-right: 0
+    &__wrap
+      width: 740px
   .documentDownloads
     padding-right: 0
+    width: 550px
 
 // XSmall
-@media screen and (max-width: $width-xs)
++render-to($media-xs)
   .assetDownloads
-    $h-sapce: 60px
+    &__wrap
+      padding-top: 90px
+      padding-bottom: 54px
     &__title
       +grid-small()
       h2
         grid-column: 1/ span 6
-        padding-left: $h-sapce
+        padding-left: $hspace-s
     .downloadContainer
       +grid-small()
-      padding-bottom: 110px
+      padding-bottom: 86px
       &__context,
       &__downloads
         grid-column: 1/ span 6
-        padding-left: $h-sapce
-        padding-right: $h-sapce
-      &__downloads
-        &.small
-          grid-column: 1/ span 4
-          padding-right: 0
-        &.document
-          grid-column: 1/ span 6
-          padding-right: $h-sapce
-
+        padding-left: $hspace-s
+        padding-right: $hspace-s
+  .logoDownloads
+    width: 50%
+    margin-right: 0
+    margin-bottom: 75px
+    box-sizing: border-box
+    &:nth-child(odd)
+      padding-right: 25px !important
+      margin-right: 0
+    &:nth-child(even)
+      padding-left: 25px !important
+    &__media
+      height: 120px
+    &__credit
+      max-width: 625px
+  .imagePackDownloads__wrap
+    width: 630px
+  .documentDownloads
+    width: 665px
 // XXSmall
-@media screen and (max-width: $width-xxs)
++render-to($media-xxs)
   .assetDownloads
-    $h-sapce: 30px
+    &__wrap
+      padding-top: 60px
     &__title
       h2
-        padding-left: $h-sapce
+        padding-left: $hspace-xs
     .downloadContainer
       padding-bottom: 90px
       &__context,
       &__downloads
-        padding-left: $h-sapce
-        padding-right: $h-sapce
-        &.small,
-        &.document
-          grid-column: 1/ span 6
-          padding-right: $h-sapce
+        padding-left: $hspace-xs
+        padding-right: $hspace-xs
   .logoDownloads
+    width: 100% !important
+    margin-bottom: 40px
+    margin-right: 0
+    &:nth-child(odd)
+      padding-right: 0 !important
+    &:nth-child(even)
+      padding-left: 0 !important
+    &__credit
+      font-size: 16px
+      line-height: 23px
+  .imagePackDownloads__wrap,
+  .documentDownloads
     width: 100%
-    padding-left: 0 !important
-    padding-right: 0 !important
-    margin-bottom: 40px !important

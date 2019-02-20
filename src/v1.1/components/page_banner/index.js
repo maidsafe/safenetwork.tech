@@ -1,17 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 //
 import './style.sass'
 
-export default class PageBanner extends Component {
-  render() {
-    const { title, backgroundColor } = this.props
-
-    return (
-      <div className="pageBanner">
-        <div className="pageBanner__wrap">
-          <h1 className="pageBanner__title">{title}</h1>
-        </div>
+const PageBanner = props => {
+  const { title } = props
+  return (
+    <div className="pageBanner">
+      <div className="pageBanner__wrap">
+        <h1 className="pageBanner__title header1__default">{title}</h1>
       </div>
-    )
-  }
+    </div>
+  )
 }
+
+export default PageBanner

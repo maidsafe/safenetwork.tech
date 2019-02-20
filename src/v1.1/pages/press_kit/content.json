@@ -30,7 +30,7 @@
   "interviewRequest": {
     "title": "Interview Request",
     "para": [
-      "If you would like to write about us, feel free to get in touch via pr@maidsafe.net. This is obviously not a requirement, but wed be happy to answer any questions you might have and make time for an interview if required."
+      "If you would like to write about us, feel free to get in touch via [pr@maidsafe.net](mailto:pr@maidsafe.net). This is obviously not a requirement, but wed be happy to answer any questions you might have and make time for an interview if required."
     ],
     "buttonText": "Request Interview"
   },
