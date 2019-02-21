@@ -21,7 +21,7 @@ export default {
       },
       {
         path: '/faq/',
-        component: 'src/containers/faqs',
+        component: 'src/v1.1/pages/faqs',
       },
       {
         path: '/safecoin/',

@@ -21,3 +21,8 @@ export const openLink = link => {
     window.location.replace(link)
   }
 }
+
+export const spinalCase = str => {
+  if (!str) return
+  return str.replace(/(?!^)([\s])/g, ' $1').replace(/[_\s]+(?=[a-zA-Z])/g, '-').toLowerCase()
+}

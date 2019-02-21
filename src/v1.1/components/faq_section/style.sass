@@ -1,0 +1,112 @@
+@import '../../styles/variables'
+@import '../../styles/mixins'
+@import '../../styles/colors'
+@import '../../styles/fonts'
+
+$open-hspace: 20px
+$open-hspace-xs: 30px
+
+// Default
+.faqsSection
+  padding-top: 100px
+  &__wrap
+    +grid()
+  &__title
+    grid-column: 2/span 8
+    margin-bottom: 32px
+
+.faqItem
+  $c: &
+  grid-column: 2/span 8
+  &__question
+    height: 80px
+    display: flex
+    align-items: center
+    padding-left: $hspace-l
+    position: relative
+    &::after
+      content: ''
+      width: 30px
+      height: 30px
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translate(0, -50%)
+      background-image: url($faq_arrow)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 26px
+    h4
+      display: inline
+      position: relative
+      cursor: pointer
+      &::after
+        content: ''
+        display: block
+        width: 100%
+        height: 2px
+        background-color: $acid-yellow
+        position: absolute
+        bottom: -10px
+        left: 0
+  &__answer
+    display: none
+    padding-left: $hspace-l + $open-hspace
+    padding-right: $hspace-l
+    padding-top: 36px
+    padding-bottom: 75px
+  &__para
+    margin-bottom: 40px
+    &:last-child
+      margin-bottom: 0
+    a
+      color: $spark-red
+    +cta-underline()
+  &.open
+    #{$c}__wrap
+      margin-left: -$open-hspace
+      padding-left: $open-hspace
+      background-color: $acid-yellow
+      box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.12), 0px 7px 9px rgba(0, 0, 0, 0.1)
+    #{$c}__question
+      &::after
+        transform: rotate(90deg) translate(-50%, 0)
+        transform-origin: center
+    #{$c}__answer
+      display: block
+      background-color: $white
+      margin-left: -$open-hspace
+
+// XSmall
++render-to($media-xs)
+  .faqsSection
+    padding-top: 70px
+    &__wrap
+      +grid-small()
+    &__title
+      grid-column: 1/span 10
+      padding-left: $hspace-s
+  .faqItem
+    grid-column: 1/span 10
+    padding-left: $hspace-s
+
+// XXSmall
++render-to($media-xxs)
+  .faqsSection
+    padding-top: 50px
+    &__title
+      padding-left: $hspace-xs
+  .faqItem
+    $c: &
+    padding-left: $hspace-xs
+    &__question
+      padding-right: $open-hspace-xs
+    &__answer
+      padding-left: $open-hspace-xs
+      padding-right: $open-hspace-xs
+    &.open
+      #{$c}__wrap
+        margin-left: -$open-hspace-xs
+        padding-left: $open-hspace-xs
+      #{$c}__answer
+        margin-left: -$open-hspace-xs

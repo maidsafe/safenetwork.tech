@@ -1,3 +1,6 @@
+@import './colors'
+@import './fonts'
+
 =clearfix()
   &:after
     content: ''
@@ -16,3 +19,20 @@
 =render-to($mediaQuery)
   @media screen and #{$mediaQuery}
     @content
+
+=cta-underline()
+  em
+    a
+      +font-1()
+      font-weight: bold
+      font-style: normal
+      color: $black
+      &::after
+        content: ''
+        display: block
+        height: 2px
+        background-color: $spark-red
+        margin-top: 8px
+      +render-to($media-xxs)
+        font-size: 18px
+        line-height: 23px
