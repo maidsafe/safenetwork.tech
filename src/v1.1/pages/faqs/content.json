@@ -48,11 +48,11 @@
         {
           "question": "What do I need in order to browse the SAFE Network?",
           "answer": [
-            "While the network is in Alpha you'll need an account.  See 'How do I create an account?' below for a step-by-step guide.",
+            "While the network is in Alpha you'll need an account. See 'How do I create an account?' below for a step-by-step guide.",
             "Then all you need to do is [download the SAFE Browser](https://github.com/maidsafe/safe_browser/releases) and enter a SAFE site into the address bar and that's you browsing the SAFE Network.",
             "Some sample SAFE sites (copy and paste the address into the SAFE Browser address bar):",
-            "<ul><li><a href='safe://maidsafe.safenet' target='_self'>safe://maidsafe.safenet</a></li><li><a href='safe://racer.game/v4.final.html' target='_self'>safe://racer.game/v4.final.html</a></li><li><a href='safe://hello' target='_self'>safe://hello</a></li></ul>",
-            "[Get the SAFE Browser](https://github.com/maidsafe/safe_browser/releases/)"
+            "\n*   [safe://maidsafe.safenet](safe://maidsafe.safenet)\n*   [safe://racer.game/v4.final.html](safe://racer.game/v4.final.html)\n*   [safe://hello](safe://hello)",
+            "_[Get the SAFE Browser](https://github.com/maidsafe/safe_browser/releases/)_"
           ]
         },
         {
