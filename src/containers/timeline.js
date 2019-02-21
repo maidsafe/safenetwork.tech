@@ -215,7 +215,7 @@ class Roadmap extends React.Component {
                 <Container1 theme="orange" dark para="HQ Office move in Scotland" />
               </div>
               <div className="tl-roadmap-cntr4">
-                <Container1 theme="dark" dark para="Android version of SAFE Browser &amp; SAFE Messages released" />
+                <Container1 theme="dark" dark para="Android version of SAFE Authenticator &amp; SAFE Messages released" />
               </div>
             </div>
           </div>
