@@ -1,7 +1,5 @@
-@import '../../styles/variables'
-@import '../../styles/mixins'
-@import '../../styles/fonts'
-@import '../../styles/colors'
+@import '~styles/variables'
+@import '~styles/mixins'
 
 // Default (ML)
 .mainNav
@@ -9,37 +7,6 @@
   &__wrap
     width: 100%
     float: right
-  &__items, &__btnItems
-    float: left
-    +clearfix()
-  &__item
-    +font-1()
-    font-weight: normal
-    color: $black
-    float: left
-    font-size: 16px
-    line-height: 40px
-    margin-right: 40px
-    letter-spacing: -0.03em
-    &:hover,
-    &.active
-      color: $spark-red
-    &-btn
-      float: left
-      letter-spacing: -0.03em
-      a
-        display: block
-        width: 100%
-  &.light
-    .mainNav__item
-      color: $white
-      &:hover
-        color: $white
-      &-btn
-        .btn
-          background-color: $white
-          color: $spark-red
-          border-color: $white
 
 // Large
 +render-to($media-l)
@@ -48,15 +15,7 @@
       display: grid
       float: none
       grid-template-columns: repeat(5, 1fr)
-    &__items
-      grid-column: 1 / span 4
-      justify-self: end
-    &__btnItems
-      grid-column: 5 / span 1
-      justify-self: center
-    &__item
-      &-btn
-        text-align: center
+
 // Small
 +render-to($media-s)
   .mainNav
@@ -64,22 +23,3 @@
       float: none
       text-align: center
       padding-top: 80px
-    &__items, &__btnItems
-      float: none
-    &__item
-      font-size: 21px
-      float: none
-      text-align: center
-      margin-bottom: 40px
-      margin-right: 0
-      &-btn
-        display: inline-block
-        float: none
-    &.light
-      .mainNav__item
-        color: $black
-        &:hover
-          color: $spark-red
-        &-btn, &-btn:hover
-          background-color: $spark-red
-          color: $white
