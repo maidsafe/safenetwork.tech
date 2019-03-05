@@ -1,10 +1,10 @@
 import React from 'react'
 import classNames from 'classnames'
-//
+
 import MainNav from '~components/main_nav/index'
 import SiteLogo from '~components/site_logo/index'
 import { isMenuLight } from '~src/utils'
-//
+
 import content from './content.json'
 import './style.sass'
 

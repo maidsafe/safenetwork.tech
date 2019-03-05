@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-static'
 import classNames from 'classnames'
-//
+
 import Button from '~components/button/index'
-//
+
 import './style.sass'
-//
+
 const MainNavItem = props => {
   const { data, currentLocationPath, isButton } = props
 

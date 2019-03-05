@@ -1,9 +1,9 @@
 import React from 'react'
 import classNames from 'classnames'
-//
+
 import NavItem from '~components/main_nav_item/index'
 import { genRandomKey } from '~src/utils'
-//
+
 import content from './content.json'
 import './style.sass'
 
