@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-static'
 import classNames from 'classnames'
 //
-import Button from '../button/index'
+import Button from '~components/button/index'
 //
 import './style.sass'
 //
