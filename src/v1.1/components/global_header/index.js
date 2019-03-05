@@ -3,7 +3,7 @@ import classNames from 'classnames'
 //
 import MainNav from '../main_nav/index'
 import SiteLogo from '../site_logo/index'
-import { isMenuLight } from '../../utils'
+import { isMenuLight } from '../../../utils'
 //
 import content from './content.json'
 import './style.sass'
