@@ -1,13 +1,13 @@
-@import '../../styles/variables'
-@import '../../styles/mixins'
-@import '../../styles/fonts'
-@import '../../styles/colors'
+@import '~styles/variables'
+@import '~styles/mixins'
+@import '~styles/fonts'
+@import '~styles/colors'
 
 $item-hspace: $hspace-l
 $item-vspace: 75px
 
 // Default
-.gFooter
+.globalFooter
   width: 100%
   background-color: $footer-bg-color
   box-shadow: inset 0px 17px 25px rgba(0, 0, 0, 0.12)
@@ -88,32 +88,32 @@ $item-vspace: 75px
         font-size: 16px
         letter-spacing: -0.02em
         font-weight: normal
-      &.twitter
+    &__twitter
         background-image: url($footer-twitter-icon)
-      &.facebook
-        background-image: url($footer-facebook-icon)
-      &.medium
-        background-image: url($footer-medium-icon)
-      &.youtube
-        background-image: url($footer-youtube-icon)
-      &.reddit
-        background-image: url($footer-reddit-icon)
-      &.telegram
-        background-image: url($footer-telegram-icon)
-      &.riot
-        background-image: url($footer-riot-icon)
-      &.github
-        background-image: url($footer-github-icon)
+    &__facebook
+      background-image: url($footer-facebook-icon)
+    &__medium
+      background-image: url($footer-medium-icon)
+    &__youtube
+      background-image: url($footer-youtube-icon)
+    &__reddit
+      background-image: url($footer-reddit-icon)
+    &__telegram
+      background-image: url($footer-telegram-icon)
+    &__riot
+      background-image: url($footer-riot-icon)
+    &__github
+      background-image: url($footer-github-icon)
 
 // XLarge
 +render-to($media-xl)
-  .gFooter
+  .globalFooter
     &__wrap
       max-width: $max-width-xl
 
 // Small
 +render-to($media-s)
-  .gFooter
+  .globalFooter
     &__wrap
       .safeNetwork
         grid-column: 2/ span 5
@@ -155,7 +155,7 @@ $item-vspace: 75px
 
 // XSmall
 +render-to($media-xs)
-  .gFooter
+  .globalFooter
     &__wrap
       +grid-small()
       .safeNetwork,
@@ -174,6 +174,7 @@ $item-vspace: 75px
         position: relative
         .footItem__listItem
           width: 100%
+          padding-left: 0 !important
           &:first-child
             display: block
       .community
@@ -226,7 +227,7 @@ $item-vspace: 75px
 
 // XXSmall
 +render-to($media-xxs)
-  .gFooter
+  .globalFooter
     &__wrap
       .safeNetwork,
       .community,
@@ -242,7 +243,7 @@ $item-vspace: 75px
 
 // XXXSmall
 +render-to($media-xxxs)
-  .gFooter
+  .globalFooter
     &__wrap
       .safeNetwork,
       .community,

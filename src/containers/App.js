@@ -4,7 +4,7 @@ import { hot } from 'react-hot-loader'
 import Routes from 'react-static-routes'
 //
 import GlobalHeader from '../v1.1/components/global_header/index';
-import Footer from '../v1.1/components/global_footer/index';
+import GlobalFooter from '../v1.1/components/global_footer/index';
 //
 import '../sass/main.sass'
 
@@ -24,7 +24,7 @@ class Layout extends React.Component {
     const { headerActive } = this.state
 
     return (
-      <div className="root-b">
+      <main>
         <GlobalHeader
           location={location}
           active={headerActive}
@@ -35,8 +35,8 @@ class Layout extends React.Component {
         <div className="main-container">
           <Routes />
         </div>
-        <Footer />
-      </div>
+        <GlobalFooter />
+      </main>
     )
   }
 }

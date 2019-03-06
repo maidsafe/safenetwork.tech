@@ -1,33 +1,11 @@
 import React from 'react'
-import { Link } from 'react-static'
 import classNames from 'classnames'
-//
-import Button from '../button/index'
-import { genRandomKey } from '../../utils'
-//
+
+import NavItem from './nav_item'
+import { genRandomKey } from '~src/utils'
+
 import content from './content.json'
 import './style.sass'
-
-const NavItem = props => {
-  const { data, currentLocationPath, isButton } = props
-
-  const linkEle = <Link to={data.link.trim() || '#'}>{data.name}</Link>
-
-  return (
-    <div className={classNames(
-        {
-          mainNav__item: !isButton,
-          'mainNav__item-btn': isButton,
-          active: (data.link === currentLocationPath),
-        }
-      )}
-    >
-      {
-        isButton ? <Button className="primary">{linkEle}</Button> : linkEle
-      }
-    </div>
-  )
-}
 
 const MainNav = props => {
   const { location } = props
