@@ -7,10 +7,10 @@ import siteLogo from '~images/common/site_logo.svg'
 import './siteLogo.sass'
 
 const SiteLogo = props => {
-  const { name, isLightTheme } = props
+  const { name, lightTheme } = props
   return (
     <div className={classNames('siteLogo', {
-      light: isLightTheme,
+      light: lightTheme,
     })}>
       <div className="siteLogo__wrap">
         <div className="siteLogo__media">
