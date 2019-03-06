@@ -1,7 +1,7 @@
-@import '../../styles/variables'
-@import '../../styles/mixins'
-@import '../../styles/colors'
-@import '../../styles/fonts'
+@import '~styles/variables'
+@import '~styles/mixins'
+@import '~styles/colors'
+@import '~styles/fonts'
 
 // Default
 .pressKit
@@ -10,7 +10,7 @@
   &__banner
     background-color: $white
 
-.textSnippets
+.textSnippetContainer
   &__wrap
     +grid()
     padding-bottom: 120px
@@ -120,7 +120,7 @@
   .pressKit
     &__banner
       background-color: transparent
-  .textSnippets
+  .textSnippetContainer
     &__wrap
       padding-bottom: 180px
     .pressIntro
@@ -143,10 +143,16 @@
       grid-column: 2 /span 3
       grid-row: 2
       padding-top: 170px
+      .textSnippet__wrap
+        padding-left: 0
+        padding-right: 0
     .revenueStream
       grid-column: 2 /span 3
       grid-row: 3
       padding-top: 40px
+      .textSnippet__wrap
+        padding-left: 0
+        padding-right: 0
     .pressFreedom,
     .revenueStream
       .textSnippet__wrap
@@ -198,12 +204,12 @@
 
 // XLarge
 +render-to($media-xl)
-  .textSnippets,
+  .textSnippetContainer,
   .mediaSnippets
     overflow: hidden
     &__wrap
       max-width: $max-width-xl
-  .textSnippets
+  .textSnippetContainer
     .projectAim,
     .aboutSafecoin
       position: relative
@@ -224,7 +230,7 @@
 
 // Small
 +render-to($media-s)
-  .textSnippets
+  .textSnippetContainer
     &__wrap
       padding-bottom: 125px
     &__shadow
@@ -304,7 +310,7 @@
   .pressKit
     &__banner
       background-color: transparent
-  .textSnippets
+  .textSnippetContainer
     &__wrap
       +grid-small()
     &__shadow
@@ -374,7 +380,7 @@
 
 // XXSmall
 +render-to($media-xxs)
-  .textSnippets
+  .textSnippetContainer
     &__wrap
       padding-bottom: 70px
     &__shadow

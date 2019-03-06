@@ -1,7 +1,7 @@
-@import '../../styles/variables'
-@import '../../styles/mixins'
-@import '../../styles/colors'
-@import '../../styles/fonts'
+@import '~styles/variables'
+@import '~styles/mixins'
+@import '~styles/colors'
+@import '~styles/fonts'
 
 // Downloads
 .assetDownloads
@@ -25,7 +25,7 @@
       grid-column: 5/ span 6
       +clearfix()
 
-.logoDownloads
+.logoDownload
   width: 325px
   float: left
   margin-bottom: 66px
@@ -64,7 +64,7 @@
     .creditLogo
       margin-top: 30px
 
-.imagePackDownloads
+.imageDownload
   &__wrap
     width: 570px
     position: relative
@@ -85,16 +85,16 @@
         -webkit-filter: brightness(0) invert(1);
         filter: brightness(0) invert(1)
 
-.documentDownloads
+.documentDownload
   width: 570px
   margin-bottom: 70px
   &:last-child
     margin-bottom: 0
   &:nth-child(even)
-    .documentDownloads__content
+    .documentDownload__content
       background-color: $unit-green
-    .documentDownloads__title,
-    .documentDownloads__para
+    .documentDownload__title,
+    .documentDownload__para
       color: $white
   &__wrap
     box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
@@ -131,7 +131,7 @@
           grid-column: 6 / span 3
       &__para
         max-width: 500px
-  .logoDownloads
+  .logoDownload
     width: 345px
     margin-right: 70px
     margin-bottom: 70px
@@ -175,17 +175,17 @@
         grid-row: 2
       &__para
         max-width: 100%
-  .logoDownloads
+  .logoDownload
     width: 335px
     margin-right: 40px
     padding: 0 !important
     &__credit
       max-width: 550px
-  .imagePackDownloads
+  .imageDownload
     padding-right: 0
     &__wrap
       width: 740px
-  .documentDownloads
+  .documentDownload
     padding-right: 0
     width: 550px
 
@@ -208,7 +208,7 @@
         grid-column: 1/ span 6
         padding-left: $hspace-s
         padding-right: $hspace-s
-  .logoDownloads
+  .logoDownload
     width: 50%
     margin-right: 0
     margin-bottom: 75px
@@ -222,10 +222,11 @@
       height: 120px
     &__credit
       max-width: 625px
-  .imagePackDownloads__wrap
+  .imageDownload__wrap
     width: 630px
-  .documentDownloads
+  .documentDownload
     width: 665px
+
 // XXSmall
 +render-to($media-xxs)
   .assetDownloads
@@ -240,7 +241,7 @@
       &__downloads
         padding-left: $hspace-xs
         padding-right: $hspace-xs
-  .logoDownloads
+  .logoDownload
     width: 100% !important
     margin-bottom: 40px
     margin-right: 0
@@ -251,8 +252,8 @@
     &__credit
       font-size: 16px
       line-height: 23px
-  .imagePackDownloads__wrap,
-  .documentDownloads
+  .imageDownload__wrap,
+  .documentDownload
     width: 100%
     &__content
       padding: 35px $hspace-xs 0
