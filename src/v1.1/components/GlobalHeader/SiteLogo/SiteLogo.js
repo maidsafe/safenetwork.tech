@@ -4,13 +4,13 @@ import classNames from 'classnames'
 
 import siteLogo from '~images/common/site_logo.svg'
 
-import './style.sass'
+import './siteLogo.sass'
 
 const SiteLogo = props => {
-  const { theme, name } = props
+  const { name, isLightTheme } = props
   return (
     <div className={classNames('siteLogo', {
-      light: theme === 'light',
+      light: isLightTheme,
     })}>
       <div className="siteLogo__wrap">
         <div className="siteLogo__media">

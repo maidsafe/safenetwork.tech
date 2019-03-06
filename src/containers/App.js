@@ -2,41 +2,44 @@ import React from 'react'
 import { withRouter, Router } from 'react-static'
 import { hot } from 'react-hot-loader'
 import Routes from 'react-static-routes'
-//
-import GlobalHeader from '../v1.1/components/global_header/index';
+
+import GlobalHeader from '~components/GlobalHeader';
 import Footer from './partials/footer';
-//
+import { isMenuLight } from '~src/utils'
+
 import '../sass/main.sass'
 
 class Layout extends React.Component {
   state = {
-    headerActive: false,
+    mobileMenuActive: false,
   }
 
   componentDidUpdate(prev) {
     if (prev.location.pathname !== this.props.location.pathname) {
-      this.setState({ headerActive: false })
+      this.setState({ mobileMenuActive: false })
     }
   }
 
   render() {
     const { location } = this.props
-    const { headerActive } = this.state
+    const { mobileMenuActive } = this.state
+    const { pathname } = location
 
     return (
-      <div className="root-b">
+      <main>
         <GlobalHeader
-          location={location}
-          active={headerActive}
+          lightTheme={isMenuLight(pathname)}
+          activePathname={pathname}
+          mobileMenuActive={mobileMenuActive}
           onClickMobMenu={() => {
-            this.setState({ headerActive: !headerActive })
+            this.setState({ mobileMenuActive: !mobileMenuActive })
           }}
         />
         <div className="main-container">
           <Routes />
         </div>
         <Footer />
-      </div>
+      </main>
     )
   }
 }

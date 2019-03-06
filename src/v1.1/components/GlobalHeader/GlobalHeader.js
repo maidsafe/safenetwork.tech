@@ -1,34 +1,43 @@
 import React from 'react'
 import classNames from 'classnames'
 
-import MainNav from '~components/main_nav/index'
-import SiteLogo from '~components/site_logo/index'
-import { isMenuLight } from '~src/utils'
+import MainNav from './MainNav'
+import SiteLogo from './SiteLogo'
 
-import content from './content.json'
-import './style.sass'
+import content from './content'
+import './globalHeader.sass'
 
 const GlobalHeader = props => {
-  const { location, active, onClickMobMenu } = props
+  const {
+    activePathname,
+    lightTheme,
+    mobileMenuActive,
+    onClickMobMenu,
+  } = props
+
   const headerClasses = classNames('globalHeader', {
-    active,
+    active: mobileMenuActive,
   })
-  const isLightTheme = isMenuLight(location.pathname)
+
   return (
     <header className={headerClasses}>
       <div className="globalHeader__wrap">
         <div className="globalHeader__logo">
           <SiteLogo
-            theme={(isLightTheme && !active) ? 'light' : ''}
             name={content.siteName}
+            lightTheme={(lightTheme && !mobileMenuActive)}
           />
         </div>
         <div className="globalHeader__nav">
-          <MainNav location={location} />
+          <MainNav
+            activePathname={activePathname}
+            navItems={content.navItems}
+            navButtons={content.navButtons}
+          />
         </div>
         <div className="mobNav">
           <button className={classNames('mobNav__btn', {
-            light: isLightTheme,
+            light: lightTheme,
           })} onClick={onClickMobMenu} />
         </div>
       </div>
