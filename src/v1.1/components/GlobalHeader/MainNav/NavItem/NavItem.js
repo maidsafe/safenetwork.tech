@@ -2,21 +2,27 @@ import React from 'react'
 import { Link } from 'react-static'
 import classNames from 'classnames'
 
-import Button from '~components/button/index'
+import Button from '~components/Button'
 
-import './style.sass'
+import './navItem.sass'
 
 const MainNavItem = props => {
-  const { data, currentLocationPath, isButton } = props
+  const {
+    data,
+    lightTheme,
+    currentLocationPath,
+    isButton,
+  } = props
 
   const linkEle = <Link to={data.link.trim() || '#'}>{data.name}</Link>
 
   return (
     <div className={classNames(
         {
-          mainNav__item: !isButton,
-          'mainNav__item-btn': isButton,
+          mainNavItem: !isButton,
+          'mainNavItem-btn': isButton,
           active: (data.link === currentLocationPath),
+          light: lightTheme
         }
       )}
     >
