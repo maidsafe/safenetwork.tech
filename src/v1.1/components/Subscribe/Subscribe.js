@@ -5,7 +5,7 @@ import EmailValidator from 'email-validator'
 import Button from 'components/Button'
 import CONST from 'src/constants'
 //
-import content from './content.json'
+import content from './content'
 import './subscribe.sass'
 
 export default class Subscribe extends React.Component {
