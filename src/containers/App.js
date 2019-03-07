@@ -3,9 +3,9 @@ import { withRouter, Router } from 'react-static'
 import { hot } from 'react-hot-loader'
 import Routes from 'react-static-routes'
 
-import GlobalHeader from '~components/GlobalHeader'
-import GlobalFooter from '../v1.1/components/global_footer/index'
-import { isMenuLight } from '~src/utils'
+import GlobalHeader from 'components/GlobalHeader'
+import GlobalFooter from 'components/GlobalFooter'
+import { isMenuLight } from 'src/utils'
 
 import '../sass/main.sass'
 

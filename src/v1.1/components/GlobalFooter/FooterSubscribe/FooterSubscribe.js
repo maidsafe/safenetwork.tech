@@ -1,14 +1,14 @@
 import React from 'react'
 
-import FootContainer from './footer_container'
-import Subscribe from '~components/subscribe'
+import FooterContainer from '../FooterContainer'
+import Subscribe from 'components/Subscribe'
 
 const FooterSubscribeContainer = props => {
   const { data, id } = props
   return (
-    <FootContainer id={id} name={data.name}>
+    <FooterContainer id={id} name={data.name}>
       <Subscribe />
-    </FootContainer>
+    </FooterContainer>
   )
 }
 

@@ -7,7 +7,7 @@ const Button = props => {
   const { children, className } = props
 
   return (
-    <button className={classNames('btn button-text', className)}>{children}</button>
+    <button className={classNames('btn buttonText', className)}>{children}</button>
   )
 }
 

@@ -19,9 +19,9 @@ $item-vspace: 75px
       grid-row: 1
       padding-right: $item-hspace
       padding-bottom: $item-vspace
-      .footItem__list
+      .footerList
         +clearfix()
-      .footItem__listItem
+      .footerList__item
         width: 50%
         float: left
         &:first-child
@@ -54,56 +54,6 @@ $item-vspace: 75px
       grid-column: 6/ span 4
       grid-row: 2
       padding-left: $item-hspace
-  .footItem
-    &__wrap
-      +clearfix()
-    &__title
-      padding-bottom: 16px
-      margin-bottom: 10px
-      border-bottom: 2px solid #E2DD12
-    &__listItem
-      padding-top: 20px
-  .footSocial
-    &__wrap
-      display: flex
-      flex-wrap: wrap
-      margin-left: -40px
-    &__item
-      width: 50px
-      height: 50px
-      border-radius: 50%
-      margin: 30px 0 10px 40px
-      background-color: transparent
-      background-repeat: no-repeat
-      background-size: cover
-      background-position: center
-      a
-        display: block
-        width: 100%
-        height: 100%
-      .name
-        display: none
-        +font-1()
-        padding-top: 20px
-        font-size: 16px
-        letter-spacing: -0.02em
-        font-weight: normal
-    &__twitter
-        background-image: url($footer-twitter-icon)
-    &__facebook
-      background-image: url($footer-facebook-icon)
-    &__medium
-      background-image: url($footer-medium-icon)
-    &__youtube
-      background-image: url($footer-youtube-icon)
-    &__reddit
-      background-image: url($footer-reddit-icon)
-    &__telegram
-      background-image: url($footer-telegram-icon)
-    &__riot
-      background-image: url($footer-riot-icon)
-    &__github
-      background-image: url($footer-github-icon)
 
 // XLarge
 +render-to($media-xl)
@@ -144,14 +94,6 @@ $item-vspace: 75px
         grid-column: 8/ span 2
         grid-row: 3
         padding-right: 0
-    .footSocial
-      &__wrap
-        margin-left: -36px
-      &__item
-        margin-left: 36px
-        margin-top: 20px
-        width: 40px
-        height: 40px
 
 // XSmall
 +render-to($media-xs)
@@ -172,7 +114,7 @@ $item-vspace: 75px
       .safeNetwork
         grid-row: 3
         position: relative
-        .footItem__listItem
+        .footerList__item
           width: 100%
           padding-left: 0 !important
           &:first-child
@@ -189,41 +131,6 @@ $item-vspace: 75px
         grid-row: 7
       .legal
         grid-row: 6
-    .footItem
-      margin-bottom: 34px
-      &__title
-        position: relative
-        &::after
-          content: ''
-          display: block
-          width: 18px
-          height: 18px
-          position: absolute
-          top: 3px
-          right: 15px
-          background-image: url($footer-arrow-icon)
-          background-size: cover
-          background-repeat: no-repeat
-          background-position: center
-      &__context
-        display: none
-      &.active
-        .footItem__title
-          &::after
-            transform: rotate(180deg)
-        .footItem__context
-          display: block
-    .footSocial
-      &__wrap
-        display: block
-        margin-left: 0
-      &__item
-        background-image: none !important
-        width: auto
-        height: auto
-        margin: 0
-        .name
-          display: block
 
 // XXSmall
 +render-to($media-xxs)

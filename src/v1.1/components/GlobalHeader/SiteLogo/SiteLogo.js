@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-static'
 import classNames from 'classnames'
 
-import siteLogo from '~images/common/site_logo.svg'
+import siteLogo from 'images/common/site_logo.svg'
 
 import './siteLogo.sass'
 

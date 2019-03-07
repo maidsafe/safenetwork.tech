@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-static'
 import classNames from 'classnames'
 
-import Button from '~components/Button'
+import Button from 'components/Button'
 
 import './navItem.sass'
 

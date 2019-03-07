@@ -1,8 +1,7 @@
 import React from 'react'
-import classNames from 'classnames'
 
 import NavItem from '../NavItem'
-import { genRandomKey } from '~src/utils'
+import { genRandomKey } from 'src/utils'
 
 import './mainNav.sass'
 
