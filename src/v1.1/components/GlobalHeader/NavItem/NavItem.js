@@ -14,7 +14,7 @@ const MainNavItem = props => {
     isButton,
   } = props
 
-  const linkEle = <Link to={data.link.trim() || '#'}>{data.name}</Link>
+  const linkEle = (children) => (<Link to={data.link.trim() || '#'}>{children}</Link>)
 
   return (
     <div className={classNames(
@@ -27,7 +27,7 @@ const MainNavItem = props => {
       )}
     >
       {
-        isButton ? <Button className="primary">{linkEle}</Button> : linkEle
+        isButton ? linkEle(<Button className="primary">{data.name}</Button>) : linkEle(data.name)
       }
     </div>
   )
