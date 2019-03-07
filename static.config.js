@@ -37,7 +37,7 @@ export default {
       },
       {
         path: '/press-kit/',
-        component: 'src/v1.1/pages/press_kit',
+        component: 'src/v1.1/pages/PressKit',
       },
       {
         path: '/cookies/',

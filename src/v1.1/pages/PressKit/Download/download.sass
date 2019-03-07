@@ -1,0 +1,59 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+
+// Downloads
+.assetDownloads
+  &__wrap
+    padding-top: 140px
+  &__title
+    +grid()
+    padding-bottom: 40px
+    h2
+      grid-column: 2/ span 2
+
+// Large
++render-to($media-l)
+  .assetDownloads
+    &__wrap
+      padding-top: 210px
+      padding-bottom: 55px
+
+// XLarge
++render-to($media-xl)
+  .assetDownloads
+    &__wrap
+      padding-top: 240px
+      max-width: $max-width-xl
+
+// Small
++render-to($media-s)
+  .assetDownloads
+    $left-sapce: 80px
+    &__wrap
+      padding-bottom: 30px
+    &__title
+      padding-bottom: 30px
+      h2
+        grid-column: 1 / span 7
+        padding-left: $left-sapce
+
+// XSmall
++render-to($media-xs)
+  .assetDownloads
+    &__wrap
+      padding-top: 90px
+      padding-bottom: 54px
+    &__title
+      +grid-small()
+      h2
+        grid-column: 1/ span 6
+        padding-left: $hspace-s
+
+// XXSmall
++render-to($media-xxs)
+  .assetDownloads
+    &__wrap
+      padding-top: 60px
+    &__title
+      h2
+        padding-left: $hspace-xs
