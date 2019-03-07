@@ -1,5 +1,4 @@
 import React from 'react';
-import { Router } from 'react-static';
 import ReactDOM from 'react-dom';
 import "babel-polyfill";
 

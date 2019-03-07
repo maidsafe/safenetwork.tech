@@ -1,0 +1,59 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+@import '~styles/fonts'
+@import '~styles/colors'
+
+.mainNavItem
+  +font-1()
+  font-weight: normal
+  color: $black
+  float: left
+  font-size: 16px
+  line-height: 38px
+  margin-right: 40px
+  letter-spacing: -0.03em
+  &:hover,
+  &.active
+    color: $spark-red
+  &.light
+    color: $white
+    &:hover
+      color: $white
+  &-btn
+    float: left
+    letter-spacing: -0.03em
+    a
+      display: block
+      width: 100%
+    &.light
+      .btn
+        background-color: $white
+        color: $spark-red
+        border-color: $white
+
+// Large
++render-to($media-l)
+  .mainNavItem
+    &__item
+      &-btn
+        text-align: center
+
+// Small
++render-to($media-s)
+  .mainNavItem
+    font-size: 21px
+    float: none
+    text-align: center
+    margin-bottom: 40px
+    margin-right: 0
+    &-btn
+      display: inline-block
+      float: none
+      &.light
+        .btn, .btn:hover
+          background-color: $spark-red
+          color: $white
+    &.light
+      color: $black
+      &:hover
+        color: $spark-red
