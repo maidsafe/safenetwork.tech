@@ -14,14 +14,18 @@ class Layout extends React.Component {
     mobileMenuActive: false,
   }
 
-  componentDidUpdate(prev) {
-    if (prev.location.pathname !== this.props.location.pathname) {
-      this.setState({ mobileMenuActive: false })
-    }
+  componentDidMount() {
     if (typeof window !== 'undefined') {
       window.addEventListener('resize', () =>  {
         this.toggleBodyOverFlow(false)
+        this.setState({ mobileMenuActive: false })
       })
+    }
+  }
+
+  componentDidUpdate(prev) {
+    if (prev.location.pathname !== this.props.location.pathname) {
+      this.setState({ mobileMenuActive: false })
     }
   }
 
