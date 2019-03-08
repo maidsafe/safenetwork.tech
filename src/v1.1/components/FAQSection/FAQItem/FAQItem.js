@@ -1,9 +1,9 @@
 import React from 'react'
 import classNames from 'classnames'
-//
-import { genRandomKey, parseMDText, spinalCase } from '../../utils'
-//
-import './style.sass'
+
+import { genRandomKey, parseMDText, spinalCase } from 'src/utils'
+
+import './faqItem.sass'
 
 class FAQItem extends React.Component {
   state = {
@@ -58,23 +58,3 @@ class FAQItem extends React.Component {
     )
   }
 }
-
-const FAQSection = props => {
-  const { content } = props
-  const { title, items } = content
-
-  return (
-    <div className="faqsSection">
-      <div className="faqsSection__wrap">
-        <div className="faqsSection__title"><h3 className="header3__default">{title}</h3></div>
-        {
-          (items && items.length >= 0) ? (
-            items.map(item => <FAQItem key={genRandomKey()} content={item} />)
-          ) : null
-        }
-      </div>
-    </div>
-  )
-}
-
-export default FAQSection

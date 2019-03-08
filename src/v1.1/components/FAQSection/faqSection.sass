@@ -1,0 +1,28 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+
+// Default
+.faqsSection
+  padding-top: 100px
+  &__wrap
+    +grid()
+  &__title
+    grid-column: 2/span 8
+    margin-bottom: 32px
+
+// XSmall
++render-to($media-xs)
+  .faqsSection
+    padding-top: 70px
+    &__wrap
+      +grid-small()
+    &__title
+      grid-column: 1/span 10
+      padding-left: $hspace-s
+
+// XXSmall
++render-to($media-xxs)
+  .faqsSection
+    padding-top: 50px
+    &__title
+      padding-left: $hspace-xs

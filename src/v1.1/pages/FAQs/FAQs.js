@@ -1,11 +1,12 @@
 import React from 'react'
-//
-import PageBanner from '../../components/page_banner/index'
-import FAQSection from '../../components/faq_section/index'
-import { genRandomKey } from '../../utils'
-//
+
+import PageBanner from 'components/PageBanner'
+import FAQSection from 'components/FAQSection'
+
+import { genRandomKey } from 'src/utils'
+
 import content from './content.json'
-import './style.sass'
+import './faqs.sass'
 
 const FAQBanner = props => (
   <div className="faqs__banner">
