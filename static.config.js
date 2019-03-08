@@ -37,7 +37,7 @@ export default {
       },
       {
         path: '/press-kit/',
-        component: 'src/v1.1/pages/press_kit',
+        component: 'src/v1.1/pages/PressKit',
       },
       {
         path: '/cookies/',
@@ -114,11 +114,14 @@ export default {
     config.plugins.push(new CompressionPlugin({
       algorithm: 'gzip'
     }))
-    // console.log('resolve', config.resolve)
+    //
     config.resolve = {
       ...config.resolve,
       alias: {
-        '~images': path.resolve(__dirname, 'src/assets/images'),
+        styles: path.resolve(__dirname, 'src/v1.1/styles'),
+        images: path.resolve(__dirname, 'src/assets/images'),
+        components: path.resolve(__dirname, 'src/v1.1/components'),
+        src: path.resolve(__dirname, 'src')
       }
     }
     return config

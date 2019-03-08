@@ -1,0 +1,229 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+@import '~styles/colors'
+@import '~styles/fonts'
+
+$vpad: 70px
+.textSnippets
+  &__wrap
+    +grid()
+    padding-bottom: 190px
+    .pressIntro,
+    .projectAim,
+    .aboutSafecoin
+      padding: $vpad $hspace-l
+    .projectAim,
+    .aboutSafecoin
+      height: 380px
+      grid-row: 2
+    .pressIntro
+      height: 350px
+      grid-column: 2 /span 8
+      grid-row: 1
+    .projectAim
+      grid-column: 2 /span 4
+      background-color: $acid-yellow
+    .aboutSafecoin
+      grid-column: 6 /span 4
+      background-color: $pinky-grey
+    .pressFreedom,
+    .revenueStream
+      padding-top: 146px
+      grid-row: 3
+    .pressFreedom
+      grid-column: 2 /span 4
+    .revenueStream
+      grid-column: 7 /span 3
+      .textSnippet__title
+        display: flex
+        align-items: flex-end
+        height: 90px
+  &__shadow
+    grid-column: 2 /span 8
+    grid-row: 1/ span 2
+    background-color: $white
+    box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+    z-index: 1
+  &__rowBg
+    grid-column: 1 /span 10
+    grid-row: 1
+    background-color: $white
+    z-index: 0
+  .btn.dark
+    background-color: rgba($black, 0.5)
+    border-color: rgba($black, 0.5)
+
+// Large
++render-to($media-l)
+  .textSnippets
+    &__wrap
+      padding-bottom: 180px
+    .pressIntro,
+    .aboutSafecoin
+      height: 380px
+      grid-row: 1
+    .pressIntro
+      grid-column: 2 /span 5
+      background-color: $white
+      box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+    .projectAim,
+    .aboutSafecoin
+      grid-column: 7 /span 4
+      .textSnippet__para
+        max-width: 500px
+    .pressFreedom,
+    .revenueStream
+      grid-column: 2 /span 5
+      .textSnippet__wrap
+        max-width: 560px
+    .pressFreedom
+      grid-row: 2
+      padding-top: 170px
+    .revenueStream
+      grid-row: 3
+      padding-top: 40px
+      .textSnippet__title
+        height: auto
+    &__shadow,
+    &__rowBg
+      display: none
+
+// XLarge
++render-to($media-xl)
+  .textSnippets
+    overflow: hidden
+    &__wrap
+      max-width: $max-width-xl
+      padding-bottom: 165px
+    .projectAim,
+    .aboutSafecoin
+      position: relative
+      .textSnippet__para
+        max-width: 630px
+      &::after
+        content: ''
+        width: 1000%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 100%
+    .projectAim::after
+      background-color: rgba($acid-yellow, 0.6)
+    .aboutSafecoin::after
+      background-color: rgba($pinky-grey, 0.6)
+    .pressFreedom,
+    .revenueStream
+      .textSnippet__wrap
+        max-width: 660px
+
+// Small
++render-to($media-s)
+  .textSnippets
+    &__wrap
+      padding-bottom: 125px
+    &__shadow
+      grid-column: 2/ span 8
+      margin-left: -$hspace-l
+      margin-right: -$hspace-l
+      box-sizing: content-box
+    .pressIntro,
+    .projectAim,
+    .aboutSafecoin
+      margin-left: -$hspace-l
+      margin-right: -$hspace-l
+    .projectAim,
+    .aboutSafecoin
+      height: 400px
+      .textSnippet__para
+        max-width: 400px
+    .pressIntro
+      grid-column: 2 /span 8
+      height: 350px
+    .projectAim
+      grid-column: 2/ span 4
+    .aboutSafecoin
+      grid-column: 6/ span 4
+      margin-left: 0
+    .pressFreedom,
+    .revenueStream
+      grid-column: 2 /span 8
+      .textSnippet__wrap
+        max-width: 625px
+      .textSnippet__title
+        height: auto
+    .pressFreedom
+      grid-row: 3
+      padding-top: 130px
+    .revenueStream
+      grid-row: 4
+      padding-top: 95px
+
++render-to($media-xs)
+  .textSnippets
+    &__wrap
+      +grid-small()
+    &__shadow
+      grid-column: 1/ span 6
+      margin: 0
+    .pressIntro,
+    .projectAim,
+    .aboutSafecoin
+      padding-left: $hspace-s
+      padding-right: $hspace-s
+    .pressIntro
+      grid-column: 1 /span 6
+      grid-row: 1
+      height: 335px
+      margin: 0
+    .projectAim,
+    .aboutSafecoin
+      height: auto
+      grid-row: 2
+      margin: 0
+      .textSnippet__para
+        padding-bottom: 26px
+    .projectAim
+      grid-column: 1 /span 3
+    .aboutSafecoin
+      grid-column: 4 /span 6
+    .pressFreedom,
+    .revenueStream
+      grid-column: 1 /span 4
+      margin: 0
+    .pressFreedom
+      grid-row: 3
+      padding-top: 110px
+    .revenueStream
+      grid-row: 4
+      padding-top: 65px
+
++render-to($media-xxs)
+  .textSnippets
+    &__wrap
+      padding-bottom: 70px
+    &__shadow
+      grid-row: 1/ span 3
+    .pressIntro,
+    .projectAim,
+    .aboutSafecoin
+      height: auto
+      padding: 50px $hspace-xs
+      grid-column: 1 /span 6
+      .textSnippet__para
+        margin-bottom: 38px
+        max-width: 100%
+    .projectAim
+      grid-row: 2
+    .aboutSafecoin
+      grid-row: 3
+    .pressFreedom,
+    .revenueStream
+      grid-column: 1 /span 6
+      padding-left: $hspace-xs
+      padding-right: $hspace-xs
+    .pressFreedom
+      grid-row: 4
+      padding-top: 90px
+    .revenueStream
+      grid-row: 5
+      padding-top: 40px

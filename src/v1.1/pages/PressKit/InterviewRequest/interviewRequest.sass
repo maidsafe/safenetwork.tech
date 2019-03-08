@@ -1,0 +1,30 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+
+.interviewRequest
+  padding: 80px 0 160px
+  .textSnippet__wrap
+    margin-bottom: 54px
+  +render-to($media-l)
+    padding: 75px 0 0
+    height: 430px
+    .textSnippet__wrap
+      margin-bottom: 60px
+    .textSnippet__title
+      margin-bottom: 12px
+  +render-to($media-s)
+    height: 450px
+    padding: 90px 0 0
+    .textSnippet__wrap
+      margin-bottom: 40px
+  +render-to($media-xs)
+    padding: 76px $hspace-s 0
+    .textSnippet__wrap
+      margin-bottom: 53px
+    .textSnippet__para
+      max-width: 100%
+  +render-to($media-xxs)
+    height: auto
+    padding: 50px $hspace-xs 45px
+    .textSnippet__wrap
+      margin-bottom: 34px

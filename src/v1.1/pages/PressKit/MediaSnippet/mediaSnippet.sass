@@ -1,0 +1,17 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+
+.mediaSnippet
+  padding: 0 $hspace-l
+  z-index: 1
+  &__para
+    margin-bottom: 58px
+  &__logo
+    height: 73px
+    img
+      height: 100%
+  +render-to($media-xs)
+    &__para
+      margin-bottom: 30px
+    &__logo
+      height: 54px

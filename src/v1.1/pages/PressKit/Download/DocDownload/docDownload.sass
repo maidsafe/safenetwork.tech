@@ -1,0 +1,46 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+@import '~styles/colors'
+@import '~styles/fonts'
+
+.docDownload
+  $c: &
+  width: 570px
+  margin-bottom: 70px
+  &:last-child
+    margin-bottom: 0
+  &:nth-child(even)
+    #{$c}__content
+      background-color: $unit-green
+    #{$c}__title,
+    #{$c}__para
+      color: $white
+  &__wrap
+    box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+  &__button
+    display: flex
+    justify-content: center
+    align-items: center
+  &__content
+    height: 215px
+    padding: 60px 54px 0
+    background-color: $white
+  &__title
+    width: 100%
+    margin-bottom: 20px
+  &__button
+    padding: 36px 0
+    .btn
+      min-width: 210px
+
+// XSmall
++render-to($media-xs)
+  .docDownload
+    width: 665px
+
+// XXSmall
++render-to($media-xxs)
+  .docDownload
+    width: 100%
+    &__content
+      padding: 35px $hspace-xs 0

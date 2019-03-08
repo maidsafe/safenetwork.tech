@@ -1,0 +1,76 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+@import '~styles/colors'
+@import '~styles/fonts'
+
+.downloadContainer
+  +grid()
+  padding-bottom: 160px
+  &__context
+    grid-column: 2 / span 3
+  &__title
+    padding-bottom: 32px
+  &__para
+    max-width: 410px
+  &__downloads
+    grid-column: 5/ span 6
+    +clearfix()
+
+// Large
++render-to($media-l)
+  .downloadContainer
+    padding-bottom: 135px
+    &__context
+      grid-column: 2 / span 4
+    &__downloads
+      grid-column: 6 / span 5
+      padding-right: 0
+      &.small
+        grid-column: 6 / span 3
+    &__para
+      max-width: 500px
+
+// XLarge
++render-to($media-xl)
+  .downloadContainer
+    &__para
+      max-width: 620px
+    &__downloads
+      padding-right: 130px
+      &.small
+        padding-right: 100px
+
+// Small
++render-to($media-s)
+  .downloadContainer
+    $left-sapce: 80px
+    padding-bottom: 130px
+    &__context,
+    &__downloads
+      grid-column: 1/ span 9
+      padding-left: $left-sapce
+    &__downloads
+      padding-top: 75px
+      grid-row: 2
+    &__para
+      max-width: 100%
+
+// XSmall
++render-to($media-xs)
+  .downloadContainer
+    +grid-small()
+    padding-bottom: 86px
+    &__context,
+    &__downloads
+      grid-column: 1/ span 6
+      padding-left: $hspace-s
+      padding-right: $hspace-s
+
+// XXSmall
++render-to($media-xxs)
+  .downloadContainer
+    padding-bottom: 90px
+    &__context,
+    &__downloads
+      padding-left: $hspace-xs
+      padding-right: $hspace-xs
