@@ -5,7 +5,7 @@ import { genRandomKey, parseMDText, spinalCase } from 'src/utils'
 
 import './faqItem.sass'
 
-class FAQItem extends React.Component {
+export default class FAQItem extends React.Component {
   state = {
     isOpen: false,
   }

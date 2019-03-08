@@ -2,6 +2,8 @@ import React from 'react'
 
 import FAQItem from './FAQItem'
 
+import { genRandomKey } from 'src/utils'
+
 import './faqSection.sass'
 
 const FAQSection = props => {
