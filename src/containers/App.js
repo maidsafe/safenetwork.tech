@@ -18,6 +18,23 @@ class Layout extends React.Component {
     if (prev.location.pathname !== this.props.location.pathname) {
       this.setState({ mobileMenuActive: false })
     }
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', () =>  {
+        this.toggleBodyOverFlow(false)
+      })
+    }
+  }
+
+  toggleBodyOverFlow(hidden) {
+    if (typeof window !== 'undefined') {
+      document.body.style.overflow = hidden ? 'hidden' : 'visible'
+    }
+  }
+
+  onClickMobMenu() {
+    const { mobileMenuActive } = this.state
+    this.setState({ mobileMenuActive: !mobileMenuActive })
+    this.toggleBodyOverFlow(!mobileMenuActive)
   }
 
   render() {
@@ -32,7 +49,7 @@ class Layout extends React.Component {
           activePathname={pathname}
           mobileMenuActive={mobileMenuActive}
           onClickMobMenu={() => {
-            this.setState({ mobileMenuActive: !mobileMenuActive })
+            this.onClickMobMenu()
           }}
         />
         <div className="main-container">
