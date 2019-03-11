@@ -230,7 +230,7 @@ class NewEconomy extends React.Component {
                 <div className="sec-rgt-ii">
                   <Container2
                     head="Always Free to Access"
-                    para={['Information is always free to access. You’ll never be charged for browsing or downloading. The SAFE Network guarantees equal access to data for everyone. You don’t even need an account, just download the browser']}
+                    para={['Information is always free to access. You’ll never be charged for browsing or downloading. The SAFE Network guarantees equal access to data for everyone.']}
                   />
                 </div>
                 <div className="sec-rgt-iii">
@@ -287,7 +287,7 @@ class Security extends React.Component {
                 <div className="sec-rgt-i">
                   <Container2
                     head="Browse and access content anonymously"
-                    para={['On the SAFE Network, you are free to browse and download completely anonymously, from anywhere in the world. No account necessary.']}
+                    para={['On the SAFE Network, you are free to browse and download completely anonymously, from anywhere in the world.']}
                   />
                 </div>
                 <div className="sec-rgt-ii">

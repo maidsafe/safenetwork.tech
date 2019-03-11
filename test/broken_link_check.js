@@ -10,6 +10,7 @@ const scanForBrokenLinks = (serveUrl) => {
     excludedKeywords: [
       'https://www.cryptopia.co.nz/',
       'https://t.me/safenetwork',
+      'https://www.ico.org.uk/',
     ]
   };
   return new Promise((resolve, rejects) => {

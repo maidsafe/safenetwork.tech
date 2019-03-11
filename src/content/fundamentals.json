@@ -40,7 +40,7 @@
         ]
       },
       {
-        "q": "Let anyone to browse content anonymously and free of charge",
+        "q": "Let anyone browse content anonymously and free of charge",
         "a": [
           {
             "cnt": "It is crucial that the new decentralised web is without barriers. One of the most important foundations for a global, collaborative platform is that anyone can access public content for free at any time without the need to create an account.",
@@ -58,7 +58,7 @@
         ]
       },
       {
-        "q": "Let Users to use any of their identities to send/receive Safecoin",
+        "q": "Let Users use any of their identities to send/receive Safecoin",
         "a": [
           {
             "cnt": "Each individual must be able to use any of their identities as a wallet address in order to be able to send and receive Safecoin.",
@@ -152,15 +152,6 @@
         "a": [
           {
             "cnt": "Clients are software programs that allow users to connect to the SAFE Network. There will never be charge levied by the Network if messages are sent directly between two Clients. However, any indirect messages that are sent between Clients that involve travel across the Network will carry a cost.",
-            "type": "para"
-          }
-        ]
-      },
-      {
-        "q": "Not use any clearnet service",
-        "a": [
-          {
-            "cnt": "In order to successfully introduce a new accessible security paradigm for everyone online, you will never have to use a clearnet service in order to use the Network.",
             "type": "para"
           }
         ]
