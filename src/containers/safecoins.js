@@ -156,7 +156,7 @@ class Buy extends React.Component {
             <div className="safecoins-lay1-sec-b">
               <h3 className="safecoins-cntr-h">How do I buy Safecoin?</h3>
               <p className="safecoins-cntr-para">Safecoin is the currency that will power the SAFE Network. It will be available to be farmed, used or traded. You can’t buy them yet, but you can buy MaidSafeCoin.</p>
-              <p className="safecoins-cntr-para">MaidSafeCoin (MAID) is a token that was created in a crowdsale in 2014 to support the project, and each MAID will be exchanged for a Safecoin when the nework launches. Based on the Omni protocol on top of the Bitcoin blockchain, MAID can be purchased and traded, but not farmed.</p>
+              <p className="safecoins-cntr-para">MaidSafeCoin (MAID) is a token that was created in a crowdsale in 2014 to support the project, and each MAID will be exchanged for a Safecoin when the network launches. Based on the Omni protocol on top of the Bitcoin blockchain, MAID can be purchased and traded, but not farmed.</p>
             </div>
           </div>
         </div>
