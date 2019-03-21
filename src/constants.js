@@ -202,7 +202,7 @@ export default {
         authenticator: 'https://github.com/maidsafe/beaker-plugin-safe-authenticator',
         safeBrowser: 'https://github.com/maidsafe/safe_browser/',
         whm: 'https://github.com/maidsafe/safe-web-hosting-manager-electron/releases/latest',
-        safeMail: 'https://github.com/maidsafe/safe_examples/tree/master/email_app',
+        safeMail: 'https://github.com/maidsafe/safe_examples/tree/archived-examples/email_app',
       }
     },
     pKit: {
