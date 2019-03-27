@@ -1,7 +1,9 @@
 import React from 'react';
+import { Router } from 'react-static';
 import ReactDOM from 'react-dom';
 import "babel-polyfill";
 
+import './v1.1/styles/shared/main.sass'
 // Fonts
 import 'typeface-vollkorn';
 
@@ -19,5 +21,5 @@ if (typeof document !== 'undefined') {
   }
 
   // Render!
-  render(App);
+  render(App)
 }

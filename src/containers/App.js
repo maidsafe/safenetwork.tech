@@ -1,13 +1,71 @@
 import React from 'react'
-import { Router } from 'react-static'
+import { withRouter, Router } from 'react-static'
 import { hot } from 'react-hot-loader'
-//
 import Routes from 'react-static-routes'
 
-import Header from './partials/header';
+import GlobalHeader from '~components/GlobalHeader';
 import Footer from './partials/footer';
+import { isMenuLight } from '~src/utils'
 
 import '../sass/main.sass'
+
+class Layout extends React.Component {
+  state = {
+    mobileMenuActive: false,
+  }
+
+  componentDidMount() {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', () =>  {
+        this.toggleBodyOverFlow(false)
+        this.setState({ mobileMenuActive: false })
+      })
+    }
+  }
+
+  componentDidUpdate(prev) {
+    if (prev.location.pathname !== this.props.location.pathname) {
+      this.setState({ mobileMenuActive: false })
+    }
+  }
+
+  toggleBodyOverFlow(hidden) {
+    if (typeof window !== 'undefined') {
+      document.body.style.overflow = hidden ? 'hidden' : 'visible'
+    }
+  }
+
+  onClickMobMenu() {
+    const { mobileMenuActive } = this.state
+    this.setState({ mobileMenuActive: !mobileMenuActive })
+    this.toggleBodyOverFlow(!mobileMenuActive)
+  }
+
+  render() {
+    const { location } = this.props
+    const { mobileMenuActive } = this.state
+    const { pathname } = location
+
+    return (
+      <main>
+        <GlobalHeader
+          lightTheme={isMenuLight(pathname)}
+          activePathname={pathname}
+          mobileMenuActive={mobileMenuActive}
+          onClickMobMenu={() => {
+            this.onClickMobMenu()
+          }}
+        />
+        <div className="main-container">
+          <Routes />
+        </div>
+        <Footer />
+      </main>
+    )
+  }
+}
+
+const LayoutWithRouter = withRouter(Layout)
 
 class App extends React.Component {
   componentDidMount() {
@@ -19,17 +77,7 @@ class App extends React.Component {
   }
 
   render() {
-    return (
-      <Router>
-        <div className="root-b">
-          <Header />
-          <div className="main-container">
-            <Routes />
-          </div>
-          <Footer />
-        </div>
-      </Router>
-    )
+    return (<Router><LayoutWithRouter /></Router>)
   }
 }
 
