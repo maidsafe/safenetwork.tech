@@ -1,9 +1,29 @@
-@import '../fonts'
-@import '../colors'
+@import '~styles/fonts'
+@import '~styles/colors'
+@import '~styles/variables'
+@import '~styles/mixins'
 
-.button-text
+.buttonText
   +font-1()
   font-size: 16px
   line-height: normal
   text-align: center
   color: $white
+
+.navigationText
+  +font-1()
+  font-size: 16px
+  letter-spacing: -0.02em
+  line-height: normal
+  font-weight: normal
+  color: $black
+
+.bodyText__default
+  +font-3()
+  font-size: 20px
+  line-height: 28px
+  font-weight: normal
+  color: $black
+  max-width: 574px
+  +render-to($media-xxs)
+    max-width: 500px

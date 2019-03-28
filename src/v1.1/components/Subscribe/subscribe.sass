@@ -1,0 +1,108 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+@import '~styles/fonts'
+@import '~styles/colors'
+
+.subscribe
+  &__wrap
+    width: 100%
+  &__para
+    padding-top: 20px
+  form
+    margin-top: 35px
+    +clearfix()
+  &__input
+    width: 320px
+    float: left
+    input
+      +font-3()
+      width: 100%
+      line-height: 40px
+      padding: 0 30px
+      border: 1px solid rgba(51, 51, 51, 0.2)
+      background-color: $background-grey
+      border-radius: 40px
+      font-size: 16px
+      color: $black
+      outline: none
+      &:focus, &:valid
+        background-color: $white
+  &__submit
+    float: left
+    margin-left: 25px
+    font-size: 16px
+    .btn
+      min-width: 112px
+      line-height: 41px
+  &__message
+    width: 100%
+    height: 18px
+    margin-top: 12px
+    margin-left: 30px
+    float: left
+    +font-1()
+    font-size: 16px
+    font-weight: 600
+    color: $spark-red
+
+// Large
++render-to($media-l)
+  .subscribe
+    &__submit
+      .btn
+        min-width: 130px
+
+// Small
++render-to($media-s)
+  .subscribe
+    &__input
+      width: 230px
+    &__submit
+      margin-left: 20px
+
+// XSmall
++render-to($media-xs)
+  .subscribe
+    &__input
+      width: 400px
+    &__submit
+      margin-left: 27px
+
+// XXSmall
++render-to($media-xxs)
+  .subscribe
+    &__wrap
+      max-width: 512px
+      form
+        position: relative
+        width: 100%
+        padding-right: 145px
+    &__input
+      width: 100%
+      min-width: 240px
+    &__submit
+      position: absolute
+      top: 0
+      right: 0
+
+// XXXSmall
++render-to($media-xxxs)
+  .subscribe
+    &__wrap
+      max-width: 100%
+      form
+        position: static
+        padding-right: 0
+    &__input
+      width: 100%
+      max-width: 100%
+      min-width: 100%
+      input
+        text-align: center
+    &__submit
+      position: static
+      width: 100%
+      margin-left: 0
+      margin-top: 20px
+      .btn
+        width: 100%
