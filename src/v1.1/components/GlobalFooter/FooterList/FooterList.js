@@ -6,10 +6,10 @@ import { genRandomKey } from 'src/utils'
 
 import './footerList.sass'
 
-const FooterListContainer = props =>  {
+const FooterList = props =>  {
   const { data, id } = props
   return (
-    <FooterContainer id={id} name={data.name} to={data.to}>
+    <FooterContainer id={id} name={data.name} titleLink={data.url}>
       <div className="footerList">
         {
           (data.links && data.links.length !== 0) ? (
@@ -18,7 +18,7 @@ const FooterListContainer = props =>  {
                 key={genRandomKey()}
                 className="footerList__item navigationText"
               >
-                <Link to={link.to}>{link.name}</Link>
+                <Link to={link.url}>{link.name}</Link>
               </div>
           ))) : null
         }
@@ -27,4 +27,4 @@ const FooterListContainer = props =>  {
   )
 }
 
-export default FooterListContainer
+export default FooterList

@@ -4,35 +4,35 @@ export default {
     'links': [
       {
         'name': 'Home',
-        'to': '/'
+        'url': '/'
       },
       {
         'name': 'How It Works',
-        'to': '/how-it-works/'
+        'url': '/how-it-works/'
       },
       {
         'name': 'Press Kit',
-        'to': '/press-kit/'
+        'url': '/press-kit/'
       },
       {
         'name': 'Safecoin',
-        'to': '/safecoin/'
+        'url': '/safecoin/'
       },
       {
         'name': 'Get Involved',
-        'to': '/get-involved/'
+        'url': '/get-involved/'
       },
       {
         'name': 'FAQs',
-        'to': '/faq/'
+        'url': '/faq/'
       },
       {
         'name': 'Blog',
-        'to': 'https://medium.com/safenetwork'
+        'url': 'https://medium.com/safenetwork'
       },
       {
         'name': 'Timeline',
-        'to': '/timeline/'
+        'url': '/timeline/'
       }
     ]
   },
@@ -41,11 +41,11 @@ export default {
     'links': [
       {
         'name': 'SAFE Network Forum',
-        'to': 'https://safenetforum.org/'
+        'url': 'https://safenetforum.org/'
       },
       {
         'name': 'Developers Forum',
-        'to': 'https://forum.safedev.org/'
+        'url': 'https://forum.safedev.org/'
       }
     ]
   },
@@ -54,19 +54,19 @@ export default {
     'links': [
       {
         'name': 'About MaidSafe',
-        'to': '/about-maidsafe'
+        'url': '/about-maidsafe'
       },
       {
         'name': 'Website',
-        'to': 'https://maidsafe.net/'
+        'url': 'https://maidsafe.net/'
       },
       {
         'name': 'Contact',
-        'to': 'https://maidsafe.net/contact'
+        'url': 'https://maidsafe.net/contact'
       },
       {
         'name': 'Careers',
-        'to': 'https://maidsafe.net/careers'
+        'url': 'https://maidsafe.net/careers'
       }
     ]
   },
@@ -75,11 +75,11 @@ export default {
     'links': [
       {
         'name': 'Developer Hub',
-        'to': 'https://hub.safedev.org/'
+        'url': 'https://hub.safedev.org/'
       },
       {
         'name': 'Github',
-        'to': 'https://github.com/maidsafe/'
+        'url': 'https://github.com/maidsafe/'
       }
     ]
   },
@@ -88,15 +88,15 @@ export default {
     'links': [
       {
         'name': 'Privacy Policy',
-        'to': '/privacy'
+        'url': '/privacy'
       },
       {
         'name': 'Terms',
-        'to': '/cookies'
+        'url': '/cookies'
       },
       {
         'name': 'Credits',
-        'to': 'https://maidsafe.net/credits'
+        'url': 'https://maidsafe.net/credits'
       }
     ]
   },
@@ -109,42 +109,42 @@ export default {
       {
         'style': 'twitter',
         'name': 'Twitter',
-        'to': 'https://twitter.com/maidsafe'
+        'url': 'https://twitter.com/maidsafe'
       },
       {
         'style': 'facebook',
-        'name': 'facebook',
-        'to': 'https://www.facebook.com/GetMaidSafe/'
+        'name': 'Facebook',
+        'url': 'https://www.facebook.com/GetMaidSafe/'
       },
       {
         'style': 'medium',
         'name': 'Medium',
-        'to': 'https://medium.com/safenetwork'
+        'url': 'https://medium.com/safenetwork'
       },
       {
         'style': 'youtube',
         'name': 'YouTube',
-        'to': 'https://www.youtube.com/channel/UChDck5R_C9i6XTrS66tbwOw'
+        'url': 'https://www.youtube.com/channel/UChDck5R_C9i6XTrS66tbwOw'
       },
       {
         'style': 'reddit',
         'name': 'Reddit',
-        'to': 'https://www.reddit.com/r/safenetwork/'
+        'url': 'https://www.reddit.com/r/safenetwork/'
       },
       {
         'style': 'telegram',
         'name': 'Telegram',
-        'to': 'https://t.me/safenetwork'
+        'url': 'https://t.me/safenetwork'
       },
       {
         'style': 'riot',
         'name': 'Riot.io',
-        'to': 'https://riot.im/app/#/room/#safenetwork:matrix.org'
+        'url': 'https://riot.im/app/#/room/#safenetwork:matrix.org'
       },
       {
         'style': 'github',
         'name': 'GitHub',
-        'to': 'https://github.com/maidsafe/'
+        'url': 'https://github.com/maidsafe/'
       }
     ]
   }

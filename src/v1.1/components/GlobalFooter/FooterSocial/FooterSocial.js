@@ -6,7 +6,7 @@ import { genRandomKey } from 'src/utils'
 
 import './footerSocial.sass'
 
-const FooterSocialContainer = props => {
+const FooterSocial = props => {
   const { data, id } = props
   return (
     <FooterContainer id={id} name={data.name}>
@@ -19,7 +19,7 @@ const FooterSocialContainer = props => {
                   key={genRandomKey()}
                   className={`footerSocial__item footerSocial__${link.style} navigationText`}
                 >
-                  <Link to={link.to}><span className="name">{link.name}</span></Link>
+                  <Link to={link.url}><span className="name">{link.name}</span></Link>
                 </div>
             ))) : null
           }
@@ -29,4 +29,4 @@ const FooterSocialContainer = props => {
   )
 }
 
-export default FooterSocialContainer
+export default FooterSocial

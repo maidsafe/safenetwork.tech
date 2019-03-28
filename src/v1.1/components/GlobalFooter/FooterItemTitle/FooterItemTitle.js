@@ -7,7 +7,7 @@ import './footerItemTitle.sass'
 const FooterItemTitle = props => {
   const {
     title,
-    to,
+    url,
     active,
     onClick,
   } = props
@@ -16,12 +16,14 @@ const FooterItemTitle = props => {
     return <span>{' '}</span>
   }
 
+  const titleElement = (<h3 className="navigationText">{title}</h3>)
+
   return (
-    <div className={classNames('footerItemTitle navigationText', {
+    <div className={classNames('footerItemTitle', {
       active: active
     })} onClick={onClick}>
       {
-        to ? (<Link to={to}><h3>{title}</h3></Link>) : (<h3>{title}</h3>)
+        url ? (<Link to={url}>{titleElement}</Link>) : titleElement
       }
     </div>
   )

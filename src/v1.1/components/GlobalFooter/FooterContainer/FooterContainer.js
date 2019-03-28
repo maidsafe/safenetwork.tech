@@ -18,7 +18,7 @@ export default class FooterContainer extends React.Component {
     const {
       id,
       name,
-      to,
+      titleLink,
       children,
     } = this.props
     const { open } = this.state
@@ -28,7 +28,7 @@ export default class FooterContainer extends React.Component {
         active: open,
       })}>
         <div className="footerContainer__wrap">
-          <FooterItemTitle title={name} to={to} active={open} onClick={() => { this.onClickTitle() }} />
+          <FooterItemTitle title={name} url={titleLink} active={open} onClick={() => { this.onClickTitle() }} />
           <div className="footerContainer__context">
             {children}
           </div>

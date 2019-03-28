@@ -111,10 +111,9 @@ $item-vspace: 75px
       .company,
       .developers,
       .legal
-        width: 580px
-        grid-column: 1/ span 4
-        padding: 0 0 0 60px
-        box-sizing: content-box
+        width: 100%
+        padding: 0 60px
+        grid-column: 1/ span 6
       .safeNetwork
         grid-row: 3
         position: relative
@@ -127,6 +126,12 @@ $item-vspace: 75px
         grid-row: 5
       .newsletter
         grid-row: 1
+        .footerItemTitle
+          cursor: default
+          &:after
+            display: none
+        .footerContainer__context
+          display: block
       .social
         grid-row: 2
       .company
