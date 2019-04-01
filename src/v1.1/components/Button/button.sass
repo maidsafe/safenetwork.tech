@@ -4,7 +4,8 @@
 @import '~styles/colors'
 
 .btn
-  line-height: 41px
+  height: 43px
+  line-height: 43px
   padding: 0 25px
   background-color: rgba($black, 0.9)
   border: 1px solid rgba($black, 0.9)
@@ -25,3 +26,27 @@
     &:hover
       color: $white
       background-color: transparent
+  &.hollow
+    background-color: transparent
+    border-color: rgba($black, 0.5)
+    color: $body-text
+  &.download
+    min-width: 156px
+    padding-right: 40px
+    position: relative
+    &:after
+      content: ''
+      width: 40px
+      height: 40px
+      display: block
+      position: absolute
+      top: 0
+      right: 0
+      background-image: url($download-icon)
+      background-size: 16px
+      background-position: center
+      background-repeat: no-repeat
+  &-large
+    line-height: 44px
+    min-width: 170px
+    border-radius: 200px

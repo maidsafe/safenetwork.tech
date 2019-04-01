@@ -1,0 +1,27 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+@import '~styles/colors'
+
+.textSnippet
+  z-index: 5
+  &__wrap
+    height: 100%
+    position: relative
+  &__button
+    position: absolute
+    bottom: 0
+  &__title
+    margin-bottom: 25px
+  &__para
+    margin-bottom: 40px
+    &:last-child
+      margin-bottom: 0
+    a
+      color: $spark-red
+
+// XXSmall
++render-to($media-xxs)
+  .textSnippet
+    &__button
+      position: static
+      bottom: auto

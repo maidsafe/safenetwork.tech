@@ -1,0 +1,44 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+@import '~styles/colors'
+
+.imageDownload
+  &__wrap
+    width: 570px
+    position: relative
+  &__media
+    img
+      width: 100%
+      max-width: 100%
+      box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+  &__button
+    width: 100%
+    position: absolute
+    bottom: 50px
+    text-align: center
+    .btn
+      border-color: $white
+      color: $white
+      background-color: rgba($black, 0.5)
+      &:after
+        -webkit-filter: brightness(0) invert(1)
+        filter: brightness(0) invert(1)
+
+// Small
++render-to($media-s)
+  .imageDownload
+    &__wrap
+      width: 740px
+      height: 383px
+      overflow: hidden
+
+// XSmall
++render-to($media-xs)
+  .imageDownload__wrap
+    width: 630px
+    height: auto
+
+// XXSmall
++render-to($media-xxs)
+  .imageDownload__wrap
+    width: 100%
