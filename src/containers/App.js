@@ -3,9 +3,9 @@ import { withRouter, Router } from 'react-static'
 import { hot } from 'react-hot-loader'
 import Routes from 'react-static-routes'
 
-import GlobalHeader from '~components/GlobalHeader';
-import Footer from './partials/footer';
-import { isMenuLight } from '~src/utils'
+import GlobalHeader from 'components/GlobalHeader';
+import GlobalFooter from 'components/GlobalFooter';
+import { isMenuLight } from 'src/utils'
 
 import '../sass/main.sass'
 
@@ -59,7 +59,7 @@ class Layout extends React.Component {
         <div className="main-container">
           <Routes />
         </div>
-        <Footer />
+        <GlobalFooter />
       </main>
     )
   }

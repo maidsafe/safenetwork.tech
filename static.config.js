@@ -119,9 +119,10 @@ export default {
       ...config.resolve,
       alias: {
         styles: path.resolve(__dirname, 'src/v1.1/styles'),
-        '~images': path.resolve(__dirname, 'src/assets/images'),
-        '~components': path.resolve(__dirname, 'src/v1.1/components'),
-        '~src': path.resolve(__dirname, 'src')
+        images: path.resolve(__dirname, 'src/assets/images'),
+        fonts: path.resolve(__dirname, 'src/assets/fonts'),
+        components: path.resolve(__dirname, 'src/v1.1/components'),
+        src: path.resolve(__dirname, 'src')
       }
     }
     return config
