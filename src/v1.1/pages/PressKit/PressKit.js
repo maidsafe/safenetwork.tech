@@ -1,4 +1,5 @@
 import React from 'react'
+import { Head } from 'react-static'
 
 import CONSTANT from 'src/v1.1/constant'
 import Banner from './Banner'
@@ -100,8 +101,14 @@ const PressKit = () => {
     primer: CONSTANT.downloadLinks.documents.primer,
   }
 
+  const meta = CONSTANT.pageMeta.pressKit
+
   return (
     <section className="pressKit">
+      <Head>
+        <title>{meta.title}</title>
+        <meta name="description" content={meta.desc} />
+      </Head>
       <div className="pressKit__wrap">
         <Banner title={content.pageTitle} />
         <Texts data={textData} />

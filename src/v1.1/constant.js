@@ -12,4 +12,10 @@ export default {
       primer: 'https://www.safenetworkprimer.com',
     },
   },
+  pageMeta: {
+    pressKit: {
+      title: 'Press Kit | SAFE Network',
+      desc: 'Resources for journalists looking to find out more about the new decentralised Internet and how the SAFE Network will benefit data security and privacy'
+    },
+  }
 }
