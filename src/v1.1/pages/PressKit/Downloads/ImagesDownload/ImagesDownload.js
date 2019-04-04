@@ -27,7 +27,6 @@ const ImagesDownload = props => {
             <Button
               className="hollow download"
               onClick={() => {
-                console.log('test')
                 openLink(downloadLink)
               }}
             >{buttonName}</Button>
