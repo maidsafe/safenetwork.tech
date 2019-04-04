@@ -14,7 +14,7 @@ const MediaSnippet = props => {
   return (
     <div className={classNames('mediaSnippet', id)}>
       <div className="mediaSnippet__wrap">
-        <h3 className="mediaSnippet__para blockquote">{content.para}</h3>
+        <blockquote className="mediaSnippet__para">{content.para}</blockquote>
         <div className="mediaSnippet__logo">
           <img src={imgSrc} alt={imgTitle} />
         </div>
