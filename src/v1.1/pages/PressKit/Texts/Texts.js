@@ -17,12 +17,14 @@ const Texts = props => {
         {
           data.map(text => (
             <div key={genRandomKey()} className={classNames('pressKitTexts__item', text.id)}>
-              <TextSnippet {...text} />
-              {
-                text.canCopy ? (
-                  <CopyButton copyText={text.text} type={text.copyButtonType}></CopyButton>
-                ) : null
-              }
+              <div className="container">
+                <TextSnippet {...text} />
+                {
+                  text.canCopy ? (
+                    <CopyButton copyText={text.text} type={text.copyButtonType}></CopyButton>
+                  ) : null
+                }
+              </div>
             </div>
           ))
         }

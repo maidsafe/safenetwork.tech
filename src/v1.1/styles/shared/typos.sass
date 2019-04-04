@@ -1,14 +1,7 @@
-@import '~styles/fonts'
-@import '~styles/colors'
 @import '~styles/variables'
 @import '~styles/mixins'
-
-.buttonText
-  +font-1()
-  font-size: 16px
-  line-height: normal
-  text-align: center
-  color: $white
+@import '~styles/fonts'
+@import '~styles/colors'
 
 .navigationText
   +font-1()
@@ -17,58 +10,22 @@
   line-height: normal
   font-weight: normal
   color: $black
+  margin-bottom: 0
 
-.bodyText__default
-  +font-3()
-  font-size: 20px
-  line-height: 28px
-  font-weight: normal
-  color: $body-text
-  max-width: 574px
-  +render-to($media-xxs)
-    max-width: 500px
-
-.introText__default
-  +font-3()
-  font-size: 27px
-  line-height: 40px
-  color: $body-text
-  max-width: 848px
-  +render-to($media-xs)
-    font-size: 24px
-    line-height: 35px
-    max-width: 795px
-  +render-to($media-xxs)
-    font-size: 18px
-    line-height: 26px
-    max-width: 520px
-
-.header1__default
-  +font-1()
-  font-size: 64px
-  letter-spacing: -0.02em
-  line-height: 65px
-  color: $black
-  +render-to($media-xs)
-    font-size: 48px
-    line-height: 49px
-  +render-to($media-xxs)
-    font-size: 31px
-    line-height: 32px
-
-.header2__default
-  +font-1()
-  font-size: 36px
-  line-height: 45px
-  letter-spacing: -0.02em
-  color: $black
-
-.header3__default
-  +font-1()
-  line-height: 30px
-  font-size: 24px
-  letter-spacing: -0.02em
-  color: $black
+.introText
+  p
+    font-size: 27px
+    line-height: 40px
+    color: $body-text
+    max-width: 848px
+    +render-to($media-xs)
+      font-size: 24px
+      line-height: 35px
+      max-width: 795px
+    +render-to($media-xxs)
+      font-size: 18px
+      line-height: 26px
+      max-width: 520px
 
 .blockquote
   +font-1()

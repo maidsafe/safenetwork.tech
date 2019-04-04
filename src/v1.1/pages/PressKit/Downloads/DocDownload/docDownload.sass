@@ -16,27 +16,34 @@
     .textSnippet__para
       color: $white
   &__wrap
-    box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+    +shadow-deep()
   &__button
     display: flex
     justify-content: center
     align-items: center
   &__content
-    padding: 60px 54px
+    padding-top: 60px
+    +default-column()
     background-color: $white
   &__button
     padding: 36px 0
     .btn
       min-width: 167zpx
 
+// Small
++render-to($media-s)
+  .docDownload
+    margin-bottom: 104px
+
+
 // XSmall
 +render-to($media-xs)
   .docDownload
     width: 665px
+    margin-bottom: 80px
 
 // XXSmall
 +render-to($media-xxs)
   .docDownload
     width: 100%
-    &__content
-      padding: 35px $hspace-xs
+    margin-bottom: 48px

@@ -18,7 +18,7 @@
     #{$c}__media
       background-color: $black
   &__wrap
-    box-shadow: 0px 17px 25px rgba(0, 0, 0, 0.12)
+    +shadow-deep()
   &__media,
   &__button
     display: flex
@@ -41,7 +41,8 @@
 +render-to($media-s)
   .logoDownload
     width: 335px
-    margin-right: 40px
+    &:nth-child(odd)
+      margin-right: 40px
     padding: 0 !important
   .documentDownload
     padding-right: 0
@@ -66,7 +67,7 @@
 +render-to($media-xxs)
   .logoDownload
     width: 100% !important
-    margin-bottom: 40px
+    margin-bottom: 48px
     margin-right: 0
     &:nth-child(odd)
       padding-right: 0 !important

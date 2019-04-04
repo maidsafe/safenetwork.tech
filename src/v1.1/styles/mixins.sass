@@ -16,3 +16,26 @@
 =render-to($mediaQuery)
   @media screen and #{$mediaQuery}
     @content
+
+=default-column()
+  padding-left: $hspace-default
+  padding-right: $hspace-default
+  +render-to($media-xs)
+    padding-left: $hspace-xs
+    padding-right: $hspace-xs
+  +render-to($media-xxs)
+    padding-left: $hspace-xxs
+    padding-right: $hspace-xxs
+  +render-to($media-xxxs)
+    padding-left: $hspace-xxxs
+    padding-right: $hspace-xxxs
+
+=pull-column($val)
+  margin-left: -$val
+  margin-right: -$val
+
+=shadow-shallow()
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08), 0px 5px 6px rgba(0, 0, 0, 0.06)
+
+=shadow-deep()
+  box-shadow: 0px 28px 50px rgba(0, 0, 0, 0.1), 0px 7px 18px rgba(0, 0, 0, 0.08)

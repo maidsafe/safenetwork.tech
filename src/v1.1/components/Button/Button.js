@@ -21,7 +21,7 @@ const Button = props => {
   return (
     <button
       type={type}
-      className={classNames('btn buttonText', className, {
+      className={classNames('btn', className, {
         'btn-large': sizes[size] === sizes.L
       })}
       disabled={disabled}

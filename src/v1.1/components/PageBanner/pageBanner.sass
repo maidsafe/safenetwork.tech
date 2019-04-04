@@ -10,21 +10,12 @@
     padding-top: 275px
   &__title
     grid-column: 2 / span 8
-    margin-bottom: 70px
-
-// Large
-+render-to($media-l)
-  .pageBanner
-    &__title
-      margin-bottom: 75px
 
 // XLarge
 +render-to($media-xl)
   .pageBanner
     &__wrap
       max-width: $max-width-xl
-    &__title
-      margin-bottom: 80px
 
 // Small
 +render-to($media-s)
@@ -40,8 +31,7 @@
       padding-top: 215px
     &__title
       grid-column: 1 / span 5
-      padding-left: 60px
-      margin-bottom: 60px
+      padding-left: $hspace-xs
 
 // XXSmall
 +render-to($media-xxs)
@@ -49,5 +39,10 @@
     &__wrap
       padding-top: 180px
     &__title
-      padding-left: 30px
-      margin-bottom: 40px
+      padding-left: $hspace-xxs
+
+// XXXSmall
++render-to($media-xxxs)
+  .pageBanner
+    &__title
+      padding-left: $hspace-xxxs
