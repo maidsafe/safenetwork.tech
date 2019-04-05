@@ -6,7 +6,7 @@ export default {
   },
   copyText2: {
     title: 'Project Aims',
-    para: 'The SAFE Network aims to protect the Worlds data, providing privacy, security and freedom to everyone on the planet.',
+    para: 'The SAFE Network aims to protect the World\'s data, providing privacy, security and freedom to everyone on the planet.',
     buttonText: 'Copy Text Snippet'
   },
   copyText3: {
@@ -23,14 +23,14 @@ export default {
   textSnippet2: {
     title: 'New revenue stream',
     para: [
-      'In todays centralised web, monetising content relies on advertising, regardless of the cost to data privacy.',
+      'In today\'s centralised web, monetising content relies on advertising, regardless of the cost to data privacy.',
       'On the SAFE Network, monetisation will come from Safecoin. Content creators will be able to tag their content and optionally receive micropayments from content readers. In essence, a publishing service with a revenue stream built-in.'
     ]
   },
   interviewRequest: {
     title: 'Interview Request',
     para: [
-      'If you would like to write about us, feel free to get in touch via [pr@maidsafe.net](mailto:pr@maidsafe.net). This is obviously not a requirement, but wed be happy to answer any questions you might have and make time for an interview if required.'
+      'If you would like to write about us, feel free to get in touch via [pr@maidsafe.net](mailto:pr@maidsafe.net). This is obviously not a requirement, but we\'d be happy to answer any questions you might have and make time for an interview if required.'
     ],
     buttonText: 'Request Interview',
     toLink: 'mailto:pr@maidsafe.net'
@@ -53,7 +53,7 @@ export default {
     },
     images: {
       title: 'Image Pack',
-      para: 'Print ready editorial photographs and imagary, ready to be added to your piece.'
+      para: 'Print ready editorial photographs and imagery, ready to be added to your piece.'
     },
     documents: {
       title: 'Documents',
@@ -62,7 +62,7 @@ export default {
         {
           id: 'parsecWhitePaper',
           title: 'PARSEC Whitepaper',
-          para: 'Get all the detail on our highly asynchronous, Byzantine Fault Tolerant consensus mechanism.'
+          para: 'Get all the details on our highly asynchronous, Byzantine Fault Tolerant consensus mechanism.'
         },
         {
           id: 'primer',

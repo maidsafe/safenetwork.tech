@@ -13,6 +13,7 @@ const DocDownload = props => {
     para,
     buttonName,
     downloadLink,
+    isExternal = false
   } = props
 
   return (
@@ -25,7 +26,7 @@ const DocDownload = props => {
           <Button
             className="hollow download"
             onClick={() => {
-              openLink(downloadLink)
+              openLink(downloadLink, isExternal)
             }}
           >
             {buttonName}

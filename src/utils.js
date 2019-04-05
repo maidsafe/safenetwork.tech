@@ -94,8 +94,8 @@ export const parseMDText = text => (
   Parser.parse(md.render(text))
 )
 
-export const openLink = link => {
+export const openLink = (link, isExternal) => {
   if (typeof window !== 'undefined') {
-    window.location.replace(link)
+    window.open(link, isExternal ? '_blank' : '_self')
   }
 }

@@ -97,8 +97,14 @@ const PressKit = () => {
   }
 
   const documents = {
-    parsecWhitePaper: CONSTANT.downloadLinks.documents.parsecWhitePaper,
-    primer: CONSTANT.downloadLinks.documents.primer,
+    parsecWhitePaper: {
+      url: CONSTANT.downloadLinks.documents.parsecWhitePaper,
+      isExternal: true,
+    },
+    primer: {
+      url: CONSTANT.downloadLinks.documents.primer,
+      isExternal: true
+    },
   }
 
   const meta = CONSTANT.pageMeta.pressKit

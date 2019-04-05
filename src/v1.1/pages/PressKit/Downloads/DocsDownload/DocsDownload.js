@@ -18,7 +18,8 @@ const DocsDownload = props => {
               title={li.title}
               para={li.para}
               buttonName="Download"
-              downloadLink={documents[li.id]}
+              downloadLink={documents[li.id].url}
+              isExternal={documents[li.id].isExternal}
             />
           ))) : null
       }
