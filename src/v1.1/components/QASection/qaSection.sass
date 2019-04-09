@@ -1,0 +1,27 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+
+// Default
+.qaSection
+  padding-top: 100px
+  &__wrap
+    +grid()
+  &__title
+    grid-column: 2/span 8
+
+// XSmall
++render-to($media-xs)
+  .qaSection
+    padding-top: 70px
+    &__wrap
+      +grid-small()
+    &__title
+      grid-column: 1/span 6
+      padding-left: $hspace-xs
+
+// XXSmall
++render-to($media-xxs)
+  .qaSection
+    padding-top: 50px
+    &__title
+      padding-left: $hspace-xxs
