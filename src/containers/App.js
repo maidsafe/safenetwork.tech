@@ -26,6 +26,7 @@ class Layout extends React.Component {
   componentDidUpdate(prev) {
     if (prev.location.pathname !== this.props.location.pathname) {
       this.setState({ mobileMenuActive: false })
+      this.toggleBodyOverFlow(false)
     }
   }
 

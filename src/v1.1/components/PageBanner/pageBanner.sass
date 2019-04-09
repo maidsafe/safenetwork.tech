@@ -1,0 +1,48 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+@import '~styles/colors'
+@import '~styles/fonts'
+
+// Default
+.pageBanner
+  &__wrap
+    +grid()
+    padding-top: 275px
+  &__title
+    grid-column: 2 / span 8
+
+// XLarge
++render-to($media-xl)
+  .pageBanner
+    &__wrap
+      max-width: $max-width-xl
+
+// Small
++render-to($media-s)
+  .pageBanner
+    &__wrap
+      padding-top: 250px
+
+// XSmall
++render-to($media-xs)
+  .pageBanner
+    &__wrap
+      +grid-small()
+      padding-top: 215px
+    &__title
+      grid-column: 1 / span 5
+      padding-left: $hspace-xs
+
+// XXSmall
++render-to($media-xxs)
+  .pageBanner
+    &__wrap
+      padding-top: 180px
+    &__title
+      padding-left: $hspace-xxs
+
+// XXXSmall
++render-to($media-xxxs)
+  .pageBanner
+    &__title
+      padding-left: $hspace-xxxs

@@ -1,0 +1,31 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+@import '~styles/fonts'
+
+.logosDownload
+  +clearfix()
+  &__credit
+    width: 100%
+    float: left
+    margin-top: -20px
+    max-width: 720px
+    .creditPara
+      +font-3()
+      line-height: 26px
+      font-size: 18px
+      color: #828282
+      a
+        text-decoration: underline
+      p:last-child
+        padding-bottom: 0
+    .creditLogo
+      margin-top: 30px
+    +render-to($media-l)
+      max-width: 630px
+    +render-to($media-s)
+      max-width: 550px
+    +render-to($media-xs)
+      max-width: 625px
+    +render-to($media-xxs)
+      font-size: 16px
+      line-height: 23px

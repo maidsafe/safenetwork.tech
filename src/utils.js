@@ -1,6 +1,12 @@
 import UAParser from 'ua-parser-js';
+import MarkdownIt from 'markdown-it'
+import { Parser as ReactParser } from 'html-to-react'
 
 import CONST from './constants';
+
+const md = new MarkdownIt()
+const Parser = ReactParser()
+
 const camelize = (str) => (
   str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function(match, index) {
     if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
@@ -83,3 +89,13 @@ export const genRandomKey = () => (
 export const isMenuLight = pathname => (
   pathname === '/get-involved/'
 )
+
+export const parseMDText = text => (
+  Parser.parse(md.render(text))
+)
+
+export const openLink = (link, isExternal) => {
+  if (typeof window !== 'undefined') {
+    window.open(link, isExternal ? '_blank' : '_self')
+  }
+}

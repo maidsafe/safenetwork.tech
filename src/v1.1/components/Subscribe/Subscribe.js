@@ -151,7 +151,7 @@ export default class Subscribe extends React.Component {
         'signup-failure': this.state.status === this.status.FAILURE
       })}>
         <div className="subscribe__wrap">
-          <p className="subscribe__para bodyText__default">{userDesc}</p>
+          <p className="subscribe__para">{userDesc}</p>
           <form
             name="email-signup"
             onSubmit={this.handleEmailSignUp.bind(this)}
