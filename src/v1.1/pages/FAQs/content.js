@@ -38,7 +38,7 @@ export default {
           question: 'Who are MaidSafe?',
           answer: [
             'Started in 2006 by Scottish engineer David Irvine, MaidSafe are the core developers of the SAFE Network.  It’s a small team comprised of: thinkers, inventors, tinkerers, PHDs, engineers and designers. Although based in Ayr, Scotland, we work remotely with talents from many different cultures and countries, reflecting the users that we serve. Despite this variety, we all share a single mission: providing security and privacy for everyone.',
-            '[Visit Maidsafe.net](https://maidsafe.net)'
+            '_[Visit Maidsafe.net](https://maidsafe.net)_'
           ]
         }
       ]
@@ -80,7 +80,7 @@ export default {
           question: 'How do I get help?',
           answer: [
             'The [SAFE Network Community](https://safenetforum.org) is the place to head to for all questions on the Network.',
-            '[Visit the Forum](https://safenetforum.org/)'
+            '_[Visit the Forum](https://safenetforum.org/)_'
           ]
         }
       ]

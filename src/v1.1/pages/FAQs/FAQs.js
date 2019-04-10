@@ -18,9 +18,7 @@ const FAQs = () => {
           <PageBanner title={title} />
         </div>
         {
-          (sections && sections.length >=0) ? (
-            sections.map(section => <QASection key={genRandomKey()} content={section} />)
-          ) : null
+          sections.map(section => <QASection key={genRandomKey()} content={section} />)
         }
       </div>
     </section>

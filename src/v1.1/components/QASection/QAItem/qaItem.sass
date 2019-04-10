@@ -9,8 +9,9 @@ $open-hspace-xxxs: $hspace-xxxs
 .qaItem
   $c: &
   grid-column: 2/span 8
+  margin-bottom: 32px
   &__question
-    height: 80px
+    height: 40px
     display: flex
     align-items: center
     padding-left: $hspace-default
@@ -27,11 +28,11 @@ $open-hspace-xxxs: $hspace-xxxs
       background-repeat: no-repeat
       background-position: center
       background-size: 26px
-    h4
+    p
       display: inline
       position: relative
       cursor: pointer
-      margin-bottom: 0
+      padding-bottom: 0 !important
       &::after
         content: ''
         display: block
@@ -45,18 +46,42 @@ $open-hspace-xxxs: $hspace-xxxs
     display: none
     padding-left: $hspace-default + $open-hspace
     padding-right: $hspace-default
-    padding-top: 36px
-    padding-bottom: 20px
+    padding-top: 32px
+    padding-bottom: 72px
   &__para
+    p em a
+      font-weight: bold
+      font-style: normal
+      color: $black
+      &::after
+        content: ''
+        display: block
+        height: 2px
+        background-color: $spark-red
+        margin-top: 8px
+    p:last-child
+      padding-bottom: 0
     a
       color: $spark-red
+    ul
+      margin-bottom: 32px
+      &:last-child
+        margin-bottom: 0
   &.open
     #{$c}__wrap
       margin-left: -$open-hspace
       padding-left: $open-hspace
       background-color: $acid-yellow
-      box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.12), 0px 7px 9px rgba(0, 0, 0, 0.1)
+      +shadow-deep()
     #{$c}__question
+      height: 72px
+      p
+        width: 100%
+        max-width: 100%
+        line-height: 72px
+        display: block
+        &::after
+          bottom: 0
       &::after
         transform: rotate(90deg) translate(-50%, 0)
         transform-origin: center
@@ -75,7 +100,10 @@ $open-hspace-xxxs: $hspace-xxxs
 +render-to($media-xxs)
   .qaItem
     padding-left: $hspace-xxs
-
+    &__para
+        p em a
+          font-size: 18px
+          line-height: 23px
 // XXXSmall
 +render-to($media-xxxs)
   .qaItem

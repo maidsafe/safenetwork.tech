@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 
-import { genRandomKey, parseMDText, spinalCase } from 'src/utils'
+import { parseMDText, spinalCase } from 'src/utils'
 
 import './qaItem.sass'
 
@@ -14,9 +14,9 @@ export default class QAItem extends React.Component {
 
   componentDidMount() {
     this.questionId = spinalCase(this.props.content.question)
-    const hash = window.location.hash
+    const hash = window.location.hash.substr(1)
     if (hash) {
-      const decodedHash = decodeURIComponent(hash).substr(1)
+      const decodedHash = decodeURIComponent(hash)
       if (decodedHash !== this.questionId) {
         return
       }
@@ -24,8 +24,16 @@ export default class QAItem extends React.Component {
     }
   }
 
-  onClickHeader() {
+  onClickHeader = () => {
     if (typeof window !== 'undefined') {
+      const hash = decodeURIComponent(window.location.hash.substr(1))
+      if (hash === this.questionId) {
+        window.history.pushState('', window.document.title, window.location.pathname)
+        this.setState({
+          isOpen: false
+        })
+        return
+      }
       window.location.hash = this.questionId
     }
   }
@@ -40,16 +48,14 @@ export default class QAItem extends React.Component {
       })}>
         <div className="qaItem__wrap">
           <div id={this.questionId} className="qaItem__question">
-            <h4
-              onClick={() => { this.onClickHeader() }}
+            <p
+              onClick={this.onClickHeader}
             >{question}
-            </h4>
+            </p>
           </div>
           <div className="qaItem__answer">
             {
-              (answer && answer.length >=0) ? (
-                <div className="qaItem__para">{answer.map(para => parseMDText(para))}</div>
-              ) : null
+              <div className="qaItem__para">{answer.map(para => parseMDText(para))}</div>
             }
           </div>
         </div>
