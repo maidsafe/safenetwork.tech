@@ -50,15 +50,7 @@ $open-hspace-xxxs: $hspace-xxxs
     padding-bottom: 72px
   &__para
     p em a
-      font-weight: bold
-      font-style: normal
-      color: $black
-      &::after
-        content: ''
-        display: block
-        height: 2px
-        background-color: $spark-red
-        margin-top: 8px
+      +cta-underline()
     p:last-child
       padding-bottom: 0
     a
