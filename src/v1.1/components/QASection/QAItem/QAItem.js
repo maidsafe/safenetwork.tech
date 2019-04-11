@@ -24,18 +24,19 @@ export default class QAItem extends React.Component {
     }
   }
 
-  onClickHeader = () => {
+  pushHistory(hash = '') {
     if (typeof window !== 'undefined') {
-      const hash = decodeURIComponent(window.location.hash.substr(1))
-      if (hash === this.questionId) {
-        window.history.pushState('', window.document.title, window.location.pathname)
-        this.setState({
-          isOpen: false
-        })
-        return
-      }
-      window.location.hash = this.questionId
+      window.history.pushState('', window.document.title, window.location.pathname + `#${hash}`)
     }
+  }
+
+  onClickHeader = () => {
+    const { isOpen } = this.state
+    const { questionId } = this
+    this.pushHistory(!isOpen ? questionId : null)
+    this.setState({
+      isOpen: !isOpen
+    })
   }
 
   render() {
@@ -50,7 +51,7 @@ export default class QAItem extends React.Component {
           <div id={this.questionId} className="qaItem__question">
             <p
               onClick={this.onClickHeader}
-            >{question}
+            >{parseMDText(question, true)}
             </p>
           </div>
           <div className="qaItem__answer">
