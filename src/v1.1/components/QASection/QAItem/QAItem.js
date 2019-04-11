@@ -33,7 +33,7 @@ export default class QAItem extends React.Component {
   onClickHeader = () => {
     const { isOpen } = this.state
     const { questionId } = this
-    this.pushHistory(!isOpen ? questionId : null)
+    this.pushHistory(!isOpen ? questionId : '')
     this.setState({
       isOpen: !isOpen
     })
