@@ -90,9 +90,10 @@ export const isMenuLight = pathname => (
   pathname === '/get-involved/'
 )
 
-export const parseMDText = text => (
-  Parser.parse(md.render(text))
-)
+export const parseMDText = (text, isInline = false) => {
+  const parsedText = isInline ? md.renderInline(text) : md.render(text)
+  return Parser.parse(parsedText)
+}
 
 export const openLink = (link, isExternal) => {
   if (typeof window !== 'undefined') {
