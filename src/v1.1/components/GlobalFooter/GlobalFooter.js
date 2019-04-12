@@ -3,8 +3,8 @@ import React from 'react'
 import FooterList from './FooterList'
 import FooterSubscribe from './FooterSubscribe'
 import FooterSocial from './FooterSocial'
-
 import content from './content'
+
 import './globalFooter.sass'
 
 const GlobalFooter = () => {

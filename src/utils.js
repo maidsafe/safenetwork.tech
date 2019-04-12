@@ -100,3 +100,7 @@ export const openLink = (link, isExternal) => {
     window.open(link, isExternal ? '_blank' : '_self')
   }
 }
+
+export const prefixClassName = prefix => (
+  (className) => `${prefix}__${className}`
+)
