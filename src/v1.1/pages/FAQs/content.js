@@ -119,7 +119,7 @@ export default {
           ]
         },
         {
-          question: 'What is self-encryption?',
+          question: 'What is self&#8209;encryption?',
           answer: [
             'Self-encryption is the way in which a piece of data is split and then each chunk is encrypted using the other pieces of that same piece of data. It is a crucial process in the SAFE Network and ensures that the data is unrecognisable and resistant to decryption—even in the event of an encryption algorithm being compromised.',
             'All data is self-encrypted before it is reaches the SAFE Network. The process is automatic and happens instantaneously.',
@@ -300,7 +300,7 @@ export default {
           ]
         },
         {
-          question: 'Why is the SAFE Network open-source?',
+          question: 'Why is the SAFE Network open&#8209;source?',
           answer: [
             'Because the SAFE Network has the potential to become a vital part of the lives of every connected person on the planet, MaidSafe are 100% committed to ensuring that all software is released under an open source licence. This encourages innovation and helps prevent any single person, company or organisation gaining control over the technology.'
           ]

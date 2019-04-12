@@ -92,7 +92,7 @@ export const isMenuLight = pathname => (
 
 export const parseMDText = (text, isInline = false) => {
   const parsedText = isInline ? md.renderInline(text) : md.render(text)
-  return Parser.parse(parsedText.replace(/-/g, '&#8209;'))
+  return Parser.parse(parsedText)
 }
 
 export const openLink = (link, isExternal) => {
