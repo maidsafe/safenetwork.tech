@@ -29,7 +29,7 @@ export default {
       },
       {
         path: '/get-involved/',
-        component: 'src/containers/get_involved',
+        component: 'src/v1.1/pages/GetInvolved',
       },
       {
         path: '/timeline/',

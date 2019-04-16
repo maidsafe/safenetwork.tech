@@ -30,19 +30,11 @@
       +grid-small()
       padding-top: 215px
     &__title
-      grid-column: 1 / span 5
-      padding-left: $hspace-xs
+      grid-column: 1 / span 6
+      +default-column()
 
 // XXSmall
 +render-to($media-xxs)
   .pageBanner
     &__wrap
       padding-top: 180px
-    &__title
-      padding-left: $hspace-xxs
-
-// XXXSmall
-+render-to($media-xxxs)
-  .pageBanner
-    &__title
-      padding-left: $hspace-xxxs

@@ -1,0 +1,133 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+@import '~styles/colors'
+
+.GetInvolvedDevelop
+  background-color: $default-bg-color
+  &__wrap
+    +grid()
+  &__trySafe
+    grid-column: 2/ span 4
+    grid-row: 1
+    padding-top: $pad-jumbo
+    padding-bottom: $pad-chunky
+  &__startDevelop
+    grid-column: 2/ span 4
+    grid-row: 2 / span 2
+    align-self: start
+    padding-top: $pad-jumbo
+    padding-bottom: $pad-chunky
+  &__joinForum
+    grid-column: 7/ span 3
+    grid-row: 2
+    padding-top: $pad-jumbo
+  &__coreNetwork
+    grid-column: 7/ span 3
+    grid-row: 3
+    padding-top: $pad-chunky
+    padding-bottom: $pad-super-jumbo
+  &__coreNetwork,
+  &__joinForum
+    .textSnippet__para p
+      margin-bottom: $margin-thin
+  &__texture
+    grid-column: 6/ span 5
+    grid-row: 3
+    height: 10px
+    overflow: hidden
+    background-image: url($texture-2)
+    background-repeat: no-repeat
+    background-size: cover
+    align-self: end
+
+// Large
++render-to($media-l)
+  .GetInvolvedDevelop
+    &__trySafe,
+    &__startDevelop
+      grid-column: 2/ span 3
+    &__joinForum,
+    &__coreNetwork
+      max-width: 560px
+    &__coreNetwork
+      padding-top: $pad-jumbo
+
+// XLarge
++render-to($media-xl)
+  .GetInvolvedDevelop
+    &__wrap
+      max-width: $max-width-xl
+
+// Small
++render-to($media-s)
+  .GetInvolvedDevelop
+    &__trySafe,
+    &__startDevelop
+      grid-column: 2/ span 6
+    &__trySafe
+      padding-bottom: $pad-small
+    &__startDevelop
+      grid-row: 3
+    &__joinForum,
+    &__coreNetwork
+      padding-top: 0
+      grid-row: 4
+    &__joinForum
+      grid-column: 2 /span 4
+      padding-right: $pad-small
+    &__coreNetwork
+      grid-column: 6 /span 4
+      padding-left: $pad-small
+    &__texture
+      grid-column: 1 /span 5
+      grid-row: 4
+
+// XSmall
++render-to($media-xs)
+  .GetInvolvedDevelop
+    &__wrap
+      +grid-small()
+    &__trySafe,
+    &__startDevelop,
+    &__joinForum,
+    &__coreNetwork
+      grid-column: 1/span 6
+      +default-column()
+    &__trySafe
+      padding-top: $pad-chunky
+      padding-bottom: $pad-small
+    &__coreNetwork
+      grid-row: 5
+      padding-bottom: $pad-jumbo
+    &__startDevelop
+      padding-top: $pad-chunky
+    &__joinForum
+      padding-bottom: $pad-chunky
+    &__texture
+      grid-column: 3/span 4
+      grid-row: 5
+
+// XXSmall
++render-to($media-xxs)
+  .GetInvolvedDevelop
+    &__trySafe
+      padding-top: $pad-medium
+      padding-bottom: $pad-small
+    &__startDevelop
+      padding-top: $pad-chunky
+    &__texture
+      margin-left: 40px
+
+// XXXSmall
++render-to($media-xxxs)
+  .GetInvolvedDevelop
+    &__trySafe
+      padding-bottom: $pad-thin
+    &__startDevelop
+      padding-top: $pad-jumbo
+      .cta .btn
+        width: 100%
+    &__texture
+      margin-left: 0
+    &__coreNetwork
+      padding-bottom: $pad-chunky

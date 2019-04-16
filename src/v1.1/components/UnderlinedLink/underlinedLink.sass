@@ -1,0 +1,26 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+@import '~styles/colors'
+@import '~styles/fonts'
+
+.underlinedLink
+  +font-1()
+  font-size: 20px
+  line-height: 25px
+  color: $black
+  display: inline-block
+  +render-to($media-xs)
+    font-size: 18px
+    line-height: 23px
+  &:after
+    content: ''
+    display: block
+    height: 2px
+    width: 100%
+    background-color: rgba(0, 0, 0, 0.1)
+    padding-right: 8px
+    margin-top: 8px
+  &.red:after
+    background-color: $spark-red
+  &.yellow:after
+    background-color: $acid-yellow

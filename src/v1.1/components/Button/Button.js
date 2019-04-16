@@ -11,6 +11,7 @@ const Button = props => {
     disabled,
     size,
     onClick,
+    active = false,
   } = props
 
   const sizes = {
@@ -22,7 +23,8 @@ const Button = props => {
     <button
       type={type}
       className={classNames('btn', className, {
-        'btn-large': sizes[size] === sizes.L
+        'btn-large': sizes[size] === sizes.L,
+        active,
       })}
       disabled={disabled}
       onClick={onClick}

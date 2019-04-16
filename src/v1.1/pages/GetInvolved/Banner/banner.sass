@@ -1,0 +1,56 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+
+.GetInvolvedBanner
+  &__content
+    +grid()
+  &__intro
+    grid-column: 2/ span 5
+    grid-row: 1
+    padding-bottom: $pad-jumbo
+  &__texture
+    grid-column: 1/ span 6
+    grid-row: 1
+    height: 10px
+    overflow: hidden
+    background-image: url($texture-1)
+    background-repeat: no-repeat
+    background-size: cover
+    align-self: end
+
+// XLarge
++render-to($media-xl)
+  .GetInvolvedBanner
+    max-width: $max-width-xl
+
+// Small
++render-to($media-s)
+  .GetInvolvedBanner
+    &__intro
+      grid-column: 2 / span 7
+    &__texture
+      grid-column: 7 / span 4
+
+// XSmall
++render-to($media-xs)
+  .GetInvolvedBanner
+    &__content
+      +grid-small()
+    &__intro
+      grid-column: 1 / span 6
+      +default-column()
+      padding-bottom: $pad-chunky
+    &__texture
+      grid-column: 1 / span 3
+
+// XXSmall
++render-to($media-xxs)
+  .GetInvolvedBanner
+    &__intro
+      padding-bottom: $pad-small
+
+// XXXSmall
++render-to($media-xxxs)
+  .GetInvolvedBanner
+    &__intro
+      padding-bottom: $pad-thin

@@ -1,5 +1,4 @@
 import React from 'react'
-import classNames from 'classnames'
 
 import NavItem from '../NavItem'
 import { genRandomKey } from 'src/utils'
@@ -11,9 +10,8 @@ const MainNav = props => {
     activePathname,
     navItems: items,
     navButtons: itemButtons,
+    lightTheme,
   } = props
-
-  const isLightTheme = (activePathname === '/get-involved/')
 
   return (
     <div className="mainNav">
@@ -23,7 +21,7 @@ const MainNav = props => {
             items ? (items.map(data => (
               <NavItem
                 key={genRandomKey()}
-                lightTheme={isLightTheme}
+                lightTheme={lightTheme}
                 data={data}
                 currentLocationPath={activePathname}
               />))) : null
@@ -34,7 +32,7 @@ const MainNav = props => {
             itemButtons ? itemButtons.map(itemButton => (
               <NavItem
                 key={genRandomKey()}
-                lightTheme={isLightTheme}
+                lightTheme={lightTheme}
                 data={itemButton}
                 currentLocationPath={activePathname}
                 isButton

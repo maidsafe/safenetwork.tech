@@ -1,0 +1,27 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+
+.InviteProcess
+  grid-column: 7 / span 4
+  &__wrap
+    margin-top: -142px
+    +shadow-deep()
+
++render-to($media-l)
+  .InviteProcess
+    grid-column: 7/ span 4
+    max-width: 720px
+    margin-left: -$margin-small
+
+// Small
++render-to($media-s)
+  .InviteProcess
+    grid-column: 2/span 8
+    grid-row: 2
+    &__wrap
+      margin-top: 0
+
+// XSmall
++render-to($media-xs)
+  .InviteProcess
+    grid-column: 1/span 6

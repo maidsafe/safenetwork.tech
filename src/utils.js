@@ -87,7 +87,7 @@ export const genRandomKey = () => (
 )
 
 export const isMenuLight = pathname => (
-  pathname === '/get-involved/'
+    [/* List of URLs */].indexOf(pathname) !== -1
 )
 
 export const parseMDText = (text, isInline = false) => {
