@@ -47,6 +47,7 @@
     z-index: 1
   .caption
     text-align: center
+    opacity: 0.5
     +default-column()
   &__whyInvite
     padding: 40px 0 75px
@@ -104,8 +105,6 @@
         position: fixed
         top: 0
         left: 0
-        background-color: $white
-        +shadow-shallow()
         z-index: 99999
       #{$c}__container
         padding-top: 72px
@@ -117,15 +116,15 @@
       height: 100%
       display: grid
     &__header
-      height: 72px
-      grid-column: 1/span 2
       grid-row: 1
+      height: 72px
+      background-color: $white
+      +shadow-shallow()
     &__content
-      grid-column: 1/span 2
-      grid-row: 1/span 2
+      grid-row: 2
       align-self: center
-      min-height: 500px
-      padding-top: $pad-chunky
+      min-height: 450px
+      padding-top: $pad-small
     &__closeBtn
       right: 28px
     .overline
@@ -133,14 +132,14 @@
     .caption
       margin-top: 0
     &__whyInvite
-      padding-top: $pad-small
+      grid-row: 3
+      padding-top: 0
+      align-self: end
   .splitView
     margin: 53px 0 0
     &__item
       padding-left: 36px
       padding-right: 36px
-    &__para
-      min-height: 120px
 
 // XXSmall
 +render-to($media-xxs)

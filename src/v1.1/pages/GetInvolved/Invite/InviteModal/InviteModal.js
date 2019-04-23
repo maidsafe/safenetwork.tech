@@ -74,9 +74,9 @@ export default class InviteModal extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className={cn('whyInvite')}>
-                  <UnderlinedLink url={content.whyInvite.url}>{content.whyInvite.name}</UnderlinedLink>
-                </div>
+            </div>
+            <div className={cn('whyInvite')}>
+              <UnderlinedLink url={content.whyInvite.url}>{content.whyInvite.name}</UnderlinedLink>
             </div>
           </div>
         </div>
