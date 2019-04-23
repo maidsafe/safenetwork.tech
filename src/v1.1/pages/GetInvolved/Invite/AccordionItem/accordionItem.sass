@@ -37,6 +37,8 @@
       font-size: 18px
       height: 52px
       line-height: 52px
+  .underlinedLink
+    font-size: 18px
   &.active
     height: 100%
     background-color: transparent
@@ -47,8 +49,10 @@
       display: block
     #{$c}__title
       h3
-        line-height: normal
+        line-height: 30px
         margin-bottom: $margin-thin
+        opacity: 1
+        cursor: default
     &.feedback
       #{$c}__wrap
         background-color: $white
