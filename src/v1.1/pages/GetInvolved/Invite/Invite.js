@@ -4,7 +4,7 @@ import { osName, isMobile } from 'react-device-detect'
 import Accordion from './Accordion'
 import AccordionItem from './AccordionItem'
 import InviteModal from './InviteModal'
-import { prefixClassName, openLink } from 'src/utils'
+import { prefixClassName, openLink, lockBodyScroll } from 'src/utils'
 import CONSTANT from 'src/v1.1/constant'
 
 import './invite.sass'
@@ -61,6 +61,13 @@ export default class Invite extends React.Component {
       return 'yellow'
     if (activeAccordion === this.ACCORDIONS.INSTALL_BROWSER)
       return 'sky'
+  }
+
+  toggleInviteModal(state = false) {
+    lockBodyScroll(state)
+    this.setState({
+      showInviteOpts: state
+    })
   }
 
   detectPlatform() {
@@ -123,9 +130,7 @@ export default class Invite extends React.Component {
                 this.setAccordion(this.ACCORDIONS.CLAIM_INVITE)
               }}
               onClickPrimaryButton={() => {
-                this.setState({
-                  showInviteOpts: true
-                })
+                this.toggleInviteModal(true)
               }}
             />
             <AccordionItem
@@ -165,9 +170,7 @@ export default class Invite extends React.Component {
               <InviteModal
                 content={modal}
                 onClickClose={() => {
-                  this.setState({
-                    showInviteOpts: false
-                  })
+                  this.toggleInviteModal()
                 }}
               />
             ) : null

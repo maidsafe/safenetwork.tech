@@ -19,16 +19,24 @@
     padding-top: $pad-small
   &__content
     padding-bottom: 70px
+    p
+      max-width: 568px
   &__title
     cursor: pointer
     h3
       line-height: 100px
       margin-bottom: 0
+      opacity: 0.7
   &__ctaButton,
   &__ctaLink
     display: inline-block
   &__ctaButton
     margin-right: 50px
+    .btn
+      min-width: 210px
+      font-size: 18px
+      height: 52px
+      line-height: 52px
   &.active
     height: 100%
     background-color: transparent
@@ -40,11 +48,22 @@
     #{$c}__title
       h3
         line-height: normal
-        padding-top: $pad-fine
         margin-bottom: $margin-thin
     &.feedback
       #{$c}__wrap
         background-color: $white
+
+// XXSmall
++render-to($media-xxs)
+  .AccordionItem
+    height: 80px
+    &__title
+      h3
+        line-height: 80px
+    &__content
+      padding-bottom: 70px
+      p
+        max-width: 520px
 
 // XXXSmall
 +render-to($media-xxxs)

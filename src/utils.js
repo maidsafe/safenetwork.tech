@@ -104,3 +104,10 @@ export const openLink = (link, isExternal) => {
 export const prefixClassName = prefix => (
   (className) => `${prefix}__${className}`
 )
+
+export const lockBodyScroll = (scrollState = true) => {
+  if (typeof window === 'undefined') {
+    return
+  }
+  window.document.body.style.overflow = scrollState ? 'hidden' : 'visible'
+}
