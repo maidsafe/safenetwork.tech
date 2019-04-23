@@ -13,6 +13,7 @@ import Openledger from '../assets/images/openledger.png';
 import Hitbtc from '../assets/images/hitbtc.png';
 import Poloniex from '../assets/images/poloniex.png';
 import Cryptopia from '../assets/images/cryptopia.png';
+import Bitker from '../assets/images/Bitker.png';
 
 class Banner extends React.Component {
   constructor() {
@@ -183,16 +184,29 @@ class Exchanges extends React.Component {
                 <div className="safecoins-exchange-i-name">HitBTC</div>
               </a>
             </div>
+            {/*DG, 23/04/2019
+              - Commenting out Cryptopia exchange and adding in BITKER exchange.
+              - This keeps the number exchanges at 4 and retains the spacing/
+                breakpoints so formatting won't be affected.
+            */}
+            {/*
             <div className="safecoins-exchange-i">
               <a href={CONST.links.safeCoins.exchanges.cryptopia} target="_blank">
                 <div className="safecoins-exchange-i-img"><img src={Cryptopia} alt="Cryptopia" /></div>
                 <div className="safecoins-exchange-i-name">Cryptopia</div>
               </a>
             </div>
+            */}
             <div className="safecoins-exchange-i">
               <a href={CONST.links.safeCoins.exchanges.openLedger} target="_blank">
                 <div className="safecoins-exchange-i-img"><img src={Openledger} alt="Openledger" /></div>
                 <div className="safecoins-exchange-i-name">Openledger</div>
+              </a>
+            </div>
+            <div className="safecoins-exchange-i">
+              <a href={CONST.links.safeCoins.exchanges.bitker} target="_blank">
+                <div className="safecoins-exchange-i-img"><img src={Bitker} alt="Bitker" /></div>
+                <div className="safecoins-exchange-i-name">Bitker</div>
               </a>
             </div>
           </div>
