@@ -57,7 +57,7 @@
         "q": "What is MaidSafeCoin?",
         "a": [
           {
-            "cnt": "MaidSafeCoin is a proxy token that was released during MaidSafe's crowd sale and will be swapped for Safecoin on a 1:1 basis when Safecoin is released. MaidSafeCoin is listed on the bitcoin blockchain and can be purchased on a number of exchanges including:<ul><li>[Poloniex](https://www.poloniex.com/exchange#btc_maid)</li><li>[HitBTC](https://hitbtc.com/MAID-to-BTC)</li><li>[Cryptopia](https://www.cryptopia.co.nz/)</li><li>[OpenLedger](https://openledger.io/welcome)</li></ul>",
+            "cnt": "MaidSafeCoin is a proxy token that was released during MaidSafe's crowd sale and will be swapped for Safecoin on a 1:1 basis when Safecoin is released. MaidSafeCoin is listed on the bitcoin blockchain and can be purchased on a number of exchanges including:<ul><li>[Poloniex](https://www.poloniex.com/exchange#btc_maid)</li><li>[HitBTC](https://hitbtc.com/MAID-to-BTC)</li><li>[Cryptopia](https://www.cryptopia.co.nz/)</li><li>[OpenLedger](https://openledger.io/welcome)</li><li>[Bitker](https://www.bitker01.com/#/bbTrades/maid_btc)</li></ul>",
             "type": "para"
           }
         ]

@@ -195,6 +195,7 @@ export default {
         hitBtc: 'https://hitbtc.com/MAID-to-BTC',
         cryptopia: 'https://www.cryptopia.co.nz/Exchange/?market=MAID_BTC',
         openLedger: 'https://openledger.io/market/MAID_BTC',
+        bitker: 'https://www.bitker01.com/#/bbTrades/maid_btc',
       }
     },
     timeline: {
