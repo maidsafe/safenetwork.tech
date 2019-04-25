@@ -1,11 +1,9 @@
 import React from 'react'
-import { osName, isMobile } from 'react-device-detect'
 
 import Accordion from './Accordion'
 import AccordionItem from './AccordionItem'
 import InviteModal from './InviteModal'
-import { prefixClassName, openLink, lockBodyScroll } from 'src/utils'
-import CONSTANT from 'src/v1.1/constant'
+import { prefixClassName, openLink, lockBodyScroll, detectPlatform } from 'src/utils'
 
 import './invite.sass'
 
@@ -70,45 +68,12 @@ export default class Invite extends React.Component {
     })
   }
 
-  detectPlatform() {
-    const result = {}
-    if (isMobile) {
-      switch(osName) {
-        case 'Android':
-        default:
-          result.os = 'Android'
-          result.downloadUrl = CONSTANT.downloadApps.browser.android
-          break;
-        case 'iOS':
-          result.os = 'iOS'
-          result.downloadUrl = CONSTANT.downloadApps.browser.ios
-          break;
-      }
-      return result
-    }
-    switch(osName) {
-      case 'Mac OS':
-        result.os = 'Mac'
-        result.downloadUrl = CONSTANT.downloadApps.browser.mac
-        break;
-      case 'Windows':
-        result.os = 'Windows'
-        result.downloadUrl = CONSTANT.downloadApps.browser.windows
-        break;
-      default:
-        result.os = 'Linux'
-        result.downloadUrl = CONSTANT.downloadApps.browser.linux
-        break;
-    }
-    return result
-  }
-
   render() {
     const { content } = this.props
     const { title, claimInvite, installBrowser, feedback, modal } = content
     const { activeAccordion } = this.state
 
-    const platform = this.detectPlatform()
+    const platform = detectPlatform()
     const browserDownloadButton = {}
     browserDownloadButton.name = `${installBrowser.CTA.button.name} ${platform.os}`
     browserDownloadButton.url = platform.downloadUrl
