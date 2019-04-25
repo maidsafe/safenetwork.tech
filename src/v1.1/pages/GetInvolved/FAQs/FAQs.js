@@ -3,7 +3,7 @@ import React from 'react'
 import Button from 'components/Button'
 import QASection from 'components/QASection'
 
-import { prefixClassName, genRandomKey } from 'src/utils'
+import { prefixClassName, genRandomKey, openLink } from 'src/utils'
 
 import './faqs.sass'
 
@@ -23,7 +23,7 @@ const FAQs = props => {
         }
         <div className={cn('more')}>
           <div className={cn('cta')}>
-            <Button className="hollow">{CTA.name}</Button>
+            <Button className="hollow" onClick={() => openLink(CTA.url)}>{CTA.name}</Button>
           </div>
         </div>
       </div>

@@ -135,45 +135,38 @@ export default {
         {
           question: 'What do I need in order to browse the SAFE Network?',
           answer: [
-            'The SAFE (Secure Access For Everyone) Network is a new secure way to access apps that value the security of your data above all else. Downloading the free SAFE software will provide access to: messaging, apps, email, social networks, data storage, video conferencing, and much more.',
-            'Rather than using data centres and servers which are prone to data theft and surveillance, as is common on today\'s Internet, the SAFE Network uses advanced peer-to-peer technology that joins together the spare computing capacity of all SAFE users, creating a global network.',
-            'The SAFE Network is made up of the unused hard drive space, processing power and data connection of its users. It offers a level of security and privacy not currently available on the existing Internet and turns the tables on companies, putting users in control of their data, rather than trusting it to organisations.',
-            'By providing your unused computing resources to SAFE, you will be paid in a network token called [Safecoin](/safecoin).'
+            `While the network is in Alpha you'll need an account. See 'How do I create an account?' below for a step-by-step guide.`,
+            `Then all you need to do is [download the SAFE Browser](https://github.com/maidsafe/safe_browser/releases) and enter a SAFE site into the address bar and that's you browsing the SAFE Network.`,
+            'Some sample SAFE sites (copy and paste the address into the SAFE Browser address bar):',
+            `\n* [safe://maidsafe.safenet](safe://maidsafe.safenet) \n* [safe://racer.game/v4.final.html](safe://racer.game/v4.final.html) \n* [safe://hello](safe://hello)`,
+            '_[Get the SAFE Browser](https://github.com/maidsafe/safe_browser/releases/)_'
           ]
         },
         {
           question: 'Do I need an account to access the network?',
           answer: [
-            'An Autonomous Network is one which has no human gatekeepers. Anyone is able to join and—crucially—no-one can be prevented from taking part.',
-            'From the moment you upload your encrypted data, no human is required to ensure that your data remains secure and accessible until you alone choose to access it. Without the involvement of humans, the SAFE Network intelligently moves chunks of your data between nodes that it also constantly reassigns to different groups in order to provide total security and privacy at all times. You decide what information you will store—and the autonomous Network secures it to ensure that you retain total control.',
-            '_[Read more about Autonomous Networks](https://metaquestions.me/2017/08/12/the-impossible-network/)_'
+            `While the network is in Alpha then yes, you'll need to have an account. See 'How do I create an account?' below for a step-by-step guide.`
           ]
         },
         {
           question: 'How do I create an account?',
           answer: [
-            'Applications and programs on the existing Internet compromise your privacy through advertising and effectively control your data, granting you access when you login. On the SAFE Network, only you control who has access to your data and the distributed security features make your data safer than ever before. If you contribute some of your spare computing power to the network, you will be compensated for doing so with the Network’s built-in token, [Safecoin](/safecoin).'
+            'Here’s a step-by-step Guide:',
+            `* [Download](https://github.com/maidsafe/safe_browser/releases) and Install the SAFE Browser. \n* [Register on the forum](https://safenetforum.org/), it takes less than a minute. \n* Gain basic trust level—this requires around an hour reading and interacting. This is a measure to stop the test network being spammed during development. \n* Open the SAFE browser. \n* Click ‘Create Account’ at the bottom of the screen. \n* In the next screen select ‘Claim An Invitation’. \n* Login to the forum within the SAFE Browser, the setup process will prompt you to do this if you have not already done so. \n* Select the Alpha 2 Network. \n* The installer will now provide you with your invitation code. Please note: it is important that your current and registered IPs match, if they do not, click to update. \n* Copy the invite code at the bottom of the screen and paste this back into the field that asks for an ‘Invitation Token’ in the SAFE Browser. \n* You will now be asked to create an Account Secret and Password. Please make sure you keep these safe as only you will ever have access to your credentials. There is no central record of these credentials anywhere within the system and without them you will not be able to access your data. \n* Congratulations! You are now ready to not just browse the SAFE Network, but upload your own data, create websites and use some of the demo apps being worked on by the community.`
           ]
         },
         {
           question: 'How do I get involved with The SAFE Network community?',
           answer: [
-            '**No one.**',
-            'The SAFE Network is [open source](https://github.com/maidsafe). Our vision is to create a resource that can be used by everyone to spread all human knowledge and to facilitate sharing across the planet, regardless of country of residence, culture, or economic background.'
+            'The Community is most active on the [SAFE Network Forum](https://safenetforum.org/) and we’d suggest starting in the [beginners section](https://safenetforum.org/c/beginners )',
+            '_[Visit the Forum](https://safenetforum.org/)_'
           ]
         },
         {
           question: 'How do I get help?',
           answer: [
-            'Started in 2006 by Scottish engineer David Irvine, MaidSafe are the core developers of the SAFE Network.  It’s a small team comprised of: thinkers, inventors, tinkerers, PHDs, engineers and designers. Although based in Ayr, Scotland, we work remotely with talents from many different cultures and countries, reflecting the users that we serve. Despite this variety, we all share a single mission: providing security and privacy for everyone.',
-            '[Visit Maidsafe.net](https://maidsafe.net)'
-          ]
-        },
-        {
-          question: 'Who are MaidSafe?',
-          answer: [
-            'Started in 2006 by Scottish engineer David Irvine, MaidSafe are the core developers of the SAFE Network.  It’s a small team comprised of: thinkers, inventors, tinkerers, PHDs, engineers and designers. Although based in Ayr, Scotland, we work remotely with talents from many different cultures and countries, reflecting the users that we serve. Despite this variety, we all share a single mission: providing security and privacy for everyone.',
-            '[Visit Maidsafe.net](https://maidsafe.net)'
+            'The [SAFE Network Community](https://safenetforum.org) is the place to head to for all questions on the Network.',
+            '_[Visit the Forum](https://safenetforum.org/)_'
           ]
         }
       ]
@@ -181,7 +174,7 @@ export default {
    ],
    CTA: {
      name: 'More FAQs',
-     url: '/'
+     url: '/faq'
    }
   }
 }
