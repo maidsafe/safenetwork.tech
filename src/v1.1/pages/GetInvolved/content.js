@@ -64,7 +64,7 @@ export default {
     claimInvite: {
       id: 'claimInvite',
       title: 'Claim an Invite',
-      para: 'Access to the SAFE Network is by invite only while we are in Alpha. You’ll need to claim an one to get started.',
+      para: 'Access to the SAFE Network is by invite only while we are in Alpha. You’ll need to claim a one to get started.',
       CTA: {
         button: {
           name: 'Get an Invite',
