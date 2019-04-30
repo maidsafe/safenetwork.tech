@@ -1,8 +1,10 @@
 import UAParser from 'ua-parser-js';
 import MarkdownIt from 'markdown-it'
 import { Parser as ReactParser } from 'html-to-react'
+import { osName, isMobile as isMobileDevice } from 'react-device-detect'
 
-import CONST from './constants';
+import CONST from './constants'; // Todo remove it after completing v1.1
+import CONSTANT from 'v1.1/constant'
 
 const md = new MarkdownIt()
 const Parser = ReactParser()
@@ -26,6 +28,7 @@ export const spinalCase = (str) => {
   return str.replace(/(?!^)([\s])/g, ' $1').replace(/[_\s]+(?=[a-zA-Z])/g, '-').toLowerCase()
 };
 
+// Todo remove it after completing v1.1
 export const getAppLink = (app) => {
   const parser = new UAParser();
   const uaRes = parser.getResult();
@@ -82,12 +85,45 @@ export const genSubNavScrollPos = (data) => {
   }
 };
 
+export const detectPlatform = () => {
+  const result = {}
+  if (isMobileDevice) {
+    switch(osName) {
+      case 'Android':
+      default:
+        result.os = 'Android'
+        result.downloadUrl = CONSTANT.downloadApps.browser.android
+        break;
+      case 'iOS':
+        result.os = 'iOS'
+        result.downloadUrl = CONSTANT.downloadApps.browser.ios
+        break;
+    }
+    return result
+  }
+  switch(osName) {
+    case 'Mac OS':
+      result.os = 'Mac'
+      result.downloadUrl = CONSTANT.downloadApps.browser.mac
+      break;
+    case 'Windows':
+      result.os = 'Windows'
+      result.downloadUrl = CONSTANT.downloadApps.browser.windows
+      break;
+    default:
+      result.os = 'Linux'
+      result.downloadUrl = CONSTANT.downloadApps.browser.linux
+      break;
+  }
+  return result
+}
+
 export const genRandomKey = () => (
   Math.random().toString(36).slice(2)
 )
 
 export const isMenuLight = pathname => (
-  pathname === '/get-involved/'
+    [/* List of URLs */].indexOf(pathname) !== -1
 )
 
 export const parseMDText = (text, isInline = false) => {
@@ -104,3 +140,10 @@ export const openLink = (link, isExternal) => {
 export const prefixClassName = prefix => (
   (className) => `${prefix}__${className}`
 )
+
+export const lockBodyScroll = (scrollState = true) => {
+  if (typeof window === 'undefined') {
+    return
+  }
+  window.document.body.style.overflow = scrollState ? 'hidden' : 'visible'
+}

@@ -25,7 +25,7 @@ const GlobalHeader = props => {
         <div className="globalHeader__logo">
           <SiteLogo
             name={content.siteName}
-            lightTheme={(lightTheme && !mobileMenuActive)}
+            lightTheme={lightTheme}
           />
         </div>
         <div className="globalHeader__nav">
@@ -33,6 +33,7 @@ const GlobalHeader = props => {
             activePathname={activePathname}
             navItems={content.navItems}
             navButtons={content.navButtons}
+            lightTheme={lightTheme}
           />
         </div>
         <div className="mobNav">

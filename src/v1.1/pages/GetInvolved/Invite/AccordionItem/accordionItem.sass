@@ -1,0 +1,91 @@
+@import '~styles/variables'
+@import '~styles/mixins'
+@import '~styles/colors'
+
+.AccordionItem
+  background-color: $white
+  margin-bottom: 2px
+  height: 100px
+  +shadow-shallow()
+  position: relative
+  z-index: 1
+  $c: &
+  &__wrap
+    +default-column()
+  .overline,
+  &__content
+    display: none
+  .overline
+    padding-top: $pad-small
+    opacity: 0.5
+  &__content
+    padding-bottom: 70px
+    p
+      max-width: 568px
+  &__title
+    cursor: pointer
+    h3
+      line-height: 100px
+      margin-bottom: 0
+      opacity: 0.7
+  &__ctaButton,
+  &__ctaLink
+    display: inline-block
+  &__ctaButton
+    margin-right: 50px
+    .btn
+      min-width: 210px
+      font-size: 18px
+      height: 52px
+      line-height: 52px
+  .underlinedLink
+    font-size: 18px
+  &.active
+    height: 100%
+    background-color: transparent
+    box-shadow: none
+    z-index: 0
+    .overline,
+    #{$c}__content
+      display: block
+    #{$c}__title
+      h3
+        line-height: 30px
+        margin-bottom: $margin-thin
+        opacity: 1
+        cursor: default
+    &.feedback
+      #{$c}__wrap
+        background-color: $white
+
+// XXSmall
++render-to($media-xxs)
+  .AccordionItem
+    height: 80px
+    &__title
+      h3
+        line-height: 80px
+    &__content
+      padding-bottom: 70px
+      p
+        max-width: 520px
+
+// XXXSmall
++render-to($media-xxxs)
+  .AccordionItem
+    $c: &
+    &.active
+      #{$c}__title
+        h3
+          padding-top: 0
+    &__ctaButton
+      width: 100%
+      margin-right: 0
+      .btn
+        width: 100%
+    &__ctaLink
+      width: 100%
+      padding-top: $pad-thin
+      text-align: center
+    &__content
+      padding-bottom: $pad-thin

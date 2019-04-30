@@ -24,7 +24,7 @@ const DocDownload = props => {
         </div>
         <div className="docDownload__button">
           <Button
-            className="hollow download"
+            className="hollow icon download"
             onClick={() => {
               openLink(downloadLink, isExternal)
             }}

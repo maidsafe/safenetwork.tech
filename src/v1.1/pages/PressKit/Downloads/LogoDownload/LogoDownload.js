@@ -21,7 +21,7 @@ const LogoDownload = props => {
         </div>
         <div className="logoDownload__button">
           <Button
-            className="hollow download"
+            className="hollow icon download"
             onClick={() => {
               openLink(downloadLink)
             }}

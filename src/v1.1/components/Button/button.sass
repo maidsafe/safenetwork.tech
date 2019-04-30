@@ -23,6 +23,10 @@
     background-color: $spark-red
     color: $white
     border-color: $spark-red
+    &.active
+      background-color: $grey
+      border-color: $grey
+      color: $spark-red
   &.white
     color: $spark-red
     background-color: $white
@@ -34,7 +38,7 @@
     background-color: transparent
     border-color: rgba($black, 0.5)
     color: $body-text
-  &.download
+  &.icon
     min-width: 156px
     padding-right: 40px
     position: relative
@@ -46,10 +50,13 @@
       position: absolute
       top: 0
       right: 0
-      background-image: url($download-icon)
       background-size: 16px
       background-position: center
       background-repeat: no-repeat
+    &.download:after
+      background-image: url($download-icon)
+    &.external:after
+      background-image: url($external-white-icon)
   &-large
     line-height: 44px
     min-width: 170px

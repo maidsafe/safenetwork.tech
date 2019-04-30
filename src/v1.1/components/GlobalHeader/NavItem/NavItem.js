@@ -15,19 +15,20 @@ const MainNavItem = props => {
   } = props
 
   const linkEle = (children) => (<Link to={data.link.trim() || '#'}>{children}</Link>)
+  const isActive = (data.link === currentLocationPath)
 
   return (
     <div className={classNames(
         {
           mainNavItem: !isButton,
           'mainNavItem-btn': isButton,
-          active: (data.link === currentLocationPath),
+          active: isActive,
           light: lightTheme
         }
       )}
     >
       {
-        isButton ? linkEle(<Button className="primary">{data.name}</Button>) : linkEle(data.name)
+        isButton ? linkEle(<Button className="primary" active={isActive}>{data.name}</Button>) : linkEle(data.name)
       }
     </div>
   )

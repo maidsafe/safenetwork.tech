@@ -20,5 +20,15 @@ export default {
   },
   subscribeUrl: {
     mailSubscription: 'https://services.maidsafe.net/mail-subscription/api/1.0/subscribe'
+  },
+  downloadApps: {
+    browser: {
+      mac: 'https://github.com/maidsafe/safe_browser/releases/download/v0.12.0/safe-browser-v0.12.0-osx-x64.zip',
+      windows: 'https://github.com/maidsafe/safe_browser/releases/download/v0.12.0/safe-browser-v0.12.0-win-x64.zip',
+      linux: 'https://github.com/maidsafe/safe_browser/releases/download/v0.12.0/safe-browser-v0.12.0-linux-x64.zip',
+      android: 'https://github.com/maidsafe/safe_browser/releases/latest',
+      ios: 'https://github.com/maidsafe/safe_browser/releases/latest',
+      others: 'https://github.com/maidsafe/safe_browser/releases/latest',
+    }
   }
 }
