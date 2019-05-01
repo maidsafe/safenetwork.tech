@@ -13,50 +13,50 @@ const cn = prefixClassName(baseClassName)
 
 const Releases = props => {
   const { content } = props
-  const { alpha2, fleming, maxwell } = content
+  const { release1, release2, release3 } = content
   return (
     <div className={baseClassName}>
       <div className={cn('wrap')}>
         <Intro
-          overline={alpha2.overline}
-          title={alpha2.title}
-          text={alpha2.para}
-          videoUrl={alpha2.videoUrl}
-          videoCaption={alpha2.videoCaption}
+          overline={release1.overline}
+          title={release1.title}
+          text={release1.para}
+          videoUrl={release1.videoUrl}
+          videoCaption={release1.videoCaption}
         />
         <AccordionStatus />
-        <Accordion header={alpha2.accordion.header}>
+        <Accordion header={release1.accordion.header}>
           {
-            alpha2.accordion.items.map(accord => (
+            release1.accordion.items.map(accord => (
               <AccordionItem key={genRandomKey()} content={accord} />
             ))
           }
         </Accordion>
         <Intro
-          overline={fleming.overline}
-          title={fleming.title}
-          text={fleming.para}
-          videoUrl={fleming.videoUrl}
-          videoCaption={fleming.videoCaption}
+          overline={release2.overline}
+          title={release2.title}
+          text={release2.para}
+          videoUrl={release2.videoUrl}
+          videoCaption={release2.videoCaption}
         />
-        <Accordion header={fleming.accordion.header}>
+        <Accordion header={release2.accordion.header}>
           {
-            fleming.accordion.items.map(accord => (
+            release2.accordion.items.map(accord => (
               <AccordionItem key={genRandomKey()} content={accord} />
             ))
           }
         </Accordion>
         <div className={cn('darkBg')}>
           <Intro
-            overline={maxwell.overline}
-            title={maxwell.title}
-            text={maxwell.para}
-            videoUrl={maxwell.videoUrl}
-            videoCaption={maxwell.videoCaption}
+            overline={release3.overline}
+            title={release3.title}
+            text={release3.para}
+            videoUrl={release3.videoUrl}
+            videoCaption={release3.videoCaption}
           />
-          <Accordion header={maxwell.accordion.header}>
+          <Accordion header={release3.accordion.header}>
             {
-              maxwell.accordion.items.map(accord => (
+              release3.accordion.items.map(accord => (
                 <AccordionItem key={genRandomKey()} content={accord} />
               ))
             }

@@ -1,11 +1,11 @@
 export default {
   banner: {
-    pageTitle: 'The ~~Im~~Possible Network',
-    pageDesc: '12 years of research and development is coming to fruition as we put together the final building blocks of what some said was impossible: Secure Access For Everyone.',
+    pageTitle: 'Lorem ~~Ipsum~~ is simply',
+    pageDesc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
     latestUpdate: {
-      overline: 'Latest Update',
-      date: '22nd February 2019',
-      title: 'Sharding RFC',
+      overline: 'Lorem ipsum dolor',
+      date: '02nd February 1979',
+      title: 'Lorem ipsum dolor',
       para: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat mauris, faucibus quis pharetra sit amet, pretium ac libero. Etiam vehicula eleifend bibendum.',
       CTA: {
         name: 'Read More',
@@ -14,105 +14,105 @@ export default {
     }
   },
   subscribe: {
-    title: 'Subscribe for __Roadmap__ Updates:'
+    title: 'Lorem __ipsum__ is simply dummy:'
   },
   releases: {
-    alpha2: {
-      overline: 'Live Alpha Network',
-      title: 'The Alpha 2 Network',
+    release1: {
+      overline: 'Lorem ipsum dolor sit amet',
+      title: 'Lorem ipsum dolor sit amet',
       para: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat mauris, faucibus quis pharetra sit amet, pretium ac libero. Etiam vehicula eleifend bibendum. Morbi gravida metus ut sapien condimentum sodales mollis augue sodales. Vestibulum quis quam at sem placerat aliquet. Curabitur a felis at sapien ullamcorper fermentum. Mauris molestie arcu et lectus iaculis sit amet eleifend eros posuere. Fusce nec porta orci.',
-      videoUrl: 'https://www.youtube.com/d54f8575-7454-4d58-81f3-26602e6f4248',
-      videoCaption: 'What is the Alpha 2 Network? Ceilidh and Sarah explain',
+      videoUrl: '/',
+      videoCaption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       accordion: {
         header: [
-          'Alpha 2 Features',
+          'Lorem ipsum dolor',
           'Description',
           'Status'
         ],
         items: [
           {
-            feature: 'Sharding',
-            desc: 'Like cell multiplication. But with data.',
+            feature: 'Lorem ipsum',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'Complete',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
               'Curabitur libero ante, aliquam vitae condimentum eget, cursus ut neque. Proin in eleifend nulla.'
             ],
             CTA: {
-              name: 'Read the RFC',
+              name: 'Lorem ipsum',
               url: '/'
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur'
             }
           }, {
-            feature: 'PARSEC',
-            desc: 'You first. No you. Please, after you. Oh you\'re too kind.',
+            feature: 'Lorem ipsum',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'Complete',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
               'Curabitur libero ante, aliquam vitae condimentum eget, cursus ut neque. Proin in eleifend nulla.'
             ],
             CTA: {
-              name: 'Read the RFC',
+              name: 'Lorem ipsum dolor',
               url: '/'
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }, {
-            feature: 'Donut Making',
-            desc: 'Not previously thought possible on the network: saturated fat and sugar combined.',
+            feature: 'Lorem ipsum',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'Defined',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
               'Curabitur libero ante, aliquam vitae condimentum eget, cursus ut neque. Proin in eleifend nulla.'
             ],
             CTA: {
-              name: 'Read the RFC',
+              name: 'Lorem ipsum',
               url: '/'
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }, {
-            feature: 'Merge and Split',
-            desc: 'Enabling disjoint groups to merge and split whilst maintaining consensus',
+            feature: 'Lorem ipsum dolor',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'Development',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
               'Curabitur libero ante, aliquam vitae condimentum eget, cursus ut neque. Proin in eleifend nulla.'
             ],
             CTA: {
-              name: 'Read the RFC',
+              name: 'Lorem ipsum',
               url: '/'
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }, {
-            feature: 'Secure Message Relay',
-            desc: 'This is an expanded feature row.',
+            feature: 'Lorem ipsum dolor sit',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'RFC',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
               'Curabitur libero ante, aliquam vitae condimentum eget, cursus ut neque. Proin in eleifend nulla.'
             ],
             CTA: {
-              name: 'Read the RFC',
+              name: 'Lorem ipsum',
               url: '/'
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }, {
-            feature: 'PARSEC 2.0',
-            desc: 'All about dat consensus.',
+            feature: 'Lorem ipsum',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'Development',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
@@ -124,28 +124,28 @@ export default {
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }
         ]
       }
     },
-    fleming: {
-      overline: 'Current Network Milestone',
-      title: 'SAFE Fleming',
+    release2: {
+      overline: 'Lorem ipsum dolor sit amet',
+      title: 'Lorem ipsum',
       para: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat mauris, faucibus quis pharetra sit amet, pretium ac libero. Etiam vehicula eleifend bibendum. Morbi gravida metus ut sapien condimentum sodales mollis augue sodales. Vestibulum quis quam at sem placerat aliquet. Curabitur a felis at sapien ullamcorper fermentum. Mauris molestie arcu et lectus iaculis sit amet eleifend eros posuere. Fusce nec porta orci.',
-      videoUrl: 'https://youtu.be/f9TEGRczHEQ',
-      videoCaption: 'What is SAFE Fleming? Ceilidh and Sarah explain.',
+      videoUrl: '/',
+      videoCaption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       accordion: {
         header: [
-          'Fleming Features',
+          'Lorem ipsum dolor',
           'Description',
           'Status'
         ],
         items: [
           {
-            feature: 'Sharding',
-            desc: 'Like cell multiplication. But with data.',
+            feature: 'Lorem ipsum',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'Complete',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
@@ -157,11 +157,11 @@ export default {
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }, {
-            feature: 'PARSEC',
-            desc: 'You first. No you. Please, after you. Oh you\'re too kind.',
+            feature: 'Lorem',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'Complete',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
@@ -173,11 +173,11 @@ export default {
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }, {
-            feature: 'Donut Making',
-            desc: 'Not previously thought possible on the network: saturated fat and sugar combined.',
+            feature: 'Lorem ipsum dolor',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'Defined',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
@@ -189,11 +189,11 @@ export default {
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }, {
-            feature: 'Merge and Split',
-            desc: 'Enabling disjoint groups to merge and split whilst maintaining consensus',
+            feature: 'Lorem ipsum',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'Development',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
@@ -205,11 +205,11 @@ export default {
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }, {
-            feature: 'Secure Message Relay',
-            desc: 'This is an expanded feature row.',
+            feature: 'Lorem ipsum dolor',
+            desc: 'Lorem ipsum dolor sit amet.',
             status: 'RFC',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
@@ -221,11 +221,11 @@ export default {
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }, {
-            feature: 'PARSEC 2.0',
-            desc: 'All about dat consensus.',
+            feature: 'Lorem ipsum',
+            desc: 'Lorem ipsum dolor sit',
             status: 'Development',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
@@ -237,28 +237,28 @@ export default {
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }
         ]
       }
     },
-    maxwell: {
-      overline: 'Coming Soon',
-      title: 'SAFE Maxwell',
+    release3: {
+      overline: 'Lorem ipsum',
+      title: 'Lorem ipsum dolor',
       para: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat mauris, faucibus quis pharetra sit amet, pretium ac libero. Etiam vehicula eleifend bibendum. Morbi gravida metus ut sapien condimentum sodales mollis augue sodales. Vestibulum quis quam at sem placerat aliquet. Curabitur a felis at sapien ullamcorper fermentum. Mauris molestie arcu et lectus iaculis sit amet eleifend eros posuere. Fusce nec porta orci.',
-      videoUrl: 'https://youtu.be/f9TEGRczHEQ',
-      videoCaption: 'What is SAFE Maxwell? Ceilidh and Sarah explain',
+      videoUrl: '/',
+      videoCaption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       accordion: {
         header: [
-          'Maxwell Features',
+          'Lorem ipsum dolor',
           'Description',
           'Status'
         ],
         items: [
           {
-            feature: 'Sharding',
-            desc: 'Like cell multiplication. But with data.',
+            feature: 'Lorem ipsum',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'Complete',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
@@ -270,11 +270,11 @@ export default {
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }, {
-            feature: 'PARSEC',
-            desc: 'You first. No you. Please, after you. Oh you\'re too kind.',
+            feature: 'Lorem',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'Complete',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
@@ -286,11 +286,11 @@ export default {
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }, {
-            feature: 'Donut Making',
-            desc: 'Not previously thought possible on the network: saturated fat and sugar combined.',
+            feature: 'Lorem ipsum',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'Defined',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
@@ -302,11 +302,11 @@ export default {
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }, {
-            feature: 'Merge and Split',
-            desc: 'Enabling disjoint groups to merge and split whilst maintaining consensus',
+            feature: 'Lorem ipsum dolor sit',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'Development',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
@@ -318,11 +318,11 @@ export default {
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }, {
-            feature: 'Secure Message Relay',
-            desc: 'This is an expanded feature row.',
+            feature: 'Lorem ipsum dolor',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'RFC',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
@@ -334,11 +334,11 @@ export default {
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }, {
-            feature: 'PARSEC 2.0',
-            desc: 'All about dat consensus.',
+            feature: 'Lorem ipsum',
+            desc: 'Lorem ipsum dolor sit.',
             status: 'Development',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
@@ -350,7 +350,7 @@ export default {
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }
         ]
@@ -361,35 +361,35 @@ export default {
     title: 'Apps and User Experience',
     list: [
       {
-        name: 'SAFE Browser',
+        name: 'Lorem ipsum',
         para: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat mauris, faucibus quis pharetra sit amet, pretium ac libero.',
         status: 'Latest Version 1.23'
       },
       {
-        name: 'Web Hosting Manager',
+        name: 'Lorem ipsum',
         para: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat mauris, faucibus quis pharetra sit amet, pretium ac libero.',
         status: 'Latest Version 1.23'
       },
       {
-        name: 'SAFE Launchpad',
+        name: 'Lorem ipsum',
         para: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat mauris, faucibus quis pharetra sit amet, pretium ac libero.',
         status: 'Coming Soon'
       }
     ],
     currentMilestone: {
       status: 'Current Milestone',
-      title: 'The Perpetual Web',
+      title: 'Lorem ipsum dolor',
       para: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat mauris, faucibus quis pharetra sit amet, pretium ac libero. Etiam vehicula eleifend bibendum. Morbi gravida metus ut sapien condimentum sodales mollis augue sodales. Vestibulum quis quam at sem placerat aliquet.',
       accordion: {
         header: [
-          'Apps',
-          'Perpetual Web Features',
+          'Lorem',
+          'Lorem ipsum',
           'Status'
         ],
         items: [
           {
-            feature: 'Launch Pad',
-            desc: 'Login, and manage apps from a simple transient application. Cross Platform.',
+            feature: 'Lorem ipsum',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'Design',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
@@ -401,12 +401,12 @@ export default {
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           },
           {
-            feature: 'SAFE Browser',
-            desc: 'Roll back through the version history of any SAFE website or asset.',
+            feature: 'Lorem ipsum',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'Design',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
@@ -418,12 +418,12 @@ export default {
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           },
           {
-            feature: 'Data Manager',
-            desc: 'Streamlined data managment, and one-click site uploads.',
+            feature: 'Lorem ipsum',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             status: 'Defined',
             para: [
               'I Quisque vitae massa orci, vel bibendum metus. Donec ac tortor mi. Praesent nec commodo nunc. Suspendisse at metus magna. Phasellus odio risus, bibendum in vestibulum ac, dignissim vel nunc. Nam dictum, arcu non vestibulum dapibus, tortor tortor fringilla nibh, eget semper purus velit eu nunc.',
@@ -435,29 +435,29 @@ export default {
             },
             video: {
               url: '/',
-              caption: 'Secure Message Relay being explained'
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             }
           }
         ]
       }
     },
     upcomingMilestones: {
-      status: 'Up-Coming Milestones',
+      status: 'Upcoming Milestones',
       list: [
         {
-          title: 'Private Communications',
+          title: 'Lorem ipsum dolor',
           para: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat mauris, faucibus quis pharetra sit amet, pretium ac libero.'
         },
         {
-          title: 'Control of Your Data',
+          title: 'Lorem ipsum dolor',
           para: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat mauris, faucibus quis pharetra sit amet, pretium ac libero.'
         },
         {
-          title: 'New Digital Economy',
+          title: 'Lorem ipsum dolor',
           para: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat mauris, faucibus quis pharetra sit amet, pretium ac libero.'
         },
         {
-          title: 'File Sharing & Archiving',
+          title: 'Lorem ipsum dolor',
           para: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat mauris, faucibus quis pharetra sit amet, pretium ac libero.'
         }
       ]

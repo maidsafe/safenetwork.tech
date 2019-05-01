@@ -20,9 +20,11 @@ export default class AccordionItem extends React.Component {
   }
 
   componentWillMount() {
-    const hash = decodeURIComponent(window.location.hash.substr(1))
-    if (hash === this.featureId) {
-      this.setState({ active: !this.state.active })
+    if (typeof window !== 'undefined') {
+      const hash = decodeURIComponent(window.location.hash.substr(1))
+      if (hash === this.featureId) {
+        this.setState({ active: !this.state.active })
+      }
     }
   }
 
