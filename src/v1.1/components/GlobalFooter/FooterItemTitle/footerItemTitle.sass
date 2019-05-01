@@ -1,6 +1,4 @@
-@import '~styles/variables'
-@import '~styles/mixins'
-@import '~styles/colors'
+@import '~styles/index'
 
 .footerItemTitle
   padding-bottom: 16px
@@ -22,10 +20,19 @@
       position: absolute
       top: 3px
       right: 15px
-      background-image: url($footer-arrow-icon)
-      background-size: cover
+      background-image: url($arrow-down-grey-icon)
+      background-size: 16px
       background-repeat: no-repeat
       background-position: center
     &.active
       &::after
+        background-image: url($arrow-down-icon)
         transform: rotate(180deg)
+    &:hover
+      border-bottom-color: $link-undeline-bg-color
+      &:after
+        background-image: url($arrow-down-icon)
+    &:active
+      border-bottom-color: $spark-red
+      &:after
+        background-image: url($arrow-down-icon)

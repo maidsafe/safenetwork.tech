@@ -1,7 +1,4 @@
-@import '~styles/variables'
-@import '~styles/mixins'
-@import '~styles/fonts'
-@import '~styles/colors'
+@import '~styles/index'
 
 $item-hspace: $hspace-default
 $item-vspace: 75px
@@ -126,6 +123,8 @@ $item-vspace: 75px
         grid-row: 5
       .newsletter
         grid-row: 1
+        &.active
+          margin-bottom: $margin-thin
         .footerItemTitle
           cursor: default
           &:after

@@ -6,14 +6,16 @@ import { parseMDText, spinalCase } from 'src/utils'
 import './qaItem.sass'
 
 export default class QAItem extends React.Component {
-  state = {
-    isOpen: false,
+  constructor(props) {
+    super(props)
+    this.state = {
+      isOpen: false,
+    }
+
+    this.questionId = spinalCase(this.props.content.question)
   }
 
-  questionId = null
-
   componentDidMount() {
-    this.questionId = spinalCase(this.props.content.question)
     const hash = window.location.hash.substr(1)
     if (hash) {
       const decodedHash = decodeURIComponent(hash)

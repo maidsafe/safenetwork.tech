@@ -1,6 +1,9 @@
-@import '~styles/variables'
-@import '~styles/mixins'
+@import '~styles/index'
 
 .footerList
   &__item
-    padding-top: 20px
+    padding-top: $pad-fine
+    &:hover
+      color: rgba($black, 0.7)
+    &:active
+      color: $spark-red

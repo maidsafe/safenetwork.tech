@@ -1,7 +1,4 @@
-@import '~styles/variables'
-@import '~styles/mixins'
-@import '~styles/colors'
-@import '~styles/fonts'
+@import '~styles/index'
 
 $open-hspace: 20px
 $open-hspace-xxxs: $hspace-xxxs
@@ -35,6 +32,7 @@ $open-hspace-xxxs: $hspace-xxxs
       cursor: pointer
       padding-bottom: 10px
       margin-bottom: 0
+      color: $black
       &::after
         content: ''
         display: block
@@ -44,6 +42,11 @@ $open-hspace-xxxs: $hspace-xxxs
         position: absolute
         bottom: 0
         left: 0
+    &:hover, &:active
+      p
+        color: $pitch-black
+      &::after
+        background-image: url($arrow-right-icon)
   &__answer
     display: none
     padding-left: $hspace-default + $open-hspace
@@ -51,12 +54,8 @@ $open-hspace-xxxs: $hspace-xxxs
     padding-top: 32px
     padding-bottom: 72px
   &__para
-    p em a
-      +cta-underline()
     p:last-child
       padding-bottom: 0
-    a
-      color: $spark-red
     ul
       margin-bottom: 32px
       &:last-child
@@ -65,18 +64,25 @@ $open-hspace-xxxs: $hspace-xxxs
     #{$c}__wrap
       margin-left: -$open-hspace
       padding-left: $open-hspace
-      background-color: $acid-yellow
       +shadow-deep()
     #{$c}__question
+      margin-left: -$open-hspace
+      padding-left: $open-hspace + 56px
+      background-color: $acid-yellow
       height: 72px
+      &:hover
+        background-color: $qa-item-opened-hover-bg-color
+      &:active
+        background-color: $qa-item-opened-pressed-bg-color
       p
         width: 100%
         max-width: 100%
         display: block
         padding-bottom: 0
         &::after
-          bottom: 0
+          display: none
       &::after
+        left: $open-hspace
         transform: rotate(90deg) translate(-50%, 0)
         transform-origin: center
     #{$c}__answer

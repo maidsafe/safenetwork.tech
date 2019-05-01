@@ -1,0 +1,14 @@
+@import '~styles/index'
+
+.RoadmapReleases
+  background-color: $white
+  &__darkBg
+    margin-top: -$margin-super-jumbo
+    padding-top: $pad-super-jumbo
+    padding-bottom: $pad-jumbo
+    background-color: $default-bg-color
+
++render-to($media-m)
+  .RoadmapReleases
+    &__darkBg
+      padding-bottom: $pad-super-jumbo
