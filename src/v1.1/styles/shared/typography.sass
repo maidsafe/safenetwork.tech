@@ -247,6 +247,13 @@ blockquote
     @extend %underlineLink-bright-onYellow
   .underlinedLink
     @extend %underlineLink-bright-onYellow
+    &.minor
+      &:after, &:visited:after
+        background-color: $link-undeline-bg-color
+      &:hover:after
+        background-color: $spark-red
+      &:active:after
+        background-color: $white
 
 .underlineLink-bright-onDark
   p em a

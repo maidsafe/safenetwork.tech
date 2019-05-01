@@ -81,7 +81,7 @@ export default class Invite extends React.Component {
     return (
       <div className={baseClassName}>
         <div className={cn('wrap')}>
-          <Accordion bgColor={this.setAccordionBg()}>
+          <Accordion className="underlineLink-bright-onYellow" bgColor={this.setAccordionBg()}>
             <AccordionItem
               overline={title}
               active={activeAccordion === this.ACCORDIONS.CLAIM_INVITE}
