@@ -32,7 +32,7 @@ export default {
       },
       {
         'name': 'Timeline',
-        'url': '/timeline/'
+        'url': '/roadmap/'
       }
     ]
   },
