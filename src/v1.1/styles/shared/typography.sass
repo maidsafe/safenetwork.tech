@@ -45,10 +45,11 @@ h3
   line-height: 30px
   max-width: 620px
   margin-bottom: 32px
+  +render-to($media-xs)
+    margin-bottom: 24px
   +render-to($media-xxs)
     font-size: 18px
     line-height: 23px
-    margin-bottom: 24px
 
 h4
   font-size: 18px
@@ -118,16 +119,14 @@ blockquote
       max-width: 520px
       margin-bottom: 56px
     a
-      &:after
+      &:link, &:visited
+        color: $body-text
+      &:after, &:visited:after
         background-color: $link-undeline-bg-color
       &:hover:after
         background-color: $spark-red
       &:pressed:after
         background-color: $acid-yellow
-      &:visited
-        color: $body-text
-        &:after
-          background-color: $link-undeline-bg-color
 
 .overline
   display: inline-block

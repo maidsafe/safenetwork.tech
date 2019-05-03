@@ -8,6 +8,21 @@
     padding-bottom: $pad-jumbo
     background-color: $default-bg-color
 
++render-to($media-xl)
+  .RoadmapReleases
+    &__wrap
+      max-width: $max-width-xl
+    &__darkBg
+      position: relative
+      &::after
+        content: ''
+        background-color: $default-bg-color
+        width: 1000%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 100%
+        display: block
 +render-to($media-m)
   .RoadmapReleases
     &__darkBg

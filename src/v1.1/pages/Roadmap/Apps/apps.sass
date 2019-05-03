@@ -133,6 +133,11 @@
       margin-left: -3px
       z-index: 1
 
++render-to($media-xl)
+  .RoadmapApps
+    &__wrap
+      max-width: $max-width-xl
+
 +render-to($media-l)
   .RoadmapApps
     &__list
@@ -162,10 +167,6 @@
         transform: translate(-100%, 0)
         margin-left: -56px
         background-position: right center
-
-
-
-
 
 +render-to($media-s)
   .RoadmapApps
@@ -275,6 +276,7 @@
       position: relative
       .container
         padding-left: 0
+        padding-right: $hspace-xxxs
     &__listMedia
       width: 58px
       height: 58px
