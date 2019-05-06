@@ -132,7 +132,7 @@ export const genRandomKey = () => (
 )
 
 export const isMenuLight = pathname => (
-    [/* List of URLs */].indexOf(pathname) !== -1
+    ['/safecoin/'].indexOf(pathname) !== -1
 )
 
 export const parseMDText = (text, isInline = false) => {

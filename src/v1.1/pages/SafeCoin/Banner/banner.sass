@@ -1,0 +1,97 @@
+@import '~styles/index'
+
+.SafeCoinBanner
+  &__wrap
+    +grid()
+    background-color: $spark-red
+    *
+      color: $white !important
+  &__title
+    grid-column: 1/span 10
+    grid-row: 1
+  &__content
+    grid-column: 2/span 5
+    grid-row: 2
+    padding-bottom: $pad-super-jumbo
+  &__video
+    grid-column: 7/span 4
+    padding-right: $pad-small
+    align-self: end
+    figure
+      position: relative
+      transform: translate(0, 50%)
+      width: 100%
+      height: 336px
+      video
+        width: 100%
+        height: 100%
+    figcaption
+      position: absolute
+      bottom: 100%
+      left: 0
+      margin-bottom: $margin-fine
+      padding-left: $pad-small
+      opacity: 1
+      &::before
+        content: ''
+        width: 30px
+        height: 30px
+        background-image: url($arrow-down-yellow-icon)
+        background-size: 20px
+        background-position: center
+        background-repeat: no-repeat
+        position: absolute
+        top: 0
+        left: 0
+
++render-to($media-m)
+  .SafeCoinBanner
+    &__video
+      figure
+        transform: translate(0, 60%)
+
++render-to($media-s)
+  .SafeCoinBanner
+    &__content
+      padding-bottom: $pad-jumbo
+    &__video
+      transform: translate(0, -60px)
+      grid-column: 2/span 6
+      grid-row: 1/span 2
+      padding-right: 0
+      figure
+        height: 390px
+        transform: translate(0, 100%)
+
++render-to($media-xs)
+  .SafeCoinBanner
+    &__wrap
+      +grid-small()
+    &__title
+      grid-column: 1/span 6
+    &__content
+      grid-column: 1/span 6
+      padding-bottom: $pad-chunky
+      +default-column()
+    &__video
+      figure
+        height: 360px
+      grid-column: 1/span 6
+      +default-column()
+
++render-to($media-xxs)
+  .SafeCoinBanner
+    &__video
+      transform: translate(0, -80px)
+      figure
+        height: 250px
+      figcaption
+        bottom: auto
+        top: 100%
+        color: $body-text !important
+        opacity: 0.8
+        margin-bottom: 0
+        margin-top: $margin-fine
+        &::before
+          background-image: url($arrow-down-grey-icon)
+          transform: rotate(180deg)

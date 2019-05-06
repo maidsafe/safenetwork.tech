@@ -1,0 +1,340 @@
+@import '~styles/index'
+
+.SafeCoin
+  &__wrap
+    max-width: $max-width-xl
+  &__textBlocks
+    +grid()
+    padding-top: $pad-super-jumbo
+  &__textBlock1
+    grid-column: 2/span 4
+    grid-row: 1
+    padding-bottom: $pad-fine
+  &__textBlock2
+    grid-column: 2/span 4
+    grid-row: 2
+    padding-bottom: $pad-super-jumbo + $pad-small
+  &__textBlock3
+    grid-column: 7/span 3
+    grid-row: 1
+    padding-top: $pad-jumbo
+  &__textBlock4
+    grid-column: 7/span 3
+    grid-row: 2
+    padding-top: $pad-fine
+    padding-bottom: $pad-super-jumbo
+  &__textBlock5
+    grid-column: 2/span 4
+    grid-row: 3
+    position: relative
+    padding-top: $pad-chunky
+    padding-bottom: $pad-super-jumbo
+    +default-column()
+    margin-left: -$hspace-l
+    align-self: start
+    z-index: 1
+  &__textBlock6
+    grid-column: 7/span 3
+    grid-row: 3/span 2
+    padding-top: $pad-jumbo
+    z-index: 1
+  &__faq
+    grid-column: 1/span 10
+    grid-row: 4
+    padding-top: $pad-super-jumbo
+    padding-bottom: $pad-chunky
+    z-index: 1
+  &__faqWrap
+    +grid()
+    .qaSection
+      grid-column: 1/span 10
+  &__more
+    grid-column: 2/span 8
+    margin-top: $margin-small
+  &__texture1,
+  &__texture2
+    height: 12px
+    background-image: url($texture-10)
+    background-size: cover
+  &__texture1
+    grid-column: 1/span 6
+    grid-row: 1
+    align-self: start
+    transform: translate(0, -161px)
+  &__texture2
+    grid-column: 6/span 5
+    grid-row: 2
+    align-self: end
+  &__bgDark
+    grid-column: 1/span 10
+    grid-row: 3/span 2
+    background-color: $default-bg-color
+    z-index: 0
+  &__buySafeCoinBg
+    grid-column: 1/span 5
+    grid-row: 3
+    margin-top: -160px
+    padding-top: 160px
+    background-color: $white
+    +shadow-deep()
+    position: relative
+    z-index: 0
+    &::after
+      content: ''
+      display: block
+      height: 16px
+      width: 100%
+      background-color: $white
+      position: absolute
+      top: 0
+      left: 0
+      transform: translate(0, -100%)
+  &__exchange
+    display: flex
+    flex-wrap: wrap
+  &__exchangeItem
+    width: 25%
+    margin-bottom: $margin-thin
+    figure
+      text-align: center
+      a
+        display: block
+        width: 100%
+        height: 100%
+      img
+        width: 70px
+        height: 70px
+        margin-bottom: $margin-fine
+      figcaption
+        +font-1()
+        font-size: 18px
+        font-weight: 600
+        line-height: 20px
+        color: $black
+
++render-to($media-m)
+  .SafeCoin
+    &__textBlock1
+      padding-bottom: $pad-jumbo
+    &__textBlock3
+      padding-top: $pad-super-jumbo
+    &__textBlock4
+      padding-top: $pad-chunky
+      padding-bottom: $pad-super-jumbo + $pad-jumbo
+    &__textBlock5
+      margin-top: -$margin-jumbo
+    &__buySafeCoinBg
+      margin-top: -200px
+      padding-top: 200px
+    &__exchangeItem
+      width: 50%
+      img,
+      figcaption
+        float: left
+      figure
+        figcaption
+          margin-left: $margin-fine
+          line-height: 70px
+      &:nth-child(2)
+        order: 3
+      &:nth-child(3)
+        order: 3
+      &:nth-child(4)
+        order: 1
+
++render-to($media-s)
+  .SafeCoin
+    &__textBlocks
+      padding-top: 440px
+    &__textBlock1
+      padding-bottom: $pad-small
+    &__textBlock2
+      padding-bottom: $pad-jumbo
+    &__textBlock3,
+    &__textBlock4
+      padding-top: 0
+      grid-row: 3
+    &__textBlock3
+      grid-column: 2/span 4
+      padding-right: $hspace-s
+    &__textBlock4
+      grid-column: 6/span 4
+      padding-left: $hspace-s
+      padding-bottom: 0
+    &__bgDark
+      grid-row: 5/span 2
+    &__texture2
+      grid-row: 3
+      grid-column: 1/span 5
+      margin-right: $hspace-s
+    &__textBlock5
+      grid-column: 2/span 8
+      grid-row: 4
+      padding-top: $pad-medium
+      padding-bottom: $pad-medium
+      margin-top: $margin-chunky
+    &__buySafeCoinBg
+      grid-column: 1/span 10
+      grid-row: 4
+      margin-top: $margin-chunky
+      padding: 0
+      &::after
+        height: 20px
+    &__textBlock6
+      grid-column: 2/span 10
+      grid-row: 5
+      .textSnippet
+        width: 50%
+        max-width: 460px
+        margin-right: $hspace-s
+        float: left
+    &__exchange
+      width: 50%
+      float: left
+    &__faq
+      grid-row: 6
+      padding-top: $pad-small
+    &__texture1
+      grid-column: 8/span 3
+      transform: translate(0, -441px)
+
++render-to($media-xs)
+  .SafeCoin
+    &__textBlocks
+      +grid-small()
+    &__textBlock1,
+    &__textBlock2,
+    &__textBlock3,
+    &__textBlock4
+      grid-column: 1/span 6
+      +default-column()
+    &__textBlock1,
+    &__textBlock2
+      padding-bottom: $pad-jumbo
+    &__textBlock4,
+    &__texture2
+      grid-row: 4
+    &__textBlock3
+      padding-bottom: $pad-thin
+    &__textBlock4
+      padding-bottom: $pad-jumbo
+    &__textBlock5,
+    &__buySafeCoinBg
+      grid-row: 5
+    &__texture1
+      grid-column: 1/span 1
+      width: $hspace-xs
+    &__texture2
+      grid-column: 3/span 4
+      margin-right: 0
+      z-index: 3
+    &__textBlock5
+      grid-column: 1/span 6
+      padding-top: $pad-chunky
+      margin-top: 0
+      margin-left: 0
+    &__buySafeCoinBg
+      margin-top: 0
+    &__textBlock6
+      grid-column: 1/span 6
+      grid-row: 6
+      +default-column()
+      .textSnippet
+        width: 100%
+        float: none
+        max-width: 100%
+    &__faq
+      grid-row: 7
+    &__exchange
+      width: 100%
+      float: none
+      justify-content: space-between
+    &__exchangeItem
+      width: auto
+      margin-bottom: 0
+      &:nth-child(n+1)
+        order: 1
+      figure
+        img,
+        figcaption
+          float: none
+          margin-left: 0
+    &__bgDark
+      grid-row: 6/span 2
+
++render-to($media-xxs)
+  .SafeCoin
+    &__textBlocks
+      padding-top: 270px
+    &__texture1
+      transform: translate(0, -271px)
+    &__textBlock1,
+    &__textBlock3
+      padding-bottom: $pad-fine
+    &__textBlock2
+      padding-bottom: $pad-small
+    &__textBlock4
+      padding-bottom: $pad-super-jumbo
+    &__textBlock5
+      padding-top: $pad-small
+      padding-bottom: $pad-fine
+    &__textBlock6
+      padding-top: $pad-chunky
+    &__exchangeItem
+      width: 50%
+      figure
+        img
+          float: left
+        figcaption
+          float: left
+          margin-left: $margin-fine
+          line-height: 70px
+      &:nth-child(2)
+        order: 3
+      &:nth-child(3)
+        order: 3
+      &:nth-child(4)
+        order: 1
+    &__faq
+      padding-top: $pad-fine
+    &__more
+      margin-top: 0
+
++render-to($media-xxxs)
+  .SafeCoin
+    &__texture1
+      width: $hspace-xxxs
+    &__texture2
+      grid-column: 4/span 3
+    &__textBlock4
+      padding-bottom: $pad-jumbo
+    &__exchangeItem
+      width: 100%
+      margin-bottom: 16px
+      background-color: $white
+      +shadow-shallow()
+      &:nth-child(1)
+        order: 1
+      &:nth-child(2)
+        order: 2
+      &:nth-child(3)
+        order: 3
+      &:nth-child(4)
+        order: 4
+      figure
+        position: relative
+        img
+          position: absolute
+          top: 15px
+          left: 16px
+          width: 40px
+          height: 40px
+          margin-bottom: 0
+        figcaption
+          width: 100%
+          text-align: center
+          margin-left: 0
+    .btn
+      width: 100%
+    &__faq
+      padding-top: 0
