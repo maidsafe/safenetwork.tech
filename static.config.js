@@ -54,7 +54,7 @@ export default {
       },
       {
         path: '/fundamentals/',
-        component: 'src/containers/fundamentals'
+        component: `${pageDirPath}/Fundamentals`
       },
       {
         is404: true,

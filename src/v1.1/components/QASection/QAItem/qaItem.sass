@@ -8,7 +8,7 @@ $open-hspace-xxxs: $hspace-xxxs
   grid-column: 2/span 8
   margin-bottom: 32px
   &__question
-    height: 40px
+    min-height: 40px
     display: flex
     align-items: center
     padding-left: $hspace-default
@@ -33,6 +33,7 @@ $open-hspace-xxxs: $hspace-xxxs
       padding-bottom: 10px
       margin-bottom: 0
       color: $black
+      max-width: 100%
       &::after
         content: ''
         display: block
@@ -42,6 +43,8 @@ $open-hspace-xxxs: $hspace-xxxs
         position: absolute
         bottom: 0
         left: 0
+    .index
+      margin-right: $margin-fine
     &:hover, &:active
       p
         color: $pitch-black
