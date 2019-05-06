@@ -1,0 +1,46 @@
+@import '~styles/index'
+
+.ReleaseInto
+  padding-top: $pad-super-jumbo
+  &__wrap
+    +grid()
+  .overline,
+  &__title,
+  &__para
+    grid-column: 2/span 4
+  .overline
+    grid-row: 1
+    color: $spark-red
+  &__title
+    grid-row: 2
+  &__para
+    grid-row: 3
+    padding-bottom: $pad-chunky
+  &__media
+    grid-column: 7/span 3
+    grid-row: 1/4
+
+
++render-to($media-s)
+  .ReleaseInto
+    padding-top: $pad-jumbo
+    .overline,
+    &__title,
+    &__para,
+    &__media
+      grid-column: 2/span 6
+    &__para
+      padding-bottom: 0
+    &__media
+      grid-row: 4
+
++render-to($media-xs)
+  .ReleaseInto
+    &__wrap
+      +grid-small()
+    .overline,
+    &__title,
+    &__para,
+    &__media
+      grid-column: 1/span 6
+      +default-column()

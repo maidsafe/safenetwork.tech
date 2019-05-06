@@ -1,9 +1,10 @@
 import path from 'path'
 //
 import React from 'react'
-import axios from 'axios'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import CompressionPlugin from 'compression-webpack-plugin'
+
+const pageDirPath = 'src/v1.1/pages'
 
 export default {
   getSiteData: () => ({
@@ -21,7 +22,7 @@ export default {
       },
       {
         path: '/faq/',
-        component: 'src/v1.1/pages/FAQs',
+        component: `${pageDirPath}/FAQs`,
       },
       {
         path: '/safecoin/',
@@ -29,15 +30,15 @@ export default {
       },
       {
         path: '/get-involved/',
-        component: 'src/v1.1/pages/GetInvolved',
+        component: `${pageDirPath}/GetInvolved`,
       },
       {
-        path: '/timeline/',
-        component: 'src/containers/timeline',
+        path: '/roadmap/',
+        component: `${pageDirPath}/Roadmap`,
       },
       {
         path: '/press-kit/',
-        component: 'src/v1.1/pages/PressKit',
+        component: `${pageDirPath}/PressKit`,
       },
       {
         path: '/cookies/',

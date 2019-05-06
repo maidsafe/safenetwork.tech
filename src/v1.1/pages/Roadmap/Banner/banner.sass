@@ -1,0 +1,108 @@
+@import '~styles/index'
+
+.RoadmapBanner
+  &__wrap
+    +grid()
+  .pageBanner
+    grid-column: 1/span 10
+    grid-row: 1
+    &__title
+      grid-column: 2/span 5
+  &__content
+    grid-column: 2/span 4
+    grid-row: 2
+    padding-bottom: $pad-super-jumbo
+  &__update
+    grid-column: 7/span 4
+    grid-row: 1/span 2
+    align-self: end
+    background-color: $white
+    padding-top: $pad-small
+    padding-bottom: $pad-small
+    +shadow-shallow()
+    +default-column()
+  &__updateWrap
+    position: relative
+    .overline
+      color: $spark-red
+    .date
+      position: absolute
+      top: 0
+      right: 0
+      color: $caption-color
+
+// XLarge
++render-to($media-xl)
+  .RoadmapBanner
+    &__wrap
+      max-width: $max-width-xl
+    &__update
+      position: relative
+      box-shadow: none
+      &::after
+        content: ''
+        width: 1000%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background-color: $white
+        +shadow-shallow()
+    &__updateWrap
+      z-index: 1
+
+// Medium
++render-to($media-m)
+  .RoadmapBanner
+    &__wrap
+      .pageBanner
+        &__title
+          grid-column: 2/span 4
+    &__content
+      padding-bottom: $pad-chunky
+
+// Small
++render-to($media-s)
+  .RoadmapBanner
+    &__wrap
+      .pageBanner
+        &__title
+          grid-column: 2/span 8
+    &__content
+      grid-column: 2/span 8
+      padding-bottom: 0
+      grid-row: 2
+    &__update
+      +grid()
+      grid-column: 1/span 10
+      grid-row: 3
+      padding-left: 0
+      padding-right: 0
+      padding-bottom: $pad-chunky
+    &__updateWrap
+      grid-column: 2/span 8
+
+// XSmall
++render-to($media-xs)
+  .RoadmapBanner
+    &__wrap
+      +grid-small()
+    .pageBanner
+      grid-column: 1/span 6
+      &__title
+        grid-column: 1/span 6
+        +default-column()
+    &__content
+      grid-column: 1/span 6
+    &__content,
+    &__update,
+      +default-column()
+    &__update
+      display: block
+
+// XXSmall
++render-to($media-xxs)
+  .RoadmapBanner
+    &__update
+      padding-top: $pad-thin
+      padding-bottom: $pad-small

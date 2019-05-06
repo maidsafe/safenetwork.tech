@@ -9,10 +9,10 @@ const BG_COLOR = {
   SKY: 'sky'
 }
 const Accordion = props => {
-  const { children, bgColor } = props
+  const { children, bgColor, className } = props
 
   return (
-    <div className={classNames(baseClassName, {
+    <div className={classNames(baseClassName, className, {
       'bg-yellow': bgColor === BG_COLOR.YELLOW,
       'bg-sky': bgColor === BG_COLOR.SKY,
     })}>

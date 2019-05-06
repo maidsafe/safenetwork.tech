@@ -25,7 +25,16 @@ export const spinalCase = (str) => {
   if (!str) {
     return;
   }
-  return str.replace(/(?!^)([\s])/g, ' $1').replace(/[_\s]+(?=[a-zA-Z])/g, '-').toLowerCase()
+  var regex = /\s+|_+/g;
+
+  // Replace low-upper case to low-space-uppercase
+  str = str.replace(/([a-z])([A-Z])/g, '$1 $2');
+
+  // Replace space and underscore with dashes
+  return str
+    .replace(regex, '-')
+    .replace(/\W$/g, '')
+    .toLowerCase();
 };
 
 // Todo remove it after completing v1.1

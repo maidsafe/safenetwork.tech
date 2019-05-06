@@ -1,0 +1,17 @@
+@import '~styles/index'
+
+.Roadmap
+  background-color: $default-bg-color
+  &__subscibe
+    +grid()
+  &__subscibeBg
+    grid-column: 1/span 6
+    grid-row: 1/span 1
+    background-color: $acid-yellow
+
+// XLarge
++render-to($media-xl)
+  .Roadmap
+    overflow-x: hidden
+    &__wrap
+      // max-width: $max-width-xl

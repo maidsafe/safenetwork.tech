@@ -5,8 +5,7 @@ import classNames from 'classnames'
 import './underlinedLink.sass'
 
 const THEME = {
-  RED: 'red',
-  YELLOW: 'yellow',
+  MINOR: 'minor',
 }
 
 const UnderlinedLink = props => {
@@ -14,8 +13,7 @@ const UnderlinedLink = props => {
 
   return (
     <Link className={classNames('underlinedLink', {
-      [THEME.RED]: theme === THEME.RED,
-      [THEME.YELLOW]: theme === THEME.YELLOW
+      [THEME.MINOR]: theme === THEME.MINOR,
     })} to={url}>{children}</Link>
   )
 }

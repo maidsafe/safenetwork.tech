@@ -42,7 +42,7 @@ const AccordionItem = props => {
             {
               ctaLink ? (
                 <div className={cn('ctaLink')}>
-                  <UnderlinedLink url={ctaLink.url}>{ctaLink.name}</UnderlinedLink>
+                  <UnderlinedLink url={ctaLink.url} theme="minor">{ctaLink.name}</UnderlinedLink>
                 </div>
               ) : null
             }

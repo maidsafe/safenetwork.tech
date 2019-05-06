@@ -1,13 +1,14 @@
-@import '~styles/variables'
-@import '~styles/mixins'
-@import '~styles/fonts'
-@import '~styles/colors'
+@import '~styles/index'
 
 .siteLogo
   &__wrap
     display: grid
     grid-template-columns: 1fr 1fr 1fr
     +clearfix()
+    &:hover
+      opacity: 0.85
+    &:active
+      opacity: 1
   &__media
     grid-column: 1/ span 1
     height: 38px

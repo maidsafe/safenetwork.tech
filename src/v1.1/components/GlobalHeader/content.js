@@ -10,8 +10,8 @@ export default {
       link: "/safecoin/"
     },
     {
-      name: "Timeline",
-      link: "/timeline/"
+      name: "Roadmap",
+      link: "/roadmap/"
     },
     {
       name: "Fundamentals",

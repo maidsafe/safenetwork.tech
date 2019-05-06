@@ -1,6 +1,4 @@
-@import '~styles/variables'
-@import '~styles/mixins'
-@import '~styles/fonts'
+@import '~styles/index'
 
 .footerSocial
   &__wrap
@@ -29,20 +27,52 @@
       font-weight: normal
   &__twitter
     background-image: url($footer-twitter-icon)
+    &:hover
+      background-image: url($footer-twitter-hover-icon)
+    &:active
+      background-image: url($footer-twitter-active-icon)
   &__facebook
     background-image: url($footer-facebook-icon)
+    &:hover
+      background-image: url($footer-facebook-hover-icon)
+    &:active
+      background-image: url($footer-facebook-active-icon)
   &__medium
     background-image: url($footer-medium-icon)
+    &:hover
+      background-image: url($footer-medium-hover-icon)
+    &:active
+      background-image: url($footer-medium-active-icon)
   &__youtube
     background-image: url($footer-youtube-icon)
+    &:hover
+      background-image: url($footer-youtube-hover-icon)
+    &:active
+      background-image: url($footer-youtube-active-icon)
   &__reddit
     background-image: url($footer-reddit-icon)
+    &:hover
+      background-image: url($footer-reddit-hover-icon)
+    &:active
+      background-image: url($footer-reddit-active-icon)
   &__telegram
     background-image: url($footer-telegram-icon)
+    &:hover
+      background-image: url($footer-telegram-hover-icon)
+    &:active
+      background-image: url($footer-telegram-active-icon)
   &__riot
     background-image: url($footer-riot-icon)
+    &:hover
+      background-image: url($footer-riot-hover-icon)
+    &:active
+      background-image: url($footer-riot-active-icon)
   &__github
     background-image: url($footer-github-icon)
+    &:hover
+      background-image: url($footer-github-hover-icon)
+    &:active
+      background-image: url($footer-github-active-icon)
 
 // Small
 +render-to($media-s)

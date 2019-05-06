@@ -1,7 +1,7 @@
 const pages = {
   home: '/',
   hiw: '/how-it-works/',
-  timeline: '/timeline/',
+  timeline: '/roadmap/', // Fix for travis
   safecoins: '/safecoin/',
   fundamentals: '/fundamentals/',
   faq: '/faq/',

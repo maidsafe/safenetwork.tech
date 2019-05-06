@@ -40,16 +40,39 @@
 =shadow-deep()
   box-shadow: 0px 28px 50px rgba(0, 0, 0, 0.1), 0px 7px 18px rgba(0, 0, 0, 0.08)
 
-=cta-underline()
+=shadow-pressed()
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08)
+
+%underlineLink
   +font-1()
   font-size: 20px
   line-height: 25px
-  font-weight: bold
-  font-style: normal
-  color: $black
-  &::after
+  display: inline-block
+  +render-to($media-xs)
+    font-size: 18px
+    line-height: 23px
+  &:link, &:visited
+    color: $black
+  &:after, &:visited:after
     content: ''
     display: block
     height: 2px
+    width: 100%
+    background-color: rgba(0, 0, 0, 0.1)
+    padding-right: 1px
     background-color: $spark-red
-    margin-top: 4px
+  &:hover:after
+    background-color: $link-undeline-bg-color
+  &:active:after
+    background-color: $acid-yellow
+  &.minor
+    &:after
+      background-color: $link-undeline-bg-color
+    &:hover:after
+      background-color: $spark-red
+    &:active:after
+      background-color: $acid-yellow
+
+=cta-underline()
+  a
+    @extend %underlineLink
