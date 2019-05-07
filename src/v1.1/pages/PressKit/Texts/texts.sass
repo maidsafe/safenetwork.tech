@@ -4,13 +4,12 @@
 .pressKitTexts
   &__wrap
     +grid()
-    padding-bottom: 188px
+    padding-bottom: $pad-super-jumbo
   &__item
     z-index: 2
-    .textSnippet__para
-      p:last-child
-        padding-bottom: 0
+    position: relative
     .container
+      width: 100%
       height: 100%
       position: relative
     .copyButton
@@ -24,27 +23,23 @@
   .projectAim,
   .aboutSafecoin
     +default-column()
-    padding-bottom: 72px
-    .textSnippet
-      &:after
-        content: ''
-        display: block
+    padding-top: $pad-medium
+    padding-bottom: $pad-medium
+    .textSnippet__wrap:after
+      content: ''
+      display: block
   .intro
     grid-column: 2 /span 8
     grid-row: 1
     min-height: 353px
-    .textSnippet
-      padding-top: 70px
-      &:after
-        min-height: 107px
+    .textSnippet__wrap:after
+      min-height: 60px
   .projectAim,
   .aboutSafecoin
     grid-row: 2
     min-height: 377px
-    .textSnippet
-      padding-top: 67px
-      &:after
-        min-height: 92px
+    .textSnippet__wrap:after
+      min-height: 60px
   .projectAim
     grid-column: 2 /span 4
     background-color: $acid-yellow
@@ -53,10 +48,10 @@
     background-color: $pinky-grey
   .pressFreedom
     grid-column: 2 /span 4
-    padding-top: 55px
+    padding-top: $pad-super-jumbo
   .revenueStream
     grid-column: 7 /span 3
-    padding-top: 228px
+    padding-top: $pad-super-jumbo + $pad-medium
   .pressFreedom,
   .revenueStream
     grid-row: 3
@@ -75,7 +70,7 @@
 +render-to($media-l)
   .pressKitTexts
     &__wrap
-      padding-bottom: 157px
+      padding-bottom: $pad-super-jumbo
     .intro,
     .aboutSafecoin
       height: 380px
@@ -99,10 +94,9 @@
         max-width: 560px
     .pressFreedom
       grid-row: 2
-      padding-top: 50px
     .revenueStream
       grid-row: 3
-      padding-top: 60px
+      padding-top: 0
     &__shadow
       grid-column: 2 /span 5
       grid-row: 1
@@ -133,7 +127,7 @@
     .aboutSafecoin::after
       background-color: rgba($pinky-grey, 0.6)
     .pressFreedom
-      padding-top: 10px
+      padding-top: $pad-jumbo
     .pressFreedom,
     .revenueStream
       .textSnippet__wrap
@@ -143,7 +137,7 @@
 +render-to($media-s)
   .pressKitTexts
     &__wrap
-      padding-bottom: 125px
+      padding-bottom: $pad-jumbo
     &__shadow
       grid-column: 2/ span 8
       box-sizing: content-box
@@ -155,13 +149,12 @@
     .projectAim,
     .aboutSafecoin
       min-height: 400px
-      .textSnippet__para
-        max-width: 400px
     .intro
       grid-column: 2 /span 8
       min-height: 337px
     .projectAim
       grid-column: 2/ span 4
+      padding-right: $pad-small * 2
     .aboutSafecoin
       grid-column: 6/ span 4
       margin-left: 0
@@ -172,13 +165,13 @@
       grid-row: 3
     .revenueStream
       grid-row: 4
-      padding-top: 95px
+      padding-top: 0
 
 +render-to($media-xs)
   .pressKitTexts
     &__wrap
       +grid-small()
-      padding-bottom: 120px
+      padding-bottom: $pad-small
     &__shadow
       grid-column: 1/ span 6
       margin: 0
@@ -190,13 +183,18 @@
       grid-row: 1
       min-height: 335px
       margin: 0
+      .textSnippet__wrap:after
+        min-height: 40px
     .projectAim,
     .aboutSafecoin
       height: 410
       grid-row: 2
       margin: 0
+      .textSnippet__wrap:after
+        min-height: 40px
     .projectAim
       grid-column: 1 /span 3
+      +default-column()
     .aboutSafecoin
       grid-column: 4 /span 6
     .pressFreedom,
@@ -205,10 +203,9 @@
       margin: 0
     .pressFreedom
       grid-row: 3
-      padding-top: 10px
+      padding-top: $pad-jumbo
     .revenueStream
       grid-row: 4
-      padding-top: 64px
 
 +render-to($media-xxs)
   .pressKitTexts
@@ -222,13 +219,10 @@
     .aboutSafecoin
       min-height: auto
       grid-column: 1 /span 6
-      padding-bottom: 48px
-      .textSnippet
-        padding-top: 40px
-        &:after
-          display: none
-      .textSnippet__para
-        padding-bottom: 40px
+      padding-top: $pad-small
+      padding-bottom: $pad-small
+      .textSnippet__wrap:after
+        display: none
     .projectAim
       grid-row: 2
     .aboutSafecoin
@@ -238,15 +232,17 @@
       grid-column: 1 /span 6
     .pressFreedom
       grid-row: 4
-      padding-top: 0
+      padding-top: $pad-jumbo
     .revenueStream
       grid-row: 5
-      padding-top: 68px
+      padding-top: $pad-thin
 
 +render-to($media-xxxs)
   .pressKitTexts
     &__wrap
-      padding-bottom: 98px
+      padding-bottom: $pad-thin
+    .pressFreedom
+      padding-top: $pad-chunky
     .revenueStream
-      padding-top: 60px
+      padding-top: $pad-thin
 

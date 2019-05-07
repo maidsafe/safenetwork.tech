@@ -4,7 +4,7 @@
 .pressKitDownloads
   &__title
     +grid()
-    padding-top: 80px
+    padding-top: $pad-super-jumbo
     h2
       grid-column: 2/ span 2
 
@@ -12,33 +12,32 @@
 +render-to($media-l)
   .pressKitDownloads
     &__wrap
-      padding-bottom: 55px
+      padding-bottom: $pad-thin
     &__title
-      padding-top: 100px
+      padding-top: $pad-super-jumbo
 
 // XLarge
 +render-to($media-xl)
   .pressKitDownloads
     &__wrap
       max-width: $max-width-xl
-    &__title
-      padding-top: 110px
 
 // Small
 +render-to($media-s)
   .pressKitDownloads
     &__wrap
-      padding-bottom: 30px
+      padding-bottom: $pad-small
     &__title
-      padding-top: 40px
+      padding-top: $pad-super-jumbo
 
 // XSmall
 +render-to($media-xs)
   .pressKitDownloads
     &__wrap
-      padding-bottom: 54px
+      padding-bottom: $pad-chunky
     &__title
       +grid-small()
+      padding-top: $pad-jumbo
       h2
         grid-column: 1/ span 6
         padding-left: $hspace-xs
@@ -47,13 +46,14 @@
 +render-to($media-xxs)
   .pressKitDownloads
     &__title
-      padding-top: 0
+      padding-top: $pad-medium
       h2
         padding-left: $hspace-xxs
-        margin-top: 75px
 
 +render-to($media-xxxs)
   .pressKitDownloads
+    &__wrap
+      padding-bottom: $pad-thin
     &__title
       h2
         padding-left: $hspace-xxxs

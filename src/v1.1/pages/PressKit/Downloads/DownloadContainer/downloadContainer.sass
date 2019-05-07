@@ -2,7 +2,7 @@
 
 .downloadContainer
   +grid()
-  padding-bottom: 160px
+  padding-bottom: $pad-super-jumbo
   &__context
     grid-column: 2 / span 3
     .textSnippet__para
@@ -14,7 +14,7 @@
 // Large
 +render-to($media-l)
   .downloadContainer
-    padding-bottom: 135px
+    padding-bottom: $pad-jumbo
     &__context
       grid-column: 2 / span 3
     &__downloads
@@ -23,36 +23,37 @@
 // Small
 +render-to($media-s)
   .downloadContainer
-    padding-bottom: 130px
+    padding-bottom: $pad-jumbo
     &__context
       .textSnippet__para
         max-width: 100%
+        padding-right: 0
     &__context,
     &__downloads
       grid-column: 2/ span 8
     &__downloads
-      padding-top: 40px
+      padding-top: $pad-thin
       grid-row: 2
 
 // XSmall
 +render-to($media-xs)
   .downloadContainer
     +grid-small()
-    padding-bottom: 90px
+    padding-bottom: $pad-chunky
     &__context,
     &__downloads
       grid-column: 1/ span 6
       +default-column()
     &__downloads
-      padding-top: 30px
+      padding-top: $pad-thin
 
 // XXSmall
 +render-to($media-xxs)
   .downloadContainer
-    padding-bottom: 80px
+    padding-bottom: $pad-chunky
     &__downloads
       padding-top: 0
 
 +render-to($media-xxxs)
   .downloadContainer
-    padding-bottom: 50px
+    padding-bottom: $pad-small

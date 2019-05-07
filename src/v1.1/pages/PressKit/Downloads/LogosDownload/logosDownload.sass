@@ -5,17 +5,26 @@
   &__credit
     width: 100%
     float: left
-    margin-top: -20px
+    margin-top: -$margin-fine
     max-width: 720px
     .creditPara
       +font-3()
-      line-height: 26px
       font-size: 18px
-      color: #828282
-      p:last-child
-        padding-bottom: 0
+      line-height: 26px
+      color: $download-caption-color
+      p
+        &:last-child
+          margin-bottom: 0
+        a
+          &:link,
+          &:visited,
+          &:hover,
+          &:active
+            color: $download-caption-color !important
+          &:after
+            background-color: rgba($download-caption-color, 0.2) !important
     .creditLogo
-      margin-top: 30px
+      margin-top: $margin-fine
     +render-to($media-l)
       max-width: 630px
     +render-to($media-s)
@@ -25,3 +34,5 @@
     +render-to($media-xxs)
       font-size: 16px
       line-height: 23px
+      margin-top: 0
+
