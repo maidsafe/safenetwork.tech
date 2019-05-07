@@ -1,0 +1,130 @@
+@import '~styles/index'
+
+.HowItWorks
+  background-color: $default-bg-color
+  overflow: hidden
+  &__topics
+    padding: $pad-jumbo 0 $pad-super-jumbo
+  &__aside1,
+  &__aside2
+    grid-column: 8/span 3
+    grid-row: 1
+    align-self: end
+    +default-column()
+    padding-top: $pad-chunky
+    padding-bottom: $pad-small
+    margin-left: $hspace-l
+    +shadow-deep()
+  &__aside1
+    background-color: $white
+    position: relative
+    transform: translate(0, 50%)
+    .desc
+      margin-bottom: $margin-fine
+    .fig
+      position: absolute
+      bottom: 100%
+      left: 0
+      width: 530px
+      height: 320px
+      transform: translate($hspace-l, $hspace-l)
+      img
+        height: 100%
+  &__aside2
+    background-color: $acid-yellow
+    transform: translate(0, -120px)
+
++render-to($media-l)
+  .HowItWorks
+    &__wrap
+      max-width: $max-width-xl
+    &__aside1,
+    &__aside2
+      grid-column: 8/span 2
+      margin-left: -$hspace-l
+    &__aside1
+      .fig
+        width: 612px
+        height: 360px
+        transform: translate($hspace-l, 24px)
+
++render-to($media-m)
+  .HowItWorks
+    &__topics
+      padding-top: $pad-small
+    &__aside1,
+    &__aside2
+      margin-left: 0
+      transform: translate(0, 40px)
+
++render-to($media-s)
+  .HowItWorks
+    &__aside1,
+    &__aside2
+      grid-row: 2
+      grid-column: 7/span 4
+    &__aside1
+      transform: translate(0, 50%)
+    &__aside2
+      transform: translate(0, 50%)
+
++render-to($media-xs)
+  .HowItWorks
+    &__aside1
+      grid-column: 1/span 6
+      grid-row: 3
+      transform: translate(0, 0)
+    &__topics
+      padding-top: $pad-medium
+      padding-bottom: $pad-jumbo
+    &__aside1
+      padding-top: $pad-small
+      margin-bottom: $margin-chunky
+      .desc
+        max-width: 300px
+      .fig
+        width: 550px
+        height: 320px
+        bottom: -56px
+        left: 100%
+        transform: translate(-80%, 0)
+    &__aside2
+      grid-column: 4/span 3
+      transform: translate(0, -150px)
+      +default-column()
+
++render-to($media-xxs)
+  .HowItWorks
+    &__aside2
+      grid-column: 1/span 6
+      grid-row: 3
+      transform: translate(0, 0)
+      margin: 0 $hspace-xxs $margin-small
+      padding-top: $pad-small
+    &__aside1
+      margin-top: $margin-jumbo
+      margin-bottom: $margin-thin
+      .fig
+        width: 480px
+        height: 280px
+        left: 60%
+        transform: translate(0, 0)
+        bottom: -20px
+
++render-to($media-xxxs)
+  .HowItWorks
+    &__aside1
+      padding-top: $pad-chunky
+      margin-bottom: 0
+      .desc
+        max-width: 100%
+      .fig
+        width: 336px
+        height: 200px
+        bottom: 100%
+        left: 50%
+        transform: translate(-50%, 56px)
+      .btn
+        width: 100%
+    &__aside2
+      margin: 0 $hspace-xxxs $margin-small
