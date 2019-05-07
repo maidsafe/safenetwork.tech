@@ -35,14 +35,12 @@
         background-color: $spark-red
       &:active:after
         background-color: $link-undeline-bg-color
-  &__texture1
+  &__video1
     grid-column: 1/span 6
     grid-row: 1/span 2
     align-self: start
     height: 700px
     margin-right: -$hspace-l
-    background-image: url($texture-9)
-    background-size: contain
     z-index: 0
   &__texture2
     grid-column: 7/span 4
@@ -54,6 +52,16 @@
     background-size: cover
     z-index: 0
     transform: translate(0, 100%)
+
++render-to($media-xl)
+  .HIWBanner
+    &__title
+      .pageBanner__title
+        grid-column: 2/span 5
+    &__video1
+      video
+        height: auto !important
+        width: 100%
 
 +render-to($media-m)
   .HIWBanner
@@ -69,7 +77,7 @@
       margin-left: 0
       background-color: $default-bg-color
       padding-top: $pad-medium
-    &__texture1
+    &__video1
       grid-column: 1/span 8
       margin-right: 0
     &__texture2
@@ -81,8 +89,10 @@
     &__title
       .pageBanner__title
         grid-column: 2/span 9
-    &__texture1
+    &__video1
       grid-column: 1/span 10
+      video
+        height: 800px !important
     &__aside
       align-self: auto
 
@@ -97,8 +107,10 @@
     &__texture1,
     &__aside
       grid-column: 1/span 6
-    &__texture1
+    &__video1
       height: 535px
+      video
+        height: 600px !important
     &__aside
       margin-left: $hspace-xs
     &__topics
@@ -115,8 +127,10 @@
       margin-left: $hspace-xxs
       .introText p
         margin-bottom: $margin-thin
-    &__texture1
+    &__video1
       height: 440px
+      video
+        height: 450px !important
     &__texture2
       height: 8px
 

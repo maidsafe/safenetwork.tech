@@ -3,7 +3,9 @@ import classNames from 'classnames'
 
 import PageBanner from 'components/PageBanner'
 import UnderlinedLink from 'components/UnderlinedLink'
+import BGVideo from '../BGVideo'
 import { prefixClassName, genRandomKey, spinalCase } from 'src/utils'
+import murmuration from 'src/assets/videos/murmuration.mp4'
 
 import './banner.sass'
 
@@ -35,7 +37,9 @@ const Banner = props => {
             ))
           }
         </div>
-        <div className={cn('texture1')}></div>
+        <div className={cn('video1')}>
+          <BGVideo src={murmuration} height={'700px'} />
+        </div>
         <div className={cn('texture2')}></div>
       </div>
     </div>
