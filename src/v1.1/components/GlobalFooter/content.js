@@ -91,7 +91,7 @@ export default {
         'url': '/privacy'
       },
       {
-        'name': 'Terms',
+        'name': 'Cookie Policy',
         'url': '/cookies'
       },
       {
