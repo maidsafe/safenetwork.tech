@@ -30,5 +30,10 @@ export default {
       ios: 'https://github.com/maidsafe/safe_browser/releases/latest',
       others: 'https://github.com/maidsafe/safe_browser/releases/latest',
     }
+  },
+  pressKitMedia: {
+    techCrunch: 'https://techcrunch.com/2018/06/02/not-just-another-decentralized-web-whitepaper/',
+    theGuardian: 'https://www.theguardian.com/technology/2018/feb/01/punk-rock-internet-diy-rebels-working-replace-tech-giants-snoopers-charter',
+    spectrum: 'https://spectrum.ieee.org/view-from-the-valley/telecom/internet/where-is-hbo-silicon-valleys-real-pied-piper-look-in-troon-scotland'
   }
 }
