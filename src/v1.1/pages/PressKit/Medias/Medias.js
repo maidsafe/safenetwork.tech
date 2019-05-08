@@ -22,7 +22,6 @@ const Medias = props => {
         }
         <div className="mediaLogos">{' '}</div>
         <div className="interviewReq__bg">{' '}</div>
-        <div className="techCrunch__bg">{' '}</div>
       </div>
     </div>
   )

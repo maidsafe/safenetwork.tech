@@ -1,5 +1,12 @@
 @import '~styles/index'
 
+$theGuardian-hover: #004999
+$techCrunch-hover: #03CF0E
+$spectrum-hover: #94FFF5
+$theGuardian-pressed: $pitch-black
+$techCrunch-pressed: $pitch-black
+$spectrum-pressed: $white
+
 .pressKitMedias
   &__wrap
     +grid()
@@ -9,9 +16,6 @@
     background-color: $white
     +shadow-deep()
     z-index: 0
-  .techCrunch__bg
-    display: none
-    background: $tech-crunch-gradiant
   .interviewRequest
     grid-column: 2 /span 4
     grid-row: 1
@@ -35,6 +39,10 @@
     height: 390px
     align-self: flex-end
     background: $tech-crunch-gradiant
+    &:hover
+      background: $techCrunch-hover !important
+    &:active
+      background: $techCrunch-pressed !important
   .theGuardian,
   .spectrum,
   .mediaLogos
@@ -43,9 +51,17 @@
   .theGuardian
     grid-column: 7/ span 4
     background-color: $deep-blue
+    &:hover
+      background-color: $theGuardian-hover
+    &:active
+      background-color: $theGuardian-pressed
   .spectrum
     grid-column: 4/ span 3
     background-color: $zingy-sky
+    &:hover
+      background-color: $spectrum-hover
+    &:active
+      background-color: $spectrum-pressed
   .mediaLogos
     grid-column: 1/span 3
     background-color: $pinky-grey
@@ -58,10 +74,6 @@
   .pressKitMedias
     .interviewReq__bg
       grid-column: 1/ span 5
-    .techCrunch__bg
-      display: block
-      grid-column: 1/span 5
-      grid-row: 2
     .interviewRequest,
     .theGuardian
       height: 430px
@@ -75,10 +87,13 @@
       height: 380px
       grid-row: 2
     .techCrunch
-      grid-column: 2/ span 3
+      grid-column: 1/ span 5
       padding-left: 0
       padding-right: 0
-      background: none
+      display: grid
+      grid-template-columns: repeat(5, 1fr)
+      .mediaSnippet__wrap
+        grid-column: 2/span 3
       .mediaSnippet__para
         max-width: 100%
     .spectrum
