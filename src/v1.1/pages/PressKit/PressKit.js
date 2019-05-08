@@ -54,17 +54,20 @@ const PressKit = () => {
     id: 'techCrunch',
     content: content.techCrunch,
     imgSrc: TechCrunch,
-    imgTitle: 'Tech Crunch'
+    imgTitle: 'Tech Crunch',
+    url: CONSTANT.pressKitMedia.techCrunch
   }, {
     id: 'theGuardian',
     content: content.theGuardian,
     imgSrc: TheGuardian,
-    imgTitle: 'The Guardian'
+    imgTitle: 'The Guardian',
+    url: CONSTANT.pressKitMedia.theGuardian
   }, {
     id: 'spectrum',
     content: content.spectrum,
     imgSrc: Spectrum,
-    imgTitle: 'Spectrum'
+    imgTitle: 'Spectrum',
+    url: CONSTANT.pressKitMedia.spectrum
   }]
 
   const assetLogos = [
