@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 
 import PageBanner from 'components/PageBanner'
-import { prefixClassName } from 'src/utils'
+import { prefixClassName, parseMDText } from 'src/utils'
 import content from './content'
 
 import './notFound.sass'
@@ -19,7 +19,7 @@ const NotFound = () => {
           <PageBanner title={title} />
         </div>
         <div className={classNames(cn('desc'), 'introText')}>
-          <p>{desc}</p>
+          <p>{parseMDText(desc)}</p>
         </div>
       </div>
     </section>

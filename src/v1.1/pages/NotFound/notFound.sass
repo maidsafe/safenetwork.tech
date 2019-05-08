@@ -15,10 +15,11 @@
     max-width: $max-width-xl
 
 +render-to($media-xs)
-  .Fundamentals
+  .NotFound
     &__wrap
       +grid-small()
     &__banner
       grid-column: 1/span 6
-    &__safecoin
+    &__desc
       grid-column: 1/span 6
+      +default-column()
