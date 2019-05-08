@@ -42,11 +42,11 @@ export default {
       },
       {
         path: '/cookies/',
-        component: 'src/containers/cookies',
+        component: `${pageDirPath}/Cookies`,
       },
       {
         path: '/privacy/',
-        component: 'src/containers/privacy',
+        component: `${pageDirPath}/Privacy`,
       },
       {
         path: '/about-maidsafe/',
