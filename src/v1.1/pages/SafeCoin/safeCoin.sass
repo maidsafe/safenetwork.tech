@@ -5,10 +5,44 @@
     max-width: $max-width-xl
   &__textBlocks
     +grid()
-    padding-top: $pad-super-jumbo
+  &__video
+    grid-column: 7/span 4
+    grid-row: 1
+    align-self: start
+    margin-top: -170px
+    padding-right: $hspace-l
+    video
+      width: 100%
+    figure
+      position: relative
+      figcaption
+        +font-1()
+        font-size: 18px
+        font-weight: 600
+        line-height: 23px
+        letter-spacing: -0.02em
+        position: absolute
+        bottom: 100%
+        left: 0
+        margin-bottom: $margin-fine
+        padding-left: $pad-small
+        color: $white
+        opacity: 1
+        &::before
+          content: ''
+          width: 30px
+          height: 30px
+          background-image: url($arrow-down-yellow-icon)
+          background-size: 20px
+          background-position: center
+          background-repeat: no-repeat
+          position: absolute
+          top: 0
+          left: 0
   &__textBlock1
     grid-column: 2/span 4
     grid-row: 1
+    padding-top: $pad-super-jumbo
     padding-bottom: $pad-fine
   &__textBlock2
     grid-column: 2/span 4
@@ -17,7 +51,7 @@
   &__textBlock3
     grid-column: 7/span 3
     grid-row: 1
-    padding-top: $pad-jumbo
+    padding-top: $pad-super-jumbo + $pad-jumbo
   &__textBlock4
     grid-column: 7/span 3
     grid-row: 2
@@ -51,17 +85,11 @@
   &__more
     grid-column: 2/span 8
     margin-top: $margin-small
-  &__texture1,
-  &__texture2
+  &__texture1
     height: 12px
     background-image: url($texture-10)
     background-size: cover
   &__texture1
-    grid-column: 1/span 6
-    grid-row: 1
-    align-self: start
-    transform: translate(0, -161px)
-  &__texture2
     grid-column: 6/span 5
     grid-row: 2
     align-self: end
@@ -75,6 +103,8 @@
     grid-row: 3
     margin-top: -160px
     padding-top: 160px
+    margin-right: -$hspace-l
+    padding-right: $hspace-l
     background-color: $white
     +shadow-deep()
     position: relative
@@ -92,11 +122,13 @@
   &__exchange
     display: flex
     flex-wrap: wrap
+    max-width: 600px
   &__exchangeItem
     width: 25%
     margin-bottom: $margin-thin
     figure
       text-align: center
+      +clearfix()
       a
         display: block
         width: 100%
@@ -109,7 +141,8 @@
         +font-1()
         font-size: 18px
         font-weight: 600
-        line-height: 20px
+        line-height: 23px
+        letter-spacing: -0.02em
         color: $black
 
 +render-to($media-m)
@@ -117,7 +150,7 @@
     &__textBlock1
       padding-bottom: $pad-jumbo
     &__textBlock3
-      padding-top: $pad-super-jumbo
+      padding-top: $pad-super-jumbo * 2
     &__textBlock4
       padding-top: $pad-chunky
       padding-bottom: $pad-super-jumbo + $pad-jumbo
@@ -132,6 +165,8 @@
       figcaption
         float: left
       figure
+        img
+          margin-bottom: 0
         figcaption
           margin-left: $margin-fine
           line-height: 70px
@@ -144,88 +179,98 @@
 
 +render-to($media-s)
   .SafeCoin
-    &__textBlocks
-      padding-top: 440px
+    &__video
+      grid-column: 2/span 6
+      grid-row: 1
+      margin-top: -56px
+      padding-right: 0
     &__textBlock1
+      grid-column: 2/span 6
+      padding-top: $pad-jumbo
       padding-bottom: $pad-small
+      grid-row: 2
     &__textBlock2
-      padding-bottom: $pad-jumbo
-    &__textBlock3,
-    &__textBlock4
-      padding-top: 0
+      grid-column: 2/span 6
+      padding-bottom: 0
       grid-row: 3
     &__textBlock3
       grid-column: 2/span 4
+      grid-row: 4
+      padding-top: $pad-jumbo
       padding-right: $hspace-s
     &__textBlock4
       grid-column: 6/span 4
+      grid-row: 4
+      padding-top: $pad-jumbo
       padding-left: $hspace-s
       padding-bottom: 0
     &__bgDark
-      grid-row: 5/span 2
-    &__texture2
-      grid-row: 3
+      grid-row: 6/span 2
+    &__texture1
+      grid-row: 4
       grid-column: 1/span 5
       margin-right: $hspace-s
     &__textBlock5
       grid-column: 2/span 8
-      grid-row: 4
+      grid-row: 5
       padding-top: $pad-medium
       padding-bottom: $pad-medium
       margin-top: $margin-chunky
     &__buySafeCoinBg
       grid-column: 1/span 10
-      grid-row: 4
+      grid-row: 5
       margin-top: $margin-chunky
+      margin-right: 0
+      padding-right: 0
       padding: 0
       &::after
         height: 20px
     &__textBlock6
       grid-column: 2/span 10
-      grid-row: 5
+      grid-row: 6
       .textSnippet
         width: 50%
-        max-width: 460px
-        margin-right: $hspace-s
+        padding-right: $hspace-s
         float: left
     &__exchange
       width: 50%
       float: left
     &__faq
-      grid-row: 6
+      grid-row: 7
       padding-top: $pad-small
-    &__texture1
-      grid-column: 8/span 3
-      transform: translate(0, -441px)
 
 +render-to($media-xs)
   .SafeCoin
     &__textBlocks
       +grid-small()
+    &__video,
     &__textBlock1,
     &__textBlock2,
     &__textBlock3,
     &__textBlock4
       grid-column: 1/span 6
       +default-column()
-    &__textBlock1,
+    &__textBlock1
+      padding-bottom: $pad-thin
     &__textBlock2
       padding-bottom: $pad-jumbo
     &__textBlock4,
-    &__texture2
+    &__texture1
       grid-row: 4
     &__textBlock3
-      padding-bottom: $pad-thin
+      padding-bottom: $pad-chunky
+      padding-top: 0
+      grid-row: 4
     &__textBlock4
-      padding-bottom: $pad-jumbo
+      padding-top: 0
+      padding-bottom: $pad-super-jumbo
+      grid-row: 5
     &__textBlock5,
     &__buySafeCoinBg
-      grid-row: 5
+      grid-row: 6
     &__texture1
-      grid-column: 1/span 1
-      width: $hspace-xs
-    &__texture2
       grid-column: 3/span 4
+      grid-row: 5
       margin-right: 0
       z-index: 3
     &__textBlock5
@@ -237,44 +282,63 @@
       margin-top: 0
     &__textBlock6
       grid-column: 1/span 6
-      grid-row: 6
+      grid-row: 7
+      padding-top: $pad-chunky
       +default-column()
       .textSnippet
         width: 100%
         float: none
         max-width: 100%
     &__faq
-      grid-row: 7
+      grid-row: 8
     &__exchange
       width: 100%
       float: none
-      justify-content: space-between
     &__exchangeItem
       width: auto
       margin-bottom: 0
+      margin-right: $margin-small
       &:nth-child(n+1)
         order: 1
       figure
+        img
+          margin-bottom: $margin-fine
         img,
         figcaption
           float: none
           margin-left: 0
+          line-height: normal
     &__bgDark
-      grid-row: 6/span 2
+      grid-row: 7/span 2
+    &__more
+      margin-top: $margin-fine
 
 +render-to($media-xxs)
   .SafeCoin
-    &__textBlocks
-      padding-top: 270px
-    &__texture1
-      transform: translate(0, -271px)
+    &__video
+      margin-top: -$margin-chunky
+      figure
+        figcaption
+          +font-3()
+          font-size: 16px
+          line-height: 30px
+          letter-spacing: normal
+          bottom: auto
+          top: 100%
+          color: rgba($body-text, 0.8)
+          margin-bottom: 0
+          margin-top: $margin-fine
+          font-weight: normal
+          &::before
+            background-image: url($arrow-down-grey-icon)
+            transform: rotate(180deg)
     &__textBlock1,
     &__textBlock3
       padding-bottom: $pad-fine
     &__textBlock2
       padding-bottom: $pad-small
     &__textBlock4
-      padding-bottom: $pad-super-jumbo
+      padding-bottom: $pad-jumbo
     &__textBlock5
       padding-top: $pad-small
       padding-bottom: $pad-fine
@@ -282,19 +346,16 @@
       padding-top: $pad-chunky
     &__exchangeItem
       width: 50%
+      margin-right: 0
+      margin-bottom: $margin-thin
       figure
         img
           float: left
+          margin-bottom: 0
         figcaption
           float: left
           margin-left: $margin-fine
           line-height: 70px
-      &:nth-child(2)
-        order: 3
-      &:nth-child(3)
-        order: 3
-      &:nth-child(4)
-        order: 1
     &__faq
       padding-top: $pad-fine
     &__more
@@ -302,9 +363,9 @@
 
 +render-to($media-xxxs)
   .SafeCoin
+    &__video
+      margin-top: -$margin-medium
     &__texture1
-      width: $hspace-xxxs
-    &__texture2
       grid-column: 4/span 3
     &__textBlock4
       padding-bottom: $pad-jumbo

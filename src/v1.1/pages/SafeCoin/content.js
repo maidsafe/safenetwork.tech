@@ -2,10 +2,10 @@ export default {
   banner: {
     title: 'Welcome to the New\n Digital Economy',
     desc: 'Safecoin is at the core of the Network. It’s money that lets you store data and rewards you when you contribute. Only with instant transactions, unlimited scaling—and no fees.',
-    video: {
-      url: '/',
-      caption: 'Safecoin: The Currency for Security and Privacy',
-    },
+  },
+  video: {
+    url: '/',
+    caption: 'Safecoin: The Currency for Security and Privacy',
   },
   textBlock1: {
     title: 'Share resources, get paid',
@@ -66,10 +66,6 @@ export default {
     {
       name: 'HitBTC',
       url: 'https://hitbtc.com/MAID-to-BTC'
-    },
-    {
-      name: 'Openledger',
-      url: 'https://openledger.io/market/MAID_BTC'
     },
     {
       name: 'Bitker',

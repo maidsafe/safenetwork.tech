@@ -37,7 +37,8 @@ const SafeCoin = () => {
     textBlock5,
     textBlock6,
     exchanges,
-    faqs
+    faqs,
+    video
   } = content
 
   const { sections: faqSections = [] } = faqs
@@ -47,6 +48,15 @@ const SafeCoin = () => {
       <div className={cn('wrap')}>
         <Banner content={banner} />
         <div className={cn('textBlocks')}>
+          <div className={cn('video')}>
+            <figure>
+              <video
+                tabIndex="-1"
+                src={video.url}
+                controls="controls"></video>
+              <figcaption>{video.caption}</figcaption>
+            </figure>
+          </div>
           <div className={cn('textBlock1')}>
             <TextSnippet title={textBlock1.title} titleSize="H2" text={textBlock1.para} />
           </div>
@@ -98,7 +108,6 @@ const SafeCoin = () => {
             </div>
           </div>
           <div className={cn('texture1')}></div>
-          <div className={cn('texture2')}></div>
           <div className={cn('bgDark')}></div>
           <div className={cn('buySafeCoinBg')}></div>
         </div>

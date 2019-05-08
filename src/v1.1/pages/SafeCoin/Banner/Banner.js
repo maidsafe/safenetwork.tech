@@ -18,15 +18,7 @@ const Banner = props => {
         <div className={cn('content')}>
           <div className="introText"><p>{desc}</p></div>
         </div>
-        <div className={cn('video')}>
-          <figure>
-            <video
-              tabIndex="-1"
-              src={video.url}
-              controls="controls"></video>
-            <figcaption>{video.caption}</figcaption>
-          </figure>
-        </div>
+        <div className={cn('texture1')}></div>
       </div>
     </div>
   )
