@@ -220,10 +220,26 @@
       display: flex
       .container
         flex: 1
-        padding-left: $pad-small
+        +default-column()
     &__listMedia
       width: 142px
       height: 124px
+      border-radius: 4px
+    &__listStatus,
+    &__listTitle,
+    &__listPara
+      width: 100%
+      display: block
+      float: left
+    &__listStatus
+      line-height: normal
+
+    &__current
+      &::after
+        top: 52px
+    &__upcomingListItem
+      &::after
+        top: 0
 
 +render-to($media-xs)
   .RoadmapApps
@@ -240,28 +256,16 @@
       h1
         grid-column: 1/span 6
         +default-column()
-    &__list
-      &::before
     &__listWrap
       grid-column: 2/span 5
     &__listItem
       grid-template-columns: repeat(5, 1fr)
-    &__current
-      &::before
-        display: none
     &__currentStatus,
     &__currentTitle,
     &__currentDesc
       grid-column: 2/span 5
       +default-column()
       padding-left: 0 !important
-    &__upcoming
-      &::before
-        top: 70px
-    &__upcomingStatus
-      .overline
-        grid-column: 1/span 6
-        +default-column()
     &__upcomingListItem
       grid-template-columns: repeat(5, 1fr)
       .wrap
@@ -287,3 +291,13 @@
     &__listStatus,
     &__listTitle
       padding-left: 85px
+    &__current
+      &::before
+        height: 55px
+    &__upcoming
+      &::before
+        top: 70px
+    &__upcomingStatus
+      .overline
+        grid-column: 1/span 6
+        +default-column()

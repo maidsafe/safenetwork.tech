@@ -96,6 +96,7 @@
     &__description
       padding-left: $pad-fine
     &__feature
+      width: 100%
       grid-row: 1
     &__description
       grid-row: 2
@@ -111,3 +112,10 @@
         &::before
           transform: rotate(90deg) translate(0, 0)
 
++render-to($media-xs)
+  .RoadmapAccordionItem
+    &__status
+      grid-column: 2/span 1
+    &__feature,
+    &__description
+      grid-column: 1/span 1
