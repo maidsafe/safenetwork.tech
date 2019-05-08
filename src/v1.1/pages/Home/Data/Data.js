@@ -15,7 +15,7 @@ const Data = props => {
   const { title, para, CTA, aside1, aside2, aside3, aside4 } = content
 
   return (
-    <div className={baseClassName}>
+    <div className={baseClassName} id="control">
       <div className={cn('wrap')}>
         <div className={classNames(cn('mainText'), 'underlineLink-bright-onDark')}>
           <MainTextPanel title={title} text={para} CTA={CTA} />

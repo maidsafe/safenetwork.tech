@@ -20,7 +20,7 @@ const Freedom = props => {
   const { title, para, CTA, founderQuote, aside1, aside2 } = content
 
   return (
-    <div className={baseClassName}>
+    <div className={baseClassName} id="freedom">
       <div className={cn('wrap')}>
         <div className={classNames(cn('mainText'), 'underlineLink-bright-onYellow')}>
           <MainTextPanel title={title} text={para} CTA={CTA} />

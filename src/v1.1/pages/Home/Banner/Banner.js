@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import PageBanner from 'components/PageBanner'
 import UnderlinedLink from 'components/UnderlinedLink'
 import BGVideo from 'components/BGVideo'
-import { prefixClassName } from 'src/utils'
+import { prefixClassName, parseMDText } from 'src/utils'
 
 import beach1 from 'src/assets/videos/beach_1.mov'
 import beach2 from 'src/assets/videos/beach_2.mov'
@@ -24,7 +24,7 @@ const Banner = props => {
         <div className={cn('title')}>
           <PageBanner title={title} />
         </div>
-        <div className={classNames(cn('intro'), 'introText')}><p>{desc}</p></div>
+        <div className={classNames(cn('intro'), 'introText')}><p>{parseMDText(desc)}</p></div>
         <div className={cn('aside')}>
           <div className={cn('asideWrap')}>
             <div className={cn('asideDesc')}>

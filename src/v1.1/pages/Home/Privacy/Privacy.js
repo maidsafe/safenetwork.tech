@@ -15,7 +15,7 @@ const Privacy = props => {
   const { title, para, CTA, quote, aside1 } = content
 
   return (
-    <div className={baseClassName}>
+    <div className={baseClassName} id="privacy">
       <div className={cn('wrap')}>
         <div className={cn('mainText')}>
           <MainTextPanel title={title} text={para} CTA={CTA} />
