@@ -123,7 +123,7 @@ export default {
       },
       whyInvite: {
         name: 'Why do I need an Invite?',
-        url: '/'
+        url: '/faq/#why-do-i-need-an-invite'
       }
     }
   },
