@@ -2,6 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 
 import Button from 'components/Button'
+import Accordion from 'components/Accordion'
 import Video from '../Video'
 import { prefixClassName, genRandomKey, spinalCase } from 'src/utils'
 
@@ -47,32 +48,27 @@ export default class AccordionItem extends React.Component {
   render() {
     const { content } = this.props
     return (
-      <div className={classNames(baseClassName, {
-        active: this.state.active
-      })}>
-        <div className={cn('wrap')}>
-          <div id={this.featureId} className={cn('row')} onClick={this.onClickItem}>
-            <h4 className={cn('feature')}>{content.feature}</h4>
-            <div className={cn('description')}>{content.desc}</div>
-            <h4 className={classNames(cn('status'), content.status.toLowerCase())}>{content.status}</h4>
+      <Accordion id={content.feature} header={[
+        <h4 key={genRandomKey()} className={cn('feature')}>{content.feature}</h4>,
+        <div key={genRandomKey()} className={cn('description')}>{content.desc}</div>,
+        <h4 key={genRandomKey()} className={classNames(cn('status'), content.status.toLowerCase())}>{content.status}</h4>
+      ]}>
+        {[
+          <div key={genRandomKey()} className={cn('para')}>
+            {
+              content.para.map(para => (
+                <p key={genRandomKey()}>{para}</p>
+              ))
+            }
+          </div>,
+          <div key={genRandomKey()} className={cn('cta')}>
+            <Button className="hollow icon external">{content.CTA.name}</Button>
+          </div>,
+          <div key={genRandomKey()} className={cn('media')}>
+            <Video width="530" height="330" url={content.video.url} caption={content.video.caption} />
           </div>
-          <div className={cn('container')}>
-            <div className={cn('para')}>
-              {
-                content.para.map(para => (
-                  <p key={genRandomKey()}>{para}</p>
-                ))
-              }
-            </div>
-            <div className={cn('cta')}>
-              <Button className="hollow icon external">{content.CTA.name}</Button>
-            </div>
-            <div className={cn('media')}>
-              <Video width="530" height="330" url={content.video.url} caption={content.video.caption} />
-            </div>
-          </div>
-        </div>
-      </div>
+        ]}
+      </Accordion>
     )
   }
 }

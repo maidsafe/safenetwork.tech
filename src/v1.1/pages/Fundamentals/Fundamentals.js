@@ -3,7 +3,7 @@ import classNames from 'classnames'
 
 import PageBanner from 'components/PageBanner'
 import TextSnippet from 'components/TextSnippet'
-import QASection from 'components/QASection'
+import Accordion from 'components/Accordion'
 import { prefixClassName, genRandomKey } from 'src/utils'
 import content from './content'
 
@@ -23,10 +23,25 @@ const Fundamentals = () => {
         <div className={classNames(cn('desc'), 'introText')}>
           <p>{desc}</p>
         </div>
-        <div className={cn('qa')}>
-          {
-            qa.sections.map(section => <QASection key={genRandomKey()} content={section} listType="NUM" />)
-          }
+        <div className={cn('accord')}>
+          <div className={cn('accordTitle')}><h2>{qa.section.title}</h2></div>
+          <div className={cn('accordContainer')}>
+            {
+              qa.section.items.map((item, i) => {
+                const key = genRandomKey()
+                return (
+                  <Accordion key={key} id={key} header={(
+                    <div className={cn('accordHeader')}>
+                      <div className="index">{`${i+1}.`}</div>
+                      <div className="title"><h4>{item.question}</h4></div>
+                    </div>
+                  )}>
+                    <TextSnippet text={item.answer} />
+                  </Accordion>
+                )
+              })
+            }
+          </div>
         </div>
         <div className={cn('safecoin')}>
           <div className={cn('safecoinWrap')}>
@@ -34,7 +49,7 @@ const Fundamentals = () => {
             <div className={cn('safecoinList')}>
               {
                 safecoin.lists.map(ls => (
-                  <div className={cn('safecoinItem')}>
+                  <div key={genRandomKey()} className={cn('safecoinItem')}>
                     <div className="index"><h3>{ls.name}</h3></div>
                     <p>{ls.para}</p>
                   </div>
@@ -47,7 +62,7 @@ const Fundamentals = () => {
               <div className="points">
                 {
                   safecoin.notes.points.map(pt => (
-                    <div className="point"><p>{pt}</p></div>
+                    <div key={genRandomKey()} className="point"><p>{pt}</p></div>
                   ))
                 }
               </div>

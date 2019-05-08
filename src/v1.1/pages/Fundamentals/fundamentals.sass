@@ -1,6 +1,7 @@
 @import '~styles/index'
 
 .Fundamentals
+  background-color: $default-bg-color
   &__wrap
     +grid()
   &__banner
@@ -12,12 +13,32 @@
     grid-column: 2/span 8
     padding-top: $pad-small
     max-width: $max-width-xl
-  &__qa
-    grid-column: 1/span 10
+  &__accord
+    grid-column: 2/span 8
     max-width: $max-width-xl
+  &__accordContainer
+    +shadow-deep()
+  &__accordHeader
+    position: relative
+    .index
+      position: absolute
+      top: 0
+      left: 0
+      padding-left: $pad-fine
+      +font-3()
+      font-size: 20px
+      line-height: 28px
+      color: $body-text
+      font-style: italic
+    .title
+      padding-left: $pad-medium
+      padding-right: $pad-thin
+      h4
+        max-width: 100%
+        margin-bottom: 0
   &__safecoin
     grid-column: 2/span 8
-    padding-top: $pad-medium
+    padding-top: $pad-chunky
     max-width: $max-width-xl
   &__safecoinTitle
     max-width: 100%
@@ -78,12 +99,13 @@
   .Fundamentals
     &__wrap
       +grid-small()
-    &__banner
+    &__banner,
+    &__desc,
+    &__safecoin,
+    &__accord
       grid-column: 1/span 6
     &__desc,
-    &__safecoin
-      grid-column: 1/span 6
-    &__desc
+    &__accord
       +default-column()
     &__safecoinTitle
       margin-left: $hspace-xs
@@ -97,7 +119,7 @@
         left: 0
         width: $hspace-xs
         height: 5px
-        background-color: $white
+        background-color: $default-bg-color
       .index
         text-align: right
         padding-left: 0
@@ -119,6 +141,11 @@
   .Fundamentals
     &__safecoinTitle
       margin-left: $hspace-xxs
+    &__accord
+      padding-left: 0
+      padding-right: 0
+    &__accordTitle
+      +default-column()
     &__safecoinItem
       &::after
         width: $hspace-xxs
