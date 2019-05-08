@@ -10,14 +10,29 @@
   &__content
     grid-column: 4/span 4
   &__quote
+    +font-3()
     padding: $pad-fine 0 $pad-small
     text-align: center
     font-style: italic
     font-size: 27px
     line-height: 40px
+    letter-spacing: normal
     color: $black
     opacity: 0.8
     +default-column()
+    position: relative
+    &::before
+      content: ''
+      display: block
+      width: 180px
+      height: 5px
+      background-image: url($texture-9)
+      background-position: center
+      background-size: cover
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translate(-50%, -100%)
 
 +render-to($media-l)
   .HIWTopic

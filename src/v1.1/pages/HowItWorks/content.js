@@ -14,10 +14,9 @@ export default {
       name: 'Introduction',
       desc: [
         {
-          title: 'Holymoly that’s good copy',
+          title: 'Getting to grips with the SAFE Network',
           para: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat mauris, faucibus quis pharetra sit amet, pretium ac libero. Etiam vehicula eleifend bibendum. Morbi gravida metus ut sapien condimentum sodales mollis augue sodales. Vestibulum quis quam at sem placerat aliquet.',
-            'Curabitur a felis at sapien ullamcorper fermentum. Mauris molestie arcu et lectus iaculis sit amet eleifend eros posuere. Fusce nec porta orci.'
+            'If you don’t understand what a new decentralised web might mean, you’re far from alone. But once the benefits of a new web built on the SAFE Network become clear—permanent data, never again stored by untrustworthy and hackable third parties that you alone can access at any time from anywhere around the globe—the value becomes clearer. There’s a huge amount of work required to build a system that can deliver on such promises. So to get you started, here’s a few pointers about some of the technology that lies under the hood.'
           ]
         }
       ]

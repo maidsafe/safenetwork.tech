@@ -23,7 +23,7 @@ const Topic = props => {
                 <TextSnippet key={genRandomKey()} text={d.para} title={d.title} />
               ]
               if (d.quote) {
-                eleArray.push(<div key={genRandomKey()} className={cn('quote')}>{d.quote}</div>)
+                eleArray.push(<blockquote key={genRandomKey()} className={cn('quote')}>{d.quote}</blockquote>)
               }
               return eleArray
             })
