@@ -1,0 +1,25 @@
+@import '~styles/index'
+
+.NotFound
+  &__wrap
+    +grid()
+    padding-bottom: $pad-chunky
+  &__banner
+    grid-column: 1/span 10
+    background-color: $acid-yellow
+    .pageBanner
+      max-width: $max-width-xl
+  &__desc
+    grid-column: 2/span 8
+    padding-top: $pad-small
+    max-width: $max-width-xl
+
++render-to($media-xs)
+  .NotFound
+    &__wrap
+      +grid-small()
+    &__banner
+      grid-column: 1/span 6
+    &__desc
+      grid-column: 1/span 6
+      +default-column()
