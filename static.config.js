@@ -18,7 +18,7 @@ export default {
       },
       {
         path: '/how-it-works/',
-        component: 'src/containers/how_it_works',
+        component: `${pageDirPath}/HowItWorks`,
       },
       {
         path: '/faq/',
@@ -26,7 +26,7 @@ export default {
       },
       {
         path: '/safecoin/',
-        component: 'src/containers/safecoins',
+        component: `${pageDirPath}/SafeCoin`,
       },
       {
         path: '/get-involved/',
@@ -50,7 +50,7 @@ export default {
       },
       {
         path: '/about-maidsafe/',
-        component: 'src/containers/about-maidsafe',
+        component: `${pageDirPath}/About`,
       },
       {
         path: '/fundamentals/',
@@ -58,7 +58,7 @@ export default {
       },
       {
         is404: true,
-        component: 'src/containers/404',
+        component: `${pageDirPath}/NotFound`,
       },
     ]
   },
