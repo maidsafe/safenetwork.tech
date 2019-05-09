@@ -6,7 +6,7 @@ $open-hspace-xxxs: $hspace-xxxs
 .qaItem
   $c: &
   grid-column: 2/span 8
-  margin-bottom: 32px
+  margin-bottom: $margin-thin
   &__question
     min-height: 40px
     display: flex
@@ -30,7 +30,7 @@ $open-hspace-xxxs: $hspace-xxxs
       display: inline
       position: relative
       cursor: pointer
-      padding-bottom: 10px
+      padding-bottom: $pad-hair
       margin-bottom: 0
       color: $black
       max-width: 100%
@@ -54,13 +54,13 @@ $open-hspace-xxxs: $hspace-xxxs
     display: none
     padding-left: $hspace-default + $open-hspace
     padding-right: $hspace-default
-    padding-top: 32px
-    padding-bottom: 72px
+    padding-top: $pad-thin
+    padding-bottom: $pad-medium
   &__para
     p:last-child
       padding-bottom: 0
     ul
-      margin-bottom: 32px
+      margin-bottom: $margin-thin
       &:last-child
         margin-bottom: 0
   &.open

@@ -14,7 +14,7 @@ export default {
     return [
       {
         path: '/',
-        component: 'src/containers/home',
+        component: `${pageDirPath}/Home`,
       },
       {
         path: '/how-it-works/',
