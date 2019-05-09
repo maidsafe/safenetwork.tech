@@ -156,3 +156,11 @@ export const lockBodyScroll = (scrollState = true) => {
   }
   window.document.body.style.overflow = scrollState ? 'hidden' : 'visible'
 }
+
+export const getLocationHash = () => {
+  let hash = ''
+  if (typeof window !== 'undefined') {
+    hash = window.location.hash.substr(1)
+  }
+  return hash
+}

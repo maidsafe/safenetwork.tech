@@ -31,6 +31,10 @@ export default {
       others: 'https://github.com/maidsafe/safe_browser/releases/latest',
     }
   },
+  inviteRequestMail: 'invite@maidsafe.net',
+  links: {
+    forum: 'https://safenetforum.org'
+  },
   pressKitMedia: {
     techCrunch: 'https://techcrunch.com/2018/06/02/not-just-another-decentralized-web-whitepaper/',
     theGuardian: 'https://www.theguardian.com/technology/2018/feb/01/punk-rock-internet-diy-rebels-working-replace-tech-giants-snoopers-charter',
