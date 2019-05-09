@@ -18,6 +18,10 @@
     max-width: $max-width-xl
   &__accordContainer
     +shadow-deep()
+    .Accordion
+      &__row
+        padding-top: $pad-thin
+        padding-bottom: 26px
   &__accordHeader
     position: relative
     .index
@@ -139,6 +143,9 @@
       padding-right: 0
     &__accordTitle
       +default-column()
+    &__accordHeader
+      .index
+        top: -3px
     &__safecoinItem
       &::after
         width: $hspace-xxs
