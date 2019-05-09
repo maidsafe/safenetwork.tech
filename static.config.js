@@ -50,7 +50,7 @@ export default {
       },
       {
         path: '/about-maidsafe/',
-        component: 'src/containers/about-maidsafe',
+        component: `${pageDirPath}/About`,
       },
       {
         path: '/fundamentals/',
@@ -58,7 +58,7 @@ export default {
       },
       {
         is404: true,
-        component: 'src/containers/404',
+        component: `${pageDirPath}/NotFound`,
       },
     ]
   },

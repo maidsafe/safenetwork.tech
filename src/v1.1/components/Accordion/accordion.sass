@@ -23,6 +23,10 @@
       background-repeat: no-repeat
       background-position: center right
       background-size: 26px
+    &:hover
+      background-color: $roadmap-accordion-hover-bg-color
+    &:active
+      background-color: $qa-item-opened-pressed-bg-color
   &__container
     display: none
     padding-top: $pad-thin
@@ -38,6 +42,10 @@
       &::before
         transform: rotate(90deg)
         transform-origin: center
+      &:hover
+        background-color: $qa-item-opened-hover-bg-color
+      &:active
+        background-color: $qa-item-opened-pressed-bg-color
 
 +render-to($media-s)
   .RoadmapAccordionItem
