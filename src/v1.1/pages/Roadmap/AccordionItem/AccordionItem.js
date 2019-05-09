@@ -36,9 +36,7 @@ export default class AccordionItem extends React.Component {
 
   onClickItem  = () => {
     const  { active } = this.state
-    if (!active) {
-      this.pushHistory(this.featureId)
-    }
+    this.pushHistory(active ? '' : this.featureId)
     this.setState({
       active: !this.state.active
     })
