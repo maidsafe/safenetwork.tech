@@ -1,0 +1,132 @@
+@import '~styles/index'
+
+.HIWTopic
+  &__wrap
+    +grid()
+    margin-bottom: $margin-fine
+  &__name
+    grid-column: 2/span 2
+    color: $spark-red
+  &__content
+    grid-column: 4/span 4
+  &__quote
+    +font-3()
+    padding: $pad-fine 0 $pad-small
+    text-align: center
+    font-style: italic
+    font-size: 27px
+    line-height: 40px
+    letter-spacing: normal
+    color: $black
+    opacity: 0.8
+    +default-column()
+    position: relative
+    &::before
+      content: ''
+      display: block
+      width: 180px
+      height: 5px
+      background-image: url($texture-9)
+      background-position: center
+      background-size: cover
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translate(-50%, -100%)
+
++render-to($media-l)
+  .HIWTopic
+    &__name
+      +default-column()
+    &__content
+      grid-column: 4/span 3
+
++render-to($media-m)
+  .HIWTopic
+    &__content
+      margin-left: -$hspace-l
+    &__name
+      +default-column()
+      padding-left: 0 !important
+  #where-is-data-stored
+    .textSnippet__para p
+      &:not(:first-child):not(:nth-child(2))
+        margin-right: $margin-small
+  #who-stores-your-data
+    .textSnippet__title
+      margin-right: $margin-small
+  #browsing
+    .textSnippet__para p
+      &:last-child
+        margin-right: $margin-small
+
++render-to($media-s)
+  .HIWTopic
+    &__name
+      grid-column: 2/span 8
+      grid-row: 1
+    &__content
+      grid-row: 2
+      grid-column: 2/span 6
+      margin-left: 0
+  #browsing
+    .textSnippet__para p
+      margin-right: $margin-jumbo !important
+  #storing-data
+    .textSnippet:first-child
+      .textSnippet__para p:first-child
+        margin-right: $margin-jumbo
+    .textSnippet__title
+      margin-right: $margin-jumbo
+  #where-is-data-stored
+    .HIWTopic__content
+      .textSnippet__para p
+        &:last-child
+          margin-right: $margin-jumbo !important
+  #who-stores-your-data
+    .HIWTopic__content
+      .textSnippet__title,
+      .textSnippet__para p:first-child
+        margin-right: $margin-jumbo
+
++render-to($media-xs)
+  .HIWTopic
+    &__wrap
+      +grid-small()
+    &__name,
+    &__content
+      grid-column: 1/span 6
+      +default-column()
+      padding-left: $hspace-xs !important
+    &__quote
+      max-width: 620px
+  #where-is-data-stored
+    .HIWTopic__content
+      .textSnippet__para p
+        &:nth-child(3),
+        &:nth-child(4)
+          padding-right: $pad-super-jumbo + $pad-jumbo
+
++render-to($media-xxs)
+  .HIWTopic
+    .textSnippet__para p
+      padding-right: 0 !important
+      margin-right: 0 !important
+    &__name,
+    &__content
+      padding-left: $hspace-xxs !important
+  #browsing,
+  #where-is-data-stored,
+  #who-stores-your-data
+    .HIWTopic__content
+      .textSnippet__para p,
+      .textSnippet__para p:last-child,
+      .textSnippet__title
+        padding-right: 0 !important
+        margin-right: 0 !important
+
++render-to($media-xxxs)
+  .HIWTopic
+    &__name,
+    &__content
+      padding-left: $hspace-xxxs !important

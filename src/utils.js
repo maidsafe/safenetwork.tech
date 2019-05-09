@@ -132,7 +132,7 @@ export const genRandomKey = () => (
 )
 
 export const isMenuLight = pathname => (
-    [/* List of URLs */].indexOf(pathname) !== -1
+    ['/safecoin/'].indexOf(pathname) !== -1
 )
 
 export const parseMDText = (text, isInline = false) => {
@@ -155,4 +155,12 @@ export const lockBodyScroll = (scrollState = true) => {
     return
   }
   window.document.body.style.overflow = scrollState ? 'hidden' : 'visible'
+}
+
+export const getLocationHash = () => {
+  let hash = ''
+  if (typeof window !== 'undefined') {
+    hash = window.location.hash.substr(1)
+  }
+  return hash
 }
