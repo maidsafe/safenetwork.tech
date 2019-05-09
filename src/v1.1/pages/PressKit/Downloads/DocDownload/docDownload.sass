@@ -3,7 +3,7 @@
 .docDownload
   $c: &
   width: 570px
-  margin-bottom: 70px
+  margin-bottom: $margin-medium
   &:last-child
     margin-bottom: 0
   &:nth-child(even)
@@ -19,11 +19,11 @@
     justify-content: center
     align-items: center
   &__content
-    padding-top: 60px
+    padding-top: $pad-small
     +default-column()
     background-color: $white
   &__button
-    padding: 36px 0
+    padding: $pad-thin 0
     .btn
       min-width: 167zpx
 
@@ -31,17 +31,17 @@
 +render-to($media-s)
   .docDownload
     width: 550px
-    margin-bottom: 104px
+    margin-bottom: $margin-jumbo
 
 
 // XSmall
 +render-to($media-xs)
   .docDownload
     width: 560px
-    margin-bottom: 80px
+    margin-bottom: $margin-chunky
 
 // XXSmall
 +render-to($media-xxs)
   .docDownload
     width: 100%
-    margin-bottom: 48px
+    margin-bottom: $margin-small
