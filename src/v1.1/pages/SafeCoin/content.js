@@ -4,7 +4,6 @@ export default {
     desc: 'Safecoin is at the core of the Network. It’s money that lets you store data and rewards you when you contribute. Only with instant transactions, unlimited scaling—and no fees.',
   },
   video: {
-    url: '/',
     caption: 'Safecoin: The Currency for Security and Privacy',
   },
   textBlock1: {

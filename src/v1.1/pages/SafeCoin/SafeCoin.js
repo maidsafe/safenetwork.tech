@@ -7,6 +7,7 @@ import QASection from 'components/QASection'
 import Banner from './Banner'
 import { prefixClassName, genRandomKey, openLink } from 'src/utils'
 import content from './content'
+import CONSTANTS from 'src/v1.1/constant'
 
 import Poloniex from 'images/exchange_poloniex.png'
 import Hitbtc from 'images/exchange_hitbtc.png'
@@ -52,8 +53,11 @@ const SafeCoin = () => {
             <figure>
               <video
                 tabIndex="-1"
-                src={video.url}
-                controls="controls"></video>
+                controls="controls">
+                <source src={CONSTANTS.videoLinks.security.mp4} type="video/mp4" />
+                <source src={CONSTANTS.videoLinks.security.ogv} type="video/ogg" />
+                <source src={CONSTANTS.videoLinks.security.webm} type="video/webm" />
+              </video>
               <figcaption>{video.caption}</figcaption>
             </figure>
           </div>

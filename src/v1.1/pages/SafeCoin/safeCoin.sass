@@ -12,7 +12,7 @@
     margin-top: -170px
     padding-right: $hspace-l
     video
-      width: 100%
+      width: 600px
     figure
       position: relative
       figcaption
@@ -147,6 +147,9 @@
 
 +render-to($media-m)
   .SafeCoin
+    &__video
+      video
+        width: 100%
     &__textBlock1
       padding-bottom: $pad-jumbo
     &__textBlock3
@@ -289,6 +292,7 @@
         width: 100%
         float: none
         max-width: 100%
+        padding-right: 0
     &__faq
       grid-row: 8
     &__exchange
