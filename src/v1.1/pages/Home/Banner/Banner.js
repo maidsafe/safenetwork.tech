@@ -24,7 +24,7 @@ const Banner = props => {
         <div className={cn('title')}>
           <PageBanner title={title} />
         </div>
-        <div className={classNames(cn('intro'), 'introText')}><p>{parseMDText(desc)}</p></div>
+        <div className={classNames(cn('intro'), 'introText')}>{parseMDText(desc)}</div>
         <div className={cn('aside')}>
           <div className={cn('asideWrap')}>
             <div className={cn('asideDesc')}>
