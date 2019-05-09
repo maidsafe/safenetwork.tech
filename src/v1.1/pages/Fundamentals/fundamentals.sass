@@ -22,12 +22,12 @@
     position: relative
     .index
       position: absolute
-      top: 0
+      top: -1px
       left: 0
       padding-left: $pad-fine
       +font-3()
       font-size: 20px
-      line-height: 28px
+      line-height: normal
       color: $body-text
       font-style: italic
     .title
@@ -52,11 +52,9 @@
     margin-top: $margin-small
     .index
       grid-column: 1/span 1
-      padding-left: $hspace-l
       h3
         display: inline-block
         margin-bottom: 0
-        transform: translate(-100%, 0)
     p
       grid-column: 2/span 7
       margin-left: -$hspace-l
@@ -67,16 +65,17 @@
     padding-bottom: $pad-jumbo
     .title
       grid-column: 1/span 1
-      text-align: right
+      text-align: left
       grid-row: 1
       max-width: 100%
     .desc
       grid-column: 2/span 7
       grid-row: 2
+      margin-left: -$hspace-l
     .points
       grid-column: 2/span 7
       grid-row: 3
-      +default-column()
+      // +default-column()
       .point
         position: relative
         &::before
@@ -85,15 +84,6 @@
           top: 0
           left: -10px
           transform: translate(-100%, 0)
-
-+render-to($media-s)
-  .Fundamentals
-    &__safecoinItem
-      .index
-        h3
-          margin-bottom: $margin-fine
-      p
-        margin-left: 0
 
 +render-to($media-xs)
   .Fundamentals
@@ -121,13 +111,12 @@
         height: 5px
         background-color: $default-bg-color
       .index
-        text-align: right
-        padding-left: 0
+        padding-left: $hspace-xs
         h3
           transform: translate(0, 0)
       p
         grid-column: 2/span 5
-        padding-left: $hspace-xs
+        margin-left: 0
     &__safecoinNotes
       +grid-small()
       .title
@@ -135,7 +124,11 @@
         padding-left: $hspace-xs
       .desc,
       .points
+        +default-column()
         grid-column: 2/span 5
+        margin-left: 0
+      .desc
+        margin-left: -$hspace-xs
 
 +render-to($media-xxs)
   .Fundamentals
@@ -149,23 +142,39 @@
     &__safecoinItem
       &::after
         width: $hspace-xxs
+      .index
+        padding-left: $hspace-xxs
       p
         +default-column()
+        margin-left: -$hspace-xxs
     &__safecoinNotes
       .title
+        grid-column: 1/span 2
         padding-left: $hspace-xxs
-      .desc,
-      .points
-        +default-column()
-        padding-left: 0 !important
+      .desc
+        margin-left: -$hspace-xxs
 
 +render-to($media-xxxs)
   .Fundamentals
+    .Accordion
+      &__row
+        padding-left: 0
+        &::before
+          display: none
+    &__accordHeader
+      .title
+        padding-left: $pad-small
     &__safecoinTitle
       margin-left: $hspace-xxxs
     &__safecoinItem
       &::after
         width: $hspace-xxxs
+      .index
+        padding-left: $hspace-xxxs
+      p
+        margin-left: -$hspace-xxxs
     &__safecoinNotes
       .title
         padding-left: $hspace-xxxs
+      .desc
+        margin-left: -$hspace-xxxs
