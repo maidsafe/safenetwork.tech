@@ -18,7 +18,7 @@ export default {
       },
       {
         path: '/how-it-works/',
-        component: 'src/containers/how_it_works',
+        component: `${pageDirPath}/HowItWorks`,
       },
       {
         path: '/faq/',
