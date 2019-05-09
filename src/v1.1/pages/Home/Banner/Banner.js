@@ -35,10 +35,10 @@ const Banner = props => {
         </div>
         <div className={cn('asideBg')}></div>
         <div className={cn('video1')}>
-          <BGVideo src={beach1} width={'500px'} />
+          <BGVideo src={beach1} width={'1000px'} />
         </div>
         <div className={cn('video2')}>
-          <BGVideo src={beach2} height={'700px'} />
+          <BGVideo src={beach2} height={'700px'} position="BOTTOM_LEFT" />
         </div>
       </div>
     </div>

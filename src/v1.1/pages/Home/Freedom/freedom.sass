@@ -31,6 +31,7 @@
   &__aside2
     grid-row: 2
     z-index: 1
+    +shadow-deep()
   &__aside1
     grid-column: 4/span 3
     background-color: $white
@@ -64,7 +65,7 @@
     height: 360px
     background-image: url($texture-3)
     background-repeat: no-repeat
-    background-size: contain
+    background-size: cover
     background-position: center right
 
 +render-to($media-xl)
