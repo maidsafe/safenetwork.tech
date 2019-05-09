@@ -30,5 +30,9 @@ export default {
       ios: 'https://github.com/maidsafe/safe_browser/releases/latest',
       others: 'https://github.com/maidsafe/safe_browser/releases/latest',
     }
+  },
+  inviteRequestMail: 'invite@maidsafe.net',
+  links: {
+    forum: 'https://safenetforum.org'
   }
 }

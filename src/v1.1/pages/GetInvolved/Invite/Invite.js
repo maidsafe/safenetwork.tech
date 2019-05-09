@@ -3,6 +3,7 @@ import React from 'react'
 import Accordion from './Accordion'
 import AccordionItem from './AccordionItem'
 import InviteModal from './InviteModal'
+import CONSTANT from 'src/v1.1/constant'
 import {
   prefixClassName,
   openLink,
@@ -145,10 +146,10 @@ export default class Invite extends React.Component {
                   this.toggleInviteModal()
                 }}
                 onInviteRequest={() => {
-                  openLink('mailto:invite@maidsafe.net')
+                  openLink(`mailto:${CONSTANT.inviteRequestMail}`)
                 }}
                 onJoinForum={() => {
-                  openLink('https://safenetforum.org', true)
+                  openLink(CONSTANT.links.forum, true)
                 }}
               />
             ) : null
