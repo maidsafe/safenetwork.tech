@@ -26,7 +26,7 @@ export default {
       },
       {
         path: '/safecoin/',
-        component: 'src/containers/safecoins',
+        component: `${pageDirPath}/SafeCoin`,
       },
       {
         path: '/get-involved/',
