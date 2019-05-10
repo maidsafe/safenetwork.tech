@@ -3,6 +3,7 @@ import { Link } from 'react-static'
 import classNames from 'classnames'
 
 import Button from 'components/Button'
+import { isHowItWorksPage } from 'src/utils'
 
 import './navItem.sass'
 
@@ -23,7 +24,8 @@ const MainNavItem = props => {
           mainNavItem: !isButton,
           'mainNavItem-btn': isButton,
           active: isActive,
-          light: lightTheme
+          light: lightTheme,
+          whiteRed: isHowItWorksPage()
         }
       )}
     >

@@ -164,3 +164,10 @@ export const getLocationHash = () => {
   }
   return hash
 }
+
+export const isHowItWorksPage = () => {
+  if (typeof window == 'undefined') {
+    return
+  }
+  return window.location.pathname === '/how-it-works/'
+}

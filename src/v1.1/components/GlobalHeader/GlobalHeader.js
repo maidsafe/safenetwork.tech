@@ -3,6 +3,7 @@ import classNames from 'classnames'
 
 import MainNav from './MainNav'
 import SiteLogo from './SiteLogo'
+import { isHowItWorksPage } from 'src/utils'
 
 import content from './content'
 import './globalHeader.sass'
@@ -39,6 +40,7 @@ const GlobalHeader = props => {
         <div className="mobNav">
           <button className={classNames('mobNav__btn', {
             light: lightTheme,
+            whiteRed: isHowItWorksPage()
           })} onClick={onClickMobMenu} />
         </div>
       </div>
