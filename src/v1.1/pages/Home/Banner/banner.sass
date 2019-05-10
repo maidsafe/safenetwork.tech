@@ -101,8 +101,10 @@
 
 +render-to($media-xxs)
   .HomeBanner
-    .pageBanner__title br
-      display: none
+    .pageBanner__title
+      grid-column: 1/span 5
+      br
+        display: none
     &__intro
       padding-bottom: $pad-thin
     &__aside
