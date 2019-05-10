@@ -14,11 +14,11 @@ export default {
     return [
       {
         path: '/',
-        component: 'src/containers/home',
+        component: `${pageDirPath}/Home`,
       },
       {
         path: '/how-it-works/',
-        component: 'src/containers/how_it_works',
+        component: `${pageDirPath}/HowItWorks`,
       },
       {
         path: '/faq/',
@@ -26,7 +26,7 @@ export default {
       },
       {
         path: '/safecoin/',
-        component: 'src/containers/safecoins',
+        component: `${pageDirPath}/SafeCoin`,
       },
       {
         path: '/get-involved/',
@@ -54,7 +54,7 @@ export default {
       },
       {
         path: '/fundamentals/',
-        component: 'src/containers/fundamentals'
+        component: `${pageDirPath}/Fundamentals`
       },
       {
         is404: true,

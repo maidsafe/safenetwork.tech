@@ -1,33 +1,24 @@
 @import '~styles/index'
 
 .interviewRequest
-  padding-bottom: 160px
-  .textSnippet__title
-    margin-top: 80px
+  padding-top: $pad-medium
+  padding-bottom: $pad-super-jumbo
   +render-to($media-l)
     height: 430px
     padding-bottom: 0
   +render-to($media-s)
     height: 450px
+    padding-top: $pad-chunky
     padding-bottom: 0
-    .textSnippet__title
-      margin-top: 93px
   +render-to($media-xs)
+    height: auto
+    min-height: 380px
     +default-column()
-    .textSnippet__title
-      margin-top: 68px
+    padding-top: $pad-medium
+    padding-bottom: $pad-medium
     .textSnippet__para
       max-width: 100%
   +render-to($media-xxs)
     height: auto
-    padding-bottom: 48px
-    .textSnippet
-      &:after
-        content: ''
-        min-height: 40px
-        display: block
-      &__title
-        margin-top: 48px
-      &__para
-        p:last-child
-          padding-bottom: 0
+    padding-top: $pad-small
+    padding-bottom: $pad-small

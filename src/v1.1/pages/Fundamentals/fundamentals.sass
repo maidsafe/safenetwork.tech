@@ -1,0 +1,187 @@
+@import '~styles/index'
+
+.Fundamentals
+  background-color: $default-bg-color
+  &__wrap
+    +grid()
+  &__banner
+    grid-column: 1/span 10
+    background-color: $acid-yellow
+    .pageBanner
+      max-width: $max-width-xl
+  &__desc
+    grid-column: 2/span 8
+    padding-top: $pad-small
+    max-width: $max-width-xl
+  &__accord
+    grid-column: 2/span 8
+    max-width: $max-width-xl
+  &__accordContainer
+    +shadow-deep()
+    .Accordion
+      &__row
+        padding-top: $pad-thin
+        padding-bottom: 26px
+  &__accordHeader
+    position: relative
+    .index
+      position: absolute
+      top: -1px
+      left: 0
+      padding-left: $pad-fine
+      +font-3()
+      font-size: 20px
+      line-height: normal
+      color: $body-text
+      font-style: italic
+    .title
+      padding-left: $pad-medium
+      padding-right: $pad-thin
+      h4
+        max-width: 100%
+        margin-bottom: 0
+  &__safecoin
+    grid-column: 2/span 8
+    padding-top: $pad-chunky
+    max-width: $max-width-xl
+  &__safecoinTitle
+    max-width: 100%
+    border-bottom: 2px solid $black
+    padding-bottom: $pad-thin
+    margin-bottom: 0
+  &__safecoinItem
+    display: grid
+    grid-template-columns: repeat(8, 1fr)
+    border-bottom: 2px solid $pinky-grey
+    margin-top: $margin-small
+    .index
+      grid-column: 1/span 1
+      h3
+        display: inline-block
+        margin-bottom: 0
+    p
+      grid-column: 2/span 7
+      margin-left: -$hspace-l
+  &__safecoinNotes
+    display: grid
+    grid-template-columns: repeat(8, 1fr)
+    padding-top: $pad-small
+    padding-bottom: $pad-jumbo
+    .title
+      grid-column: 1/span 1
+      text-align: left
+      grid-row: 1
+      max-width: 100%
+    .desc
+      grid-column: 2/span 7
+      grid-row: 2
+      margin-left: -$hspace-l
+    .points
+      grid-column: 2/span 7
+      grid-row: 3
+      // +default-column()
+      .point
+        position: relative
+        &::before
+          content: '\002D'
+          position: absolute
+          top: 0
+          left: -10px
+          transform: translate(-100%, 0)
+
++render-to($media-xs)
+  .Fundamentals
+    &__wrap
+      +grid-small()
+    &__banner,
+    &__desc,
+    &__safecoin,
+    &__accord
+      grid-column: 1/span 6
+    &__desc,
+    &__accord
+      +default-column()
+    &__safecoinTitle
+      margin-left: $hspace-xs
+    &__safecoinItem
+      +grid-small()
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        bottom: -3px
+        left: 0
+        width: $hspace-xs
+        height: 5px
+        background-color: $default-bg-color
+      .index
+        padding-left: $hspace-xs
+        h3
+          transform: translate(0, 0)
+      p
+        grid-column: 2/span 5
+        margin-left: 0
+    &__safecoinNotes
+      +grid-small()
+      .title
+        grid-column: 1/span 1
+        padding-left: $hspace-xs
+      .desc,
+      .points
+        +default-column()
+        grid-column: 2/span 5
+        margin-left: 0
+      .desc
+        margin-left: -$hspace-xs
+
++render-to($media-xxs)
+  .Fundamentals
+    &__safecoinTitle
+      margin-left: $hspace-xxs
+    &__accord
+      padding-left: 0
+      padding-right: 0
+    &__accordTitle
+      +default-column()
+    &__accordHeader
+      .index
+        top: -3px
+    &__safecoinItem
+      &::after
+        width: $hspace-xxs
+      .index
+        padding-left: $hspace-xxs
+      p
+        +default-column()
+        margin-left: -$hspace-xxs
+    &__safecoinNotes
+      .title
+        grid-column: 1/span 2
+        padding-left: $hspace-xxs
+      .desc
+        margin-left: -$hspace-xxs
+
++render-to($media-xxxs)
+  .Fundamentals
+    .Accordion
+      &__row
+        padding-left: 0
+        &::before
+          display: none
+    &__accordHeader
+      .title
+        padding-left: $pad-small
+    &__safecoinTitle
+      margin-left: $hspace-xxxs
+    &__safecoinItem
+      &::after
+        width: $hspace-xxxs
+      .index
+        padding-left: $hspace-xxxs
+      p
+        margin-left: -$hspace-xxxs
+    &__safecoinNotes
+      .title
+        padding-left: $hspace-xxxs
+      .desc
+        margin-left: -$hspace-xxxs
