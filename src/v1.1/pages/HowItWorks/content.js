@@ -32,6 +32,7 @@ export default {
         }
       ],
       aside: {
+        position: 1,
         para: 'Want to try the SAFE Network, and help build the future of the Internet?',
         CTA: {
           name: 'Get Involved',
@@ -71,6 +72,7 @@ export default {
         }
       ],
       aside: {
+        position: 3,
         title: 'When will it be finished?',
         para: 'We’re at the dawn of a new Web, and the final pieces of the SAFE Network are being put in place',
         CTA: {

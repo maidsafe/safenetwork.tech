@@ -38,7 +38,7 @@ const Banner = props => {
           }
         </div>
         <div className={cn('video1')}>
-          <BGVideo src={murmuration} height={'700px'} position="TOP_LEFT"/>
+          <BGVideo src={murmuration} width={'1200px'} position="BOTTOM_LEFT"/>
         </div>
         <div className={cn('texture2')}></div>
       </div>

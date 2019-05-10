@@ -41,7 +41,11 @@
       color: rgba($black, 0.7)
       &:hover
         color: $black
-
+  &.whiteRed
+    &.active
+      color: $spark-red
+      &:hover
+        color: $nav-active-hover-color
   &-btn
     float: left
     letter-spacing: -0.03em
@@ -68,7 +72,7 @@
     &.light
       .btn
         background-color: $white
-        color: $spark-red
+        color: $black
         &:hover
           color: $white
           background-color: $black
@@ -77,6 +81,10 @@
           color: $black
           background-color: $acid-yellow
           +shadow-pressed()
+    &.whiteRed
+      .btn
+        background-color: $spark-red
+        color: $white
 
 
 // Large
