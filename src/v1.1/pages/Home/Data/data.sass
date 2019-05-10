@@ -49,6 +49,10 @@
     z-index: 1
   .TextPanel
     min-height: 415px
+  &__texture1,
+  &__texture2,
+  &__texture3
+    +set-video-overlay($texture-spark-overlay)
   &__texture1
     grid-column: 9/span 1
     grid-row: 1
@@ -60,7 +64,7 @@
     grid-column: 10/span 1
     grid-row: 1/span 2
     height: 100%
-    background-image: url($texture-7)
+    background-image: url($texture-7-stretched)
     background-size: cover
     background-position: left bottom
     background-repeat: no-repeat
@@ -93,6 +97,10 @@
       align-self: end
       position: relative
       background-image: none
+      &::before
+        width: 1000%
+        max-width: 800px
+        z-index: 2
       &::after
         content: ''
         width: 1000%
@@ -240,6 +248,13 @@
       grid-column: 6/span 1
       grid-row: 3
       height: 100%
+    &__texture1,
+    &__texture2
+      background-image: url($texture-7-stretched)
+      background-size: cover
+      background-position: top left
+      &:after
+        display: none
 
 +render-to($media-xxxs)
   .HomeData
