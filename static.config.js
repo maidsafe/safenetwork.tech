@@ -14,7 +14,7 @@ export default {
     return [
       {
         path: '/',
-        component: 'src/containers/home',
+        component: `${pageDirPath}/Home`,
       },
       {
         path: '/how-it-works/',
@@ -54,7 +54,7 @@ export default {
       },
       {
         path: '/fundamentals/',
-        component: 'src/containers/fundamentals'
+        component: `${pageDirPath}/Fundamentals`
       },
       {
         is404: true,

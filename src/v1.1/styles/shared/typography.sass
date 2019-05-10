@@ -1,7 +1,4 @@
-@import '~styles/variables'
-@import '~styles/mixins'
-@import '~styles/fonts'
-@import '~styles/colors'
+@import '~styles/index'
 
 body
   +font-3()
@@ -108,16 +105,16 @@ blockquote
     line-height: 40px
     color: $body-text
     max-width: 848px
-    margin-bottom: 72px
-    +render-to($media-xs)
+    margin-bottom: $margin-medium
+    +render-to($media-xxs)
       font-size: 24px
       line-height: 35px
       max-width: 795px
-    +render-to($media-xxs)
+    +render-to($media-xxxs)
       font-size: 18px
       line-height: 26px
       max-width: 520px
-      margin-bottom: 56px
+      margin-bottom: $margin-small
     a
       &:link, &:visited
         color: $body-text
