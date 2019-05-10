@@ -3,9 +3,10 @@ import classNames from 'classnames'
 
 import PageBanner from 'components/PageBanner'
 import UnderlinedLink from 'components/UnderlinedLink'
-import BGVideo from '../BGVideo'
+import BGVideo from 'components/BGVideo'
 import { prefixClassName, genRandomKey, spinalCase } from 'src/utils'
-import murmuration from 'src/assets/videos/murmuration.mp4'
+import birds from 'src/assets/videos/birds.mp4'
+import birdsWeb from 'src/assets/videos/birds.webm'
 
 import './banner.sass'
 
@@ -38,7 +39,7 @@ const Banner = props => {
           }
         </div>
         <div className={cn('video1')}>
-          <BGVideo src={murmuration} height={'700px'} position="TOP_LEFT"/>
+          <BGVideo src={birds} webmSrc={birdsWeb} height={'700px'} position="TOP_LEFT"/>
         </div>
         <div className={cn('texture2')}></div>
       </div>

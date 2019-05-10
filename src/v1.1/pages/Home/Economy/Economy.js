@@ -5,7 +5,8 @@ import TextPanel from '../TextPanel'
 import BGVideo from 'components/BGVideo'
 import { prefixClassName } from 'src/utils'
 
-import fire1 from 'src/assets/videos/fire_spark.mov'
+import spark1 from 'src/assets/videos/spark_1.mp4'
+import spark1Web from 'src/assets/videos/spark_1.webm'
 
 import './economy.sass'
 
@@ -35,13 +36,13 @@ const Economy = props => {
           <TextPanel {...aside4} />
         </div>
         <div className={cn('video1')}>
-          <BGVideo src={fire1} height={'500px'} position="BOTTOM_LEFT"/>
+          <BGVideo src={spark1} webmSrc={spark1Web} height={'500px'} position="BOTTOM_LEFT"/>
         </div>
         <div className={cn('video2')}>
-          <BGVideo src={fire1} height={'500px'} position="BOTTOM_LEFT" />
+          <BGVideo src={spark1} webmSrc={spark1Web} height={'500px'} position="BOTTOM_LEFT" />
         </div>
         <div className={cn('video3')}>
-          <BGVideo src={fire1} height={'500px'} position="BOTTOM_LEFT" />
+          <BGVideo src={spark1} webmSrc={spark1Web} height={'500px'} position="BOTTOM_LEFT" />
         </div>
       </div>
     </div>

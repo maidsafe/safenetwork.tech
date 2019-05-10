@@ -41,6 +41,10 @@
     background-color: $spark-red
     *
       color: $white !important
+  &__video1,
+  &__video2,
+  &__video3
+    +set-video-overlay($texture-spark-overlay)
   &__video1
     grid-column: 6/span 1
     grid-row: 1

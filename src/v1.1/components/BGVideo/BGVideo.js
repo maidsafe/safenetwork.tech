@@ -18,7 +18,7 @@ export default class BGVideo extends React.Component {
   }
 
   render() {
-    const { src, width = 'auto', height  = 'auto', position = 'CENTER' } = this.props
+    const { src, webmSrc= '', width = 'auto', height  = 'auto', position = 'CENTER' } = this.props
 
     const videoStyle = {
       width: width,
@@ -29,6 +29,9 @@ export default class BGVideo extends React.Component {
         <div className={cn('wrap')}>
           <video autoPlay muted loop style={videoStyle}>
             <source src={src} type="video/mp4" />
+            {
+              webmSrc ? <source src={webmSrc} type="video/webm" /> : null
+            }
           </video>
         </div>
       </div>
