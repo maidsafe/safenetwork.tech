@@ -2,7 +2,7 @@
 
 // Default
 .qaSection
-  padding-top: 72px
+  padding-top: $pad-medium
   &__wrap
     +grid()
   &__title
@@ -11,7 +11,7 @@
 // XSmall
 +render-to($media-xs)
   .qaSection
-    padding-top: 70px
+    padding-top: $pad-medium
     &__wrap
       +grid-small()
     &__title
@@ -21,7 +21,7 @@
 // XXSmall
 +render-to($media-xxs)
   .qaSection
-    padding-top: 50px
+    padding-top: $pad-small
     &__title
       padding-left: $hspace-xxs
 

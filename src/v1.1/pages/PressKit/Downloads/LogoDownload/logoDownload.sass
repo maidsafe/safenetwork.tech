@@ -3,7 +3,7 @@
 .logoDownload
   width: 325px
   float: left
-  margin-bottom: 66px
+  margin-bottom: $margin-medium
   box-sizing: content-box
   $c: &
   &:nth-child(odd)
@@ -31,7 +31,7 @@
   .logoDownload
     width: 345px
     margin-right: 70px
-    margin-bottom: 70px
+    margin-bottom: $margin-medium
     padding: 0 !important
 
 // Small
@@ -42,15 +42,15 @@
       margin-right: 40px
     padding: 0 !important
   .documentDownload
-    padding-right: 0
     width: 550px
+    padding-right: 0
 
 // XSmall
 +render-to($media-xs)
   .logoDownload
     width: 50%
     margin-right: 0
-    margin-bottom: 75px
+    margin-bottom: $margin-medium
     box-sizing: border-box
     &:nth-child(odd)
       padding-right: 25px !important
@@ -64,7 +64,7 @@
 +render-to($media-xxs)
   .logoDownload
     width: 100% !important
-    margin-bottom: 48px
+    margin-bottom: $margin-small
     margin-right: 0
     &:nth-child(odd)
       padding-right: 0 !important

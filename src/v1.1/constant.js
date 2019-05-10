@@ -31,9 +31,30 @@ export default {
       others: 'https://github.com/maidsafe/safe_browser/releases/latest',
     }
   },
+  inviteRequestMail: 'invite@maidsafe.net',
+  links: {
+    forum: 'https://safenetforum.org'
+  },
   pressKitMedia: {
     techCrunch: 'https://techcrunch.com/2018/06/02/not-just-another-decentralized-web-whitepaper/',
     theGuardian: 'https://www.theguardian.com/technology/2018/feb/01/punk-rock-internet-diy-rebels-working-replace-tech-giants-snoopers-charter',
     spectrum: 'https://spectrum.ieee.org/view-from-the-valley/telecom/internet/where-is-hbo-silicon-valleys-real-pied-piper-look-in-troon-scotland'
-  }
+  },
+  videoLinks: {
+    safe_network: {
+      mp4: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Getting+Started.mp4',
+      ogv: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Getting+Started.ogv',
+      webm: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/GS+webM.webm'
+    },
+    self_encryption: {
+      mp4: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Self+Encryption+on+the+SAFE+Network.mp4',
+      ogv: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Self+Encryption+on+the+SAFE+Network_1.ogv',
+      webm: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Self+Encryption+on+the+SAFE+Network_1.webm',
+    },
+    security: {
+      ogv: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Safecoin+Promo+Video+(Vimeo+%2B+Mastered+Audio)+4.22+(1)_1.ogv',
+      mp4: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Safecoin+Promo+Video+(Vimeo+%2B+Mastered+Audio)+4.22.mp4',
+      webm: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Safecoin+Promo+Video+(Vimeo+%2B+Mastered+Audio)+4.22+(1).webm'
+    }
+  },
 }

@@ -42,7 +42,7 @@ export default class QAItem extends React.Component {
   }
 
   render() {
-    const { content } = this.props
+    const { content, index = null } = this.props
     const { question, answer } = content
 
     return (
@@ -53,7 +53,9 @@ export default class QAItem extends React.Component {
           <div id={this.questionId} className="qaItem__question">
             <p
               onClick={this.onClickHeader}
-            >{parseMDText(question, true)}
+            >
+            {index ? <span className="index">{index}</span> : null}
+            {parseMDText(question, true)}
             </p>
           </div>
           <div className="qaItem__answer">

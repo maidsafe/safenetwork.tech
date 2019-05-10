@@ -1,0 +1,61 @@
+@import '~styles/index'
+
+.Accordion
+  $c: &
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  &__row
+    position: relative
+    display: flex
+    padding-left: $pad-small
+    padding-top: 30px
+    padding-bottom: 30px
+    background-color: $white
+    cursor: pointer
+    &::before
+      content: ''
+      display: block
+      width: 30px
+      height: 30px
+      position: absolute
+      top: 30px
+      left: 26px
+      background-image: url($faq_arrow)
+      background-repeat: no-repeat
+      background-position: center right
+      background-size: 26px
+    &:hover
+      background-color: $roadmap-accordion-hover-bg-color
+    &:active
+      background-color: $qa-item-opened-pressed-bg-color
+  &__container
+    display: none
+    padding-top: $pad-thin
+    padding-bottom: $pad-hair
+    padding-left: 80px
+    padding-right: 60px
+    background-color: $white
+  &.active
+    #{$c}__container
+      display: grid
+    #{$c}__row
+      background-color: $acid-yellow
+      &::before
+        transform: rotate(90deg)
+        transform-origin: center
+      &:hover
+        background-color: $qa-item-opened-hover-bg-color
+      &:active
+        background-color: $qa-item-opened-pressed-bg-color
+
++render-to($media-s)
+  .RoadmapAccordionItem
+    $c: &
+    &__row
+      display: grid
+      &::before
+        top: 30px
+        transform: translate(0, 0)
+    &.active
+      #{$c}__row
+        &::before
+          transform: rotate(90deg) translate(0, 0)

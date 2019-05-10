@@ -3,7 +3,14 @@ import React from 'react'
 import Accordion from './Accordion'
 import AccordionItem from './AccordionItem'
 import InviteModal from './InviteModal'
-import { prefixClassName, openLink, lockBodyScroll, detectPlatform } from 'src/utils'
+import CONSTANT from 'src/v1.1/constant'
+import {
+  prefixClassName,
+  openLink,
+  lockBodyScroll,
+  detectPlatform,
+  getLocationHash,
+} from 'src/utils'
 
 import './invite.sass'
 
@@ -29,18 +36,19 @@ export default class Invite extends React.Component {
     }
 
     if (typeof window !== 'undefined') {
-      const hash = window.location.hash.substr(1)
+      window.addEventListener('load', () => {
+        const newHash = getLocationHash()
+        this.setAccordion(newHash)
+      })
+      window.addEventListener('hashchange', () => {
+        const newHash = getLocationHash()
+        this.setAccordion(newHash || this.ACCORDIONS.CLAIM_INVITE)
+      })
+      const hash = getLocationHash()
       if (!hash) {
         this.setAccordion(this.ACCORDIONS.CLAIM_INVITE)
         return
       }
-      window.addEventListener('load', () => {
-        this.setAccordion(hash)
-      })
-      window.addEventListener('hashchange', () => {
-        const newHash = window.location.hash.substr(1)
-        this.setAccordion(newHash)
-      })
     }
   }
 
@@ -136,6 +144,12 @@ export default class Invite extends React.Component {
                 content={modal}
                 onClickClose={() => {
                   this.toggleInviteModal()
+                }}
+                onInviteRequest={() => {
+                  openLink(`mailto:${CONSTANT.inviteRequestMail}`)
+                }}
+                onJoinForum={() => {
+                  openLink(CONSTANT.links.forum, true)
                 }}
               />
             ) : null
