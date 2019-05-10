@@ -6,8 +6,10 @@ import UnderlinedLink from 'components/UnderlinedLink'
 import BGVideo from 'components/BGVideo'
 import { prefixClassName, parseMDText } from 'src/utils'
 
-import beach1 from 'src/assets/videos/beach_1.mov'
-import beach2 from 'src/assets/videos/beach_2.mov'
+import wave1 from 'src/assets/videos/wave_1.mp4'
+import wave1Web from 'src/assets/videos/wave_1.webm'
+import wave2 from 'src/assets/videos/wave_2.mp4'
+import wave2Web from 'src/assets/videos/wave_2.webm'
 
 import './banner.sass'
 
@@ -35,10 +37,10 @@ const Banner = props => {
         </div>
         <div className={cn('asideBg')}></div>
         <div className={cn('video1')}>
-          <BGVideo src={beach1} width={'1000px'} />
+          <BGVideo src={wave1} webmSrc={wave1Web} width={'1000px'} />
         </div>
         <div className={cn('video2')}>
-          <BGVideo src={beach2} height={'700px'} position="BOTTOM_LEFT" />
+          <BGVideo src={wave2} webmSrc={wave2Web} height={'700px'} position="BOTTOM_LEFT" />
         </div>
       </div>
     </div>

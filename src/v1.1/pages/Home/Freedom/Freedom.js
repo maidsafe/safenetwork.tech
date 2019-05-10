@@ -7,8 +7,10 @@ import TextPanel from '../TextPanel'
 import BGVideo from 'components/BGVideo'
 import { prefixClassName } from 'src/utils'
 
-import beach1 from 'src/assets/videos/beach_1.mov'
-import beach2 from 'src/assets/videos/beach_2.mov'
+import wave1 from 'src/assets/videos/wave_1.mp4'
+import wave1Web from 'src/assets/videos/wave_1.webm'
+import wave2 from 'src/assets/videos/wave_2.mp4'
+import wave2Web from 'src/assets/videos/wave_2.webm'
 
 import './freedom.sass'
 
@@ -38,10 +40,10 @@ const Freedom = props => {
           <TextPanel {...aside2} />
         </div>
         <div className={cn('video1')}>
-          <BGVideo src={beach2} height={'700px'} />
+          <BGVideo src={wave2} webmSrc={wave2Web} height={'700px'} />
         </div>
         <div className={cn('video2')}>
-          <BGVideo src={beach1} height={'500px'} position="BOTTOM_RIGHT" />
+          <BGVideo src={wave1} webmSrc={wave1Web} height={'500px'} position="BOTTOM_RIGHT" />
         </div>
         <div className={cn('texture')}></div>
         <div className={cn('yellowBg')}></div>
