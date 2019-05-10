@@ -8,10 +8,12 @@
     grid-column: 2/span 2
     color: $spark-red
   &__content
-    grid-column: 4/span 4
+    grid-column: 4/span 7
+  &__textsPara
+    +clearfix()
   &__quote
     +font-3()
-    padding: $pad-fine 0 $pad-small
+    padding: $pad-fine 0 0
     text-align: center
     font-style: italic
     font-size: 27px
@@ -33,13 +35,51 @@
       top: 0
       left: 50%
       transform: translate(-50%, -100%)
+  &__aside1,
+  &__aside2
+    width: 480px
+    float: right
+    +default-column()
+    padding-top: $pad-chunky
+    padding-bottom: $pad-small
+    +shadow-deep()
+  &__aside1
+    background-color: $white
+    position: relative
+    transform: translate(0, 170px)
+    .desc
+      margin-bottom: $margin-fine
+      .caption
+        color: $body-text
+        margin-bottom: $margin-thin
+    .fig
+      position: absolute
+      bottom: 100%
+      left: 0
+      width: 530px
+      height: 320px
+      transform: translate($hspace-l, $hspace-l)
+      img
+        height: 100%
+  &__aside2
+    background-color: $acid-yellow
+    margin-left: $margin-small
+    transform: translate(0, 140px)
 
 +render-to($media-l)
   .HIWTopic
     &__name
       +default-column()
     &__content
-      grid-column: 4/span 3
+      grid-column: 4/span 6
+    &__aside1,
+    &__aside2
+      width: 500px
+    &__aside1
+      transform: translate(0, 190px)
+      margin-bottom: 90px
+    &__aside2
+      transform: translate(0, 0)
 
 +render-to($media-m)
   .HIWTopic
@@ -47,18 +87,18 @@
       margin-left: -$hspace-l
     &__name
       +default-column()
-      padding-left: 0 !important
-  #where-is-data-stored
-    .textSnippet__para p
-      &:not(:first-child):not(:nth-child(2))
-        margin-right: $margin-small
-  #who-stores-your-data
-    .textSnippet__title
-      margin-right: $margin-small
-  #browsing
-    .textSnippet__para p
-      &:last-child
-        margin-right: $margin-small
+      margin-left: -$hspace-l
+    &__aside1,
+    &__aside2
+      width: 390px
+    &__aside1
+      transform: translate(0, 80px)
+      margin-left: $margin-small
+      margin-bottom: 60px
+    &__aside2
+      transform: translate(0, 50px)
+      // margin-top: 80px
+      margin-bottom: 80px
 
 +render-to($media-s)
   .HIWTopic
@@ -67,66 +107,101 @@
       grid-row: 1
     &__content
       grid-row: 2
-      grid-column: 2/span 6
+      grid-column: 2/span 9
       margin-left: 0
-  #browsing
-    .textSnippet__para p
-      margin-right: $margin-jumbo !important
-  #storing-data
-    .textSnippet:first-child
-      .textSnippet__para p:first-child
-        margin-right: $margin-jumbo
-    .textSnippet__title
-      margin-right: $margin-jumbo
-  #where-is-data-stored
-    .HIWTopic__content
-      .textSnippet__para p
-        &:last-child
-          margin-right: $margin-jumbo !important
-  #who-stores-your-data
-    .HIWTopic__content
-      .textSnippet__title,
-      .textSnippet__para p:first-child
-        margin-right: $margin-jumbo
+    &__aside1,
+    &__aside2
+      width: 425px
+    &__aside1
+      transform: translate(0, 100%)
+      margin-bottom: 120px
+    &__aside2
+      transform: translate(0, 0)
+      margin-top: 100px
 
 +render-to($media-xs)
   .HIWTopic
+    $c: &
     &__wrap
       +grid-small()
+    &__name
+      +default-column()
+      margin-left: 0
+    &__textsTitle,
+    &__textsPara > p
+      padding-left: $hspace-xs
+    &__textsTitle
+      max-width: 100%
     &__name,
     &__content
       grid-column: 1/span 6
-      +default-column()
-      padding-left: $hspace-xs !important
     &__quote
       max-width: 620px
-  #where-is-data-stored
-    .HIWTopic__content
-      .textSnippet__para p
-        &:nth-child(3),
-        &:nth-child(4)
-          padding-right: $pad-super-jumbo + $pad-jumbo
+    &__textsPara
+      &.asideBrowser
+        display: flex
+        flex-wrap: wrap
+      p
+        order: 1
+    &__aside1
+      order: 2
+      width: 100%
+      transform: translate(0, 0)
+      padding-top: $pad-small
+      margin-bottom: $margin-chunky
+      margin-left: 0
+      margin-right: -$hspace-xs
+      +default-column()
+      .desc
+        max-width: 300px
+      .fig
+        width: 550px
+        height: 320px
+        bottom: -56px
+        left: 100%
+        transform: translate(-80%, 0)
+    &__aside2
+      width: 420px
+      margin-top: 0
 
 +render-to($media-xxs)
   .HIWTopic
-    .textSnippet__para p
-      padding-right: 0 !important
-      margin-right: 0 !important
-    &__name,
-    &__content
-      padding-left: $hspace-xxs !important
-  #browsing,
-  #where-is-data-stored,
-  #who-stores-your-data
-    .HIWTopic__content
-      .textSnippet__para p,
-      .textSnippet__para p:last-child,
-      .textSnippet__title
-        padding-right: 0 !important
-        margin-right: 0 !important
+    &__textsTitle,
+    &__textsPara > p
+      +default-column()
+    &__textsPara
+      display: flex
+      flex-wrap: wrap
+    &__aside1
+      margin-top: $margin-fine
+      margin-bottom: $margin-thin
+      .fig
+        width: 480px
+        height: 280px
+        left: 60%
+        transform: translate(0, 0)
+        bottom: -20px
+    &__aside2
+      width: 100%
+      order: 2
+      margin: 0 $hspace-xxs $margin-thin
+      padding-top: $pad-small
 
 +render-to($media-xxxs)
   .HIWTopic
-    &__name,
-    &__content
-      padding-left: $hspace-xxxs !important
+    &__aside1
+      padding-top: $pad-chunky
+      margin-bottom: 0
+      margin-top: $margin-jumbo
+      .desc
+        max-width: 100%
+      .fig
+        width: 336px
+        height: 200px
+        bottom: 100%
+        left: 50%
+        transform: translate(-50%, 56px)
+      .btn
+        width: 100%
+    &__aside2
+      margin: 0 $hspace-xxxs $margin-small
