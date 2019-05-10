@@ -55,6 +55,7 @@
     &__description
       padding-left: $pad-fine
     &__feature
+      width: 100%
       grid-row: 1
     &__description
       grid-row: 2
@@ -65,3 +66,11 @@
       justify-self: end
     &__media
       display: none
+
++render-to($media-xs)
+  .RoadmapAccordionItem
+    &__status
+      grid-column: 2/span 1
+    &__feature,
+    &__description
+      grid-column: 1/span 1

@@ -29,6 +29,7 @@
       &:not(:first-child):not(:last-child)
         visibility: hidden
       &:last-child
+        width: auto
         text-align: right
         padding-right: $pad-thin
 
@@ -36,11 +37,12 @@
   .RoadmapAccordion
     +grid-small()
     &__wrap
-      grid-column: 1/span 6
-      padding-left: $hspace-xs
+      grid-column: 2/span 6
+      margin-left: -$hspace-xs
       padding-right: 0
 
-+render-to($media-xs)
++render-to($media-xxs)
   .RoadmapAccordion
     &__wrap
-      padding-left: 0
+      grid-column: 1/span 6
+      margin-left: 0
