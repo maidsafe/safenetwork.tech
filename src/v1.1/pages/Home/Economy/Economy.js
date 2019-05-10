@@ -7,6 +7,8 @@ import { prefixClassName } from 'src/utils'
 
 import spark1 from 'src/assets/videos/spark_1.mp4'
 import spark1Web from 'src/assets/videos/spark_1.webm'
+import spark2 from 'src/assets/videos/spark_2.mp4'
+import spark2Web from 'src/assets/videos/spark_2.webm'
 
 import './economy.sass'
 
@@ -39,10 +41,10 @@ const Economy = props => {
           <BGVideo src={spark1} webmSrc={spark1Web} height={'500px'} position="BOTTOM_LEFT"/>
         </div>
         <div className={cn('video2')}>
-          <BGVideo src={spark1} webmSrc={spark1Web} height={'500px'} position="BOTTOM_LEFT" />
+          <BGVideo src={spark2} webmSrc={spark2Web} height={'500px'} position="BOTTOM_LEFT" />
         </div>
         <div className={cn('video3')}>
-          <BGVideo src={spark1} webmSrc={spark1Web} height={'500px'} position="BOTTOM_LEFT" />
+          <BGVideo src={spark2} webmSrc={spark2Web} height={'500px'} position="BOTTOM_LEFT" />
         </div>
       </div>
     </div>
