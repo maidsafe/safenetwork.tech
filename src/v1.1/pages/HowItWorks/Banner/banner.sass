@@ -15,6 +15,7 @@
   &__aside
     grid-column: 2/span 5
     grid-row: 2
+    align-self: start
     background-color: $white
     padding: $pad-medium 0
     +default-column()
@@ -22,9 +23,11 @@
     margin-right: -$hspace-l
     z-index: 1
   &__topics
-    grid-column: 7/span 3
+    grid-column: 7/span 4
     grid-row: 2
+    background-color: $default-bg-color
     margin-left: $hspace-l
+    padding-top: $pad-chunky
     padding-bottom: $pad-small
     +default-column()
     z-index: 1
@@ -41,11 +44,10 @@
       &:active:after
         background-color: $link-undeline-bg-color
   &__video1
-    grid-column: 1/span 6
+    grid-column: 1/span 10
     grid-row: 1/span 2
     align-self: start
     height: 700px
-    margin-right: -$hspace-l
     +set-video-overlay($texture-9-1)
   &__texture2
     grid-column: 7/span 4
@@ -82,9 +84,6 @@
       margin-left: 0
       background-color: $default-bg-color
       padding-top: $pad-medium
-    &__video1
-      grid-column: 1/span 8
-      margin-right: 0
     &__texture2
       grid-column: 8/span 3
       margin-left: 0
@@ -100,6 +99,13 @@
         height: 800px !important
     &__aside
       align-self: auto
+    &__asideWrap
+      height: 100%
+      position: relative
+      .underlinedLink
+        position: absolute
+        bottom: 0
+        left: 0
 
 +render-to($media-xs)
   .HIWBanner
@@ -114,10 +120,11 @@
       grid-column: 1/span 6
     &__video1
       height: 535px
-      video
-        height: 600px !important
     &__aside
       margin-left: $hspace-xs
+    &__asideWrap
+      .underlinedLink
+        position: static
     &__topics
       display: none
     &__texture2
@@ -134,8 +141,6 @@
         margin-bottom: $margin-thin
     &__video1
       height: 440px
-      video
-        height: 450px !important
     &__texture2
       height: 8px
 

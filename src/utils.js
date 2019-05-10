@@ -132,7 +132,7 @@ export const genRandomKey = () => (
 )
 
 export const isMenuLight = pathname => (
-    ['/safecoin/'].indexOf(pathname) !== -1
+    ['/safecoin/', '/how-it-works/'].indexOf(pathname) !== -1
 )
 
 export const parseMDText = (text, isInline = false) => {
@@ -163,4 +163,11 @@ export const getLocationHash = () => {
     hash = window.location.hash.substr(1)
   }
   return hash
+}
+
+export const isHowItWorksPage = () => {
+  if (typeof window == 'undefined') {
+    return
+  }
+  return window.location.pathname === '/how-it-works/'
 }
