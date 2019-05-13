@@ -1,10 +1,10 @@
 @import '~styles/index'
 
 .SafeCoin
-  &__wrap
-    max-width: $max-width-xl
-  &__textBlocks
+  overflow: hidden
+  &__textBlocksWrap
     +grid()
+    max-width: $max-width-xl
   &__video
     grid-column: 7/span 4
     grid-row: 1
@@ -147,6 +147,20 @@
         letter-spacing: -0.02em
         color: $black
 
++render-to($media-xl)
+  .SafeCoin
+    &__bgDark
+      position: relative
+      &:after
+        content: ''
+        width: 1000%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 100%
+        background-color: $default-bg-color
+        z-index: 1
+
 +render-to($media-m)
   .SafeCoin
     &__video
@@ -246,7 +260,7 @@
 
 +render-to($media-xs)
   .SafeCoin
-    &__textBlocks
+    &__textBlocksWrap
       +grid-small()
     &__video,
     &__textBlock1,

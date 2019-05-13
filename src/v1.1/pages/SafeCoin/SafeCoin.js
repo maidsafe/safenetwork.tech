@@ -49,71 +49,73 @@ const SafeCoin = () => {
       <div className={cn('wrap')}>
         <Banner content={banner} />
         <div className={cn('textBlocks')}>
-          <div className={cn('video')}>
-            <figure>
-              <video
-                tabIndex="-1"
-                controls="controls">
-                <source src={CONSTANTS.videoLinks.security.mp4} type="video/mp4" />
-                <source src={CONSTANTS.videoLinks.security.ogv} type="video/ogg" />
-                <source src={CONSTANTS.videoLinks.security.webm} type="video/webm" />
-              </video>
-              <figcaption>{video.caption}</figcaption>
-            </figure>
-          </div>
-          <div className={cn('textBlock1')}>
-            <TextSnippet title={textBlock1.title} titleSize="H2" text={textBlock1.para} />
-          </div>
-          <div className={cn('textBlock2')}>
-            <TextSnippet title={textBlock2.title} titleSize="H2" text={textBlock2.para} />
-            <div className="CTA">
-              <Button className="icon external">{textBlock2.CTA.name}</Button>
+          <div className={cn('textBlocksWrap')}>
+            <div className={cn('video')}>
+              <figure>
+                <video
+                  tabIndex="-1"
+                  controls="controls">
+                  <source src={CONSTANTS.videoLinks.security.mp4} type="video/mp4" />
+                  <source src={CONSTANTS.videoLinks.security.ogv} type="video/ogg" />
+                  <source src={CONSTANTS.videoLinks.security.webm} type="video/webm" />
+                </video>
+                <figcaption>{video.caption}</figcaption>
+              </figure>
             </div>
-          </div>
-          <div className={cn('textBlock3')}>
-            <TextSnippet title={textBlock3.title} text={textBlock3.para} />
-          </div>
-          <div className={cn('textBlock4')}>
-            <TextSnippet title={textBlock4.title} text={textBlock4.para} />
-            <UnderlinedLink url={textBlock4.CTA.url}>{textBlock4.CTA.name}</UnderlinedLink>
-          </div>
-          <div className={cn('textBlock5')}>
-            <TextSnippet title={textBlock5.title} titleSize="H2" text={textBlock5.para} />
-          </div>
-          <div className={cn('textBlock6')}>
-            <TextSnippet title={textBlock6.title} text={textBlock6.para} />
-            <div className={cn('exchange')}>
+            <div className={cn('textBlock1')}>
+              <TextSnippet title={textBlock1.title} titleSize="H2" text={textBlock1.para} />
+            </div>
+            <div className={cn('textBlock2')}>
+              <TextSnippet title={textBlock2.title} titleSize="H2" text={textBlock2.para} />
+              <div className="CTA">
+                <Button className="icon external">{textBlock2.CTA.name}</Button>
+              </div>
+            </div>
+            <div className={cn('textBlock3')}>
+              <TextSnippet title={textBlock3.title} text={textBlock3.para} />
+            </div>
+            <div className={cn('textBlock4')}>
+              <TextSnippet title={textBlock4.title} text={textBlock4.para} />
+              <UnderlinedLink url={textBlock4.CTA.url}>{textBlock4.CTA.name}</UnderlinedLink>
+            </div>
+            <div className={cn('textBlock5')}>
+              <TextSnippet title={textBlock5.title} titleSize="H2" text={textBlock5.para} />
+            </div>
+            <div className={cn('textBlock6')}>
+              <TextSnippet title={textBlock6.title} text={textBlock6.para} />
+              <div className={cn('exchange')}>
+                  {
+                    exchanges.map(ex => (
+                      <div key={genRandomKey()} className={cn('exchangeItem')}>
+                        <figure>
+                          <a href={ex.url}>
+                            <img src={EXCHANGE_IMGS[ex.name]} />
+                            <figcaption>{ex.name}</figcaption>
+                          </a>
+                        </figure>
+                      </div>
+                    ))
+                  }
+              </div>
+            </div>
+            <div className={cn('faq')}>
+              <div className={cn('faqWrap')}>
                 {
-                  exchanges.map(ex => (
-                    <div key={genRandomKey()} className={cn('exchangeItem')}>
-                      <figure>
-                        <a href={ex.url}>
-                          <img src={EXCHANGE_IMGS[ex.name]} />
-                          <figcaption>{ex.name}</figcaption>
-                        </a>
-                      </figure>
-                    </div>
-                  ))
+                  faqSections.map(section => <QASection key={genRandomKey()} content={section} />)
                 }
-            </div>
-          </div>
-          <div className={cn('faq')}>
-            <div className={cn('faqWrap')}>
-              {
-                faqSections.map(section => <QASection key={genRandomKey()} content={section} />)
-              }
-              <div className={cn('more')}>
-                <div className={cn('cta')}>
-                  <Button className="hollow" onClick={() => {
-                    openLink(faqs.CTA.url)
-                  }}>{faqs.CTA.name}</Button>
+                <div className={cn('more')}>
+                  <div className={cn('cta')}>
+                    <Button className="hollow" onClick={() => {
+                      openLink(faqs.CTA.url)
+                    }}>{faqs.CTA.name}</Button>
+                  </div>
                 </div>
               </div>
             </div>
+            <div className={cn('texture1')}></div>
+            <div className={cn('bgDark')}></div>
+            <div className={cn('buySafeCoinBg')}></div>
           </div>
-          <div className={cn('texture1')}></div>
-          <div className={cn('bgDark')}></div>
-          <div className={cn('buySafeCoinBg')}></div>
         </div>
       </div>
     </section>
