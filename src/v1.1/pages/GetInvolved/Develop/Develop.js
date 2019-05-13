@@ -5,6 +5,10 @@ import UnderlinedLink from 'components/UnderlinedLink'
 import TextSnippet from 'components/TextSnippet'
 import Invite from '../Invite'
 import { prefixClassName, openLink } from 'src/utils'
+import BGVideo from 'components/BGVideo'
+
+import waveThin1 from 'src/assets/videos/wave_1_thin.mp4'
+import waveThin1Web from 'src/assets/videos/wave_1_thin.webm'
 
 import './develop.sass'
 
@@ -42,7 +46,9 @@ const Develop = props => {
           </div>
         </div>
         <Invite content={invite} />
-        <div className={cn('texture')}></div>
+        <div className={cn('video')}>
+          <BGVideo src={waveThin1} webmSrc={waveThin1Web} height={'10px'} />
+        </div>
       </div>
     </div>
   )

@@ -5,9 +5,13 @@ import TextSnippet from 'components/TextSnippet'
 import UnderlinedLink from 'components/UnderlinedLink'
 import QASection from 'components/QASection'
 import Banner from './Banner'
+import BGVideo from 'components/BGVideo'
 import { prefixClassName, genRandomKey, openLink } from 'src/utils'
 import content from './content'
 import CONSTANTS from 'src/v1.1/constant'
+
+import sparkThin2 from 'src/assets/videos/spark_2_thin.mp4'
+import sparkThin2Web from 'src/assets/videos/spark_2_thin.webm'
 
 import Poloniex from 'images/exchange_poloniex.png'
 import Hitbtc from 'images/exchange_hitbtc.png'
@@ -111,7 +115,9 @@ const SafeCoin = () => {
               </div>
             </div>
           </div>
-          <div className={cn('texture1')}></div>
+          <div className={cn('bgVideo')}>
+            <BGVideo src={sparkThin2} webmSrc={sparkThin2Web} height={'10px'} />
+          </div>
           <div className={cn('bgDark')}></div>
           <div className={cn('buySafeCoinBg')}></div>
         </div>
