@@ -116,7 +116,7 @@ const SafeCoin = () => {
             </div>
           </div>
           <div className={cn('bgVideo')}>
-            <BGVideo src={sparkThin2} webmSrc={sparkThin2Web} height={'10px'} />
+            <BGVideo src={sparkThin2} webmSrc={sparkThin2Web} height={'30px'} />
           </div>
           <div className={cn('bgDark')}></div>
           <div className={cn('buySafeCoinBg')}></div>

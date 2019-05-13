@@ -23,7 +23,7 @@ const Banner = props => {
           <div className="introText"><p>{desc}</p></div>
         </div>
         <div className={cn('video')}>
-          <BGVideo src={sparkThin1} webmSrc={sparkThin1Web} height={'10px'} />
+          <BGVideo src={sparkThin1} webmSrc={sparkThin1Web} height={'20px'} />
         </div>
       </div>
     </div>
