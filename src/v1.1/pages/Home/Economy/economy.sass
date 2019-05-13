@@ -4,6 +4,7 @@
   position: relative
   background-color: $pinky-grey
   z-index: 1
+  overflow: hidden
   &__wrap
     +grid()
   &__mainText
@@ -20,12 +21,12 @@
     z-index: 1
     &::after
       content: ''
-      width: 33.34%
-      height: 100%
+      width: 34%
+      height: 200%
       background-color: $pinky-grey
       position: absolute
       bottom: 100%
-      right: 100%
+      left: 100%
   &__aside2,
   &__aside3,
   &__aside4
@@ -46,6 +47,7 @@
   &__video3
     +set-video-overlay($texture-spark-overlay)
   &__video1
+    display: none
     grid-column: 6/span 1
     grid-row: 1
     height: 600px
@@ -54,6 +56,7 @@
     video
       background-image: url($texture-spark-1)
   &__video2
+    display: none
     grid-column: 7/span 1
     grid-row: 1
     height: 600px
@@ -63,20 +66,26 @@
       background-image: url($texture-spark-2)
   &__video3
     grid-column: 10/span 1
-    grid-row: 2
+    grid-row: 1/span 2
     height: 100%
     align-self: end
     z-index: 0
     video
+      // height: 1000px !important
+      object-fit: cover
       background-image: url($texture-spark-2)
-      transform: translate(50%, 0) rotate(90deg) !important
-      transform-origin: top left
+      transform: scaleY(-1) scaleX(-1) !important
+      // transform-origin: top left
 
 +render-to($media-xl)
   .HomeEconomy
     &__wrap
       max-width: $max-width-xl
+    &__aside1
+      &:after
+        display: none
     &__video3
+      grid-row: 2
       .BGVideo__wrap
         min-width: 800px
 
@@ -111,7 +120,8 @@
         background-color: $pinky-grey
         z-index: 1
     &__video2
-      grid-column: 7/span 3
+      display: block
+      grid-column: 7/span 4
       height: 160px
       align-self: end
     &__video3
@@ -140,6 +150,7 @@
       grid-row: 4
       background-color: $default-bg-color
     &__video1
+      display: block
       grid-column: 1/span 5
       grid-row: 1
       height: 32px

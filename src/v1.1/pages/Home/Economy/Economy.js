@@ -44,7 +44,7 @@ const Economy = props => {
           <BGVideo src={spark2} webmSrc={spark2Web} height={'500px'} position="BOTTOM_LEFT" />
         </div>
         <div className={cn('video3')}>
-          <BGVideo src={spark2} webmSrc={spark2Web} height={'500px'} position="BOTTOM_LEFT" />
+          <BGVideo src={spark2} webmSrc={spark2Web} height={'500px'} position="TOP_LEFT" />
         </div>
       </div>
     </div>
