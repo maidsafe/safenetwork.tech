@@ -11,7 +11,7 @@ export default {
     para: [
       'Safecoin is a cryptocurrency like no other. Digital cash with no public ledger. There’s no limit to the number of transactions which can take place instantly, privately and simultaneously.',
       'Earning Safecoin is simple. Choose to become a Farmer and connect your computer to the Network. Watch as the Network automatically and continually moves chunks of data around the world to ensure efficiency. Proof of Resource takes the place of more expensive alternatives, like Proof of Work.',
-      'Safecoin can then be used to buy Network resources—like the one-time-fee for uploading data—or exhanged for goods and services like any other currency.',
+      'Safecoin can then be used to buy Network resources—like the one-time fee for uploading data—or exhanged for goods and services like any other currency.',
     ],
   },
   textBlock2: {
@@ -28,7 +28,7 @@ export default {
   textBlock3: {
     title: 'Pay Anonymously, be paid privately.',
     para: [
-      'Safecoin acts as digital cash. Unlike-blockchain based cryptocurrencies there is no public ledger; only the current and previous owner of each coin are known to each other. So you can be paid in privacy.',
+      'Safecoin acts as digital cash. Unlike blockchain based cryptocurrencies there is no public ledger; only the current and previous owner of each coin are known to each other. So you can be paid in privacy.',
       'And you can even pay anonymously if you require it. It’s your choice.'
     ]
   },
@@ -79,7 +79,7 @@ export default {
           {
             question: 'What is Safecoin?',
             answer: [
-              `Safecoin is a digital token that are generated automatically by the SAFE Network and reside on the SAFE Network. The Network will autonomously confirm account balances to Wallets and allow transactions to take place. Safecoin are transferred using the digital signature of the coin’s last owner. This operation is 'network atomic'—in other words,the Network ensures that all copies update to reflect the transaction. This is a different approach to the blockchain mechanism employed in other projects, such as Bitcoin.`,
+              `Safecoin is a digital token that are generated automatically by the SAFE Network and reside on the SAFE Network. The Network will autonomously confirm account balances to wallets and allow transactions to take place. Safecoin are transferred using the digital signature of the coin’s last owner. This operation is 'network atomic'—in other words,the Network ensures that all copies update to reflect the transaction. This is a different approach to the blockchain mechanism employed in other projects, such as Bitcoin.`,
               'There can be many millions of transactions per second on the SAFE Network and the larger it becomes the more transactions per second can be executed. A Safecoin only records the last and current owner. By doing so, it ensures that the current owner was transferred ownership properly by the last owner. This allows coins to be transferred between people very easily and without delay.',
               'Please note that Safecoin will not be active until the network goes live. See MaidSafeCoin for current proxy token.'
             ]
@@ -111,7 +111,7 @@ export default {
             question: 'How do I buy MaidSafeCoin?',
             answer: [
               'In essence all we have to do is buy bitcoin and exchange it for MaidSafeCoin. There are a few simple steps required to do this.',
-              '-Create an [OmniWallet](http://omniwallet.org/).\n-Purchase bitcoin using your preferred vendor.\n-Create a trade account on an exchange which lists MaidSafeCoin (e.g. on [Poloniex](https://www.poloniex.com/exchange#btc_maid)).\n-Send bitcoin to the trading account.\n-Trade bitcoin for MaidSafeCoin.\n-Withdraw / Transfer to OmniWallet.\n-MaidSafeCoin is now in your OmniWallet!'
+              '- Create an [OmniWallet](http://omniwallet.org/).\n- Purchase bitcoin using your preferred vendor.\n- Create a trade account on an exchange which lists MaidSafeCoin (e.g. on [Poloniex](https://www.poloniex.com/exchange#btc_maid)).\n- Send bitcoin to the trading account.\n- Trade bitcoin for MaidSafeCoin.\n- Withdraw / Transfer to OmniWallet.\n- MaidSafeCoin is now in your OmniWallet!'
             ]
           },
           {
