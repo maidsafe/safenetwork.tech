@@ -15,6 +15,8 @@ import Cryptopia from 'images/exchange_cryptopia.png'
 import Openledger from 'images/exchange_openledger.png'
 import Bitker from 'images/exchange_bitker.png'
 
+import SafeCoinPoster from 'images/textures/texture_safecoin.jpg'
+
 import './safeCoin.sass'
 
 const baseClassName = 'SafeCoin'
@@ -54,6 +56,7 @@ const SafeCoin = () => {
               <figure>
                 <video
                   tabIndex="-1"
+                  poster={SafeCoinPoster}
                   controls="controls">
                   <source src={CONSTANTS.videoLinks.security.mp4} type="video/mp4" />
                   <source src={CONSTANTS.videoLinks.security.ogv} type="video/ogg" />
