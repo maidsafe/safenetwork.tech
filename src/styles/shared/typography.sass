@@ -121,10 +121,14 @@ blockquote
         color: $body-text
       &:after, &:visited:after
         background-color: $link-undeline-bg-color
-      &:hover:after
-        background-color: $spark-red
-      &:pressed:after
-        background-color: $acid-yellow
+      &:hover
+        color: $black
+        &:after
+          background-color: $spark-red
+      &:active
+        color: $pitch-black
+        &:after
+          background-color: $acid-yellow
 
 .overline
   display: inline-block

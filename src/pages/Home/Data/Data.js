@@ -29,7 +29,7 @@ const Data = props => {
         <div className={cn('aside3')}>
           <TextPanel {...aside3} />
         </div>
-        <div className={cn('aside4')}>
+        <div className={classNames(cn('aside4'), 'underlineLink-bright-onYellow')}>
           <TextPanel {...aside4} />
         </div>
         <div className={cn('texture1')}></div>
