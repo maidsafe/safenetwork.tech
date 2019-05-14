@@ -63,7 +63,7 @@ export default class AccordionItem extends React.Component {
             <Button className="hollow icon external">{content.CTA.name}</Button>
           </div>,
           <div key={genRandomKey()} className={cn('media')}>
-            <Video width="530" height="330" url={content.video.url} caption={content.video.caption} />
+            <Video width="530" url={content.video.url} caption={content.video.caption} />
           </div>
         ]}
       </Accordion>
