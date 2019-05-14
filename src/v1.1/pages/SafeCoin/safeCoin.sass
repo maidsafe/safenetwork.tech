@@ -86,14 +86,13 @@
   &__more
     grid-column: 2/span 8
     margin-top: $margin-small
-  &__texture1
-    height: 12px
-    background-image: url($texture-10)
-    background-size: cover
-  &__texture1
+  &__bgVideo
     grid-column: 6/span 5
     grid-row: 2
     align-self: end
+    height: 12px
+    background-image: url($texture-spark-2-thin-poster)
+    background-size: cover
   &__bgDark
     grid-column: 1/span 10
     grid-row: 3/span 2
@@ -224,9 +223,9 @@
       padding-bottom: 0
     &__bgDark
       grid-row: 6/span 2
-    &__texture1
-      grid-row: 4
+    &__bgVideo
       grid-column: 1/span 5
+      grid-row: 4
       margin-right: $hspace-s
     &__textBlock5
       grid-column: 2/span 8
@@ -286,7 +285,7 @@
     &__textBlock5,
     &__buySafeCoinBg
       grid-row: 6
-    &__texture1
+    &__bgVideo
       grid-column: 3/span 4
       grid-row: 5
       margin-right: 0
@@ -384,7 +383,7 @@
   .SafeCoin
     &__video
       margin-top: -$margin-medium
-    &__texture1
+    &__bgVideo
       grid-column: 4/span 3
     &__textBlock4
       padding-bottom: $pad-jumbo

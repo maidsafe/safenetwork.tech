@@ -1,7 +1,11 @@
 import React from 'react'
 
 import PageBanner from 'components/PageBanner'
+import BGVideo from 'components/BGVideo'
 import { prefixClassName } from 'src/utils'
+
+import sparkThin1 from 'src/assets/videos/spark_1_thin.mp4'
+import sparkThin1Web from 'src/assets/videos/spark_1_thin.webm'
 
 import './banner.sass'
 
@@ -18,7 +22,9 @@ const Banner = props => {
         <div className={cn('content')}>
           <div className="introText"><p>{desc}</p></div>
         </div>
-        <div className={cn('texture1')}></div>
+        <div className={cn('video')}>
+          <BGVideo src={sparkThin1} webmSrc={sparkThin1Web} height={'20px'} />
+        </div>
       </div>
     </div>
   )
