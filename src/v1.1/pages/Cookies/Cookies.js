@@ -17,10 +17,10 @@ const Cookies = () => {
     <section className={baseClassName}>
       <div className={cn('wrap')}>
         <div className={cn('banner')}>
-          <PageBanner title={title} />
+          <div className={cn('bannerWrap')}><PageBanner title={title} /></div>
         </div>
         <div className={cn('desc')}>
-          <p>{parseMDText(desc, true)}</p>
+          <div className={cn('descWrap')}><p>{parseMDText(desc, true)}</p></div>
         </div>
         <div className={cn('topics')}>
           {topics.map(t => {
