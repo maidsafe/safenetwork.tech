@@ -36,7 +36,7 @@ const Topic = props => {
       }
       if (topicName === 'Where Is Data Stored?') {
         asideEle = (
-          <div key={genRandomKey()} className={cn('aside2')}>
+          <div key={genRandomKey()} className={classNames(cn('aside2'), 'underlineLink-bright-onYellow')}>
             <TextSnippet text={asideContent.para} title={asideContent.title} />
             <UnderlinedLink url={asideContent.CTA.url}>{asideContent.CTA.name}</UnderlinedLink>
           </div>

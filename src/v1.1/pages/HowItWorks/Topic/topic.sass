@@ -44,6 +44,7 @@
     padding-bottom: $pad-small
     +shadow-deep()
   &__aside1
+    background: linear-gradient(273.55deg, #FFFFFF 34.97%, #F5F4F2 99.21%)
     background-color: $white
     position: relative
     transform: translate(0, 170px)
@@ -175,12 +176,13 @@
     &__aside1
       margin-top: $margin-fine
       margin-bottom: $margin-thin
+      padding-top: $pad-medium
       .fig
         width: 480px
         height: 280px
         left: 60%
         transform: translate(0, 0)
-        bottom: -20px
+        bottom: -50px
     &__aside2
       width: 100%
       order: 2
@@ -190,17 +192,18 @@
 +render-to($media-xxxs)
   .HIWTopic
     &__aside1
-      padding-top: $pad-chunky
+      padding-top: $pad-super-jumbo
       margin-bottom: 0
-      margin-top: $margin-jumbo
+      margin-top: $margin-thin
       .desc
         max-width: 100%
       .fig
         width: 336px
         height: 200px
-        bottom: 100%
+        bottom: auto
+        top: 0
         left: 50%
-        transform: translate(-50%, 56px)
+        transform: translate(-50%, -55px)
       .btn
         width: 100%
     &__aside2

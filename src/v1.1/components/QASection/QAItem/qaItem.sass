@@ -50,6 +50,12 @@ $open-hspace-xxxs: $hspace-xxxs
         color: $pitch-black
       &::after
         background-image: url($arrow-right-icon)
+    &:hover
+      p::after
+        background-color: $link-undeline-bg-color
+    &:active
+      p::after
+        background-color: $spark-red
   &__answer
     display: none
     padding-left: $hspace-default + $open-hspace
