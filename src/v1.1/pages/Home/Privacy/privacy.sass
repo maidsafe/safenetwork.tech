@@ -14,7 +14,7 @@
     grid-column: 7/span 3
     grid-row: 1
     align-self: end
-    color: $spark-red
+    color: $black
     +font-1()
     position: relative
     background-color: $default-bg-color
@@ -25,9 +25,10 @@
     background-color: $white
     z-index: 1
   &__texture1
-    grid-column: 7/span 1
+    grid-column: 10/span 1
     grid-row: 1
-    height: 100%
+    align-self: end
+    height: 460px
     background-image: url($texture-4)
     background-size: contain
     position: relative
@@ -41,6 +42,7 @@
     background-size: contain
     position: relative
     z-index: 0
+    display: none
   &__texture3
     grid-column: 7/span 1
     grid-row: 2
@@ -63,7 +65,8 @@
     &__aside
       grid-column: 3/span 4
     &__texture1
-      grid-column: 9/span 1
+      grid-column: 10/span 1
+      transform: translate(0, 150px)
     &__texture2
       grid-column: 10/span 1
       grid-row: 1
@@ -99,6 +102,7 @@
     &__texture1
       grid-column: 1/span 5
       grid-row: 1
+      transform: translate(0, 0)
       height: 32px
       background-size: 200px
       background-position: center
@@ -107,6 +111,7 @@
       grid-row: 2
       height: 160px
       background-size: 150px
+      transform: translate(0, 0)
 
 +render-to($media-xs)
   .HomePrivacy

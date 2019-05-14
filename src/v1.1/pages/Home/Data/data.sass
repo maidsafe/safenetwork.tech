@@ -3,6 +3,7 @@
 .HomeData
   background-color: $unit-green
   position: relative
+  overflow: hidden
   z-index: 2
   &__wrap
     +grid()
@@ -54,6 +55,7 @@
   &__texture3
     +set-video-overlay($texture-spark-overlay)
   &__texture1
+    display: none
     grid-column: 9/span 1
     grid-row: 1
     background-image: url($texture-6)
@@ -71,6 +73,7 @@
     position: relative
     z-index: 0
   &__texture3
+    display: none
     grid-column: 6/span 1
     grid-row: 1 /span 2
     height: 615px
@@ -86,14 +89,17 @@
   .HomeData
     &__wrap
       max-width: $max-width-xl
+
++render-to($media-l)
+  .HomeData
     &__aside1
       .TextPanel
         height: 440px
       &::after
         width: 1000%
     &__texture2
-      grid-row: 1
-      height: 440px
+      grid-row: 1/ span 2
+      height: 858px
       align-self: end
       position: relative
       background-image: none
@@ -108,12 +114,12 @@
         height: 100%
         display: block
         background-image: url($texture-7-rotated)
-        background-size: contain
+        background-size: cover
         background-repeat: no-repeat
         position: absolute
         top: 0
         left: 0
-        background-position: left center
+        background-position: right top
         z-index: 1
 
 +render-to($media-m)
@@ -138,6 +144,7 @@
     &__aside1:after
       display: none
     &__texture1
+      display: block
       grid-column: 1/span 2
       grid-row: 1
       height: 120px
@@ -175,9 +182,11 @@
         top: 0
         left: 0
     &__texture3
+      display: block
       grid-column: 1/span 2
       grid-row: 4
       height: 100%
+      background-image: url($texture-7-rotated)
 
 +render-to($media-s)
   .HomeData
