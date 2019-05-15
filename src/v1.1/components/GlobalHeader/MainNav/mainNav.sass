@@ -27,9 +27,14 @@
 // Small
 +render-to($media-s)
   .mainNav
+    display: inline-block
     &__wrap
       float: none
       text-align: center
       padding-top: 80px
     &__items, &__btnItems
       float: none
+    &__items
+      display: flex
+      flex-direction: column
+      align-items: center

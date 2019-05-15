@@ -74,7 +74,8 @@
     &__nav
       display: none
       grid-column: 1/ span 10
-      justify-self: center
+      justify-self: auto
+      text-align: center
       padding-bottom: 80px
       padding-right: 0
     .mobNav
@@ -105,6 +106,8 @@
   .globalHeader
     &__wrap
       +grid-small()
+    &__nav
+      grid-column: 1/span 6
     .mobNav
       grid-column: 6 /span 1
       padding-right: 0
