@@ -4,9 +4,18 @@
   &__wrap
     +grid()
     max-width: $max-width-xl
+    &::after
+      content: ''
+      grid-column: 1/span 7
+      grid-row: 1
+      align-self: end
+      height: 3px
+      background-color: $acid-yellow
+      margin-right: $hspace-l
   &__banner
     grid-column: 1/span 10
     background-color: $default-bg-color
+    grid-row: 1
   &__desc
     grid-column: 3/span 7
     padding-top: $pad-small
@@ -21,6 +30,9 @@
   .Cookies
     &__wrap
       +grid-small()
+      &::after
+        grid-column: 1/span 4
+        margin-right: -$hspace-l
     &__banner
       grid-column: 1/span 6
     &__desc
@@ -28,3 +40,10 @@
       +default-column()
     &__topics
       padding-bottom: $pad-small
+
++render-to($media-xs)
+  .Cookies
+    &__wrap
+      &::after
+        grid-column: 1/span 6
+        margin-right: 0
