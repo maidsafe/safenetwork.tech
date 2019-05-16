@@ -1,0 +1,133 @@
+@import '~styles/index'
+
+// Default (ML)
+.globalHeader
+  width: 100%
+  padding-top: 60px
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 99
+  &__wrap
+    +clearfix()
+    +grid()
+  &__logo,
+  &__nav
+    float: left
+  &__logo
+    grid-column: 1/ span 3
+  &__nav
+    padding-right: 40px
+    grid-column: 4/ span 7
+    justify-self: end
+  .mobNav
+    text-align: center
+    grid-column: 10/ span 1
+    grid-row: 1
+    display: none
+    &__btn
+      width: 40px
+      height: 40px
+      background-image: url($menu-icon)
+      background-color: $spark-red
+      background-position: center
+      background-repeat: no-repeat
+      border: 0
+      border-radius: 50%
+      outline: none
+      cursor: pointer
+      &:hover
+        background-color: $black
+        +shadow-shallow()
+      &:active
+        background-color: $acid-yellow
+        background-image: url($hamburger-icon)
+        +shadow-pressed()
+      &.light
+        background-color: $white
+        background-image: url($menu-icon-dark)
+        &:hover
+          background-color: $black
+          background-image: url($menu-icon)
+        &:active
+          background-color: $acid-yellow
+          background-image: url($menu-icon-dark)
+      &.whiteRed
+        background-color: $spark-red
+        background-image: url($menu-icon)
+
+// XLarge
++render-to($media-xl)
+  .globalHeader
+    &__wrap
+      max-width: $max-width-xl
+
+// Large
++render-to($media-l)
+  .globalHeader
+    &__nav
+      width: 100%
+      padding-right: 0
+      grid-column: 6/ span 5
+
+// Small
++render-to($media-s)
+  .globalHeader
+    &__logo
+      grid-column: 1 / span 3
+    &__nav
+      display: none
+      grid-column: 1/ span 10
+      justify-self: auto
+      text-align: center
+      padding-bottom: 80px
+      padding-right: 0
+    .mobNav
+      display: block
+    &.active
+      height: 100%
+      position: fixed
+      top: 0
+      left: 0
+      background-color: $white
+      overflow-y: auto
+      .mobNav
+        &__btn
+          background-image: url($menu-close-icon) !important
+          background-color: $white !important
+          background-size: 20px
+      .globalHeader__nav
+        display: block
+      .siteLogo
+        &__media img
+          filter: none
+        &__name
+          color: $black
+
+
+// XSmall
++render-to($media-xs)
+  .globalHeader
+    &__wrap
+      +grid-small()
+    &__nav
+      grid-column: 1/span 6
+    .mobNav
+      grid-column: 6 /span 1
+      padding-right: 0
+      justify-self: center
+
+// XXSmall
++render-to($media-xxs)
+  .globalHeader
+    padding-top: 34px
+    &__logo
+      padding-top: 3px
+    .mobNav
+      text-align: right
+      justify-self: normal
+      padding-right: 20px
+      &__btn
+        width: 36px
+        height: 36px
+        background-size: 20px
