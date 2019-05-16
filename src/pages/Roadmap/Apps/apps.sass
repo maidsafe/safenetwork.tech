@@ -82,6 +82,15 @@
       bottom: 0
       left: 0
       z-index: 0
+      &::after
+        content: ''
+        width: 1000%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 100%
+        background-color: $default-bg-color
+        z-index: 1
   &__currentWrap
     grid-column: 1/span 10
   &__currentIntro
@@ -162,6 +171,18 @@
   .RoadmapApps
     &__wrap
       max-width: $max-width-xl
+    &__current
+      overflow: unset
+    &__upcomingBase
+      position: relative
+      &::after
+        content: ''
+        width: 1000%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 100%
+        background-color: $default-bg-color
 
 +render-to($media-l)
   .RoadmapApps

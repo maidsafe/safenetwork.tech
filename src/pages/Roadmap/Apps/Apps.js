@@ -55,37 +55,39 @@ const Apps = props => {
           </div>
           <div className="darkBg"></div>
         </div>
-        <div className={cn('upcoming')}>
-          <div className={cn('upcomingWrap')}>
-            <div className={cn('upcomingStatus')}>
-              <div className="overline">{content.upcomingMilestones.status}</div>
-            </div>
-            <div className={cn('upcomingList')}>
-              {
-                content.upcomingMilestones.list.map(li => {
-                  let accordion = null
-                  if (li.accordion) {
-                    accordion = (
-                      <Accordion key={genRandomKey()} header={li.accordion.header}>
-                        {
-                          li.accordion.items.map(accord => (
-                            <AccordionItem key={genRandomKey()} content={accord} />
-                          ))
-                        }
-                      </Accordion>
-                    )
-                  }
-                  return [
-                    <div key={genRandomKey()} className={cn('upcomingListItem')}>
-                      <div className="wrap">
-                        <h3>{li.title}</h3>
-                        <p>{li.para}</p>
-                      </div>
-                    </div>,
-                    accordion
-                  ]
-                })
-              }
+        <div className={cn('upcomingBase')}>
+          <div className={cn('upcoming')}>
+            <div className={cn('upcomingWrap')}>
+              <div className={cn('upcomingStatus')}>
+                <div className="overline">{content.upcomingMilestones.status}</div>
+              </div>
+              <div className={cn('upcomingList')}>
+                {
+                  content.upcomingMilestones.list.map(li => {
+                    let accordion = null
+                    if (li.accordion) {
+                      accordion = (
+                        <Accordion key={genRandomKey()} header={li.accordion.header}>
+                          {
+                            li.accordion.items.map(accord => (
+                              <AccordionItem key={genRandomKey()} content={accord} />
+                            ))
+                          }
+                        </Accordion>
+                      )
+                    }
+                    return [
+                      <div key={genRandomKey()} className={cn('upcomingListItem')}>
+                        <div className="wrap">
+                          <h3>{li.title}</h3>
+                          <p>{li.para}</p>
+                        </div>
+                      </div>,
+                      accordion
+                    ]
+                  })
+                }
+              </div>
             </div>
           </div>
         </div>
