@@ -21,7 +21,7 @@ export default {
       url: '/faq/#what-is-an-autonomous-network'
     },
     founderQuote: {
-      para: `"Fixing the Internet isn't optional, and now there's a solution we can all be part of"`,
+      para: `"Fixing the Internet isn't optional, and now there's a solution we can all be part of."`,
       by: 'David Irvine — Founder'
     },
     aside1: {
@@ -37,7 +37,7 @@ export default {
     title: 'Total Privacy, Absolute Security.',
     para: [
       'Privacy and security should be available to everyone, not just those with deep pockets.',
-      'That’s why the SAFE Network encrypts of all data by default, automatically splitting it into many pieces which constantly move to locations around the globe that cannot be traced. And your access to them is untraceable too.',
+      'That’s why the SAFE Network encrypts all data by default, automatically splitting it into many pieces which constantly move to locations around the globe that cannot be traced. And your access to them is untraceable too.',
       ' No more hacked data, no more stolen passwords, no more eavesdropping. Private. Secure. Anonymous.'
     ],
     CTA: {
@@ -49,13 +49,13 @@ export default {
     },
     aside1: {
       title: 'Browse and access anonymously',
-      para: 'On the SAFE Network, you are free to browse and download completely anonymously, from anywhere in the world. No account nessecary.'
+      para: 'On the SAFE Network, you are free to browse and download completely anonymously, from anywhere in the world. No account necessary.'
     }
   },
   data: {
     title: 'Complete Control of Your Data',
     para: [
-      'The SAFE Network turns the current data ownership model on it’s head.',
+      'The SAFE Network turns the current data ownership model on its head.',
       'Gone are the days of your personal information being stored on corporate servers. Self Authentication means you are in complete control over your data: it resides with you. Grant permission for apps to connect to it, and no company or third party ever has access. ',
     ],
     CTA: {
@@ -66,7 +66,7 @@ export default {
       title: 'Pay Once, Store Forever',
       para: [
         'Upload your data and have it stored securely forever. Get free unrestricted access from any connected device around the world.',
-        'You’ll pay minimal, one-time, upload charge but you’ll get permanent secure backups with no more monthly fees.'
+        'You’ll pay a minimal, one-time, upload charge but you’ll get permanent secure backups with no more monthly fees.'
       ]
     },
     aside2: {
@@ -78,7 +78,7 @@ export default {
     aside3: {
       title: 'Data Portability',
       para: [
-        'Being in complete control mean you can quickly and easily move your data between apps and services. Mix and match to meet your needs, and leave no data behind.',
+        'Being in complete control means you can quickly and easily move your data between apps and services. Mix and match to meet your needs, and leave no data behind.',
       ]
     },
     aside4: {
@@ -106,7 +106,7 @@ export default {
     aside1: {
       title: 'Always Free to Access',
       para: [
-        'Information is always free to access. You’ll never be charged for browsing or downloading. The SAFE Network guarentees equal access to data for everyone. You don’t even need an account, just download the browser.',
+        'Information is always free to access. You’ll never be charged for browsing or downloading. The SAFE Network guarantees equal access to data for everyone. You don’t even need an account, just download the browser.',
       ]
     },
     aside2: {
