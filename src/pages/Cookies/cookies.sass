@@ -1,41 +1,29 @@
 @import '~styles/index'
 
 .Cookies
-  &__wrap
-    +grid()
-    max-width: $max-width-xl
-    &::after
-      content: ''
-      grid-column: 1/span 7
-      grid-row: 1
-      align-self: end
-      height: 3px
-      background-color: $acid-yellow
-      margin-right: $hspace-l
   &__banner
-    grid-column: 1/span 10
+  &__desc,
+  &__topics
+    max-width: $max-width-xl
+  &__bannerWrap
     background-color: $default-bg-color
     grid-row: 1
   &__desc
+    +grid()
+  &__descWrap
     grid-column: 3/span 7
     padding-top: $pad-small
     padding-bottom: $pad-thin
   &__topics
-    grid-column: 1/span 10
     padding-bottom: $pad-chunky
     &.topSpace
       padding-top: $pad-small
 
 +render-to($media-xs)
   .Cookies
-    &__wrap
-      +grid-small()
-      &::after
-        grid-column: 1/span 4
-        margin-right: -$hspace-l
-    &__banner
-      grid-column: 1/span 6
     &__desc
+      +grid-small()
+    &__descWrap
       grid-column: 1/span 6
       +default-column()
     &__topics
