@@ -48,7 +48,7 @@
         background-color: $qa-item-opened-pressed-bg-color
 
 +render-to($media-s)
-  .RoadmapAccordionItem
+  .Accordion
     $c: &
     &__row
       display: grid
@@ -59,3 +59,8 @@
       #{$c}__row
         &::before
           transform: rotate(90deg) translate(0, 0)
+
++render-to($media-xxs)
+  .Accordion
+    &__container
+      +default-column()
