@@ -60,7 +60,7 @@ export default {
     ],
     CTA: {
       name: 'Read more about Self Authentication',
-      url: '/how-it-works/#Authentication'
+      url: 'faq/#what-is-self-authentication'
     },
     aside1: {
       title: 'Pay Once, Store Forever',
