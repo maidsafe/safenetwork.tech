@@ -165,6 +165,7 @@ export default class SubscribeForm extends React.Component {
             <div className={cn('submitButton')}>
               <Button
                 type="submit"
+                className="dark"
                 disabled={buttonDisableStates.includes(status)}
               >{this.buttonState[status] || this.buttonState.INIT}</Button>
             </div>
