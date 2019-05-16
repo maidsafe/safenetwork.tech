@@ -1,14 +1,13 @@
 import React from 'react';
-import { Router } from 'react-static';
 import ReactDOM from 'react-dom';
 import "babel-polyfill";
 
-import './v1.1/styles/shared/main.sass'
+import './styles/shared/main.sass'
 // Fonts
 import 'typeface-vollkorn';
 
 // Your top level component
-import App from './containers/App';
+import App from './App';
 
 // Export your top level component as JSX (for static rendering)
 export default App;
