@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import Button from 'components/Button'
 import Accordion from 'components/Accordion'
 import Video from '../Video'
-import { prefixClassName, genRandomKey, spinalCase } from 'src/utils'
+import { prefixClassName, genRandomKey, parseMDText, spinalCase, openLink } from 'src/utils'
 
 import './accordionItem.sass'
 
@@ -51,21 +51,29 @@ export default class AccordionItem extends React.Component {
         <div key={genRandomKey()} className={cn('description')}>{content.desc}</div>,
         <h4 key={genRandomKey()} className={classNames(cn('status'), content.status.toLowerCase())}>{content.status}</h4>
       ]}>
-        {[
-          <div key={genRandomKey()} className={cn('para')}>
-            {
-              content.para.map(para => (
-                <p key={genRandomKey()}>{para}</p>
-              ))
-            }
-          </div>,
-          <div key={genRandomKey()} className={cn('cta')}>
-            <Button className="hollow icon external">{content.CTA.name}</Button>
-          </div>,
-          <div key={genRandomKey()} className={cn('media')}>
-            <Video width="530" url={content.video.url} caption={content.video.caption} />
-          </div>
-        ]}
+        <div key={genRandomKey()} className={cn('para')}>
+          {
+            content.para.map(para => (
+              <p key={genRandomKey()}>{parseMDText(para, true)}</p>
+            ))
+          }
+        </div>
+        {
+          content.CTA ? (
+            <div key={genRandomKey()} className={cn('cta')}>
+              <Button className="hollow icon external" onClick={() => {
+                openLink(content.CTA.url, true)
+              }}>{content.CTA.name}</Button>
+            </div>
+          ) : null
+        }
+        {
+          content.video ? (
+            <div key={genRandomKey()} className={cn('media')}>
+              <Video width="530" height="330" url={content.video.url} caption={content.video.caption} />
+            </div>
+          ) : null
+        }
       </Accordion>
     )
   }

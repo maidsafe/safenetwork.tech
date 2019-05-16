@@ -35,7 +35,7 @@ export default class Accordion extends React.Component {
   onClickItem  = () => {
     const  { active } = this.state
     if (!active) {
-      this.pushHistory(this.featureId)
+      this.pushHistory(this.id)
     }
     this.setState({
       active: !this.state.active

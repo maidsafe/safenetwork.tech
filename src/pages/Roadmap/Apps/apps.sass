@@ -50,6 +50,13 @@
     width: 100%
     background-color: #C4C4C4
     margin-bottom: $margin-thin
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    &.safeBrowser
+      background-image: url($safe-browser-thumb-l)
+    &.webHostingManager
+      background-image: url($web-hosting-manager-thumb-l)
   &__listStatus
     color: $spark-red
     margin-bottom: 8px
@@ -59,12 +66,31 @@
       top: 0
       transform: translate(50%, 0)
       border-left-style: dotted
+      z-index: 1
     &::after
       width: 50%
       transform: translate(100%, 0)
       background-image: url($ellipse-icon)
       top: 0
       background-color: $white
+      z-index: 1
+    .darkBg
+      width: 100%
+      height: 220px
+      background-color: $default-bg-color
+      position: absolute
+      bottom: 0
+      left: 0
+      z-index: 0
+      &::after
+        content: ''
+        width: 1000%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 100%
+        background-color: $default-bg-color
+        z-index: 1
   &__currentWrap
     grid-column: 1/span 10
   &__currentIntro
@@ -77,13 +103,14 @@
     color: $spark-red
     margin-bottom: $margin-fine
   &__upcoming
+    background-color: $default-bg-color
     padding-bottom: $pad-jumbo
     &::before
       top: 0
       transform: translate(50%, 0)
       border-left-style: dotted
     &::after
-      background-color: $white
+      background-color: $default-bg-color
       background-image: none
       height: 50%
       top: 100%
@@ -97,6 +124,13 @@
       grid-column: 2/span 8
   &__upcomingList
     +grid()
+    .RoadmapAccordion
+      grid-column: 1/span 10
+      margin-bottom: $margin-medium
+      position: relative
+      z-index: 2
+      &__header
+        background-color: $default-bg-color
   &__upcomingListItem
     grid-column: 2/span 8
     position: relative
@@ -117,7 +151,7 @@
       background-image: url($ellipse-icon)
       background-repeat: no-repeat
       background-size: 20px
-      background-color: $white
+      background-color: $default-bg-color
       margin-left: -10px
       z-index: 2
     &:last-child:before
@@ -125,7 +159,7 @@
       grid-column: 1/span 1
       width: 50%
       height: 100%
-      background-color: $white
+      background-color: $default-bg-color
       position: absolute
       top: 0
       left: 0
@@ -137,6 +171,18 @@
   .RoadmapApps
     &__wrap
       max-width: $max-width-xl
+    &__current
+      overflow: unset
+    &__upcomingBase
+      position: relative
+      &::after
+        content: ''
+        width: 1000%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 100%
+        background-color: $default-bg-color
 
 +render-to($media-l)
   .RoadmapApps
@@ -179,6 +225,13 @@
     &__listWrap
       grid-template-columns: none
       grid-gap: inherit
+    &__listMedia
+      background-size: contain
+      background-color: transparent
+      &.safeBrowser
+        background-image: url($safe-browser-thumb-m)
+      &.webHostingManager
+        background-image: url($web-hosting-manager-thumb-m)
     &__listItem
       display: grid
       grid-template-columns: repeat(8, 1fr)
@@ -287,6 +340,11 @@
       position: absolute
       top: 0
       left: 0
+      background-size: 50px
+      &.safeBrowser
+        background-image: url($safe-browser-thumb-s)
+      &.webHostingManager
+        background-image: url($web-hosting-manager-thumb-s)
     &__listStatus,
     &__listTitle
       padding-left: 85px
