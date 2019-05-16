@@ -3,6 +3,11 @@
 .HIWBanner
   &__wrap
     +grid()
+  &__title,
+  &__topics,
+  &__aside
+    position: relative
+    z-index: 1
   &__title
     grid-column: 1/span 10
     grid-row: 1
@@ -21,7 +26,6 @@
     +default-column()
     +shadow-deep()
     margin-right: -$hspace-l
-    z-index: 1
   &__topics
     grid-column: 7/span 4
     grid-row: 2
@@ -30,7 +34,6 @@
     padding-top: $pad-chunky
     padding-bottom: $pad-small
     +default-column()
-    z-index: 1
   &__topic
     margin-bottom: $margin-fine
     .underlinedLink
@@ -49,6 +52,8 @@
     align-self: start
     height: 700px
     +set-video-overlay($texture-spark-overlay)
+    position: relative
+    z-index: 0
     video
       background-image: url($texture-9)
   &__texture2
