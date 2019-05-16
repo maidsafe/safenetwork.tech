@@ -75,7 +75,9 @@ const SafeCoin = () => {
             <div className={cn('textBlock2')}>
               <TextSnippet title={textBlock2.title} titleSize="H2" text={textBlock2.para} />
               <div className="CTA">
-                <Button className="icon external">{textBlock2.CTA.name}</Button>
+                <Button className="icon external" onClick={() => {
+                  openLink(textBlock2.CTA.url, true)
+                }}>{textBlock2.CTA.name}</Button>
               </div>
             </div>
             <div className={cn('textBlock3')}>
