@@ -1,0 +1,32 @@
+@import '~styles/index'
+
+// Default
+.qaSection
+  padding-top: $pad-medium
+  &__wrap
+    +grid()
+  &__title
+    grid-column: 2/span 8
+
+// XSmall
++render-to($media-xs)
+  .qaSection
+    padding-top: $pad-medium
+    &__wrap
+      +grid-small()
+    &__title
+      grid-column: 1/span 6
+      padding-left: $hspace-xs
+
+// XXSmall
++render-to($media-xxs)
+  .qaSection
+    padding-top: $pad-small
+    &__title
+      padding-left: $hspace-xxs
+
+// XXXSmall
++render-to($media-xxxs)
+  .qaSection
+    &__title
+      padding-left: $hspace-xxxs

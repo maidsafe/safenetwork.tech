@@ -1,0 +1,195 @@
+@import '~styles/index'
+
+.InviteModal
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: 999
+  overflow: hidden
+  &__wrap
+    display: flex
+    height: 100%
+    justify-content: center
+  &__container
+    align-self: center
+    width: 1048px
+    min-height: 500px
+    background-color: $white
+  &__header
+    position: relative
+    text-align: center
+    height: 100px
+    line-height: 100px
+  .outline
+    position: relative
+    z-index: 0
+  &__closeBtn
+    width: 36px
+    height: 36px
+    position: absolute
+    top: 50%
+    right: 52px
+    display: inline-block
+    transform: translate(0, -50%)
+    background-color: transparent
+    background-image: url($cross-icon)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 20px
+    cursor: pointer
+    outline: 0
+    border: 0
+    z-index: 1
+  .caption
+    text-align: center
+    +default-column()
+  &__whyInvite
+    padding: 40px 0 75px
+    text-align: center
+
+.splitView
+  position: relative
+  +clearfix()
+  margin: 65px 0
+  &__item
+    display: block
+    width: 50%
+    float: left
+    padding: 0 90px
+    text-align: center
+  &__para
+    min-height: 130px
+    margin-bottom: 0
+  &::before
+    content: ""
+    display: block
+    height: 100%
+    width: 1px
+    background-color: #BDBDBD
+    position: absolute
+    top: 0
+    left: 50%
+    margin-left: -.5px
+
+// Small
++render-to($media-s)
+  .InviteModal
+    &__container
+      width: 871px
+    &__whyInvite
+      padding-bottom: 56px
+  .splitView
+    margin: 45px 0 18px
+    &__item
+      padding-left: 56px
+      padding-right: 56px
+    &__title
+      margin-bottom: 32px
+    &__para
+      min-height: 150px
+
+// XSmall
++render-to($media-xs)
+  .InviteModal
+    background-color: $white
+    $c: &
+    &.fixed
+      #{$c}__header
+        width: 100%
+        position: fixed
+        top: 0
+        left: 0
+        z-index: 99999
+      #{$c}__container
+        padding-top: 72px
+    &__wrap
+      display: block
+      overflow: auto
+    &__container
+      width: 100%
+      height: 100%
+      display: grid
+    &__header
+      grid-row: 1
+      height: 72px
+      background-color: $white
+      +shadow-shallow()
+    &__content
+      grid-row: 2
+      align-self: center
+      min-height: 450px
+      padding-top: $pad-small
+    &__closeBtn
+      right: 28px
+    .overline
+      line-height: 72px
+    .caption
+      margin-top: 0
+    &__whyInvite
+      grid-row: 3
+      padding-top: 0
+      align-self: end
+  .splitView
+    margin: 53px 0 0
+    &__item
+      padding-left: 36px
+      padding-right: 36px
+
+// XXSmall
++render-to($media-xxs)
+  body
+    -webkit-overflow-scrolling: touch
+  .InviteModal
+    &__wrap
+      display: block
+      overflow: auto
+    &__container
+      width: 100%
+      display: block
+    &__content
+      padding-top: 0
+    &__header
+      text-align: left
+      padding-left: 60px
+    .caption
+      padding: 0 30px
+      text-align: left
+      margin-top: 40px
+    &__whyInvite
+      padding-top: 0
+      padding-bottom: 65px
+      padding-left: 30px
+      padding-right: 30px
+      text-align: left
+  .splitView
+    margin-top: 40px
+    &__item
+      float: none
+      width: 100%
+      text-align: left
+      margin-bottom: 56px
+      padding-left: 30px
+      padding-right: 30px
+    &__title
+      margin-bottom: 24px
+    &__para
+      margin-bottom: 60px
+      min-height: auto
+    &::before
+      display: none
+
+// XXXSmall
++render-to($media-xxxs)
+  .InviteModal
+    &__whyInvite
+      text-align: center
+      padding-bottom: 56px
+  .splitView
+    &__para
+      margin-bottom: 32px
+    &__cta
+      button
+        width: 100%

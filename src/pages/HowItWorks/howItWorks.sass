@@ -1,0 +1,36 @@
+@import '~styles/index'
+
+.HowItWorks
+  background-color: $default-bg-color
+  overflow: hidden
+  &__topics
+    padding: $pad-jumbo 0 $pad-super-jumbo
+
++render-to($media-l)
+  .HowItWorks
+    &__wrap
+      max-width: $max-width-xl
+    &__aside1,
+    &__aside2
+      grid-column: 8/span 2
+      margin-left: -$hspace-l
+    &__aside1
+      .fig
+        width: 612px
+        height: 360px
+        transform: translate($hspace-l, 24px)
+
++render-to($media-m)
+  .HowItWorks
+    &__topics
+      padding-top: $pad-small
+
++render-to($media-xs)
+  .HowItWorks
+    &__topics
+      padding-top: $pad-medium
+      padding-bottom: $pad-jumbo
+
++render-to($media-xxxs)
+  .HowItWorks
+

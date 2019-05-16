@@ -1,0 +1,59 @@
+@import '~styles/index'
+
+.downloadContainer
+  +grid()
+  padding-bottom: $pad-super-jumbo
+  &__context
+    grid-column: 2 / span 3
+    .textSnippet__para
+      padding-right: $hspace-default
+  &__downloads
+    grid-column: 5/ span 6
+    +clearfix()
+
+// Large
++render-to($media-l)
+  .downloadContainer
+    padding-bottom: $pad-jumbo
+    &__context
+      grid-column: 2 / span 3
+    &__downloads
+      grid-column: 6 / span 5
+
+// Small
++render-to($media-s)
+  .downloadContainer
+    padding-bottom: $pad-jumbo
+    &__context
+      .textSnippet__para
+        max-width: 100%
+        padding-right: 0
+    &__context,
+    &__downloads
+      grid-column: 2/ span 8
+    &__downloads
+      padding-top: $pad-thin
+      grid-row: 2
+
+// XSmall
++render-to($media-xs)
+  .downloadContainer
+    +grid-small()
+    padding-bottom: $pad-chunky
+    &__context,
+    &__downloads
+      grid-column: 1/ span 6
+      +default-column()
+    &__downloads
+      padding-top: $pad-thin
+
+// XXSmall
++render-to($media-xxs)
+  .downloadContainer
+    padding-bottom: $pad-chunky
+    &__downloads
+      padding-top: 0
+
++render-to($media-xxxs)
+  .downloadContainer
+    padding-bottom: $pad-small

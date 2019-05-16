@@ -1,0 +1,37 @@
+@import '~styles/index'
+
+// Default
+.pageBanner
+  &__wrap
+    +grid()
+    padding-top: 275px
+  &__title
+    grid-column: 2 / span 8
+
+// XLarge
++render-to($media-xl)
+  .pageBanner
+    &__wrap
+      max-width: $max-width-xl
+
+// Small
++render-to($media-s)
+  .pageBanner
+    &__wrap
+      padding-top: 250px
+
+// XSmall
++render-to($media-xs)
+  .pageBanner
+    &__wrap
+      +grid-small()
+      padding-top: 215px
+    &__title
+      grid-column: 1 / span 6
+      +default-column()
+
+// XXSmall
++render-to($media-xxs)
+  .pageBanner
+    &__wrap
+      padding-top: 180px

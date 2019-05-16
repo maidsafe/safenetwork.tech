@@ -1,0 +1,66 @@
+@import '~styles/index'
+
+.About
+  background-color: $default-bg-color
+  &__wrap
+    +grid()
+  &__banner
+    grid-column: 1/span 10
+    padding-top: 275px
+    background-color: $zingy-sky
+    padding-bottom: $pad-medium
+  &__bannerWrap
+    +grid()
+  &__logo,
+  &__desc,
+  &__cta
+    grid-column: 2/span 6
+  &__logo
+    padding-bottom: $pad-thin
+  &__texts
+    grid-column: 2/span 6
+    padding-top: $pad-medium
+    padding-bottom: $pad-chunky
+
+// XLarge
++render-to($media-xl)
+  .About
+    &__bannerWrap
+      max-width: $max-width-xl
+
+// Small
++render-to($media-s)
+  .About
+    &__banner
+      padding-top: 250px
+      padding-bottom: $pad-small
+    &__texts
+      padding-top: $pad-small
+
+// XSmall
++render-to($media-xs)
+  .About
+    &__wrap,
+    &__bannerWrap
+      +grid-small()
+    &__banner
+      grid-column: 1/span 6
+      padding-top: 215px
+    &__logo,
+    &__desc,
+    &__cta,
+    &__texts
+      grid-column: 1/span 6
+      +default-column()
+    &__logo
+      figure
+        max-width: 240px
+        img
+          width: 100%
+
+
+// XXSmall
++render-to($media-xxs)
+  .About
+    &__banner
+      padding-top: 180px

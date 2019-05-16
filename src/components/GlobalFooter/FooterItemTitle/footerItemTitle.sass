@@ -1,0 +1,38 @@
+@import '~styles/index'
+
+.footerItemTitle
+  padding-bottom: 16px
+  margin-bottom: 10px
+  border-bottom: 2px solid $acid-yellow
+  cursor: default
+
+// XSmall
++render-to($media-xs)
+  .footerItemTitle
+    position: relative
+    margin-bottom: 0
+    cursor: pointer
+    &::after
+      content: ''
+      display: block
+      width: 18px
+      height: 18px
+      position: absolute
+      top: 3px
+      right: 15px
+      background-image: url($arrow-down-grey-icon)
+      background-size: 16px
+      background-repeat: no-repeat
+      background-position: center
+    &.active
+      &::after
+        background-image: url($arrow-down-icon)
+        transform: rotate(180deg)
+    &:hover
+      border-bottom-color: $link-undeline-bg-color
+      &:after
+        background-image: url($arrow-down-icon)
+    &:active
+      border-bottom-color: $spark-red
+      &:after
+        background-image: url($arrow-down-icon)

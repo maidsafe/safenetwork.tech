@@ -1,0 +1,98 @@
+@import '~styles/index'
+
+.GetInvolvedEngage
+  &__wrap
+    +grid()
+  &__community
+    grid-column: 2/ span 4
+    grid-row: 1
+    margin-top: -$margin-super-jumbo
+    padding-bottom: $pad-super-jumbo
+    padding-right: $hspace-default
+    z-index: 1
+  &__communityBg
+    grid-column: 1/ span 5
+    grid-row: 1
+    background-color: $default-bg-color
+    margin-top: -$margin-super-jumbo - $margin-jumbo
+    +shadow-deep()
+    &::after
+      content: ''
+      display: block
+      height: 70px
+      width: 100%
+      background-color: $default-bg-color
+      margin-top: -20px
+  &__subscribe
+    grid-column: 7/ span 4
+    grid-row: 1
+    padding-top: $pad-jumbo
+
+// Large
++render-to($media-l)
+  .GetInvolvedEngage
+    &__community
+      grid-column: 2/ span 3
+      margin-top: -$margin-jumbo
+    &__subscribe
+      max-width: 560px
+    &__communityBg
+      margin-top: -200px
+
+// XLarge
++render-to($media-xl)
+  .GetInvolvedEngage
+    &__wrap
+      max-width: $max-width-xl
+
+// Small
++render-to($media-s)
+  .GetInvolvedEngage
+    &__community,
+    &__communityBg
+      margin-top: 0
+    &__community
+      grid-column: 2/ span 9
+      padding-top: $pad-jumbo
+      padding-bottom: $pad-jumbo
+      padding-right: 0
+    &__communityBg
+      grid-column: 1/ span 10
+    &__subscribe
+      grid-column: 2/ span 5
+      grid-row: 2
+      padding-bottom: $pad-thin
+      .SubscribeForm__input
+        width: 300px
+
+// XSmall
++render-to($media-xs)
+  .GetInvolvedEngage
+    &__wrap
+      +grid-small()
+    &__community
+      grid-column: 1/span 6
+      +default-column()
+      padding-bottom: $pad-medium
+    &__subscribe
+      padding-top: $pad-medium
+      grid-column: 1/span 6
+      +default-column()
+
+// XXSmall
++render-to($media-xxs)
+  .GetInvolvedEngage
+    &__community
+      padding-top: $pad-chunky
+      padding-bottom: $pad-jumbo
+    &__subscribe
+      display: none
+
+// XXXSmall
++render-to($media-xxxs)
+  .GetInvolvedEngage
+    &__community
+      padding-top: $pad-small
+      padding-bottom: $pad-chunky
+      .cta, .cta .btn
+        width: 100%

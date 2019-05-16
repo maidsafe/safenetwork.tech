@@ -1,0 +1,48 @@
+@import '~styles/index'
+
+.SafeCoinBanner
+  background-color: $spark-red
+  &__wrap
+    +grid()
+    max-width: $max-width-xl
+    *
+      color: $white !important
+  &__title
+    grid-column: 1/span 10
+    grid-row: 1
+  &__content
+    grid-column: 2/span 5
+    grid-row: 2
+    padding-bottom: $pad-super-jumbo
+  &__texture1,
+  &__video
+    grid-column: 1/span 6
+    grid-row: 2
+    align-self: end
+    height: 12px
+    background-image: url($texture-spark-1-thin-poster)
+    background-size: cover
+    video
+      object-fit: cover
+
++render-to($media-s)
+  .SafeCoinBanner
+    &__content
+      grid-column: 2/span 7
+      padding-bottom: $pad-jumbo
+    &__video
+      grid-column: 8/span 3
+
++render-to($media-xs)
+  .SafeCoinBanner
+    &__wrap
+      +grid-small()
+    &__title
+      grid-column: 1/span 6
+    &__content
+      grid-column: 1/span 6
+      padding-bottom: $pad-chunky
+      +default-column()
+    &__video
+      grid-column: 1/span 3
+

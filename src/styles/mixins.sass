@@ -1,0 +1,101 @@
+=clearfix()
+  &:after
+    content: ''
+    display: table
+    clear: both
+    visibility: hidden
+
+=grid()
+  display: grid
+  grid-template-columns: repeat($col-count, 1fr)
+
+=grid-small()
+  display: grid
+  grid-template-columns: repeat($col-count-small, 1fr)
+
+=render-to($mediaQuery)
+  @media screen and #{$mediaQuery}
+    @content
+
+=default-column()
+  padding-left: $hspace-default
+  padding-right: $hspace-default
+  +render-to($media-xs)
+    padding-left: $hspace-xs
+    padding-right: $hspace-xs
+  +render-to($media-xxs)
+    padding-left: $hspace-xxs
+    padding-right: $hspace-xxs
+  +render-to($media-xxxs)
+    padding-left: $hspace-xxxs
+    padding-right: $hspace-xxxs
+
+=pull-column($val)
+  margin-left: -$val
+  margin-right: -$val
+
+=shadow-shallow()
+  box-shadow: $shadow-shallow
+
+=shadow-deep()
+  box-shadow: $shadow-deep
+
+=shadow-pressed()
+  box-shadow: $shadow-pressed
+
+=text-shadow-shallow
+  text-shadow: $shadow-shallow
+
+%footerItems
+  padding-top: 16px
+  &:hover
+    color: rgba($black, 0.7)
+  &:active
+    color: $spark-red
+
+%underlineLink
+  +font-1()
+  font-size: 20px
+  line-height: 25px
+  display: inline-block
+  +render-to($media-xs)
+    font-size: 18px
+    line-height: 23px
+  &:link, &:visited
+    color: $black
+  &:after, &:visited:after
+    content: ''
+    display: block
+    height: 2px
+    width: 100%
+    background-color: rgba(0, 0, 0, 0.1)
+    padding-right: 1px
+    background-color: $spark-red
+  &:hover:after
+    background-color: $link-undeline-bg-color
+  &:active:after
+    background-color: $acid-yellow
+  &.minor
+    &:after
+      background-color: $link-undeline-bg-color
+    &:hover:after
+      background-color: $spark-red
+    &:active:after
+      background-color: $acid-yellow
+
+=cta-underline()
+  a
+    @extend %underlineLink
+
+=set-video-overlay($bg-img)
+  position: relative
+  z-index: 0
+  &::before
+    content: ''
+    width: 100%
+    height: 100%
+    background-image: url($bg-img)
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1

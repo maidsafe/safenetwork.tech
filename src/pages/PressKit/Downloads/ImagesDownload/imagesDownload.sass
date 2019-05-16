@@ -1,0 +1,50 @@
+@import '~styles/index'
+
+.imageDownload
+  &__wrap
+    width: 570px
+    position: relative
+  &__media
+    img
+      width: 100%
+      max-width: 100%
+      +shadow-deep()
+  &__button
+    width: 100%
+    position: absolute
+    bottom: 50px
+    text-align: center
+    .btn
+      border-color: $white
+      color: $white
+      background-color: rgba($black, 0.5)
+      &:after
+        -webkit-filter: brightness(0) invert(1)
+        filter: brightness(0) invert(1)
+
+// Small
++render-to($media-s)
+  .imageDownload
+    &__wrap
+      width: 740px
+      height: 383px
+      overflow: hidden
+
+// XSmall
++render-to($media-xs)
+  .imageDownload__wrap
+    width: 630px
+    height: auto
+
+// XXSmall
++render-to($media-xxs)
+  .imageDownload__wrap
+    width: 100%
+    max-width: 454px
+    height: 240px
+
+// XXSmall
++render-to($media-xxxs)
+  .imageDownload__wrap
+    max-width: 338px
+    height: auto

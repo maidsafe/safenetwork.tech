@@ -1,0 +1,118 @@
+@import '~styles/index'
+
+.RoadmapSubscribe
+  background-color: $white
+  &__wrap
+    +grid()
+  &__content
+    grid-column: 2/span 5
+    grid-row: 1
+    height: 134px
+    position: relative
+    z-index: 1
+    display: flex
+    align-items: center
+  &__title
+    margin-bottom: 0
+  &__bg
+    background-color: $acid-yellow
+    grid-column: 1/span 6
+    grid-row: 1
+  .SubscribeForm
+    margin-left: 45px
+    margin-top: 30px
+
++render-to($media-xl)
+  .RoadmapSubscribe
+    &__wrap
+      max-width: $max-width-xl
+
++render-to($media-m)
+  .RoadmapSubscribe
+    &__content
+      grid-column: 1/span 6
+      padding-left: $pad-small
+    &__title
+      strong
+        display: none
+    .SubscribeForm
+      flex: 1
+      &__wrap
+        padding-right: $pad-thin
+      &__form
+        display: flex
+      &__input
+        width: 100%
+        max-width: 488px
+      &__submitButton
+        .btn
+          width: 125px
+
++render-to($media-s)
+  .RoadmapSubscribe
+    &__title
+      strong
+        display: inline
+    &__content,
+    &__bg
+      grid-column: 1/span 10
+    .SubscribeForm
+      flex: none
+      display: block
+      margin-left: $margin-chunky
+      &__wrap
+        padding-right: $pad-small
+      &__form
+        position: relative
+        display: block
+      &__input
+        width: 320px
+      &__submitButton
+        .btn
+          width: auto
+
++render-to($media-xs)
+  .RoadmapSubscribe
+    &__wrap
+      +grid-small()
+    &__content
+      height: auto
+      display: block
+      padding-top: $pad-thin
+      padding-bottom: $pad-thin
+      +default-column()
+    &__content,
+    &__bg
+      grid-column: 1/span 6
+    .SubscribeForm
+      margin-top: $margin-fine
+      margin-left: 0
+      &__wrap
+        max-width: 100%
+        padding-right: 0
+      &__form
+        padding-right: 0
+      &__input
+        width: 100%
+        max-width: 350px
+      &__submitButton
+        position: static
+
++render-to($media-xxs)
+  .RoadmapSubscribe
+    .SubscribeForm
+      &__form
+        display: flex
+      &__submitButton
+        .btn
+          min-width: 115px
+
++render-to($media-xxxs)
+  .RoadmapSubscribe
+    .SubscribeForm
+      &__form
+        display: block
+      &__submitButton
+        .btn
+          width: 100%
+          min-width: 115px

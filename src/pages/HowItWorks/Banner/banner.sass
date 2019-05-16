@@ -1,0 +1,161 @@
+@import '~styles/index'
+
+.HIWBanner
+  &__wrap
+    +grid()
+  &__title,
+  &__topics,
+  &__aside
+    position: relative
+    z-index: 1
+  &__title
+    grid-column: 1/span 10
+    grid-row: 1
+    z-index: 1
+    .pageBanner__title
+      grid-column: 2/span 6
+      color: $white
+      max-width: 800px
+      +text-shadow-shallow()
+  &__aside
+    grid-column: 2/span 5
+    grid-row: 2
+    align-self: start
+    background-color: $white
+    padding: $pad-medium 0
+    +default-column()
+    +shadow-deep()
+    margin-right: -$hspace-l
+    z-index: 1
+    a
+      white-space: nowrap // Safari fix
+  &__topics
+    grid-column: 7/span 4
+    grid-row: 2
+    background-color: $default-bg-color
+    margin-left: $hspace-l
+    padding-top: $pad-chunky
+    padding-bottom: $pad-small
+    +default-column()
+  &__topic
+    margin-bottom: $margin-fine
+    .underlinedLink
+      +font-3()
+      color: $body-text
+      line-height: 28px
+      &:after
+        background-color: $acid-yellow
+      &:hover:after
+        background-color: $spark-red
+      &:active:after
+        background-color: $link-undeline-bg-color
+  &__video1
+    +set-video-overlay($texture-spark-overlay)
+    width: 100%
+    height: 700px
+    position: absolute
+    top: 0
+    left: 0
+    background-size: cover
+    background-image: url($texture-9)
+    z-index: 0
+    // video
+  &__texture2
+    grid-column: 7/span 4
+    grid-row: 2
+    align-self: end
+    height: 24px
+    margin-left: $hspace-l
+    background-image: url($texture-9)
+    background-size: cover
+    z-index: 0
+    transform: translate(0, 100%)
+
++render-to($media-xl)
+  .HIWBanner
+    &__title
+      .pageBanner__title
+        grid-column: 2/span 5
+    &__video1
+      video
+        height: auto !important
+        width: 100%
+
++render-to($media-m)
+  .HIWBanner
+    &__title
+      .pageBanner__title
+        grid-column: 2/span 7
+    &__aside
+      grid-column: 2/span 6
+      margin-right: 0
+      align-self: start
+    &__topics
+      grid-column: 8/span 3
+      margin-left: 0
+      background-color: $default-bg-color
+      padding-top: $pad-medium
+    &__texture2
+      grid-column: 8/span 3
+      margin-left: 0
+
++render-to($media-s)
+  .HIWBanner
+    &__title
+      .pageBanner__title
+        grid-column: 2/span 9
+    &__video1
+      video
+        height: 800px !important
+    &__aside
+      align-self: auto
+    &__asideWrap
+      height: 100%
+      position: relative
+      .underlinedLink
+        position: absolute
+        bottom: 0
+        left: 0
+
++render-to($media-xs)
+  .HIWBanner
+    &__wrap
+      +grid-small()
+    &__title
+      grid-column: 1/span 6
+      .pageBanner__title
+        grid-column: 1/span 6
+    &__texture1,
+    &__aside
+      grid-column: 1/span 6
+    &__video1
+      height: 535px
+    &__aside
+      margin-left: $hspace-xs
+    &__asideWrap
+      .underlinedLink
+        position: static
+    &__topics
+      display: none
+    &__texture2
+      grid-column: 3/span 4
+      grid-row: 2
+
++render-to($media-xxs)
+  .HIWBanner
+    &__aside
+      padding-top: $pad-small
+      padding-bottom: $pad-small
+      margin-left: $hspace-xxs
+      .introText p
+        margin-bottom: $margin-thin
+    &__video1
+      height: 440px
+    &__texture2
+      height: 8px
+
++render-to($media-xxxs)
+  .HIWBanner
+    &__aside
+      margin-left: $hspace-xxxs
+      padding-top: $pad-fine

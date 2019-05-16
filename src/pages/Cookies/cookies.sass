@@ -1,0 +1,37 @@
+@import '~styles/index'
+
+.Cookies
+  &__banner
+  &__desc,
+  &__topics
+    max-width: $max-width-xl
+  &__bannerWrap
+    background-color: $default-bg-color
+    grid-row: 1
+  &__desc
+    +grid()
+  &__descWrap
+    grid-column: 3/span 7
+    padding-top: $pad-small
+    padding-bottom: $pad-thin
+  &__topics
+    padding-bottom: $pad-chunky
+    &.topSpace
+      padding-top: $pad-small
+
++render-to($media-xs)
+  .Cookies
+    &__desc
+      +grid-small()
+    &__descWrap
+      grid-column: 1/span 6
+      +default-column()
+    &__topics
+      padding-bottom: $pad-small
+
++render-to($media-xs)
+  .Cookies
+    &__wrap
+      &::after
+        grid-column: 1/span 6
+        margin-right: 0

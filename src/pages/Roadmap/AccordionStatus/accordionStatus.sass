@@ -1,0 +1,93 @@
+@import '~styles/index'
+
+.AccordionStatus
+  display: none
+  margin-bottom: $margin-chunky
+  padding-top: $pad-fine
+  &__wrap
+    grid-column: 2/span 8
+  &__key
+    width: 20%
+    text-align: center
+    float: left
+    height: 120px
+    background-image: url($bulb-icon)
+    background-repeat: no-repeat
+    background-position: center
+    position: relative
+    .caption
+      color: $body-text
+    &.complete
+      background-image: url($tick-green-icon)
+      background-size: 26px
+    &.concept
+      background-image: url($bulb-icon)
+      background-size: 20px
+    &.design
+      background-image: url($layout-icon)
+      background-size: 25px
+    &.development
+      background-image: url($code-icon)
+      background-size: 30px
+    &.rfc
+      background-image: url($write-icon)
+      background-size: 30px
+    &::before
+      content: ''
+      display: block
+      width: 15px
+      height: 15px
+      background-image: url($ellipse-icon)
+      background-size: contain
+      position: absolute
+      background-color: $white
+      bottom: 0
+      left: 50%
+      transform: translate(-50%, 0)
+      z-index: 1
+    &::after
+      content: ''
+      display: block
+      width: 100%
+      height: 3px
+      background-color: $body-text
+      position: absolute
+      bottom: 6px
+      left: 0
+      z-index: 0
+    &:first-child:after
+      width: 50%
+      left: 50%
+    &:last-child:after
+      width: 50%
+
++render-to($media-s)
+  .AccordionStatus
+    +grid()
+
++render-to($media-xs)
+  .AccordionStatus
+    +grid-small()
+    &__wrap
+      grid-column: 1/span 6
+      +default-column()
+
++render-to($media-xxs)
+  .AccordionStatus
+    &__key
+      &.development,
+      &.complete
+        .caption
+          visibility: hidden
+          &::before
+            content: 'Code'
+            visibility: visible
+            position: absolute
+            top: 3px
+            left: 0
+            width: 100%
+            text-align: center
+      &.complete
+        .caption
+          &::before
+            content: 'Done'

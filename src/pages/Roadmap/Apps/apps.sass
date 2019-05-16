@@ -1,0 +1,362 @@
+@import '~styles/index'
+
+.RoadmapApps
+  background-color: $white
+  &__wrap
+    padding-top: $pad-super-jumbo
+  &__title
+    +grid()
+    padding-bottom: $pad-jumbo
+    h1
+      grid-column: 2/span 8
+  &__list,
+  &__current,
+  &__upcoming
+    +grid()
+    position: relative
+    overflow: hidden
+    &::after, &::before
+      content: ''
+      grid-column: 1/span 1
+      width: 100%
+      display: block
+      position: absolute
+      top: 292px
+      left: 0
+    &::after
+      width: 100%
+      height: 20px
+      background-image: url($check-circle-icon)
+      background-repeat: no-repeat
+      background-size: 20px
+      transform: translate(50%, 0)
+      margin-left: -10px
+      z-index: 1
+    &::before
+      border-left: 3px solid $body-text
+      height: 100%
+      transform: translate(50%, 18px)
+      margin-left: -3px
+      z-index: 0
+  &__list
+    padding-bottom: $pad-small
+  &__listWrap
+    grid-column: 2/span 8
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: $pad-small
+  &__listMedia
+    height: 260px
+    width: 100%
+    background-color: #C4C4C4
+    margin-bottom: $margin-thin
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    &.safeBrowser
+      background-image: url($safe-browser-thumb-l)
+    &.webHostingManager
+      background-image: url($web-hosting-manager-thumb-l)
+  &__listStatus
+    color: $spark-red
+    margin-bottom: 8px
+  &__current,
+    padding-bottom: $pad-jumbo
+    &::before
+      top: 0
+      transform: translate(50%, 0)
+      border-left-style: dotted
+      z-index: 1
+    &::after
+      width: 50%
+      transform: translate(100%, 0)
+      background-image: url($ellipse-icon)
+      top: 0
+      background-color: $white
+      z-index: 1
+    .darkBg
+      width: 100%
+      height: 220px
+      background-color: $default-bg-color
+      position: absolute
+      bottom: 0
+      left: 0
+      z-index: 0
+      &::after
+        content: ''
+        width: 1000%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 100%
+        background-color: $default-bg-color
+        z-index: 1
+  &__currentWrap
+    grid-column: 1/span 10
+  &__currentIntro
+    +grid()
+  &__currentStatus,
+  &__currentTitle,
+  &__currentDesc
+    grid-column: 2/span 8
+  &__currentStatus
+    color: $spark-red
+    margin-bottom: $margin-fine
+  &__upcoming
+    background-color: $default-bg-color
+    padding-bottom: $pad-jumbo
+    &::before
+      top: 0
+      transform: translate(50%, 0)
+      border-left-style: dotted
+    &::after
+      background-color: $default-bg-color
+      background-image: none
+      height: 50%
+      top: 100%
+      margin-top: -120px
+  &__upcomingWrap
+    grid-column: 1/span 10
+  &__upcomingStatus
+    +grid()
+    .overline
+      color: $spark-red
+      grid-column: 2/span 8
+  &__upcomingList
+    +grid()
+    .RoadmapAccordion
+      grid-column: 1/span 10
+      margin-bottom: $margin-medium
+      position: relative
+      z-index: 2
+      &__header
+        background-color: $default-bg-color
+  &__upcomingListItem
+    grid-column: 2/span 8
+    position: relative
+    display: grid
+    grid-template-columns: repeat(8, 1fr)
+    .wrap
+      grid-column: 1/span 8
+    &::after
+      content: ''
+      display: block
+      grid-column: 1/span 1
+      width: 50%
+      height: 20px
+      position: absolute
+      top: 5px
+      left: 0
+      transform: translate(-100%, 0)
+      background-image: url($ellipse-icon)
+      background-repeat: no-repeat
+      background-size: 20px
+      background-color: $default-bg-color
+      margin-left: -10px
+      z-index: 2
+    &:last-child:before
+      content: ''
+      grid-column: 1/span 1
+      width: 50%
+      height: 100%
+      background-color: $default-bg-color
+      position: absolute
+      top: 0
+      left: 0
+      transform: translate(-100%, 10px)
+      margin-left: -3px
+      z-index: 1
+
++render-to($media-xl)
+  .RoadmapApps
+    &__wrap
+      max-width: $max-width-xl
+    &__current
+      overflow: unset
+    &__upcomingBase
+      position: relative
+      &::after
+        content: ''
+        width: 1000%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 100%
+        background-color: $default-bg-color
+
++render-to($media-l)
+  .RoadmapApps
+    &__list
+      &::after
+        transform: translate(-56px, 0)
+        margin-left: 0
+        background-position: right center
+      &::before
+        transform: translate(-67px, 18px)
+        border-right: 3px solid $body-text
+    &__current
+      &::after
+        width: 100%
+        background-position: right center
+        transform: translate(-56px, 0)
+        margin-left: 0
+      &::before
+        transform: translate(-67px, 18px)
+        border-right: 3px dotted $body-text
+    &__upcoming
+      &::before
+        transform: translate(-67px, 1px)
+        border-right: 3px dotted $body-text
+    &__upcomingListItem
+      &::after
+        width: 100%
+        transform: translate(-100%, 0)
+        margin-left: -56px
+        background-position: right center
+
++render-to($media-s)
+  .RoadmapApps
+    &__list
+      &::before
+        top: 40px
+        transform: translate(50%, 0)
+      &::after
+        display: none
+    &__listWrap
+      grid-template-columns: none
+      grid-gap: inherit
+    &__listMedia
+      background-size: contain
+      background-color: transparent
+      &.safeBrowser
+        background-image: url($safe-browser-thumb-m)
+      &.webHostingManager
+        background-image: url($web-hosting-manager-thumb-m)
+    &__listItem
+      display: grid
+      grid-template-columns: repeat(8, 1fr)
+      padding-bottom: $pad-fine
+      position: relative
+      &::before
+        content: ''
+        grid-column: 1/span 1
+        width: 50%
+        height: 20px
+        display: block
+        position: absolute
+        top: 30px
+        right: 100%
+        background-image: url($check-circle-icon)
+        background-repeat: no-repeat
+        background-position: left center
+        background-size: contain
+        background-color: $white
+        margin-right: 10px
+        z-index: 1
+      &:last-child
+        &::before
+          background-image: url($ellipse-icon)
+        &::after
+          content: ''
+          grid-column: 1/span 1
+          width: 40%
+          height: 150%
+          position: absolute
+          top: 30px
+          right: 110%
+          margin-right: -1.5px
+          border-left: 3px dotted $body-text
+          background-color: $white
+          z-index: 0
+    &__listItemWrap
+      grid-column: 1/span 8
+      display: flex
+      .container
+        flex: 1
+        +default-column()
+    &__listMedia
+      width: 142px
+      height: 124px
+      border-radius: 4px
+    &__listStatus,
+    &__listTitle,
+    &__listPara
+      width: 100%
+      display: block
+      float: left
+    &__listStatus
+      line-height: normal
+    &__current
+      &::after
+        top: 55px
+    &__upcomingListItem
+      &::after
+        top: 2px
+
++render-to($media-xs)
+  .RoadmapApps
+    &__title,
+    &__list,
+    &__current,
+    &__currentIntro,
+    &__upcoming,
+    &__upcomingStatus,
+    &__upcomingList
+      +grid-small()
+    &__title
+      padding-bottom: $pad-chunky
+      h1
+        grid-column: 1/span 6
+        +default-column()
+    &__listWrap
+      grid-column: 2/span 5
+    &__listItem
+      grid-template-columns: repeat(5, 1fr)
+    &__currentStatus,
+    &__currentTitle,
+    &__currentDesc
+      grid-column: 2/span 5
+      +default-column()
+      padding-left: 0 !important
+    &__upcomingListItem
+      grid-template-columns: repeat(5, 1fr)
+      .wrap
+        +default-column()
+        padding-left: 0 !important
+
++render-to($media-xxs)
+  .RoadmapApps
+    &__list
+      padding-bottom: 0
+    &__listItemWrap
+      position: relative
+      .container
+        padding-left: 0
+        padding-right: $hspace-xxxs
+    &__listMedia
+      width: 58px
+      height: 58px
+      border-radius: 50%
+      position: absolute
+      top: 0
+      left: 0
+      background-size: 50px
+      &.safeBrowser
+        background-image: url($safe-browser-thumb-s)
+      &.webHostingManager
+        background-image: url($web-hosting-manager-thumb-s)
+    &__listStatus,
+    &__listTitle
+      padding-left: 85px
+    &__current
+      &::before
+        height: 55px
+      &::after
+        top: 52px
+    &__upcoming
+      &::before
+        top: 70px
+    &__upcomingStatus
+      .overline
+        grid-column: 1/span 6
+        +default-column()

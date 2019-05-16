@@ -1,0 +1,289 @@
+@import '~styles/index'
+
+.HomeData
+  background-color: $unit-green
+  position: relative
+  overflow: hidden
+  z-index: 2
+  &__wrap
+    +grid()
+  &__mainText
+    grid-column: 2/span 4
+    grid-row: 1
+    padding-bottom: $pad-super-jumbo
+    z-index: 1
+    *
+      color: $white !important
+  &__aside1
+    position: relative
+    grid-column: 7/span 3
+    grid-row: 1
+    align-self: end
+    background-color: $unit-green
+    +shadow-deep()
+    z-index: 1
+    *
+      color: $white !important
+    &::after
+      content: ''
+      width: 33.33%
+      height: 100%
+      display: block
+      position: absolute
+      bottom: 100%
+      left: 100%
+      background-color: $unit-green
+  &__aside2,
+  &__aside3,
+  &__aside4
+    grid-row: 2
+    position: relative
+    z-index: 1
+  &__aside2
+    grid-column: 1/span 3
+    background-color: $white
+  &__aside3
+    grid-column: 4/span 3
+    background-color: $default-bg-color
+  &__aside4
+    grid-column: 7/span 3
+    background-color: $acid-yellow
+  .TextPanel
+    min-height: 415px
+  &__texture1,
+  &__texture2,
+  &__texture3
+    +set-video-overlay($texture-spark-overlay)
+  &__texture1
+    display: none
+    grid-column: 9/span 1
+    grid-row: 1
+    background-image: url($texture-6)
+    background-size: contain
+    position: relative
+    z-index: 0
+  &__texture2
+    grid-column: 10/span 1
+    grid-row: 1/span 2
+    height: 100%
+    background-image: url($texture-7-stretched)
+    background-size: cover
+    background-position: left bottom
+    background-repeat: no-repeat
+    position: relative
+    z-index: 0
+  &__texture3
+    display: none
+    grid-column: 6/span 1
+    grid-row: 1 /span 2
+    height: 615px
+    align-self: end
+    background-image: url($texture-6)
+    background-size: cover
+    background-position: center bottom
+    background-repeat: no-repeat
+    position: relative
+    z-index: 0
+
++render-to($media-xl)
+  .HomeData
+    &__wrap
+      max-width: $max-width-xl
+
++render-to($media-l)
+  .HomeData
+    &__aside1
+      .TextPanel
+        height: 440px
+      &::after
+        width: 1000%
+    &__texture2
+      grid-row: 1/ span 2
+      height: 858px
+      align-self: end
+      position: relative
+      background-image: none
+      &::before
+        width: 1000%
+        max-width: 800px
+        z-index: 2
+      &::after
+        content: ''
+        width: 1000%
+        max-width: 800px
+        height: 100%
+        display: block
+        background-image: url($texture-7-rotated)
+        background-size: cover
+        background-repeat: no-repeat
+        position: absolute
+        top: 0
+        left: 0
+        background-position: right top
+        z-index: 1
+
++render-to($media-m)
+  .HomeData
+    &__wrap
+      position: relative
+    &__mainText
+      padding-bottom: 0
+      grid-row: 2
+    &__aside1
+      grid-column: 7/span 4
+      grid-row: 3
+    &__aside2
+      grid-column: 3/span 4
+      grid-row: 3
+    &__aside3
+      grid-column: 3/span 4
+      grid-row: 4
+    &__aside4
+      grid-column: 7/span 4
+      grid-row: 4
+    &__aside1:after
+      display: none
+    &__texture1
+      display: block
+      grid-column: 1/span 2
+      grid-row: 1
+      height: 120px
+      background-image: none
+      position: relative
+      overflow: hidden
+      &::after
+        content: ''
+        display: block
+        width: 100%
+        height: 100%
+        background-image: url($texture-7-rotated)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: left center
+        position: absolute
+        top: 0
+        left: 0
+    &__texture2
+      grid-column: 7/span 4
+      grid-row: 2
+      height: 160px
+      align-self: end
+      background-image: none
+      position: relative
+      overflow: hidden
+      &::after
+        content: ''
+        width: 100%
+        height: 100%
+        background-image: url($texture-7-rotated)
+        background-size: cover
+        background-position: left center
+        position: absolute
+        top: 0
+        left: 0
+    &__texture3
+      display: block
+      grid-column: 1/span 2
+      grid-row: 4
+      height: 100%
+      background-image: url($texture-7-rotated)
+
++render-to($media-s)
+  .HomeData
+    .MainTextPanel
+      padding-top: $pad-jumbo
+    &__mainText
+      grid-column: 2/span 6
+    &__texture1
+      grid-column: 1/span 5
+      height: 32px
+      &::after
+        width: 100%
+        height: 100%
+        transform: translate(0, 0)
+        top: 0
+        left: 0
+        bottom: auto
+    &__texture2
+      grid-column: 6/span 5
+      height: 120px
+      &::after
+        width: 100%
+        height: 100%
+        transform: translate(0, 0)
+        top: 0
+        left: 0
+        bottom: auto
+    &__aside1,
+    &__aside4
+      grid-column: 6/span 5
+    &__aside2,
+    &__aside3
+      grid-column: 1/span 5
+    &__texture3
+      display: none
+    &__aside3
+      background-color: $default-bg-color
+
++render-to($media-xs)
+  .HomeData
+    &__wrap
+      +grid-small()
+    &__mainText
+      grid-column: 1/span 6
+      grid-row: 1
+      +default-column()
+    .MainTextPanel
+      padding-bottom: $pad-jumbo
+    &__texture3,
+    &__aside3
+      display: none
+    &__aside2
+      grid-column: 2/span 5
+      grid-row: 2
+    &__aside4
+      grid-column: 1/span 5
+      grid-row: 3
+    &__aside1
+      grid-column: 1/span 6
+      grid-row: 4
+    .TextPanel
+      min-height: 300px
+    &__texture1
+      grid-column: 1/span 1
+      grid-row: 2
+      height: 100%
+    &__texture2
+      grid-column: 6/span 1
+      grid-row: 3
+      height: 100%
+    &__texture1,
+    &__texture2
+      background-image: url($texture-7-stretched)
+      background-size: cover
+      background-position: top left
+      &:after
+        display: none
+
++render-to($media-xxxs)
+  .HomeData
+    .MainTextPanel
+      padding-top: $pad-chunky
+      padding-bottom: $pad-chunky
+    &__aside2
+      grid-column: 1/span 6
+      margin-left: $hspace-xxxs
+      z-index: 1
+    &__aside4
+      grid-column: 1/span 6
+      margin-right: $hspace-xxxs
+    &__texture1
+      grid-column: 1/span 1
+      grid-row: 2
+      width: $hspace-xxxs
+      transform: translate(0, 60px)
+    &__texture2
+      width: $hspace-xxxs
+      transform: translate(0, -60px)
+      justify-self: end
+      z-index: 0

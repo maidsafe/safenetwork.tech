@@ -1,0 +1,24 @@
+@import '~styles/index'
+
+.interviewRequest
+  padding-top: $pad-medium
+  padding-bottom: $pad-super-jumbo
+  +render-to($media-l)
+    height: 430px
+    padding-bottom: 0
+  +render-to($media-s)
+    height: 450px
+    padding-top: $pad-chunky
+    padding-bottom: 0
+  +render-to($media-xs)
+    height: auto
+    min-height: 380px
+    +default-column()
+    padding-top: $pad-medium
+    padding-bottom: $pad-medium
+    .textSnippet__para
+      max-width: 100%
+  +render-to($media-xxs)
+    height: auto
+    padding-top: $pad-small
+    padding-bottom: $pad-small

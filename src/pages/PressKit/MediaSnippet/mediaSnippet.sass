@@ -1,0 +1,16 @@
+@import '~styles/index'
+
+.mediaSnippet
+  padding: 0 $hspace-default
+  z-index: 1
+  &__para
+    margin-bottom: $margin-small
+  &__logo
+    height: 73px
+    img
+      height: 100%
+  +render-to($media-xs)
+    &__para
+      margin-bottom: $margin-thin
+    &__logo
+      height: 54px

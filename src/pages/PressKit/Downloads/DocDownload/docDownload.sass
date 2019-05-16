@@ -1,0 +1,47 @@
+@import '~styles/index'
+
+.docDownload
+  $c: &
+  width: 570px
+  margin-bottom: $margin-medium
+  &:last-child
+    margin-bottom: 0
+  &:nth-child(even)
+    #{$c}__content
+      background-color: $unit-green
+    .textSnippet__title,
+    .textSnippet__para
+      color: $white
+  &__wrap
+    +shadow-deep()
+  &__button
+    display: flex
+    justify-content: center
+    align-items: center
+  &__content
+    padding-top: $pad-small
+    +default-column()
+    background-color: $white
+  &__button
+    padding: $pad-thin 0
+    .btn
+      min-width: 167zpx
+
+// Small
++render-to($media-s)
+  .docDownload
+    width: 550px
+    margin-bottom: $margin-jumbo
+
+
+// XSmall
++render-to($media-xs)
+  .docDownload
+    width: 560px
+    margin-bottom: $margin-chunky
+
+// XXSmall
++render-to($media-xxs)
+  .docDownload
+    width: 100%
+    margin-bottom: $margin-small

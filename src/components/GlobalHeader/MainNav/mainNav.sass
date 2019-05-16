@@ -1,0 +1,40 @@
+@import '~styles/index'
+
+// Default (ML)
+.mainNav
+  +clearfix()
+  &__wrap
+    width: 100%
+    float: right
+  &__items, &__btnItems
+    float: left
+    +clearfix()
+
+// Large
++render-to($media-l)
+  .mainNav
+    &__wrap
+      display: grid
+      float: none
+      grid-template-columns: repeat(5, 1fr)
+    &__items
+      grid-column: 1 / span 4
+      justify-self: end
+    &__btnItems
+      grid-column: 5 / span 1
+      justify-self: center
+
+// Small
++render-to($media-s)
+  .mainNav
+    display: inline-block
+    &__wrap
+      float: none
+      text-align: center
+      padding-top: 80px
+    &__items, &__btnItems
+      float: none
+    &__items
+      display: flex
+      flex-direction: column
+      align-items: center

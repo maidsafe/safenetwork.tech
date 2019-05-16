@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "babel-polyfill";
 
+import './styles/shared/main.sass'
 // Fonts
 import 'typeface-vollkorn';
 
 // Your top level component
-import App from './containers/App';
+import App from './App';
 
 // Export your top level component as JSX (for static rendering)
 export default App;
@@ -19,5 +20,5 @@ if (typeof document !== 'undefined') {
   }
 
   // Render!
-  render(App);
+  render(App)
 }

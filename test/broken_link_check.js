@@ -11,7 +11,8 @@ const scanForBrokenLinks = (serveUrl) => {
       'https://www.cryptopia.co.nz/',
       'https://t.me/safenetwork',
       'https://www.ico.org.uk/',
-    ]
+      'https://hitbtc.com/',
+    ],
   };
   return new Promise((resolve, rejects) => {
     var siteChecker = new blc.SiteChecker(options, {

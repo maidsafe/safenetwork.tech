@@ -1,7 +1,10 @@
+import path from 'path'
+//
 import React from 'react'
-import axios from 'axios'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import CompressionPlugin from 'compression-webpack-plugin'
+
+const pageDirPath = 'src/pages'
 
 export default {
   getSiteData: () => ({
@@ -11,51 +14,51 @@ export default {
     return [
       {
         path: '/',
-        component: 'src/containers/home',
+        component: `${pageDirPath}/Home`,
       },
       {
         path: '/how-it-works/',
-        component: 'src/containers/how_it_works',
+        component: `${pageDirPath}/HowItWorks`,
       },
       {
         path: '/faq/',
-        component: 'src/containers/faqs',
+        component: `${pageDirPath}/FAQs`,
       },
       {
         path: '/safecoin/',
-        component: 'src/containers/safecoins',
+        component: `${pageDirPath}/SafeCoin`,
       },
       {
         path: '/get-involved/',
-        component: 'src/containers/get_involved',
+        component: `${pageDirPath}/GetInvolved`,
       },
       {
-        path: '/timeline/',
-        component: 'src/containers/timeline',
+        path: '/roadmap/',
+        component: `${pageDirPath}/Roadmap`,
       },
       {
         path: '/press-kit/',
-        component: 'src/containers/press_kit',
+        component: `${pageDirPath}/PressKit`,
       },
       {
         path: '/cookies/',
-        component: 'src/containers/cookies',
+        component: `${pageDirPath}/Cookies`,
       },
       {
         path: '/privacy/',
-        component: 'src/containers/privacy',
+        component: `${pageDirPath}/Privacy`,
       },
       {
         path: '/about-maidsafe/',
-        component: 'src/containers/about-maidsafe',
+        component: `${pageDirPath}/About`,
       },
       {
         path: '/fundamentals/',
-        component: 'src/containers/fundamentals'
+        component: `${pageDirPath}/Fundamentals`
       },
       {
         is404: true,
-        component: 'src/containers/404',
+        component: `${pageDirPath}/NotFound`,
       },
     ]
   },
@@ -112,6 +115,17 @@ export default {
     config.plugins.push(new CompressionPlugin({
       algorithm: 'gzip'
     }))
+    //
+    config.resolve = {
+      ...config.resolve,
+      alias: {
+        styles: path.resolve(__dirname, 'src/styles'),
+        images: path.resolve(__dirname, 'src/assets/images'),
+        fonts: path.resolve(__dirname, 'src/assets/fonts'),
+        components: path.resolve(__dirname, 'src/components'),
+        src: path.resolve(__dirname, 'src')
+      }
+    }
     return config
   },
   Document: ({ Html, Head, Body, children, siteData, renderMeta }) => (

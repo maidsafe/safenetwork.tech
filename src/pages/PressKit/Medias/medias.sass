@@ -1,0 +1,183 @@
+@import '~styles/index'
+
+$theGuardian-hover: #004999
+$techCrunch-hover: #03CF0E
+$spectrum-hover: #94FFF5
+$theGuardian-pressed: $pitch-black
+$techCrunch-pressed: $pitch-black
+$spectrum-pressed: $white
+
+.pressKitMedias
+  &__wrap
+    +grid()
+  .interviewReq__bg
+    grid-column: 1 /span 6
+    grid-row: 1
+    background-color: $white
+    +shadow-deep()
+    z-index: 0
+  .interviewRequest
+    grid-column: 2 /span 4
+    grid-row: 1
+    z-index: 4
+  .techCrunch,
+  .theGuardian
+    .mediaSnippet__para
+      color: $white
+      max-width: 400px
+  .techCrunch,
+  .theGuardian,
+  .spectrum
+    padding-bottom: $pad-medium
+    display: flex
+    align-items: flex-end
+    .mediaSnippet__para
+      display: inline-block
+  .techCrunch
+    grid-column: 7/ span 4
+    grid-row: 1
+    height: 390px
+    align-self: flex-end
+    background: $tech-crunch-gradiant
+    &:hover
+      background: $techCrunch-hover !important
+    &:active
+      background: $techCrunch-pressed !important
+  .theGuardian,
+  .spectrum,
+  .mediaLogos
+    grid-row: 2
+    height: 400px
+  .theGuardian
+    grid-column: 7/ span 4
+    background-color: $deep-blue
+    &:hover
+      background-color: $theGuardian-hover
+    &:active
+      background-color: $theGuardian-pressed
+  .spectrum
+    grid-column: 4/ span 3
+    background-color: $zingy-sky
+    &:hover
+      background-color: $spectrum-hover
+    &:active
+      background-color: $spectrum-pressed
+  .mediaLogos
+    grid-column: 1/span 3
+    background-color: $pinky-grey
+    background-image: url($media-logo-m)
+    background-repeat: no-repeat
+    background-position: center
+
+// Large
++render-to($media-l)
+  .pressKitMedias
+    .interviewReq__bg
+      grid-column: 1/ span 5
+    .interviewRequest,
+    .theGuardian
+      height: 430px
+    .interviewRequest
+      grid-column: 2/ span 3
+    .theGuardian
+      grid-column: 6/ span 3
+      grid-row: 1
+    .spectrum,
+    .techCrunch
+      height: 380px
+      grid-row: 2
+    .techCrunch
+      grid-column: 1/ span 5
+      padding-left: 0
+      padding-right: 0
+      display: grid
+      grid-template-columns: repeat(5, 1fr)
+      .mediaSnippet__wrap
+        grid-column: 2/span 3
+      .mediaSnippet__para
+        max-width: 100%
+    .spectrum
+      grid-column: 6/ span 3
+    .mediaLogos
+      height: auto
+      grid-column: 9/ span 2
+      grid-row: 1/ span 2
+      background-image: url($media-logo-l)
+
+// XLarge
++render-to($media-xl)
+  .pressKitMedias
+    overflow: hidden
+    &__wrap
+      max-width: $max-width-xl
+  .pressKitMedias
+    background-color: rgba($pinky-grey, 0.6)
+
+// Small
++render-to($media-s)
+  .pressKitMedias
+    .interviewReq__bg
+      grid-column: 1 /span 10
+    .interviewRequest
+      grid-column: 2 /span 8
+    .theGuardian,
+    .spectrum
+      height: 400px
+      grid-row: 2
+    .theGuardian
+      grid-column: 1/ span 5
+    .spectrum
+      grid-column: 6/ span 5
+    .techCrunch,
+    .mediaLogos
+      height: 460px
+      grid-row: 3
+    .techCrunch
+      grid-column: 6/span 5
+    .mediaLogos
+      grid-column: 1/ span 5
+
+// XSmall
++render-to($media-xs)
+  .pressKitMedias
+    &__wrap
+      +grid-small()
+    .interviewReq__bg
+      grid-row: 1/span 4
+    .interviewRequest
+      grid-column: 1 /span 6
+    .spectrum,
+    .theGuardian
+      height: 312px
+    .theGuardian
+      grid-column: 1/ span 3
+    .spectrum
+      grid-column: 4/ span 3
+    .techCrunch
+      grid-column: 1/ span 6
+      height: 275px
+      padding-top: $pad-medium
+      padding-bottom: $pad-small
+      .mediaSnippet__para
+        max-width: 100%
+    .mediaLogos
+      height: 200px
+      grid-column: 1/ span 6
+      grid-row: 4
+      background-image: url($media-logo-s)
+      z-index: 4
+
+// XXSmall
++render-to($media-xxs)
+  .pressKitMedias
+    .interviewReq__bg
+    .theGuardian
+      grid-column: 1 /span 6
+    .theGuardian,
+    .techCrunch
+      height: auto
+      padding: $pad-small $hspace-xs
+    .spectrum
+      display: none
+    .mediaLogos
+      display: none

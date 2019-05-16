@@ -1,0 +1,81 @@
+@import '~styles/index'
+
+.siteLogo
+  &__wrap
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    +clearfix()
+    &:hover
+      opacity: 0.85
+    &:active
+      opacity: 1
+  &__media
+    grid-column: 1/ span 1
+    height: 38px
+    padding: 0 60px
+    text-align: right
+    a
+      display: inline-block
+      width: auto
+      height: 100%
+      transform: translate(50%, 0)
+    img
+      height: 100%
+  &__name
+    grid-column: 2/ span 2
+    +font-2()
+    font-size: 18px
+    line-height: 38px
+    letter-spacing: 0.04em
+    text-transform: uppercase
+  &.light
+    .siteLogo__media img
+      -webkit-filter: brightness(0) invert(1)
+      filter: brightness(0) invert(1)
+    .siteLogo__name
+      color: $white
+
+// Large
++render-to($media-l)
+  .siteLogo
+    &__media
+      padding: 0 56px
+
+// Small
++render-to($media-s)
+  .siteLogo
+    &__media
+      padding: 0
+      text-align: center
+      a
+        transform: none
+    &__name
+      grid-column: 2 /span 2
+
+// XSmall
++render-to($media-xs)
+  .siteLogo
+    &__wrap
+      display: block
+      padding-left: 45px
+    &__media, &__name
+      float: left
+    &__media
+      padding: 0 30px 0 0
+      a
+        transform: none
+
+// XXSmall
++render-to($media-xxs)
+  .siteLogo
+    width: 190px
+    overflow: hidden
+    &__wrap
+      padding-left: 30px
+    &__media
+      height: 30px
+      padding-right: 15px
+      padding-left: 0
+    &__name
+      font-size: 12px
+      line-height: 30px

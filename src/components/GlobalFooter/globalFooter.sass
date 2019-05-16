@@ -1,0 +1,178 @@
+@import '~styles/index'
+
+$item-hspace: $hspace-default
+$item-vspace: 75px
+
+// Default
+.globalFooter
+  width: 100%
+  background-color: $footer-bg-color
+  box-shadow: inset 0px 17px 25px -17px rgba(0, 0, 0, 0.12)
+  &__wrap
+    +grid()
+    padding: 160px 0
+    .safeNetwork
+      grid-column: 2/ span 4
+      grid-row: 1
+      padding-right: $item-hspace
+      padding-bottom: $item-vspace
+      .footerList
+        +clearfix()
+      .footerList__item
+        width: 50%
+        float: left
+        &:first-child
+          display: none
+        &:nth-child(odd)
+          padding-left: $item-hspace / 2
+    .community
+      grid-column: 2/ span 2
+      grid-row: 2
+      padding-right: $item-hspace
+      padding-bottom: $item-vspace
+    .developers
+      grid-column: 4/ span 2
+      grid-row: 2
+      padding-right: $item-hspace
+      padding-bottom: $item-vspace
+    .company
+      grid-column: 2/ span 2
+      grid-row: 3
+      padding-right: $item-hspace
+    .legal
+      grid-column: 4/ span 2
+      grid-row: 3
+      padding-right: $item-hspace
+    .newsletter
+      grid-column: 6/ span 4
+      grid-row: 1
+      padding-left: $item-hspace
+    .social
+      grid-column: 6/ span 4
+      grid-row: 2
+      padding-left: $item-hspace
+
+// XLarge
++render-to($media-xl)
+  .globalFooter
+    &__wrap
+      max-width: $grid-max-width
+
+// Small
++render-to($media-s)
+  .globalFooter
+    &__wrap
+      .safeNetwork
+        grid-column: 2/ span 5
+        grid-row: 2
+        padding-right: 0
+        .footerList__item
+          width: calc(calc(100% / 5) * 2)
+          &:nth-child(odd)
+            padding-left: calc(100% / 5)
+      .community
+        grid-column: 8/ span 2
+        grid-row: 2
+        padding-right: 0
+      .newsletter
+        grid-column: 2/ span 4
+        padding-left: 0
+      .social
+        grid-column: 7/ span 3
+        grid-row: 1
+        padding-left: 0
+        padding-bottom: $item-vspace
+      .company
+        grid-column: 2/ span 2
+        grid-row: 3
+        padding-right: 0
+      .developers
+        grid-column: 5/ span 2
+        grid-row: 3
+        padding-right: 0
+        padding-bottom: 0
+      .legal
+        grid-column: 8/ span 2
+        grid-row: 3
+        padding-right: 0
+
+// XSmall
++render-to($media-xs)
+  .globalFooter
+    &__wrap
+      +grid-small()
+      .safeNetwork,
+      .community,
+      .newsletter,
+      .social,
+      .company,
+      .developers,
+      .legal
+        width: 100%
+        padding: 0 60px
+        grid-column: 1/ span 6
+      .safeNetwork
+        grid-row: 3
+        position: relative
+        .footerList__item
+          width: 100%
+          padding-left: 0 !important
+          &:first-child
+            display: block
+      .community
+        grid-row: 5
+      .newsletter
+        grid-row: 1
+        &.active
+          margin-bottom: $margin-thin
+        .footerItemTitle
+          cursor: default
+          margin-bottom: $margin-fine
+          &:after
+            display: none
+          &:hover,
+          &:active
+            border-bottom-color: $acid-yellow
+        .footerContainer__context
+          display: block
+      .social
+        grid-row: 2
+      .company
+        grid-row: 4
+      .developers
+        grid-row: 7
+      .legal
+        grid-row: 6
+
+// XXSmall
++render-to($media-xxs)
+  .globalFooter
+    &__wrap
+      .safeNetwork,
+      .community,
+      .newsletter,
+      .social,
+      .company,
+      .developers,
+      .legal
+        width: 100%
+        grid-column: 1/ span 6
+        padding: 0 60px
+        box-sizing: border-box
+      .newsletter
+        .footerItemTitle
+          margin-bottom: $margin-hair
+
+
+// XXXSmall
++render-to($media-xxxs)
+  .globalFooter
+    &__wrap
+      .safeNetwork,
+      .community,
+      .newsletter,
+      .social,
+      .company,
+      .developers,
+      .legal
+        padding: 0 30px

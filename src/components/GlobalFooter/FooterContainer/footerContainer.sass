@@ -1,0 +1,40 @@
+@import '~styles/index'
+
+.footerContainer
+  &__wrap
+    +clearfix()
+  &__title
+    padding-bottom: 16px
+    margin-bottom: 10px
+    border-bottom: 2px solid #E2DD12
+  &__listItem
+    padding-top: 20px
+
+// XSmall
++render-to($media-xs)
+  .footerContainer
+    margin-bottom: 32px
+    &__title
+      position: relative
+      &::after
+        content: ''
+        display: block
+        width: 18px
+        height: 18px
+        position: absolute
+        top: 3px
+        right: 15px
+        background-image: url($footer-arrow-icon)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+    &__context
+      max-width: 575px
+      display: none
+    &.active
+      margin-bottom: 40px
+      .footerContainer__title
+        &::after
+          transform: rotate(180deg)
+      .footerContainer__context
+        display: block

@@ -1,0 +1,59 @@
+@import '~styles/index'
+
+// Downloads
+.pressKitDownloads
+  &__title
+    +grid()
+    padding-top: $pad-super-jumbo
+    h2
+      grid-column: 2/ span 2
+
+// Large
++render-to($media-l)
+  .pressKitDownloads
+    &__wrap
+      padding-bottom: $pad-thin
+    &__title
+      padding-top: $pad-super-jumbo
+
+// XLarge
++render-to($media-xl)
+  .pressKitDownloads
+    &__wrap
+      max-width: $max-width-xl
+
+// Small
++render-to($media-s)
+  .pressKitDownloads
+    &__wrap
+      padding-bottom: $pad-small
+    &__title
+      padding-top: $pad-super-jumbo
+
+// XSmall
++render-to($media-xs)
+  .pressKitDownloads
+    &__wrap
+      padding-bottom: $pad-chunky
+    &__title
+      +grid-small()
+      padding-top: $pad-jumbo
+      h2
+        grid-column: 1/ span 6
+        padding-left: $hspace-xs
+
+// XXSmall
++render-to($media-xxs)
+  .pressKitDownloads
+    &__title
+      padding-top: $pad-medium
+      h2
+        padding-left: $hspace-xxs
+
++render-to($media-xxxs)
+  .pressKitDownloads
+    &__wrap
+      padding-bottom: $pad-thin
+    &__title
+      h2
+        padding-left: $hspace-xxxs

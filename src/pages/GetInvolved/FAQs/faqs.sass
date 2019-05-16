@@ -1,0 +1,51 @@
+@import '~styles/index'
+
+.GetInvolvedFAQ
+  &__wrap
+    padding-top: $pad-chunky
+    padding-bottom: $pad-super-jumbo
+  &__more
+    +grid()
+  &__cta
+    grid-column: 2/span 9
+    padding-top: $pad-small
+
++render-to($media-l)
+  .GetInvolvedFAQ
+    &__wrap
+      padding-bottom: $pad-chunky
+    &__cta
+      padding-top: $pad-thin
+
++render-to($media-s)
+  .GetInvolvedFAQ
+    &__wrap
+      padding-top: 0
+      padding-bottom: $pad-chunky
+    &__cta
+      padding-top: 0
+
++render-to($media-xs)
+  .GetInvolvedFAQ
+    &__wrap
+      padding-bottom: $pad-super-jumbo
+
++render-to($media-xxs)
+  .GetInvolvedFAQ
+    &__wrap
+      padding-top: $pad-fine
+      padding-bottom: $pad-chunky
+    &__more
+      +grid-small()
+    &__cta
+      +default-column()
+      grid-column: 1/span 6
+      padding-top: $pad-thin
+
++render-to($media-xxxs)
+  .GetInvolvedFAQ
+    &__wrap
+      padding-top: $pad-thin
+    &__cta
+      .btn
+        width: 100%

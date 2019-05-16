@@ -1,0 +1,17 @@
+@import '~styles/index'
+
+.textSnippet
+  z-index: 5
+  &__wrap
+    height: 100%
+    position: relative
+  &__button
+    position: absolute
+    bottom: 0
+
+// XXSmall
++render-to($media-xxs)
+  .textSnippet
+    &__button
+      position: static
+      bottom: auto

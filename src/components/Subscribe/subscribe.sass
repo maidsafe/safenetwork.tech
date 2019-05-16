@@ -1,0 +1,19 @@
+@import '~styles/index'
+
+.Subscribe
+  &__wrap
+    width: 100%
+  &__desc
+    margin-bottom: $margin-thin
+
+// XXSmall
++render-to($media-xxs)
+  .Subscribe
+    &__wrap
+      max-width: 512px
+
+// XXXSmall
++render-to($media-xxxs)
+  .Subscribe
+    &__wrap
+      max-width: 100%

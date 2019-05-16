@@ -1,0 +1,15 @@
+@import '~styles/index'
+
+// Default
+.faqs
+  &__wrap
+    background-color: $default-bg-color
+    padding-bottom: 120px
+  &__banner
+    background-color: $white
+    margin-bottom: 24px
+
++render-to($media-xl)
+  .faqs
+    .qaSection
+      max-width: $max-width-xl

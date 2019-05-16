@@ -1,0 +1,104 @@
+@import '~styles/index'
+
+.SubscribeForm
+  &__wrap
+  &__form
+    +clearfix()
+    position: relative
+    margin-bottom: 30px
+  &__input
+    width: 320px
+    float: left
+    input
+      +font-3()
+      width: 100%
+      line-height: 40px
+      padding: 0 30px
+      border: 1px solid rgba(51, 51, 51, 0.2)
+      background-color: $default-bg-color
+      border-radius: 40px
+      font-size: 16px
+      color: $black
+      outline: none
+      &:focus, &:valid
+        background-color: $white
+  &__submitButton
+    float: left
+    margin-left: 25px
+    font-size: 16px
+    .btn
+      min-width: 112px
+  &__message
+    position: absolute
+    top: 100%
+    left: 0
+    width: 100%
+    max-width: 530px
+    height: 18px
+    margin-top: 12px
+    padding-left: 30px
+    float: left
+    +font-1()
+    font-size: 16px
+    font-weight: 600
+    color: $spark-red
+
+// Large
++render-to($media-l)
+  .SubscribeForm
+    &__submitButton
+      .btn
+        min-width: 130px
+
+// Small
++render-to($media-s)
+  .SubscribeForm
+    &__input
+      width: 230px
+    &__submitButton
+      margin-left: 20px
+
+// XSmall
++render-to($media-xs)
+  .SubscribeForm
+    &__input
+      width: 400px
+    &__submitButton
+      margin-left: 27px
+
+// XXSmall
++render-to($media-xxs)
+  .SubscribeForm
+    &__wrap
+      max-width: 512px
+    &__form
+      position: relative
+      width: 100%
+      padding-right: 145px
+    &__input
+      width: 100%
+      min-width: 240px
+    &__submitButton
+      position: absolute
+      top: 0
+      right: 0
+
+// XXXSmall
++render-to($media-xxxs)
+  .SubscribeForm
+    &__form
+      position: static
+      padding-right: 0
+    &__input
+      width: 100%
+      max-width: 100%
+      min-width: 100%
+      input
+        text-align: center
+    &__submitButton
+      position: static
+      width: 100%
+      margin-left: 0
+      margin-top: 20px
+      .btn
+        width: 100%

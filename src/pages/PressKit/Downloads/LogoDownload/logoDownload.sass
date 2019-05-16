@@ -1,0 +1,72 @@
+@import '~styles/index'
+
+.logoDownload
+  width: 325px
+  float: left
+  margin-bottom: $margin-medium
+  box-sizing: content-box
+  $c: &
+  &:nth-child(odd)
+    margin-right: 65px
+    #{$c}__media
+      background-color: $white
+  &:nth-child(even)
+    margin-right: 0
+    #{$c}__media
+      background-color: $black
+  &__wrap
+    +shadow-deep()
+  &__media,
+  &__button
+    display: flex
+    justify-content: center
+    align-items: center
+  &__media
+    height: 200px
+  &__button
+    height: 100px
+
+// Large
++render-to($media-l)
+  .logoDownload
+    width: 345px
+    margin-right: 70px
+    margin-bottom: $margin-medium
+    padding: 0 !important
+
+// Small
++render-to($media-s)
+  .logoDownload
+    width: 335px
+    &:nth-child(odd)
+      margin-right: 40px
+    padding: 0 !important
+  .documentDownload
+    width: 550px
+    padding-right: 0
+
+// XSmall
++render-to($media-xs)
+  .logoDownload
+    width: 50%
+    margin-right: 0
+    margin-bottom: $margin-medium
+    box-sizing: border-box
+    &:nth-child(odd)
+      padding-right: 25px !important
+      margin-right: 0
+    &:nth-child(even)
+      padding-left: 25px !important
+    &__media
+      height: 120px
+
+// XXSmall
++render-to($media-xxs)
+  .logoDownload
+    width: 100% !important
+    margin-bottom: $margin-small
+    margin-right: 0
+    &:nth-child(odd)
+      padding-right: 0 !important
+    &:nth-child(even)
+      padding-left: 0 !important
