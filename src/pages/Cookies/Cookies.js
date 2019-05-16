@@ -1,6 +1,7 @@
 import React from 'react'
 
 import PageBanner from 'components/PageBanner'
+import TextSnippet from 'components/TextSnippet'
 import Topic from './Topic'
 import { prefixClassName, genRandomKey, parseMDText } from 'src/utils'
 import content from './content'
@@ -20,7 +21,7 @@ const Cookies = () => {
           <PageBanner title={title} />
         </div>
         <div className={cn('desc')}>
-          <p>{parseMDText(desc, true)}</p>
+          <TextSnippet text={desc} />
         </div>
         <div className={cn('topics')}>
           {topics.map(t => {
