@@ -1,0 +1,110 @@
+@import '~styles/index'
+
+// Dimensions
+$min-width: 156px
+$height: 43px
+$font-size: 16px
+$border-width: 1px
+$border-radius: 200px
+$color: $white
+
+// Default
+$default-enabled-bg: rgba($black, 0.5)
+$default-hover-bg: rgba($body-text, 0.85)
+$default-pressed-bg: $black
+
+// Primary
+$primary-enabled-bg: $spark-red
+$primary-hover-bg: rgba($body-text, 0.7)
+$primary-pressed-bg: $black
+
+// Dark
+$dark-enabled-bg: $body-text
+$dark-hover-bg: $pitch-black
+$dark-pressed-bg: $spark-red
+
+// Hollow
+$hollow-enabled-bg: transparent
+$hollow-hover-bg: rgba($body-text, 0.7)
+$hollow-pressed-bg: $black
+$hollow-enabled-color: $body-text
+$hollow-hover-color: $white
+$hollow-pressed-color: $white
+$hollow-border-color: rgba($black, 0.5)
+
+// icon
+$icon-size: 30px
+$icon-bg-size: 14px
+
+.btn
+  min-width: $min-width
+  height: $height
+  padding: 0 $pad-fine
+  border-width: $border-width
+  border-style: solid
+  border-color: transparent
+  border-radius: $border-radius
+  +font-1()
+  font-size: $font-size
+  font-weight: bold
+  line-height: $height
+  text-align: center
+  color: $color
+  background-color: $default-enabled-bg
+  box-sizing: border-box
+  outline: none
+  cursor: pointer
+  &:hover
+    background-color: $default-hover-bg
+  &:active
+    background-color: $default-pressed-bg
+  &.primary
+    background-color: $primary-enabled-bg
+    &:hover
+      background-color: $primary-hover-bg
+    &:active
+      background-color: $primary-pressed-bg
+  &.hollow
+    background-color: $hollow-enabled-bg
+    color: $hollow-enabled-color
+    border-color: $hollow-border-color
+    &:hover
+      background-color: $hollow-hover-bg
+      color: $hollow-hover-color
+    &:active
+      background-color: $hollow-pressed-bg
+      color: $hollow-pressed-color
+    &:active,
+    &:hover
+      &.download:after
+        background-image: url($arrow-down-white-icon) !important
+      &.external:after
+        background-image: url($external-white-icon) !important
+    &.download:after
+      background-image: url($arrow-down-icon) !important
+    &.external:after
+      background-image: url($external-icon) !important
+  &.dark
+    background-color: $dark-enabled-bg
+    &:hover
+      background-color: $dark-hover-bg
+    &:active
+      background-color: $dark-pressed-bg
+  &.icon
+    padding-right: 40px
+    position: relative
+    &:after
+      content: ''
+      width: $icon-size
+      height: $height
+      display: block
+      position: absolute
+      top: -1px
+      right: -1px
+      background-size: $icon-bg-size
+      background-position: left center
+      background-repeat: no-repeat
+    &.download:after
+      background-image: url($arrow-down-white-icon)
+    &.external:after
+      background-image: url($external-white-icon)
