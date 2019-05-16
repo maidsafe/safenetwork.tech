@@ -31,7 +31,7 @@ export default {
         'url': 'https://medium.com/safenetwork'
       },
       {
-        'name': 'Timeline',
+        'name': 'Roadmap',
         'url': '/roadmap/'
       }
     ]
