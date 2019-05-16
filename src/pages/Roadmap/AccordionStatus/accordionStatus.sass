@@ -6,10 +6,10 @@
   padding-top: $pad-fine
   &__wrap
     grid-column: 2/span 8
-    display: flex
   &__key
-    flex: 1
+    width: 20%
     text-align: center
+    float: left
     height: 120px
     background-image: url($bulb-icon)
     background-repeat: no-repeat
@@ -71,3 +71,23 @@
     &__wrap
       grid-column: 1/span 6
       +default-column()
+
++render-to($media-xxs)
+  .AccordionStatus
+    &__key
+      &.development,
+      &.complete
+        .caption
+          visibility: hidden
+          &::before
+            content: 'Code'
+            visibility: visible
+            position: absolute
+            top: 3px
+            left: 0
+            width: 100%
+            text-align: center
+      &.complete
+        .caption
+          &::before
+            content: 'Done'

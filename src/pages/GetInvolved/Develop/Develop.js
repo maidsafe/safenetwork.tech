@@ -28,7 +28,7 @@ const Develop = props => {
         <div className={cn('startDevelop')}>
           <TextSnippet title={startDevelop.title} titleSize="H2" text={startDevelop.para} />
           <div className="cta">
-            <Button className="dark icon external" onClick={() => {
+            <Button className="icon external" onClick={() => {
               openLink(startDevelop.CTA.url)
             }}>{startDevelop.CTA.name}</Button>
           </div>
