@@ -20,7 +20,7 @@ const Intro = props => {
           <p>{text}</p>
         </div>
         <div className={cn('media')}>
-          <Video width="530" height="330" url={videoUrl} caption={videoCaption} />
+          <Video width="530" url={videoUrl} caption={videoCaption} />
         </div>
       </div>
     </div>

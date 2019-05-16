@@ -32,13 +32,15 @@
         width: auto
         text-align: right
         padding-right: $pad-thin
+    .Accordion__row
+      display: grid
 
 +render-to($media-xs)
   .RoadmapAccordion
     +grid-small()
     &__wrap
-      grid-column: 2/span 6
-      margin-left: -$hspace-xs
+      grid-column: 1/span 6
+      margin-left: $hspace-xs
       padding-right: 0
 
 +render-to($media-xxs)
