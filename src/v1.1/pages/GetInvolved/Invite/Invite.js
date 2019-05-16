@@ -146,7 +146,7 @@ export default class Invite extends React.Component {
                   this.toggleInviteModal()
                 }}
                 onInviteRequest={() => {
-                  openLink(`mailto:${CONSTANT.inviteRequestMail}`)
+                  openLink(`mailto:${CONSTANT.inviteRequest.to}?subject=${encodeURIComponent(CONSTANT.inviteRequest.subject)}&body=${encodeURIComponent(CONSTANT.inviteRequest.body)}`)
                 }}
                 onJoinForum={() => {
                   openLink(CONSTANT.links.forum, true)
