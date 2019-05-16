@@ -7,6 +7,7 @@
     max-width: $max-width-xl
   &__bannerWrap
     background-color: $default-bg-color
+    grid-row: 1
   &__desc
     +grid()
   &__descWrap
@@ -27,3 +28,10 @@
       +default-column()
     &__topics
       padding-bottom: $pad-small
+
++render-to($media-xs)
+  .Cookies
+    &__wrap
+      &::after
+        grid-column: 1/span 6
+        margin-right: 0
