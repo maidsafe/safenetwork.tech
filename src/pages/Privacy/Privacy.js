@@ -18,7 +18,7 @@ const Privacy = () => {
     <section className={baseClassName}>
       <div className={cn('wrap')}>
         <div className={cn('banner')}>
-          <PageBanner title={title} />
+          <div className={cn('bannerWrap')}><PageBanner title={title} /></div>
         </div>
         <div className={classNames(cn('topics'), 'topSpace')}>
           {topics.map(t => {
