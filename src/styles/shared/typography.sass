@@ -1,0 +1,258 @@
+@import '~styles/index'
+
+body
+  +font-3()
+  font-size: 20px
+  line-height: 28px
+  font-weight: normal
+  color: $body-text
+  +render-to($media-xxs)
+    font-size: 18px
+    line-height: 26px
+
+h1, h2, h3, h4, h5, h6
+  +font-1()
+  color: $black
+  letter-spacing: -0.02em
+
+h1
+  font-size: 64px
+  line-height: 65px
+  margin-bottom: 40px
+  +render-to($media-xs)
+    font-size: 48px
+    line-height: 49px
+  +render-to($media-xxs)
+    font-size: 31px
+    line-height: 32px
+    margin-bottom: 32px
+
+h2
+  font-size: 36px
+  line-height: 1.25em
+  margin-bottom: 40px
+  max-width: 620px
+  +render-to($media-xxs)
+    font-size: 24px
+    line-height: 30px
+    margin-bottom: 32px
+
+h3
+  font-size: 24px
+  line-height: 30px
+  max-width: 620px
+  margin-bottom: 32px
+  +render-to($media-xs)
+    margin-bottom: 24px
+  +render-to($media-xxs)
+    font-size: 18px
+    line-height: 23px
+
+h4
+  font-size: 18px
+  max-width: 620px
+  margin-bottom: 32px
+
+.navigationText
+  +font-1()
+  font-size: 16px
+  letter-spacing: -0.02em
+  line-height: normal
+  font-weight: bold
+  color: $black
+  margin-bottom: 0
+
+p
+  max-width: 620px
+  margin-bottom: 40px
+  &:last-child
+    margin-bottom: 56px
+    +render-to($media-xxs)
+      margin-bottom: 40px
+p, li
+  a
+    position: relative
+    &:after
+      content: ''
+      width: 100%
+      height: 2px
+      position: absolute
+      bottom: -2px
+      left: 0
+      background-color: $link-undeline-bg-color
+    &:link
+      color: $pitch-black
+    &:visited
+      color: $unit-green
+      &:after
+        background-color: rgba($unit-green, 0.2)
+    &:hover:after
+      background-color: $spark-red
+    &:active:after
+      background-color: $acid-yellow
+  em
+    +cta-underline()
+
+blockquote
+  +font-1()
+  font-size: 21px
+  line-height: 26px
+  letter-spacing: -0.02em
+  color: $body-text
+
+.introText
+  p
+    font-size: 27px
+    line-height: 40px
+    color: $body-text
+    max-width: 848px
+    margin-bottom: $margin-medium
+    +render-to($media-xs)
+      font-size: 24px
+      line-height: 35px
+      max-width: 795px
+    +render-to($media-xxs)
+      font-size: 18px
+      line-height: 26px
+      max-width: 520px
+      margin-bottom: $margin-small
+    a
+      &:link, &:visited
+        color: $body-text
+      &:after, &:visited:after
+        background-color: $link-undeline-bg-color
+      &:hover:after
+        background-color: $spark-red
+      &:pressed:after
+        background-color: $acid-yellow
+
+.overline
+  display: inline-block
+  +font-1()
+  text-transform: uppercase
+  font-size: 14px
+  line-height: 23px
+  letter-spacing: 0.2em
+  margin-bottom: 32px
+  +render-to($media-xxs)
+    font-size: 12px
+
+
+.caption
+  +font-3()
+  font-size: 18px
+  line-height: 26px
+  margin-bottom: 56px
+  color: $caption-color
+  +render-to($media-xxs)
+    font-size: 16px
+    line-height: 23px
+
+.bodyLink-red
+  a
+    &:after
+      background-color: rgba($white, 0.3)
+    &:link, &:visited
+      color: $white
+    &:visited
+      &:after
+        background-color: rgba($pitch-black, 0.2)
+    &:hover:after
+      background-color: $acid-yellow
+    &:active:after
+      background-color: $black
+
+.bodyLink-yellow
+  a
+    &:after
+      background-color: $link-undeline-bg-color
+    &:link
+      color: $pitch-black
+    &:visited
+      color: $unit-green
+      &:after
+        background-color: rgba($unit-green, 0.2)
+    &:hover:after
+      background-color: $spark-red
+    &:active:after
+      background-color: $body-text
+
+.bodyLink-dark
+  a
+    &:after
+      background-color: rgba($white, 0.3)
+    &:link, &:visited
+      color: $white
+      &:after
+        background-color: rgba($pitch-black, 0.2)
+    &:hover:after
+      background-color: $spark-red
+    &:active:after
+      background-color: $acid-yellow
+
+%underlineLink-bright-onRed
+  &:link, &:visited
+    color: $white
+  &:after, &:visited:after
+    background-color: $acid-yellow
+  &:hover
+    color: rgba($white, 0.8)
+    &:after
+      background-color: $link-undeline-bg-color
+  &:active
+    color: $white
+    &:after
+      background-color: $black
+
+%underlineLink-bright-onYellow
+  &:link, &:visited
+    color: $black
+  &:after, &:visited:after
+    background-color: $spark-red
+  &:hover
+    color: rgba($black, 0.85)
+    &:after
+      background-color: $link-undeline-bg-color
+  &:active
+    color: $pitch-black
+    &:after
+      background-color: $white
+
+%underlineLink-bright-onDark
+  &:link, &:visited
+    color: $white
+  &:after, &:visited:after
+    background-color: $spark-red
+  &:hover
+    color: rgba($white, 0.85)
+    &:after
+      background-color: $link-undeline-bg-color
+  &:active
+    color: $white
+    &:after
+      background-color: $acid-yellow
+
+.underlineLink-bright-onRed
+  p em a
+    @extend %underlineLink-bright-onRed
+  .underlinedLink
+    @extend %underlineLink-bright-onRed
+
+.underlineLink-bright-onYellow
+  p em a
+    @extend %underlineLink-bright-onYellow
+  .underlinedLink
+    @extend %underlineLink-bright-onYellow
+    &.minor
+      &:after, &:visited:after
+        background-color: $link-undeline-bg-color
+      &:hover:after
+        background-color: $spark-red
+      &:active:after
+        background-color: $white
+
+.underlineLink-bright-onDark
+  p em a
+    @extend %underlineLink-bright-onDark
+  .underlinedLink
+    @extend %underlineLink-bright-onDark
