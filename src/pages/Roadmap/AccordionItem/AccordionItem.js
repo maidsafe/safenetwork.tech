@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import Button from 'components/Button'
 import Accordion from 'components/Accordion'
 import Video from '../Video'
-import { prefixClassName, genRandomKey, spinalCase, openLink } from 'src/utils'
+import { prefixClassName, genRandomKey, parseMDText, spinalCase, openLink } from 'src/utils'
 
 import './accordionItem.sass'
 
@@ -54,7 +54,7 @@ export default class AccordionItem extends React.Component {
         <div key={genRandomKey()} className={cn('para')}>
           {
             content.para.map(para => (
-              <p key={genRandomKey()}>{para}</p>
+              <p key={genRandomKey()}>{parseMDText(para, true)}</p>
             ))
           }
         </div>

@@ -22,7 +22,7 @@ const Apps = props => {
               content.list.map(li => (
                 <div key={genRandomKey()} className={cn('listItem')}>
                   <div className={cn('listItemWrap')}>
-                    <div className={cn('listMedia')}></div>
+                    <div className={classNames(cn('listMedia'), li.id)}></div>
                     <div className="container">
                       <div className={classNames(cn('listStatus'), 'overline')} >{li.status}</div>
                       <h3 className={cn('listTitle')}>{li.name}</h3>

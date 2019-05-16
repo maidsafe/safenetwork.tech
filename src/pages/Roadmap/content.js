@@ -267,11 +267,13 @@ export default {
     title: 'Apps and User Experience',
     list: [
       {
+        id: 'safeBrowser',
         name: 'SAFE Browser',
         para: 'Browse the Alpha 2 network. It also includes the Authenticator: enabling you to securely sign into the SAFE Network, and manage access and permissions of SAFE Apps.',
         status: 'Latest Version v0.13.0'
       },
       {
+        id: 'webHostingManager',
         name: 'Web Hosting Manager',
         para: 'Add data, create websites, and manage Public Names with the Web Hosting Manager.',
         status: 'Latest Version v0.5.1'

@@ -50,6 +50,13 @@
     width: 100%
     background-color: #C4C4C4
     margin-bottom: $margin-thin
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    &.safeBrowser
+      background-image: url($safe-browser-thumb-l)
+    &.webHostingManager
+      background-image: url($web-hosting-manager-thumb-l)
   &__listStatus
     color: $spark-red
     margin-bottom: 8px
@@ -197,6 +204,13 @@
     &__listWrap
       grid-template-columns: none
       grid-gap: inherit
+    &__listMedia
+      background-size: contain
+      background-color: transparent
+      &.safeBrowser
+        background-image: url($safe-browser-thumb-m)
+      &.webHostingManager
+        background-image: url($web-hosting-manager-thumb-m)
     &__listItem
       display: grid
       grid-template-columns: repeat(8, 1fr)
@@ -305,6 +319,11 @@
       position: absolute
       top: 0
       left: 0
+      background-size: 50px
+      &.safeBrowser
+        background-image: url($safe-browser-thumb-s)
+      &.webHostingManager
+        background-image: url($web-hosting-manager-thumb-s)
     &__listStatus,
     &__listTitle
       padding-left: 85px
