@@ -31,7 +31,11 @@ export default {
       others: 'https://github.com/maidsafe/safe_browser/releases/latest',
     }
   },
-  inviteRequestMail: 'invite@maidsafe.net',
+  inviteRequest: {
+    to: 'invite@maidsafe.net',
+    subject: 'Alpha network: Invite token',
+    body: `This is an email to request an invite to the SAFE Network alpha network.\n\nIn order to prevent spamming can you please answer the following two questions:\n\n\nWhere did you hear about the SAFE Network?\n(e.g. cryptocurrency forum, blockchain news, other)\n\n\nWhat is your main interest in the SAFE Network?\n(e.g. DApp development, crypto-trading, online-privacy, other)`
+  },
   links: {
     forum: 'https://safenetforum.org'
   },

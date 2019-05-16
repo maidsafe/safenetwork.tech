@@ -25,8 +25,7 @@ export default class Invite extends React.Component {
     activeAccordion: null,
     showInviteOpts: false,
   }
-
-  componentDidMount() {
+  componentWillMount() {
     const { content } = this.props
     const { claimInvite, installBrowser, feedback } = content
 
@@ -36,15 +35,15 @@ export default class Invite extends React.Component {
       FEEDBACK: feedback.id
     }
 
+    this.setState({
+      activeAccordion: this.ACCORDIONS.CLAIM_INVITE
+    })
+  }
+
+  componentDidMount() {
     if (typeof window !== 'undefined') {
       window.addEventListener('load', this.setHash)
       window.addEventListener('hashchange', this.setHash)
-      const hash = getLocationHash()
-      if (!hash) {
-        this.setState({
-          activeAccordion: this.ACCORDIONS.CLAIM_INVITE
-        })
-      }
     }
   }
 
@@ -57,9 +56,11 @@ export default class Invite extends React.Component {
 
   setHash = () => {
     const newHash = getLocationHash()
-    if (newHash) {
-      console.log('onLoad')
+    if (Object.values(this.ACCORDIONS).indexOf(newHash) !== -1) {
       this.setAccordion(newHash)
+    }
+    if (this.state.showInviteOpts) {
+      this.toggleInviteModal()
     }
   }
 
@@ -80,6 +81,9 @@ export default class Invite extends React.Component {
 
   toggleInviteModal(state = false) {
     lockBodyScroll(state)
+    if (state) {
+      setLocationHash('')
+    }
     this.setState({
       showInviteOpts: state
     })
@@ -155,7 +159,7 @@ export default class Invite extends React.Component {
                   this.toggleInviteModal()
                 }}
                 onInviteRequest={() => {
-                  openLink(`mailto:${CONSTANT.inviteRequestMail}`)
+                  openLink(`mailto:${CONSTANT.inviteRequest.to}?subject=${encodeURIComponent(CONSTANT.inviteRequest.subject)}&body=${encodeURIComponent(CONSTANT.inviteRequest.body)}`)
                 }}
                 onJoinForum={() => {
                   openLink(CONSTANT.links.forum, true)

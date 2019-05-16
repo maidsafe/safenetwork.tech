@@ -82,7 +82,15 @@ export default {
             'The [SAFE Network Community](https://safenetforum.org) is the place to head to for all questions on the Network.',
             '_[Visit the Forum](https://safenetforum.org/)_'
           ]
-        }
+        },
+        {
+          question: 'Why do I need an invite?',
+          answer: [
+            'You require an invitation token while the Network is in the alpha development phase as a temporary measure to stop the network being spammed.  There will be no invitation required when the full SAFE Network is live.',
+            'To claim an invitation token:',
+            '- Log in to the [Forum](https://safenetforum.org/) using your normal browser and gain [basic trust level 1](https://safenetforum.org/t/trust-level-1-basic-user-requirements/15200).\n- Visit [https://invite.maidsafe.net](https://invite.maidsafe.net).\n- Click on the SAFE Network logo\n- Select ‘Alpha 2’\n- Set (or update) your registered IP\n- Copy and paste the invitation token into the Invitation field on the Authenticator _(this step is only required when creating an account to begin with)_'
+          ]
+        },
       ]
     },
     {
