@@ -11,7 +11,6 @@ const CopyButton = props => {
       <Button
         className={classNames({
           primary: (type === 'primary'),
-          dark: (type === 'grey'),
         })}
         size="L"
         onClick={() => {
