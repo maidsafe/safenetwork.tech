@@ -1,0 +1,62 @@
+@import '~styles/index'
+
+.CookieTopic
+  padding-bottom: $pad-jumbo
+  $c: &
+  &__row
+    +grid()
+  &__index
+    grid-column: 2/span 1
+    padding-left: $hspace-l
+  &__title,
+  &__para,
+  &__subTitle
+    grid-column: 3/span 5
+  &__para
+    p, p:last-child
+      margin-bottom: $margin-thin
+
++render-to($media-s)
+  .CookieTopic
+    &__index
+      padding-left: 0
+
++render-to($media-xs)
+  .CookieTopic
+    padding-bottom: $pad-thin
+    &__row
+      +grid-small()
+    &__index
+      grid-column: 1/span 1
+      padding-left: $hspace-xs
+    &__title,
+    &__para,
+    &__subTitle
+      grid-column: 2/span 5
+
++render-to($media-xxs)
+  .CookieTopic
+    $c: &
+    &__row
+      +default-column()
+      &.numbered
+        #{$c}__subTitle,
+        #{$c}__para p
+          text-indent: 50px
+        #{$c}__para p
+          margin-top: -5px
+    &__title,
+    &__para,
+    &__subTitle
+      grid-column: 1/span 6
+      grid-row: 1
+      align-self: start
+    &__title
+      padding-left: $pad-thin
+    &__index
+      grid-column: 1/span 1
+      padding-left: 0
+      grid-row: 1
+      align-self: start
+      h3
+        margin-bottom: 0

@@ -1,0 +1,50 @@
+@import '~styles/index'
+
+.RoadmapAccordion
+  +grid()
+  position: relative
+  z-index: 1
+  &__wrap
+    grid-column: 2/span 8
+  &__header
+    display: flex
+    padding-bottom: 18px
+    border-bottom: 2px solid rgba($body-text, 0.2)
+  &__headerItem
+    display: inline-block
+    &:not(:first-child):not(:last-child)
+      flex: 1
+    &:first-child
+      width: 260px + 56px
+      padding-left: $pad-fine
+    &:last-child
+      width: 200px
+  &__container
+    +shadow-shallow()
+    background-color: $white
+
++render-to($media-s)
+  .RoadmapAccordion
+    &__headerItem
+      &:not(:first-child):not(:last-child)
+        visibility: hidden
+      &:last-child
+        width: auto
+        text-align: right
+        padding-right: $pad-thin
+    .Accordion__row
+      display: grid
+
++render-to($media-xs)
+  .RoadmapAccordion
+    +grid-small()
+    &__wrap
+      grid-column: 1/span 6
+      margin-left: $hspace-xs
+      padding-right: 0
+
++render-to($media-xxs)
+  .RoadmapAccordion
+    &__wrap
+      grid-column: 1/span 6
+      margin-left: 0
