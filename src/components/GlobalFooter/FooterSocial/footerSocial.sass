@@ -20,11 +20,12 @@
       height: 100%
     .name
       display: none
+      @extend %footerItems
       +font-1()
       padding-top: 20px
       font-size: 16px
       letter-spacing: -0.02em
-      font-weight: normal
+      // font-weight: normal
   &__twitter
     background-image: url($footer-twitter-icon)
     &:hover
