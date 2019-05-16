@@ -28,9 +28,13 @@ const Banner = props => {
             <div className="overline">{latestUpdate.overline}</div>
             <h4 className="date">{latestUpdate.date}</h4>
             <TextSnippet title={latestUpdate.title} text={latestUpdate.para} />
-            <div className="cta">
-              <UnderlinedLink theme="yellow" url={latestUpdate.CTA.url}>{latestUpdate.CTA.name}</UnderlinedLink>
-            </div>
+            {
+              latestUpdate.CTA ? (
+                <div className="cta">
+                  <UnderlinedLink theme="yellow" url={latestUpdate.CTA.url}>{latestUpdate.CTA.name}</UnderlinedLink>
+                </div>
+              ) : null
+            }
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ const cn = prefixClassName(baseClassName)
 
 const Releases = props => {
   const { content } = props
-  const { release1, release2, release3 } = content
+  const { release1, release2, release3, release4 } = content
   return (
     <div className={baseClassName}>
       <div className={cn('wrap')}>
@@ -46,17 +46,31 @@ const Releases = props => {
             ))
           }
         </Accordion>
+        <Intro
+          overline={release3.overline}
+          title={release3.title}
+          text={release3.para}
+          videoUrl={release3.videoUrl}
+          videoCaption={release3.videoCaption}
+        />
+        <Accordion header={release3.accordion.header}>
+          {
+            release3.accordion.items.map(accord => (
+              <AccordionItem key={genRandomKey()} content={accord} />
+            ))
+          }
+        </Accordion>
         <div className={cn('darkBg')}>
           <Intro
-            overline={release3.overline}
-            title={release3.title}
-            text={release3.para}
-            videoUrl={release3.videoUrl}
-            videoCaption={release3.videoCaption}
+            overline={release4.overline}
+            title={release4.title}
+            text={release4.para}
+            videoUrl={release4.videoUrl}
+            videoCaption={release4.videoCaption}
           />
-          <Accordion header={release3.accordion.header}>
+          <Accordion header={release4.accordion.header}>
             {
-              release3.accordion.items.map(accord => (
+              release4.accordion.items.map(accord => (
                 <AccordionItem key={genRandomKey()} content={accord} />
               ))
             }

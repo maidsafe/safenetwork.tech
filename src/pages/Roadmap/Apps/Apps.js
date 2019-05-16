@@ -53,6 +53,7 @@ const Apps = props => {
               }
             </Accordion>
           </div>
+          <div className="darkBg"></div>
         </div>
         <div className={cn('upcoming')}>
           <div className={cn('upcomingWrap')}>
@@ -61,14 +62,29 @@ const Apps = props => {
             </div>
             <div className={cn('upcomingList')}>
               {
-                content.upcomingMilestones.list.map(li => (
-                  <div key={genRandomKey()} className={cn('upcomingListItem')}>
-                    <div className="wrap">
-                      <h3>{li.title}</h3>
-                      <p>{li.para}</p>
-                    </div>
-                  </div>
-                ))
+                content.upcomingMilestones.list.map(li => {
+                  let accordion = null
+                  if (li.accordion) {
+                    accordion = (
+                      <Accordion key={genRandomKey()} header={li.accordion.header}>
+                        {
+                          li.accordion.items.map(accord => (
+                            <AccordionItem key={genRandomKey()} content={accord} />
+                          ))
+                        }
+                      </Accordion>
+                    )
+                  }
+                  return [
+                    <div key={genRandomKey()} className={cn('upcomingListItem')}>
+                      <div className="wrap">
+                        <h3>{li.title}</h3>
+                        <p>{li.para}</p>
+                      </div>
+                    </div>,
+                    accordion
+                  ]
+                })
               }
             </div>
           </div>

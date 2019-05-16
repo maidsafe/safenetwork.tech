@@ -6,6 +6,7 @@
     width: 260px
     margin-bottom: 0
     padding-left: 28px
+    padding-right: 28px
   &__description
     flex: 1
   &__status
@@ -15,7 +16,7 @@
     &.complete::after
       background-image: url($tick-green-icon)
       background-size: 26px
-    &.defined::after
+    &.concept::after
       background-image: url($bulb-icon)
       background-size: 20px
     &.development::after
@@ -33,7 +34,7 @@
       width: 36px
       height: 36px
       position: absolute
-      top: 50%
+      top: 10px
       right: 36px
       transform: translate(0, -50%)
       background-repeat: no-repeat
@@ -45,6 +46,7 @@
     grid-row: 2
     grid-column: 1
     margin-bottom: $margin-small
+    align-self: start
   &__media
     grid-row: 1/span 2
     grid-column: 2

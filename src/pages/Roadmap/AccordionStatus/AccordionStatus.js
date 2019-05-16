@@ -11,8 +11,8 @@ const cn = prefixClassName(baseClassName)
 const AccordionStatus = () => {
   const StatusKeys = [
     {
-      key: 'defined',
-      name: 'Defined',
+      key: 'concept',
+      name: 'Concept',
     },
     {
       key: 'rfc',

@@ -59,12 +59,22 @@
       top: 0
       transform: translate(50%, 0)
       border-left-style: dotted
+      z-index: 1
     &::after
       width: 50%
       transform: translate(100%, 0)
       background-image: url($ellipse-icon)
       top: 0
       background-color: $white
+      z-index: 1
+    .darkBg
+      width: 100%
+      height: 220px
+      background-color: $default-bg-color
+      position: absolute
+      bottom: 0
+      left: 0
+      z-index: 0
   &__currentWrap
     grid-column: 1/span 10
   &__currentIntro
@@ -77,13 +87,14 @@
     color: $spark-red
     margin-bottom: $margin-fine
   &__upcoming
+    background-color: $default-bg-color
     padding-bottom: $pad-jumbo
     &::before
       top: 0
       transform: translate(50%, 0)
       border-left-style: dotted
     &::after
-      background-color: $white
+      background-color: $default-bg-color
       background-image: none
       height: 50%
       top: 100%
@@ -97,6 +108,13 @@
       grid-column: 2/span 8
   &__upcomingList
     +grid()
+    .RoadmapAccordion
+      grid-column: 1/span 10
+      margin-bottom: $margin-medium
+      position: relative
+      z-index: 2
+      &__header
+        background-color: $default-bg-color
   &__upcomingListItem
     grid-column: 2/span 8
     position: relative
@@ -117,7 +135,7 @@
       background-image: url($ellipse-icon)
       background-repeat: no-repeat
       background-size: 20px
-      background-color: $white
+      background-color: $default-bg-color
       margin-left: -10px
       z-index: 2
     &:last-child:before
@@ -125,7 +143,7 @@
       grid-column: 1/span 1
       width: 50%
       height: 100%
-      background-color: $white
+      background-color: $default-bg-color
       position: absolute
       top: 0
       left: 0

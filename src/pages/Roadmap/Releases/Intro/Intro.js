@@ -19,9 +19,13 @@ const Intro = props => {
         <div className={cn('para')}>
           <p>{text}</p>
         </div>
-        <div className={cn('media')}>
-          <Video width="530" url={videoUrl} caption={videoCaption} />
-        </div>
+        {
+          videoUrl ? (
+            <div className={cn('media')}>
+              <Video width="530" height="330" url={videoUrl} caption={videoCaption} />
+            </div>
+          ) : null
+        }
       </div>
     </div>
   )
