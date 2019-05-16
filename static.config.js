@@ -4,7 +4,7 @@ import React from 'react'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import CompressionPlugin from 'compression-webpack-plugin'
 
-const pageDirPath = 'src/v1.1/pages'
+const pageDirPath = 'src/pages'
 
 export default {
   getSiteData: () => ({
@@ -119,10 +119,10 @@ export default {
     config.resolve = {
       ...config.resolve,
       alias: {
-        styles: path.resolve(__dirname, 'src/v1.1/styles'),
+        styles: path.resolve(__dirname, 'src/styles'),
         images: path.resolve(__dirname, 'src/assets/images'),
         fonts: path.resolve(__dirname, 'src/assets/fonts'),
-        components: path.resolve(__dirname, 'src/v1.1/components'),
+        components: path.resolve(__dirname, 'src/components'),
         src: path.resolve(__dirname, 'src')
       }
     }

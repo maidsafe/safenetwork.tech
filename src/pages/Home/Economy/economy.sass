@@ -1,0 +1,271 @@
+@import '~styles/index'
+
+.HomeEconomy
+  position: relative
+  background-color: $pinky-grey
+  z-index: 1
+  overflow: hidden
+  &__wrap
+    +grid()
+  &__mainText
+    grid-column: 2/span 4
+    grid-row: 1
+    z-index: 1
+  &__aside1
+    grid-column: 7/span 3
+    grid-row: 1
+    align-self: end
+    background-color: $pinky-grey
+    +shadow-deep()
+    position: relative
+    z-index: 1
+    &::after
+      content: ''
+      width: 34%
+      height: 200%
+      background-color: $pinky-grey
+      position: absolute
+      bottom: 100%
+      left: 100%
+  &__aside2,
+  &__aside3,
+  &__aside4
+    grid-row: 2
+  &__aside2
+    grid-column: 1/span 3
+    background-color: $white
+  &__aside3
+    grid-column: 4/span 3
+    background-color: $default-bg-color
+  &__aside4
+    grid-column: 7/span 3
+    background-color: $spark-red
+    *
+      color: $white !important
+  &__video1,
+  &__video2,
+  &__video3
+    +set-video-overlay($texture-spark-overlay)
+  &__video1
+    display: none
+    grid-column: 6/span 1
+    grid-row: 1
+    height: 600px
+    align-self: end
+    z-index: 0
+    video
+      background-image: url($texture-spark-1)
+  &__video2
+    display: none
+    grid-column: 7/span 1
+    grid-row: 1
+    height: 600px
+    align-self: start
+    z-index: 0
+    video
+      background-image: url($texture-spark-2)
+  &__video3
+    grid-column: 10/span 1
+    grid-row: 1/span 2
+    height: 100%
+    align-self: end
+    z-index: 0
+    video
+      // height: 1000px !important
+      object-fit: cover
+      background-image: url($texture-spark-2)
+      transform: scaleY(-1) scaleX(-1) !important
+      // transform-origin: top left
+
++render-to($media-xl)
+  .HomeEconomy
+    &__wrap
+      max-width: $max-width-xl
+    &__aside1
+      &:after
+        display: none
+    &__video3
+      grid-row: 2
+      &::before
+        width: 1000%
+        max-width: 800px
+      .BGVideo__wrap
+        min-width: 800px
+
++render-to($media-m)
+  .HomeEconomy
+    &__aside1
+      grid-column: 7/span 4
+      grid-row: 2
+      &::after
+        display: none
+    &__aside4
+      grid-column: 3/span 4
+      grid-row: 2
+    &__aside2
+      grid-column: 3/span 4
+      grid-row: 3
+    &__aside3
+      grid-column: 7/span 4
+      grid-row: 3
+    &__video1
+      grid-column: 10/span 1
+      align-self: start
+      height: 100%
+      position: relative
+      &::after
+        content: ''
+        width: 100%
+        height: 160px
+        position: absolute
+        bottom: 0
+        left: 0
+        background-color: $pinky-grey
+        z-index: 1
+    &__video2
+      display: block
+      grid-column: 7/span 4
+      height: 160px
+      align-self: end
+    &__video3
+      grid-column: 1/span 2
+      grid-row: 3
+
++render-to($media-s)
+  .HomeEconomy
+    &__mainText
+      grid-column: 2/span 6
+      grid-row: 2
+    &__aside4
+      grid-column: 1/span 5
+      grid-row: 3
+    &__aside1
+      grid-column: 6/span 5
+      grid-row: 3
+      &::after
+        display: none
+    &__aside2
+      grid-column: 1/span 5
+      grid-row: 4
+    &__aside3
+      grid-column: 6/span 5
+      grid-row: 4
+      background-color: $default-bg-color
+    &__video1
+      display: block
+      grid-column: 1/span 5
+      grid-row: 1
+      height: 32px
+      &::after
+        display: none
+    &__video2
+      grid-column: 6/span 5
+      grid-row: 2
+      align-self: end
+      height: 120px
+    &__video3
+      display: none
+
++render-to($media-xs)
+  .HomeEconomy
+    &__wrap
+      +grid-small()
+    &__mainText
+      grid-column: 1/span 6
+      grid-row: 1
+      +default-column()
+    .MainTextPanel
+      padding: $pad-jumbo 0
+    &__video1
+      display: none
+    &__video2
+      grid-column: 4/span 3
+      grid-row: 2
+    &__aside4
+      grid-column: 1/span 3
+      grid-row: 3
+    &__aside1
+      grid-column: 4/span 3
+      grid-row: 3
+      background-color: $pinky-grey
+    &__aside2
+      grid-column: 1/span 3
+      grid-row: 4
+    &__aside3
+      grid-column: 4/span 3
+      grid-row: 4
+
++render-to($media-xxs)
+  .HomeEconomy
+    overflow: visible
+    &__aside4
+      grid-column: 1/span 5
+      grid-row: 2
+    &__aside1
+      grid-column: 2/span 5
+      grid-row: 3
+    &__aside2
+      display: none
+    &__aside3
+      grid-column: 1/span 5
+      grid-row: 4
+      position: relative
+      z-index: 1
+      margin-bottom: -60px
+      padding-bottom: 60px
+      +shadow-deep()
+    &__video1
+      display: block
+      grid-column: 6/span 1
+      grid-row: 2
+      height: 100%
+    &__video2
+      display: block
+      grid-column: 1/span 1
+      grid-row: 3
+      height: 100%
+    &__video3
+      display: block
+      grid-column: 6/span 1
+      grid-row: 4
+      height: 100%
+      transform: translate(0, 0)
+      z-index: 0
+      &::after
+        content: ''
+        display: block
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background-color: $white
+        transform: translate(0, 60px)
+        z-index: -1
+
++render-to($media-xxxs)
+  .HomeEconomy
+    .MainTextPanel
+      padding-top: $pad-chunky
+      padding-bottom: $pad-chunky
+    &__aside4
+      grid-column: 1/span 6
+      margin-right: $hspace-xxxs
+    &__video1
+      width: $hspace-xxxs
+      justify-self: end
+      transform: translate(0, 60px)
+    &__aside1
+      grid-column: 1/span 6
+      margin-left: $hspace-xxxs
+    &__video2
+      width: $hspace-xxxs
+    &__aside3
+      grid-column: 1/span 6
+      margin-right: $hspace-xxxs
+      background-color: $white
+      z-index: 1
+    &__video3
+      width: $hspace-xxxs
+      position: relative
+      justify-self: end
