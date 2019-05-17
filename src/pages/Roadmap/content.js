@@ -272,7 +272,7 @@ export default {
             desc: 'Enhance ImmutableData to make it an unpublished or published, with the difference that unpublished can be deleted',
             status: 'RFC',
             para: [
-              'There are many a times when a user will require to create Immutable Data to store private content. As long as this content is not published (made available for others) this will be deleteable by the data owner only.',
+              'There are many times when a user will require to create Immutable Data to store private content. As long as this content is not published (made available for others) this will be deleteable by the data owner only.',
               'Dig into the detail in the RFC, and [join the discussion](https://safenetforum.org/t/rfc-55-unpublished-immutabledata/28621) on the forum.'
             ],
             CTA: {
