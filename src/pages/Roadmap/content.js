@@ -235,7 +235,7 @@ export default {
             desc: 'The Network will have native support for RDF, enabling data to be compatible with the Semantic Web',
             status: 'RFC',
             para: [
-              'Ensures that data on the SAFE Network is stored in such a way that the format can be understood by other Semantic Web projects, such as SOLID.'
+              'Ensures that data on the SAFE Network is stored in such a way that the format can be understood by other Semantic Web projects, such as Solid.'
             ],
             CTA: {
               name: 'Read the RFC',
@@ -421,7 +421,7 @@ export default {
                 desc: 'Support storing and querying RDF resources in SAFE-Core',
                 status: 'RFC',
                 para: [
-                  'Ensures that the SAFE Network understands a way of describing the architecture of data that is understood by other projects, such as SOLID'
+                  'Ensures that the SAFE Network understands a way of describing the architecture of data that is understood by other projects, such as Solid'
                 ],
                 CTA: {
                   name: 'Read the RFC',
