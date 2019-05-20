@@ -103,12 +103,17 @@ export default {
               url: 'https://github.com/maidsafe/rfcs/blob/master/text/0045-node-ageing/0045-node-ageing.md'
             },
           }, {
-            feature: 'Secure Message Relay',
+            feature: 'Secure Message Delivery',
             desc: 'Trusted communications between nodes',
-            status: 'Concept',
+            status: 'RFC',
             para: [
-              'Ensures messages are sent and signed in such a way that lets nodes rely on the contents of each message despite having no previous relationship with the sender. This solves a problem faced by many existing blockchain-based projects and is essential when you have a Network that will autonomously move nodes around as required. '
+              'Ensures messages are sent and signed in such a way that lets nodes rely on the contents of each message despite having no previous relationship with the sender. This solves a problem faced by many existing blockchain-based projects and is essential when you have a Network that will autonomously move nodes around as required.',
+              'Feel free to [join in the discussion](https://safenetforum.org/t/rfc-56-secure-message-delivery/28622) of the RFC in the forum.'
             ],
+            CTA: {
+              name: 'Read the RFC',
+              url: 'https://github.com/maidsafe/rfcs/blob/master/text/0056-secure-message-delivery/0056-secure-message-delivery.md'
+            },
           }, {
             feature: 'QUIC-P2P',
             desc: 'The low-level language which users connecting to SAFE will use for all network communications',
@@ -230,7 +235,7 @@ export default {
             desc: 'The Network will have native support for RDF, enabling data to be compatible with the Semantic Web',
             status: 'RFC',
             para: [
-              'Ensures that data on the SAFE Network is stored in such a way that the format can be understood by other Semantic Web projects, such as SOLID.'
+              'Ensures that data on the SAFE Network is stored in such a way that the format can be understood by other Semantic Web projects, such as Solid.'
             ],
             CTA: {
               name: 'Read the RFC',
@@ -250,14 +255,30 @@ export default {
             para: [
               'Common coin is a device that nodes can use to generate a “random” binary value (true or false). Every time a node flips the coin, all other nodes are guaranteed to observe the same value for their coin flip. Also, the value must be unpredictable, which means that no malicious node can know the outcome before a honest node has observed it.'
             ],
-          }
-          , {
-            feature: 'Data Types',
-            desc: 'Enabling a range of data types to suit many different use cases',
-            status: 'Concept',
+          }, {
+            feature: 'Published and Unpublished Data Types',
+            desc: 'Allow the network to store Published and Unpublished data via AppendOnlyData or MutableData types',
+            status: 'RFC',
             para: [
-              'The Network has a range of different data types: Published, Unpublished, Private and Shared. If you choose to upload Unpublished Data you have full control to delete or share with specific people as you see fit. However, as soon as you opt to publish data (i.e. make it public), the data cannot then be altered—instead a copy will remain in perpetuity on the Network, with a version history that shows every update made.'
+              'Published data refers to content that is published (made available) for everyone such as websites, blogs, or research papers. For such public content, it becomes important to retain a history of changes. History must not be allowed to be tampered with and the published data must remain forever. Unpublished data is data that is not desired to be made public such as personal data or organisations’ data stored on the network',
+              'Get the detail in the RFC linked below, and [join the discussion](https://safenetforum.org/t/rfc-54-published-and-unpublished-datatype/28620) on the forum.'
             ],
+            CTA: {
+              name: 'Read the RFC',
+              url: 'https://github.com/maidsafe/rfcs/blob/master/text/0054-published-and-unpublished-mutable-data/0054-published-and-unpublished-mutable-data.md'
+            },
+          }, {
+            feature: 'Unpublished ImmutableData Data Type',
+            desc: 'Enhance ImmutableData to make it an unpublished or published, with the difference that unpublished can be deleted',
+            status: 'RFC',
+            para: [
+              'There are many times when a user will require to create Immutable Data to store private content. As long as this content is not published (made available for others) this will be deleteable by the data owner only.',
+              'Dig into the detail in the RFC, and [join the discussion](https://safenetforum.org/t/rfc-55-unpublished-immutabledata/28621) on the forum.'
+            ],
+            CTA: {
+              name: 'Read the RFC',
+              url: 'https://github.com/maidsafe/rfcs/blob/master/text/0055-unpublished-immutable-data/0055-unpublished-immutable-data.md'
+            },
           }
         ]
       }
@@ -400,7 +421,7 @@ export default {
                 desc: 'Support storing and querying RDF resources in SAFE-Core',
                 status: 'RFC',
                 para: [
-                  'Ensures that the SAFE Network understands a way of describing the architecture of data that is understood by other projects, such as SOLID'
+                  'Ensures that the SAFE Network understands a way of describing the architecture of data that is understood by other projects, such as Solid'
                 ],
                 CTA: {
                   name: 'Read the RFC',
