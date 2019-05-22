@@ -1,6 +1,6 @@
 import MarkdownIt from 'markdown-it'
 import { Parser as ReactParser } from 'html-to-react'
-import { osName, isMobile as isMobileDevice } from 'react-device-detect'
+import { osName } from 'react-device-detect'
 
 import CONSTANT from './constant'
 
@@ -25,21 +25,19 @@ export const spinalCase = (str) => {
 
 export const detectPlatform = () => {
   const result = {}
-  if (isMobileDevice) {
-    return
-  }
   switch(osName) {
     case 'Mac OS':
       result.os = 'Mac'
       result.downloadUrl = CONSTANT.downloadApps.browser.mac
       break;
-    case 'Windows':
-      result.os = 'Windows'
-      result.downloadUrl = CONSTANT.downloadApps.browser.windows
-      break;
-    default:
+    case 'Linux':
       result.os = 'Linux'
       result.downloadUrl = CONSTANT.downloadApps.browser.linux
+      break;
+    case 'Windows':
+    default:
+      result.os = 'Windows'
+      result.downloadUrl = CONSTANT.downloadApps.browser.windows
       break;
   }
   return result
