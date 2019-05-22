@@ -26,18 +26,7 @@ export const spinalCase = (str) => {
 export const detectPlatform = () => {
   const result = {}
   if (isMobileDevice) {
-    switch(osName) {
-      case 'Android':
-      default:
-        result.os = 'Android'
-        result.downloadUrl = CONSTANT.downloadApps.browser.android
-        break;
-      case 'iOS':
-        result.os = 'iOS'
-        result.downloadUrl = CONSTANT.downloadApps.browser.ios
-        break;
-    }
-    return result
+    return
   }
   switch(osName) {
     case 'Mac OS':
