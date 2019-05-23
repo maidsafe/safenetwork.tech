@@ -31,6 +31,8 @@ export const detectPlatform = () => {
       result.downloadUrl = CONSTANT.downloadApps.browser.mac
       break;
     case 'Linux':
+    case 'Ubuntu':
+    case 'Unix':
       result.os = 'Linux'
       result.downloadUrl = CONSTANT.downloadApps.browser.linux
       break;
