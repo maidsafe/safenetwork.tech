@@ -150,17 +150,27 @@ export default {
           {
             feature: 'Test Safecoin & Wallet',
             desc: 'Allow the Network to charge, and a user to send and receive payments to a wallet, in units called Test Safecoins',
-            status: 'Concept',
+            status: 'RFC',
             para: [
-              'Safecoin is the incentive mechanism that encourages individuals to provide the computing resources that the Network requires: storage, broadband, and CPU resources.'
+              'Safecoin is the incentive mechanism that encourages individuals to provide the computing resources that the Network requires: storage, broadband, and CPU resources.',
+              '[Join in the discussion](https://safenetforum.org/t/rfc-57-safecoin-revised/28660) on the forum'
             ],
+            CTA: {
+              name: 'Read the RFC',
+              url: 'https://github.com/maidsafe/rfcs/blob/master/text/0057-safecoin-revised/0057-safecoin-revised.md'
+            },
           }, {
             feature: 'Farming',
             desc: 'The process of providing resource and receiving Safecoin in return',
-            status: 'Concept',
+            status: 'RFC',
             para: [
-              'Individuals who choose to supply the resources that the Network requires have the opportunity to be rewarded with Safecoin. This work ensures that the Network rewards those who provide it with valuable resources.'
+              'Individuals who choose to supply the resources that the Network requires have the opportunity to be rewarded with Safecoin. This work ensures that the Network rewards those who provide it with valuable resources.',
+              '[Join in the discussion](https://safenetforum.org/t/rfc-57-safecoin-revised/28660) on the forum'
             ],
+            CTA: {
+              name: 'Read the RFC',
+              url: 'https://github.com/maidsafe/rfcs/blob/master/text/0057-safecoin-revised/0057-safecoin-revised.md'
+            },
           }, {
             feature: 'Vaults From Home',
             desc: 'The ability for anyone to download software and run Vaults from home, creating decentralised storage for the Network',
@@ -472,10 +482,15 @@ export default {
               {
                 feature: 'Test Safecoin Wallet',
                 desc: 'Transact using Test Safecoins',
-                status: 'Concept',
+                status: 'RFC',
                 para: [
-                  'Users will be able to use Test Safecoin in the Network, allowing an ecosystem to built around the SAFE incentive mechanism. The ability to create multiple wallets, associate them with an identity, and also one-time-use wallets to enable anonymous transactions, will all be part of this.'
+                  'Users will be able to use Test Safecoin in the Network, allowing an ecosystem to built around the SAFE incentive mechanism. The ability to create multiple wallets, associate them with an identity, and also one-time-use wallets to enable anonymous transactions, will all be part of this.',
+                  '[Join in the discussion](https://safenetforum.org/t/rfc-57-safecoin-revised/28660) on the forum'
                 ],
+                CTA: {
+                  name: 'Read the RFC',
+                  url: 'https://github.com/maidsafe/rfcs/blob/master/text/0057-safecoin-revised/0057-safecoin-revised.md'
+                },
               },
               {
                 feature: 'Vault User Interface',
