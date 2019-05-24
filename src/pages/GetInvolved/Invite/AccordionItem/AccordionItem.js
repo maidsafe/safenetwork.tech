@@ -36,9 +36,13 @@ const AccordionItem = props => {
         <div className={cn('content')}>
           <div><p>{text}</p></div>
           <div className={cn('cta')}>
-            <div className={cn('ctaButton')}>
-              <Button className={ctaButtonType} onClick={onClickPrimaryButton}>{ctaButton.name}</Button>
-            </div>
+            {
+              ctaButton && ctaButton.name ? (
+                <div className={cn('ctaButton')}>
+                  <Button className={ctaButtonType} onClick={onClickPrimaryButton}>{ctaButton.name}</Button>
+                </div>
+              ) : null
+            }
             {
               ctaLink ? (
                 <div className={cn('ctaLink')}>
