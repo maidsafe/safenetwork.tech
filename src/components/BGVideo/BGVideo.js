@@ -1,5 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
+import LazyLoad from 'react-lazyload'
 
 import { prefixClassName } from 'src/utils'
 
@@ -27,12 +28,14 @@ export default class BGVideo extends React.Component {
     return (
       <div className={classNames(baseClassName, this.POSITION[position])}>
         <div className={cn('wrap')}>
-          <video autoPlay muted loop style={videoStyle}>
-            <source src={src} type="video/mp4" />
-            {
-              webmSrc ? <source src={webmSrc} type="video/webm" /> : null
-            }
-          </video>
+          <LazyLoad>
+            <video autoPlay muted loop style={videoStyle} playsInline={true} preload="none">
+              <source src={src} type="video/mp4" />
+              {
+                webmSrc ? <source src={webmSrc} type="video/webm" /> : null
+              }
+            </video>
+          </LazyLoad>
         </div>
       </div>
     )
