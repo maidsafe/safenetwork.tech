@@ -95,9 +95,12 @@ export default class Invite extends React.Component {
     const { activeAccordion } = this.state
 
     const platform = detectPlatform()
-    const browserDownloadButton = {}
-    browserDownloadButton.name = `${installBrowser.CTA.button.name} ${platform.os}`
-    browserDownloadButton.url = platform.downloadUrl
+    let browserDownloadButton = null
+    if (platform) {
+      browserDownloadButton = {}
+      browserDownloadButton.name = `${installBrowser.CTA.button.name} ${platform.os}`
+      browserDownloadButton.url = platform.downloadUrl
+    }
 
     return (
       <div className={baseClassName}>
@@ -129,6 +132,7 @@ export default class Invite extends React.Component {
               ctaLink = {installBrowser.CTA.link}
               ctaButtonType="primary"
               onClickPrimaryButton={() => {
+                if (!browserDownloadButton) return
                 openLink(browserDownloadButton.url, true)
               }}
               onClick={() => {
