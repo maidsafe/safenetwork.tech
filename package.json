@@ -24,7 +24,7 @@
     "react-device-detect": "^1.6.2",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
-    "react-static": "^5.9.7",
+    "react-static": "shankar2105/react-static",
     "typeface-vollkorn": "^0.0.54"
   },
   "devDependencies": {
