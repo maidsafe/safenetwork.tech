@@ -87,7 +87,6 @@ $open-hspace-xxxs: $hspace-xxxs
         background-color: $qa-item-opened-pressed-bg-color
       p
         width: 100%
-        line-height: 72px
         padding-right: 30px
         max-width: 100%
         display: block
@@ -128,7 +127,7 @@ $open-hspace-xxxs: $hspace-xxxs
     $c: &
     padding-left: $hspace-xxxs
     &__question
-      padding-right: 0
+      padding-right: $hspace-xxxs
     &__answer
       padding-left: $open-hspace-xxxs
       padding-right: $open-hspace-xxxs
@@ -139,4 +138,10 @@ $open-hspace-xxxs: $hspace-xxxs
       #{$c}__question,
       #{$c}__answer
         margin-left: -$open-hspace-xxxs
+      #{$c}__question
+        padding-left: 86px
+        padding-right: 0
+        &::after
+          left: $open-hspace-xxxs
+
 
