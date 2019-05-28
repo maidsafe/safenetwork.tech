@@ -11,12 +11,17 @@ class Layout extends React.Component {
   state = {
     mobileMenuActive: false,
   }
+  windowWidth = 0
 
   componentDidMount() {
     if (typeof window !== 'undefined') {
+      this.windowWidth = window.innerWidth
       window.addEventListener('resize', () =>  {
-        this.toggleBodyOverFlow(false)
-        this.setState({ mobileMenuActive: false })
+        if (this.windowWidth !== window.innerWidth) {
+          this.toggleBodyOverFlow(false)
+          this.setState({ mobileMenuActive: false })
+          this.windowWidth = window.innerWidth
+        }
       })
     }
   }
