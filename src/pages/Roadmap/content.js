@@ -4,13 +4,13 @@ export default {
     pageDesc: `12 years of research and development is coming to fruition as we put together the final building blocks of what some said was impossible: Secure Access For Everyone.`,
     latestUpdate: {
       overline: 'Latest Update',
-      date: '16 May 2019',
-      title: 'The Roadmap to Beta',
-      para: 'Welcome to the SAFE Network Roadmap! This page provides a high-level overview of the progress made to date and the stages that lie ahead as we move towards the full release of the  SAFE Network.',
-      // CTA: {
-      //   name: 'Read on',
-      //   url: '/'
-      // }
+      date: '23 May 2019',
+      title: 'Safecoin RFC',
+      para: `We've released an updated Safecoin RFC, which combines and improves upon several previous RFCs, and covers topics such as Farming, Account Creation and Wallets.`,
+       CTA: {
+         name: 'Read the RFC',
+         url: 'https://github.com/maidsafe/rfcs/blob/master/text/0057-safecoin-revised/0057-safecoin-revised.md'
+       }
     }
   },
   subscribe: {
