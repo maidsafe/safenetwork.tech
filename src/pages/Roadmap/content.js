@@ -116,7 +116,7 @@ export default {
             },
           }, {
             feature: 'Reliable Message Delivery',
-            desc: 'Communications guaranteeing the successful delivery of messages.',
+            desc: 'Communication guaranteeing the successful delivery of messages.',
             status: 'RFC',
             para: [
               'Ensures that all sent messages will be successfully delivered to their destinations, even when some nodes responsible for the delivery are failing.',
