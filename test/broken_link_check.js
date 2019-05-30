@@ -12,6 +12,7 @@ const scanForBrokenLinks = (serveUrl) => {
       'https://t.me/safenetwork',
       'https://www.ico.org.uk/',
       'https://hitbtc.com/',
+      'https://international.bittrex.com/',
     ],
   };
   return new Promise((resolve, rejects) => {
