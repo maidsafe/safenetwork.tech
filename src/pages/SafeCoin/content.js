@@ -70,6 +70,10 @@ export default {
       name: 'Bitker',
       url: 'https://www.bitker01.com/#/bbTrades/maid_btc'
     },
+    {
+      name: 'Bittrex',
+      url: 'https://international.bittrex.com/Market/Index?MarketName=BTC-MAID'
+    },
   ],
   faqs: {
     sections: [
