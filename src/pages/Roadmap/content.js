@@ -104,7 +104,7 @@ export default {
             },
           }, {
             feature: 'Secure Message Delivery',
-            desc: 'Trusted communications between nodes',
+            desc: 'Trusted communication between nodes - messages with authenticated source',
             status: 'RFC',
             para: [
               'Ensures messages are sent and signed in such a way that lets nodes rely on the contents of each message despite having no previous relationship with the sender. This solves a problem faced by many existing blockchain-based projects and is essential when you have a Network that will autonomously move nodes around as required.',
@@ -113,6 +113,18 @@ export default {
             CTA: {
               name: 'Read the RFC',
               url: 'https://github.com/maidsafe/rfcs/blob/master/text/0056-secure-message-delivery/0056-secure-message-delivery.md'
+            },
+          }, {
+            feature: 'Reliable Message Delivery',
+            desc: 'Communication guaranteeing the successful delivery of messages.',
+            status: 'RFC',
+            para: [
+              'Ensures that all sent messages will be successfully delivered to their destinations, even when some nodes responsible for the delivery are failing.',
+              'Feel free to [join in the discussion](https://safenetforum.org/t/rfc-58-reliable-message-delivery/28689) of the RFC in the forum.'
+            ],
+            CTA: {
+              name: 'Read the RFC',
+              url: 'https://github.com/maidsafe/rfcs/blob/master/text/0058-reliable-message-delivery/0058-reliable-message-delivery.md'
             },
           }, {
             feature: 'QUIC-P2P',

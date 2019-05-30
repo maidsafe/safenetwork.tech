@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import "babel-polyfill";
+import 'babel-polyfill'
 
 import './styles/shared/main.sass'
-// Fonts
-import 'typeface-vollkorn';
 
 // Your top level component
 import App from './App';
