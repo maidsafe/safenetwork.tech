@@ -204,8 +204,8 @@ export default {
           question: 'How do I buy Safecoin?',
           answer: [
             'Safecoin won’t be issued until the Network goes live so they cannot be purchased at the moment. Currently you can buy MaidSafeCoin which will be swapped on a 1-to-1 basis for Safecoin when released.',
-            'MaidSafeCoin is listed on the bitcoin blockchain and can be purchased on a number of exchanges including:\n*   [Poloniex](https://www.poloniex.com/exchange#btc_maid)\n*   [HitBTC](https://hitbtc.com/MAID-to-BTC)\n*   [Cryptopia](https://www.cryptopia.co.nz/)\n*   [OpenLedger](https://openledger.io/welcome)',
-            'For more see \'How do I buy MaidSafeCoin?\'\''
+            'MaidSafeCoin is listed on the bitcoin blockchain and can be purchased on a number of exchanges including:',
+            '- [Poloniex](https://www.poloniex.com/exchange#btc_maid)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [Bitker](https://www.bitker01.com/#/bbTrades/maid_btc)\n- [Bittrex](https://international.bittrex.com/Market/Index?MarketName=BTC-MAID)'
           ]
         },
         {
@@ -235,7 +235,7 @@ export default {
           question: 'What is MaidSafeCoin?',
           answer: [
             'MaidSafeCoin is a proxy token that was released during MaidSafe\'s crowd sale and will be swapped for Safecoin on a 1:1 basis when Safecoin is released.',
-            'MaidSafeCoin is listed on the bitcoin blockchain and can be purchased on a number of exchanges including [Poloniex](https://www.poloniex.com/exchange#btc_maid), [HitBTC](https://hitbtc.com/MAID-to-BTC), [Cryptopia](https://www.cryptopia.co.nz/), and [OpenLedger](https://openledger.io/welcome)'
+            'MaidSafeCoin is listed on the bitcoin blockchain and can be purchased on a number of exchanges including [Poloniex](https://www.poloniex.com/exchange#btc_maid), [HitBTC](https://hitbtc.com/MAID-to-BTC), [Bitker](https://www.bitker01.com/#/bbTrades/maid_btc), [Bittrex](https://international.bittrex.com/Market/Index?MarketName=BTC-MAID)',
           ]
         },
         {
