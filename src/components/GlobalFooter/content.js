@@ -33,6 +33,10 @@ export default {
       {
         'name': 'Roadmap',
         'url': '/roadmap/'
+      },
+      {
+        'name': 'Events',
+        'url': 'https://safenetforum.org/t/safe-network-upcoming-events/29029'
       }
     ]
   },
