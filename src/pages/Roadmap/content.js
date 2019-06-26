@@ -4,7 +4,7 @@ export default {
     pageDesc: `12 years of research and development is coming to fruition as we put together the final building blocks of what some said was impossible: Secure Access For Everyone.`,
     latestUpdate: {
       overline: 'Latest Update',
-      date: '6 June 2019',
+      date: '26 June 2019',
       title: 'SAFE Browser v0.14.0',
       para: `The latest version of the SAFE Browser has been released with new features, bug fixes and updates.`,
       // CTA: {
