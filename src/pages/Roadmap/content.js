@@ -352,7 +352,7 @@ export default {
           {
             feature: 'Data Manager',
             desc: 'Streamlined publishing of SAFE sites and Perpetual Data',
-            status: 'Concept',
+            status: 'Development',
             para: [
               'A suite of tools which provides the necessary functionality to add data to the SAFE Network, publish perpetual data, and manage Public Names. This will supersede the Web Hosting Manager.'
             ],
@@ -360,7 +360,7 @@ export default {
           {
             feature: 'SAFE CLI',
             desc: 'An advanced CLI to manage accounts and data',
-            status: 'Concept',
+            status: 'Development',
             para: [
               'A command line tool to manage data on the SAFE Network. It will allow the user to store data on the network and manage accounts, identities, and permissions. This is the tool that the frontend apps and features—such as the Data Manager—will build upon.'
             ],
