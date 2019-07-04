@@ -67,10 +67,6 @@ export default {
       url: 'https://hitbtc.com/MAID-to-BTC'
     },
     {
-      name: 'Bitker',
-      url: 'https://www.bitker01.com/#/bbTrades/maid_btc'
-    },
-    {
       name: 'Bittrex',
       url: 'https://international.bittrex.com/Market/Index?MarketName=BTC-MAID'
     },
@@ -108,7 +104,7 @@ export default {
             question: 'What is MaidSafeCoin?',
             answer: [
               `MaidSafeCoin is a proxy token that was released during MaidSafe's crowd sale and will be swapped for Safecoin on a 1:1 basis when Safecoin is released. MaidSafeCoin is listed on the bitcoin blockchain and can be purchased on a number of exchanges including:`,
-              '- [Poloniex](https://www.poloniex.com/exchange#btc_maid)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [Bitker](https://www.bitker01.com/#/bbTrades/maid_btc)\n- [Bittrex](https://international.bittrex.com/Market/Index?MarketName=BTC-MAID)'
+              '- [Poloniex](https://www.poloniex.com/exchange#btc_maid)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [Bittrex](https://international.bittrex.com/Market/Index?MarketName=BTC-MAID)'
             ]
           },
           {

@@ -205,7 +205,7 @@ export default {
           answer: [
             'Safecoin won’t be issued until the Network goes live so they cannot be purchased at the moment. Currently you can buy MaidSafeCoin which will be swapped on a 1-to-1 basis for Safecoin when released.',
             'MaidSafeCoin is listed on the bitcoin blockchain and can be purchased on a number of exchanges including:',
-            '- [Poloniex](https://www.poloniex.com/exchange#btc_maid)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [Bitker](https://www.bitker01.com/#/bbTrades/maid_btc)\n- [Bittrex](https://international.bittrex.com/Market/Index?MarketName=BTC-MAID)'
+            '- [Poloniex](https://www.poloniex.com/exchange#btc_maid)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [Bittrex](https://international.bittrex.com/Market/Index?MarketName=BTC-MAID)'
           ]
         },
         {

@@ -17,7 +17,6 @@ import Poloniex from 'images/exchange_poloniex.png'
 import Hitbtc from 'images/exchange_hitbtc.png'
 import Cryptopia from 'images/exchange_cryptopia.png'
 import Openledger from 'images/exchange_openledger.png'
-import Bitker from 'images/exchange_bitker.png'
 import Bittrex from 'images/exchange_bittrex.png'
 
 import SafeCoinPoster from 'images/textures/texture_safecoin.jpg'
@@ -32,7 +31,6 @@ const EXCHANGE_IMGS = {
   HitBTC: Hitbtc,
   Cryptopia: Cryptopia,
   Openledger: Openledger,
-  Bitker: Bitker,
   Bittrex: Bittrex,
 }
 
