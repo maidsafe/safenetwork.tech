@@ -4,13 +4,13 @@ export default {
     pageDesc: `12 years of research and development is coming to fruition as we put together the final building blocks of what some said was impossible: Secure Access For Everyone.`,
     latestUpdate: {
       overline: 'Latest Update',
-      date: '6 June 2019',
-      title: 'BLS RFC',
-      para: `We've released the RFC proposing the integration of Boneh-Lynn-Shacham cryptographic scheme into Routing.`,
-       CTA: {
-         name: 'Read the RFC',
-         url: 'https://github.com/maidsafe/rfcs/blob/master/text/0059-bls-scheme-in-routing/0059-bls-scheme-in-routing.md'
-       }
+      date: '26 June 2019',
+      title: 'SAFE Browser v0.14.0',
+      para: `The latest version of the SAFE Browser has been released with new features, bug fixes and updates.`,
+      // CTA: {
+      //   name: 'Read the RFC',
+      //   url: 'https://github.com/maidsafe/rfcs/blob/master/text/0059-bls-scheme-in-routing/0059-bls-scheme-in-routing.md'
+      // }
     }
   },
   subscribe: {
@@ -313,7 +313,7 @@ export default {
         id: 'safeBrowser',
         name: 'SAFE Browser',
         para: 'Browse the Alpha 2 network. It also includes the Authenticator: enabling you to securely sign into the SAFE Network, and manage access and permissions of SAFE Apps.',
-        status: 'Latest Version v0.13.0'
+        status: 'Latest Version v0.14.0'
       },
       {
         id: 'webHostingManager',

@@ -23,9 +23,9 @@ export default {
   },
   downloadApps: {
     browser: {
-      mac: 'https://github.com/maidsafe/safe_browser/releases/download/v0.13.0/safe-browser-v0.13.0-osx-x64.zip',
-      windows: 'https://github.com/maidsafe/safe_browser/releases/download/v0.13.0/safe-browser-v0.13.0-win-x64.zip',
-      linux: 'https://github.com/maidsafe/safe_browser/releases/download/v0.13.0/safe-browser-v0.13.0-linux-x64.zip',
+      mac: 'https://github.com/maidsafe/safe_browser/releases/download/v0.14.0/safe-browser-v0.14.0-osx-x64.zip',
+      windows: 'https://github.com/maidsafe/safe_browser/releases/download/v0.14.0/safe-browser-v0.14.0-win-x64.zip',
+      linux: 'https://github.com/maidsafe/safe_browser/releases/download/v0.14.0/safe-browser-v0.14.0-linux-x64.zip',
       android: 'https://github.com/maidsafe/safe_browser/releases/latest',
       ios: 'https://github.com/maidsafe/safe_browser/releases/latest',
       others: 'https://github.com/maidsafe/safe_browser/releases/latest',
