@@ -119,7 +119,8 @@ export default {
             desc: 'Communication guaranteeing the successful delivery of messages.',
             status: 'Complete',
             para: [
-              'Ensures that all sent messages will be successfully delivered to their destinations, even when some nodes responsible for the delivery are failing.',
+              'Ensures that all sent messages will be successfully delivered to their destinations, even when some nodes responsible for the delivery are failing.'
+            ],
             CTA: {
               name: 'Read the RFC',
               url: 'https://github.com/maidsafe/rfcs/blob/master/text/0058-reliable-message-delivery/0058-reliable-message-delivery.md'
