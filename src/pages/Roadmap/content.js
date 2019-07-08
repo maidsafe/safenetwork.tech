@@ -117,11 +117,9 @@ export default {
           }, {
             feature: 'Reliable Message Delivery',
             desc: 'Communication guaranteeing the successful delivery of messages.',
-            status: 'Development',
+            status: 'Complete',
             para: [
-              'Ensures that all sent messages will be successfully delivered to their destinations, even when some nodes responsible for the delivery are failing.',
-              'Feel free to [join in the discussion](https://safenetforum.org/t/rfc-58-reliable-message-delivery/28689) of the RFC in the forum.'
-            ],
+              'Ensures that all sent messages will be successfully delivered to their destinations, even when some nodes responsible for the delivery are failing.'
             CTA: {
               name: 'Read the RFC',
               url: 'https://github.com/maidsafe/rfcs/blob/master/text/0058-reliable-message-delivery/0058-reliable-message-delivery.md'
