@@ -11,7 +11,7 @@ export default {
     para: [
       'Safecoin is a cryptocurrency like no other. Digital cash with no public ledger. There’s no limit to the number of transactions which can take place instantly, privately and simultaneously.',
       'Earning Safecoin is simple. Choose to become a Farmer and connect your computer to the Network. Watch as the Network automatically and continually moves chunks of data around the world to ensure efficiency. Proof of Resource takes the place of more expensive alternatives, like Proof of Work.',
-      'Safecoin can then be used to buy Network resources—like the one-time fee for uploading data—or exhanged for goods and services like any other currency.',
+      'Safecoin can then be used to buy Network resources—like the one-time fee for uploading data—or exchanged for goods and services like any other currency.',
     ],
   },
   textBlock2: {
@@ -67,10 +67,6 @@ export default {
       url: 'https://hitbtc.com/MAID-to-BTC'
     },
     {
-      name: 'Bitker',
-      url: 'https://www.bitker01.com/#/bbTrades/maid_btc'
-    },
-    {
       name: 'Bittrex',
       url: 'https://international.bittrex.com/Market/Index?MarketName=BTC-MAID'
     },
@@ -108,7 +104,7 @@ export default {
             question: 'What is MaidSafeCoin?',
             answer: [
               `MaidSafeCoin is a proxy token that was released during MaidSafe's crowd sale and will be swapped for Safecoin on a 1:1 basis when Safecoin is released. MaidSafeCoin is listed on the bitcoin blockchain and can be purchased on a number of exchanges including:`,
-              '- [Poloniex](https://www.poloniex.com/exchange#btc_maid)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [Bitker](https://www.bitker01.com/#/bbTrades/maid_btc)\n- [Bittrex](https://international.bittrex.com/Market/Index?MarketName=BTC-MAID)'
+              '- [Poloniex](https://www.poloniex.com/exchange#btc_maid)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [Bittrex](https://international.bittrex.com/Market/Index?MarketName=BTC-MAID)'
             ]
           },
           {
