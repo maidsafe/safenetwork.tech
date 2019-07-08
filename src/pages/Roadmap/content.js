@@ -4,12 +4,12 @@ export default {
     pageDesc: `12 years of research and development is coming to fruition as we put together the final building blocks of what some said was impossible: Secure Access For Everyone.`,
     latestUpdate: {
       overline: 'Latest Update',
-      date: '6 June 2019',
-      title: 'BLS RFC',
-      para: `We've released the RFC proposing the integration of Boneh-Lynn-Shacham cryptographic scheme into Routing.`,
+      date: '4 July 2019',
+      title: 'Perpetual Web Browser Personas & Usecases',
+      para: `The Perpetual Web is the first end-user focused milestone on the way to the Beta launch. It will showcase and enable the perpetual, versioned, nature of all public data. The app at the heart of this is the Safe Browser. Take a sneak peak at the design process for this milestone over on GitHub.`,
        CTA: {
-         name: 'Read the RFC',
-         url: 'https://github.com/maidsafe/rfcs/blob/master/text/0059-bls-scheme-in-routing/0059-bls-scheme-in-routing.md'
+         name: 'GitHub Milestone',
+         url: 'https://github.com/maidsafe/perpetual-web-browser'
        }
     }
   },
