@@ -4,8 +4,8 @@ export default {
     pageDesc: `12 years of research and development is coming to fruition as we put together the final building blocks of what some said was impossible: Secure Access For Everyone.`,
     latestUpdate: {
       overline: 'Latest Update',
-      date: '26 June 2019',
-      title: 'SAFE Browser v0.14.0',
+      date: '11 July 2019',
+      title: 'SAFE Browser v0.14.1',
       para: `The latest version of the SAFE Browser has been released with new features, bug fixes and updates.`,
       // CTA: {
       //   name: 'Read the RFC',
@@ -312,7 +312,7 @@ export default {
         id: 'safeBrowser',
         name: 'SAFE Browser',
         para: 'Browse the Alpha 2 network. It also includes the Authenticator: enabling you to securely sign into the SAFE Network, and manage access and permissions of SAFE Apps.',
-        status: 'Latest Version v0.14.0'
+        status: 'Latest Version v0.14.1'
       },
       {
         id: 'webHostingManager',
