@@ -105,10 +105,9 @@ export default {
           }, {
             feature: 'Secure Message Delivery',
             desc: 'Trusted communication between nodes - messages with authenticated source',
-            status: 'Design',
+            status: 'Development',
             para: [
-              'Ensures messages are sent and signed in such a way that lets nodes rely on the contents of each message despite having no previous relationship with the sender. This solves a problem faced by many existing blockchain-based projects and is essential when you have a Network that will autonomously move nodes around as required.',
-              'Feel free to [join in the discussion](https://safenetforum.org/t/rfc-56-secure-message-delivery/28622) of the RFC in the forum.'
+              'Ensures messages are sent and signed in such a way that lets nodes rely on the contents of each message despite having no previous relationship with the sender. This solves a problem faced by many existing blockchain-based projects and is essential when you have a Network that will autonomously move nodes around as required.'
             ],
             CTA: {
               name: 'Read the RFC',
