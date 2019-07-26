@@ -10,7 +10,7 @@ export default {
       All the details can be found over on the forum, including compatible devices, installation instructions, features and FAQs.`,
        CTA: {
          name: 'SafeNetwork Forum',
-         url: 'https://safenetforum.org/t/release-safe-mobile-browser/29364"'
+         url: 'https://safenetforum.org/t/release-safe-mobile-browser/29364'
        }
     }
   },
