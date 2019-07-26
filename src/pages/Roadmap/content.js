@@ -4,13 +4,14 @@ export default {
     pageDesc: `12 years of research and development is coming to fruition as we put together the final building blocks of what some said was impossible: Secure Access For Everyone.`,
     latestUpdate: {
       overline: 'Latest Update',
-      date: '11 July 2019',
-      title: 'SAFE Browser v0.14.1',
-      para: `The latest version of the SAFE Browser has been released with new features, bug fixes and updates.`,
-      // CTA: {
-      //   name: 'Read the RFC',
-      //   url: 'https://github.com/maidsafe/rfcs/blob/master/text/0059-bls-scheme-in-routing/0059-bls-scheme-in-routing.md'
-      // }
+      date: '25 July 2019',
+      title: 'SAFE Mobile Browser v0.1.0',
+      para: `We've released the first SAFE Network mobile browser.
+      All the details can be found over on the forum, including compatible devices, installation instructions, features and FAQs.`,
+       CTA: {
+         name: 'SafeNetwork Forum',
+         url: 'https://safenetforum.org/t/release-safe-mobile-browser/29364'
+       }
     }
   },
   subscribe: {
@@ -342,7 +343,7 @@ export default {
           {
             feature: 'Mobile Browser',
             desc: 'Mobile version of SAFE browser which is limited to browsing published data from the SAFE Network',
-            status: 'Concept',
+            status: 'Development',
             para: [
               'Enables individuals to access the SAFE Network directly by using a browser on their mobile phone'
             ],
