@@ -161,7 +161,7 @@ export default {
           {
             feature: 'Test Safecoin & Wallet',
             desc: 'Allow the Network to charge, and a user to send and receive payments to a wallet, in units called Test Safecoins',
-            status: 'RFC',
+            status: 'Development',
             para: [
               'Safecoin is the incentive mechanism that encourages individuals to provide the computing resources that the Network requires: storage, broadband, and CPU resources.',
               '[Join in the discussion](https://safenetforum.org/t/rfc-57-safecoin-revised/28660) on the forum'
