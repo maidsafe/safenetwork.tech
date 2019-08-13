@@ -164,7 +164,6 @@ export default {
             status: 'Development',
             para: [
               'Safecoin is the incentive mechanism that encourages individuals to provide the computing resources that the Network requires: storage, broadband, and CPU resources.',
-              '[Join in the discussion](https://safenetforum.org/t/rfc-57-safecoin-revised/28660) on the forum'
             ],
           }, {
             feature: 'Farming',
@@ -490,7 +489,6 @@ export default {
                 status: 'Development',
                 para: [
                   'Users will be able to use Test Safecoin in the Network, allowing an ecosystem to built around the SAFE incentive mechanism. The ability to create multiple wallets, associate them with an identity, and also one-time-use wallets to enable anonymous transactions, will all be part of this.',
-                  '[Join in the discussion](https://safenetforum.org/t/rfc-57-safecoin-revised/28660) on the forum'
                 ],
               },
               {
