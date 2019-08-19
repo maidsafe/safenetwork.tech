@@ -171,12 +171,7 @@ export default {
             status: 'Development',
             para: [
               'Individuals who choose to supply the resources that the Network requires have the opportunity to be rewarded with Safecoin. This work ensures that the Network rewards those who provide it with valuable resources.',
-              '[Join in the discussion](https://safenetforum.org/t/rfc-57-safecoin-revised/28660) on the forum'
             ],
-            CTA: {
-              name: 'Read the RFC',
-              url: 'https://github.com/maidsafe/rfcs/blob/master/text/0057-safecoin-revised/0057-safecoin-revised.md'
-            },
           }, {
             feature: 'Vaults From Home',
             desc: 'The ability for anyone to download software and run Vaults from home, creating decentralised storage for the Network',
