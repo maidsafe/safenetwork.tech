@@ -331,7 +331,7 @@ export default {
           {
             feature: 'Mobile Browser',
             desc: 'Mobile version of SAFE browser which is limited to browsing published data from the SAFE Network',
-            status: 'Development',
+            status: 'Complete',
             para: [
               'Enables individuals to access the SAFE Network directly by using a browser on their mobile phone'
             ],
