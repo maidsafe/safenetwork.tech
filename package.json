@@ -13,7 +13,7 @@
     "test": "yarn build && yarn run-mocha"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.6",
     "copy-to-clipboard": "^3.0.8",
