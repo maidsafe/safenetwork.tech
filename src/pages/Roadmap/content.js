@@ -322,7 +322,7 @@ export default {
           {
             feature: 'SAFE Browser',
             desc: 'Enhancements to the browser designed specifically to take advantage of the functionalities of the Perpetual Web',
-            status: 'Design',
+            status: 'Development',
             para: [
               'The SAFE Browser functionality will be extended to incorporate new features that are unique to the Perpetual Web, such as the ability to roll-back through the version history of any SAFE website or asset.'
             ],
