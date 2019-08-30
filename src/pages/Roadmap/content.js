@@ -269,7 +269,7 @@ export default {
           }, {
             feature: 'Published and Unpublished Data Types',
             desc: 'Allow the network to store Published and Unpublished data via AppendOnlyData or MutableData types',
-            status: 'Development',
+            status: 'Complete',
             para: [
               'Published data refers to content that is published (made available) for everyone such as websites, blogs, or research papers. For such public content, it becomes important to retain a history of changes. History must not be allowed to be tampered with and the published data must remain forever. Unpublished data is data that is not desired to be made public such as personal data or organisations’ data stored on the network'
             ],
