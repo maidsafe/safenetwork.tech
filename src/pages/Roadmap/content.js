@@ -4,13 +4,12 @@ export default {
     pageDesc: `12 years of research and development is coming to fruition as we put together the final building blocks of what some said was impossible: Secure Access For Everyone.`,
     latestUpdate: {
       overline: 'Latest Update',
-      date: '25 July 2019',
-      title: 'SAFE Mobile Browser v0.1.0',
-      para: `We've released the first SAFE Network mobile browser.
-      All the details can be found over on the forum, including compatible devices, installation instructions, features and FAQs.`,
+      date: '29 August 2019',
+      title: 'Vault Phase 1',
+      para: `The final piece of the puzzle is complete and we now have the SAFE CLI, SAFE Client Libs, vault and SAFE Browser.`,
        CTA: {
          name: 'SafeNetwork Forum',
-         url: 'https://safenetforum.org/t/release-safe-mobile-browser/29364'
+         url: 'https://safenetforum.org/t/new-release-vault-phase-1-real-vault/29712'
        }
     }
   },
@@ -323,7 +322,7 @@ export default {
           {
             feature: 'SAFE Browser',
             desc: 'Enhancements to the browser designed specifically to take advantage of the functionalities of the Perpetual Web',
-            status: 'Design',
+            status: 'Development',
             para: [
               'The SAFE Browser functionality will be extended to incorporate new features that are unique to the Perpetual Web, such as the ability to roll-back through the version history of any SAFE website or asset.'
             ],
