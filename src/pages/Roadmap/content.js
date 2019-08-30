@@ -280,7 +280,7 @@ export default {
           }, {
             feature: 'Unpublished ImmutableData Data Type',
             desc: 'Enhance ImmutableData to make it an unpublished or published, with the difference that unpublished can be deleted',
-            status: 'Development',
+            status: 'Complete',
             para: [
               'There are many times when a user will require to create Immutable Data to store private content. As long as this content is not published (made available for others) this will be deleteable by the data owner only.'
             ],
