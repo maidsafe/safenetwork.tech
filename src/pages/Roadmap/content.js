@@ -457,12 +457,8 @@ export default {
                 desc: 'A way of sharing and accessing SAFE Network files without the need for a Public Name',
                 status: 'Complete',
                 para: [
-                  'Create a system of standardised URL’s on the SAFE Network that are based on the XOR address of the content being referenced. Ensures that individuals can access and locate  data and files in a more user-friendly manner. [join in the discussion](https://forum.safedev.org/t/rfc-discussion-xor-urls/2365) on the developers forum.'
+                  'Create a system of standardised URL’s on the SAFE Network that are based on the XOR address of the content being referenced. Ensures that individuals can access and locate  data and files in a more user-friendly manner.'
                 ],
-                CTA: {
-                  name: 'Read the RFC',
-                  url: 'https://github.com/maidsafe/rfcs/blob/master/text/0053-xor-urls/0053-xor-urls.md'
-                },
               }
             ]
           }
