@@ -2,7 +2,7 @@ export default {
   siteName: 'Safe Network',
   navItems: [
     {
-      name: "How it Works",
+      name: "How It Works",
       link: "/how-it-works/"
     },
     {

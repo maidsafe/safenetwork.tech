@@ -5,7 +5,7 @@ export default {
     aside: {
       para: 'Using spare bandwidth and unused disk space on home computers and phones, we’re taking the web off corporate servers, out of government control, and back into the hands of people.',
       CTA: {
-        name: 'See How it Works',
+        name: 'See How It Works',
         url: '/how-it-works/'
       }
     },

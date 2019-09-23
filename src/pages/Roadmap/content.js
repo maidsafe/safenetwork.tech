@@ -6,9 +6,9 @@ export default {
       overline: 'Latest Update',
       date: '29 August 2019',
       title: 'Vault Phase 1',
-      para: `The final piece of the puzzle is complete and we now have the SAFE CLI, SAFE Client Libs, vault and SAFE Browser.`,
+      para: `The final piece of the puzzle is complete and we now have the SAFE CLI, SAFE Client Libs, Vault and SAFE Browser.`,
        CTA: {
-         name: 'SafeNetwork Forum',
+         name: 'SAFE Network Forum',
          url: 'https://safenetforum.org/t/new-release-vault-phase-1-real-vault/29712'
        }
     }
