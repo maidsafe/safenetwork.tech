@@ -53,7 +53,7 @@ export default {
             'Then all you need to do is [download the SAFE Browser](https://github.com/maidsafe/safe_browser/releases) and enter a SAFE site into the address bar and that\'s you browsing the SAFE Network.',
             'Some sample SAFE sites (copy and paste the address into the SAFE Browser address bar):',
             '\n*   [safe://maidsafe.safenet](safe://maidsafe.safenet)\n*   [safe://racer.game/v4.final.html](safe://racer.game/v4.final.html)\n*   [safe://hello](safe://hello)',
-            '_[Get the SAFE Browser](https://github.com/maidsafe/safe_browser/releases/)_'
+            '_[Get the SAFE Browser](https://github.com/maidsafe/safe_browser/releases/tag/v0.14.1)_'
           ]
         },
         {
