@@ -71,7 +71,7 @@ export default {
     release2: {
       overline: 'Upcoming Milestone',
       title: 'SAFE Fleming Network',
-      para: 'The next major milestone for the SAFE Network. Whilst the Alpha 2 Network will continue to function, this will be a standalone Network that will enable individuals to run decentralised routing nodes from home. There will be no data storage capacity on the Network as such. Instead, you’ll see fully-encrypted transient data moving across a Network that also responds to malicious nodes.',
+      para: 'The next major milestone for the SAFE Network. Whilst the Alpha 2 Network will continue to function, this will be a standalone Network that will enable individuals to run Vaults - decentralised storage from home computers. The release of Fleming will be notable for many reasons, not least the fact that with data storage, the Network will now also contain Test Safecoin.',
       accordion: {
         header: [
           'Fleming Feature',
@@ -141,29 +141,14 @@ export default {
             CTA: {
               name: 'Read the RFC',
               url: 'https://github.com/maidsafe/rfcs/blob/master/text/0050-malice_in_parsec/0050-malice_in_parsec.md'
-            },
-          }
-        ]
-      }
-    },
-    release3: {
-      overline: 'Next Up',
-      title: 'SAFE Maxwell Network',
-      para: 'The release of SAFE Maxwell is a key stage as it reintroduces Vaults (decentralised storage from home computers). The software that creates Vaults was previously released by MaidSafe for widespread testing by the Community. In fact the Community today continues to run a standalone test Vault Network themselves. The release of Maxwell will be notable for many reasons, not least the fact that with data storage, the Network will now also contain Test Safecoin. ',
-      accordion: {
-        header: [
-          'Maxwell Feature',
-          'Description',
-          'Status'
-        ],
-        items: [
-          {
+            }
+          }, {
             feature: 'Test Safecoin & Wallet',
             desc: 'Allow the Network to charge, and a user to send and receive payments to a wallet, in units called Test Safecoins',
             status: 'Complete',
             para: [
               'Safecoin is the incentive mechanism that encourages individuals to provide the computing resources that the Network requires: storage, broadband, and CPU resources.',
-            ],
+            ]
           }, {
             feature: 'Farming',
             desc: 'The process of providing resource and receiving Safecoin in return',
@@ -179,6 +164,43 @@ export default {
               'Decentralised data storage is a key element of the SAFE Network. This release will enable nodes to participate regardless of the resources they offer.'
             ],
           }, {
+            feature: 'Published and Unpublished Data Types',
+            desc: 'Allow the network to store Published and Unpublished data via AppendOnlyData or MutableData types',
+            status: 'Complete',
+            para: [
+              'Published data refers to content that is published (made available) for everyone such as websites, blogs, or research papers. For such public content, it becomes important to retain a history of changes. History must not be allowed to be tampered with and the published data must remain forever. Unpublished data is data that is not desired to be made public such as personal data or organisations’ data stored on the network'
+            ],
+            //CTA: {
+              //name: 'Read the RFC',
+              //url: 'https://github.com/maidsafe/rfcs/blob/master/text/0054-published-and-unpublished-mutable-data/0054-published-and-unpublished-mutable-data.md'
+            //},
+          }, {
+            feature: 'Unpublished ImmutableData Data Type',
+            desc: 'Enhance ImmutableData to make it an unpublished or published, with the difference that unpublished can be deleted',
+            status: 'Complete',
+            para: [
+              'There are many times when a user will require to create Immutable Data to store private content. As long as this content is not published (made available for others) this will be deleteable by the data owner only.'
+            ],
+            //CTA: {
+              //name: 'Read the RFC',
+              //url: 'https://github.com/maidsafe/rfcs/blob/master/text/0055-unpublished-immutable-data/0055-unpublished-immutable-data.md'
+            //},
+          }
+        ]
+      }
+    },
+    release3: {
+      overline: 'Next Up',
+      title: 'SAFE Maxwell Network',
+      para: 'The release of SAFE Maxwell builds on top of Fleming and enables the network to upgrade, improves security and sets the ground work for switching test SAFE Coin to real SAFEcoin.',
+      accordion: {
+        header: [
+          'Maxwell Feature',
+          'Description',
+          'Status'
+        ],
+        items: [
+          {
             feature: 'Spam Handling',
             desc: 'Ability to handle spam attacks',
             status: 'Concept',
@@ -192,6 +214,19 @@ export default {
             para: [
               'Users will be able to create multiple identities in the Network. Each identity can be used as required by the User and each should be independent unless the User explicitly wants to connect them. This helps protect identity and privacy.'
             ],
+          },
+          {
+            feature: 'Upgrades',
+            desc: 'The ability for the Network to upgrade itself, with no harm caused',
+            status: 'Concept',
+            para: [
+              'The Network will have the ability to upgrade itself in order to allow features and improvements to disseminate throughout the Network. The upgrades must be done in a way such that they don’t cause harm to the Network.',
+              'This is an important stage in the evolution of the Network as it means that new software can then continue to be rolled out onto the existing Network without disrupting the existing functionality.'
+            ],
+            CTA: {
+              name: 'Follow the Discussion',
+              url: 'https://safenetforum.org/t/step-by-step-the-road-to-fleming-5-network-upgrades/28319'
+            }
           }
         ]
       }
@@ -208,18 +243,6 @@ export default {
         ],
         items: [
           {
-            feature: 'Upgrades',
-            desc: 'The ability for the Network to upgrade itself, with no harm caused',
-            status: 'Concept',
-            para: [
-              'The Network will have the ability to upgrade itself in order to allow features and improvements to disseminate throughout the Network. The upgrades must be done in a way such that they don’t cause harm to the Network.',
-              'This is an important stage in the evolution of the Network as it means that new software can then continue to be rolled out onto the existing Network without disrupting the existing functionality.'
-            ],
-            CTA: {
-              name: 'Follow the Discussion',
-              url: 'https://safenetforum.org/t/step-by-step-the-road-to-fleming-5-network-upgrades/28319'
-            },
-          }, {
             feature: 'Secure Enclaves',
             desc: 'A trusted executable environment within existing computers',
             status: 'Concept',
@@ -265,28 +288,6 @@ export default {
             para: [
               'Common coin is a device that nodes can use to generate a “random” binary value (true or false). Every time a node flips the coin, all other nodes are guaranteed to observe the same value for their coin flip. Also, the value must be unpredictable, which means that no malicious node can know the outcome before a honest node has observed it.'
             ],
-          }, {
-            feature: 'Published and Unpublished Data Types',
-            desc: 'Allow the network to store Published and Unpublished data via AppendOnlyData or MutableData types',
-            status: 'Complete',
-            para: [
-              'Published data refers to content that is published (made available) for everyone such as websites, blogs, or research papers. For such public content, it becomes important to retain a history of changes. History must not be allowed to be tampered with and the published data must remain forever. Unpublished data is data that is not desired to be made public such as personal data or organisations’ data stored on the network'
-            ],
-            //CTA: {
-              //name: 'Read the RFC',
-              //url: 'https://github.com/maidsafe/rfcs/blob/master/text/0054-published-and-unpublished-mutable-data/0054-published-and-unpublished-mutable-data.md'
-            //},
-          }, {
-            feature: 'Unpublished ImmutableData Data Type',
-            desc: 'Enhance ImmutableData to make it an unpublished or published, with the difference that unpublished can be deleted',
-            status: 'Complete',
-            para: [
-              'There are many times when a user will require to create Immutable Data to store private content. As long as this content is not published (made available for others) this will be deleteable by the data owner only.'
-            ],
-            //CTA: {
-              //name: 'Read the RFC',
-              //url: 'https://github.com/maidsafe/rfcs/blob/master/text/0055-unpublished-immutable-data/0055-unpublished-immutable-data.md'
-            //},
           }
         ]
       }
