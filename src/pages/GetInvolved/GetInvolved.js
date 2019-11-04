@@ -11,7 +11,7 @@ const GetInvolved = () => {
     <section className="GetInvolved">
       <div className="GetInvolved__wrap">
         <Banner title={content.title} desc={content.pageDesc} />
-        <Develop content={content.develop} invite={content.invite} />
+        <Develop content={content.develop} />
         <Engage content={content.engage} />
         <FAQs content={content.faqs} />
       </div>

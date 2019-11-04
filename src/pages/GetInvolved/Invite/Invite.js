@@ -27,16 +27,15 @@ export default class Invite extends React.Component {
   }
   componentWillMount() {
     const { content } = this.props
-    const { claimInvite, installBrowser, feedback } = content
+    const { installBrowser, feedback } = content
 
     this.ACCORDIONS = {
-      CLAIM_INVITE: claimInvite.id,
       INSTALL_BROWSER: installBrowser.id,
       FEEDBACK: feedback.id
     }
 
     this.setState({
-      activeAccordion: this.ACCORDIONS.CLAIM_INVITE
+      activeAccordion: this.ACCORDIONS.INSTALL_BROWSER
     })
   }
 
@@ -91,7 +90,7 @@ export default class Invite extends React.Component {
 
   render() {
     const { content } = this.props
-    const { title, claimInvite, installBrowser, feedback, modal } = content
+    const { title, installBrowser, feedback, modal } = content
     const { activeAccordion } = this.state
 
     const platform = detectPlatform()
@@ -106,22 +105,6 @@ export default class Invite extends React.Component {
       <div className={baseClassName}>
         <div className={cn('wrap')}>
           <Accordion className="underlineLink-bright-onYellow" bgColor={this.setAccordionBg()}>
-            <AccordionItem
-              overline={title}
-              active={activeAccordion === this.ACCORDIONS.CLAIM_INVITE}
-              id={claimInvite.id}
-              title={claimInvite.title}
-              text={claimInvite.para}
-              ctaButton={claimInvite.CTA.button}
-              ctaButtonType="primary"
-              ctaLink= {claimInvite.CTA.link}
-              onClick={() => {
-                this.setAccordion(this.ACCORDIONS.CLAIM_INVITE)
-              }}
-              onClickPrimaryButton={() => {
-                this.toggleInviteModal(true)
-              }}
-            />
             <AccordionItem
               overline={title}
               active={activeAccordion === this.ACCORDIONS.INSTALL_BROWSER}

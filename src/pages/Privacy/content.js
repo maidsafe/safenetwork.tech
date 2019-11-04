@@ -22,23 +22,25 @@ export default {
       title: 'What information does the organisation collect?',
       para: [
         'We do not place cookies on your computer or device however, the organisation collects information about you as follows:',
-        '- Your IP Address',
-        'During the Alpha phase of the SAFE Network development we record the currently active IP address of your login in order to avoid spamming attempts. The IP address is recorded only when the “Set Registered IP” or “Update Registered IP” buttons are pressed. The data will be stored on an external server [Digital Ocean](https://www.digitalocean.com/) and will be deleted as soon as it is apparent that the information is no longer needed for the purpose for which it was retained.',
-        '- Your email address',
+        // '- Your IP Address',
+        // 'During the Alpha phase of the SAFE Network development we record the currently active IP address of your login in order to avoid spamming attempts. The IP address is recorded only when the “Set Registered IP” or “Update Registered IP” buttons are pressed. The data will be stored on an external server [Digital Ocean](https://www.digitalocean.com/) and will be deleted as soon as it is apparent that the information is no longer needed for the purpose for which it was retained.',
+        // '- Your email address',
         'If you choose to subscribe to our email newsletter we collect your email address. If you are an iOS user and you register to download the SAFE browser to your iOS device we collect your email address',
         '- Your name, iOS Device and UDID',
         'If you are an iOS user and you register to download the SAFE browser to your iOS device, AppCenter require you to provide your name, iOS device and UDID for all iOS devices you wish to download the SAFE Browser onto.',
         '- Voluntarily Submitted Information',
         'In addition, we may collect and retain information you voluntarily submit to us by contacting us via email. It is up to you whether to submit information to us, and how much information to provide.',
         ]
-    }, {
+    },
+	{
       title: 'Why does the organisation process personal data?',
       para: [
         'The organisation has a legitimate interest in processing personal data (current IP address) in order to ensure that the SAFE Network can be accessed, during the Alpha development phase without being left open to attack by malicious agents.',
         'Collecting IP addresses is a temporary measure but essential at this stage as it acts as a form of spam protection - preventing someone creating thousands of accounts and attacking the Network whilst it is in Alpha stage. The company will only collect this information if you with your consent press the button “Set Registered IP” or “Update Registered IP”.',
         'Collecting email addresses with your consent enables us to email you, and keep you up to date with all news related to the SAFE Network. Providing your email address if you are an iOS user provides you with the opportunity to deploy and test the SAFE Browser.'
       ]
-    }, {
+    },
+	{
       title: 'Who has access to data?',
       para: [
         'Your information may be shared internally for the purposes of the development of the SAFE Network. This includes members of the Marketing, QA, Development and Payroll teams.',
@@ -60,7 +62,8 @@ export default {
         'IP addresses will be stored until the SAFE Network progresses to Beta Stage. This enables us to investigate any issues and trends that happen across our tests.',
         'Email addresses will be stored until you choose to unsubscribe from our newsletter. Email addresses will be stored on a Google form for the period of 1 week',
       ]
-    }, {
+    },
+	{
       title: 'Your rights',
       para: [
         'As a data subject, you have a number of rights. You have:',

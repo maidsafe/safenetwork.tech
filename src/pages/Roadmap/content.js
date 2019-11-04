@@ -19,11 +19,11 @@ export default {
   releases: {
     release1: {
       overline: 'Live Now',
-      title: 'The Alpha 2 Network',
-      para: 'The Alpha 2 Network lets you experiment with the first released SAFE Network features. This is a test Network in order to prove functionality so there is a limit on the amount of data that you can upload. At this stage, all data on the Alpha 2 Network is temporary in the sense that it will not be carried forward to future test networks.',
+      title: 'The Shared Vault Network',
+      para: 'The Shared Vault Network lets you experiment with the latest released SAFE Network features. At this stage, all data on the The Shared Vault Network is temporary in the sense that it will not be carried forward to future test networks.',
       accordion: {
         header: [
-          'Alpha 2 Feature',
+          'The Share Vault Network Feature',
           'Description',
           'Status'
         ],
@@ -33,7 +33,7 @@ export default {
             desc: 'The ability to log into a decentralised network without the permission or existence of a third party',
             status: 'Complete',
             para: [
-              'MaidSafe invented the technology that lets someone log into a decentralised network securely without requiring the involvement of a third party. The Alpha 2 Network is the only place in the world today that you can see this in action.'
+              'MaidSafe invented the technology that lets someone log into a decentralised network securely without requiring the involvement of a third party. The The Shared Vault Network is the only place in the world today that you can see this in action.'
             ],
           }, {
             feature: 'Self-Encryption',
@@ -71,7 +71,7 @@ export default {
     release2: {
       overline: 'Upcoming Milestone',
       title: 'SAFE Fleming Network',
-      para: 'The next major milestone for the SAFE Network. Whilst the Alpha 2 Network will continue to function, this will be a standalone Network that will enable individuals to run Vaults - decentralised storage from home computers. The release of Fleming will be notable for many reasons, not least the fact that with data storage, the Network will now also contain Test Safecoin.',
+      para: 'The next major milestone for the SAFE Network. Whilst the The Shared Vault Network will continue to function, this will be a standalone Network that will enable individuals to run Vaults - decentralised storage from home computers. The release of Fleming will be notable for many reasons, not least the fact that with data storage, the Network will now also contain Test Safecoin.',
       accordion: {
         header: [
           'Fleming Feature',
@@ -299,14 +299,8 @@ export default {
       {
         id: 'safeBrowser',
         name: 'SAFE Browser',
-        para: 'Browse the Alpha 2 network. It also includes the Authenticator: enabling you to securely sign into the SAFE Network, and manage access and permissions of SAFE Apps.',
-        status: 'Latest Version v0.14.1'
-      },
-      {
-        id: 'webHostingManager',
-        name: 'Web Hosting Manager',
-        para: 'Add data, create websites, and manage Public Names with the Web Hosting Manager.',
-        status: 'Latest Version v0.5.1'
+        para: 'Browse the The Shared Vault Network. It also includes the Authenticator: enabling you to securely sign into the SAFE Network, and manage access and permissions of SAFE Apps.',
+        status: 'Latest Version v0.15.2'
       }
     ],
     currentMilestone: {

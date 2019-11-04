@@ -3,7 +3,6 @@ import React from 'react'
 import Button from 'components/Button'
 import UnderlinedLink from 'components/UnderlinedLink'
 import TextSnippet from 'components/TextSnippet'
-import Invite from '../Invite'
 import { prefixClassName, openLink } from 'src/utils'
 import BGVideo from 'components/BGVideo'
 
@@ -16,7 +15,7 @@ const baseClassName = 'GetInvolvedDevelop'
 const cn = prefixClassName(baseClassName)
 
 const Develop = props => {
-  const { content, invite } = props
+  const { content } = props
   const { trySafeNet, startDevelop, joinForum, coreNetwork } = content
 
   return (
@@ -45,7 +44,6 @@ const Develop = props => {
             <UnderlinedLink url={coreNetwork.CTA.url}>{coreNetwork.CTA.name}</UnderlinedLink>
           </div>
         </div>
-        <Invite content={invite} />
         <div className={cn('video')}>
           <BGVideo src={waveThin1} webmSrc={waveThin1Web} height={'10px'} />
         </div>
