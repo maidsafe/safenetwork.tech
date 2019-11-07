@@ -40,31 +40,7 @@ export default {
             'Started in 2006 by Scottish engineer David Irvine, MaidSafe are the core developers of the SAFE Network.  It’s a small team comprised of: thinkers, inventors, tinkerers, PHDs, engineers and designers. Although based in Ayr, Scotland, we work remotely with talents from many different cultures and countries, reflecting the users that we serve. Despite this variety, we all share a single mission: providing security and privacy for everyone.',
             '_[Visit Maidsafe.net](https://maidsafe.net)_'
           ]
-        }
-      ]
-    },
-    {
-      title: 'Getting Started',
-      items: [
-        {
-          question: 'What do I need in order to browse the SAFE Network?',
-          answer: [
-            '[Download the SAFE Network App!](https://github.com/maidsafe/safe-network-app/releases)'
-          ]
         },
-        // {
-        //   question: 'Do I need an account to access the network?',
-        //   answer: [
-        //     'While the network is in Alpha then yes, you\'ll need to have an account.  See \'How do I create an account?\' below for a step-by-step guide.'
-        //   ]
-        // },
-        // {
-        //   question: 'How do I create an account?',
-        //   answer: [
-        //     '#### Here’s a step-by-step Guide:',
-        //     '- [Download](https://github.com/maidsafe/safe_browser/releases/) and install the SAFE Browser.\n- [Register an account on the community forum](https://safenetforum.org/), it takes less than a minute. \n- [Gain basic trust level](https://safenetforum.org/t/trust-level-1-basic-user-requirements/15200). — this requires around an hour reading and interacting as a measure to stop the test network being spammed during the development phase.\n- Open the SAFE browser.\n- Click *Create Account* at the bottom of the screen.\n- In the next screen select ‘Claim An Invitation’.\n- Login to the forum within the SAFE Browser, the setup process will prompt you to do this if you have not already done so.\n- Select the The Shared Vault Network.- The installer will now provide you with your invitation code. Please note: it is important that your current and registered IPs match, if they do not, click to update.\n- Copy the invite code at the bottom of the screen and paste this back into the field that asks for an ‘Invitation Token’ in the SAFE Browser.\n- You will now be asked to create an Account Secret and Password. Please make sure you keep these safe as only you will ever have access to your credentials. There is no central record of these credentials anywhere within the system and without them you will not be able to access your data.\n- Congratulations! You are now ready to not just browse the SAFE Network, but upload your own data, create websites and use some of the demo apps being worked on by the community.'
-        //   ]
-        // },
         {
           question: 'How do I get involved with The SAFE Network community?',
           answer: [
@@ -81,6 +57,31 @@ export default {
         }
       ]
     },
+    // {
+    //   title: 'Getting Started',
+    //   items: [
+        // {
+        //   question: 'What do I need in order to browse the SAFE Network?',
+        //   answer: [
+        //     '[Download the SAFE Network App!](https://github.com/maidsafe/safe-network-app/releases)'
+        //   ]
+        // },
+        // {
+        //   question: 'Do I need an account to access the network?',
+        //   answer: [
+        //     'While the network is in Alpha then yes, you\'ll need to have an account.  See \'How do I create an account?\' below for a step-by-step guide.'
+        //   ]
+        // },
+        // {
+        //   question: 'How do I create an account?',
+        //   answer: [
+        //     '#### Here’s a step-by-step Guide:',
+        //     '- [Download](https://github.com/maidsafe/safe_browser/releases/) and install the SAFE Browser.\n- [Register an account on the community forum](https://safenetforum.org/), it takes less than a minute. \n- [Gain basic trust level](https://safenetforum.org/t/trust-level-1-basic-user-requirements/15200). — this requires around an hour reading and interacting as a measure to stop the test network being spammed during the development phase.\n- Open the SAFE browser.\n- Click *Create Account* at the bottom of the screen.\n- In the next screen select ‘Claim An Invitation’.\n- Login to the forum within the SAFE Browser, the setup process will prompt you to do this if you have not already done so.\n- Select the The Shared Vault Network.- The installer will now provide you with your invitation code. Please note: it is important that your current and registered IPs match, if they do not, click to update.\n- Copy the invite code at the bottom of the screen and paste this back into the field that asks for an ‘Invitation Token’ in the SAFE Browser.\n- You will now be asked to create an Account Secret and Password. Please make sure you keep these safe as only you will ever have access to your credentials. There is no central record of these credentials anywhere within the system and without them you will not be able to access your data.\n- Congratulations! You are now ready to not just browse the SAFE Network, but upload your own data, create websites and use some of the demo apps being worked on by the community.'
+        //   ]
+        // },
+        
+    //   ]
+    // },
     {
       title: 'How it works',
       items: [

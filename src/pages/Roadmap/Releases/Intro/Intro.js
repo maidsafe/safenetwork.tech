@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Video from '../../Video'
-import { prefixClassName } from 'src/utils'
+import { prefixClassName, genRandomKey, parseMDText } from 'src/utils'
 
 import './intro.sass'
 
@@ -17,7 +17,7 @@ const Intro = props => {
         <div className="overline">{overline}</div>
         <h2 className={cn('title')}>{title}</h2>
         <div className={cn('para')}>
-          <p>{text}</p>
+          { text.map((para)=> <p key={genRandomKey()} >{parseMDText(para, false)}</p>) }
         </div>
         {
           videoUrl ? (

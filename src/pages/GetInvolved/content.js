@@ -14,8 +14,8 @@ export default {
     startDevelop: {
       title: 'Start Developing on SAFE',
       para: [
-        'The SAFE Network is a platform for creating decentralised apps. It is secure, privacy focussed, has a built-in revenue stream, and next to no infrastructure costs.',
-        'If you want to get started building a SAFE DApp, you’ll find all the tools you need on our DevHub; such as key concepts, APIs and documentation.'
+        'SAFE will change how we’ll interact with the web and our own data. A leap as big as this requires continuous testing and feedback from the people who it is designed for—and that’s where you can help.',
+        'Download the SAFE Browser to browse the Network, or why not join the community and be one of many that provide feedback, contribute to code and essentially, help shape the Network.'
       ],
       CTA: {
         name: 'Visit the DevHub',
@@ -59,59 +59,55 @@ export default {
       title: 'Stay Up-to-date'
     }
   },
-  // invite: {
-  //   title: 'Get Started',
-  //   installBrowser: {
-  //     id: 'installBrowser',
-  //     title: 'Install the SAFE Browser',
-  //     para: 'Grab the latest SAFE Browser to browser the Safe Network.',
-  //     CTA: {
-  //       button: {
-  //         name: 'Download for',
-  //         url: '/'
-  //       },
-  //       link: {
-  //         name: 'More Options',
-  //         url: CONSTANT.downloadApps.browser.others
-  //       }
-  //     }
-  //   },
-  //   feedback: {
-  //     id: 'feedback',
-  //     title: 'Feedback & Contribute',
-  //     para: 'Building the SAFE Network is a team effort. You can help out by making suggestions, reporting bugs, or contributing code.',
-  //     CTA: {
-  //       button: {
-  //         name: 'Join Community',
-  //         url: 'https://safenetforum.org'
-  //       }
-  //     }
-  //   }
-  // },
+  invite: {
+    title: 'Get Started',
+    claimInvite: {
+      id: 'claimInvite',
+      title: 'GET STARTED',
+      para: 'Join the community Download the CLI and get the tools you need to interact with the SAFE Network.',
+      CTA: {
+        button: {
+          name: 'Download CLI',
+          url: 'https://github.com/maidsafe/safe-api#download'
+        },
+        link: {
+          name: 'Learn more',
+          url: 'https://github.com/maidsafe/safe-api'
+        }
+      }
+    },
+    installBrowser: {
+      id: 'installBrowser',
+      title: 'Install the SAFE Browser',
+      para: 'Grab the latest SAFE Browser to start browsing the Network today!”',
+      CTA: {
+        button: {
+          name: 'Download for',
+          url: '/'
+        },
+        link: {
+          name: 'More Options',
+          url: CONSTANT.downloadApps.browser.others
+        }
+      }
+    },
+    feedback: {
+      id: 'feedback',
+      title: 'Feedback & Contribute',
+      para: 'Building the SAFE Network is a team effort. You can help out by making suggestions, reporting bugs, or contributing code.',
+      CTA: {
+        button: {
+          name: 'Join Community',
+          url: 'https://safenetforum.org'
+        }
+      }
+    }
+  },
   faqs: {
    sections: [
     {
       title: 'Getting Started: Frequently Asked Questions',
       items: [
-        {
-          question: 'What do I need in order to browse the SAFE Network?',
-          answer: [
-            `You'll need to download the Safe Network App to get started.`
-          ]
-        },
-        {
-          question: 'Do I need an account to access the network?',
-          answer: [
-            `To browse the network, no account is needed.`
-          ]
-        },
-        // {
-        //   question: 'How do I create an account?',
-        //   answer: [
-        //     'Here’s a step-by-step Guide:',
-        //     `* [Download](https://github.com/maidsafe/safe_browser/releases) and Install the SAFE Browser. \n* [Register on the forum](https://safenetforum.org/), it takes less than a minute. \n* Gain basic trust level—this requires around an hour reading and interacting. This is a measure to stop the test network being spammed during development. \n* Open the SAFE browser. \n* Click ‘Create Account’ at the bottom of the screen. \n* In the next screen select ‘Claim An Invitation’. \n* Login to the forum within the SAFE Browser, the setup process will prompt you to do this if you have not already done so. \n* Select the The Shared Vault Network. \n* The installer will now provide you with your invitation code. Please note: it is important that your current and registered IPs match, if they do not, click to update. \n* Copy the invite code at the bottom of the screen and paste this back into the field that asks for an ‘Invitation Token’ in the SAFE Browser. \n* You will now be asked to create an Account Secret and Password. Please make sure you keep these safe as only you will ever have access to your credentials. There is no central record of these credentials anywhere within the system and without them you will not be able to access your data. \n* Congratulations! You are now ready to not just browse the SAFE Network, but upload your own data, create websites and use some of the demo apps being worked on by the community.`
-        //   ]
-        // },
         {
           question: 'How do I get involved with The SAFE Network community?',
           answer: [
@@ -125,15 +121,7 @@ export default {
             'The [SAFE Network Community](https://safenetforum.org) is the place to head to for all questions on the Network.',
             '_[Visit the Forum](https://safenetforum.org/)_'
           ]
-        },
-        // {
-        //   question: 'Why do I need an invite?',
-        //   answer: [
-        //     'You require an invitation token while the Network is in the alpha development phase as a temporary measure to stop the network being spammed.  There will be no invitation required when the full SAFE Network is live.',
-        //     'To claim an invitation token:',
-        //     '- Log in to the [Forum](https://safenetforum.org/) using your normal browser and gain [basic trust level 1](https://safenetforum.org/t/trust-level-1-basic-user-requirements/15200).\n- Visit [https://invite.maidsafe.net](https://invite.maidsafe.net).\n- Click on the SAFE Network logo\n- Select ‘Alpha 2’\n- Set (or update) your registered IP\n- Copy and paste the invitation token into the Invitation field on the Authenticator _(this step is only required when creating an account to begin with)_'
-        //   ]
-        // },
+        }
       ]
     },
    ],

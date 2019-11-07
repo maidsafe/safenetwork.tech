@@ -27,15 +27,16 @@ export default class Invite extends React.Component {
   }
   componentWillMount() {
     const { content } = this.props
-    const { installBrowser, feedback } = content
+    const { claimInvite, installBrowser, feedback } = content
 
     this.ACCORDIONS = {
+      CLAIM_INVITE: claimInvite.id,
       INSTALL_BROWSER: installBrowser.id,
       FEEDBACK: feedback.id
     }
 
     this.setState({
-      activeAccordion: this.ACCORDIONS.INSTALL_BROWSER
+      activeAccordion: this.ACCORDIONS.CLAIM_INVITE
     })
   }
 
@@ -58,9 +59,6 @@ export default class Invite extends React.Component {
     if (Object.values(this.ACCORDIONS).indexOf(newHash) !== -1) {
       this.setAccordion(newHash)
     }
-    if (this.state.showInviteOpts) {
-      this.toggleInviteModal()
-    }
   }
 
   setAccordion(activeAccordion) {
@@ -78,19 +76,9 @@ export default class Invite extends React.Component {
       return 'sky'
   }
 
-  toggleInviteModal(state = false) {
-    lockBodyScroll(state)
-    if (state) {
-      setLocationHash('')
-    }
-    this.setState({
-      showInviteOpts: state
-    })
-  }
-
   render() {
     const { content } = this.props
-    const { title, installBrowser, feedback, modal } = content
+    const { claimInvite, title, installBrowser, feedback, modal } = content;
     const { activeAccordion } = this.state
 
     const platform = detectPlatform()
@@ -105,6 +93,22 @@ export default class Invite extends React.Component {
       <div className={baseClassName}>
         <div className={cn('wrap')}>
           <Accordion className="underlineLink-bright-onYellow" bgColor={this.setAccordionBg()}>
+            <AccordionItem
+                overline={title}
+                active={activeAccordion === this.ACCORDIONS.CLAIM_INVITE}
+                id={claimInvite.id}
+                title={claimInvite.title}
+                text={claimInvite.para}
+                ctaButton={claimInvite.CTA.button}
+                ctaButtonType="primary"
+                ctaLink= {claimInvite.CTA.link}
+                onClick={() => {
+                  this.setAccordion(this.ACCORDIONS.CLAIM_INVITE)
+                }}
+                onClickPrimaryButton={() => {
+                  openLink(claimInvite.CTA.button.url, true)
+                }}
+            />
             <AccordionItem
               overline={title}
               active={activeAccordion === this.ACCORDIONS.INSTALL_BROWSER}
@@ -138,22 +142,6 @@ export default class Invite extends React.Component {
               }}
             />
           </Accordion>
-          {
-            this.state.showInviteOpts ? (
-              <InviteModal
-                content={modal}
-                onClickClose={() => {
-                  this.toggleInviteModal()
-                }}
-                onInviteRequest={() => {
-                  openLink(`mailto:${CONSTANT.inviteRequest.to}?subject=${encodeURIComponent(CONSTANT.inviteRequest.subject)}&body=${encodeURIComponent(CONSTANT.inviteRequest.body)}`)
-                }}
-                onJoinForum={() => {
-                  openLink(CONSTANT.links.forum, true)
-                }}
-              />
-            ) : null
-          }
         </div>
       </div>
     )
