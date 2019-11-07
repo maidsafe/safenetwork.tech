@@ -20,8 +20,8 @@ export default {
     release1: {
       overline: 'Live Now',
       title: 'Phase 1 Vaults',
-      para:[ 
-        `This Phase 1 Vault release is primarily to showcase the Network features to Consumers (people using the Network to browse, share data, etc.) and Creators (developers or those publishing content).  It allowers users to test out features such as SAFE CLI and SAFE Client Libs, as well as introducing the new data types.`,
+      para:[
+        `This Phase 1 Vault release is primarily to showcase the Network features to Consumers (people using the Network to browse, share data, etc.) and Creators (developers or those publishing content).  It allows users to test out features such as SAFE CLI and SAFE Client Libs, as well as introducing the new data types.`,
         'It’s easy to use. Just download a Vault binary which will run locally on your computer. Details and links can be found on this [Forum post](https://safenetforum.org/t/new-release-vault-phase-1-real-vault/29712)'
       ],
       // accordion: {
@@ -50,12 +50,12 @@ export default {
             desc: 'The ability to log into a decentralised network without the permission or existence of a third party',
             status: 'Complete',
             para: [
-              'MaidSafe invented the technology that lets someone log into a decentralised network securely without requiring the involvement of a third party. The The Shared Vault Network is the only place in the world today that you can see this in action.'
+              'MaidSafe invented the technology that lets someone log into a decentralised network securely without requiring the involvement of a third party. The Shared Vault Network is the only place in the world today that you can see this in action.'
             ],
-            CTA: {
-              name: 'Read More',
-              url: 'https://safenetwork.tech/roadmap/#self-authentication'
-            },
+            // CTA: {
+            //   name: 'Read More',
+            //   url: 'https://safenetwork.tech/roadmap/#self-authentication'
+            // },
           }, {
             feature: 'Self-Encryption',
             desc: 'Data is encrypted on your computer before being stored on the Network: no keys or passwords ever leave your machine',
