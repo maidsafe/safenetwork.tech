@@ -23,19 +23,15 @@ export default {
   },
   downloadApps: {
     browser: {
-      mac: 'https://github.com/maidsafe/safe_browser/releases/download/v0.14.1/safe-browser-v0.14.1-osx-x64.zip',
-      windows: 'https://github.com/maidsafe/safe_browser/releases/download/v0.14.1/safe-browser-v0.14.1-win-x64.zip',
-      linux: 'https://github.com/maidsafe/safe_browser/releases/download/v0.14.1/safe-browser-v0.14.1-linux-x64.zip',
+      mac: 'https://github.com/maidsafe/safe_browser/releases/download/v0.15.2/safe-browser-v0.15.2-mac-x64.dmg',
+      windows: 'https://github.com/maidsafe/safe_browser/releases/download/v0.15.2/safe-browser-v0.15.2-win-x64.exe',
+      linux: 'https://github.com/maidsafe/safe_browser/releases/download/v0.15.2/safe-browser-v0.15.2-linux-x64.AppImage',
       android: 'https://github.com/maidsafe/safe_browser/releases/latest',
       ios: 'https://github.com/maidsafe/safe_browser/releases/latest',
       others: 'https://github.com/maidsafe/safe_browser/releases/latest',
     }
   },
-  inviteRequest: {
-    to: 'invite@maidsafe.net',
-    subject: 'Alpha network: Invite token',
-    body: `This is an email to request an invite to the SAFE Network alpha network.\n\nIn order to prevent spamming can you please answer the following two questions:\n\n\nWhere did you hear about the SAFE Network?\n(e.g. cryptocurrency forum, blockchain news, other)\n\n\nWhat is your main interest in the SAFE Network?\n(e.g. DApp development, crypto-trading, online-privacy, other)`
-  },
+
   links: {
     forum: 'https://safenetforum.org'
   },

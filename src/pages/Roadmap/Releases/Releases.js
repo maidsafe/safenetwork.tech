@@ -24,14 +24,6 @@ const Releases = props => {
           videoUrl={release1.videoUrl}
           videoCaption={release1.videoCaption}
         />
-        <AccordionStatus />
-        <Accordion header={release1.accordion.header}>
-          {
-            release1.accordion.items.map(accord => (
-              <AccordionItem key={genRandomKey()} content={accord} />
-            ))
-          }
-        </Accordion>
         <Intro
           overline={release2.overline}
           title={release2.title}

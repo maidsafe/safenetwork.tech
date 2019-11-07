@@ -19,11 +19,28 @@ export default {
   releases: {
     release1: {
       overline: 'Live Now',
-      title: 'The Alpha 2 Network',
-      para: 'The Alpha 2 Network lets you experiment with the first released SAFE Network features. This is a test Network in order to prove functionality so there is a limit on the amount of data that you can upload. At this stage, all data on the Alpha 2 Network is temporary in the sense that it will not be carried forward to future test networks.',
+      title: 'Phase 1 Vaults',
+      para:[
+        `This Phase 1 Vault release is primarily to showcase the Network features to Consumers (people using the Network to browse, share data, etc.) and Creators (developers or those publishing content).  It allows users to test out features such as SAFE CLI and SAFE Client Libs, as well as introducing the new data types.`,
+        'It’s easy to use. Just download a Vault binary which will run locally on your computer. Details and links can be found on this [Forum post](https://safenetforum.org/t/new-release-vault-phase-1-real-vault/29712)'
+      ],
+      // accordion: {
+      //   header: [
+      //     'The Share Vault Network Feature',
+      //     'Description',
+      //     'Status'
+      //   ],
+      //   items: [
+      //   ]
+      // }
+    },
+    release2: {
+      overline: 'Upcoming Milestone',
+      title: 'SAFE Fleming Network',
+      para: ['The next major milestone for the SAFE Network. Whilst the The Shared Vault Network will continue to function, this will be a standalone Network that will enable individuals to run Vaults - decentralised storage from home computers. The release of Fleming will be notable for many reasons, not least the fact that with data storage, the Network will now also contain Test Safecoin.'],
       accordion: {
         header: [
-          'Alpha 2 Feature',
+          'Fleming Feature',
           'Description',
           'Status'
         ],
@@ -33,8 +50,12 @@ export default {
             desc: 'The ability to log into a decentralised network without the permission or existence of a third party',
             status: 'Complete',
             para: [
-              'MaidSafe invented the technology that lets someone log into a decentralised network securely without requiring the involvement of a third party. The Alpha 2 Network is the only place in the world today that you can see this in action.'
+              'MaidSafe invented the technology that lets someone log into a decentralised network securely without requiring the involvement of a third party. The Shared Vault Network is the only place in the world today that you can see this in action.'
             ],
+            // CTA: {
+            //   name: 'Read More',
+            //   url: 'https://safenetwork.tech/roadmap/#self-authentication'
+            // },
           }, {
             feature: 'Self-Encryption',
             desc: 'Data is encrypted on your computer before being stored on the Network: no keys or passwords ever leave your machine',
@@ -65,20 +86,6 @@ export default {
               'Ensures that a message can be sent between nodes in different Disjoint Sections. In this early iteration, each message contains signatures of the members of the Disjoint Sections but does not yet verify the signatures themselves.'
             ],
           },
-        ]
-      }
-    },
-    release2: {
-      overline: 'Upcoming Milestone',
-      title: 'SAFE Fleming Network',
-      para: 'The next major milestone for the SAFE Network. Whilst the Alpha 2 Network will continue to function, this will be a standalone Network that will enable individuals to run Vaults - decentralised storage from home computers. The release of Fleming will be notable for many reasons, not least the fact that with data storage, the Network will now also contain Test Safecoin.',
-      accordion: {
-        header: [
-          'Fleming Feature',
-          'Description',
-          'Status'
-        ],
-        items: [
           {
             feature: 'PARSEC',
             desc: 'Asynchronous consensus algorithm',
@@ -192,7 +199,7 @@ export default {
     release3: {
       overline: 'Next Up',
       title: 'SAFE Maxwell Network',
-      para: 'The release of SAFE Maxwell builds on top of Fleming and enables the network to upgrade, improves security and sets the ground work for switching test SAFE Coin to real SAFEcoin.',
+      para: ['The release of SAFE Maxwell builds on top of Fleming and enables the network to upgrade, improves security and sets the ground work for switching test SAFE Coin to real SAFEcoin.'],
       accordion: {
         header: [
           'Maxwell Feature',
@@ -234,7 +241,7 @@ export default {
     release4: {
       overline: 'Coming Soon',
       title: 'Upcoming Network Features',
-      para: 'The following list represents network work that remains to be completed. The order should not be seen as fixed in any way as in certain cases, work will be carried out in parallel by different teams.',
+      para: ['The following list represents network work that remains to be completed. The order should not be seen as fixed in any way as in certain cases, work will be carried out in parallel by different teams.'],
       accordion: {
         header: [
           'Feature',
@@ -299,14 +306,8 @@ export default {
       {
         id: 'safeBrowser',
         name: 'SAFE Browser',
-        para: 'Browse the Alpha 2 network. It also includes the Authenticator: enabling you to securely sign into the SAFE Network, and manage access and permissions of SAFE Apps.',
-        status: 'Latest Version v0.14.1'
-      },
-      {
-        id: 'webHostingManager',
-        name: 'Web Hosting Manager',
-        para: 'Add data, create websites, and manage Public Names with the Web Hosting Manager.',
-        status: 'Latest Version v0.5.1'
+        para: 'The latest release includes some of the beginnings of the Perpetual Web, as well as the Authenticator: enabling you to securely sign in to the SAFE Network, and manage access and permissions of SAFE Apps.',
+        status: 'Latest Version v0.15.2'
       }
     ],
     currentMilestone: {
