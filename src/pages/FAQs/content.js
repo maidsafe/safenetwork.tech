@@ -1,4 +1,4 @@
-export default {
+  export default {
   title: 'Frequently Asked Questions',
   sections: [
     {
@@ -41,6 +41,12 @@ export default {
             '_[Visit Maidsafe.net](https://maidsafe.net)_'
           ]
         },
+        {
+            question: 'What do I need in order to browse the SAFE Network?',
+            answer: [
+              '[Download the SAFE Network App!](https://github.com/maidsafe/safe-network-app/releases)'
+            ]
+          },
         {
           question: 'How do I get involved with The SAFE Network community?',
           answer: [

@@ -61,19 +61,19 @@ export default {
   },
   invite: {
     title: 'Get Started',
-    claimInvite: {
-      id: 'claimInvite',
-      title: 'GET STARTED',
-      para: 'Join the community Download the CLI and get the tools you need to interact with the SAFE Network.',
+    joinCommunity: {
+      id: 'joinCommunity',
+      title: 'Join the community',
+      para: 'Join the community and meet minded individuals dedicated to making the digital world a safer, more private place.',
       CTA: {
         button: {
-          name: 'Download CLI',
-          url: 'https://github.com/maidsafe/safe-api#download'
+          name: 'Forum',
+          url: 'http://safenetforum.org'
         },
-        link: {
-          name: 'Learn more',
-          url: 'https://github.com/maidsafe/safe-api'
-        }
+        // link: {
+        //   name: 'Learn more',
+        //   url: 'https://github.com/maidsafe/safe-api'
+        // }
       }
     },
     installBrowser: {
