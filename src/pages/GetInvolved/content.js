@@ -8,7 +8,7 @@ export default {
       title: 'Try the SAFE Network',
       para: [
         'SAFE will change how we’ll interact with the web and our own data. A leap as big as this requires continuous testing and feedback from the people who it is designed for—and that’s where you can help.',
-        'The network is currently in Alpha testing, meaning that it lacks some features, and will contain bugs that could make the network unstable. By running these earlier versions and providing feedback you’ll be helping to shape the new Internet.'
+        'Download the SAFE Browser to browse the Network, or why not join the community and be one of many that provide feedback, contribute to code and essentially, help shape the Network.'
       ]
     },
     startDevelop: {
