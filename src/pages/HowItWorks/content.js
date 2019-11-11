@@ -74,7 +74,7 @@ export default {
       aside: {
         position: 3,
         title: 'When will it be finished?',
-        para: 'We’re at the dawn of a new Web, and the final pieces of the SAFE Network are being put in place',
+        para: 'We’re at the dawn of a new Web, and the final pieces of the SAFE Network are being put in place.',
         CTA: {
           name: 'See the Roadmap',
           url: '/roadmap/'

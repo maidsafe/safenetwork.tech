@@ -15,6 +15,8 @@
     align-self: start
     padding-top: $pad-jumbo
     padding-bottom: $pad-chunky
+    .cta
+      margin-top: 40px
   &__joinForum
     grid-column: 7/ span 3
     grid-row: 2
@@ -26,8 +28,8 @@
     padding-bottom: $pad-super-jumbo
   &__coreNetwork,
   &__joinForum
-    .textSnippet__para p
-      margin-bottom: $margin-thin
+    .cta
+      margin-top: 32px
   &__video
     grid-column: 6/ span 5
     grid-row: 3
@@ -105,6 +107,10 @@
     &__video
       grid-column: 3/span 4
       grid-row: 5
+    &__coreNetwork,
+    &__joinForum
+      .cta
+        margin-top: 24px
 
 // XXSmall
 +render-to($media-xxs)

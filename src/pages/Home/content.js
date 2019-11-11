@@ -5,7 +5,7 @@ export default {
     aside: {
       para: 'Using spare bandwidth and unused disk space on home computers and phones, we’re taking the web off corporate servers, out of government control, and back into the hands of people.',
       CTA: {
-        name: 'See How it Works',
+        name: 'See how it works',
         url: '/how-it-works/'
       }
     },
@@ -124,7 +124,7 @@ export default {
     aside4: {
       title: 'Contribute Resources, Get Paid.',
       para: [
-        'By running a Vault, you can offer the network your unused resources—like hard drive space and bandwidth—and be automatically be rewarded with Safecoin.',
+        'By running a Vault, you can offer the network your unused resources—like hard drive space and bandwidth—and automatically be rewarded with Safecoin.',
       ]
     },
   }
