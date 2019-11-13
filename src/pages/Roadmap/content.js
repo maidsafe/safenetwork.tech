@@ -6,9 +6,9 @@ export default {
       overline: 'Latest Update',
       date: '29 August 2019',
       title: 'Vault Phase 1',
-      para: `The final piece of the puzzle is complete and we now have the SAFE CLI, SAFE Client Libs, vault and SAFE Browser.`,
+      para: `The final piece of the puzzle is complete and we now have the SAFE CLI, SAFE Client Libs, SAFE Vault and SAFE Browser.`,
        CTA: {
-         name: 'SafeNetwork Forum',
+         name: 'SAFE Network Forum',
          url: 'https://safenetforum.org/t/new-release-vault-phase-1-real-vault/29712'
        }
     }
@@ -22,7 +22,7 @@ export default {
       title: 'Phase 1 Vaults',
       para:[
         `This Phase 1 Vault release is primarily to showcase the Network features to Consumers (people using the Network to browse, share data, etc.) and Creators (developers or those publishing content).  It allows users to test out features such as SAFE CLI and SAFE Client Libs, as well as introducing the new data types.`,
-        'It’s easy to use. Just download a Vault binary which will run locally on your computer. Details and links can be found on this [Forum post](https://safenetforum.org/t/new-release-vault-phase-1-real-vault/29712)'
+        'It’s easy to use. Just download a Vault binary which will run locally on your computer. Details and links can be found in [this forum post](https://safenetforum.org/t/new-release-vault-phase-1-real-vault/29712).'
       ],
       // accordion: {
       //   header: [
@@ -37,7 +37,7 @@ export default {
     release2: {
       overline: 'Upcoming Milestone',
       title: 'SAFE Fleming Network',
-      para: ['The next major milestone for the SAFE Network. Whilst the The Shared Vault Network will continue to function, this will be a standalone Network that will enable individuals to run Vaults - decentralised storage from home computers. The release of Fleming will be notable for many reasons, not least the fact that with data storage, the Network will now also contain Test Safecoin.'],
+      para: ['The next major milestone for the SAFE Network. Whilst the Shared Vault Network will continue to function, this will be a standalone Network that will enable individuals to run Vaults - decentralised storage from home computers. The release of Fleming will be notable for many reasons, not least the fact that with data storage, the Network will now also contain Test Safecoin.'],
       accordion: {
         header: [
           'Fleming Feature',

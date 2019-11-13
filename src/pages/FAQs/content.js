@@ -37,18 +37,18 @@
         {
           question: 'Who are MaidSafe?',
           answer: [
-            'Started in 2006 by Scottish engineer David Irvine, MaidSafe are the core developers of the SAFE Network.  It’s a small team comprised of: thinkers, inventors, tinkerers, PHDs, engineers and designers. Although based in Ayr, Scotland, we work remotely with talents from many different cultures and countries, reflecting the users that we serve. Despite this variety, we all share a single mission: providing security and privacy for everyone.',
+            'Started in 2006 by Scottish engineer David Irvine, MaidSafe are the core developers of the SAFE Network.  It’s a small team comprised of: thinkers, inventors, tinkerers, PhDs, engineers and designers. Although based in Ayr, Scotland, we work remotely with talents from many different cultures and countries, reflecting the users that we serve. Despite this variety, we all share a single mission: providing security and privacy for everyone.',
             '_[Visit Maidsafe.net](https://maidsafe.net)_'
           ]
         },
         {
             question: 'What do I need in order to browse the SAFE Network?',
             answer: [
-              '[Download the SAFE Network App!](https://github.com/maidsafe/safe-network-app/releases)'
+              '[Download the SAFE Network App!](https://github.com/maidsafe/safe-network-app/releases/latest)'
             ]
           },
         {
-          question: 'How do I get involved with The SAFE Network community?',
+          question: 'How do I get involved with the SAFE Network community?',
           answer: [
             'The Community is most active on the [SAFE Network Forum](https://safenetforum.org/) and we’d suggest starting in the [beginners section](https://safenetforum.org/c/beginners).',
             '*[Visit the Forum](https://safenetforum.org/)*'
@@ -57,7 +57,7 @@
         {
           question: 'How do I get help?',
           answer: [
-            'The [SAFE Network Community](https://safenetforum.org) is the place to head to for all questions on the Network.',
+            'The [SAFE Network Forum](https://safenetforum.org) is the place to head to for all questions on the Network.',
             '_[Visit the Forum](https://safenetforum.org/)_'
           ]
         }
@@ -82,7 +82,7 @@
         //   question: 'How do I create an account?',
         //   answer: [
         //     '#### Here’s a step-by-step Guide:',
-        //     '- [Download](https://github.com/maidsafe/safe_browser/releases/) and install the SAFE Browser.\n- [Register an account on the community forum](https://safenetforum.org/), it takes less than a minute. \n- [Gain basic trust level](https://safenetforum.org/t/trust-level-1-basic-user-requirements/15200). — this requires around an hour reading and interacting as a measure to stop the test network being spammed during the development phase.\n- Open the SAFE browser.\n- Click *Create Account* at the bottom of the screen.\n- In the next screen select ‘Claim An Invitation’.\n- Login to the forum within the SAFE Browser, the setup process will prompt you to do this if you have not already done so.\n- Select the The Shared Vault Network.- The installer will now provide you with your invitation code. Please note: it is important that your current and registered IPs match, if they do not, click to update.\n- Copy the invite code at the bottom of the screen and paste this back into the field that asks for an ‘Invitation Token’ in the SAFE Browser.\n- You will now be asked to create an Account Secret and Password. Please make sure you keep these safe as only you will ever have access to your credentials. There is no central record of these credentials anywhere within the system and without them you will not be able to access your data.\n- Congratulations! You are now ready to not just browse the SAFE Network, but upload your own data, create websites and use some of the demo apps being worked on by the community.'
+        //     '- [Download](https://github.com/maidsafe/safe_browser/releases/) and install the SAFE Browser.\n- [Register an account on the community forum](https://safenetforum.org/), it takes less than a minute. \n- [Gain basic trust level](https://safenetforum.org/t/trust-level-1-basic-user-requirements/15200). — this requires around an hour reading and interacting as a measure to stop the test network being spammed during the development phase.\n- Open the SAFE browser.\n- Click *Create Account* at the bottom of the screen.\n- In the next screen select ‘Claim An Invitation’.\n- Login to the forum within the SAFE Browser, the setup process will prompt you to do this if you have not already done so.\n- Select the Shared Vault Network.- The installer will now provide you with your invitation code. Please note: it is important that your current and registered IPs match, if they do not, click to update.\n- Copy the invite code at the bottom of the screen and paste this back into the field that asks for an ‘Invitation Token’ in the SAFE Browser.\n- You will now be asked to create an Account Secret and Password. Please make sure you keep these safe as only you will ever have access to your credentials. There is no central record of these credentials anywhere within the system and without them you will not be able to access your data.\n- Congratulations! You are now ready to not just browse the SAFE Network, but upload your own data, create websites and use some of the demo apps being worked on by the community.'
         //   ]
         // },
         
@@ -97,7 +97,7 @@
             'The SAFE Network is made up of nodes called Vaults. A Vault is a program that runs on a device which connects the machine to the Network. Collectively, Vaults manage the storage of all data on the Network by managing the movement of chunks of encrypted user data that are stored across the Network. No Farmer (user) can ever decrypt a chunk of data that his or her Vault receives and, in return for providing the storage capacity to the Network, is rewarded with Safecoin.',
             'Vaults ensure that the events occurring on the Network are valid. They are clustered into small groups, each with responsibility for looking after the data stored within a Section (a certain range of addresses).',
             'These groups of nodes form, merge and split without any human oversight as the SAFE Network itself has complete control of the process. In the same way, the encrypted data chunks move around the Network in a fully autonomous way. No central servers or agents (like BitTorrent trackers) are required by the Network. No central authority oversees the proceedings.',
-            'Just as children are not allowed to vote in elections, a Vault is not allowed to vote on Network events (such as a new member joining or the storage of a data chunk) until it has proven itself to be reliable. Initially, a Vault has to successfully complete a [Proof of Resource](https://www.youtube.com/watch?v=rdczpOlLaVk) request to join the Network , proving that it can provide a certain amount of bandwidth and CPU capacity. It is then assigned to a Section and given a low Node Age. This is a measure of its trustworthiness. After that initial connection, the Network will autonomously move (churn) that Vault at random from Section to Section, giving it the opportunity to build its reputation (Node Age). Once its Node Age reaches a certain value, it can be an active participant in group decisions. A Vault with the greatest Node Age in a Section is known as an Elder. As a result, because new Vaults must prove their worth in various random Sections before they can vote, targeting a particular Section on the SAFE Network by an attacker is close to impossible.',
+            'Just as children are not allowed to vote in elections, a Vault is not allowed to vote on Network events (such as a new member joining or the storage of a data chunk) until it has proven itself to be reliable. Initially, a Vault has to successfully complete a [Proof of Resource](https://www.youtube.com/watch?v=rdczpOlLaVk) request to join the Network, proving that it can provide a certain amount of bandwidth and CPU capacity. It is then assigned to a Section and given a low Node Age. This is a measure of its trustworthiness. After that initial connection, the Network will autonomously move (churn) that Vault at random from Section to Section, giving it the opportunity to build its reputation (Node Age). Once its Node Age reaches a certain value, it can be an active participant in group decisions. A Vault with the greatest Node Age in a Section is known as an Elder. As a result, because new Vaults must prove their worth in various random Sections before they can vote, targeting a particular Section on the SAFE Network by an attacker is close to impossible.',
             'Vaults also cryptographically check messages and take on more defined roles, called personas. Each Vault will have a Client Manager persona. This keeps a record of the account details for each Client (user) within its Section. For example, this will confirm how much data has been uploaded to the Network, how much is being stored and the balance of Safecoin remaining to fund further uploads. Whilst a Client Manager will know the account balance, it has no way of linking this to an identity (i.e. an IP address, username or public identity).',
             'Each Vault also has a Data Manager persona. This manages where encrypted chunks of other users’ data is held and has responsibility for the chunks in its Section.'
           ]
@@ -263,7 +263,7 @@
           answer: [
             'Safecoin is given as an incentive to users for providing their resource to the network. This resource is their: storage space, CPU, bandwidth and online time that enable the encrypted chunks of network data to be stored and retrieved from their computer.',
             'The process of providing resource and receiving Safecoin in return is called ‘Farming’.',
-            'Each piece of encrypted network data is stored in a Farmer\'s ‘Vault’, a data storage and management location on the Farmer\'s computer which they cannot read, or access. The SAFE network is designed to self-manage these resources.'
+            'Each piece of encrypted network data is stored in a Farmer\'s ‘Vault’, a data storage and management location on the Farmer\'s computer which they cannot read, or access. The SAFE Network is designed to self-manage these resources.'
           ]
         },
         {
@@ -298,20 +298,20 @@
         {
           question: 'As a developer how do I get involved?',
           answer: [
-            'On top of our informative and helpful [Developer Forum](https://forum.safedev.org/) The SAFE Network has a dedicated [developer hub](https://hub.safedev.org/) that is the hub for all development information and resource.',
-            '[Visit the Dev Hub](https://hub.safedev.org/)'
+            'On top of our informative and helpful [Dev Forum](https://forum.safedev.org/), the SAFE Network has a dedicated [developer hub](https://hub.safedev.org/) that is the hub for all development resources.',
+            '[Visit the DevHub](https://hub.safedev.org/)'
           ]
         },
         {
-          question: 'Why is the SAFE Network open&#8209;source?',
+          question: 'Why is the SAFE Network open source?',
           answer: [
             'Because the SAFE Network has the potential to become a vital part of the lives of every connected person on the planet, MaidSafe are 100% committed to ensuring that all software is released under an open source licence. This encourages innovation and helps prevent any single person, company or organisation gaining control over the technology.'
           ]
         },
         {
-          question: 'What Open Source licenses do the SAFE Network use?',
+          question: 'What open source licenses does the SAFE Network use?',
           answer: [
-            'All SAFE Network and MaidSafe code is made available under [GPLv3](https://www.gnu.org/licenses/gpl.html) ,[BSD](http://www.linfo.org/bsdlicense.html) or [MIT](https://opensource.org/licenses/MIT) license.'
+            'All SAFE Network and MaidSafe code is made available under [GPLv3](https://www.gnu.org/licenses/gpl.html), [BSD](http://www.linfo.org/bsdlicense.html) or [MIT](https://opensource.org/licenses/MIT) license.'
           ]
         }
       ]

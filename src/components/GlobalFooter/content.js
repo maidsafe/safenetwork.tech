@@ -48,7 +48,7 @@ export default {
         'url': 'https://safenetforum.org/'
       },
       {
-        'name': 'Developers Forum',
+        'name': 'Developer Forum',
         'url': 'https://forum.safedev.org/'
       }
     ]
@@ -82,7 +82,7 @@ export default {
         'url': 'https://hub.safedev.org/'
       },
       {
-        'name': 'Github',
+        'name': 'GitHub',
         'url': 'https://github.com/maidsafe/'
       }
     ]
@@ -142,7 +142,7 @@ export default {
       },
       {
         'style': 'riot',
-        'name': 'Riot.io',
+        'name': 'Riot.im',
         'url': 'https://riot.im/app/#/room/#safenetwork:matrix.org'
       },
       {

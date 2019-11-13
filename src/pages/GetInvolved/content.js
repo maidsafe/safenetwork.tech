@@ -79,7 +79,7 @@ export default {
     installBrowser: {
       id: 'installBrowser',
       title: 'Install the SAFE Browser',
-      para: 'Grab the latest SAFE Browser to start browsing the Network today!”',
+      para: 'Grab the latest SAFE Browser to start browsing the Network today!',
       CTA: {
         button: {
           name: 'Download for',
@@ -109,7 +109,7 @@ export default {
       title: 'Getting Started: Frequently Asked Questions',
       items: [
         {
-          question: 'How do I get involved with The SAFE Network community?',
+          question: 'How do I get involved with the SAFE Network community?',
           answer: [
             'The Community is most active on the [SAFE Network Forum](https://safenetforum.org/) and we’d suggest starting in the [beginners section](https://safenetforum.org/c/beginners )',
             '_[Visit the Forum](https://safenetforum.org/)_'
@@ -118,7 +118,7 @@ export default {
         {
           question: 'How do I get help?',
           answer: [
-            'The [SAFE Network Community](https://safenetforum.org) is the place to head to for all questions on the Network.',
+            'The [SAFE Network Forum](https://safenetforum.org) is the place to head to for all questions on the Network.',
             '_[Visit the Forum](https://safenetforum.org/)_'
           ]
         }
