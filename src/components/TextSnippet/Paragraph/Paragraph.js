@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 
-import { genRandomKey, parseMDText } from 'src/utils'
+import { genRandomKey, parseMDText } from 'utils'
 
 const Paragraph = props => {
   const { text, textSize } = props

@@ -1,4 +1,3 @@
-import 'babel-polyfill';
 import blc from 'broken-link-checker';
 import should from 'should';
 //
@@ -8,11 +7,9 @@ const scanForBrokenLinks = (serveUrl) => {
   const scanResult = [];
   const options = {
     excludedKeywords: [
-      'https://www.cryptopia.co.nz/',
       'https://t.me/safenetwork',
-      'https://www.ico.org.uk/',
-      'https://hitbtc.com/',
-      'https://international.bittrex.com/',
+      'https://youtu.be',
+      'https://www.youtube.com'
     ],
   };
   return new Promise((resolve, rejects) => {

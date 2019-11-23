@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 
-import { prefixClassName, genRandomKey, parseMDText } from 'src/utils'
+import { prefixClassName, genRandomKey, parseMDText } from 'utils'
 
 import './topic.sass'
 

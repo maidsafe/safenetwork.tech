@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import PageBanner from 'components/PageBanner'
 import TextSnippet from 'components/TextSnippet'
 import UnderlinedLink from 'components/UnderlinedLink'
-import { prefixClassName, parseMDText } from 'src/utils'
+import { prefixClassName, parseMDText } from 'utils'
 
 import './banner.sass'
 

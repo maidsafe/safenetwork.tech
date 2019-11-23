@@ -3,7 +3,7 @@ import React from 'react'
 
 import SubscribeForm from 'components/SubscribeForm'
 import content from './content'
-import { prefixClassName } from 'src/utils'
+import { prefixClassName } from 'utils'
 
 import './subscribe.sass'
 

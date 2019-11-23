@@ -3,7 +3,7 @@ import classNames from 'classnames'
 
 import MainNav from './MainNav'
 import SiteLogo from './SiteLogo'
-import { isHowItWorksPage } from 'src/utils'
+import { isHowItWorksPage } from 'utils'
 
 import content from './content'
 import './globalHeader.sass'

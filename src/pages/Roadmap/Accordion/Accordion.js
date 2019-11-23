@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { prefixClassName, genRandomKey } from 'src/utils'
+import { prefixClassName, genRandomKey } from 'utils'
 
 import './accordion.sass'
 

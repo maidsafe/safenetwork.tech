@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 
-import { prefixClassName, genRandomKey } from 'src/utils'
+import { prefixClassName, genRandomKey } from 'utils'
 
 import './accordionStatus.sass'
 

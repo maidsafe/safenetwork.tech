@@ -3,7 +3,7 @@ import React from 'react'
 import InterviewRequest from '../InterviewRequest'
 import MediaSnippet from '../MediaSnippet'
 
-import { genRandomKey } from 'src/utils'
+import { genRandomKey } from 'utils'
 
 import './medias.sass'
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 import Button from 'components/Button'
 
-import { openLink } from 'src/utils'
+import { openLink } from 'utils'
 
 import './logoDownload.sass'
 

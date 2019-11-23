@@ -3,7 +3,7 @@ import React from 'react'
 import Banner from './Banner'
 import Topic from './Topic'
 import content from './content'
-import { prefixClassName, genRandomKey } from 'src/utils'
+import { prefixClassName, genRandomKey } from 'utils'
 
 import './howItWorks.sass'
 

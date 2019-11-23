@@ -2,9 +2,9 @@ import React from 'react'
 
 import DownloadContainer from '../DownloadContainer'
 import LogoDownloads from '../LogoDownload'
-import CCLogo from 'images/downloads/cc.svg'
+import CCLogo from 'assets/images/downloads/cc.svg'
 
-import { genRandomKey, parseMDText } from 'src/utils'
+import { genRandomKey, parseMDText } from 'utils'
 
 import './logosDownload.sass'
 

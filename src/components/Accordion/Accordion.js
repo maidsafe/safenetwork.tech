@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 
-import { prefixClassName, spinalCase } from 'src/utils'
+import { prefixClassName, spinalCase } from 'utils'
 
 import './accordion.sass'
 

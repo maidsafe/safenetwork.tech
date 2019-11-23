@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 
-import { parseMDText, spinalCase, setLocationHash } from 'src/utils'
+import { parseMDText, spinalCase, setLocationHash } from 'utils'
 
 import './qaItem.sass'
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 import FooterContainer from '../FooterContainer'
 import Subscribe from 'components/Subscribe'
-import CONST from 'src/constant'
+import CONST from 'constant'
 
 const FooterSubscribeContainer = props => {
   const { data, id } = props

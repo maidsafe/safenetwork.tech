@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'react-static'
+import { Link } from 'react-router-dom'
 import classNames from 'classnames'
 
-import siteLogo from 'images/common/site_logo.svg'
+import siteLogo from 'assets/images/common/site_logo.svg'
 
 import './siteLogo.sass'
 

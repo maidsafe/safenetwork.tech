@@ -2,10 +2,10 @@ import React from 'react'
 
 import PageBanner from 'components/PageBanner'
 import BGVideo from 'components/BGVideo'
-import { prefixClassName } from 'src/utils'
+import { prefixClassName } from 'utils'
 
-import sparkThin1 from 'src/assets/videos/spark_1_thin.mp4'
-import sparkThin1Web from 'src/assets/videos/spark_1_thin.webm'
+import sparkThin1 from 'assets/videos/spark_1_thin.mp4'
+import sparkThin1Web from 'assets/videos/spark_1_thin.webm'
 
 import './banner.sass'
 

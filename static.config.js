@@ -1,8 +1,4 @@
-import path from 'path'
-//
 import React from 'react'
-import ExtractTextPlugin from 'extract-text-webpack-plugin'
-import CompressionPlugin from 'compression-webpack-plugin'
 
 const pageDirPath = 'src/pages'
 
@@ -14,120 +10,55 @@ export default {
     return [
       {
         path: '/',
-        component: `${pageDirPath}/Home`,
+        template: `${pageDirPath}/Home`,
       },
       {
         path: '/how-it-works/',
-        component: `${pageDirPath}/HowItWorks`,
+        template: `${pageDirPath}/HowItWorks`,
       },
       {
         path: '/faq/',
-        component: `${pageDirPath}/FAQs`,
+        template: `${pageDirPath}/FAQs`,
       },
       {
         path: '/safecoin/',
-        component: `${pageDirPath}/SafeCoin`,
+        template: `${pageDirPath}/SafeCoin`,
       },
       {
         path: '/get-involved/',
-        component: `${pageDirPath}/GetInvolved`,
+        template: `${pageDirPath}/GetInvolved`,
       },
       {
         path: '/roadmap/',
-        component: `${pageDirPath}/Roadmap`,
+        template: `${pageDirPath}/Roadmap`,
       },
       {
         path: '/press-kit/',
-        component: `${pageDirPath}/PressKit`,
+        template: `${pageDirPath}/PressKit`,
       },
       {
         path: '/cookies/',
-        component: `${pageDirPath}/Cookies`,
+        template: `${pageDirPath}/Cookies`,
       },
       {
         path: '/privacy/',
-        component: `${pageDirPath}/Privacy`,
+        template: `${pageDirPath}/Privacy`,
       },
       {
         path: '/about-maidsafe/',
-        component: `${pageDirPath}/About`,
+        template: `${pageDirPath}/About`,
       },
       {
         path: '/fundamentals/',
-        component: `${pageDirPath}/Fundamentals`
+        template: `${pageDirPath}/Fundamentals`,
       },
       {
-        is404: true,
-        component: `${pageDirPath}/NotFound`,
+        path: '404',
+        template: `${pageDirPath}/NotFound`,
       },
     ]
   },
-  webpack: (config, { defaultLoaders, stage }) => {
-    let loaders = []
-
-    if (stage === 'dev') {
-      loaders = [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }]
-    } else {
-      loaders = [
-        {
-          loader: 'css-loader',
-          options: {
-            importLoaders: 1,
-            minimize: stage === 'prod',
-            sourceMap: false,
-          },
-        },
-        {
-          loader: 'sass-loader',
-          options: { includePaths: ['src/'] },
-        },
-      ]
-
-      // Don't extract css to file during node build process
-      if (stage !== 'node') {
-        loaders = ExtractTextPlugin.extract({
-          fallback: {
-            loader: 'style-loader',
-            options: {
-              sourceMap: false,
-              hmr: false,
-            },
-          },
-          use: loaders,
-        })
-      }
-    }
-
-    config.module.rules = [
-      {
-        oneOf: [
-          {
-            test: /\.s(a|c)ss$/,
-            use: loaders,
-          },
-          defaultLoaders.cssLoader,
-          defaultLoaders.jsLoader,
-          defaultLoaders.fileLoader,
-        ],
-      },
-    ]
-
-    config.plugins.push(new CompressionPlugin({
-      algorithm: 'gzip'
-    }))
-    //
-    config.resolve = {
-      ...config.resolve,
-      alias: {
-        styles: path.resolve(__dirname, 'src/styles'),
-        images: path.resolve(__dirname, 'src/assets/images'),
-        fonts: path.resolve(__dirname, 'src/assets/fonts'),
-        components: path.resolve(__dirname, 'src/components'),
-        src: path.resolve(__dirname, 'src')
-      }
-    }
-    return config
-  },
+  plugins: ['react-static-plugin-react-router', 'react-static-plugin-sass', 'ie11-polyfills-plugin'],
   Document: ({ Html, Head, Body, children, siteData, renderMeta }) => (
     <Html lang="en-US">
       <Head>
@@ -146,4 +77,5 @@ export default {
       <Body className="no-js">{children}</Body>
     </Html>
   ),
+  babelExcludes: [/core-js/]
 }

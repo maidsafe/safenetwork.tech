@@ -1,7 +1,7 @@
 import React from 'react'
 
 import NavItem from '../NavItem'
-import { genRandomKey } from 'src/utils'
+import { genRandomKey } from 'utils'
 
 import './mainNav.sass'
 

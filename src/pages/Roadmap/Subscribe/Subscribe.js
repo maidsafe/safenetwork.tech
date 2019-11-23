@@ -1,8 +1,8 @@
 import React from 'react'
 
 import SubscribeForm from 'components/SubscribeForm'
-import { prefixClassName, parseMDText } from 'src/utils'
-import CONST from 'src/constant'
+import { prefixClassName, parseMDText } from 'utils'
+import CONST from 'constant'
 
 import './subscribe.sass'
 

@@ -3,7 +3,7 @@ import classNames from 'classnames'
 
 import MainTextPanel from '../MainTextPanel'
 import TextPanel from '../TextPanel'
-import { prefixClassName } from 'src/utils'
+import { prefixClassName } from 'utils'
 
 import './data.sass'
 

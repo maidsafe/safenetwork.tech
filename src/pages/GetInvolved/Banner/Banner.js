@@ -3,8 +3,8 @@ import React from 'react'
 import PageBanner from 'components/PageBanner'
 import BGVideo from 'components/BGVideo'
 
-import waveThin1 from 'src/assets/videos/wave_1_thin.mp4'
-import waveThin1Web from 'src/assets/videos/wave_1_thin.webm'
+import waveThin1 from 'assets/videos/wave_1_thin.mp4'
+import waveThin1Web from 'assets/videos/wave_1_thin.webm'
 
 import './banner.sass'
 

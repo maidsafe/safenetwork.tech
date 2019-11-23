@@ -6,20 +6,20 @@ import UnderlinedLink from 'components/UnderlinedLink'
 import QASection from 'components/QASection'
 import Banner from './Banner'
 import BGVideo from 'components/BGVideo'
-import { prefixClassName, genRandomKey, openLink } from 'src/utils'
+import { prefixClassName, genRandomKey, openLink } from 'utils'
 import content from './content'
-import CONSTANTS from 'src/constant'
+import CONSTANTS from 'constant'
 
-import sparkThin2 from 'src/assets/videos/spark_2_thin.mp4'
-import sparkThin2Web from 'src/assets/videos/spark_2_thin.webm'
+import sparkThin2 from 'assets/videos/spark_2_thin.mp4'
+import sparkThin2Web from 'assets/videos/spark_2_thin.webm'
 
-import Poloniex from 'images/exchange_poloniex.png'
-import Hitbtc from 'images/exchange_hitbtc.png'
-import Cryptopia from 'images/exchange_cryptopia.png'
-import Openledger from 'images/exchange_openledger.png'
-import Bittrex from 'images/exchange_bittrex.png'
+import Poloniex from 'assets/images/exchange_poloniex.png'
+import Hitbtc from 'assets/images/exchange_hitbtc.png'
+import Cryptopia from 'assets/images/exchange_cryptopia.png'
+import Openledger from 'assets/images/exchange_openledger.png'
+import Bittrex from 'assets/images/exchange_bittrex.png'
 
-import SafeCoinPoster from 'images/textures/texture_safecoin.jpg'
+import SafeCoinPoster from 'assets/images/textures/texture_safecoin.jpg'
 
 import './safeCoin.sass'
 
@@ -97,7 +97,7 @@ const SafeCoin = () => {
                     exchanges.map(ex => (
                       <div key={genRandomKey()} className={cn('exchangeItem')}>
                         <figure>
-                          <a href={ex.url}>
+                          <a href={ex.url} target="_blank">
                             <img src={EXCHANGE_IMGS[ex.name]} />
                             <figcaption>{ex.name}</figcaption>
                           </a>

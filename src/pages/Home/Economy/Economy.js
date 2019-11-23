@@ -3,12 +3,12 @@ import React from 'react'
 import MainTextPanel from '../MainTextPanel'
 import TextPanel from '../TextPanel'
 import BGVideo from 'components/BGVideo'
-import { prefixClassName } from 'src/utils'
+import { prefixClassName } from 'utils'
 
-import spark1 from 'src/assets/videos/spark_1.mp4'
-import spark1Web from 'src/assets/videos/spark_1.webm'
-import spark2 from 'src/assets/videos/spark_2.mp4'
-import spark2Web from 'src/assets/videos/spark_2.webm'
+import spark1 from 'assets/videos/spark_1.mp4'
+import spark1Web from 'assets/videos/spark_1.webm'
+import spark2 from 'assets/videos/spark_2.mp4'
+import spark2Web from 'assets/videos/spark_2.webm'
 
 import './economy.sass'
 

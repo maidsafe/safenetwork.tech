@@ -5,7 +5,7 @@ import Freedom from './Freedom'
 import Privacy from './Privacy'
 import Data from './Data'
 import Economy from './Economy'
-import { prefixClassName } from 'src/utils'
+import { prefixClassName } from 'utils'
 import content from './content'
 
 import './home.sass'

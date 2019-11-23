@@ -3,7 +3,7 @@ import classNames from 'classnames'
 
 import Button from 'components/Button'
 import UnderlinedLink from 'components/UnderlinedLink'
-import { prefixClassName } from 'src/utils'
+import { prefixClassName } from 'utils'
 
 import './inviteModal.sass'
 

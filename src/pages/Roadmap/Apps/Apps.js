@@ -3,7 +3,7 @@ import classNames from 'classnames'
 
 import Accordion from '../Accordion'
 import AccordionItem from '../AccordionItem'
-import { prefixClassName, genRandomKey } from 'src/utils'
+import { prefixClassName, genRandomKey } from 'utils'
 
 import './apps.sass'
 

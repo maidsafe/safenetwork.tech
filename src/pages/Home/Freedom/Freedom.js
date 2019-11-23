@@ -5,12 +5,12 @@ import MainTextPanel from '../MainTextPanel'
 import QuotePanel from '../QuotePanel'
 import TextPanel from '../TextPanel'
 import BGVideo from 'components/BGVideo'
-import { prefixClassName } from 'src/utils'
+import { prefixClassName } from 'utils'
 
-import wave1 from 'src/assets/videos/wave_1.mp4'
-import wave1Web from 'src/assets/videos/wave_1.webm'
-import wave2 from 'src/assets/videos/wave_2.mp4'
-import wave2Web from 'src/assets/videos/wave_2.webm'
+import wave1 from 'assets/videos/wave_1.mp4'
+import wave1Web from 'assets/videos/wave_1.webm'
+import wave2 from 'assets/videos/wave_2.mp4'
+import wave2Web from 'assets/videos/wave_2.webm'
 
 import './freedom.sass'
 

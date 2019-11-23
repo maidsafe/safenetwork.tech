@@ -3,7 +3,7 @@ import React from 'react'
 import Accordion from './Accordion'
 import AccordionItem from './AccordionItem'
 import InviteModal from './InviteModal'
-import CONSTANT from 'src/constant'
+import CONSTANT from 'constant'
 import {
   prefixClassName,
   openLink,
@@ -11,7 +11,7 @@ import {
   detectPlatform,
   getLocationHash,
   setLocationHash,
-} from 'src/utils'
+} from 'utils'
 
 import './invite.sass'
 
