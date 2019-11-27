@@ -3,12 +3,12 @@ import React from 'react'
 import Button from 'components/Button'
 import UnderlinedLink from 'components/UnderlinedLink'
 import TextSnippet from 'components/TextSnippet'
-import { prefixClassName, openLink } from 'src/utils'
+import { prefixClassName, openLink } from 'utils'
 import BGVideo from 'components/BGVideo'
 import Invite from '../Invite'
 
-import waveThin1 from 'src/assets/videos/wave_1_thin.mp4'
-import waveThin1Web from 'src/assets/videos/wave_1_thin.webm'
+import waveThin1 from 'assets/videos/wave_1_thin.mp4'
+import waveThin1Web from 'assets/videos/wave_1_thin.webm'
 
 import './develop.sass'
 
@@ -29,7 +29,7 @@ const Develop = props => {
           <TextSnippet title={startDevelop.title} titleSize="H2" text={startDevelop.para} />
           <div className="cta">
             <Button className="icon external" onClick={() => {
-              openLink(startDevelop.CTA.url)
+              openLink(startDevelop.CTA.url, true)
             }}>{startDevelop.CTA.name}</Button>
           </div>
         </div>

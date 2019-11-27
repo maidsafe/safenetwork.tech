@@ -2,7 +2,7 @@ import React from 'react'
 import EmailValidator from 'email-validator'
 
 import Button from 'components/Button'
-import { prefixClassName } from 'src/utils'
+import { prefixClassName } from 'utils'
 
 import './subscribeForm.sass'
 

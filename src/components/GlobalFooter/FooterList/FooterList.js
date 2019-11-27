@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'react-static'
+import { Link } from 'react-router-dom'
 
 import FooterContainer from '../FooterContainer'
-import { genRandomKey } from 'src/utils'
+import { genRandomKey } from 'utils'
 
 import './footerList.sass'
 
@@ -18,7 +18,9 @@ const FooterList = props =>  {
                 key={genRandomKey()}
                 className="footerList__item navigationText"
               >
-                <Link to={link.url}>{link.name}</Link>
+                {
+                  /^https?:\/\//.test(link.url) ? <a href={link.url} target="_blank">{link.name}</a> : <Link to={link.url}>{link.name}</Link>
+                }
               </div>
           ))) : null
         }

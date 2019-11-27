@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
-import { Link } from 'react-static'
+import { Link } from 'react-router-dom'
 
 import './footerItemTitle.sass'
 

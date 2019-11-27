@@ -1,11 +1,11 @@
-import React from 'react'
-import { withRouter, Router } from 'react-static'
+import React, { useEffect } from 'react'
+import { Root, Routes } from 'react-static'
+import { withRouter, useHistory } from 'react-router-dom'
 import { hot } from 'react-hot-loader'
-import Routes from 'react-static-routes'
-
+//
 import GlobalHeader from 'components/GlobalHeader';
 import GlobalFooter from 'components/GlobalFooter';
-import { isMenuLight } from 'src/utils'
+import { isMenuLight } from 'utils'
 
 class Layout extends React.Component {
   state = {
@@ -16,7 +16,7 @@ class Layout extends React.Component {
   componentDidMount() {
     if (typeof window !== 'undefined') {
       this.windowWidth = window.innerWidth
-      window.addEventListener('resize', () =>  {
+      window.addEventListener('resize', () => {
         if (this.windowWidth !== window.innerWidth) {
           this.toggleBodyOverFlow(false)
           this.setState({ mobileMenuActive: false })
@@ -50,21 +50,34 @@ class Layout extends React.Component {
     const { mobileMenuActive } = this.state
     const { pathname } = location
 
+    const ScrollRestoration = () => {
+      const history = useHistory()
+      useEffect(() => {
+        if (history.action !== 'POP') {
+          window.scrollTo(0, 0)
+        }
+      }, [history.location.pathname])
+      return null
+    }
+
     return (
-      <main>
-        <GlobalHeader
-          lightTheme={isMenuLight(pathname)}
-          activePathname={pathname}
-          mobileMenuActive={mobileMenuActive}
-          onClickMobMenu={() => {
-            this.onClickMobMenu()
-          }}
-        />
-        <div className="main-container">
-          <Routes />
-        </div>
-        <GlobalFooter />
-      </main>
+      <React.Suspense fallback={<span>Loading...</span>}>
+        <ScrollRestoration />
+        <main>
+          <GlobalHeader
+            lightTheme={isMenuLight(pathname)}
+            activePathname={pathname}
+            mobileMenuActive={mobileMenuActive}
+            onClickMobMenu={() => {
+              this.onClickMobMenu()
+            }}
+          />
+          <div className="main-container">
+            <Routes />
+          </div>
+          <GlobalFooter />
+        </main>
+      </React.Suspense>
     )
   }
 }
@@ -75,13 +88,13 @@ class App extends React.Component {
   componentDidMount() {
     if (typeof window !== 'undefined') {
       window.addEventListener('load', () => {
-        (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.body)
+        (function (H) { H.className = H.className.replace(/\bno-js\b/, 'js') })(document.body)
       })
     }
   }
 
   render() {
-    return (<Router><LayoutWithRouter /></Router>)
+    return (<Root><LayoutWithRouter /></Root>)
   }
 }
 

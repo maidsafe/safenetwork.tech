@@ -3,7 +3,7 @@ import classNames from 'classnames'
 
 import PageBanner from 'components/PageBanner'
 import Topic from '../Cookies/Topic'
-import { prefixClassName, genRandomKey, parseMDText } from 'src/utils'
+import { prefixClassName, genRandomKey, parseMDText } from 'utils'
 import content from './content'
 
 import '../Cookies/cookies.sass'

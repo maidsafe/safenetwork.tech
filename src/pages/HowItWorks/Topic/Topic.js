@@ -4,8 +4,8 @@ import classNames from 'classnames'
 import Button from 'components/Button'
 import TextSnippet from 'components/TextSnippet'
 import UnderlinedLink from 'components/UnderlinedLink'
-import { prefixClassName, parseMDText, genRandomKey, spinalCase, openLink } from 'src/utils'
-import MacPro from 'images/macBook_pro.png'
+import { prefixClassName, parseMDText, genRandomKey, spinalCase, openLink } from 'utils'
+import MacPro from 'assets/images/macBook_pro.png'
 
 import './topic.sass'
 
@@ -72,7 +72,7 @@ const Topic = props => {
                   }
                   {
                     d.quote ? (
-                      <p><blockquote className={cn('quote')}>{d.quote}</blockquote></p>
+                      <blockquote className={cn('quote')}>{d.quote}</blockquote>
                     ) : null
                   }
                 </div>

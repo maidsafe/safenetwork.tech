@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import Button from 'components/Button'
 import Accordion from 'components/Accordion'
 import Video from '../Video'
-import { prefixClassName, genRandomKey, parseMDText, spinalCase, openLink } from 'src/utils'
+import { prefixClassName, genRandomKey, parseMDText, spinalCase, openLink } from 'utils'
 
 import './accordionItem.sass'
 

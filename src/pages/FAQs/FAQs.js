@@ -3,7 +3,7 @@ import React from 'react'
 import PageBanner from 'components/PageBanner'
 import QASection from 'components/QASection'
 
-import { genRandomKey } from 'src/utils'
+import { genRandomKey } from 'utils'
 import content from './content'
 
 import './faqs.sass'

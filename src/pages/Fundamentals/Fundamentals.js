@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import PageBanner from 'components/PageBanner'
 import TextSnippet from 'components/TextSnippet'
 import Accordion from 'components/Accordion'
-import { prefixClassName, genRandomKey } from 'src/utils'
+import { prefixClassName, genRandomKey } from 'utils'
 import content from './content'
 
 import './fundamentals.sass'

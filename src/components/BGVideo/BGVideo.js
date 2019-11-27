@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import LazyLoad from 'react-lazyload'
 
-import { prefixClassName } from 'src/utils'
+import { prefixClassName } from 'utils'
 
 import './bGVideo.sass'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { genRandomKey } from 'src/utils'
+import { genRandomKey } from 'utils'
 
 import './pageBanner.sass'
 

@@ -1,4 +1,4 @@
-import CONSTANT from 'src/constant'
+import CONSTANT from 'constant'
 
 export default {
   title: 'It’s the dawn of a new web.\n Help us create it.',
@@ -64,10 +64,10 @@ export default {
     joinCommunity: {
       id: 'joinCommunity',
       title: 'Join the community',
-      para: 'Join the community and meet minded individuals dedicated to making the digital world a safer, more private place.',
+      para: 'Join the community and meet like-minded individuals dedicated to making the digital world a safer, more private place.',
       CTA: {
         button: {
-          name: 'Forum',
+          name: 'Join the Forum',
           url: 'http://safenetforum.org'
         },
         // link: {
@@ -97,7 +97,7 @@ export default {
       para: 'Building the SAFE Network is a team effort. You can help out by making suggestions, reporting bugs, or contributing code.',
       CTA: {
         button: {
-          name: 'Join Community',
+          name: 'Join the Forum',
           url: 'https://safenetforum.org'
         }
       }

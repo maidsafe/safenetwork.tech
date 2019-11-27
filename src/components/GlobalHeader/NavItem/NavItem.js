@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'react-static'
+import { Link } from 'react-router-dom'
 import classNames from 'classnames'
 
 import Button from 'components/Button'
-import { isHowItWorksPage } from 'src/utils'
+import { isHowItWorksPage } from 'utils'
 
 import './navItem.sass'
 

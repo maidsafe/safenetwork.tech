@@ -1,21 +1,21 @@
 import React from 'react'
 import { Head } from 'react-static'
 
-import CONSTANT from 'src/constant'
+import CONSTANT from 'constant'
 import Banner from './Banner'
 import Texts from './Texts'
 import Medias from './Medias'
 import Downloads from './Downloads'
 import content from './content'
 
-import TheGuardian from "images/news_1.png"
-import TechCrunch from "images/news_2.png"
-import Spectrum from "images/news_3.png"
-import SNLogoBlack from 'images/downloads/safe_network_logo_black.png'
-import SNLogoWhite from 'images/downloads/safe_network_logo_white.png'
-import SNIconBlack from 'images/downloads/safe_network_icon_black.png'
-import SNIconWhite from 'images/downloads/safe_network_icon_white.png'
-import ImagePackCover from 'images/downloads/image_pack_cover.jpg'
+import TheGuardian from 'assets/images/news_1.png'
+import TechCrunch from 'assets/images/news_2.png'
+import Spectrum from 'assets/images/news_3.png'
+import SNLogoBlack from 'assets/images/downloads/safe_network_logo_black.png'
+import SNLogoWhite from 'assets/images/downloads/safe_network_logo_white.png'
+import SNIconBlack from 'assets/images/downloads/safe_network_icon_black.png'
+import SNIconWhite from 'assets/images/downloads/safe_network_icon_white.png'
+import ImagePackCover from 'assets/images/downloads/image_pack_cover.jpg'
 
 import './pressKit.sass'
 

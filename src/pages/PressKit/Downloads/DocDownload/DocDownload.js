@@ -3,7 +3,7 @@ import React from 'react'
 import Button from 'components/Button'
 import TextSnippet from 'components/TextSnippet'
 
-import { openLink } from 'src/utils'
+import { openLink } from 'utils'
 
 import './docDownload.sass'
 

@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import Button from 'components/Button'
 import TextSnippet from 'components/TextSnippet'
 
-import { openLink } from 'src/utils'
+import { openLink } from 'utils'
 
 import './interviewRequest.sass'
 

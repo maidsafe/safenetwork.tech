@@ -3,8 +3,8 @@ import classNames from 'classnames'
 
 import Button from 'components/Button'
 import TextSnippet from 'components/TextSnippet'
-import { prefixClassName, openLink } from 'src/utils'
-import MaidSafeLogo from 'images/maidSafe_logo.svg'
+import { prefixClassName, openLink } from 'utils'
+import MaidSafeLogo from 'assets/images/maidSafe_logo.svg'
 import content from './content'
 
 import './about.sass'

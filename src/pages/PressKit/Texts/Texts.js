@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import TextSnippet from 'components/TextSnippet'
 import CopyButton from './CopyButton'
 
-import { genRandomKey } from 'src/utils'
+import { genRandomKey } from 'utils'
 
 import './texts.sass'
 

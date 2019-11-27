@@ -3,8 +3,8 @@ import React from 'react'
 import Button from 'components/Button'
 import Subscribe from 'components/Subscribe'
 import TextSnippet from 'components/TextSnippet'
-import { prefixClassName, openLink } from 'src/utils'
-import CONST from 'src/constant'
+import { prefixClassName, openLink } from 'utils'
+import CONST from 'constant'
 
 import './engage.sass'
 

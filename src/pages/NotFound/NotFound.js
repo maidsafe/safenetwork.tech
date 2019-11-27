@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 
 import PageBanner from 'components/PageBanner'
-import { prefixClassName, parseMDText } from 'src/utils'
+import { prefixClassName, parseMDText } from 'utils'
 import content from './content'
 
 import './notFound.sass'

@@ -3,7 +3,7 @@ import React from 'react'
 import DownloadContainer from '../DownloadContainer'
 import DocumentDownload from '../DocDownload'
 
-import { genRandomKey } from 'src/utils'
+import { genRandomKey } from 'utils'
 
 const DocsDownload = props => {
   const { content, documents } = props

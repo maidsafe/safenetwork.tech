@@ -4,9 +4,9 @@ import classNames from 'classnames'
 import PageBanner from 'components/PageBanner'
 import UnderlinedLink from 'components/UnderlinedLink'
 import BGVideo from 'components/BGVideo'
-import { prefixClassName, genRandomKey, spinalCase } from 'src/utils'
-import birds from 'src/assets/videos/birds.mp4'
-import birdsWeb from 'src/assets/videos/birds.webm'
+import { prefixClassName, genRandomKey, spinalCase } from 'utils'
+import birds from 'assets/videos/birds.mp4'
+import birdsWeb from 'assets/videos/birds.webm'
 
 import './banner.sass'
 

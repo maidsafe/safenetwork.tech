@@ -3,7 +3,7 @@ import React from 'react'
 import Button from 'components/Button'
 import QASection from 'components/QASection'
 
-import { prefixClassName, genRandomKey, openLink } from 'src/utils'
+import { prefixClassName, genRandomKey, openLink } from 'utils'
 
 import './faqs.sass'
 

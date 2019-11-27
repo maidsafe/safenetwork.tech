@@ -3,7 +3,7 @@ import React from 'react'
 import PageBanner from 'components/PageBanner'
 import TextSnippet from 'components/TextSnippet'
 import Topic from './Topic'
-import { prefixClassName, genRandomKey, parseMDText } from 'src/utils'
+import { prefixClassName, genRandomKey, parseMDText } from 'utils'
 import content from './content'
 
 import './cookies.sass'

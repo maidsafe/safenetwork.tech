@@ -4,7 +4,7 @@ import Intro from './Intro'
 import Accordion from '../Accordion'
 import AccordionStatus from '../AccordionStatus'
 import AccordionItem from '../AccordionItem'
-import { prefixClassName, genRandomKey } from 'src/utils'
+import { prefixClassName, genRandomKey } from 'utils'
 
 import './releases.sass'
 

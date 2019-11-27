@@ -3,7 +3,7 @@ import React from 'react'
 import MainTextPanel from '../MainTextPanel'
 import QuotePanel from '../QuotePanel'
 import TextPanel from '../TextPanel'
-import { prefixClassName } from 'src/utils'
+import { prefixClassName } from 'utils'
 
 import './privacy.sass'
 

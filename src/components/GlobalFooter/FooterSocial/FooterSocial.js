@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'react-static'
+import { Link } from 'react-router-dom'
 
 import FooterContainer from '../FooterContainer'
-import { genRandomKey } from 'src/utils'
+import { genRandomKey } from 'utils'
 
 import './footerSocial.sass'
 
@@ -19,7 +19,7 @@ const FooterSocial = props => {
                   key={genRandomKey()}
                   className={`footerSocial__item footerSocial__${link.style} navigationText`}
                 >
-                  <Link to={link.url}><span className="name">{link.name}</span></Link>
+                  <a href={link.url} target="_blank"><span className="name">{link.name}</span></a>
                 </div>
             ))) : null
           }

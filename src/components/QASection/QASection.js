@@ -2,7 +2,7 @@ import React from 'react'
 
 import QAItem from './QAItem'
 
-import { genRandomKey } from 'src/utils'
+import { genRandomKey } from 'utils'
 
 import './qaSection.sass'
 
