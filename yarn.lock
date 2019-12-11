@@ -2533,10 +2533,10 @@ core-js@^2.4.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.10.tgz#8a5b8391f8cc7013da703411ce5b585706300d7f"
   integrity sha512-I39t74+4t+zau64EN1fE5v2W31Adtc/REhzWN+gWRRXg6WH5qAsZm62DHpQ1+Yhe4047T55jvzz7MUqF/dBBlA==
 
-core-js@^3.4.3:
-  version "3.4.3"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.4.3.tgz#09ea102412a368d5f73d24f082e41ac90c633a49"
-  integrity sha512-BVvHidX8uAmLCYPfLpXTEex7jz1uZJ1mW+shhIsBdA716O8Fg6TOwSgenSyO/bvEtnGdOTpKRZPSh4bSVI1k9w==
+core-js@^3.4.8:
+  version "3.4.8"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.4.8.tgz#e0fc0c61f2ef90cbc10c531dbffaa46dfb7152dd"
+  integrity sha512-b+BBmCZmVgho8KnBUOXpvlqEMguko+0P+kXCwD4vIprsXC6ht1qgPxtb1OK6XgSlrySF71wkwBQ0Hv695bk9gQ==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -7385,10 +7385,10 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-device-detect@^1.9.10:
-  version "1.9.10"
-  resolved "https://registry.yarnpkg.com/react-device-detect/-/react-device-detect-1.9.10.tgz#3ea17e1383fef87886fb85cc850747dad306d050"
-  integrity sha512-Rb618NuNwJojJeIgI5UoONwztbd4wMT4TBofzvYOHnPNu61LYYz8b78cXQb7kXRrPn6iI5T1gFtNQh0GxHEPxw==
+react-device-detect@^1.11.14:
+  version "1.11.14"
+  resolved "https://registry.yarnpkg.com/react-device-detect/-/react-device-detect-1.11.14.tgz#02ba2398e2ce81fb0eaed3e62a9ad713ab3870a7"
+  integrity sha512-WSjch241xI+rXHVtJaSYxNUT2WAykzfJgMI2Hg9xjNNTlIZdJu/fmWf4iedNH7qzFq+JaJ6fDJu3mrKFLerKBw==
   dependencies:
     ua-parser-js "^0.7.20"
 

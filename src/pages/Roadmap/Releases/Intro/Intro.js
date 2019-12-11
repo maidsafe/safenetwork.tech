@@ -17,7 +17,7 @@ const Intro = props => {
         <div className="overline">{overline}</div>
         <h2 className={cn('title')}>{title}</h2>
         <div className={cn('para')}>
-          { text.map((para)=> <div key={genRandomKey()} >{parseMDText(para, false)}</div>) }
+          { text.map(para => <p key={genRandomKey()}>{parseMDText(para, true)}</p>) }
         </div>
         {
           videoUrl ? (
