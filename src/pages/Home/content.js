@@ -14,7 +14,7 @@ export default {
     title: 'Decentralised & Autonomous: \nFreedom of expression by design.',
     para: [
       'Everyone should be able to collaborate freely and share ideas; free and unrestricted access to information for everyone around the world.',
-      'That’s why we’ve design a system like no other: An autonomous network that runs itself, distributed across the globe, that can’t be shut down, controlled, or censored.'
+      'That’s why we’ve designed a system like no other: An autonomous network that runs itself, distributed across the globe, that can’t be shut down, controlled, or censored.'
     ],
     CTA: {
       name: 'What is an Autonomous Network?',
