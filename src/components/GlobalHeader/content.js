@@ -1,5 +1,5 @@
 export default {
-  siteName: 'Safe Network',
+  siteName: 'SAFE Network',
   navItems: [
     {
       name: "How It Works",
