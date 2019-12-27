@@ -73,29 +73,29 @@ const PressKit = () => {
   const assetLogos = [
     {
       imgSrc: SNLogoBlack,
-      imgAlt: 'Safe Network logo black',
+      imgAlt: 'SAFE Network logo black',
       downloadLink: CONSTANT.downloadLinks.logos.safeNetworkLogoBlack,
     },
     {
       imgSrc: SNLogoWhite,
-      imgAlt: 'Safe Network logo white',
+      imgAlt: 'SAFE Network logo white',
       downloadLink: CONSTANT.downloadLinks.logos.safeNetworkLogoWhite,
     },
     {
       imgSrc: SNIconBlack,
-      imgAlt: 'Safe Network icon black',
+      imgAlt: 'SAFE Network icon black',
       downloadLink: CONSTANT.downloadLinks.logos.safeNetworkIconBlack,
     },
     {
       imgSrc: SNIconWhite,
-      imgAlt: 'Safe Network icon white',
+      imgAlt: 'SAFE Network icon white',
       downloadLink: CONSTANT.downloadLinks.logos.safeNetworkIconWhite,
     },
   ]
 
   const imagePack = {
     imgSrc: ImagePackCover,
-    imgAlt: 'Safe Network icon white',
+    imgAlt: 'SAFE Network icon white',
     downloadLink: CONSTANT.downloadLinks.imagePack,
   }
 

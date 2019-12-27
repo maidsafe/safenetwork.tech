@@ -59,8 +59,8 @@ export default {
   },
   exchanges: [
     {
-      name: 'Poloniex',
-      url: 'https://poloniex.com/exchange#btc_maid'
+      name: 'ChainRift',
+      url: 'https://www.chainrift.com/trading?coinpair=MAID/BTC'
     },
     {
       name: 'HitBTC',
@@ -103,21 +103,21 @@ export default {
           {
             question: 'What is MaidSafeCoin?',
             answer: [
-              `MaidSafeCoin is a proxy token that was released during MaidSafe's crowd sale and will be swapped for Safecoin on a 1:1 basis when Safecoin is released. MaidSafeCoin is listed on the bitcoin blockchain and can be purchased on a number of exchanges including:`,
-              '- [Poloniex](https://www.poloniex.com/exchange#btc_maid)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)'
+              `MaidSafeCoin is a proxy token that was released during MaidSafe's crowd sale and will be swapped for Safecoin on a 1:1 basis when Safecoin is released. MaidSafeCoin is listed on the Bitcoin blockchain and can be purchased on a number of exchanges including:`,
+              '- [ChainRift](https://www.chainrift.com/trading?coinpair=MAID/BTC)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)'
             ]
           },
           {
             question: 'How do I buy MaidSafeCoin?',
             answer: [
               'In essence all we have to do is buy bitcoin and exchange it for MaidSafeCoin. There are a few simple steps required to do this.',
-              '- Create an [OmniWallet](http://omniwallet.org/).\n- Purchase bitcoin using your preferred vendor.\n- Create a trade account on an exchange which lists MaidSafeCoin (e.g. on [Poloniex](https://www.poloniex.com/exchange#btc_maid)).\n- Send bitcoin to the trading account.\n- Trade bitcoin for MaidSafeCoin.\n- Withdraw / Transfer to OmniWallet.\n- MaidSafeCoin is now in your OmniWallet!'
+              '- Create an [OmniWallet](http://omniwallet.org/).\n- Purchase bitcoin using your preferred vendor.\n- Create a trade account on an exchange which lists MaidSafeCoin (e.g. on [ChainRift](https://www.chainrift.com/trading?coinpair=MAID/BTC)).\n- Send bitcoin to the trading account.\n- Trade bitcoin for MaidSafeCoin.\n- Withdraw / Transfer to OmniWallet.\n- MaidSafeCoin is now in your OmniWallet!'
             ]
           },
           {
             question: 'Where can I store MaidSafeCoin?',
             answer: [
-              'As MaidSafeCoin is built using the Omni protocol on the bitcoin blockchain it can be stored in any wallet. They may not be visible within all wallet software (due to lack of omni support) but the MaidSafeCoin will be OK there as long as your machine and private key for that address are secure. You will be able to view them using [omniexplorer.info](http://omniexplorer.info).',
+              'As MaidSafeCoin is built using the Omni protocol on the Bitcoin blockchain, it can be stored in any wallet. They may not be visible within all wallet software (due to lack of Omni support) but the MaidSafeCoin will be OK there as long as your machine and private key for that address are secure. You will be able to view them using [omniexplorer.info](https://omniexplorer.info).',
               'To create a new Omniwallet or open an existing one visit [omniwallet.org](https://www.omniwallet.org/).'
             ]
           },
@@ -126,7 +126,7 @@ export default {
             answer: [
               'Safecoin are given as an incentive to users for providing their resources to the Network. These resources are their: storage space, CPU, bandwidth and online time that enable the encrypted chunks of network data to be stored and retrieved from their computer.',
               'The process of providing resources and receiving Safecoin in return is called ‘Farming’.',
-              `Each piece of encrypted network data is stored in a Farmer's ‘Vault’, a data storage and management location on the Farmer's computer which they cannot read, or access. The SAFE network is designed to self-manage these resources.`,
+              `Each piece of encrypted network data is stored in a Farmer's ‘Vault’, a data storage and management location on the Farmer's computer which they cannot read, or access. The SAFE Network is designed to self-manage these resources.`,
 
             ]
           },

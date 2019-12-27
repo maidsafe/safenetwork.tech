@@ -13,10 +13,8 @@ import CONSTANTS from 'constant'
 import sparkThin2 from 'assets/videos/spark_2_thin.mp4'
 import sparkThin2Web from 'assets/videos/spark_2_thin.webm'
 
-import Poloniex from 'assets/images/exchange_poloniex.png'
+import Chainrift from 'assets/images/exchange_chainrift.png'
 import Hitbtc from 'assets/images/exchange_hitbtc.png'
-import Cryptopia from 'assets/images/exchange_cryptopia.png'
-import Openledger from 'assets/images/exchange_openledger.png'
 import Bittrex from 'assets/images/exchange_bittrex.png'
 
 import SafeCoinPoster from 'assets/images/textures/texture_safecoin.jpg'
@@ -27,10 +25,8 @@ const baseClassName = 'SafeCoin'
 const cn = prefixClassName(baseClassName)
 
 const EXCHANGE_IMGS = {
-  Poloniex: Poloniex,
+  ChainRift: Chainrift,
   HitBTC: Hitbtc,
-  Cryptopia: Cryptopia,
-  Openledger: Openledger,
   Bittrex: Bittrex,
 }
 

@@ -199,14 +199,14 @@
           question: 'How do I buy Safecoin?',
           answer: [
             'Safecoin won’t be issued until the Network goes live so they cannot be purchased at the moment. Currently you can buy MaidSafeCoin which will be swapped on a 1-to-1 basis for Safecoin when released.',
-            'MaidSafeCoin is listed on the bitcoin blockchain and can be purchased on a number of exchanges including:',
-            '- [Poloniex](https://www.poloniex.com/exchange#btc_maid)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)'
+            'MaidSafeCoin is listed on the Bitcoin blockchain and can be purchased on a number of exchanges including:',
+            '- [ChainRift](https://www.chainrift.com/trading?coinpair=MAID/BTC)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)'
           ]
         },
         {
           question: 'Why not just use Bitcoin?',
           answer: [
-            'Bitcoin is completely unrelated to the SAFE Network and cannot be generated or distributed by the SAFE Network. Safecoin is generated in response to network use (stored data being retrieved or apps are created) and is the digital currency of the SAFE network.'
+            'Bitcoin is completely unrelated to the SAFE Network and cannot be generated or distributed by the SAFE Network. Safecoin is generated in response to network use (stored data being retrieved or apps are created) and is the digital currency of the SAFE Network.'
           ]
         },
         {
@@ -230,20 +230,20 @@
           question: 'What is MaidSafeCoin?',
           answer: [
             'MaidSafeCoin is a proxy token that was released during MaidSafe\'s crowd sale and will be swapped for Safecoin on a 1:1 basis when Safecoin is released.',
-            'MaidSafeCoin is listed on the bitcoin blockchain and can be purchased on a number of exchanges including [Poloniex](https://www.poloniex.com/exchange#btc_maid), [HitBTC](https://hitbtc.com/MAID-to-BTC), [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)',
+            'MaidSafeCoin is listed on the Bitcoin blockchain and can be purchased on a number of exchanges including [ChainRift](https://www.chainrift.com/trading?coinpair=MAID/BTC), [HitBTC](https://hitbtc.com/MAID-to-BTC) and [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID).',
           ]
         },
         {
           question: 'How do I buy MaidSafeCoin?',
           answer: [
             'In essence all we have to do is buy bitcoin and exchange it for MaidSafeCoin. There are a few simple steps required to do this.',
-            '\n1.  Create an [OmniWallet](http://omniwallet.org/).\n2.  Purchase bitcoin using your preferred vendor.\n3.  Create a trade account on an exchange which lists MaidSafeCoin (e.g. on [Poloniex](https://www.poloniex.com/exchange#btc_maid)).\n4.  Send bitcoin to the trading account.\n5.  Trade bitcoin for MaidSafeCoin.\n6.  Withdraw / Transfer to OmniWallet.\n7.  MaidSafeCoin is now in your OmniWallet!'
+            '\n1.  Create an [OmniWallet](http://omniwallet.org/).\n2.  Purchase bitcoin using your preferred vendor.\n3.  Create a trade account on an exchange which lists MaidSafeCoin (e.g. on [ChainRift](https://www.chainrift.com/trading?coinpair=MAID/BTC)).\n4.  Send bitcoin to the trading account.\n5.  Trade bitcoin for MaidSafeCoin.\n6.  Withdraw / Transfer to OmniWallet.\n7.  MaidSafeCoin is now in your OmniWallet!'
           ]
         },
         {
           question: 'Where can I store MaidSafeCoin?',
           answer: [
-            'As MaidSafeCoin is built using the Omni protocol on the bitcoin blockchain it can be stored in any wallet. They may not be visible within all wallet software (due to lack of omni support) but the MaidSafeCoin will be OK there as long as your machine and private key for that address are secure and you will be able to view them using [omniexplorer.info](http://omniexplorer.info).',
+            'As MaidSafeCoin is built using the Omni protocol on the Bitcoin blockchain, it can be stored in any wallet. They may not be visible within all wallet software (due to lack of Omni support) but the MaidSafeCoin will be OK there as long as your machine and private key for that address are secure and you will be able to view them using [omniexplorer.info](https://omniexplorer.info).',
             'To create a new Omniwallet or open an existing one visit [omniwallet.org](https://www.omniwallet.org/).'
           ]
         },

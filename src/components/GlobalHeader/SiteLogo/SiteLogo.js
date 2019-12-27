@@ -14,7 +14,7 @@ const SiteLogo = props => {
     })}>
       <div className="siteLogo__wrap">
         <div className="siteLogo__media">
-          <Link to="/"><img src={siteLogo} alt="Safe Network Logo" /></Link>
+          <Link to="/"><img src={siteLogo} alt="SAFE Network Logo" /></Link>
         </div>
         <div className="siteLogo__name"><Link to="/">{name}</Link></div>
       </div>
