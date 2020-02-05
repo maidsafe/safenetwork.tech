@@ -306,8 +306,8 @@ export default {
       {
         id: 'safeBrowser',
         name: 'SAFE Browser',
-        para: 'The latest release includes some of the beginnings of the Perpetual Web, as well as the Authenticator: enabling you to securely sign in to the SAFE Network, and manage access and permissions of SAFE Apps.',
-        status: 'Latest Version v0.15.2'
+        para: 'The latest release includes some of the beginnings of the Perpetual Web.',
+        status: 'Latest Version v0.15.4'
       }
     ],
     currentMilestone: {
