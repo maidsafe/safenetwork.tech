@@ -136,19 +136,19 @@ export default {
         'url': 'https://www.reddit.com/r/safenetwork/'
       },
       {
-        'style': 'telegram',
-        'name': 'Telegram',
-        'url': 'https://t.me/safenetwork'
-      },
-      {
         'style': 'riot',
         'name': 'Riot.im',
         'url': 'https://riot.im/app/#/room/#safenetwork:matrix.org'
       },
       {
-        'style': 'github',
-        'name': 'GitHub',
-        'url': 'https://github.com/maidsafe/'
+        'style': 'telegram',
+        'name': 'Telegram',
+        'url': 'https://t.me/safenetwork'
+      },
+      {
+        'style': 'discord',
+        'name': 'Discord',
+        'url': 'https://discord.gg/0ak6ESm4oAR3oXik'
       }
     ]
   }

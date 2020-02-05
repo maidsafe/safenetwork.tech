@@ -9,7 +9,8 @@ const scanForBrokenLinks = (serveUrl) => {
     excludedKeywords: [
       'https://t.me/safenetwork',
       'https://youtu.be',
-      'https://www.youtube.com'
+      'https://www.youtube.com',
+      'https://www.chainrift.com'
     ],
   };
   return new Promise((resolve, rejects) => {
