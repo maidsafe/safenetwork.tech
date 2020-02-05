@@ -112,7 +112,7 @@ export default {
           }, {
             feature: 'Secure Message Delivery',
             desc: 'Trusted communication between nodes - messages with authenticated source',
-            status: 'Development',
+            status: 'Complete',
             para: [
               'Ensures messages are sent and signed in such a way that lets nodes rely on the contents of each message despite having no previous relationship with the sender. This solves a problem faced by many existing blockchain-based projects and is essential when you have a Network that will autonomously move nodes around as required.'
             ],
