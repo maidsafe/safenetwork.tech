@@ -59,17 +59,13 @@ export default {
   },
   exchanges: [
     {
-      name: 'ChainRift',
-      url: 'https://www.chainrift.com/trading?coinpair=MAID/BTC'
+      name: 'Bittrex',
+      url: 'https://global.bittrex.com/Market/Index?MarketName=BTC-MAID'
     },
     {
       name: 'HitBTC',
       url: 'https://hitbtc.com/MAID-to-BTC'
-    },
-    {
-      name: 'Bittrex',
-      url: 'https://global.bittrex.com/Market/Index?MarketName=BTC-MAID'
-    },
+    }
   ],
   faqs: {
     sections: [
@@ -104,14 +100,14 @@ export default {
             question: 'What is MaidSafeCoin?',
             answer: [
               `MaidSafeCoin is a proxy token that was released during MaidSafe's crowd sale and will be swapped for Safecoin on a 1:1 basis when Safecoin is released. MaidSafeCoin is listed on the Bitcoin blockchain and can be purchased on a number of exchanges including:`,
-              '- [ChainRift](https://www.chainrift.com/trading?coinpair=MAID/BTC)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)'
+              '- [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)'
             ]
           },
           {
             question: 'How do I buy MaidSafeCoin?',
             answer: [
               'In essence all we have to do is buy bitcoin and exchange it for MaidSafeCoin. There are a few simple steps required to do this.',
-              '- Create an [OmniWallet](http://omniwallet.org/).\n- Purchase bitcoin using your preferred vendor.\n- Create a trade account on an exchange which lists MaidSafeCoin (e.g. on [ChainRift](https://www.chainrift.com/trading?coinpair=MAID/BTC)).\n- Send bitcoin to the trading account.\n- Trade bitcoin for MaidSafeCoin.\n- Withdraw / Transfer to OmniWallet.\n- MaidSafeCoin is now in your OmniWallet!'
+              '- Create an [OmniWallet](http://omniwallet.org/).\n- Purchase bitcoin using your preferred vendor.\n- Create a trade account on an exchange which lists MaidSafeCoin (e.g. on [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)).\n- Send bitcoin to the trading account.\n- Trade bitcoin for MaidSafeCoin.\n- Withdraw / Transfer to OmniWallet.\n- MaidSafeCoin is now in your OmniWallet!'
             ]
           },
           {
