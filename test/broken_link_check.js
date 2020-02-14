@@ -10,7 +10,6 @@ const scanForBrokenLinks = (serveUrl) => {
       'https://t.me/safenetwork',
       'https://youtu.be',
       'https://www.youtube.com',
-      'https://www.chainrift.com',
       'https://global.bittrex.com'
     ],
   };

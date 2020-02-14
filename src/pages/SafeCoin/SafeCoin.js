@@ -13,9 +13,8 @@ import CONSTANTS from 'constant'
 import sparkThin2 from 'assets/videos/spark_2_thin.mp4'
 import sparkThin2Web from 'assets/videos/spark_2_thin.webm'
 
-import Chainrift from 'assets/images/exchange_chainrift.png'
-import Hitbtc from 'assets/images/exchange_hitbtc.png'
 import Bittrex from 'assets/images/exchange_bittrex.png'
+import Hitbtc from 'assets/images/exchange_hitbtc.png'
 
 import SafeCoinPoster from 'assets/images/textures/texture_safecoin.jpg'
 
@@ -25,9 +24,8 @@ const baseClassName = 'SafeCoin'
 const cn = prefixClassName(baseClassName)
 
 const EXCHANGE_IMGS = {
-  ChainRift: Chainrift,
-  HitBTC: Hitbtc,
   Bittrex: Bittrex,
+  HitBTC: Hitbtc
 }
 
 const SafeCoin = () => {
