@@ -27,16 +27,16 @@ export default class Invite extends React.Component {
   }
   componentWillMount() {
     const { content } = this.props
-    const { joinCommunity, installBrowser, feedback } = content
+    const { joinNetwork, installBrowser, feedback } = content
 
     this.ACCORDIONS = {
-      JOIN_COMMUNITY: joinCommunity.id,
+      JOIN_NETWORK: joinNetwork.id,
       INSTALL_BROWSER: installBrowser.id,
       FEEDBACK: feedback.id
     }
 
     this.setState({
-      activeAccordion: this.ACCORDIONS.JOIN_COMMUNITY
+      activeAccordion: this.ACCORDIONS.JOIN_NETWORK
     })
   }
 
@@ -70,7 +70,7 @@ export default class Invite extends React.Component {
 
   setAccordionBg() {
     const { activeAccordion } = this.state
-    if (activeAccordion === this.ACCORDIONS.JOIN_COMMUNITY)
+    if (activeAccordion === this.ACCORDIONS.JOIN_NETWORK)
       return 'yellow'
     if (activeAccordion === this.ACCORDIONS.INSTALL_BROWSER)
       return 'sky'
@@ -78,7 +78,7 @@ export default class Invite extends React.Component {
 
   render() {
     const { content } = this.props
-    const { joinCommunity, title, installBrowser, feedback, modal } = content;
+    const { joinNetwork, title, installBrowser, feedback, modal } = content;
     const { activeAccordion } = this.state
 
     const platform = detectPlatform()
@@ -95,18 +95,18 @@ export default class Invite extends React.Component {
           <Accordion className="underlineLink-bright-onYellow" bgColor={this.setAccordionBg()}>
             <AccordionItem
                 overline={title}
-                active={activeAccordion === this.ACCORDIONS.JOIN_COMMUNITY}
-                id={joinCommunity.id}
-                title={joinCommunity.title}
-                text={joinCommunity.para}
-                ctaButton={joinCommunity.CTA.button}
+                active={activeAccordion === this.ACCORDIONS.JOIN_NETWORK}
+                id={joinNetwork.id}
+                title={joinNetwork.title}
+                text={joinNetwork.para}
+                ctaButton={joinNetwork.CTA.button}
                 ctaButtonType="primary"
-                ctaLink= {joinCommunity.CTA.link}
+                ctaLink= {joinNetwork.CTA.link}
                 onClick={() => {
-                  this.setAccordion(this.ACCORDIONS.JOIN_COMMUNITY)
+                  this.setAccordion(this.ACCORDIONS.JOIN_NETWORK)
                 }}
                 onClickPrimaryButton={() => {
-                  openLink(joinCommunity.CTA.button.url, true)
+                  openLink(joinNetwork.CTA.button.url, true)
                 }}
             />
             <AccordionItem
