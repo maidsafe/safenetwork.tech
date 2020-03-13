@@ -14,12 +14,12 @@ export default {
     startDevelop: {
       title: 'Start Developing on SAFE',
       para: [
-        'SAFE will change how we’ll interact with the web and our own data. A leap as big as this requires continuous testing and feedback from the people who it is designed for—and that’s where you can help.',
-        'Download the SAFE Browser to browse the Network, or why not join the community and be one of many that provide feedback, contribute to code and essentially, help shape the Network.'
+        'The SAFE Network is a platform for creating decentralised apps. It is secure, privacy focussed, has a built-in revenue stream, and next to no infrastructure costs.',
+        'Right now development of simpler, dev-facing APIs is underway. As such documentation is still to be finalised, but you can access the latest SAFE API documentation in this repo.'
       ],
       CTA: {
-        name: 'Visit the DevHub',
-        url: 'https://hub.safedev.org'
+        name: 'SAFE API GitHub Repo',
+        url: 'https://github.com/maidsafe/safe-api/blob/master/README.md'
       }
     },
     joinForum: {
@@ -48,7 +48,7 @@ export default {
       title: 'Be part of the community',
       para: [
         'The SAFE Network community is comprised of thousands of people from all over the world passionate about the unfettered access and sharing of data.',
-        'Safenetforum.org is the main discussion forum of this growing community and is a great place to help test new releases by the development teams, receive support, discuss the latest Internet trends and read the weekly dev updates. To meet others in person, take a look at the various meetups taking place around the world.'
+        'The SAFE Network Forum is the main discussion forum of this growing community and is a great place to help test new releases by the development teams, receive support, discuss the latest Internet trends and read the weekly dev updates. To meet others in person, take a look at the various meetups taking place around the world.'
       ],
       CTA: {
         name: 'Join the Forum',
@@ -61,19 +61,15 @@ export default {
   },
   invite: {
     title: 'Get Started',
-    joinCommunity: {
-      id: 'joinCommunity',
-      title: 'Join the community',
-      para: 'Join the community and meet like-minded individuals dedicated to making the digital world a safer, more private place.',
+    joinNetwork: {
+      id: 'joinNetwork',
+      title: 'Try out the Phase 1 Vault Release',
+      para: 'It’s easy to use. Just download a Vault binary which will run locally on your computer. Or use the public shared Vault we’ve set up.',
       CTA: {
         button: {
-          name: 'Join the Forum',
-          url: 'http://safenetforum.org'
-        },
-        // link: {
-        //   name: 'Learn more',
-        //   url: 'https://github.com/maidsafe/safe-api'
-        // }
+          name: 'Learn more',
+          url: 'https://safenetforum.org/t/new-release-vault-phase-1-real-vault/29712'
+        }
       }
     },
     installBrowser: {

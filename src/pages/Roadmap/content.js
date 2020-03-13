@@ -1,15 +1,15 @@
 export default {
   banner: {
     pageTitle: 'The ~~Im~~Possible Network',
-    pageDesc: `12 years of research and development is coming to fruition as we put together the final building blocks of what some said was impossible: Secure Access For Everyone.`,
+    pageDesc: `14 years of research and development is coming to fruition as we put together the final building blocks of what some said was impossible: Secure Access For Everyone.`,
     latestUpdate: {
       overline: 'Latest Update',
-      date: '29 August 2019',
-      title: 'Vault Phase 1',
-      para: `The final piece of the puzzle is complete and we now have the SAFE CLI, SAFE Client Libs, SAFE Vault and SAFE Browser.`,
+      date: 'March 5, 2020',
+      title: 'Baby Fleming Version 1',
+      para: `This first Baby Fleming (Vaults Phase 2a) release is about iterating from a single vault network into a multiple vaults (single-section) network.`,
        CTA: {
          name: 'SAFE Network Forum',
-         url: 'https://safenetforum.org/t/new-release-vault-phase-1-real-vault/29712'
+         url: 'https://safenetforum.org/t/safe-network-dev-update-march-5-2020/31227'
        }
     }
   },
@@ -19,10 +19,10 @@ export default {
   releases: {
     release1: {
       overline: 'Live Now',
-      title: 'Phase 1 Vaults',
+      title: 'Baby Fleming Network',
       para:[
-        `This Phase 1 Vault release is primarily to showcase the Network features to Consumers (people using the Network to browse, share data, etc.) and Creators (developers or those publishing content).  It allows users to test out features such as SAFE CLI and SAFE Client Libs, as well as introducing the new data types.`,
-        'It’s easy to use. Just download a Vault binary which will run locally on your computer. Details and links can be found in [this forum post](https://safenetforum.org/t/new-release-vault-phase-1-real-vault/29712).'
+        `From a user perspective, the exact same type of operations and use cases as Vaults Phase 1 are being supported by Baby Fleming, i.e. Test Safecoin, wallets, files, NRS names, SAFE sites, etc.`,
+        'We’ll soon set up a public shared network for you to play with, but for now you’ll need to set up your own local network. The instructions in [this forum post](https://safenetforum.org/t/safe-network-dev-update-march-5-2020/31227) walk you through creating a single section multi-node network on a single machine.'
       ],
       // accordion: {
       //   header: [
@@ -37,7 +37,7 @@ export default {
     release2: {
       overline: 'Upcoming Milestone',
       title: 'SAFE Fleming Network',
-      para: ['The next major milestone for the SAFE Network. Whilst the Shared Vault Network will continue to function, this will be a standalone Network that will enable individuals to run Vaults - decentralised storage from home computers. The release of Fleming will be notable for many reasons, not least the fact that with data storage, the Network will now also contain Test Safecoin.'],
+      para: ['The next major milestone for the SAFE Network. Whilst the Baby Fleming Network will continue to function, this will be a standalone Network that will enable individuals to run Vaults - decentralised storage from home computers. The release of Fleming will be notable for many reasons, not least the fact that with data storage, the Network will now also contain Test Safecoin.'],
       accordion: {
         header: [
           'Fleming Feature',
@@ -100,7 +100,7 @@ export default {
           }, {
             feature: 'Node Ageing',
             desc: 'A decentralised system for ranking the behaviour, performance and abilities of nodes on the Network that requires no human intervention.',
-            status: 'Development',
+            status: 'Complete',
             para: [
               'Each node on the SAFE Network is given an age by the Network itself. The node age increments every time that a node moves between Disjoint Sections, with only the most senior (Elders) entitled to vote during the PARSEC consensus algorithm.',
               'Dig into the detail in the RFC, and [join the discussion](https://forum.safedev.org/t/rfc-45-node-ageing/157) on the forum.'
@@ -199,7 +199,7 @@ export default {
     release3: {
       overline: 'Next Up',
       title: 'SAFE Maxwell Network',
-      para: ['The release of SAFE Maxwell builds on top of Fleming and enables the network to upgrade, improves security and sets the ground work for switching test SAFE Coin to real SAFEcoin.'],
+      para: ['The release of SAFE Maxwell builds on top of Fleming and enables the network to upgrade, improves security and sets the ground work for switching Test Safecoin to real Safecoin.'],
       accordion: {
         header: [
           'Maxwell Feature',
@@ -306,8 +306,8 @@ export default {
       {
         id: 'safeBrowser',
         name: 'SAFE Browser',
-        para: 'The latest release includes some of the beginnings of the Perpetual Web.',
-        status: 'Latest Version v0.15.4'
+        para: 'The latest release includes some of the beginnings of the Perpetual Web. Please note that it\'s only compatible with the Vaults Phase 1 release.',
+        status: 'Latest Version v0.16.0'
       }
     ],
     currentMilestone: {
@@ -324,7 +324,7 @@ export default {
           {
             feature: 'SAFE Browser',
             desc: 'Enhancements to the browser designed specifically to take advantage of the functionalities of the Perpetual Web',
-            status: 'Development',
+            status: 'Complete',
             para: [
               'The SAFE Browser functionality will be extended to incorporate new features that are unique to the Perpetual Web, such as the ability to roll-back through the version history of any SAFE website or asset.'
             ],
@@ -348,7 +348,7 @@ export default {
           {
             feature: 'SAFE CLI',
             desc: 'An advanced CLI to manage accounts and data',
-            status: 'Development',
+            status: 'Complete',
             para: [
               'A command line tool to manage data on the SAFE Network. It will allow the user to store data on the network and manage accounts, identities, and permissions. This is the tool that the frontend apps and features—such as the Data Manager—will build upon.'
             ],
@@ -356,7 +356,7 @@ export default {
           {
             feature: 'Public Name System',
             desc: 'Content stored should be accessible with human-readable URLs, via a decentralised domain name system: the Public Name System',
-            status: 'RFC',
+            status: 'Complete',
             para: [
               'A domain name system translates numerical IP addresses into a format that can be read by humans (eg. http//216.58.206.35 resolves to Google.com). The current web relies on a centralised organisation to maintain that record. The SAFE Network requires this process to be outside the control of a single party in order to avoid censorship and repression.'
             ],
