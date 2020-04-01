@@ -4,12 +4,12 @@ export default {
     pageDesc: `14 years of research and development is coming to fruition as we put together the final building blocks of what some said was impossible: Secure Access For Everyone.`,
     latestUpdate: {
       overline: 'Latest Update',
-      date: 'March 19, 2020',
-      title: 'Baby Fleming iteration 2',
-      para: `The Baby Fleming release is about iterating from a single vault network into a multiple vaults (single-section) network. Iteration 2 contains the removal of the PARSEC step from the client request-processing flow.`,
+      date: 'March 26, 2020',
+      title: 'Baby Fleming iteration 3',
+      para: `The Baby Fleming release is about iterating from a single vault network into a multiple vaults (single-section) network. Iteration 3 has been updated to use the latest version of the Quinn library (via quic-p2p).`,
        CTA: {
          name: 'SAFE Network Forum',
-         url: 'https://safenetforum.org/t/safe-network-dev-update-march-19-2020/31311'
+         url: 'https://safenetforum.org/t/safe-network-dev-update-march-26-2020/31360'
        }
     }
   },
@@ -22,7 +22,7 @@ export default {
       title: 'Baby Fleming Network',
       para:[
         `From a user perspective, the exact same type of operations and use cases as Vaults Phase 1 are being supported by Baby Fleming, i.e. Test Safecoin, wallets, files, NRS names, SAFE sites, etc.`,
-        'We’ll soon set up a public shared network for you to play with, but for now you’ll need to set up your own local network. See the [CLI User Guide](https://github.com/maidsafe/safe-api/blob/master/safe-cli/README.md#description) for full instructions on installing the SAFE CLI, the Authenticator daemon, the Vault binary and running your own section of vaults on your platform.'
+        'We’ve set up a [public shared section](https://safenetforum.org/t/baby-fleming-public-shared-section/31377) for you to play with. You can also set up your own local network. See the [CLI User Guide](https://github.com/maidsafe/safe-api/blob/master/safe-cli/README.md#download) for full instructions.'
       ],
       // accordion: {
       //   header: [

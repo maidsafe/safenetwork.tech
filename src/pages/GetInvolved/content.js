@@ -63,12 +63,16 @@ export default {
     title: 'Get Started',
     joinNetwork: {
       id: 'joinNetwork',
-      title: 'Try out the Phase 1 Vault Release',
-      para: 'It’s easy to use. Just download a Vault binary which will run locally on your computer. Or use the public shared Vault we’ve set up.',
+      title: 'Connect to the Baby Fleming Public Shared Section',
+      para: 'This shared section is hosted on DigitalOcean and consists of eight vaults on eight separate droplets, all connected together in one section. Please note that this testnet may require to be taken down.',
       CTA: {
         button: {
           name: 'Learn more',
-          url: 'https://safenetforum.org/t/new-release-vault-phase-1-real-vault/29712'
+          url: 'https://safenetforum.org/t/baby-fleming-public-shared-section/31377'
+        },
+        link: {
+          name: 'CLI User Guide',
+          url: 'https://github.com/maidsafe/safe-api/blob/master/safe-cli/README.md#download'
         }
       }
     },
