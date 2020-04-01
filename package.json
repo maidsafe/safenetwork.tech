@@ -19,7 +19,7 @@
     "html-to-react": "^1.4.2",
     "markdown-it": "^10.0.0",
     "react-device-detect": "^1.11.14",
-    "react-lazyload": "^2.6.5",
+    "react-lazyload": "^2.6.6",
     "react-router-dom": "^5.1.2",
     "react-router-hash-link": "^1.2.2",
     "react-static": "7.1.0",
