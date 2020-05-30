@@ -14,23 +14,23 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "copy-to-clipboard": "^3.3.1",
-    "core-js": "^3.6.4",
+    "core-js": "^3.6.5",
     "email-validator": "^2.0.4",
-    "html-to-react": "^1.4.2",
-    "markdown-it": "^10.0.0",
-    "react-device-detect": "^1.11.14",
-    "react-lazyload": "^2.6.6",
-    "react-router-dom": "^5.1.2",
+    "html-to-react": "^1.4.3",
+    "markdown-it": "^11.0.0",
+    "react-device-detect": "^1.12.1",
+    "react-lazyload": "^2.6.7",
+    "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^1.2.2",
-    "react-static": "7.1.0",
-    "react-static-plugin-react-router": "^7.2.3",
-    "react-static-plugin-sass": "^7.2.2",
+    "react-static": "7.4.0",
+    "react-static-plugin-react-router": "^7.4.0",
+    "react-static-plugin-sass": "^7.3.0",
     "typeface-vollkorn": "^0.0.72"
   },
   "devDependencies": {
     "broken-link-checker": "^0.7.8",
-    "del-cli": "^3.0.0",
-    "mocha": "^7.1.1",
+    "del-cli": "^3.0.1",
+    "mocha": "^7.2.0",
     "should": "^13.2.3"
   }
 }
