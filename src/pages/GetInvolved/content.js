@@ -2,24 +2,24 @@ import CONSTANT from 'constant'
 
 export default {
   title: 'It’s the dawn of a new web.\n Help us create it.',
-  pageDesc: 'The SAFE Network is an Open Source and collaborative effort between developers and the community using it. You can get involved by testing, suggesting, coding, or promoting. Here’s how.',
+  pageDesc: 'The Safe Network is an Open Source and collaborative effort between developers and the community using it. You can get involved by testing, suggesting, coding, or promoting. Here’s how.',
   develop: {
     trySafeNet: {
-      title: 'Try the SAFE Network',
+      title: 'Try the Safe Network',
       para: [
-        'SAFE will change how we’ll interact with the web and our own data. A leap as big as this requires continuous testing and feedback from the people who it is designed for—and that’s where you can help.',
-        'Download the SAFE Browser to browse the Network, or why not join the community and be one of many that provide feedback, contribute to code and essentially, help shape the Network.'
+        'Safe will change how we’ll interact with the web and our own data. A leap as big as this requires continuous testing and feedback from the people who it is designed for—and that’s where you can help.',
+        'Download the Safe Browser to browse the Network, or why not join the community and be one of many that provide feedback, contribute to code and essentially, help shape the Network.'
       ]
     },
     startDevelop: {
-      title: 'Start Developing on SAFE',
+      title: 'Start Developing on Safe',
       para: [
-        'The SAFE Network is a platform for creating decentralised apps. It is secure, privacy focussed, has a built-in revenue stream, and next to no infrastructure costs.',
-        'Right now development of simpler, dev-facing APIs is underway. As such documentation is still to be finalised, but you can access the latest SAFE API documentation in this repo.'
+        'The Safe Network is a platform for creating decentralised apps. It is secure, privacy focussed, has a built-in revenue stream, and next to no infrastructure costs.',
+        'Right now development of simpler, dev-facing APIs is underway. As such documentation is still to be finalised, but you can access the latest Safe API documentation in this repo.'
       ],
       CTA: {
-        name: 'SAFE API GitHub Repo',
-        url: 'https://github.com/maidsafe/safe-api/blob/master/README.md'
+        name: 'Safe API GitHub Repo',
+        url: 'https://github.com/maidsafe/sn_api/blob/master/README.md'
       }
     },
     joinForum: {
@@ -47,8 +47,8 @@ export default {
     community: {
       title: 'Be part of the community',
       para: [
-        'The SAFE Network community is comprised of thousands of people from all over the world passionate about the unfettered access and sharing of data.',
-        'The SAFE Network Forum is the main discussion forum of this growing community and is a great place to help test new releases by the development teams, receive support, discuss the latest Internet trends and read the weekly dev updates. To meet others in person, take a look at the various meetups taking place around the world.'
+        'The Safe Network community is comprised of thousands of people from all over the world passionate about the unfettered access and sharing of data.',
+        'The Safe Network Forum is the main discussion forum of this growing community and is a great place to help test new releases by the development teams, receive support, discuss the latest Internet trends and read the weekly dev updates. To meet others in person, take a look at the various meetups taking place around the world.'
       ],
       CTA: {
         name: 'Join the Forum',
@@ -72,14 +72,14 @@ export default {
         },
         link: {
           name: 'CLI User Guide',
-          url: 'https://github.com/maidsafe/safe-api/blob/master/safe-cli/README.md#download'
+          url: 'https://github.com/maidsafe/sn_api/blob/master/sn_cli/README.md#download'
         }
       }
     },
     installBrowser: {
       id: 'installBrowser',
-      title: 'Install the SAFE Browser',
-      para: 'Grab the latest SAFE Browser to start browsing the Network today!',
+      title: 'Install the Safe Browser',
+      para: 'Grab the latest Safe Browser to start browsing the Network today!',
       CTA: {
         button: {
           name: 'Download for',
@@ -94,7 +94,7 @@ export default {
     feedback: {
       id: 'feedback',
       title: 'Feedback & Contribute',
-      para: 'Building the SAFE Network is a team effort. You can help out by making suggestions, reporting bugs, or contributing code.',
+      para: 'Building the Safe Network is a team effort. You can help out by making suggestions, reporting bugs, or contributing code.',
       CTA: {
         button: {
           name: 'Join the Forum',
@@ -109,16 +109,16 @@ export default {
       title: 'Getting Started: Frequently Asked Questions',
       items: [
         {
-          question: 'How do I get involved with the SAFE Network community?',
+          question: 'How do I get involved with the Safe Network community?',
           answer: [
-            'The Community is most active on the [SAFE Network Forum](https://safenetforum.org/) and we’d suggest starting in the [beginners section](https://safenetforum.org/c/beginners )',
+            'The Community is most active on the [Safe Network Forum](https://safenetforum.org/) and we’d suggest starting in the [beginners section](https://safenetforum.org/c/beginners )',
             '_[Visit the Forum](https://safenetforum.org/)_'
           ]
         },
         {
           question: 'How do I get help?',
           answer: [
-            'The [SAFE Network Forum](https://safenetforum.org) is the place to head to for all questions on the Network.',
+            'The [Safe Network Forum](https://safenetforum.org) is the place to head to for all questions on the Network.',
             '_[Visit the Forum](https://safenetforum.org/)_'
           ]
         }

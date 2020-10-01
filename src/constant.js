@@ -14,8 +14,8 @@ export default {
   },
   pageMeta: {
     pressKit: {
-      title: 'Press Kit | SAFE Network',
-      desc: 'Resources for journalists looking to find out more about the new decentralised Internet and how the SAFE Network will benefit data security and privacy'
+      title: 'Press Kit | Safe Network',
+      desc: 'Resources for journalists looking to find out more about the new decentralised Internet and how the Safe Network will benefit data security and privacy'
     },
   },
   subscribeUrl: {
@@ -23,12 +23,12 @@ export default {
   },
   downloadApps: {
     browser: {
-      mac: 'https://github.com/maidsafe/safe_browser/releases/download/v0.17.0-alpha.1/safe-browser-v0.17.0-alpha.1-mac-x64.dmg',
-      windows: 'https://github.com/maidsafe/safe_browser/releases/download/v0.17.0-alpha.1/safe-browser-v0.17.0-alpha.1-win-x64.exe',
-      linux: 'https://github.com/maidsafe/safe_browser/releases/download/v0.17.0-alpha.1/safe-browser-v0.17.0-alpha.1-linux-x64.AppImage',
-      android: 'https://github.com/maidsafe/safe_browser/releases/tag/v0.17.0-alpha.1',
-      ios: 'https://github.com/maidsafe/safe_browser/releases/tag/v0.17.0-alpha.1',
-      others: 'https://github.com/maidsafe/safe_browser/releases/tag/v0.17.0-alpha.1',
+      mac: 'https://github.com/maidsafe/sn_browser/releases/download/v0.17.0-alpha.1/safe-browser-v0.17.0-alpha.1-mac-x64.dmg',
+      windows: 'https://github.com/maidsafe/sn_browser/releases/download/v0.17.0-alpha.1/safe-browser-v0.17.0-alpha.1-win-x64.exe',
+      linux: 'https://github.com/maidsafe/sn_browser/releases/download/v0.17.0-alpha.1/safe-browser-v0.17.0-alpha.1-linux-x64.AppImage',
+      android: 'https://github.com/maidsafe/sn_browser/releases/tag/v0.17.0-alpha.1',
+      ios: 'https://github.com/maidsafe/sn_browser/releases/tag/v0.17.0-alpha.1',
+      others: 'https://github.com/maidsafe/sn_browser/releases/tag/v0.17.0-alpha.1',
     }
   },
 

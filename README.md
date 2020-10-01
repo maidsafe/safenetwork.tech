@@ -1,6 +1,6 @@
 # safenetwork.tech
 
-SAFE Network website, built with [React Static](https://github.com/react-static/react-static).
+Safe Network website, built with [React Static](https://github.com/react-static/react-static).
 
 ## Installation
 
@@ -44,7 +44,7 @@ $ yarn serve
 
 ## License
 
-This SAFE Network library is dual-licensed under
+This Safe Network site is dual-licensed under
 
 * the Modified BSD ([LICENSE-BSD](https://opensource.org/licenses/BSD-3-Clause)) or
 * the MIT license ([LICENSE-MIT](http://opensource.org/licenses/MIT))

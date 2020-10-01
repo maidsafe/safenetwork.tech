@@ -1,7 +1,7 @@
 export default {
   banner: {
     title: `We're Building The \nNew Internet`,
-    desc: '[Freedom](/#freedom) of expression, [control](/#control) of personal data, [private and secure](/#privacy) communications; and a whole new [economy](/#economy). Welcome to the SAFE Network.',
+    desc: '[Freedom](/#freedom) of expression, [control](/#control) of personal data, [private and secure](/#privacy) communications; and a whole new [economy](/#economy). Welcome to the Safe Network.',
     aside: {
       para: 'Using spare bandwidth and unused disk space on home computers and phones, we’re taking the web off corporate servers, out of government control, and back into the hands of people.',
       CTA: {
@@ -30,14 +30,14 @@ export default {
     },
     aside2: {
       title: 'Can’t be censored or shut down',
-      para: 'Because it’s autonomous, the SAFE Network can’t be turned off, blocked or controlled. It belongs to humanity.'
+      para: 'Because it’s autonomous, the Safe Network can’t be turned off, blocked or controlled. It belongs to humanity.'
     }
   },
   privacy: {
     title: 'Total Privacy, Absolute Security.',
     para: [
       'Privacy and security should be available to everyone, not just those with deep pockets.',
-      'That’s why the SAFE Network encrypts all data by default, automatically splitting it into many pieces which constantly move to locations around the globe that cannot be traced. And your access to them is untraceable too.',
+      'That’s why the Safe Network encrypts all data by default, automatically splitting it into many pieces which constantly move to locations around the globe that cannot be traced. And your access to them is untraceable too.',
       ' No more hacked data, no more stolen passwords, no more eavesdropping. Private. Secure. Anonymous.'
     ],
     CTA: {
@@ -49,13 +49,13 @@ export default {
     },
     aside1: {
       title: 'Browse and access anonymously',
-      para: 'On the SAFE Network, you are free to browse and download completely anonymously, from anywhere in the world. No account necessary.'
+      para: 'On the Safe Network, you are free to browse and download completely anonymously, from anywhere in the world. No account necessary.'
     }
   },
   data: {
     title: 'Complete Control of Your Data',
     para: [
-      'The SAFE Network turns the current data ownership model on its head.',
+      'The Safe Network turns the current data ownership model on its head.',
       'Gone are the days of your personal information being stored on corporate servers. Self Authentication means you are in complete control over your data: it resides with you. Grant permission for apps to connect to it, and no company or third party ever has access. ',
     ],
     CTA: {
@@ -97,7 +97,7 @@ export default {
     para: [
       'Welcome to the new economy where you no longer pay for your digital life with your personal data.  Instead, you’ll use Safecoin, a crypto currency that is integrated into and distributed entirely by the network.',
       'Users are compensated for providing their resources and can use this to pay developers to use their apps in a virtuous and self sustaining cycle.',
-      'SAFE is a network where wealth is shared based on the value that everyone provides.'
+      'Safe is a network where wealth is shared based on the value that everyone provides.'
     ],
     CTA: {
       name: 'Read more about Safecoin',
@@ -106,7 +106,7 @@ export default {
     aside1: {
       title: 'Always Free to Access',
       para: [
-        'Information is always free to access. You’ll never be charged for browsing or downloading. The SAFE Network guarantees equal access to data for everyone. You don’t even need an account, just download the browser.',
+        'Information is always free to access. You’ll never be charged for browsing or downloading. The Safe Network guarantees equal access to data for everyone. You don’t even need an account, just download the browser.',
       ]
     },
     aside2: {

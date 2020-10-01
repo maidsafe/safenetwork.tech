@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 Thank you for contributing to the project!
-We recommend you check out our ["Contributing to the SAFE Network"](https://github.com/maidsafe/QA/blob/master/CONTRIBUTING.md) guide if you haven't already.
+We recommend you check out our ["Contributing to the Safe Network"](https://github.com/maidsafe/QA/blob/master/CONTRIBUTING.md) guide if you haven't already.
 
 **Is your feature request related to a problem? Please describe.**
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]

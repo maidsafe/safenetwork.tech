@@ -72,7 +72,7 @@ export default {
         <link rel="shortcut icon" type="image/icon" href="/favicon.ico" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-        <title>SAFE Network</title>
+        <title>Safe Network</title>
       </Head>
       <Body className="no-js">{children}</Body>
     </Html>
