@@ -17,7 +17,7 @@ export default {
   textBlock2: {
     title: 'Contribute and be rewarded',
     para: [
-      'The current ad-supported internet model is broken. On SAFE, popular apps and sites are paid directly by the Network according to how much they get used.',
+      'The current ad-supported internet model is broken. On Safe, popular apps and sites are paid directly by the Network according to how much they get used.',
       'Want to build an app or create content? The days of having to meet your website infrastructure costs are gone. With an open source platform, just build and deploy. Your personal data is no longer an asset for the profit of others.'
     ],
     CTA: {
@@ -46,7 +46,7 @@ export default {
   textBlock5: {
     title: 'How do I buy Safecoin?',
     para: [
-      'Safecoin is the currency that will power the SAFE Network. It will be available to be farmed, used or traded. You can’t buy them yet, but you can buy MaidSafeCoin.',
+      'Safecoin is the currency that will power the Safe Network. It will be available to be farmed, used or traded. You can’t buy them yet, but you can buy MaidSafeCoin.',
       'MaidSafeCoin (MAID) is a token that was created in a crowdsale in 2014 to support the project, and each MAID will be exchanged for a Safecoin when the network launches. Based on the Omni protocol on top of the Bitcoin blockchain, MAID can be purchased and traded, but not farmed.'
     ]
   },
@@ -75,18 +75,18 @@ export default {
           {
             question: 'What is Safecoin?',
             answer: [
-              `Safecoin are digital tokens that are generated automatically by the SAFE Network and reside on the SAFE Network. The Network will autonomously confirm account balances to wallets and allow transactions to take place. Safecoin are transferred using the digital signature of the coin’s last owner. This operation is 'network atomic'—in other words, the Network ensures that all copies update to reflect the transaction. This is a different approach to the blockchain mechanism employed in other projects, such as Bitcoin.`,
-              'There can be many millions of transactions per second on the SAFE Network and the larger it becomes the more transactions per second can be executed. A Safecoin only records the previous and current owners. By doing so, it ensures that the current owner was transferred ownership properly by the last owner. This allows coins to be transferred between people very easily and without delay.',
+              `Safecoin are digital tokens that are generated automatically by the Safe Network and reside on the Safe Network. The Network will autonomously confirm account balances to wallets and allow transactions to take place. Safecoin are transferred using the digital signature of the coin’s last owner. This operation is 'network atomic'—in other words, the Network ensures that all copies update to reflect the transaction. This is a different approach to the blockchain mechanism employed in other projects, such as Bitcoin.`,
+              'There can be many millions of transactions per second on the Safe Network and the larger it becomes the more transactions per second can be executed. A Safecoin only records the previous and current owners. By doing so, it ensures that the current owner was transferred ownership properly by the last owner. This allows coins to be transferred between people very easily and without delay.',
               'Please note that Safecoin will not be active until the network goes live. See MaidSafeCoin for current proxy token.'
             ]
           },
           {
             question: 'How is Safecoin used on the network?',
             answer: [
-              'Safecoin is the currency of the SAFE Network. It is an incentive mechanism that rewards Users and developers, as well as providing access to network services.',
-              'Without any human intervention, the SAFE Network pays out Safecoin automatically to Farmers (users who join the Network by contributing their computing resources) and to Builders (application developers, who get paid automatically depending on how much their applications are used).',
-              'In addition, Core Developers who improve the core SAFE Network codebase can also earn Safecoin by providing bug fixes and new features.',
-              `Safecoin only lives on the SAFE Network. It is stored in a User's wallet and can be used to buy network services, such as increased storage space and access to network applications. There is no set distribution time for the 4.3 billion Safecoin produced during the life of the SAFE Network.`,
+              'Safecoin is the currency of the Safe Network. It is an incentive mechanism that rewards Users and developers, as well as providing access to network services.',
+              'Without any human intervention, the Safe Network pays out Safecoin automatically to Farmers (users who join the Network by contributing their computing resources) and to Builders (application developers, who get paid automatically depending on how much their applications are used).',
+              'In addition, Core Developers who improve the core Safe Network codebase can also earn Safecoin by providing bug fixes and new features.',
+              `Safecoin only lives on the Safe Network. It is stored in a User's wallet and can be used to buy network services, such as increased storage space and access to network applications. There is no set distribution time for the 4.3 billion Safecoin produced during the life of the Safe Network.`,
               'Please note that Safecoin will not be active until the network goes live. See for current proxy token.'
             ]
           },
@@ -122,7 +122,7 @@ export default {
             answer: [
               'Safecoin are given as an incentive to users for providing their resources to the Network. These resources are their: storage space, CPU, bandwidth and online time that enable the encrypted chunks of network data to be stored and retrieved from their computer.',
               'The process of providing resources and receiving Safecoin in return is called ‘Farming’.',
-              `Each piece of encrypted network data is stored in a Farmer's ‘Vault’, a data storage and management location on the Farmer's computer which they cannot read, or access. The SAFE Network is designed to self-manage these resources.`,
+              `Each piece of encrypted network data is stored in a Farmer's ‘Vault’, a data storage and management location on the Farmer's computer which they cannot read, or access. The Safe Network is designed to self-manage these resources.`,
 
             ]
           },

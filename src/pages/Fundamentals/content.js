@@ -1,6 +1,6 @@
 export default {
   title: 'Network Fundamentals',
-  desc: 'There are certain concepts that have driven every stage of the design of the Network ever since the project started in 2006. Since that time, the SAFE community has grown and we’re delighted to see just how many people and projects have come to recognise the vital importance of a global, secure and private decentralised platform for storage and communication.',
+  desc: 'There are certain concepts that have driven every stage of the design of the Network ever since the project started in 2006. Since that time, the Safe community has grown and we’re delighted to see just how many people and projects have come to recognise the vital importance of a global, secure and private decentralised platform for storage and communication.',
   qa: {
     section: {
       title: 'The Network will...',
@@ -14,7 +14,7 @@ export default {
         {
           question: 'Enable Users to securely and with no controlling intermediaries share information and messages',
           answer: [
-            'The SAFE Network will never have any third parties who have the ability to either read or store the information sent by a User (unless that User consents in some way).'
+            'The Safe Network will never have any third parties who have the ability to either read or store the information sent by a User (unless that User consents in some way).'
           ]
         },
         {
@@ -62,19 +62,19 @@ export default {
         {
           question: 'Allow any User, on any machine, to access the network and leave no trace of that User on the machine',
           answer: [
-            'The Network must ultimately be accessible to any User on any device. When that User logs out from the Network and leaves that machine, there must be no evidence (other than any software downloaded to access the Network, such as the browser) that shows what activity the User undertook on the SAFE Network.'
+            'The Network must ultimately be accessible to any User on any device. When that User logs out from the Network and leaves that machine, there must be no evidence (other than any software downloaded to access the Network, such as the browser) that shows what activity the User undertook on the Safe Network.'
           ]
         },
         {
-          question: 'Scrub all Client IP addresses from Hop 1 of the overlay network (i.e on SAFE)',
+          question: 'Scrub all Client IP addresses from Hop 1 of the overlay network (i.e on Safe)',
           answer: [
-            'After a User has started to communicate directly with anyone else after the first SAFE Network node that it connects to, the User’s IP address is scrubbed and untraceable. For clarity, we are using the phrase ‘Hop 1’ to refer to the transfer directly after that connection to the first SAFE Network node (not the hop that may take place from your computer to your home WiFi router, for example).'
+            'After a User has started to communicate directly with anyone else after the first Safe Network node that it connects to, the User’s IP address is scrubbed and untraceable. For clarity, we are using the phrase ‘Hop 1’ to refer to the transfer directly after that connection to the first Safe Network node (not the hop that may take place from your computer to your home WiFi router, for example).'
           ]
         },
         {
           question: 'Only accept more Vaults when it needs them',
           answer: [
-            'Like any species or group of organisms, unbounded growth leads to demise. The SAFE Network could be attacked by a bad actor simply adding millions of nodes and then closing them down (or worse). To help prevent this, the Network will only allow new nodes to join when it needs them. This also nicely slows any attacker and dilutes them with good actors also trying to join. The Network can then balance supply and demand as it sees fit as opposed to relying on external controls.'
+            'Like any species or group of organisms, unbounded growth leads to demise. The Safe Network could be attacked by a bad actor simply adding millions of nodes and then closing them down (or worse). To help prevent this, the Network will only allow new nodes to join when it needs them. This also nicely slows any attacker and dilutes them with good actors also trying to join. The Network can then balance supply and demand as it sees fit as opposed to relying on external controls.'
           ]
         },
         {
@@ -86,13 +86,13 @@ export default {
         {
           question: 'Rank nodes over time and increase trust in higher ranked nodes',
           answer: [
-            'A crucial part of Node Ageing (one of the ways by which the SAFE Network prevents Sybil attacks) comes from the fact that the Network is designed to only permit the most trustworthy nodes within each of the Close Groups to vote on the decisions in the Network.'
+            'A crucial part of Node Ageing (one of the ways by which the Safe Network prevents Sybil attacks) comes from the fact that the Network is designed to only permit the most trustworthy nodes within each of the Close Groups to vote on the decisions in the Network.'
           ]
         },
         {
           question: 'Not have servers',
           answer: [
-            'The SAFE Network will never rely on servers (as the term is traditionally understood) as to do so introduces a third party weakness that undermines the entire Network.'
+            'The Safe Network will never rely on servers (as the term is traditionally understood) as to do so introduces a third party weakness that undermines the entire Network.'
           ]
         },
         {
@@ -102,21 +102,21 @@ export default {
           ]
         },
         {
-          question: 'Ensure that Client-to-Client direct messages are free. It will charge, however, for Client-to-Client messages involving traversal through the SAFE Network',
+          question: 'Ensure that Client-to-Client direct messages are free. It will charge, however, for Client-to-Client messages involving traversal through the Safe Network',
           answer: [
-            'Clients are software programs that allow users to connect to the SAFE Network. There will never be charge levied by the Network if messages are sent directly between two Clients. However, any indirect messages that are sent between Clients that involve travel across the Network will carry a cost.'
+            'Clients are software programs that allow users to connect to the Safe Network. There will never be charge levied by the Network if messages are sent directly between two Clients. However, any indirect messages that are sent between Clients that involve travel across the Network will carry a cost.'
           ]
         },
         {
           question: 'Never use time as a network tool (although nodes may use local durations)',
           answer: [
-            'There is no concept of time in a decentralised network such as SAFE unless it reaches out to centralised servers and services. SAFE uses a completely event-driven paradigm to circumvent the need to try and synchronise and then use time periods as valid tools on the network. These periods require magic numbers which would need to be set by developers and this is something the Network avoids with rigour.'
+            'There is no concept of time in a decentralised network such as Safe unless it reaches out to centralised servers and services. Safe uses a completely event-driven paradigm to circumvent the need to try and synchronise and then use time periods as valid tools on the network. These periods require magic numbers which would need to be set by developers and this is something the Network avoids with rigour.'
           ]
         },
         {
           question: 'Only ever use encrypted services and encrypted traffic',
           answer: [
-            'Services or traffic must be encrypted if they are to be used by the SAFE Network.'
+            'Services or traffic must be encrypted if they are to be used by the Safe Network.'
           ]
         },
         {
@@ -133,7 +133,7 @@ export default {
     lists: [
       {
         name: 'A.',
-        para: 'Safecoin is the unique incentivisation mechanism built into the SAFE Network. All Safecoins are recycled when they are paid to the Network in exchange for resources. On launch, Safecoin will be distributed as follows: (1) Pay the creators of the Network (MaidSafe shareholders) 5% of the total Safecoin; (2) Pay the 2014 crowdsale investors of the Network 10% of the total Safecoin.'
+        para: 'Safecoin is the unique incentivisation mechanism built into the Safe Network. All Safecoins are recycled when they are paid to the Network in exchange for resources. On launch, Safecoin will be distributed as follows: (1) Pay the creators of the Network (MaidSafe shareholders) 5% of the total Safecoin; (2) Pay the 2014 crowdsale investors of the Network 10% of the total Safecoin.'
       },
       {
         name: 'B.',

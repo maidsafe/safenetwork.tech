@@ -1,6 +1,6 @@
 export default {
   'safeNetwork': {
-    'name': 'SAFE Network',
+    'name': 'Safe Network',
     'links': [
       {
         'name': 'Home',
@@ -44,7 +44,7 @@ export default {
     'name': 'Community',
     'links': [
       {
-        'name': 'SAFE Network Forum',
+        'name': 'Safe Network Forum',
         'url': 'https://safenetforum.org/'
       },
       {
