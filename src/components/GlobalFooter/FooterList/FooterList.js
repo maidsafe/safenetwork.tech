@@ -19,7 +19,7 @@ const FooterList = props =>  {
                 className="footerList__item navigationText"
               >
                 {
-                  /^https?:\/\//.test(link.url) ? <a href={link.url} target="_blank">{link.name}</a> : <Link to={link.url}>{link.name}</Link>
+                  /^https?:\/\//.test(link.url) ? <a href={link.url} target="_blank" rel="noreferrer">{link.name}</a> : <Link to={link.url}>{link.name}</Link>
                 }
               </div>
           ))) : null

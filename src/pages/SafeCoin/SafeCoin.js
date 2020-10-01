@@ -91,7 +91,7 @@ const SafeCoin = () => {
                     exchanges.map(ex => (
                       <div key={genRandomKey()} className={cn('exchangeItem')}>
                         <figure>
-                          <a href={ex.url} target="_blank">
+                          <a href={ex.url} target="_blank" rel="noreferrer">
                             <img src={EXCHANGE_IMGS[ex.name]} />
                             <figcaption>{ex.name}</figcaption>
                           </a>
