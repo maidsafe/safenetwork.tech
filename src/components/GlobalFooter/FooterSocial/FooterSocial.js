@@ -19,7 +19,7 @@ const FooterSocial = props => {
                   key={genRandomKey()}
                   className={`footerSocial__item footerSocial__${link.style} navigationText`}
                 >
-                  <a href={link.url} target="_blank"><span className="name">{link.name}</span></a>
+                  <a href={link.url} target="_blank" rel="noreferrer"><span className="name">{link.name}</span></a>
                 </div>
             ))) : null
           }

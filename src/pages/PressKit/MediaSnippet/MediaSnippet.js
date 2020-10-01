@@ -14,7 +14,7 @@ const MediaSnippet = props => {
   } = props
 
   return (
-    <a className={classNames('mediaSnippet', id)} href={url} target="_blank">
+    <a className={classNames('mediaSnippet', id)} href={url} target="_blank" rel="noreferrer">
       <div className="mediaSnippet__wrap">
         <blockquote className="mediaSnippet__para">{content.para}</blockquote>
           <div className="mediaSnippet__logo">
