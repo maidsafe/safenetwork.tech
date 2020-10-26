@@ -13,9 +13,9 @@ export default {
        }
     }
   },
-  subscribe: {
+  /*subscribe: {
     title: 'Subscribe for updates:'
-  },
+  },*/
   releases: {
     release1: {
       overline: 'Live Now',

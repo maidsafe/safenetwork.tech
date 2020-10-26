@@ -104,13 +104,13 @@ export default {
       }
     ]
   },
-  'newsletter': {
-    'name': 'Newsletter'
-  },
+  /*'newsletter': {
+    //'name': 'Newsletter'
+  },*/
   'social': {
     'name': 'Social',
     'links': [
-      {
+      /*{
         'style': 'twitter',
         'name': 'Twitter',
         'url': 'https://twitter.com/maidsafe'
@@ -124,7 +124,7 @@ export default {
         'style': 'medium',
         'name': 'Medium',
         'url': 'https://medium.com/safenetwork'
-      },
+      },*/
       {
         'style': 'youtube',
         'name': 'YouTube',

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Button from 'components/Button'
-import Subscribe from 'components/Subscribe'
+//import Subscribe from 'components/Subscribe'
 import TextSnippet from 'components/TextSnippet'
 import { prefixClassName, openLink } from 'utils'
 import CONST from 'constant'
@@ -13,7 +13,7 @@ const cn = prefixClassName(baseClassName)
 
 const Engage = props => {
   const { content } = props
-  const { community, subscribe } = content
+  const { community/*, subscribe*/ } = content
 
   return (
     <div className={baseClassName}>
@@ -27,13 +27,15 @@ const Engage = props => {
           </div>
         </div>
         <div className={cn('communityBg')}></div>
-        <div className={cn('subscribe')}>
-          <h3 className={cn('subscribeTitle')}>{subscribe.title}</h3>
-          <Subscribe url={CONST.subscribeUrl.mailSubscription} />
-        </div>
       </div>
     </div>
   )
 }
+
+        //removed the text below from line 30
+        /*<div className={cn('subscribe')}>
+          <h3 className={cn('subscribeTitle')}>{subscribe.title}</h3>
+          <Subscribe url={CONST.subscribeUrl.mailSubscription} />
+        </div>*/
 
 export default Engage

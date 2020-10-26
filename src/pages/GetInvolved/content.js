@@ -54,10 +54,10 @@ export default {
         name: 'Join the Forum',
         url: 'https://safenetforum.org'
       }
-    },
-    subscribe: {
-      title: 'Stay Up-to-date'
     }
+    /*subscribe: {
+      title: 'Stay Up-to-date'
+    }*/
   },
   invite: {
     title: 'Get Started',

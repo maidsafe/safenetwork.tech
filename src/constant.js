@@ -17,9 +17,9 @@ export default {
       desc: 'Resources for journalists looking to find out more about the new decentralised Internet and how the Safe Network will benefit data security and privacy'
     },
   },
-  subscribeUrl: {
+  /*subscribeUrl: {
     mailSubscription: 'https://services.maidsafe.net/mail-subscription/api/1.0/subscribe'
-  },
+  },*/
   downloadApps: {
     browser: {
       mac: 'https://github.com/maidsafe/sn_browser/releases/download/v0.17.0-alpha.1/safe-browser-v0.17.0-alpha.1-mac-x64.dmg',
