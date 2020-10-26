@@ -26,10 +26,10 @@ export default {
         'name': 'FAQs',
         'url': '/faq/'
       },
-      {
+      /*{
         'name': 'Blog',
         'url': 'https://medium.com/safenetwork'
-      },
+      },*/
       {
         'name': 'Roadmap',
         'url': '/roadmap/'
@@ -104,27 +104,27 @@ export default {
       }
     ]
   },
-  'newsletter': {
-    'name': 'Newsletter'
-  },
+  /*'newsletter': {
+    //'name': 'Newsletter'
+  },*/
   'social': {
     'name': 'Social',
     'links': [
       {
         'style': 'twitter',
         'name': 'Twitter',
-        'url': 'https://twitter.com/maidsafe'
+        'url': 'https://twitter.com/safenetforum'
       },
       {
         'style': 'facebook',
         'name': 'Facebook',
-        'url': 'https://www.facebook.com/GetMaidSafe/'
+        'url': 'https://www.facebook.com/safenetworktech/'
       },
-      {
+      /*{
         'style': 'medium',
         'name': 'Medium',
         'url': 'https://medium.com/safenetwork'
-      },
+      },*/
       {
         'style': 'youtube',
         'name': 'YouTube',

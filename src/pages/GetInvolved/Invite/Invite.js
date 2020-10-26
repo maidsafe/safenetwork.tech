@@ -27,11 +27,11 @@ export default class Invite extends React.Component {
   }
   componentWillMount() {
     const { content } = this.props
-    const { joinNetwork, installBrowser, feedback } = content
+    const { /*joinNetwork, installBrowser, */feedback } = content
 
     this.ACCORDIONS = {
-      JOIN_NETWORK: joinNetwork.id,
-      INSTALL_BROWSER: installBrowser.id,
+      /*JOIN_NETWORK: joinNetwork.id,
+      INSTALL_BROWSER: installBrowser.id,*/
       FEEDBACK: feedback.id
     }
 
@@ -78,54 +78,21 @@ export default class Invite extends React.Component {
 
   render() {
     const { content } = this.props
-    const { joinNetwork, title, installBrowser, feedback, modal } = content;
+    const { /*joinNetwork, */title, /*installBrowser, */feedback, modal } = content;
     const { activeAccordion } = this.state
 
-    const platform = detectPlatform()
+    /*const platform = detectPlatform()
     let browserDownloadButton = null
     if (platform) {
       browserDownloadButton = {}
       browserDownloadButton.name = `${installBrowser.CTA.button.name} ${platform.os}`
       browserDownloadButton.url = platform.downloadUrl
-    }
+    }*/
 
     return (
       <div className={baseClassName}>
         <div className={cn('wrap')}>
           <Accordion className="underlineLink-bright-onYellow" bgColor={this.setAccordionBg()}>
-            <AccordionItem
-                overline={title}
-                active={activeAccordion === this.ACCORDIONS.JOIN_NETWORK}
-                id={joinNetwork.id}
-                title={joinNetwork.title}
-                text={joinNetwork.para}
-                ctaButton={joinNetwork.CTA.button}
-                ctaButtonType="primary"
-                ctaLink= {joinNetwork.CTA.link}
-                onClick={() => {
-                  this.setAccordion(this.ACCORDIONS.JOIN_NETWORK)
-                }}
-                onClickPrimaryButton={() => {
-                  openLink(joinNetwork.CTA.button.url, true)
-                }}
-            />
-            <AccordionItem
-              overline={title}
-              active={activeAccordion === this.ACCORDIONS.INSTALL_BROWSER}
-              id={installBrowser.id}
-              title={installBrowser.title}
-              text={installBrowser.para}
-              ctaButton={browserDownloadButton}
-              ctaLink = {installBrowser.CTA.link}
-              ctaButtonType="primary"
-              onClickPrimaryButton={() => {
-                if (!browserDownloadButton) return
-                openLink(browserDownloadButton.url, true)
-              }}
-              onClick={() => {
-                this.setAccordion(this.ACCORDIONS.INSTALL_BROWSER)
-              }}
-            />
             <AccordionItem
               overline={title}
               active={activeAccordion === this.ACCORDIONS.FEEDBACK}
