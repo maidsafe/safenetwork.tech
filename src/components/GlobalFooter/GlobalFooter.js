@@ -1,7 +1,7 @@
 import React from 'react'
 
 import FooterList from './FooterList'
-import FooterSubscribe from './FooterSubscribe'
+//import FooterSubscribe from './FooterSubscribe'
 import FooterSocial from './FooterSocial'
 import content from './content'
 
@@ -14,7 +14,7 @@ const GlobalFooter = () => {
     developers,
     company,
     legal,
-    newsletter,
+    //newsletter,
     social,
   } = content
 
@@ -26,11 +26,12 @@ const GlobalFooter = () => {
         <FooterList id="developers" data={developers} />
         <FooterList id="company" data={company} />
         <FooterList id="legal" data={legal} />
-        <FooterSubscribe id="newsletter" data={newsletter} />
         <FooterSocial id="social" data={social} />
       </div>
     </footer>
   )
 }
+
+         //<FooterSubscribe id="newsletter" data={newsletter} /> removed this from the above table
 
 export default GlobalFooter

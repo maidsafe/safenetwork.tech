@@ -13,11 +13,11 @@ export default {
        }
     }
   },
-  subscribe: {
+  /*subscribe: {
     title: 'Subscribe for updates:'
-  },
+  },*/
   releases: {
-    release1: {
+    /*release1: {
       overline: 'Live Now',
       title: 'Baby Fleming Network',
       para:[
@@ -33,7 +33,7 @@ export default {
       //   items: [
       //   ]
       // }
-    },
+    },*/
     release2: {
       overline: 'Upcoming Milestone',
       title: 'Safe Fleming Network',

@@ -22,8 +22,6 @@ export default {
       title: 'What information does the organisation collect?',
       para: [
         'We do not place cookies on your computer or device however, the organisation collects information about you as follows:',
-        // '- Your IP Address',
-        // 'During the Alpha phase of the Safe Network development we record the currently active IP address of your login in order to avoid spamming attempts. The IP address is recorded only when the “Set Registered IP” or “Update Registered IP” buttons are pressed. The data will be stored on an external server [Digital Ocean](https://www.digitalocean.com/) and will be deleted as soon as it is apparent that the information is no longer needed for the purpose for which it was retained.',
         // '- Your email address',
         'If you choose to subscribe to our email newsletter we collect your email address. If you are an iOS user and you register to download the Safe browser to your iOS device we collect your email address',
         '- Your name, iOS Device and UDID',
@@ -35,8 +33,6 @@ export default {
 	{
       title: 'Why does the organisation process personal data?',
       para: [
-        'The organisation has a legitimate interest in processing personal data (current IP address) in order to ensure that the Safe Network can be accessed, during the Alpha development phase without being left open to attack by malicious agents.',
-        'Collecting IP addresses is a temporary measure but essential at this stage as it acts as a form of spam protection - preventing someone creating thousands of accounts and attacking the Network whilst it is in Alpha stage. The company will only collect this information if you with your consent press the button “Set Registered IP” or “Update Registered IP”.',
         'Collecting email addresses with your consent enables us to email you, and keep you up to date with all news related to the Safe Network. Providing your email address if you are an iOS user provides you with the opportunity to deploy and test the Safe Browser.'
       ]
     },
@@ -44,7 +40,6 @@ export default {
       title: 'Who has access to data?',
       para: [
         'Your information may be shared internally for the purposes of the development of the Safe Network. This includes members of the Marketing, QA, Development and Payroll teams.',
-        'When you consent for your IP address to be collected, this will be stored on an external server hosted by Digital Ocean with whom the QA and Development teams have access. More information on their privacy policy can be found here - [https://www.digitalocean.com/legal/privacy-policy/](https://www.digitalocean.com/legal/privacy-policy/)',
         'When you consent for your email address to be collected, by signing up for the newsletter, your email address will be stored on an external server hosted by [MailChimp](https://mailchimp.com/) to which the MaidSafe Marketing team has access. When signing up for Mailchimp your email address will be stored by MailChimp, in addition Mailchimp may also collect the following data from you; device information and product usage. When unsubscribing, updating your preferences or viewing an email in your browser MailChimp may place cookies on your device.',
         'If you wish to unsubscribe from the newsletter, MailChimp will immediately anonymise your personal data and we will permanently delete this remaining anonymised data each May and November.',
         'More information on their privacy policy can be found here - [https://mailchimp.com/legal/privacy/](https://mailchimp.com/legal/privacy/)',
@@ -59,7 +54,6 @@ export default {
     }, {
       title: 'For how long does the organisation keep data??',
       para: [
-        'IP addresses will be stored until the Safe Network progresses to Beta Stage. This enables us to investigate any issues and trends that happen across our tests.',
         'Email addresses will be stored until you choose to unsubscribe from our newsletter. Email addresses will be stored on a Google form for the period of 1 week',
       ]
     },
@@ -80,7 +74,6 @@ export default {
     }, {
       title: 'What if you do not provide personal data?',
       para: [
-        'You are under no statutory or contractual obligation to provide your IP address, however, if you do not provide us with this information you may not be able to fully use or test our suite of products.',
         'You are under no statutory or contractual obligation to provide your email address, however, if you do not provide us with this information you will not be able to receive our newsletter or to test the browser on an iOS device.',
       ]
     }, {

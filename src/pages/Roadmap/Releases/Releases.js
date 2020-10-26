@@ -13,17 +13,11 @@ const cn = prefixClassName(baseClassName)
 
 const Releases = props => {
   const { content } = props
-  const { release1, release2, release3, release4 } = content
+  const { /*release1, */release2, release3, release4 } = content
   return (
     <div className={baseClassName}>
       <div className={cn('wrap')}>
-        <Intro
-          overline={release1.overline}
-          title={release1.title}
-          text={release1.para}
-          videoUrl={release1.videoUrl}
-          videoCaption={release1.videoCaption}
-        />
+
         <Intro
           overline={release2.overline}
           title={release2.title}

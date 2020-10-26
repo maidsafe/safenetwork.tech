@@ -8,7 +8,7 @@ export default {
       title: 'Try the Safe Network',
       para: [
         'Safe will change how we’ll interact with the web and our own data. A leap as big as this requires continuous testing and feedback from the people who it is designed for—and that’s where you can help.',
-        'Download the Safe Browser to browse the Network, or why not join the community and be one of many that provide feedback, contribute to code and essentially, help shape the Network.'
+        'Why not join the community over at [safenetforum.org](https://safenetforum.org/) and be one of many that provide feedback, contribute to code and essentially, help shape the Network. There you can read our weekly updates and be the first to try our latest innovations.'
       ]
     },
     startDevelop: {
@@ -54,14 +54,14 @@ export default {
         name: 'Join the Forum',
         url: 'https://safenetforum.org'
       }
-    },
-    subscribe: {
-      title: 'Stay Up-to-date'
     }
+    /*subscribe: {
+      title: 'Stay Up-to-date'
+    }*/
   },
   invite: {
     title: 'Get Started',
-    joinNetwork: {
+    /*joinNetwork: {
       id: 'joinNetwork',
       title: 'Connect to the Baby Fleming Public Shared Section',
       para: 'This shared section is hosted on DigitalOcean and consists of eight vaults on eight separate droplets, all connected together in one section. Please note that this testnet may require to be taken down.',
@@ -90,7 +90,7 @@ export default {
           url: CONSTANT.downloadApps.browser.others
         }
       }
-    },
+    },*/
     feedback: {
       id: 'feedback',
       title: 'Feedback & Contribute',
