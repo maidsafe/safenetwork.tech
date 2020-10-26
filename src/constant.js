@@ -8,7 +8,6 @@ export default {
     },
     imagePack: '/downloads/MaidSafe-Team-Press-Photos-Pack.zip',
     documents: {
-      parsecWhitePaper: 'https://docs.maidsafe.net/Whitepapers/pdf/PARSEC.pdf',
       primer: 'https://primer.safenetwork.org',
     },
   },
