@@ -60,11 +60,6 @@ export default {
       para: 'Whitepapers and more detailed reading on the Safe Network.',
       list: [
         {
-          id: 'parsecWhitePaper',
-          title: 'PARSEC Whitepaper',
-          para: 'Get all the details on our highly asynchronous, Byzantine Fault Tolerant consensus mechanism.'
-        },
-        {
           id: 'primer',
           title: 'Safe Network Primer',
           para: 'Community written, and very detailed introduction to the design and technology that underpins the Safe Network.'

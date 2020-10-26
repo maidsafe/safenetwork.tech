@@ -132,19 +132,6 @@
           ]
         },
         {
-          question: 'What is PARSEC?',
-          answer: [
-            '**P**rotocol for **A**synchronous, **R**eliable, **S**ecure & **E**fficient **C**onsensus.',
-            'PARSEC is the consensus algorithm which allows decentralised networks to reach agreement on a series of events, actions or activities in a secure and reliable manner that is not only highly asynchronous but also Byzantine Fault Tolerant. In other words, the Network is mathematically guaranteed to reach consensus (provided no more than one-third of nodes are malicious or unresponsive for whatever reason).',
-            '[Read the whitepaper](https://docs.maidsafe.net/Whitepapers/pdf/PARSEC.pdf)',
-            '_PDF_',
-            '[Watch a video giving a technical overview](https://youtu.be/JKagaPUrDsY)',
-            '_YouTube_',
-            '[Let Dug from MaidSafe talk you through it](https://youtu.be/3YRaTCET5ZU)',
-            '_YouTube_'
-          ]
-        },
-        {
           question: 'What is data deduplication?',
           answer: [
             'The Safe Network uses [data deduplication](https://en.wikipedia.org/wiki/Data_deduplication) to ensure that space is used efficiently when storing multiple copies of data which have been uniquely encrypted. The network is able to distinguish identical pieces of data by comparing the hashes of each chunk. Vaults also use hashes to identify themselves (known as Guaranteed Vault Identification).'
