@@ -87,22 +87,11 @@ export default {
             ],
           },
           {
-            feature: 'PARSEC',
-            desc: 'Asynchronous consensus algorithm',
-            status: 'Complete',
-            para: [
-              'Ensures that a global decentralised, permissionless Network can reach agreement about events that are permitted and the order in which they are to be recorded. A DAG-based algorithm that achieves the highest standard of security possibile, invented by MaidSafe in such a way that it ensures it is mathematically certain that every part of the Network will reach eventual agreement. In Fleming, we’ll be releasing a highly asynchronous version of PARSEC, with full asynchronicity to come later.'
-            ],
-            CTA: {
-              name: 'Read More',
-              url: 'https://hub.safedev.org/parsec/'
-            },
-          }, {
             feature: 'Node Ageing',
             desc: 'A decentralised system for ranking the behaviour, performance and abilities of nodes on the Network that requires no human intervention.',
             status: 'Complete',
             para: [
-              'Each node on the Safe Network is given an age by the Network itself. The node age increments every time that a node moves between Disjoint Sections, with only the most senior (Elders) entitled to vote during the PARSEC consensus algorithm.',
+              'Each node on the Safe Network is given an age by the Network itself. The node age increments every time that a node moves between Disjoint Sections, with only the most senior (Elders) entitled to vote.',
               'Dig into the detail in the RFC, and [join the discussion](https://forum.safedev.org/t/rfc-45-node-ageing/157) on the forum.'
             ],
             CTA: {
@@ -138,17 +127,6 @@ export default {
             para: [
               'Software that lets computers communicate in an encrypted manner on the Safe Network. The software provides the infrastructure for messages to travel whilst the Routing layer of the Network sets the rules about which directions those messages can travel in.'
             ],
-          }, {
-            feature: 'Malice Detection',
-            desc: 'Preventing malicious nodes subverting the consensus algorithm, PARSEC',
-            status: 'Complete',
-            para: [
-              'The way that nodes identify malicious nodes that are damaging the Network within a Disjoint Section and the mechanism by which they agree to eject that node, or mitigate the risk.'
-            ],
-            CTA: {
-              name: 'Read the RFC',
-              url: 'https://github.com/maidsafe/rfcs/blob/master/text/0050-malice_in_parsec/0050-malice_in_parsec.md'
-            }
           }, {
             feature: 'Test Safecoin & Wallet',
             desc: 'Allow the Network to charge, and a user to send and receive payments to a wallet, in units called Test Safecoins',
@@ -287,13 +265,6 @@ export default {
             status: 'Concept',
             para: [
               'Ensures that even the smallest piece of data that is stored in a Vault cannot be read by the person controlling the computer on which it is stored.'
-            ],
-          }, {
-            feature: 'Common Coin',
-            desc: 'Replace our concrete coin with a common coin to make PARSEC fully asynchronous',
-            status: 'Design',
-            para: [
-              'Common coin is a device that nodes can use to generate a “random” binary value (true or false). Every time a node flips the coin, all other nodes are guaranteed to observe the same value for their coin flip. Also, the value must be unpredictable, which means that no malicious node can know the outcome before a honest node has observed it.'
             ],
           }
         ]
