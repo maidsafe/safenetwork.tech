@@ -10,7 +10,8 @@ const scanForBrokenLinks = (serveUrl) => {
       'https://t.me/safenetwork',
       'https://youtu.be',
       'https://www.youtube.com',
-      'https://global.bittrex.com'
+      'https://global.bittrex.com',
+      'https://www.reddit.com/r/safenetwork/'
     ],
   };
   return new Promise((resolve, rejects) => {

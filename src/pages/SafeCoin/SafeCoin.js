@@ -15,6 +15,7 @@ import sparkThin2Web from 'assets/videos/spark_2_thin.webm'
 
 import Bittrex from 'assets/images/exchange_bittrex.png'
 import Hitbtc from 'assets/images/exchange_hitbtc.png'
+import BCBitcoin from 'assets/images/brokers_bcbitcoin.jpg'
 
 import SafeCoinPoster from 'assets/images/textures/texture_safecoin.jpg'
 
@@ -25,7 +26,8 @@ const cn = prefixClassName(baseClassName)
 
 const EXCHANGE_IMGS = {
   Bittrex: Bittrex,
-  HitBTC: Hitbtc
+  HitBTC: Hitbtc,
+  BCBitcoin: BCBitcoin
 }
 
 const SafeCoin = () => {
