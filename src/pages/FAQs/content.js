@@ -199,8 +199,8 @@
           question: 'How do I buy Safecoin?',
           answer: [
             'Safecoin won’t be issued until the Network goes live so they cannot be purchased at the moment. Currently you can buy MaidSafeCoin which will be swapped on a 1-to-1 basis for Safecoin when released.',
-            'MaidSafeCoin is listed on the Bitcoin blockchain and can be purchased on a number of exchanges including:',
-            '- [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)'
+            'MaidSafeCoin is listed on the Bitcoin blockchain and can be purchased on a number of exchanges and brokers including:',
+            '- [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [BC Bitcoin](https://www.bcbitcoin.co.uk/buy/?coin=MAID)'
           ]
         },
         {
@@ -230,7 +230,7 @@
           question: 'What is MaidSafeCoin?',
           answer: [
             'MaidSafeCoin is a proxy token that was released during MaidSafe\'s crowd sale and will be swapped for Safecoin on a 1:1 basis when Safecoin is released.',
-            'MaidSafeCoin is listed on the Bitcoin blockchain and can be purchased on a number of exchanges including [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID) and [HitBTC](https://hitbtc.com/MAID-to-BTC).',
+            'MaidSafeCoin is listed on the Bitcoin blockchain and can be purchased on a number of exchanges and brokers including [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID), [HitBTC](https://hitbtc.com/MAID-to-BTC) and [BC Bitcoin](https://www.bcbitcoin.co.uk/buy/?coin=MAID).',
           ]
         },
         {
