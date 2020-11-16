@@ -113,7 +113,7 @@ export default {
       {
         'style': 'twitter',
         'name': 'Twitter',
-        'url': 'https://twitter.com/safenetforum'
+        'url': 'https://twitter.com/safenetworktech'
       },
       {
         'style': 'facebook',
