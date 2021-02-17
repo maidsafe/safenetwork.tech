@@ -111,7 +111,7 @@ export default {
         {
           question: 'How do I get involved with the Safe Network community?',
           answer: [
-            'The Community is most active on the [Safe Network Forum](https://safenetforum.org/) and we’d suggest starting in the [beginners section](https://safenetforum.org/c/beginners )',
+            'The Community is most active on the [Safe Network Forum](https://safenetforum.org/) and we’d suggest starting in the [beginners section](https://safenetforum.org/c/beginners/18)',
             '_[Visit the Forum](https://safenetforum.org/)_'
           ]
         },
