@@ -66,11 +66,11 @@ export default {
       },
       {
         'name': 'Contact',
-        'url': 'https://maidsafe.net/contact'
+        'url': 'https://maidsafe.net/contact/'
       },
       {
         'name': 'Careers',
-        'url': 'https://maidsafe.net/careers'
+        'url': 'https://maidsafe.net/careers/'
       }
     ]
   },
@@ -100,7 +100,7 @@ export default {
       },
       {
         'name': 'Credits',
-        'url': 'https://maidsafe.net/credits'
+        'url': 'https://maidsafe.net/credits/'
       }
     ]
   },
@@ -148,7 +148,7 @@ export default {
       {
         'style': 'discord',
         'name': 'Discord',
-        'url': 'https://discord.gg/0ak6ESm4oAR3oXik'
+        'url': 'https://discord.com/invite/0ak6ESm4oAR3oXik'
       }
     ]
   }

@@ -112,7 +112,7 @@ export default {
             question: 'How do I buy MaidSafeCoin?',
             answer: [
               'In essence all we have to do is buy bitcoin and exchange it for MaidSafeCoin. There are a few simple steps required to do this.',
-              '- Create an [OmniWallet](http://omniwallet.org/).\n- Purchase bitcoin using your preferred vendor.\n- Create a trade account on an exchange or brokers which lists MaidSafeCoin (e.g. on [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)).\n- Send bitcoin to the trading account.\n- Trade bitcoin for MaidSafeCoin.\n- Withdraw / Transfer to OmniWallet.\n- MaidSafeCoin is now in your OmniWallet!'
+              '- Create an [OmniWallet](https://www.omniwallet.org/).\n- Purchase bitcoin using your preferred vendor.\n- Create a trade account on an exchange or brokers which lists MaidSafeCoin (e.g. on [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)).\n- Send bitcoin to the trading account.\n- Trade bitcoin for MaidSafeCoin.\n- Withdraw / Transfer to OmniWallet.\n- MaidSafeCoin is now in your OmniWallet!'
             ]
           },
           {

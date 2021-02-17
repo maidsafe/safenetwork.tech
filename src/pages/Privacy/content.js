@@ -84,12 +84,12 @@ export default {
     }, {
       title: "MaidSafe's Privacy Policy",
       para: [
-        'To view MaidSafe’s privacy policy head over to the [privacy page](https://maidsafe.net/privacy) on maidsafe.net.',
+        'To view MaidSafe’s privacy policy head over to the [privacy page](https://maidsafe.net/privacy/) on maidsafe.net.',
       ]
     },  {
       title: 'How do I make a complaint?',
       para: [
-        'You have the right to make a complaint about anything regarding processing, storage, or retention of your data. We would hope to resolve any complaint internally and if you would like to lodge a complaint with us in the first instance please contact gdpr@maidsafe.net. However, you also have the right to lodge a complaint at any time to the Information Commissioner (ICO) in respect of our processing of your personal data. Information can be found at [www.ico.org.uk.](https://www.ico.org.uk/)',
+        'You have the right to make a complaint about anything regarding processing, storage, or retention of your data. We would hope to resolve any complaint internally and if you would like to lodge a complaint with us in the first instance please contact gdpr@maidsafe.net. However, you also have the right to lodge a complaint at any time to the Information Commissioner (ICO) in respect of our processing of your personal data. Information can be found at [www.ico.org.uk.](https://ico.org.uk/)',
       ]
     }
   ]

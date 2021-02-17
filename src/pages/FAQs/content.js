@@ -50,7 +50,7 @@
         {
           question: 'How do I get involved with the Safe Network community?',
           answer: [
-            'The Community is most active on the [Safe Network Forum](https://safenetforum.org/) and we’d suggest starting in the [beginners section](https://safenetforum.org/c/beginners).',
+            'The Community is most active on the [Safe Network Forum](https://safenetforum.org/) and we’d suggest starting in the [beginners section](https://safenetforum.org/c/beginners/18).',
             '*[Visit the Forum](https://safenetforum.org/)*'
           ]
         },
@@ -128,7 +128,7 @@
             'All data is self-encrypted before it is reaches the Safe Network. The process is automatic and happens instantaneously.',
             'As data is saved to a User\'s virtual hard drive, it is broken up into a minimum of three chunks, [hashed](https://en.wikipedia.org/wiki/Hash_function) and then encrypted. To further obfuscate the data, every chunk is passed through an [XOR](https://en.wikipedia.org/wiki/Exclusive_or) function using the hashes of other chunks. Each chunk is then broken up and key value pairs are added to a table in the Users account, called a data map. The data map contains the locations of each chunk that makes up the file. The data map, with hashes before and after encryption, is used when retrieving and decoding the User\'s data, as the encryption process is non-reversible.',
             'This entire process takes place on the Client (i.e. the User\'s computer) so that data is always encrypted on the network and only Users with the correct credentials can decrypt the file. This also means that passwords can never be stolen from the network as they never pass beyond the Users computer. For additional security the data map is also run through the self-encryption process.',
-            '[Watch a Video Explainer](https://youtu.be/Jnvwv4z17b4)'
+            '[Watch a Video Explainer](https://www.youtube.com/watch?v=Jnvwv4z17b4&feature=youtu.be)'
           ]
         },
         {
@@ -224,7 +224,7 @@
           question: 'How do I buy MaidSafeCoin?',
           answer: [
             'In essence all we have to do is buy bitcoin and exchange it for MaidSafeCoin. There are a few simple steps required to do this.',
-            '\n1.  Create an [OmniWallet](http://omniwallet.org/).\n2.  Purchase bitcoin using your preferred vendor.\n3.  Create a trade account on an exchange which lists MaidSafeCoin (e.g. on [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)).\n4.  Send bitcoin to the trading account.\n5.  Trade bitcoin for MaidSafeCoin.\n6.  Withdraw / Transfer to OmniWallet.\n7.  MaidSafeCoin is now in your OmniWallet!'
+            '\n1.  Create an [OmniWallet](https://www.omniwallet.org/).\n2.  Purchase bitcoin using your preferred vendor.\n3.  Create a trade account on an exchange which lists MaidSafeCoin (e.g. on [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)).\n4.  Send bitcoin to the trading account.\n5.  Trade bitcoin for MaidSafeCoin.\n6.  Withdraw / Transfer to OmniWallet.\n7.  MaidSafeCoin is now in your OmniWallet!'
           ]
         },
         {
