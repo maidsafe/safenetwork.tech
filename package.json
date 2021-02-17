@@ -7,9 +7,7 @@
     "stage": "react-static build --staging",
     "build": "yarn run clean-build && react-static build",
     "serve": "serve dist -l 3001",
-    "clean-build": "./node_modules/.bin/del-cli -f ./dist",
-    "run-mocha": "./node_modules/.bin/mocha --require @babel/register",
-    "test": "yarn build && yarn run-mocha"
+    "clean-build": "./node_modules/.bin/del-cli -f ./dist"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -28,9 +26,6 @@
     "typeface-vollkorn": "^0.0.72"
   },
   "devDependencies": {
-    "broken-link-checker": "^0.7.8",
-    "del-cli": "^3.0.1",
-    "mocha": "^7.2.0",
-    "should": "^13.2.3"
+    "del-cli": "^3.0.1"
   }
 }
