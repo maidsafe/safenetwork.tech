@@ -8,7 +8,7 @@ export default {
         {
           question: 'Allow a person to create an account and login anonymously and without intervention',
           answer: [
-            'Creating a new account and logging into the Network will never require a third party. Those processes will always be carried out directly between the User and the Network. It is worth noting that (for technical reasons) account creation may require the presence of Safecoin in the user’s account in certain circumstances (if this, for example, minimises the possibility of one entity creating millions of new accounts to attack the Network).'
+            'Creating a new account and logging into the Network will never require a third party. Those processes will always be carried out directly between the User and the Network. It is worth noting that (for technical reasons) account creation may require the presence of Safe Network Tokens in the user’s account in certain circumstances (if this, for example, minimises the possibility of one entity creating millions of new accounts to attack the Network).'
           ]
         },
         {
@@ -18,9 +18,9 @@ export default {
           ]
         },
         {
-          question: 'Allow the transfer of Safecoin to any User free of transaction costs',
+          question: 'Allow the transfer of Safe Network Tokens to any User free of transaction costs',
           answer: [
-            'Each User will be able to use any of their identities as a wallet address in order to be able to send and receive Safecoin.'
+            'Each User will be able to use any of their identities as a wallet address in order to be able to send and receive Safe Network Tokens.'
           ]
         },
         {
@@ -42,9 +42,9 @@ export default {
           ]
         },
         {
-          question: 'Let Users use any of their identities to send/receive Safecoin',
+          question: 'Let Users use any of their identities to send/receive Safe Network Tokens',
           answer: [
-            'Each individual must be able to use any of their identities as a wallet address in order to be able to send and receive Safecoin.'
+            'Each individual must be able to use any of their identities as a wallet address in order to be able to send and receive Safe Network Tokens.'
           ]
         },
         {
@@ -72,15 +72,15 @@ export default {
           ]
         },
         {
-          question: 'Only accept more Vaults when it needs them',
+          question: 'Only accept more Nodes when it needs them',
           answer: [
             'Like any species or group of organisms, unbounded growth leads to demise. The Safe Network could be attacked by a bad actor simply adding millions of nodes and then closing them down (or worse). To help prevent this, the Network will only allow new nodes to join when it needs them. This also nicely slows any attacker and dilutes them with good actors also trying to join. The Network can then balance supply and demand as it sees fit as opposed to relying on external controls.'
           ]
         },
         {
-          question: 'Increase farming rewards when it needs more resources (Vaults) and decrease rewards when resources are plentiful',
+          question: 'Increase farming rewards when it needs more resources (Nodes) and decrease rewards when resources are plentiful',
           answer: [
-            'If the Network simply accepted any Vault that wanted to join, it would likely either be targeted by a botnet attack or an attacker might attempt to set up an overwhelming number of malicious nodes initially whilst the Network size is small at launch. The Network must be able to balance this supply of Vaults itself to avoid there being a large number of nodes that have very little data, as this would push the farming rates down.'
+            'If the Network simply accepted any Nodes that wanted to join, it would likely either be targeted by a botnet attack or an attacker might attempt to set up an overwhelming number of malicious nodes initially whilst the Network size is small at launch. The Network must be able to balance this supply of Nodes itself to avoid there being a large number of nodes that have very little data, as this would push the farming rates down.'
           ]
         },
         {
@@ -128,23 +128,23 @@ export default {
       ]
     }
   },
-  safecoin: {
-    title: 'Safecoin',
+  SafeNetworkTokens: {
+    title: 'Safe Network Tokens',
     lists: [
       {
         name: 'A.',
-        para: 'Safecoin is the unique incentivisation mechanism built into the Safe Network. All Safecoins are recycled when they are paid to the Network in exchange for resources. On launch, Safecoin will be distributed as follows: (1) Pay the creators of the Network (MaidSafe shareholders) 5% of the total Safecoin; (2) Pay the 2014 crowdsale investors of the Network 10% of the total Safecoin.'
+        para: 'Safe Network Tokens are the unique incentivisation mechanism built into the Safe Network. All Safe Network Tokens are recycled when they are paid to the Network in exchange for resources. On launch, Safe Network Tokens will be distributed as follows: (1) Pay the creators of the Network (MaidSafe shareholders) 5% of the total Safe Network Tokens; (2) Pay the 2014 crowdsale investors of the Network 10% of the total Safe Network Tokens.'
       },
       {
         name: 'B.',
-        para: 'Safecoin will be distributed on an ongoing basis: (1) Pay Vaults for providing service (85% of rewards); (2) Pay developers who produce apps that people use (10% of rewards); (3) Pay the maintainers of the Network code (5% of rewards)'
+        para: 'Safe Network Tokens will be distributed on an ongoing basis: (1) Pay Nodes for providing service (85% of rewards); (2) Pay developers who produce apps that people use (10% of rewards); (3) Pay the maintainers of the Network code (5% of rewards)'
       },
     ],
     notes: {
       title: 'Note:',
       para: 'Whilst the above explanation is a handy approximation of the split, the rewards will in fact be dynamically adjusted according to the Farming Rate determined by the Network:',
       points: [
-        'Farmers who run the Vaults are paid at 100% of the Farming Rate for all GETs on the Network. I.e. 86.95% (100/115) of all rewards.',
+        'Farmers who run the Nodes are paid at 100% of the Farming Rate for all GETs on the Network. I.e. 86.95% (100/115) of all rewards.',
         'Application Developers are paid at 10% of the Farming Rate for all GETs on the Network (that relate to their applications). I.e. 8.695% (10/115) of all rewards.',
         'Maintainer Developers are paid at 5% of the Farming Rate for all GETs on the Network. I.e. 4.348% (5/115) of all rewards.'
       ]
