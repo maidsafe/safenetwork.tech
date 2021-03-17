@@ -40,16 +40,16 @@
       h4
         max-width: 100%
         margin-bottom: 0
-  &__safecoin
+  &__SafeNetworkTokens
     grid-column: 2/span 8
     padding-top: $pad-chunky
     max-width: $max-width-xl
-  &__safecoinTitle
+  &__SafeNetworkTokensTitle
     max-width: 100%
     border-bottom: 2px solid $black
     padding-bottom: $pad-thin
     margin-bottom: 0
-  &__safecoinItem
+  &__SafeNetworkTokensItem
     display: grid
     grid-template-columns: repeat(8, 1fr)
     border-bottom: 2px solid $pinky-grey
@@ -62,7 +62,7 @@
     p
       grid-column: 2/span 7
       margin-left: -$hspace-l
-  &__safecoinNotes
+  &__SafeNetworkTokensNotes
     display: grid
     grid-template-columns: repeat(8, 1fr)
     padding-top: $pad-small
@@ -95,15 +95,15 @@
       +grid-small()
     &__banner,
     &__desc,
-    &__safecoin,
+    &__SafeNetworkTokens,
     &__accord
       grid-column: 1/span 6
     &__desc,
     &__accord
       +default-column()
-    &__safecoinTitle
+    &__SafeNetworkTokensTitle
       margin-left: $hspace-xs
-    &__safecoinItem
+    &__SafeNetworkTokensItem
       +grid-small()
       position: relative
       &::after
@@ -121,7 +121,7 @@
       p
         grid-column: 2/span 5
         margin-left: 0
-    &__safecoinNotes
+    &__SafeNetworkTokensNotes
       +grid-small()
       .title
         grid-column: 1/span 1
@@ -136,7 +136,7 @@
 
 +render-to($media-xxs)
   .Fundamentals
-    &__safecoinTitle
+    &__SafeNetworkTokensTitle
       margin-left: $hspace-xxs
     &__accord
       padding-left: 0
@@ -146,7 +146,7 @@
     &__accordHeader
       .index
         top: -3px
-    &__safecoinItem
+    &__SafeNetworkTokensItem
       &::after
         width: $hspace-xxs
       .index
@@ -154,7 +154,7 @@
       p
         +default-column()
         margin-left: -$hspace-xxs
-    &__safecoinNotes
+    &__SafeNetworkTokensNotes
       .title
         grid-column: 1/span 2
         padding-left: $hspace-xxs
@@ -171,16 +171,16 @@
     &__accordHeader
       .title
         padding-left: $pad-small
-    &__safecoinTitle
+    &__SafeNetworkTokensTitle
       margin-left: $hspace-xxxs
-    &__safecoinItem
+    &__SafeNetworkTokensItem
       &::after
         width: $hspace-xxxs
       .index
         padding-left: $hspace-xxxs
       p
         margin-left: -$hspace-xxxs
-    &__safecoinNotes
+    &__SafeNetworkTokensNotes
       .title
         padding-left: $hspace-xxxs
       .desc

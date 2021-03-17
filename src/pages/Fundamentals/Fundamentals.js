@@ -13,7 +13,7 @@ const baseClassName = 'Fundamentals'
 const cn = prefixClassName(baseClassName)
 
 const Fundamentals = () => {
-  const { title, desc, qa, safecoin } = content
+  const { title, desc, qa, SafeNetworkTokens } = content
   return (
     <section className={baseClassName}>
       <div className={cn('wrap')}>
@@ -43,25 +43,25 @@ const Fundamentals = () => {
             }
           </div>
         </div>
-        <div className={cn('safecoin')}>
-          <div className={cn('safecoinWrap')}>
-            <h3 className={cn('safecoinTitle')}>{safecoin.title}</h3>
-            <div className={cn('safecoinList')}>
+        <div className={cn('SafeNetworkTokens')}>
+          <div className={cn('SafeNetworkTokensWrap')}>
+            <h3 className={cn('SafeNetworkTokensTitle')}>{SafeNetworkTokens.title}</h3>
+            <div className={cn('SafeNetworkTokensList')}>
               {
-                safecoin.lists.map(ls => (
-                  <div key={genRandomKey()} className={cn('safecoinItem')}>
+                SafeNetworkTokens.lists.map(ls => (
+                  <div key={genRandomKey()} className={cn('SafeNetworkTokensItem')}>
                     <div className="index"><h3>{ls.name}</h3></div>
                     <p>{ls.para}</p>
                   </div>
                 ))
               }
             </div>
-            <div className={cn('safecoinNotes')}>
-              <h3 className="title">{safecoin.notes.title}</h3>
-              <div className="desc"><p>{safecoin.notes.para}</p></div>
+            <div className={cn('SafeNetworkTokensNotes')}>
+              <h3 className="title">{SafeNetworkTokens.notes.title}</h3>
+              <div className="desc"><p>{SafeNetworkTokens.notes.para}</p></div>
               <div className="points">
                 {
-                  safecoin.notes.points.map(pt => (
+                  SafeNetworkTokens.notes.points.map(pt => (
                     <div key={genRandomKey()} className="point"><p>{pt}</p></div>
                   ))
                 }
