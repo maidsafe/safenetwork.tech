@@ -7,7 +7,7 @@ export default {
         item: 'Allow anyone to have unrestricted access to public data: all of humanity\'s information, available to all of humanity.',
       },
       {
-        item: 'Enable people to securely, and privately access their own data, and use it to get things done, with no one else involved.',
+        item: 'Enable people to securely and privately access their own data, and use it to get things done, with no one else involved.',
       },
       {
         item: 'Allow individuals to freely communicate with each other privately, and securely.',
