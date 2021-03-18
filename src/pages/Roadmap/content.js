@@ -6,7 +6,7 @@ export default {
       overline: 'Latest Update',
       date: 'March 26, 2020',
       title: 'Baby Fleming iteration 3',
-      para: `The Baby Fleming release is about iterating from a single vault network into a multiple vaults (single-section) network. Iteration 3 has been updated to use the latest version of the Quinn library (via quic-p2p).`,
+      para: `The Baby Fleming release is about iterating from a single node network into a multiple nodes (single-section) network. Iteration 3 has been updated to use the latest version of the Quinn library (via quic-p2p).`,
        CTA: {
          name: 'Safe Network Forum',
          url: 'https://safenetforum.org/t/safe-network-dev-update-march-26-2020/31360'
@@ -37,7 +37,7 @@ export default {
     release2: {
       overline: 'Upcoming Milestone',
       title: 'Safe Fleming Network',
-      para: ['The next major milestone for the Safe Network. Whilst the Baby Fleming Network will continue to function, this will be a standalone Network that will enable individuals to run Vaults - decentralised storage from home computers. The release of Fleming will be notable for many reasons, not least the fact that with data storage, the Network will now also contain Test Safecoin.'],
+      para: ['The next major milestone for the Safe Network. Whilst the Baby Fleming Network will continue to function, this will be a standalone Network that will enable individuals to run Nodes - decentralised storage from home computers. The release of Fleming will be notable for many reasons, not least the fact that with data storage, the Network will now also contain Test Safe Network Tokens.'],
       accordion: {
         header: [
           'Fleming Feature',
@@ -50,7 +50,7 @@ export default {
             desc: 'The ability to log into a decentralised network without the permission or existence of a third party',
             status: 'Complete',
             para: [
-              'MaidSafe invented the technology that lets someone log into a decentralised network securely without requiring the involvement of a third party. The Shared Vault Network is the only place in the world today that you can see this in action.'
+              'MaidSafe invented the technology that lets someone log into a decentralised network securely without requiring the involvement of a third party. The Shared Node Network is the only place in the world today that you can see this in action.'
             ],
             // CTA: {
             //   name: 'Read More',
@@ -128,22 +128,22 @@ export default {
               'Software that lets computers communicate in an encrypted manner on the Safe Network. The software provides the infrastructure for messages to travel whilst the Routing layer of the Network sets the rules about which directions those messages can travel in.'
             ],
           }, {
-            feature: 'Test Safecoin & Wallet',
-            desc: 'Allow the Network to charge, and a user to send and receive payments to a wallet, in units called Test Safecoins',
+            feature: 'Test Safe Network Tokens & Wallet',
+            desc: 'Allow the Network to charge, and a user to send and receive payments to a wallet, in units called Test Safe Network Tokens',
             status: 'Complete',
             para: [
-              'Safecoin is the incentive mechanism that encourages individuals to provide the computing resources that the Network requires: storage, broadband, and CPU resources.',
+              'Safe Network Tokens are the incentive mechanism that encourages individuals to provide the computing resources that the Network requires: storage, broadband, and CPU resources.',
             ]
           }, {
             feature: 'Farming',
-            desc: 'The process of providing resource and receiving Safecoin in return',
+            desc: 'The process of providing resource and receiving Safe Network Tokens in return',
             status: 'Development',
             para: [
-              'Individuals who choose to supply the resources that the Network requires have the opportunity to be rewarded with Safecoin. This work ensures that the Network rewards those who provide it with valuable resources.',
+              'Individuals who choose to supply the resources that the Network requires have the opportunity to be rewarded with Safe Network Tokens. This work ensures that the Network rewards those who provide it with valuable resources.',
             ],
           }, {
-            feature: 'Vaults From Home',
-            desc: 'The ability for anyone to download software and run Vaults from home, creating decentralised storage for the Network',
+            feature: 'Nodes From Home',
+            desc: 'The ability for anyone to download software and run Nodes from home, creating decentralised storage for the Network',
             status: 'Development',
             para: [
               'Decentralised data storage is a key element of the Safe Network. This release will enable nodes to participate regardless of the resources they offer.'
@@ -177,7 +177,7 @@ export default {
     release3: {
       overline: 'Next Up',
       title: 'Safe Maxwell Network',
-      para: ['The release of Safe Maxwell builds on top of Fleming and enables the network to upgrade, improves security and sets the ground work for switching Test Safecoin to real Safecoin.'],
+      para: ['The release of Safe Maxwell builds on top of Fleming and enables the network to upgrade, improves security and sets the ground work for switching Test Safe Network Tokens to real Safe Network Tokens.'],
       accordion: {
         header: [
           'Maxwell Feature',
@@ -261,10 +261,10 @@ export default {
             },
           }, {
             feature: 'Obfuscating stored data',
-            desc: 'All data stored within a Vault on an individual’s computer must be entirely encrypted and unreadable',
+            desc: 'All data stored within a Node on an individual’s computer must be entirely encrypted and unreadable',
             status: 'Concept',
             para: [
-              'Ensures that even the smallest piece of data that is stored in a Vault cannot be read by the person controlling the computer on which it is stored.'
+              'Ensures that even the smallest piece of data that is stored in a Node cannot be read by the person controlling the computer on which it is stored.'
             ],
           }
         ]
@@ -277,7 +277,7 @@ export default {
       {
         id: 'safeBrowser',
         name: 'Safe Browser',
-        para: 'The latest release includes some of the beginnings of the Perpetual Web. Please note that it\'s only compatible with the Vaults Phase 1 release.',
+        para: 'The latest release includes some of the beginnings of the Perpetual Web. Please note that it\'s only compatible with the Nodes Phase 1 release.',
         status: 'Latest Version v0.16.0'
       }
     ],
@@ -447,19 +447,19 @@ export default {
             ],
             items: [
               {
-                feature: 'Test Safecoin Wallet',
-                desc: 'Transact using Test Safecoins',
+                feature: 'Test Safe Network Token Wallet',
+                desc: 'Transact using Test Safe Network Tokens',
                 status: 'Development',
                 para: [
-                  'Users will be able to use Test Safecoin in the Network, allowing an ecosystem to built around the Safe incentive mechanism. The ability to create multiple wallets, associate them with an identity, and also one-time-use wallets to enable anonymous transactions, will all be part of this.',
+                  'Users will be able to use Test Safe Network Tokens in the Network, allowing an ecosystem to built around the Safe incentive mechanism. The ability to create multiple wallets, associate them with an identity, and also one-time-use wallets to enable anonymous transactions, will all be part of this.',
                 ],
               },
               {
-                feature: 'Vault User Interface',
-                desc: 'Easily set up, run, and manage a Vault',
+                feature: 'Node User Interface',
+                desc: 'Easily set up, run, and manage a Node',
                 status: 'Concept',
                 para: [
-                  'Users will see greatly-improved Vault User Experience. Anyone providing storage to the Network can expect to see a number of usability improvements, making it easy to offer resources and start farming on everyday home computers and devices.'
+                  'Users will see greatly-improved Node User Experience. Anyone providing storage to the Network can expect to see a number of usability improvements, making it easy to offer resources and start farming on everyday home computers and devices.'
                 ],
               },
             ]
