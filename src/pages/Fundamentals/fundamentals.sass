@@ -13,6 +13,17 @@
     grid-column: 2/span 8
     padding-top: $pad-small
     max-width: $max-width-xl
+  &__points
+    grid-column: 2/span 8
+    padding-bottom: $pad-small
+    max-width: $max-width-xl
+    font-weight: bold
+    margin-left: $pad-small / 2
+    li 
+      max-width: 848px -  $pad-small / 2
+      padding-bottom: $pad-small / 2
+      // list-style-type: none;
+
   &__accord
     grid-column: 2/span 8
     max-width: $max-width-xl
@@ -133,6 +144,10 @@
         margin-left: 0
       .desc
         margin-left: -$hspace-xs
+    &__points
+      margin-left: 0;
+      li 
+        list-style-type: none;
 
 +render-to($media-xxs)
   .Fundamentals

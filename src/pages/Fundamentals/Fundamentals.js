@@ -13,7 +13,7 @@ const baseClassName = 'Fundamentals'
 const cn = prefixClassName(baseClassName)
 
 const Fundamentals = () => {
-  const { title, desc, qa, SafeNetworkTokens } = content
+  const { title, desc, desc_end, qa, SafeNetworkTokens, points } = content
   return (
     <section className={baseClassName}>
       <div className={cn('wrap')}>
@@ -22,6 +22,16 @@ const Fundamentals = () => {
         </div>
         <div className={classNames(cn('desc'), 'introText')}>
           <p>{desc}</p>
+          <ol className={classNames(cn('points') )}>
+            {
+              points.map(ls => (
+                <li key={genRandomKey()}>{ls.item}</li>
+
+               ) )
+
+            }
+          </ol>
+          <p>{desc_end}</p>
         </div>
         <div className={cn('accord')}>
           <div className={cn('accordTitle')}><h2>{qa.section.title}</h2></div>

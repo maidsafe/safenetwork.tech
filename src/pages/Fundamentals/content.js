@@ -1,6 +1,21 @@
 export default {
   title: 'Network Fundamentals',
-  desc: 'There are certain concepts that have driven every stage of the design of the Network ever since the project started in 2006. Since that time, the Safe community has grown and we’re delighted to see just how many people and projects have come to recognise the vital importance of a global, secure and private decentralised platform for storage and communication.',
+  desc: 'The project to build the Safe Network has, at its heart, a set of objectives that are still as vital to meet today as they were when we began back in 2006:',
+  desc_end: 'These objectives lead to the foundational principles that have driven each stage of the Safe Network\'s design. The Network Fundamentals:',
+    points: [
+      {
+        item: 'Allow anyone to have unrestricted access to public data: all of humanity\'s information, available to all of humanity.',
+      },
+      {
+        item: 'Enable people to securely, and privately access their own data, and use it to get things done, with no one else involved.',
+      },
+      {
+        item: 'Allow individuals to freely communicate with each other privately, and securely.',
+      },
+      {
+        item: 'Giving people and businesses the opportunity for financial stability by trading their resources, products, content, and creativity without the need for middlemen, or gatekeepers.',
+      }
+    ],
   qa: {
     section: {
       title: 'The Network will...',
