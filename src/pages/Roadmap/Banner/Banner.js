@@ -23,20 +23,7 @@ const Banner = props => {
         <div className={classNames(cn('content'), 'introText')}>
           <p>{pageDesc}</p>
         </div>
-        <div className={cn('update')}>
-          <div className={cn('updateWrap')}>
-            <div className="overline">{latestUpdate.overline}</div>
-            <h4 className="date">{latestUpdate.date}</h4>
-            <TextSnippet title={latestUpdate.title} text={latestUpdate.para} />
-            {
-              latestUpdate.CTA ? (
-                <div className="cta">
-                  <UnderlinedLink theme="yellow" url={latestUpdate.CTA.url}>{latestUpdate.CTA.name}</UnderlinedLink>
-                </div>
-              ) : null
-            }
-          </div>
-        </div>
+      
       </div>
     </div>
   )

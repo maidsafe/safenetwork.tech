@@ -2,16 +2,16 @@ export default {
   banner: {
     pageTitle: 'The ~~Im~~Possible Network',
     pageDesc: `14 years of research and development is coming to fruition as we put together the final building blocks of what some said was impossible: Secure Access For Everyone.`,
-    latestUpdate: {
-      overline: 'Latest Update',
-      date: 'March 26, 2020',
-      title: 'Baby Fleming iteration 3',
-      para: `The Baby Fleming release is about iterating from a single node network into a multiple nodes (single-section) network. Iteration 3 has been updated to use the latest version of the Quinn library (via quic-p2p).`,
-       CTA: {
-         name: 'Safe Network Forum',
-         url: 'https://safenetforum.org/t/safe-network-dev-update-march-26-2020/31360'
-       }
-    }
+    // latestUpdate: {
+    //   overline: 'Latest Update',
+    //   date: 'March 26, 2020',
+    //   title: 'Baby Fleming iteration 3',
+    //   para: `The Baby Fleming release is about iterating from a single node network into a multiple nodes (single-section) network. Iteration 3 has been updated to use the latest version of the Quinn library (via quic-p2p).`,
+    //    CTA: {
+    //      name: 'Safe Network Forum',
+    //      url: 'https://safenetforum.org/t/safe-network-dev-update-march-26-2020/31360'
+    //    }
+    // }
   },
   /*subscribe: {
     title: 'Subscribe for updates:'
@@ -37,7 +37,7 @@ export default {
     release2: {
       overline: 'Upcoming Milestone',
       title: 'Safe Fleming Network',
-      para: ['The next major milestone for the Safe Network. Whilst the Baby Fleming Network will continue to function, this will be a standalone Network that will enable individuals to run Nodes - decentralised storage from home computers. The release of Fleming will be notable for many reasons, not least the fact that with data storage, the Network will now also contain Test Safe Network Tokens.'],
+      para: ['The next major milestone for the Safe Network. This will be a standalone Network that will enable individuals to run Nodes - decentralised storage from home computers. The release of Fleming will be notable for many reasons, not least the fact that with data storage, the Network will now also contain Test Safe Network Tokens.'],
       accordion: {
         header: [
           'Fleming Feature',
@@ -50,7 +50,7 @@ export default {
             desc: 'The ability to log into a decentralised network without the permission or existence of a third party',
             status: 'Complete',
             para: [
-              'MaidSafe invented the technology that lets someone log into a decentralised network securely without requiring the involvement of a third party. The Shared Node Network is the only place in the world today that you can see this in action.'
+              'MaidSafe invented the technology that lets someone log into a decentralised network securely without requiring the involvement of a third party. The testnets we have released are the only place in the world today that you can see this in action.'
             ],
             // CTA: {
             //   name: 'Read More',
@@ -83,7 +83,7 @@ export default {
             desc: 'Ensures a message can be sent between nodes in different Disjoint Sections',
             status: 'Complete',
             para: [
-              'Ensures that a message can be sent between nodes in different Disjoint Sections. In this early iteration, each message contains signatures of the members of the Disjoint Sections but does not yet verify the signatures themselves.'
+              'Ensures that a message can be sent between nodes in different Disjoint Sections. Each message contains signatures of the members of the Disjoint Sections and is verified using these signatures.'
             ],
           },
           {
@@ -121,7 +121,7 @@ export default {
               url: 'https://github.com/maidsafe/rfcs/blob/master/text/0058-reliable-message-delivery/0058-reliable-message-delivery.md'
             },
           }, {
-            feature: 'QUIC-P2P',
+            feature: 'QP2P',
             desc: 'The low-level language which users connecting to Safe will use for all network communications',
             status: 'Complete',
             para: [
@@ -144,9 +144,9 @@ export default {
           }, {
             feature: 'Nodes From Home',
             desc: 'The ability for anyone to download software and run Nodes from home, creating decentralised storage for the Network',
-            status: 'Development',
+            status: 'Complete',
             para: [
-              'Decentralised data storage is a key element of the Safe Network. This release will enable nodes to participate regardless of the resources they offer.'
+              'Decentralised data storage is a key element of the Safe Network. This enables nodes to participate regardless of the resources they offer.'
             ],
           }, {
             feature: 'Published and Unpublished Data Types',
@@ -161,7 +161,7 @@ export default {
             //},
           }, {
             feature: 'Unpublished ImmutableData Data Type',
-            desc: 'Enhance ImmutableData to make it an unpublished or published, with the difference that unpublished can be deleted',
+            desc: 'Enhance ImmutableData to make it unpublished or published, with the difference that unpublished can be deleted',
             status: 'Complete',
             para: [
               'There are many times when a user will require to create Immutable Data to store private content. As long as this content is not published (made available for others) this will be deleteable by the data owner only.'
@@ -191,13 +191,6 @@ export default {
             status: 'Concept',
             para: [
               'Spam includes nodes attempting to carry out activities that they shouldn’t or valid activities at a scale that is intended to choke the Network. The Network should be able to withstand a reasonable volume of such attacks.'
-            ],
-          }, {
-            feature: 'Identity Management',
-            desc: 'Ability for users to create and manage multiple identities for use on the network',
-            status: 'Concept',
-            para: [
-              'Users will be able to create multiple identities in the Network. Each identity can be used as required by the User and each should be independent unless the User explicitly wants to connect them. This helps protect identity and privacy.'
             ],
           },
           {
