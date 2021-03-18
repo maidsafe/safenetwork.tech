@@ -22,15 +22,17 @@ const Fundamentals = () => {
         </div>
         <div className={classNames(cn('desc'), 'introText')}>
           <p>{desc}</p>
-          <ol className={classNames(cn('points') )}>
+          <ul className={classNames(cn('points') )}>
             {
               points.map(ls => (
-                <li key={genRandomKey()}>{ls.item}</li>
+                <li key={genRandomKey()}>
+                  <blockquote>{ls.item}</blockquote>
+                  </li>
 
                ) )
 
             }
-          </ol>
+          </ul>
           <p>{desc_end}</p>
         </div>
         <div className={cn('accord')}>

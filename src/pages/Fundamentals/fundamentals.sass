@@ -18,11 +18,22 @@
     padding-bottom: $pad-small
     max-width: $max-width-xl
     font-weight: bold
-    margin-left: $pad-small / 2
+    margin-left: $pad-small
     li 
-      max-width: 848px -  $pad-small / 2
-      padding-bottom: $pad-small / 2
-      // list-style-type: none;
+      list-style-type: none;
+      position: relative
+      &::before
+        content: ''
+        display: block
+        width: 30px
+        height: 30px
+        position: absolute
+        top: 3px
+        left: -60px
+        background-image: url($faq_arrow)
+        background-repeat: no-repeat
+        background-position: center right
+        background-size: 26px
 
   &__accord
     grid-column: 2/span 8
@@ -148,6 +159,8 @@
       margin-left: 0;
       li 
         list-style-type: none;
+        &::before
+          display: none
 
 +render-to($media-xxs)
   .Fundamentals
