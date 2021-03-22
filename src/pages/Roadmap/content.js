@@ -149,19 +149,19 @@ export default {
               'Decentralised data storage is a key element of the Safe Network. This enables nodes to participate regardless of the resources they offer.'
             ],
           }, {
-            feature: 'Published and Unpublished Data Types',
-            desc: 'Allow the network to store Published and Unpublished data via AppendOnlyData or MutableData types',
+            feature: 'Public and Private Data Types',
+            desc: 'Allow the network to store Public and Private data via append only or mutable CRDT data types',
             status: 'Complete',
             para: [
-              'Published data refers to content that is published (made available) for everyone such as websites, blogs, or research papers. For such public content, it becomes important to retain a history of changes. History must not be allowed to be tampered with and the published data must remain forever. Unpublished data is data that is not desired to be made public such as personal data or organisations’ data stored on the network'
+              'Public data refers to content that is published (made available) for everyone such as websites, blogs, or research papers. For such public content, it becomes important to retain a history of changes. History must not be allowed to be tampered with and the public data must remain forever. Private data is data that is not desired to be made public such as personal data or organisations’ data stored on the network'
             ],
             //CTA: {
               //name: 'Read the RFC',
               //url: 'https://github.com/maidsafe/rfcs/blob/master/text/0054-published-and-unpublished-mutable-data/0054-published-and-unpublished-mutable-data.md'
             //},
           }, {
-            feature: 'Unpublished ImmutableData Data Type',
-            desc: 'Enhance ImmutableData to make it unpublished or published, with the difference that unpublished can be deleted',
+            feature: 'Private ImmutableData Data Type',
+            desc: 'Enhance ImmutableData to make it private or public, with the difference that private can be deleted',
             status: 'Complete',
             para: [
               'There are many times when a user will require to create Immutable Data to store private content. As long as this content is not published (made available for others) this will be deleteable by the data owner only.'
@@ -277,7 +277,7 @@ export default {
     currentMilestone: {
       status: 'Current Milestone',
       title: 'The Perpetual Web',
-      para: 'The Safe Network is designed to ensure that public data is permanent and can never be deleted. Individuals and groups can choose to keep their data private, but once it’s been published, it will remain permanently available. This milestone aims to showcase the incredible power of this facet of the Network, by building out the User Experience, and iterating on it right through to launch.',
+      para: 'The Safe Network is designed to ensure that public data is permanent and can never be deleted. Individuals and groups can choose to keep their data private, but once it’s been made public, it will remain permanently available. This milestone aims to showcase the incredible power of this facet of the Network, by building out the User Experience, and iterating on it right through to launch.',
       accordion: {
         header: [
           'Milestone Features',
@@ -295,7 +295,7 @@ export default {
           },
           {
             feature: 'Mobile Browser',
-            desc: 'Mobile version of Safe browser which is limited to browsing published data from the Safe Network',
+            desc: 'Mobile version of Safe browser which is limited to browsing public data from the Safe Network',
             status: 'Complete',
             para: [
               'Enables individuals to access the Safe Network directly by using a browser on their mobile phone'
@@ -387,7 +387,7 @@ export default {
                 desc: 'Fine-grained management of your personal data',
                 status: 'Concept',
                 para: [
-                  'The extension of the Data Manager tool to allow fine-grained control by individuals over their private and unpublished data.'
+                  'The extension of the Data Manager tool to allow fine-grained control by individuals over their private data.'
                 ],
               },
               {
@@ -412,7 +412,7 @@ export default {
               },
               {
                 feature: 'Collaboration',
-                desc: 'Tools to enable collaboration through sharing and group permissions on private unpublished data',
+                desc: 'Tools to enable collaboration through sharing and group permissions on private data',
                 status: 'Concept',
                 para: [
                   'Manage sharing and permissions of private, unpublised data and files, for collaboration between individuals and groups. '
