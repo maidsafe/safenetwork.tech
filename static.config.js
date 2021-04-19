@@ -21,8 +21,8 @@ export default {
         template: `${pageDirPath}/FAQs`,
       },
       {
-        path: '/safecoin/',
-        template: `${pageDirPath}/SafeCoin`,
+        path: '/economy/',
+        template: `${pageDirPath}/Economy`,
       },
       {
         path: '/get-involved/',

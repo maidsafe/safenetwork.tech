@@ -10,7 +10,7 @@
             'The Safe (Secure Access For Everyone) Network is a new secure way to access apps that value the security of your data above all else. Downloading the free Safe software will provide access to: messaging, apps, email, social networks, data storage, video conferencing, and much more.',
             'Rather than using data centres and servers which are prone to data theft and surveillance, as is common on today\'s Internet, the Safe Network uses advanced peer-to-peer technology that joins together the spare computing capacity of all Safe users, creating a global network.',
             'The Safe Network is made up of the unused hard drive space, processing power and data connection of its users. It offers a level of security and privacy not currently available on the existing Internet and turns the tables on companies, putting users in control of their data, rather than trusting it to organisations.',
-            'By providing your unused computing resources to Safe, you will be paid in a network token called [Safecoin](/safecoin).'
+            'By providing your unused computing resources to the Network, you will be paid in [Safe Network Tokens](/economy).'
           ]
         },
         {
@@ -24,7 +24,7 @@
         {
           question: 'Why should I use the Safe Network?',
           answer: [
-            'Applications and programs on the existing Internet compromise your privacy through advertising and effectively control your data, granting you access when you login. On the Safe Network, only you control who has access to your data and the distributed security features make your data safer than ever before. If you contribute some of your spare computing power to the network, you will be compensated for doing so with the Network’s built-in token, [Safecoin](/safecoin).'
+            'Applications and programs on the existing Internet compromise your privacy through advertising and effectively control your data, granting you access when you login. On the Safe Network, only you control who has access to your data and the distributed security features make your data safer than ever before. If you contribute some of your spare computing power to the network, you will be compensated for doing so with the Network’s built-in currency: [Safe Network Tokens](/economy).'
           ]
         },
         {
@@ -85,21 +85,21 @@
         //     '- [Download](https://github.com/maidsafe/sn_browser/releases/) and install the Safe Browser.\n- [Register an account on the community forum](https://safenetforum.org/), it takes less than a minute. \n- [Gain basic trust level](https://safenetforum.org/t/trust-level-1-basic-user-requirements/15200). — this requires around an hour reading and interacting as a measure to stop the test network being spammed during the development phase.\n- Open the Safe browser.\n- Click *Create Account* at the bottom of the screen.\n- In the next screen select ‘Claim An Invitation’.\n- Login to the forum within the Safe Browser, the setup process will prompt you to do this if you have not already done so.\n- Select the Shared Node Network.- The installer will now provide you with your invitation code. Please note: it is important that your current and registered IPs match, if they do not, click to update.\n- Copy the invite code at the bottom of the screen and paste this back into the field that asks for an ‘Invitation Token’ in the Safe Browser.\n- You will now be asked to create an Account Secret and Password. Please make sure you keep these safe as only you will ever have access to your credentials. There is no central record of these credentials anywhere within the system and without them you will not be able to access your data.\n- Congratulations! You are now ready to not just browse the Safe Network, but upload your own data, create websites and use some of the demo apps being worked on by the community.'
         //   ]
         // },
-        
+
     //   ]
     // },
     {
       title: 'How it works',
       items: [
         {
-          question: 'What is a Vault?',
+          question: 'What is a Node?',
           answer: [
-            'The Safe Network is made up of nodes called Vaults. A Vault is a program that runs on a device which connects the machine to the Network. Collectively, Vaults manage the storage of all data on the Network by managing the movement of chunks of encrypted user data that are stored across the Network. No Farmer (user) can ever decrypt a chunk of data that his or her Vault receives and, in return for providing the storage capacity to the Network, is rewarded with Safecoin.',
-            'Vaults ensure that the events occurring on the Network are valid. They are clustered into small groups, each with responsibility for looking after the data stored within a Section (a certain range of addresses).',
+            'The Safe Network is made up of Nodes. A Node is a program that runs on a device which connects the machine to the Network. Collectively, Nodes manage the storage of all data on the Network by managing the movement of chunks of encrypted user data that are stored across the Network. No Farmer (user) can ever decrypt a chunk of data that his or her Node receives and, in return for providing the storage capacity to the Network, is rewarded with Safe Network Tokens.',
+            'Nodes ensure that the events occurring on the Network are valid. They are clustered into small groups, each with responsibility for looking after the data stored within a Section (a certain range of addresses).',
             'These groups of nodes form and split without any human oversight as the Safe Network itself has complete control of the process. In the same way, the encrypted data chunks move around the Network in a fully autonomous way. No central servers or agents (like BitTorrent trackers) are required by the Network. No central authority oversees the proceedings.',
-            'Just as children are not allowed to vote in elections, a Vault is not allowed to vote on Network events (such as a new member joining or the storage of a data chunk) until it has proven itself to be reliable. Initially, a Vault has to successfully complete a [Proof of Resource](https://www.youtube.com/watch?v=rdczpOlLaVk) request to join the Network, proving that it can provide a certain amount of bandwidth and CPU capacity. It is then assigned to a Section and given a low Node Age. This is a measure of its trustworthiness. After that initial connection, the Network will autonomously move (churn) that Vault at random from Section to Section, giving it the opportunity to build its reputation (Node Age). Once its Node Age reaches a certain value, it can be an active participant in group decisions. A Vault with the greatest Node Age in a Section is known as an Elder. As a result, because new Vaults must prove their worth in various random Sections before they can vote, targeting a particular Section on the Safe Network by an attacker is close to impossible.',
-            'Vaults also cryptographically check messages and take on more defined roles, called personas. Each Vault will have a Client Manager persona. This keeps a record of the account details for each Client (user) within its Section. For example, this will confirm how much data has been uploaded to the Network, how much is being stored and the balance of Safecoin remaining to fund further uploads. Whilst a Client Manager will know the account balance, it has no way of linking this to an identity (i.e. an IP address, username or public identity).',
-            'Each Vault also has a Data Manager persona. This manages where encrypted chunks of other users’ data is held and has responsibility for the chunks in its Section.'
+            'Just as children are not allowed to vote in elections, a Node is not allowed to vote on Network events (such as a new member joining or the storage of a data chunk) until it has proven itself to be reliable. Initially, a Node has to successfully complete a [Proof of Resource](https://www.youtube.com/watch?v=rdczpOlLaVk) request to join the Network, proving that it can provide a certain amount of bandwidth and CPU capacity. It is then assigned to a Section and given a low Node Age. This is a measure of its trustworthiness. After that initial connection, the Network will autonomously move (churn) that Node at random from Section to Section, giving it the opportunity to build its reputation (Node Age). Once its Node Age reaches a certain value, it can be an active participant in group decisions. A Node with the greatest Node Age in a Section is known as an Elder. As a result, because new Nodes must prove their worth in various random Sections before they can vote, targeting a particular Section on the Safe Network by an attacker is close to impossible.',
+            'Nodes also cryptographically check messages and take on more defined roles, called personas. Each Node will have a Client Manager persona. This keeps a record of the account details for each Client (user) within its Section. For example, this will confirm how much data has been uploaded to the Network, how much is being stored and the balance of Safe Network Tokens remaining to fund further uploads. Whilst a Client Manager will know the account balance, it has no way of linking this to an identity (i.e. an IP address, username or public identity).',
+            'Each Node also has a Data Manager persona. This manages where encrypted chunks of other users’ data is held and has responsibility for the chunks in its Section.'
           ]
         },
         {
@@ -117,7 +117,7 @@
         {
           question: 'What is Proof of Resource?',
           answer: [
-            'Proof of Resource is the process that measures a Vault’s ability to store and retrieve data chunks. A User’s computer receives a score based on its CPU speed, bandwidth availability, disk space and time online.',
+            'Proof of Resource is the process that measures a Node’s ability to store and retrieve data chunks. A User’s computer receives a score based on its CPU speed, bandwidth availability, disk space and time online.',
             'Proof of Resource in the Safe Network uses a mechanism similar to a Zero Knowledge Proof. The checking mechanism does not need to know what data is being checked—it simply needs to know that the correct data is being held and accurately.'
           ]
         },
@@ -134,7 +134,7 @@
         {
           question: 'What is data deduplication?',
           answer: [
-            'The Safe Network uses [data deduplication](https://en.wikipedia.org/wiki/Data_deduplication) to ensure that space is used efficiently when storing multiple copies of data which have been uniquely encrypted. The network is able to distinguish identical pieces of data by comparing the hashes of each chunk. Vaults also use hashes to identify themselves (known as Guaranteed Vault Identification).'
+            'The Safe Network uses [data deduplication](https://en.wikipedia.org/wiki/Data_deduplication) to ensure that space is used efficiently when storing multiple copies of data which have been uniquely encrypted. The network is able to distinguish identical pieces of data by comparing the hashes of each chunk. Nodes also use hashes to identify themselves (known as Guaranteed Node Identification).'
           ]
         },
         {
@@ -148,9 +148,9 @@
           answer: [
             'A key requirement for distributed computer networks is consensus. In other words how can nodes reach agreement when there is no centralised authority and when you are likely to have nodes that are either malicious or fail. Many projects will rely on a blockchain in order to achieve this consensus but, as we know, [this approach doesn’t work](https://www.youtube.com/watch?v=i-RLdU8Y0Qc) with the Safe Network where the number of transactions is greater and the expectation of users will be to retrieve data instantaneously. So how do you reach consensus on an increasingly large group of decentralised nodes without compromising security?',
             'The answer lies within close groups. Using Close Group Consensus, small groups are able to make statements on behalf of the entire Network which means that the Network does not need to communicate directly with every single node each time.',
-            'On the Safe Network, the concept of ‘closeness’ comes from something called XOR networking. This is a way of randomising the physical location of data on a distributed network and ensuring that each location is unique. However, in this sense, it is also used because every Vault has a XOR location also. A Close Group is then comprised of the closest Vault ID’s to the user’s Vault ID in terms of XOR distance. This is distance measured in the mathematical sense, as opposed to the geographical sense.',
-            'The Group of Vaults managing a Section will always try to reach consensus (agreement) amongst themselves on any state and action. They also ‘group sign’ messages that travel over the wider network so that other Vaults in other Groups can cryptographically verify each message and action (such as groups forming, splitting and merging). These group signatures are stored in Data Chains which are secured and held by all Vaults in the Group.',
-            'Close Group Consensus is not used for every operation on the Network as this would cause unnecessary load. It is only used for putting data on the Network—cryptographic signatures are used for other activities—for example, simple amendments to data or sending a Safecoin to another user.'
+            'On the Safe Network, the concept of ‘closeness’ comes from something called XOR networking. This is a way of randomising the physical location of data on a distributed network and ensuring that each location is unique. However, in this sense, it is also used because every Node has a XOR location also. A Close Group is then comprised of the closest Node ID’s to the user’s Node ID in terms of XOR distance. This is distance measured in the mathematical sense, as opposed to the geographical sense.',
+            'The Group of Nodes managing a Section will always try to reach consensus (agreement) amongst themselves on any state and action. They also ‘group sign’ messages that travel over the wider network so that other Nodes in other Groups can cryptographically verify each message and action (such as groups forming, splitting and merging). These group signatures are stored in Data Chains which are secured and held by all Nodes in the Group.',
+            'Close Group Consensus is not used for every operation on the Network as this would cause unnecessary load. It is only used for putting data on the Network—cryptographic signatures are used for other activities—for example, simple amendments to data or sending a Safe Netowrk Tokens to another user.'
           ]
         },
         {
@@ -165,59 +165,59 @@
       ]
     },
     {
-      title: 'About Safecoin',
+      title: 'About Safe Network Tokens',
       items: [
         {
-          question: 'What is Safecoin?',
+          question: 'What are Safe Network Tokens?',
           answer: [
-            'Safecoin is a digital token that is generated automatically by the Safe Network and stays on the Safe Network. The Network will autonomously confirm account balances to Wallets and allow transactions to take place. Safecoin is transferred using the digital signature of the coin’s last owner. This operation is \'network atomic\'; in other words, the Network ensures that all copies update to reflect the transaction. This is a different approach to the blockchain mechanism employed in other projects, such as Bitcoin.'
+            'Safe Network Tokens are generated automatically by the Safe Network and stay on the Safe Network. The Network will autonomously confirm account balances to Wallets and allow transactions to take place. Tokens are transferred using the digital signature of the last owner. This operation is \'network atomic\'; in other words, the Network ensures that all copies update to reflect the transaction. This is a different approach to the blockchain mechanism employed in other projects, such as Bitcoin.'
           ]
         },
         {
-          question: 'What\'s the use of Safecoin in the Safe Network?',
+          question: 'What\'s the use of Safe Network Tokens in the Safe Network?',
           answer: [
-            'Safecoin is the currency of the Safe Network. It is an incentive mechanism that rewards Users and developers, as well as providing access to network services.',
-            'Without any human intervention, the Safe Network pays out Safecoin automatically to Farmers (users who join the Network by contributing their computing resources) and to Builders (application developers, who get paid automatically depending on how much their applications are used).',
-            'In addition, Core Developers who improve the core Safe Network codebase can also earn Safecoin by providing bug fixes and new features.',
-            'Safecoin only lives on the Safe Network. It is stored in a User\'s wallet and can be used to buy network services, such as increased storage space and access to network applications. There is no set distribution time for the 4.3 billion Safecoin produced during the life of the Safe Network.'
+            'Safe Network Tokens are the currency of the Network; an incentive mechanism that rewards Users and developers, as well as providing access to network services.',
+            'Without any human intervention, the Safe Network pays out Tokens automatically to Farmers (users who join the Network by contributing their computing resources) and to Builders (application developers, who get paid automatically depending on how much their applications are used).',
+            'In addition, Core Developers who improve the core Safe Network codebase can also earn Tokens by providing bug fixes and new features.',
+            'Safe Network Tokens only live on the Safe Network. They are stored in a User\'s wallet and can be used to buy network services, such as increased storage space and access to network applications. There is no set distribution time for the 4.3 billion Safe Network Tokens produced during the life of the Network.'
           ]
         },
         {
-          question: 'How do I buy Safecoin?',
+          question: 'How do I buy Safe Network Tokens?',
           answer: [
-            'Safecoin won’t be issued until the Network goes live so they cannot be purchased at the moment. Currently you can buy MaidSafeCoin which will be swapped on a 1-to-1 basis for Safecoin when released.',
+            'Safe Network Tokens won’t be issued until the Network goes live so they cannot be purchased at the moment. Currently you can buy MaidSafeCoin which will be swapped on a 1-to-1 basis for Safe Network Tokens when released.',
             'MaidSafeCoin is listed on the Bitcoin blockchain and can be purchased on a number of exchanges and brokers including:',
-            '- [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [BC Bitcoin](https://www.bcbitcoin.co.uk/buy/?coin=MAID)'
+            '- [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [P2PB2B](https://p2pb2b.io/trade/MAID_BTC/)'
           ]
         },
         {
           question: 'Why not just use Bitcoin?',
           answer: [
-            'Bitcoin is completely unrelated to the Safe Network and cannot be generated or distributed by the Safe Network. Safecoin is generated in response to network use (stored data being retrieved or apps are created) and is the digital currency of the Safe Network.'
+            'Bitcoin is completely unrelated to the Safe Network and cannot be generated or distributed by the Safe Network. Safe Network Tokens are generated in response to Network use (stored data being retrieved or apps are created) and is the digital currency of the Safe Network.'
           ]
         },
         {
-          question: 'How is Safecoin valued?',
+          question: 'How are Safe Network Tokens valued?',
           answer: [
-            'The value of Safecoin will be set by the market. In other words, the demand to acquire Safecoin will be driven by the demand to buy things on the Network using Safecoin (e.g. other currency, products, services etc). Whilst simply viewing data on the Network will be free, Safecoin will be needed to buy distributed data storage and for communications. Farmers should earn more than enough Safecoin to enable them to use the Network. Those who earn more than they need will likely sell excess Safecoin to the exchanges.',
-            'It is worth noting that the generation and distribution of Safecoin will be entirely network-led, meaning that a great demand for Safecoin will result in a large volume being created, while low demand will lead to minimal coins being generated.'
+            'The value of Safe Network Tokens will be set by the market. In other words, the demand to acquire the Tokens will be driven by the demand to buy things on the Network using Safe Network Tokens (e.g. other currency, products, services etc). Whilst simply viewing data on the Network will be free, Safe Network Tokens will be needed to buy distributed data storage and for communications. Farmers should earn more than enough Tokens to enable them to use the Network. Those who earn more than they need will likely sell excess Tokens to the exchanges.',
+            'It is worth noting that the generation and distribution of Safe Network Tokens will be entirely network-led, meaning that a great demand for Safe Network Tokens will result in a large volume being created, while low demand will lead to minimal coins being generated.'
           ]
         },
         {
-          question: 'How is Safecoin distributed?',
+          question: 'How are Safe Network Tokens distributed?',
           answer: [
-            'The total number of Safecoin that can exist on the Safe Network is 2^32, or just under 4.3 billion. 5% of that total has been allocated to compensate early investors who backed the Network development in the early days. A further 10% was sold to crowdsale participants in early 2014. They received MaidSafeCoin (a blockchain-based token that will be exchanged for Safecoin on a one-for-one ratio when the Network launches). At that stage, the holders can use Safecoin however they wish.',
-            'Beyond that, Safecoin will come into and go out of circulation in a continuous flow as follows:',
-            'All new Safecoin are generated as a part of the farming process and distributed to Farmers, App Builders and the Core Developer pool according to their individual algorithms, as described below.',
-            'Safecoin is distributed as the product of a successful “farming attempt.” The sequence leading up to a successful farming attempt starts when a Farmer’s Vault accurately delivers up stored data when the data is requested. When this is successfully done, the Vault seeks to qualify for a farming attempt. The chance of gaining a farming attempt is regulated by the network Farming Rate (FR) which prevails at that moment, and adjusts the ease or difficulty of gaining a farming attempt, depending on prevailing network conditions (availability or scarcity of storage resources).',
-            '\n*   Farmers qualify for farming attempts at 100% of the Farming Rate (FR) (as modified by Vault performance ranking).\n*   App Builders qualify for farming attempts at 10% of the FR\n*   The pool from which Core Developers are rewarded for their contributions qualifies for farming attempts at 5% of the FR.'
+            'The total number of Safe Network Tokens that can exist on the Network is 2^32, or just under 4.3 billion. 5% of that total has been allocated to compensate early investors who backed the Network development in the early days. A further 10% was sold to crowdsale participants in early 2014. They received MaidSafeCoin (a blockchain-based token that will be exchanged for Safe Network Tokens on a one-for-one ratio when the Network launches). At that stage, the holders can use the Tokens however they wish.',
+            'Beyond that, Safe Network Tokens will come into and go out of circulation in a continuous flow as follows:',
+            'All new Tokens are generated as a part of the farming process and distributed to Farmers, App Builders and the Core Developer pool according to their individual algorithms, as described below.',
+            'Safe Network Tokens are distributed as the product of a successful “farming attempt.” The sequence leading up to a successful farming attempt starts when a Farmer’s Node accurately delivers up stored data when the data is requested. When this is successfully done, the Node seeks to qualify for a farming attempt. The chance of gaining a farming attempt is regulated by the network Farming Rate (FR) which prevails at that moment, and adjusts the ease or difficulty of gaining a farming attempt, depending on prevailing network conditions (availability or scarcity of storage resources).',
+            '\n*   Farmers qualify for farming attempts at 100% of the Farming Rate (FR) (as modified by Node performance ranking).\n*   App Builders qualify for farming attempts at 10% of the FR\n*   The pool from which Core Developers are rewarded for their contributions qualifies for farming attempts at 5% of the FR.'
           ]
         },
         {
           question: 'What is MaidSafeCoin?',
           answer: [
-            'MaidSafeCoin is a proxy token that was released during MaidSafe\'s crowd sale and will be swapped for Safecoin on a 1:1 basis when Safecoin is released.',
-            'MaidSafeCoin is listed on the Bitcoin blockchain and can be purchased on a number of exchanges and brokers including [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID), [HitBTC](https://hitbtc.com/MAID-to-BTC) and [BC Bitcoin](https://www.bcbitcoin.co.uk/buy/?coin=MAID).',
+            'MaidSafeCoin is a proxy token that was released during MaidSafe\'s crowd sale and will be swapped for Safe Network Tokens on a 1:1 basis when the Network is launched.',
+            'MaidSafeCoin is listed on the Bitcoin blockchain and can be purchased on a number of exchanges and brokers including [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID), [HitBTC](https://hitbtc.com/MAID-to-BTC) and [P2PB2B](https://p2pb2b.io/trade/MAID_BTC/).',
           ]
         },
         {
@@ -237,7 +237,7 @@
         {
           question: 'How will MaidSafeCoin be converted to Safecoin?',
           answer: [
-            'Once the Safe Network goes live, MaidSafeCoin can be exchanged for Safecoin at a ratio of 1:1. This will probably be achieved by sending MaidSafeCoin to an unspendable address, thereby burning them. In return, an equal number of Safecoin will then be issued to the sender\'s User account on the Safe Network.'
+            'Once the Safe Network goes live, MaidSafeCoin can be exchanged for Safecoin at a ratio of 1:1. This will probably be achieved by sending MaidSafeCoin to an unspendable address, thereby burning them. In return, an equal number of Safe Network Tokens will then be issued to the sender\'s User account on the Safe Network.'
           ]
         }
       ]
@@ -248,25 +248,25 @@
         {
           question: 'What is Farming?',
           answer: [
-            'Safecoin is given as an incentive to users for providing their resource to the network. This resource is their: storage space, CPU, bandwidth and online time that enable the encrypted chunks of network data to be stored and retrieved from their computer.',
-            'The process of providing resource and receiving Safecoin in return is called ‘Farming’.',
-            'Each piece of encrypted network data is stored in a Farmer\'s ‘Vault’, a data storage and management location on the Farmer\'s computer which they cannot read, or access. The Safe Network is designed to self-manage these resources.'
+            'Safe Network Tokens are given as an incentive to users for providing their resource to the network. This resource is their: storage space, CPU, bandwidth and online time that enable the encrypted chunks of network data to be stored and retrieved from their computer.',
+            'The process of providing resource and receiving Safe Network Tokens in return is kmown as ‘Farming’.',
+            'Each piece of encrypted network data is stored in a Farmer\'s ‘Node’, a data storage and management location on the Farmer\'s computer which they cannot read, or access. The Safe Network is designed to self-manage these resources.'
           ]
         },
         {
           question: 'How will farming work in practice?',
           answer: [
-            'When a user of the network requests some data, for example by browsing a website, a number of things happen: First, the client software makes a request for the required data chunks. This message (a GET request) is then propagated across the Network and when the chunk is found there is a competition between the Vaults in that Section to deliver it to the Network where it will be routed back to the requester. The first Vault to deliver will have a chance of being rewarded with Safecoin. This is described as a Farming Attempt.',
-            'Farming Attempt means: by delivering data chunks when requested, a Vault occasionally gains the opportunity to make a Farming Attempt. This consists of sending a validated request to a random Safecoin address. If an owned Safecoin already exists at that address, the Attempt fails. If there is no Safecoin there, one is created and awarded to the requesting Vault (i.e. a successful Farming Attempt has been made).',
-            'Farming is therefore when a Vault delivers data chunks that it is storing to the network and earns Safecoin in return.',
+            'When a user of the network requests some data, for example by browsing a website, a number of things happen: First, the client software makes a request for the required data chunks. This message (a GET request) is then propagated across the Network and when the chunk is found there is a competition between the Nodes in that Section to deliver it to the Network where it will be routed back to the requester. The first Node to deliver will have a chance of being rewarded with Safe Network Tokens. This is described as a Farming Attempt.',
+            'Farming Attempt means: by delivering data chunks when requested, a Node occasionally gains the opportunity to make a Farming Attempt. This consists of sending a validated request to a random Safe Network Token address. If an owned Tokens already exists at that address, the Attempt fails. If there are no Tokens there, one is created and awarded to the requesting Node (i.e. a successful Farming Attempt has been made).',
+            'Farming is therefore when a Node delivers data chunks that it is storing to the network and earns Tokens in return.',
             'The probability of gaining a Farming Attempt is dependent on the farming rate, which is a variable related to the quantity of available storage resources in the Network.'
           ]
         },
         {
           question: 'What is stopping a hosting provider from farming?',
           answer: [
-            'Nothing. Everyone is welcome to farm and thereby contribute to the network. To prevent centralisation, the use of one huge farming rig will be economically discouraged as compared to running multiple smaller nodes. The Safecoin earning algorithm is based on a Sigmoid curve, in that all Vaults earn, slowly at first and the rate increases as the Farmer stores up to the network average. The earning rate also takes into account the rank of the Vault, a process whereby the network scores the usefulness of each node from 0 (being the worst) to 1 (the best).',
-            'The Safecoin farming rate is ultimately the result of the network rate (a balance of the demand and supply on the network) multiplied by the Vault rank. The network rate will start to level at 20% above average, thus discouraging massive Vaults which would bring centralisation to the network’s farming process.'
+            'Nothing. Everyone is welcome to farm and thereby contribute to the network. To prevent centralisation, the use of one huge farming rig will be economically discouraged as compared to running multiple smaller nodes. The Safe Network Tokens earning algorithm is based on a Sigmoid curve, in that all Nodes earn, slowly at first and the rate increases as the Farmer stores up to the network average. The earning rate also takes into account the rank of the Node, a process whereby the network scores the usefulness of each node from 0 (being the worst) to 1 (the best).',
+            'The Token farming rate is ultimately the result of the network rate (a balance of the demand and supply on the network) multiplied by the Node rank. The network rate will start to level at 20% above average, thus discouraging massive Nodes which would bring centralisation to the network’s farming process.'
           ]
         }
       ]
@@ -277,7 +277,7 @@
         {
           question: 'What’s in it for developers?',
           answer: [
-            '15% of all Safecoin earned will be allocated to the developer pool. This will ensure the developer community is highly motivated and rewarded for providing free-to-use applications as their revenue model. It is proposed that developers are able to use the Safe Network to publish their applications. These application developers are called Builders and the network will reward use of these applications by paying the Builders in Safecoin based on the application use by users of the system. This is possible since the application developer can insert their own network immutable wallet address in their application. This creates a fully automatic revenue model for both open source projects, private individuals and application development companies. Developers who contribute code that enhances or fixes bugs in the Safe Network that are accepted into the master branch of the codebase will also be able to earn Safecoin.',
+            '15% of all Safe Network Tokens earned will be allocated to the developer pool. This will ensure the developer community is highly motivated and rewarded for providing free-to-use applications as their revenue model. It is proposed that developers are able to use the Safe Network to publish their applications. These application developers are called Builders and the network will reward use of these applications by paying the Builders in Safe Network Tokens based on the application use by users of the system. This is possible since the application developer can insert their own network immutable wallet address in their application. This creates a fully automatic revenue model for both open source projects, private individuals and application development companies. Developers who contribute code that enhances or fixes bugs in the Safe Network that are accepted into the master branch of the codebase will also be able to earn Safe Network Tokens.',
             'Reasons for developing on the Safe Network:',
             '\n*   Get your apps everywhere\n*   No API key—just download our code and start using it\n*   Extremely low customer acquisition costs and no infrastructure costs\n*   Apps that adapt in real-time to changes in demand\n*   Provide security, privacy and anonymity to all your users'
           ]

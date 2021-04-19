@@ -15,8 +15,8 @@ export default {
         'url': '/press-kit/'
       },
       {
-        'name': 'Safecoin',
-        'url': '/safecoin/'
+        'name': 'Economy',
+        'url': '/economy/'
       },
       {
         'name': 'Get Involved',
