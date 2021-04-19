@@ -35,7 +35,7 @@ export default {
     coreNetwork: {
       title: 'Help Build the Core Network',
       para: [
-        'You can also get involved by helping to maintain the Networks underlying open source libraries. As we reach beta launch it will be possible to be compensated in Safecoin for fixing bugs, optimising code and developing new features.'
+        'You can also get involved by helping to maintain the Networks underlying open source libraries. As we reach beta launch it will be possible to be compensated in Safe Network Tokens for fixing bugs, optimising code and developing new features.'
       ],
       CTA: {
         name: 'Contribute on GitHub',
@@ -64,7 +64,7 @@ export default {
     /*joinNetwork: {
       id: 'joinNetwork',
       title: 'Connect to the Baby Fleming Public Shared Section',
-      para: 'This shared section is hosted on DigitalOcean and consists of eight vaults on eight separate droplets, all connected together in one section. Please note that this testnet may require to be taken down.',
+      para: 'This shared section is hosted on DigitalOcean and consists of eight nodes on eight separate droplets, all connected together in one section. Please note that this testnet may require to be taken down.',
       CTA: {
         button: {
           name: 'Learn more',

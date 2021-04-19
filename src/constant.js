@@ -51,9 +51,9 @@ export default {
       webm: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Self+Encryption+on+the+SAFE+Network_1.webm',
     },
     security: {
-      ogv: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Safecoin+Promo+Video+(Vimeo+%2B+Mastered+Audio)+4.22+(1)_1.ogv',
-      mp4: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Safecoin+Promo+Video+(Vimeo+%2B+Mastered+Audio)+4.22.mp4',
-      webm: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Safecoin+Promo+Video+(Vimeo+%2B+Mastered+Audio)+4.22+(1).webm'
+      ogv: 'https://ms-marketing.s3.eu-west-2.amazonaws.com/website-videos/Simplicity-of-Earning-Safe-Network-Tokens.ogv',
+      mp4: 'https://ms-marketing.s3.eu-west-2.amazonaws.com/website-videos/Simplicity+of+Earning+Safe+Network+Tokens.mp4',
+      webm: 'https://ms-marketing.s3.eu-west-2.amazonaws.com/website-videos/Simplicity+of+Earning+Safe+Network+Tokens.webm'
     }
   },
 }

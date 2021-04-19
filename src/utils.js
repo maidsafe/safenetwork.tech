@@ -50,7 +50,7 @@ export const genRandomKey = () => (
 )
 
 export const isMenuLight = pathname => (
-    ['/safecoin/', '/how-it-works/'].indexOf(pathname) !== -1
+    ['/economy/', '/how-it-works/'].indexOf(pathname) !== -1
 )
 
 export const parseMDText = (text, isInline = false) => {

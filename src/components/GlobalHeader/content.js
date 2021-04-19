@@ -6,8 +6,8 @@ export default {
       link: "/how-it-works/"
     },
     {
-      name: "Safecoin",
-      link: "/safecoin/"
+      name: "Economy",
+      link: "/economy/"
     },
     {
       name: "Roadmap",

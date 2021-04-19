@@ -10,8 +10,8 @@ export default {
     buttonText: 'Copy Text Snippet'
   },
   copyText3: {
-    title: 'About Safecoin',
-    para: 'Safecoin is the mechanism that incentivises the provision of resources by the network, measuring and rewarding value without waste. No proof of work, and no blockchain.',
+    title: 'About Safe Network Tokens',
+    para: 'Safe Network Tokens are the mechanism that incentivises the provision of resources by the Network, measuring and rewarding value without waste. No proof of work, and no blockchain.',
     buttonText: 'Copy Text Snippet'
   },
   textSnippet1: {
@@ -24,7 +24,7 @@ export default {
     title: 'New revenue stream',
     para: [
       'In today\'s centralised web, monetising content relies on advertising, regardless of the cost to data privacy.',
-      'On the Safe Network, monetisation will come from Safecoin. Content creators will be able to tag their content and optionally receive micropayments from content readers. In essence, a publishing service with a revenue stream built-in.'
+      'On the Safe Network, monetisation will come from Safe Network Tokens. Content creators will be able to tag their content and optionally receive micropayments from content readers. In essence, a publishing service with a revenue stream built-in.'
     ]
   },
   interviewRequest: {

@@ -95,13 +95,13 @@ export default {
   economy: {
     title: 'The New Digital Economy',
     para: [
-      'Welcome to the new economy where you no longer pay for your digital life with your personal data.  Instead, you’ll use Safecoin, a crypto currency that is integrated into and distributed entirely by the network.',
+      'Welcome to the new economy where you no longer pay for your digital life with your personal data.  Instead, you’ll use Safe Network tokens, a crypto currency that is integrated into and distributed entirely by the network.',
       'Users are compensated for providing their resources and can use this to pay developers to use their apps in a virtuous and self sustaining cycle.',
       'Safe is a network where wealth is shared based on the value that everyone provides.'
     ],
     CTA: {
-      name: 'Read more about Safecoin',
-      url: '/safecoin/'
+      name: 'Read more about Safe Network tokens',
+      url: '/economy/'
     },
     aside1: {
       title: 'Always Free to Access',
@@ -124,7 +124,7 @@ export default {
     aside4: {
       title: 'Contribute Resources, Get Paid.',
       para: [
-        'By running a Vault, you can offer the network your unused resources—like hard drive space and bandwidth—and automatically be rewarded with Safecoin.',
+        'By running a Node, you can offer the network your unused resources—like hard drive space and bandwidth—and automatically be rewarded with safe Network tokens.',
       ]
     },
   }

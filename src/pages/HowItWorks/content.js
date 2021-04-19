@@ -5,7 +5,7 @@ export default {
       para: 'Powered by the spare capacity of everyday computers, Safe replaces the vulnerable structure of the existing Web with a decentralised, autonomous network. One that is secure, and accessible to everyone.',
       CTA: {
         name: `Here's how it works`,
-        url: '/faq/#what-is-a-vault'
+        url: '/faq/#what-is-a-node'
       }
     },
   },
@@ -45,7 +45,7 @@ export default {
         {
           title: 'Pay once, securely store forever',
           para: [
-            `You're likely to want to store data on the Network. Why? Because in return for a very small one-time Safecoin payment, your data will then be stored forever, encrypted and accessible anywhere in the world and only by you—unless you choose to share it.`
+            `You're likely to want to store data on the Network. Why? Because in return for a very small one-time payment, your data will then be stored forever, encrypted and accessible anywhere in the world and only by you—unless you choose to share it.`
           ],
           quote: `"Your credentials can't be stolen, because at no point are they ever stored on the Network"`
         }, {
@@ -86,9 +86,9 @@ export default {
         {
           title: 'The Web hosted by everyone, controlled by no-one',
           para: [
-            'With no centralised storage, data is instead stored in Vaults. People download free Vault software to their home computers which tells the Network that they’re happy to take part. By providing storage and bandwidth to support the Network, you can get rewarded in Safecoin, the cryptocurrency that powers the Network.',
-            'The Network just makes use of the space you’ve offered and asks you to manage whichever chunks of encrypted data it needs to ensure the system is safe and resilient. The key point here is that no-one (either computers or Network) can read this data. Each chunk of encrypted data is managed by its own Group. The Network decides which computers should be members of which Groups and this changes frequently. And at no time can a person who runs a Vault read any of the data that his computer is storing.',
-            'By running a Vault, your computer races to return any data that is requested by its owner. The rewards paid out by the system will be varied according the Network which varies the price of Safecoin in order to balance the Network in such a way that it consistently maintains around 30% of Vaults unused.'
+            'With no centralised storage, data is instead stored in Nodes. People download free software to their home computers which tells the Network that they’re happy to take part. By providing storage and bandwidth to support the Network, you can be rewarded and earn Safe Network tokens: the cryptocurrency that powers the Network.',
+            'The Network just makes use of the space you’ve offered and asks your Node to manage whichever chunks of encrypted data it needs to ensure the system is safe and resilient. The key point here is that no-one (either computers or Network) can read this data. Each chunk of encrypted data is managed by its own Group. The Network decides which computers should be members of which Groups and this changes frequently. And at no time can a person who runs a Node read any of the data that his computer is storing.',
+            'By running a Node, your computer races to return any data that is requested by its owner. The rewards paid out by the system will be adjusted autonomously  according requirements of the Network in order to balance it in such a way that it consistently maintains around 30% of Nodes unused.'
           ]
         }
       ]
