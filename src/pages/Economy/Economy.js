@@ -18,7 +18,7 @@ import Hitbtc from 'assets/images/exchange_hitbtc.png'
 import P2PB2B from 'assets/images/exchange_p2pb2b.png'
 import BCBitcoin from 'assets/images/brokers_bcbitcoin.jpg'
 
-import SafeCoinPoster from 'assets/images/textures/texture_safecoin.jpg'
+import SafeCoinPoster from 'assets/images/earn-poster.jpg'
 
 import './safeCoin.sass'
 
