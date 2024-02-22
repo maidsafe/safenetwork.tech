@@ -1,155 +1,131 @@
 export default {
-  'safeNetwork': {
-    'name': 'Safe Network',
-    'links': [
+  safeNetwork: {
+    name: "Safe Network",
+    links: [
       {
-        'name': 'Home',
-        'url': '/'
+        name: "Home",
+        url: "/",
       },
       {
-        'name': 'How It Works',
-        'url': '/how-it-works/'
+        name: "How It Works",
+        url: "/how-it-works/",
       },
       {
-        'name': 'Press Kit',
-        'url': '/press-kit/'
+        name: "Press Kit",
+        url: "/press-kit/",
       },
       {
-        'name': 'Economy',
-        'url': '/economy/'
+        name: "Economy",
+        url: "/economy/",
       },
       {
-        'name': 'Get Involved',
-        'url': '/get-involved/'
+        name: "Get Involved",
+        url: "/get-involved/",
       },
       {
-        'name': 'FAQs',
-        'url': '/faq/'
+        name: "FAQs",
+        url: "/faq/",
       },
       /*{
         'name': 'Blog',
         'url': 'https://medium.com/safenetwork'
       },*/
       {
-        'name': 'Roadmap',
-        'url': '/roadmap/'
+        name: "Roadmap",
+        url: "/roadmap/",
       },
       {
-        'name': 'Events',
-        'url': 'https://safenetforum.org/t/safe-network-upcoming-events/29029'
-      }
-    ]
+        name: "Events",
+        url: "https://safenetforum.org/t/safe-network-upcoming-events/29029",
+      },
+    ],
   },
-  'community': {
-    'name': 'Community',
-    'links': [
+  community: {
+    name: "Community",
+    links: [
       {
-        'name': 'Safe Network Forum',
-        'url': 'https://safenetforum.org/'
+        name: "Safe Network Forum",
+        url: "https://safenetforum.org/",
       },
       {
-        'name': 'Developer Forum',
-        'url': 'https://forum.safedev.org/'
-      }
-    ]
+        name: "Developer Forum",
+        url: "https://forum.safedev.org/",
+      },
+    ],
   },
-  'company': {
-    'name': 'Company',
-    'links': [
+  company: {
+    name: "Company",
+    links: [
       {
-        'name': 'About MaidSafe',
-        'url': '/about-maidsafe'
+        name: "About MaidSafe",
+        url: "/about-maidsafe",
       },
       {
-        'name': 'Website',
-        'url': 'https://maidsafe.net/'
+        name: "Website",
+        url: "https://maidsafe.net/",
       },
       {
-        'name': 'Contact',
-        'url': 'https://maidsafe.net/contact/'
+        name: "Contact",
+        url: "https://maidsafe.net/contact/",
       },
       {
-        'name': 'Careers',
-        'url': 'https://maidsafe.net/careers/'
-      }
-    ]
+        name: "Careers",
+        url: "https://maidsafe.net/careers/",
+      },
+    ],
   },
-  'developers': {
-    'name': 'Developers',
-    'links': [
+  developers: {
+    name: "Developers",
+    links: [
       {
-        'name': 'Developer Hub',
-        'url': 'https://hub.safedev.org/'
+        name: "Developer Hub",
+        url: "https://hub.safedev.org/",
       },
       {
-        'name': 'GitHub',
-        'url': 'https://github.com/maidsafe/'
-      }
-    ]
+        name: "GitHub",
+        url: "https://github.com/maidsafe/",
+      },
+    ],
   },
-  'legal': {
-    'name': 'Legal',
-    'links': [
+  legal: {
+    name: "Legal",
+    links: [
       {
-        'name': 'Privacy Policy',
-        'url': '/privacy'
+        name: "Privacy Policy",
+        url: "/privacy",
       },
       {
-        'name': 'Cookie Policy',
-        'url': '/cookies'
+        name: "Cookie Policy",
+        url: "/cookies",
       },
       {
-        'name': 'Credits',
-        'url': 'https://maidsafe.net/credits/'
-      }
-    ]
+        name: "Credits",
+        url: "https://maidsafe.net/credits/",
+      },
+    ],
   },
   /*'newsletter': {
     //'name': 'Newsletter'
   },*/
-  'social': {
-    'name': 'Social',
-    'links': [
+  social: {
+    name: "Social",
+    links: [
       {
-        'style': 'twitter',
-        'name': 'Twitter',
-        'url': 'https://twitter.com/safenetworktech'
-      },
-      {
-        'style': 'facebook',
-        'name': 'Facebook',
-        'url': 'https://www.facebook.com/safenetworktech/'
+        style: "twitter",
+        name: "Twitter",
+        url: "https://twitter.com/safenetworktech",
       },
       /*{
         'style': 'medium',
         'name': 'Medium',
         'url': 'https://medium.com/safenetwork'
       },*/
+
       {
-        'style': 'youtube',
-        'name': 'YouTube',
-        'url': 'https://www.youtube.com/channel/UChDck5R_C9i6XTrS66tbwOw'
+        style: "discord",
+        name: "Discord",
+        url: "https://discord.com/invite/DkVRc7MZsp",
       },
-      {
-        'style': 'reddit',
-        'name': 'Reddit',
-        'url': 'https://www.reddit.com/r/safenetwork/'
-      },
-      {
-        'style': 'riot',
-        'name': 'Riot.im',
-        'url': 'https://riot.im/app/#/room/#safenetwork:matrix.org'
-      },
-      {
-        'style': 'telegram',
-        'name': 'Telegram',
-        'url': 'https://t.me/safenetwork'
-      },
-      {
-        'style': 'discord',
-        'name': 'Discord',
-        'url': 'https://discord.com/invite/0ak6ESm4oAR3oXik'
-      }
-    ]
-  }
-}
+    ],
+  },
+};
