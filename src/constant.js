@@ -1,20 +1,20 @@
 export default {
   downloadLinks: {
     logos: {
-      safeNetworkLogoBlack: '/downloads/safe_network_logo_black.zip',
-      safeNetworkLogoWhite: '/downloads/safe_network_logo_white.zip',
-      safeNetworkIconBlack: '/downloads/safe_network_icon_black.zip',
-      safeNetworkIconWhite: '/downloads/safe_network_icon_white.zip',
+      safeNetworkLogoBlack: "/downloads/safe_network_logo_black.zip",
+      safeNetworkLogoWhite: "/downloads/safe_network_logo_white.zip",
+      safeNetworkIconBlack: "/downloads/safe_network_icon_black.zip",
+      safeNetworkIconWhite: "/downloads/safe_network_icon_white.zip",
     },
-    imagePack: '/downloads/MaidSafe-Team-Press-Photos-Pack.zip',
+    imagePack: "/downloads/MaidSafe-Team-Press-Photos-Pack.zip",
     documents: {
-      primer: 'https://primer.safenetwork.org',
+      primer: "https://primer.safenetwork.org",
     },
   },
   pageMeta: {
     pressKit: {
-      title: 'Press Kit | Safe Network',
-      desc: 'Resources for journalists looking to find out more about the new decentralised Internet and how the Safe Network will benefit data security and privacy'
+      title: "Press Kit | Safe Network",
+      desc: "Resources for journalists looking to find out more about the new decentralised Internet and how the Safe Network will benefit data security and privacy",
     },
   },
   /*subscribeUrl: {
@@ -22,38 +22,45 @@ export default {
   },*/
   downloadApps: {
     browser: {
-      mac: 'https://github.com/maidsafe/sn_browser/releases/download/v0.17.0-alpha.1/safe-browser-v0.17.0-alpha.1-mac-x64.dmg',
-      windows: 'https://github.com/maidsafe/sn_browser/releases/download/v0.17.0-alpha.1/safe-browser-v0.17.0-alpha.1-win-x64.exe',
-      linux: 'https://github.com/maidsafe/sn_browser/releases/download/v0.17.0-alpha.1/safe-browser-v0.17.0-alpha.1-linux-x64.AppImage',
-      android: 'https://github.com/maidsafe/sn_browser/releases/tag/v0.17.0-alpha.1',
-      ios: 'https://github.com/maidsafe/sn_browser/releases/tag/v0.17.0-alpha.1',
-      others: 'https://github.com/maidsafe/sn_browser/releases/tag/v0.17.0-alpha.1',
-    }
+      mac: "https://github.com/maidsafe/sn_browser/releases/download/v0.17.0-alpha.1/safe-browser-v0.17.0-alpha.1-mac-x64.dmg",
+      windows:
+        "https://github.com/maidsafe/sn_browser/releases/download/v0.17.0-alpha.1/safe-browser-v0.17.0-alpha.1-win-x64.exe",
+      linux:
+        "https://github.com/maidsafe/sn_browser/releases/download/v0.17.0-alpha.1/safe-browser-v0.17.0-alpha.1-linux-x64.AppImage",
+      android:
+        "https://github.com/maidsafe/sn_browser/releases/tag/v0.17.0-alpha.1",
+      ios: "https://github.com/maidsafe/sn_browser/releases/tag/v0.17.0-alpha.1",
+      others:
+        "https://github.com/maidsafe/sn_browser/releases/tag/v0.17.0-alpha.1",
+    },
   },
 
   links: {
-    forum: 'https://safenetforum.org'
+    forum: "https://safenetforum.org",
   },
   pressKitMedia: {
-    techCrunch: 'https://techcrunch.com/2018/06/02/not-just-another-decentralized-web-whitepaper/',
-    theGuardian: 'https://www.theguardian.com/technology/2018/feb/01/punk-rock-internet-diy-rebels-working-replace-tech-giants-snoopers-charter',
-    spectrum: 'https://spectrum.ieee.org/view-from-the-valley/telecom/internet/where-is-hbo-silicon-valleys-real-pied-piper-look-in-troon-scotland'
+    techCrunch:
+      "https://techcrunch.com/2018/06/02/not-just-another-decentralized-web-whitepaper/",
+    theGuardian:
+      "https://www.theguardian.com/technology/2018/feb/01/punk-rock-internet-diy-rebels-working-replace-tech-giants-snoopers-charter",
+    spectrum:
+      "https://spectrum.ieee.org/where-is-hbo-silicon-valleys-real-pied-piper-look-in-troon-scotland",
   },
   videoLinks: {
     safe_network: {
-      mp4: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Getting+Started.mp4',
-      ogv: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Getting+Started.ogv',
-      webm: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/GS+webM.webm'
+      mp4: "https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Getting+Started.mp4",
+      ogv: "https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Getting+Started.ogv",
+      webm: "https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/GS+webM.webm",
     },
     self_encryption: {
-      mp4: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Self+Encryption+on+the+SAFE+Network.mp4',
-      ogv: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Self+Encryption+on+the+SAFE+Network_1.ogv',
-      webm: 'https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Self+Encryption+on+the+SAFE+Network_1.webm',
+      mp4: "https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Self+Encryption+on+the+SAFE+Network.mp4",
+      ogv: "https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Self+Encryption+on+the+SAFE+Network_1.ogv",
+      webm: "https://s3.eu-west-2.amazonaws.com/ms-marketing/website-videos/Self+Encryption+on+the+SAFE+Network_1.webm",
     },
     security: {
-      ogv: 'https://ms-marketing.s3.eu-west-2.amazonaws.com/website-videos/Simplicity-of-Earning-Safe-Network-Tokens.ogv',
-      mp4: 'https://ms-marketing.s3.eu-west-2.amazonaws.com/website-videos/Simplicity+of+Earning+Safe+Network+Tokens.mp4',
-      webm: 'https://ms-marketing.s3.eu-west-2.amazonaws.com/website-videos/Simplicity+of+Earning+Safe+Network+Tokens.webm'
-    }
+      ogv: "https://ms-marketing.s3.eu-west-2.amazonaws.com/website-videos/Simplicity-of-Earning-Safe-Network-Tokens.ogv",
+      mp4: "https://ms-marketing.s3.eu-west-2.amazonaws.com/website-videos/Simplicity+of+Earning+Safe+Network+Tokens.mp4",
+      webm: "https://ms-marketing.s3.eu-west-2.amazonaws.com/website-videos/Simplicity+of+Earning+Safe+Network+Tokens.webm",
+    },
   },
-}
+};
