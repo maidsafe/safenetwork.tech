@@ -47,33 +47,24 @@ export default {
     title: "How do I buy Safe Network Tokens?",
     para: [
       "Safe Network Tokens are the currency that will power the Safe Network. They will be available to be farmed, used or traded. You can’t buy them yet, but you can buy MaidSafeCoin.",
-      "MaidSafeCoin (MAID) is a token that was created in a crowdsale in 2014 to support the project, and each MAID will be able to be exchanged for a Safe Network Token when the Network launches. Based on the Omni protocol on top of the Bitcoin blockchain, MAID can be purchased and traded, but not farmed.",
+      "MaidSafeCoin is a token that was created in a crowdsale in 2014 to support the project, and each coin will be able to be exchanged for a Safe Network Token when the Network launches.",
+      "MaidSafeCoin was originally on the Omni protocol (MAID) but is now available as an ERC20 token [(EMAID)](https://coinmarketcap.com/currencies/maidsafecoin-/).",
     ],
   },
   textBlock6: {
-    title: "Buying MaidSafeCoin",
+    title: "Buying MaidSafeCoin (EMAID)",
     para: [
-      "MaidSafeCoin can be bought and traded at these brokers and exchanges.",
-      "Note: These online brokers and exchanges are not owned or maintained by MaidSafe. While we are satisfied they are trustworthy, reliable services, please use at your own risk.",
-      "MAID is based on the Omni protocol and there are no hard wallet options at this stage, so whilst you’re waiting to convert MAID to Safe Network Tokens at the launch of the Network, we’d always recommend that you store your coins in cold storage.",
+      "MaidSafeCoin (EMAID) is available on the [Bitmart](https://www.bitmart.com/trade/en-US?symbol=EMAID_USDT) exchange and on [UniSwap V3](https://info.uniswap.org/#/pools/0x35593881b7723b39a5bdbcb421e55c1ff1953f4b)",
     ],
   },
   exchanges: [
     {
-      name: "Bittrex",
-      url: "https://global.bittrex.com/Market/Index?MarketName=BTC-MAID",
+      name: "BitMart",
+      url: "https://www.bitmart.com/trade/en-US?symbol=EMAID_USDT",
     },
     {
-      name: "HitBTC",
-      url: "https://hitbtc.com/MAID-to-BTC",
-    },
-    {
-      name: "P2PB2B",
-      url: "https://p2pb2b.com/trade/MAID_BTC/",
-    },
-    {
-      name: "BCBitcoin",
-      url: "https://www.bcbitcoin.co.uk/buy/?coin=MAID",
+      name: "UniSwap",
+      url: "https://info.uniswap.org/#/pools/0x35593881b7723b39a5bdbcb421e55c1ff1953f4b",
     },
   ],
   faqs: {
@@ -82,50 +73,31 @@ export default {
         title: "Safe Network Tokens: Frequently Asked Questions",
         items: [
           {
-            question: "What are Safe Network Tokens?",
-            answer: [
-              `Safe Network Tokens are digital tokens that are generated automatically by the Safe Network and reside on the Safe Network. The Network will autonomously confirm account balances to wallets and allow transactions to take place. Safe Network Tokens are transferred using the digital signature of the coin’s last owner. This operation is 'network atomic'—in other words, the Network ensures that all copies update to reflect the transaction. This is a different approach to the blockchain mechanism employed in other projects, such as Bitcoin.`,
-              "There can be many millions of transactions per second on the Safe Network and the larger it becomes the more transactions per second can be executed. A Safe Network Token only records the previous and current owners. By doing so, it ensures that the current owner was transferred ownership properly by the last owner. This allows coins to be transferred between people very easily and without delay.",
-              "Please note that Safe Network Tokens will not be active until the network goes live. See MaidSafeCoin for current proxy token.",
-            ],
-          },
-          {
-            question: "How are Safe Network Tokens used on the Network?",
-            answer: [
-              "Safe Network Tokens are the currency of the Safe Network. They are an incentive mechanism that rewards Users and developers, as well as providing access to network services.",
-              "Without any human intervention, the Safe Network pays out Tokens automatically to Farmers (users who join the Network by contributing their computing resources) and to Builders (application developers, who get paid automatically depending on how much their applications are used).",
-              "In addition, Core Developers who improve the core Safe Network codebase can also earn Tokens by providing bug fixes and new features.",
-              `Safe Network Tokens only live on the Safe Network. They are stored in a User's wallet and can be used to buy network services, such as increased storage space and access to network applications. There is no set distribution time for the 4.3 billion Tokens produced during the life of the Network.`,
-              "Please note that Safe Network Tokens will not be active until the network goes live.",
-            ],
-          },
-          {
             question: "How do I buy Safe Network Tokens?",
             answer: [
-              "Safe Network Tokens won’t be issued until the Network goes live so they cannot be purchased at the moment. Currently you can buy MaidSafeCoin which will be able to be swapped on a 1-to-1 basis for Safe Network Tokens when the Network is launched.",
+              `Safe Network Tokens won’t be issued until the Network goes live so they cannot be purchased at the moment. Currently you can buy MaidSafeCoin which will be swapped on a 1-to-1 basis for Safe Network Tokens when released.`,
+              "You can buy MaidSafeCoin from:",
+              "[Bitmart](https://www.bitmart.com/trade/en-US?symbol=EMAID_USDT)",
+              "[UniSwap V3](https://info.uniswap.org/#/pools/0x35593881b7723b39a5bdbcb421e55c1ff1953f4b)",
             ],
           },
           {
             question: "What is MaidSafeCoin?",
             answer: [
-              `MaidSafeCoin is a proxy token that was released during MaidSafe's crowd sale and will be able to be swapped for Safe Network Tokens on a 1:1 basis when the Network is launched. MaidSafeCoin is listed on the Bitcoin blockchain and can be purchased on a number of exchanges and brokers including:`,
-              "- [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [P2PB2B](https://p2pb2b.com/trade/MAID_BTC/)\n- [BC Bitcoin](https://www.bcbitcoin.co.uk/buy/?coin=MAID)",
+              "MaidSafeCoin (EMAID) is a proxy token that supports the development of the Safe Network and allows pre-purchase of its native currency: Safe Network Tokens. ",
+              "After the Network is launched, MaidSafeCoins can be swapped 1-for-1 with Safe Network Tokens.",
+              "MaidSafeCoin was originally launched on the Omni protocol (MAID) but is now available as an ERC20 token: EMAID. You buy it from Bitmart and on UniSwap V3",
             ],
           },
           {
             question: "How do I buy MaidSafeCoin?",
             answer: [
-              "In essence all we have to do is buy bitcoin and exchange it for MaidSafeCoin. There are a few simple steps required to do this.",
-              "- Create an [OmniWallet](https://www.omniwallet.org/).\n- Purchase bitcoin using your preferred vendor.\n- Create a trade account on an exchange or brokers which lists MaidSafeCoin (e.g. on [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)).\n- Send bitcoin to the trading account.\n- Trade bitcoin for MaidSafeCoin.\n- Withdraw / Transfer to OmniWallet.\n- MaidSafeCoin is now in your OmniWallet!",
+              "You can buy MaidSafeCoin from:",
+              "[Bitmart](https://www.bitmart.com/trade/en-US?symbol=EMAID_USDT)",
+              "[UniSwap V3](https://info.uniswap.org/#/pools/0x35593881b7723b39a5bdbcb421e55c1ff1953f4b)",
             ],
           },
-          {
-            question: "Where can I store MaidSafeCoin?",
-            answer: [
-              "As MaidSafeCoin is built using the Omni protocol on the Bitcoin blockchain, it can be stored in any wallet. They may not be visible within all wallet software (due to lack of Omni support) but the MaidSafeCoin will be OK there as long as your machine and private key for that address are secure. You will be able to view them using [omniexplorer.info](https://omniexplorer.info).",
-              "To create a new Omniwallet or open an existing one visit [omniwallet.org](https://www.omniwallet.org/).",
-            ],
-          },
+
           {
             question: "What is Farming?",
             answer: [
