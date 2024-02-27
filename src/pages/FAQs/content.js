@@ -5,15 +5,6 @@ export default {
       title: "About the Safe Network",
       items: [
         {
-          question: "What is the Safe Network?",
-          answer: [
-            "The Safe (Secure Access For Everyone) Network is a new secure way to access apps that value the security of your data above all else. Downloading the free Safe software will provide access to: messaging, apps, email, social networks, data storage, video conferencing, and much more.",
-            "Rather than using data centres and servers which are prone to data theft and surveillance, as is common on today's Internet, the Safe Network uses advanced peer-to-peer technology that joins together the spare computing capacity of all Safe users, creating a global network.",
-            "The Safe Network is made up of the unused hard drive space, processing power and data connection of its users. It offers a level of security and privacy not currently available on the existing Internet and turns the tables on companies, putting users in control of their data, rather than trusting it to organisations.",
-            "By providing your unused computing resources to the Network, you will be paid in [Safe Network Tokens](/economy).",
-          ],
-        },
-        {
           question: "What is an Autonomous Network?",
           answer: [
             "An Autonomous Network is one which has no human gatekeepers. Anyone is able to join and—crucially—no-one can be prevented from taking part.",
@@ -21,6 +12,32 @@ export default {
             "_[Read more about Autonomous Networks](https://metaquestions.me/2017/08/12/the-impossible-network/)_",
           ],
         },
+        {
+          question: "How do I buy Safe Network Tokens?",
+          answer: [
+            `Safe Network Tokens won’t be issued until the Network goes live so they cannot be purchased at the moment. Currently you can buy MaidSafeCoin which will be swapped on a 1-to-1 basis for Safe Network Tokens when released.`,
+            "You can buy MaidSafeCoin from:",
+            "[Bitmart](https://www.bitmart.com/trade/en-US?symbol=EMAID_USDT)",
+            "[UniSwap V3](https://info.uniswap.org/#/pools/0x35593881b7723b39a5bdbcb421e55c1ff1953f4b)",
+          ],
+        },
+        {
+          question: "What is MaidSafeCoin?",
+          answer: [
+            "MaidSafeCoin (EMAID) is a proxy token that supports the development of the Safe Network and allows pre-purchase of its native currency: Safe Network Tokens. ",
+            "After the Network is launched, MaidSafeCoins can be swapped 1-for-1 with Safe Network Tokens.",
+            "MaidSafeCoin was originally launched on the Omni protocol (MAID) but is now available as an ERC20 token: EMAID. You buy it from Bitmart and on UniSwap V3",
+          ],
+        },
+        {
+          question: "How do I buy MaidSafeCoin?",
+          answer: [
+            "You can buy MaidSafeCoin from:",
+            "[Bitmart](https://www.bitmart.com/trade/en-US?symbol=EMAID_USDT)",
+            "[UniSwap V3](https://info.uniswap.org/#/pools/0x35593881b7723b39a5bdbcb421e55c1ff1953f4b)",
+          ],
+        },
+
         {
           question: "Why should I use the Safe Network?",
           answer: [
