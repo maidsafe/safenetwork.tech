@@ -201,14 +201,6 @@ export default {
           ],
         },
         {
-          question: "How do I buy Safe Network Tokens?",
-          answer: [
-            "Safe Network Tokens won’t be issued until the Network goes live so they cannot be purchased at the moment. Currently you can buy MaidSafeCoin which will be swapped on a 1-to-1 basis for Safe Network Tokens when released.",
-            "MaidSafeCoin is listed on the Bitcoin blockchain and can be purchased on a number of exchanges and brokers including:",
-            "- [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)\n- [HitBTC](https://hitbtc.com/MAID-to-BTC)\n- [P2PB2B](https://p2pb2b.com/trade/MAID_BTC/)",
-          ],
-        },
-        {
           question: "Why not just use Bitcoin?",
           answer: [
             "Bitcoin is completely unrelated to the Safe Network and cannot be generated or distributed by the Safe Network. Safe Network Tokens are generated in response to Network use (stored data being retrieved or apps are created) and is the digital currency of the Safe Network.",
@@ -231,27 +223,7 @@ export default {
             "\n*   Farmers qualify for farming attempts at 100% of the Farming Rate (FR) (as modified by Node performance ranking).\n*   App Builders qualify for farming attempts at 10% of the FR\n*   The pool from which Core Developers are rewarded for their contributions qualifies for farming attempts at 5% of the FR.",
           ],
         },
-        {
-          question: "What is MaidSafeCoin?",
-          answer: [
-            "MaidSafeCoin is a proxy token that was released during MaidSafe's crowd sale and will be swapped for Safe Network Tokens on a 1:1 basis when the Network is launched.",
-            "MaidSafeCoin is listed on the Bitcoin blockchain and can be purchased on a number of exchanges and brokers including [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID), [HitBTC](https://hitbtc.com/MAID-to-BTC) and [P2PB2B](https://p2pb2b.com/trade/MAID_BTC/).",
-          ],
-        },
-        {
-          question: "How do I buy MaidSafeCoin?",
-          answer: [
-            "In essence all we have to do is buy bitcoin and exchange it for MaidSafeCoin. There are a few simple steps required to do this.",
-            "\n1.  Create an [OmniWallet](https://www.omniwallet.org/).\n2.  Purchase bitcoin using your preferred vendor.\n3.  Create a trade account on an exchange which lists MaidSafeCoin (e.g. on [Bittrex](https://global.bittrex.com/Market/Index?MarketName=BTC-MAID)).\n4.  Send bitcoin to the trading account.\n5.  Trade bitcoin for MaidSafeCoin.\n6.  Withdraw / Transfer to OmniWallet.\n7.  MaidSafeCoin is now in your OmniWallet!",
-          ],
-        },
-        {
-          question: "Where can I store MaidSafeCoin?",
-          answer: [
-            "As MaidSafeCoin is built using the Omni protocol on the Bitcoin blockchain, it can be stored in any wallet. They may not be visible within all wallet software (due to lack of Omni support) but the MaidSafeCoin will be OK there as long as your machine and private key for that address are secure and you will be able to view them using [omniexplorer.info](https://omniexplorer.info).",
-            "To create a new Omniwallet or open an existing one visit [omniwallet.org](https://www.omniwallet.org/).",
-          ],
-        },
+
         {
           question: "How will MaidSafeCoin be converted to Safecoin?",
           answer: [
